@@ -1,0 +1,26 @@
+#  LLM-Guided Device Modeling
+- **Install clangd tool：`sudo apt install clangd`**
+- **Modify configuration information:`vdm/config/default.yaml`**
+    - `data_path`：
+    - `logs_path`:
+    - `device_code_path`:
+    - `qemu_hw_fack_pci_path`:
+    - `qemu_run_dir`:
+    - `driver_name_case_mapping_path`:
+    - `qemu_kernel_bzImage_path`:
+    - `qemu_image_path`:
+    - `qemu_log_path`:
+    - `qemu_out_share_path`:
+    - `qemu_out_shares_path`:
+    - `qemu-system-x86_64_path`:
+    - `qemu_rum_template_path`:
+    - `qemu_build_static_path`:
+    - `qemu_build_path`:
+    - `linux_path_prefix`:
+    - `step4_examples_path`:
+    - `db_path`:
+    - `qemu_build_sh_path`:
+    - `id_rsa_path`:
+- **Loading the static analysis content into the database `load_db.py` script. **
+- **Execute the command in the root directory:`uv run load_db.py`**
+- **Execute in the root directory:`uv run src/vdm/main.py`**

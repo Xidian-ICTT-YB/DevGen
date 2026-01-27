@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vdm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "clang>=20.1.5",
+    "langchain>=1.1.0",
+    "langchain-openai>=1.1.0",
+    "openai>=2.8.1",
+    "python-lsp-jsonrpc>=1.1.2",
+    "pyyaml>=6.0.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["vdm"]   
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true

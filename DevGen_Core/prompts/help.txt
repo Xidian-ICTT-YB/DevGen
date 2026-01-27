@@ -1,0 +1,50 @@
+DRIVER_NAMKE          代表的是驱动名——静态分析提供的
+QEMU_CODE             代表的是上一步返回值提供的QEMU源码
+Relevant_Source       代表要提供的驱动源码——静态分析提供的
+ERR_MSG               代表的是编译过程中的错误信息
+
+{
+    "role": "system",
+    "content": "You are an expert proficient in Linux kernel drivers, QEMU device models, virtualization hardware interface simulation, and reverse engineering.
+                Your task is:
+                    Based on the Linux driver source code (or register documentation) provided by the user, the virtual PCI device model C code that can be successfully compiled and run in QEMU is automatically generated.
+                You only reply with JSON."
+}
+
+每个prompt需要填充的内容：
+
+pci_template:
+    需要对其中的DRIVER_NAME进行替换,换成驱动的名字。
+
+full_output：
+    仅仅只有一句话，就是请继续回答，主要是解决代码量过长不能一次性输出的问题，不需要进行替换。
+
+step0：
+    不需要填充任何内容，作为一个背景介绍，注意回复OK即代表成功，对于这一步可以不用实现。
+    这一块不需要询问LLM，我们自动设置回复的值为"OK"（因为询问没有意义，不能让他们有会话记录功能）
+
+step1：
+    需要替换三处，分别是PCI_TEMPLATE，即我们的模板代码，DRIVER_NAME，即驱动的名字，Relevant_Source，第一次传递给驱动的相关头文件（不需要查找）。
+
+step1-iteration：
+    需要替换三处，DRIVER_NAME，即驱动的名字，QEMU_CODE，即上次回答的QEMU代码，Relevant_Source，即need_resource中所需的相关源码
+
+step2：
+    需要替换三处，DRIVER_NAME，即驱动的名字，QEMU_CODE，即上一步回答的QEMU代码，Relevant_Source，即第二步第一次需要传递的相关函数源码（不需要查找）。
+
+step2-iteration：
+    需要替换三处，DRIVER_NAME，即驱动的名字，QEMU_CODE，即上一步回答的QEMU代码，Relevant_Source，即need_resource中所需的相关源码
+
+step3：
+    仅需两处，一处是DRIVER_NAME，即驱动的名字，QEMU_CODE，即上一步回答的QEMU代码。
+
+step3-iteration：
+    需要两处，一处是QEMU_CODE，即上一步QEMU代码，一处是Relevant_Source，即need_resource中所需的相关源码
+
+
+构造历史记录：
+    step1：system -> step0:OK -> two_examples:OK -> step1
+    step1-iteration：system -> step0:OK ->two_examples:OK -> step1-iteration
+    step2：system -> step0:OK -> two_examples:OK -> step2
+
+step1_examples.txt、three_examples.txt暂时没有用到

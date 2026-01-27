@@ -1,0 +1,96 @@
+#  Debug & Update Phase – Stage 4
+   You are performing diagnosis and corrective code generation for the QEMU virtual PCI device corresponding to the Linux driver `DRIVER_PATH`.
+   This phase is used only when the device fails to reach "Kernel driver in use", meaning the driver did not successfully bind to the QEMU device.
+
+## Your task is to:
+    In the case where "Kernel driver in use" does not appear, combined with error logs, and based on the original QEMU code + partial driver source code + two reference examples,
+    make minimal and necessary corrections to the original QEMU code to fix the driver initialization failure and allow the device to reach "Kernel driver in use".
+
+#  PHASE 4 RULES (VERY STRICT)
+## You must:
+    1.Identify the exact cause of bind failure:probe() failure,missing config-space field,incorrect BAR layout,unimplemented register read/write behavior,interrupt/DMA mismatch,missing reset or init behavior.
+    2.Produce a corrected QEMU device model by updating ONLY the broken logic.
+    3.All corrective edits MUST:
+      - not add new registers unless proven by driver code
+      - not remove existing behaviors that the driver depends on
+      - keep changes minimal 
+    4.Corrections MUST be made strictly based on:
+      - Linux driver source code
+      - provided QEMU original implementation
+    5.You must output ONLY:
+      - the corrected full QEMU C file
+      - additional missing sources required to complete the fix
+      - an explicit list of what was changed (short phrases)
+    6.Examples can only be used for inferring the repair methods and are not allowed to replicate the architecture or registers.
+    7.If multiple entries exist in `struct pci_device_id`, you MUST always use the first entry.
+
+## Additional specific rules for this driver
+  1. NOTICE:Never modify the value of "#define TYPE_PCIBASE_DEVICE"!!!
+  2.In addition, the "pci_set_dma" and "pci_set_dma_mask" functions are not supported. Please do not include them in your code.
+  3.Do not modify the non-placeholder part of the code at will. For example, do not change the msix_uninit function in pcibase_uninit from msix_uninit(pdev, NULL, 0) to msix_uninit(pdev) or any other content.
+
+
+## You must NOT:
+    1.create new registers not shown in the driver
+    2.rewrite or reorganize the architecture
+    3.ignore driver-visible behavior
+    4.output explanations, discussions, or commentary not included in the JSON rules
+    5.output pseudocode, TODO markers, or non-C code
+    6.implement runtime behaviors not related to probe/init
+
+## Output Format
+'''json
+{
+  "code":  " /* corrected full QEMU C file, JSON-escaped */ " ,
+  "needed_sources": [
+        "function:xxx_missing",
+        "struct:yyy_missing"
+  ],
+  "changes": [
+        "Fixed BAR0 offset 0x20 read behavior",
+        "Implemented missing DMA completion interrupt",
+        "Corrected reset register write semantics"
+  ]
+}
+''' 
+- code MUST be a valid JSON string with escaped quotes and newlines.
+- needed_sources MUST contain only missing symbols.
+- Do NOT list standard kernel APIs or PCI macros.
+- If no extra sources required: "needed_sources": [].
+
+## If missing symbols (functions, structs, macros, enums) appear in the driver but were not provided, you must not guess them; instead place them in "needed_sources".
+
+## You may only infer behavior strictly demonstrated by the Linux driver.
+## QEMU version requirement: All code MUST comply with QEMU 8.2.10 API.
+
+#  INPUT MESSAGE
+## Original (previous) QEMU implementation:
+```QEMU
+`QEMU_CODE`
+```
+
+## Kernel error logs (probe failure, dmesg, bind failure):
+```c
+`ERR_MSG`
+```
+
+## Partial driver source code:
+```c
+`Relevant_Source`
+``` 
+
+## Two reference examples:
+```c
+`TWO_EXAM`
+```
+
+#  YOUR TASK
+## Generate:
+    1. A fully corrected, compilable QEMU C device model that fixes the probe/bind failure (or an explicit empty code if fix impossible due to missing symbols)
+    2. Incorporating required fixes based strictly on logs + driver + Stage-1 + examples (examples may only inform repair technique)
+    3. Your output MUST follow the JSON specification exactly
+    4. Never modify the value of "#define TYPE_PCIBASE_DEVICE",even if you think this might be wrong
+
+## If additional source content is required, list symbol names in "needed_sources".
+
+## Your output

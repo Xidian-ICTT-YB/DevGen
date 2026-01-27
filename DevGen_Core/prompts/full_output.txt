@@ -1,0 +1,38 @@
+# The previous answer exceeded the token limit.
+# Continue the response EXACTLY from the next character after the last output.
+# DO NOT repeat, rephrase, or modify any previously generated content.
+# DO NOT restart or create a new code block, JSON object, struct, or function.
+# Continue ONLY the existing one.
+
+# STRICT CONTINUATION RULES:
+  1. Continue the output literally from where it stopped.
+  2. Preserve formatting, indentation, and open/close braces exactly.
+  3. If the previous output ends inside:
+      - a JSON string  : continue JSON-escaped characters.
+      - a JSON array   : continue listing items.
+      - a JSON object  : continue adding fields ONLY if still inside that object.
+      - a C code block : continue valid C code.
+      - a struct/function : finish it properly without changes.
+  4. DO NOT restart or open a new:
+      - JSON object
+      - JSON array
+      - "code": "" block
+      - C file beginning
+      - include section
+      - type definition
+  5. DO NOT introduce:
+      - new placeholders
+      - TODO
+      - "..." ellipses
+      - comments or explanation text
+      - duplicated lines
+  6. If the previous text ended:
+      - mid-line : continue on the SAME line
+      - end of line : continue on the NEXT line
+  7. You MUST NOT create a new JSON object. Only continue the existing JSON output.
+  8. Continue inside the SAME JSON field unless it was already properly closed.
+  9. The continuation must not alter previously generated logic, syntax, or structure.
+
+# Output MUST strictly be the continuation only.
+
+## Continue your output below:

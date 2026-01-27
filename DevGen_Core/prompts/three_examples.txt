@@ -1,0 +1,1252 @@
+# Three complete QEMU modeling examples
+
+## `hw/misc/edu.c` Modeling Code
+```QEMU
+#include "qemu/osdep.h"
+#include "qemu/units.h"
+#include "hw/pci/pci.h"
+#include "hw/hw.h"
+#include "hw/pci/msi.h"
+#include "qemu/timer.h"
+#include "qom/object.h"
+#include "qemu/main-loop.h" /* iothread mutex */
+#include "qemu/module.h"
+#include "qapi/visitor.h"
+
+#define TYPE_PCI_EDU_DEVICE "edu"
+typedef struct EduState EduState;
+DECLARE_INSTANCE_CHECKER(EduState, EDU,
+                         TYPE_PCI_EDU_DEVICE)
+
+#define FACT_IRQ        0x00000001
+#define DMA_IRQ         0x00000100
+
+#define DMA_START       0x40000
+#define DMA_SIZE        4096
+
+struct EduState {
+    PCIDevice pdev;
+    MemoryRegion mmio;
+
+    QemuThread thread;
+    QemuMutex thr_mutex;
+    QemuCond thr_cond;
+    bool stopping;
+
+    uint32_t addr4;
+    uint32_t fact;
+#define EDU_STATUS_COMPUTING    0x01
+#define EDU_STATUS_IRQFACT      0x80
+    uint32_t status;
+
+    uint32_t irq_status;
+
+#define EDU_DMA_RUN             0x1
+#define EDU_DMA_DIR(cmd)        (((cmd) & 0x2) >> 1)
+# define EDU_DMA_FROM_PCI       0
+# define EDU_DMA_TO_PCI         1
+#define EDU_DMA_IRQ             0x4
+    struct dma_state {
+        dma_addr_t src;
+        dma_addr_t dst;
+        dma_addr_t cnt;
+        dma_addr_t cmd;
+    } dma;
+    QEMUTimer dma_timer;
+    char dma_buf[DMA_SIZE];
+    uint64_t dma_mask;
+};
+
+static bool edu_msi_enabled(EduState *edu)
+{
+    return msi_enabled(&edu->pdev);
+}
+
+static void edu_raise_irq(EduState *edu, uint32_t val)
+{
+    edu->irq_status |= val;
+    if (edu->irq_status) {
+        if (edu_msi_enabled(edu)) {
+            msi_notify(&edu->pdev, 0);
+        } else {
+            pci_set_irq(&edu->pdev, 1);
+        }
+    }
+}
+
+static void edu_lower_irq(EduState *edu, uint32_t val)
+{
+    edu->irq_status &= ~val;
+
+    if (!edu->irq_status && !edu_msi_enabled(edu)) {
+        pci_set_irq(&edu->pdev, 0);
+    }
+}
+
+static bool within(uint64_t addr, uint64_t start, uint64_t end)
+{
+    return start <= addr && addr < end;
+}
+
+static void edu_check_range(uint64_t addr, uint64_t size1, uint64_t start,
+                uint64_t size2)
+{
+    uint64_t end1 = addr + size1;
+    uint64_t end2 = start + size2;
+
+    if (within(addr, start, end2) &&
+            end1 > addr && end1 <= end2) {
+        return;
+    }
+
+    hw_error("EDU: DMA range 0x%016"PRIx64"-0x%016"PRIx64
+             " out of bounds (0x%016"PRIx64"-0x%016"PRIx64")!",
+            addr, end1 - 1, start, end2 - 1);
+}
+
+static dma_addr_t edu_clamp_addr(const EduState *edu, dma_addr_t addr)
+{
+    dma_addr_t res = addr & edu->dma_mask;
+
+    if (addr != res) {
+        printf("EDU: clamping DMA %#.16"PRIx64" to %#.16"PRIx64"!\n", addr, res);
+    }
+
+    return res;
+}
+
+static void edu_dma_timer(void *opaque)
+{
+    EduState *edu = opaque;
+    bool raise_irq = false;
+
+    if (!(edu->dma.cmd & EDU_DMA_RUN)) {
+        return;
+    }
+
+    if (EDU_DMA_DIR(edu->dma.cmd) == EDU_DMA_FROM_PCI) {
+        uint64_t dst = edu->dma.dst;
+        edu_check_range(dst, edu->dma.cnt, DMA_START, DMA_SIZE);
+        dst -= DMA_START;
+        pci_dma_read(&edu->pdev, edu_clamp_addr(edu, edu->dma.src),
+                edu->dma_buf + dst, edu->dma.cnt);
+    } else {
+        uint64_t src = edu->dma.src;
+        edu_check_range(src, edu->dma.cnt, DMA_START, DMA_SIZE);
+        src -= DMA_START;
+        pci_dma_write(&edu->pdev, edu_clamp_addr(edu, edu->dma.dst),
+                edu->dma_buf + src, edu->dma.cnt);
+    }
+
+    edu->dma.cmd &= ~EDU_DMA_RUN;
+    if (edu->dma.cmd & EDU_DMA_IRQ) {
+        raise_irq = true;
+    }
+
+    if (raise_irq) {
+        edu_raise_irq(edu, DMA_IRQ);
+    }
+}
+
+static void dma_rw(EduState *edu, bool write, dma_addr_t *val, dma_addr_t *dma,
+                bool timer)
+{
+    if (write && (edu->dma.cmd & EDU_DMA_RUN)) {
+        return;
+    }
+
+    if (write) {
+        *dma = *val;
+    } else {
+        *val = *dma;
+    }
+
+    if (timer) {
+        timer_mod(&edu->dma_timer, qemu_clock_get_ms(QEMU_CLOCK_VIRTUAL) + 100);
+    }
+}
+
+static uint64_t edu_mmio_read(void *opaque, hwaddr addr, unsigned size)
+{
+    EduState *edu = opaque;
+    uint64_t val = ~0ULL;
+
+    if (addr < 0x80 && size != 4) {
+        return val;
+    }
+
+    if (addr >= 0x80 && size != 4 && size != 8) {
+        return val;
+    }
+
+    switch (addr) {
+    case 0x00:
+        val = 0x010000edu;
+        break;
+    case 0x04:
+        val = edu->addr4;
+        break;
+    case 0x08:
+        qemu_mutex_lock(&edu->thr_mutex);
+        val = edu->fact;
+        qemu_mutex_unlock(&edu->thr_mutex);
+        break;
+    case 0x20:
+        val = qatomic_read(&edu->status);
+        break;
+    case 0x24:
+        val = edu->irq_status;
+        break;
+    case 0x80:
+        dma_rw(edu, false, &val, &edu->dma.src, false);
+        break;
+    case 0x88:
+        dma_rw(edu, false, &val, &edu->dma.dst, false);
+        break;
+    case 0x90:
+        dma_rw(edu, false, &val, &edu->dma.cnt, false);
+        break;
+    case 0x98:
+        dma_rw(edu, false, &val, &edu->dma.cmd, false);
+        break;
+    }
+
+    return val;
+}
+
+static void edu_mmio_write(void *opaque, hwaddr addr, uint64_t val,
+                unsigned size)
+{
+    EduState *edu = opaque;
+
+    if (addr < 0x80 && size != 4) {
+        return;
+    }
+
+    if (addr >= 0x80 && size != 4 && size != 8) {
+        return;
+    }
+
+    switch (addr) {
+    case 0x04:
+        edu->addr4 = ~val;
+        break;
+    case 0x08:
+        if (qatomic_read(&edu->status) & EDU_STATUS_COMPUTING) {
+            break;
+        }
+        /* EDU_STATUS_COMPUTING cannot go 0->1 concurrently, because it is only
+         * set in this function and it is under the iothread mutex.
+         */
+        qemu_mutex_lock(&edu->thr_mutex);
+        edu->fact = val;
+        qatomic_or(&edu->status, EDU_STATUS_COMPUTING);
+        qemu_cond_signal(&edu->thr_cond);
+        qemu_mutex_unlock(&edu->thr_mutex);
+        break;
+    case 0x20:
+        if (val & EDU_STATUS_IRQFACT) {
+            qatomic_or(&edu->status, EDU_STATUS_IRQFACT);
+            /* Order check of the COMPUTING flag after setting IRQFACT.  */
+            smp_mb__after_rmw();
+        } else {
+            qatomic_and(&edu->status, ~EDU_STATUS_IRQFACT);
+        }
+        break;
+    case 0x60:
+        edu_raise_irq(edu, val);
+        break;
+    case 0x64:
+        edu_lower_irq(edu, val);
+        break;
+    case 0x80:
+        dma_rw(edu, true, &val, &edu->dma.src, false);
+        break;
+    case 0x88:
+        dma_rw(edu, true, &val, &edu->dma.dst, false);
+        break;
+    case 0x90:
+        dma_rw(edu, true, &val, &edu->dma.cnt, false);
+        break;
+    case 0x98:
+        if (!(val & EDU_DMA_RUN)) {
+            break;
+        }
+        dma_rw(edu, true, &val, &edu->dma.cmd, true);
+        break;
+    }
+}
+
+static const MemoryRegionOps edu_mmio_ops = {
+    .read = edu_mmio_read,
+    .write = edu_mmio_write,
+    .endianness = DEVICE_NATIVE_ENDIAN,
+    .valid = {
+        .min_access_size = 4,
+        .max_access_size = 8,
+    },
+    .impl = {
+        .min_access_size = 4,
+        .max_access_size = 8,
+    },
+
+};
+
+/*
+ * We purposely use a thread, so that users are forced to wait for the status
+ * register.
+ */
+static void *edu_fact_thread(void *opaque)
+{
+    EduState *edu = opaque;
+
+    while (1) {
+        uint32_t val, ret = 1;
+
+        qemu_mutex_lock(&edu->thr_mutex);
+        while ((qatomic_read(&edu->status) & EDU_STATUS_COMPUTING) == 0 &&
+                        !edu->stopping) {
+            qemu_cond_wait(&edu->thr_cond, &edu->thr_mutex);
+        }
+
+        if (edu->stopping) {
+            qemu_mutex_unlock(&edu->thr_mutex);
+            break;
+        }
+
+        val = edu->fact;
+        qemu_mutex_unlock(&edu->thr_mutex);
+
+        while (val > 0) {
+            ret *= val--;
+        }
+
+        /*
+         * We should sleep for a random period here, so that students are
+         * forced to check the status properly.
+         */
+
+        qemu_mutex_lock(&edu->thr_mutex);
+        edu->fact = ret;
+        qemu_mutex_unlock(&edu->thr_mutex);
+        qatomic_and(&edu->status, ~EDU_STATUS_COMPUTING);
+
+        /* Clear COMPUTING flag before checking IRQFACT.  */
+        smp_mb__after_rmw();
+
+        if (qatomic_read(&edu->status) & EDU_STATUS_IRQFACT) {
+            qemu_mutex_lock_iothread();
+            edu_raise_irq(edu, FACT_IRQ);
+            qemu_mutex_unlock_iothread();
+        }
+    }
+
+    return NULL;
+}
+
+static void pci_edu_realize(PCIDevice *pdev, Error **errp)
+{
+    EduState *edu = EDU(pdev);
+    uint8_t *pci_conf = pdev->config;
+
+    pci_config_set_interrupt_pin(pci_conf, 1);
+
+    if (msi_init(pdev, 0, 1, true, false, errp)) {
+        return;
+    }
+
+    timer_init_ms(&edu->dma_timer, QEMU_CLOCK_VIRTUAL, edu_dma_timer, edu);
+
+    qemu_mutex_init(&edu->thr_mutex);
+    qemu_cond_init(&edu->thr_cond);
+    qemu_thread_create(&edu->thread, "edu", edu_fact_thread,
+                       edu, QEMU_THREAD_JOINABLE);
+
+    memory_region_init_io(&edu->mmio, OBJECT(edu), &edu_mmio_ops, edu,
+                    "edu-mmio", 1 * MiB);
+    pci_register_bar(pdev, 0, PCI_BASE_ADDRESS_SPACE_MEMORY, &edu->mmio);
+}
+
+static void pci_edu_uninit(PCIDevice *pdev)
+{
+    EduState *edu = EDU(pdev);
+
+    qemu_mutex_lock(&edu->thr_mutex);
+    edu->stopping = true;
+    qemu_mutex_unlock(&edu->thr_mutex);
+    qemu_cond_signal(&edu->thr_cond);
+    qemu_thread_join(&edu->thread);
+
+    qemu_cond_destroy(&edu->thr_cond);
+    qemu_mutex_destroy(&edu->thr_mutex);
+
+    timer_del(&edu->dma_timer);
+    msi_uninit(pdev);
+}
+
+static void edu_instance_init(Object *obj)
+{
+    EduState *edu = EDU(obj);
+
+    edu->dma_mask = (1UL << 28) - 1;
+    object_property_add_uint64_ptr(obj, "dma_mask",
+                                   &edu->dma_mask, OBJ_PROP_FLAG_READWRITE);
+}
+
+static void edu_class_init(ObjectClass *class, void *data)
+{
+    DeviceClass *dc = DEVICE_CLASS(class);
+    PCIDeviceClass *k = PCI_DEVICE_CLASS(class);
+
+    k->realize = pci_edu_realize;
+    k->exit = pci_edu_uninit;
+    k->vendor_id = PCI_VENDOR_ID_QEMU;
+    k->device_id = 0x11e8;
+    k->revision = 0x10;
+    k->class_id = PCI_CLASS_OTHERS;
+    set_bit(DEVICE_CATEGORY_MISC, dc->categories);
+}
+
+static void pci_edu_register_types(void)
+{
+    static InterfaceInfo interfaces[] = {
+        { INTERFACE_CONVENTIONAL_PCI_DEVICE },
+        { },
+    };
+    static const TypeInfo edu_info = {
+        .name          = TYPE_PCI_EDU_DEVICE,
+        .parent        = TYPE_PCI_DEVICE,
+        .instance_size = sizeof(EduState),
+        .instance_init = edu_instance_init,
+        .class_init    = edu_class_init,
+        .interfaces = interfaces,
+    };
+
+    type_register_static(&edu_info);
+}
+type_init(pci_edu_register_types)
+```
+
+## `hw/misc/pci-testdev.c` Modeling Code
+```QEMU
+#include "qemu/osdep.h"
+#include "hw/pci/pci_device.h"
+#include "hw/qdev-properties.h"
+#include "qemu/event_notifier.h"
+#include "qemu/module.h"
+#include "sysemu/kvm.h"
+#include "qom/object.h"
+
+typedef struct PCITestDevHdr {
+    uint8_t test;
+    uint8_t width;
+    uint8_t pad0[2];
+    uint32_t offset;
+    uint8_t data;
+    uint8_t pad1[3];
+    uint32_t count;
+    uint8_t name[];
+} PCITestDevHdr;
+
+typedef struct IOTest {
+    MemoryRegion *mr;
+    EventNotifier notifier;
+    bool hasnotifier;
+    unsigned size;
+    bool match_data;
+    PCITestDevHdr *hdr;
+    unsigned bufsize;
+} IOTest;
+
+#define IOTEST_DATAMATCH 0xFA
+#define IOTEST_NOMATCH   0xCE
+
+#define IOTEST_IOSIZE 128
+#define IOTEST_MEMSIZE 2048
+
+static const char *iotest_test[] = {
+    "no-eventfd",
+    "wildcard-eventfd",
+    "datamatch-eventfd"
+};
+
+static const char *iotest_type[] = {
+    "mmio",
+    "portio"
+};
+
+#define IOTEST_TEST(i) (iotest_test[((i) % ARRAY_SIZE(iotest_test))])
+#define IOTEST_TYPE(i) (iotest_type[((i) / ARRAY_SIZE(iotest_test))])
+#define IOTEST_MAX_TEST (ARRAY_SIZE(iotest_test))
+#define IOTEST_MAX_TYPE (ARRAY_SIZE(iotest_type))
+#define IOTEST_MAX (IOTEST_MAX_TEST * IOTEST_MAX_TYPE)
+
+enum {
+    IOTEST_ACCESS_NAME,
+    IOTEST_ACCESS_DATA,
+    IOTEST_ACCESS_MAX,
+};
+
+#define IOTEST_ACCESS_TYPE uint8_t
+#define IOTEST_ACCESS_WIDTH (sizeof(uint8_t))
+
+struct PCITestDevState {
+    /*< private >*/
+    PCIDevice parent_obj;
+    /*< public >*/
+
+    MemoryRegion mmio;
+    MemoryRegion portio;
+    IOTest *tests;
+    int current;
+
+    uint64_t membar_size;
+    MemoryRegion membar;
+};
+
+#define TYPE_PCI_TEST_DEV "pci-testdev"
+
+OBJECT_DECLARE_SIMPLE_TYPE(PCITestDevState, PCI_TEST_DEV)
+
+#define IOTEST_IS_MEM(i) (strcmp(IOTEST_TYPE(i), "portio"))
+#define IOTEST_REGION(d, i) (IOTEST_IS_MEM(i) ?  &(d)->mmio : &(d)->portio)
+#define IOTEST_SIZE(i) (IOTEST_IS_MEM(i) ? IOTEST_MEMSIZE : IOTEST_IOSIZE)
+#define IOTEST_PCI_BAR(i) (IOTEST_IS_MEM(i) ? PCI_BASE_ADDRESS_SPACE_MEMORY : \
+                           PCI_BASE_ADDRESS_SPACE_IO)
+
+static int pci_testdev_start(IOTest *test)
+{
+    test->hdr->count = 0;
+    if (!test->hasnotifier) {
+        return 0;
+    }
+    event_notifier_test_and_clear(&test->notifier);
+    memory_region_add_eventfd(test->mr,
+                              le32_to_cpu(test->hdr->offset),
+                              test->size,
+                              test->match_data,
+                              test->hdr->data,
+                              &test->notifier);
+    return 0;
+}
+
+static void pci_testdev_stop(IOTest *test)
+{
+    if (!test->hasnotifier) {
+        return;
+    }
+    memory_region_del_eventfd(test->mr,
+                              le32_to_cpu(test->hdr->offset),
+                              test->size,
+                              test->match_data,
+                              test->hdr->data,
+                              &test->notifier);
+}
+
+static void
+pci_testdev_reset(PCITestDevState *d)
+{
+    if (d->current == -1) {
+        return;
+    }
+    pci_testdev_stop(&d->tests[d->current]);
+    d->current = -1;
+}
+
+static void pci_testdev_inc(IOTest *test, unsigned inc)
+{
+    uint32_t c = le32_to_cpu(test->hdr->count);
+    test->hdr->count = cpu_to_le32(c + inc);
+}
+
+static void
+pci_testdev_write(void *opaque, hwaddr addr, uint64_t val,
+                  unsigned size, int type)
+{
+    PCITestDevState *d = opaque;
+    IOTest *test;
+    int t, r;
+
+    if (addr == offsetof(PCITestDevHdr, test)) {
+        pci_testdev_reset(d);
+        if (val >= IOTEST_MAX_TEST) {
+            return;
+        }
+        t = type * IOTEST_MAX_TEST + val;
+        r = pci_testdev_start(&d->tests[t]);
+        if (r < 0) {
+            return;
+        }
+        d->current = t;
+        return;
+    }
+    if (d->current < 0) {
+        return;
+    }
+    test = &d->tests[d->current];
+    if (addr != le32_to_cpu(test->hdr->offset)) {
+        return;
+    }
+    if (test->match_data && test->size != size) {
+        return;
+    }
+    if (test->match_data && val != test->hdr->data) {
+        return;
+    }
+    pci_testdev_inc(test, 1);
+}
+
+static uint64_t
+pci_testdev_read(void *opaque, hwaddr addr, unsigned size)
+{
+    PCITestDevState *d = opaque;
+    const char *buf;
+    IOTest *test;
+    if (d->current < 0) {
+        return 0;
+    }
+    test = &d->tests[d->current];
+    buf = (const char *)test->hdr;
+    if (addr + size >= test->bufsize) {
+        return 0;
+    }
+    if (test->hasnotifier) {
+        event_notifier_test_and_clear(&test->notifier);
+    }
+    return buf[addr];
+}
+
+static void
+pci_testdev_mmio_write(void *opaque, hwaddr addr, uint64_t val,
+                       unsigned size)
+{
+    pci_testdev_write(opaque, addr, val, size, 0);
+}
+
+static void
+pci_testdev_pio_write(void *opaque, hwaddr addr, uint64_t val,
+                       unsigned size)
+{
+    pci_testdev_write(opaque, addr, val, size, 1);
+}
+
+static const MemoryRegionOps pci_testdev_mmio_ops = {
+    .read = pci_testdev_read,
+    .write = pci_testdev_mmio_write,
+    .endianness = DEVICE_LITTLE_ENDIAN,
+    .impl = {
+        .min_access_size = 1,
+        .max_access_size = 1,
+    },
+};
+
+static const MemoryRegionOps pci_testdev_pio_ops = {
+    .read = pci_testdev_read,
+    .write = pci_testdev_pio_write,
+    .endianness = DEVICE_LITTLE_ENDIAN,
+    .impl = {
+        .min_access_size = 1,
+        .max_access_size = 1,
+    },
+};
+
+static void pci_testdev_realize(PCIDevice *pci_dev, Error **errp)
+{
+    PCITestDevState *d = PCI_TEST_DEV(pci_dev);
+    uint8_t *pci_conf;
+    char *name;
+    int r, i;
+
+    pci_conf = pci_dev->config;
+
+    pci_conf[PCI_INTERRUPT_PIN] = 0; /* no interrupt pin */
+
+    memory_region_init_io(&d->mmio, OBJECT(d), &pci_testdev_mmio_ops, d,
+                          "pci-testdev-mmio", IOTEST_MEMSIZE * 2);
+    memory_region_init_io(&d->portio, OBJECT(d), &pci_testdev_pio_ops, d,
+                          "pci-testdev-portio", IOTEST_IOSIZE * 2);
+    pci_register_bar(pci_dev, 0, PCI_BASE_ADDRESS_SPACE_MEMORY, &d->mmio);
+    pci_register_bar(pci_dev, 1, PCI_BASE_ADDRESS_SPACE_IO, &d->portio);
+
+    if (d->membar_size) {
+        memory_region_init(&d->membar, OBJECT(d), "pci-testdev-membar",
+                           d->membar_size);
+        pci_register_bar(pci_dev, 2,
+                         PCI_BASE_ADDRESS_SPACE_MEMORY |
+                         PCI_BASE_ADDRESS_MEM_PREFETCH |
+                         PCI_BASE_ADDRESS_MEM_TYPE_64,
+                         &d->membar);
+    }
+
+    d->current = -1;
+    d->tests = g_malloc0(IOTEST_MAX * sizeof *d->tests);
+    for (i = 0; i < IOTEST_MAX; ++i) {
+        IOTest *test = &d->tests[i];
+        name = g_strdup_printf("%s-%s", IOTEST_TYPE(i), IOTEST_TEST(i));
+        test->bufsize = sizeof(PCITestDevHdr) + strlen(name) + 1;
+        test->hdr = g_malloc0(test->bufsize);
+        memcpy(test->hdr->name, name, strlen(name) + 1);
+        g_free(name);
+        test->hdr->offset = cpu_to_le32(IOTEST_SIZE(i) + i * IOTEST_ACCESS_WIDTH);
+        test->match_data = strcmp(IOTEST_TEST(i), "wildcard-eventfd");
+        if (IOTEST_IS_MEM(i) && !test->match_data) {
+            test->size = 0;
+        } else {
+            test->size = IOTEST_ACCESS_WIDTH;
+        }
+        test->hdr->test = i;
+        test->hdr->data = test->match_data ? IOTEST_DATAMATCH : IOTEST_NOMATCH;
+        test->hdr->width = IOTEST_ACCESS_WIDTH;
+        test->mr = IOTEST_REGION(d, i);
+        if (!strcmp(IOTEST_TEST(i), "no-eventfd")) {
+            test->hasnotifier = false;
+            continue;
+        }
+        r = event_notifier_init(&test->notifier, 0);
+        assert(r >= 0);
+        test->hasnotifier = true;
+    }
+}
+
+static void
+pci_testdev_uninit(PCIDevice *dev)
+{
+    PCITestDevState *d = PCI_TEST_DEV(dev);
+    int i;
+
+    pci_testdev_reset(d);
+    for (i = 0; i < IOTEST_MAX; ++i) {
+        if (d->tests[i].hasnotifier) {
+            event_notifier_cleanup(&d->tests[i].notifier);
+        }
+        g_free(d->tests[i].hdr);
+    }
+    g_free(d->tests);
+}
+
+static void qdev_pci_testdev_reset(DeviceState *dev)
+{
+    PCITestDevState *d = PCI_TEST_DEV(dev);
+    pci_testdev_reset(d);
+}
+
+static Property pci_testdev_properties[] = {
+    DEFINE_PROP_SIZE("membar", PCITestDevState, membar_size, 0),
+    DEFINE_PROP_END_OF_LIST(),
+};
+
+static void pci_testdev_class_init(ObjectClass *klass, void *data)
+{
+    DeviceClass *dc = DEVICE_CLASS(klass);
+    PCIDeviceClass *k = PCI_DEVICE_CLASS(klass);
+
+    k->realize = pci_testdev_realize;
+    k->exit = pci_testdev_uninit;
+    k->vendor_id = PCI_VENDOR_ID_REDHAT;
+    k->device_id = PCI_DEVICE_ID_REDHAT_TEST;
+    k->revision = 0x00;
+    k->class_id = PCI_CLASS_OTHERS;
+    dc->desc = "PCI Test Device";
+    set_bit(DEVICE_CATEGORY_MISC, dc->categories);
+    dc->reset = qdev_pci_testdev_reset;
+    device_class_set_props(dc, pci_testdev_properties);
+}
+
+static const TypeInfo pci_testdev_info = {
+    .name          = TYPE_PCI_TEST_DEV,
+    .parent        = TYPE_PCI_DEVICE,
+    .instance_size = sizeof(PCITestDevState),
+    .class_init    = pci_testdev_class_init,
+    .interfaces = (InterfaceInfo[]) {
+        { INTERFACE_CONVENTIONAL_PCI_DEVICE },
+        { },
+    },
+};
+
+static void pci_testdev_register_types(void)
+{
+    type_register_static(&pci_testdev_info);
+}
+
+type_init(pci_testdev_register_types)
+```
+
+## `hw/pci/pci-bridge.c` Modeling Code
+```qemu
+#include "qemu/osdep.h"
+#include "qemu/units.h"
+#include "hw/pci/pci_bridge.h"
+#include "hw/pci/pci_bus.h"
+#include "qemu/module.h"
+#include "qemu/range.h"
+#include "qapi/error.h"
+#include "hw/acpi/acpi_aml_interface.h"
+#include "hw/acpi/pci.h"
+#include "hw/qdev-properties.h"
+
+/* PCI bridge subsystem vendor ID helper functions */
+#define PCI_SSVID_SIZEOF        8
+#define PCI_SSVID_SVID          4
+#define PCI_SSVID_SSID          6
+
+int pci_bridge_ssvid_init(PCIDevice *dev, uint8_t offset,
+                          uint16_t svid, uint16_t ssid,
+                          Error **errp)
+{
+    int pos;
+
+    pos = pci_add_capability(dev, PCI_CAP_ID_SSVID, offset,
+                             PCI_SSVID_SIZEOF, errp);
+    if (pos < 0) {
+        return pos;
+    }
+
+    pci_set_word(dev->config + pos + PCI_SSVID_SVID, svid);
+    pci_set_word(dev->config + pos + PCI_SSVID_SSID, ssid);
+    return pos;
+}
+
+/* Accessor function to get parent bridge device from pci bus. */
+PCIDevice *pci_bridge_get_device(PCIBus *bus)
+{
+    return bus->parent_dev;
+}
+
+/* Accessor function to get secondary bus from pci-to-pci bridge device */
+PCIBus *pci_bridge_get_sec_bus(PCIBridge *br)
+{
+    return &br->sec_bus;
+}
+
+static uint32_t pci_config_get_io_base(const PCIDevice *d,
+                                       uint32_t base, uint32_t base_upper16)
+{
+    uint32_t val;
+
+    val = ((uint32_t)d->config[base] & PCI_IO_RANGE_MASK) << 8;
+    if (d->config[base] & PCI_IO_RANGE_TYPE_32) {
+        val |= (uint32_t)pci_get_word(d->config + base_upper16) << 16;
+    }
+    return val;
+}
+
+static pcibus_t pci_config_get_memory_base(const PCIDevice *d, uint32_t base)
+{
+    return ((pcibus_t)pci_get_word(d->config + base) & PCI_MEMORY_RANGE_MASK)
+        << 16;
+}
+
+static pcibus_t pci_config_get_pref_base(const PCIDevice *d,
+                                         uint32_t base, uint32_t upper)
+{
+    pcibus_t tmp;
+    pcibus_t val;
+
+    tmp = (pcibus_t)pci_get_word(d->config + base);
+    val = (tmp & PCI_PREF_RANGE_MASK) << 16;
+    if (tmp & PCI_PREF_RANGE_TYPE_64) {
+        val |= (pcibus_t)pci_get_long(d->config + upper) << 32;
+    }
+    return val;
+}
+
+/* accessor function to get bridge filtering base address */
+pcibus_t pci_bridge_get_base(const PCIDevice *bridge, uint8_t type)
+{
+    pcibus_t base;
+    if (type & PCI_BASE_ADDRESS_SPACE_IO) {
+        base = pci_config_get_io_base(bridge,
+                                      PCI_IO_BASE, PCI_IO_BASE_UPPER16);
+    } else {
+        if (type & PCI_BASE_ADDRESS_MEM_PREFETCH) {
+            base = pci_config_get_pref_base(
+                bridge, PCI_PREF_MEMORY_BASE, PCI_PREF_BASE_UPPER32);
+        } else {
+            base = pci_config_get_memory_base(bridge, PCI_MEMORY_BASE);
+        }
+    }
+
+    return base;
+}
+
+/* accessor function to get bridge filtering limit */
+pcibus_t pci_bridge_get_limit(const PCIDevice *bridge, uint8_t type)
+{
+    pcibus_t limit;
+    if (type & PCI_BASE_ADDRESS_SPACE_IO) {
+        limit = pci_config_get_io_base(bridge,
+                                      PCI_IO_LIMIT, PCI_IO_LIMIT_UPPER16);
+        limit |= 0xfff;         /* PCI bridge spec 3.2.5.6. */
+    } else {
+        if (type & PCI_BASE_ADDRESS_MEM_PREFETCH) {
+            limit = pci_config_get_pref_base(
+                bridge, PCI_PREF_MEMORY_LIMIT, PCI_PREF_LIMIT_UPPER32);
+        } else {
+            limit = pci_config_get_memory_base(bridge, PCI_MEMORY_LIMIT);
+        }
+        limit |= 0xfffff;       /* PCI bridge spec 3.2.5.{1, 8}. */
+    }
+    return limit;
+}
+
+static void pci_bridge_init_alias(PCIBridge *bridge, MemoryRegion *alias,
+                                  uint8_t type, const char *name,
+                                  MemoryRegion *space,
+                                  MemoryRegion *parent_space,
+                                  bool enabled)
+{
+    PCIDevice *bridge_dev = PCI_DEVICE(bridge);
+    pcibus_t base = pci_bridge_get_base(bridge_dev, type);
+    pcibus_t limit = pci_bridge_get_limit(bridge_dev, type);
+    /* TODO: this doesn't handle base = 0 limit = 2^64 - 1 correctly.
+     * Apparently no way to do this with existing memory APIs. */
+    pcibus_t size = enabled && limit >= base ? limit + 1 - base : 0;
+
+    memory_region_init_alias(alias, OBJECT(bridge), name, space, base, size);
+    memory_region_add_subregion_overlap(parent_space, base, alias, 1);
+}
+
+static void pci_bridge_init_vga_aliases(PCIBridge *br, PCIBus *parent,
+                                        MemoryRegion *alias_vga)
+{
+    PCIDevice *pd = PCI_DEVICE(br);
+    uint16_t brctl = pci_get_word(pd->config + PCI_BRIDGE_CONTROL);
+
+    memory_region_init_alias(&alias_vga[QEMU_PCI_VGA_IO_LO], OBJECT(br),
+                             "pci_bridge_vga_io_lo", &br->address_space_io,
+                             QEMU_PCI_VGA_IO_LO_BASE, QEMU_PCI_VGA_IO_LO_SIZE);
+    memory_region_init_alias(&alias_vga[QEMU_PCI_VGA_IO_HI], OBJECT(br),
+                             "pci_bridge_vga_io_hi", &br->address_space_io,
+                             QEMU_PCI_VGA_IO_HI_BASE, QEMU_PCI_VGA_IO_HI_SIZE);
+    memory_region_init_alias(&alias_vga[QEMU_PCI_VGA_MEM], OBJECT(br),
+                             "pci_bridge_vga_mem", &br->address_space_mem,
+                             QEMU_PCI_VGA_MEM_BASE, QEMU_PCI_VGA_MEM_SIZE);
+
+    if (brctl & PCI_BRIDGE_CTL_VGA) {
+        pci_register_vga(pd, &alias_vga[QEMU_PCI_VGA_MEM],
+                         &alias_vga[QEMU_PCI_VGA_IO_LO],
+                         &alias_vga[QEMU_PCI_VGA_IO_HI]);
+    }
+}
+
+static void pci_bridge_region_init(PCIBridge *br)
+{
+    PCIDevice *pd = PCI_DEVICE(br);
+    PCIBus *parent = pci_get_bus(pd);
+    PCIBridgeWindows *w = &br->windows;
+    uint16_t cmd = pci_get_word(pd->config + PCI_COMMAND);
+
+    pci_bridge_init_alias(br, &w->alias_pref_mem,
+                          PCI_BASE_ADDRESS_MEM_PREFETCH,
+                          "pci_bridge_pref_mem",
+                          &br->address_space_mem,
+                          parent->address_space_mem,
+                          cmd & PCI_COMMAND_MEMORY);
+    pci_bridge_init_alias(br, &w->alias_mem,
+                          PCI_BASE_ADDRESS_SPACE_MEMORY,
+                          "pci_bridge_mem",
+                          &br->address_space_mem,
+                          parent->address_space_mem,
+                          cmd & PCI_COMMAND_MEMORY);
+    pci_bridge_init_alias(br, &w->alias_io,
+                          PCI_BASE_ADDRESS_SPACE_IO,
+                          "pci_bridge_io",
+                          &br->address_space_io,
+                          parent->address_space_io,
+                          cmd & PCI_COMMAND_IO);
+
+    pci_bridge_init_vga_aliases(br, parent, w->alias_vga);
+}
+
+static void pci_bridge_region_del(PCIBridge *br, PCIBridgeWindows *w)
+{
+    PCIDevice *pd = PCI_DEVICE(br);
+    PCIBus *parent = pci_get_bus(pd);
+
+    memory_region_del_subregion(parent->address_space_io, &w->alias_io);
+    memory_region_del_subregion(parent->address_space_mem, &w->alias_mem);
+    memory_region_del_subregion(parent->address_space_mem, &w->alias_pref_mem);
+    pci_unregister_vga(pd);
+}
+
+static void pci_bridge_region_cleanup(PCIBridge *br, PCIBridgeWindows *w)
+{
+    object_unparent(OBJECT(&w->alias_io));
+    object_unparent(OBJECT(&w->alias_mem));
+    object_unparent(OBJECT(&w->alias_pref_mem));
+    object_unparent(OBJECT(&w->alias_vga[QEMU_PCI_VGA_IO_LO]));
+    object_unparent(OBJECT(&w->alias_vga[QEMU_PCI_VGA_IO_HI]));
+    object_unparent(OBJECT(&w->alias_vga[QEMU_PCI_VGA_MEM]));
+}
+
+void pci_bridge_update_mappings(PCIBridge *br)
+{
+    PCIBridgeWindows *w = &br->windows;
+
+    /* Make updates atomic to: handle the case of one VCPU updating the bridge
+     * while another accesses an unaffected region. */
+    memory_region_transaction_begin();
+    pci_bridge_region_del(br, w);
+    pci_bridge_region_cleanup(br, w);
+    pci_bridge_region_init(br);
+    memory_region_transaction_commit();
+}
+
+/* default write_config function for PCI-to-PCI bridge */
+void pci_bridge_write_config(PCIDevice *d,
+                             uint32_t address, uint32_t val, int len)
+{
+    PCIBridge *s = PCI_BRIDGE(d);
+    uint16_t oldctl = pci_get_word(d->config + PCI_BRIDGE_CONTROL);
+    uint16_t newctl;
+
+    pci_default_write_config(d, address, val, len);
+
+    if (ranges_overlap(address, len, PCI_COMMAND, 2) ||
+
+        /* io base/limit */
+        ranges_overlap(address, len, PCI_IO_BASE, 2) ||
+
+        /* memory base/limit, prefetchable base/limit and
+           io base/limit upper 16 */
+        ranges_overlap(address, len, PCI_MEMORY_BASE, 20) ||
+
+        /* vga enable */
+        ranges_overlap(address, len, PCI_BRIDGE_CONTROL, 2)) {
+        pci_bridge_update_mappings(s);
+    }
+
+    newctl = pci_get_word(d->config + PCI_BRIDGE_CONTROL);
+    if (~oldctl & newctl & PCI_BRIDGE_CTL_BUS_RESET) {
+        /* Trigger hot reset on 0->1 transition. */
+        bus_cold_reset(BUS(&s->sec_bus));
+    }
+}
+
+void pci_bridge_disable_base_limit(PCIDevice *dev)
+{
+    uint8_t *conf = dev->config;
+
+    pci_byte_test_and_set_mask(conf + PCI_IO_BASE,
+                               PCI_IO_RANGE_MASK & 0xff);
+    pci_byte_test_and_clear_mask(conf + PCI_IO_LIMIT,
+                                 PCI_IO_RANGE_MASK & 0xff);
+    pci_word_test_and_set_mask(conf + PCI_MEMORY_BASE,
+                               PCI_MEMORY_RANGE_MASK & 0xffff);
+    pci_word_test_and_clear_mask(conf + PCI_MEMORY_LIMIT,
+                                 PCI_MEMORY_RANGE_MASK & 0xffff);
+    pci_word_test_and_set_mask(conf + PCI_PREF_MEMORY_BASE,
+                               PCI_PREF_RANGE_MASK & 0xffff);
+    pci_word_test_and_clear_mask(conf + PCI_PREF_MEMORY_LIMIT,
+                                 PCI_PREF_RANGE_MASK & 0xffff);
+    pci_set_long(conf + PCI_PREF_BASE_UPPER32, 0);
+    pci_set_long(conf + PCI_PREF_LIMIT_UPPER32, 0);
+}
+
+/* reset bridge specific configuration registers */
+void pci_bridge_reset(DeviceState *qdev)
+{
+    PCIDevice *dev = PCI_DEVICE(qdev);
+    uint8_t *conf = dev->config;
+
+    conf[PCI_PRIMARY_BUS] = 0;
+    conf[PCI_SECONDARY_BUS] = 0;
+    conf[PCI_SUBORDINATE_BUS] = 0;
+    conf[PCI_SEC_LATENCY_TIMER] = 0;
+
+    /*
+     * the default values for base/limit registers aren't specified
+     * in the PCI-to-PCI-bridge spec. So we don't touch them here.
+     * Each implementation can override it.
+     * typical implementation does
+     * zero base/limit registers or
+     * disable forwarding: pci_bridge_disable_base_limit()
+     * If disable forwarding is wanted, call pci_bridge_disable_base_limit()
+     * after this function.
+     */
+    pci_byte_test_and_clear_mask(conf + PCI_IO_BASE,
+                                 PCI_IO_RANGE_MASK & 0xff);
+    pci_byte_test_and_clear_mask(conf + PCI_IO_LIMIT,
+                                 PCI_IO_RANGE_MASK & 0xff);
+    pci_word_test_and_clear_mask(conf + PCI_MEMORY_BASE,
+                                 PCI_MEMORY_RANGE_MASK & 0xffff);
+    pci_word_test_and_clear_mask(conf + PCI_MEMORY_LIMIT,
+                                 PCI_MEMORY_RANGE_MASK & 0xffff);
+    pci_word_test_and_clear_mask(conf + PCI_PREF_MEMORY_BASE,
+                                 PCI_PREF_RANGE_MASK & 0xffff);
+    pci_word_test_and_clear_mask(conf + PCI_PREF_MEMORY_LIMIT,
+                                 PCI_PREF_RANGE_MASK & 0xffff);
+    pci_set_long(conf + PCI_PREF_BASE_UPPER32, 0);
+    pci_set_long(conf + PCI_PREF_LIMIT_UPPER32, 0);
+
+    pci_set_word(conf + PCI_BRIDGE_CONTROL, 0);
+}
+
+/* default qdev initialization function for PCI-to-PCI bridge */
+void pci_bridge_initfn(PCIDevice *dev, const char *typename)
+{
+    PCIBus *parent = pci_get_bus(dev);
+    PCIBridge *br = PCI_BRIDGE(dev);
+    PCIBus *sec_bus = &br->sec_bus;
+
+    pci_word_test_and_set_mask(dev->config + PCI_STATUS,
+                               PCI_STATUS_66MHZ | PCI_STATUS_FAST_BACK);
+
+    /*
+     * TODO: We implement VGA Enable in the Bridge Control Register
+     * therefore per the PCI to PCI bridge spec we must also implement
+     * VGA Palette Snooping.  When done, set this bit writable:
+     *
+     * pci_word_test_and_set_mask(dev->wmask + PCI_COMMAND,
+     *                            PCI_COMMAND_VGA_PALETTE);
+     */
+
+    pci_config_set_class(dev->config, PCI_CLASS_BRIDGE_PCI);
+    dev->config[PCI_HEADER_TYPE] =
+        (dev->config[PCI_HEADER_TYPE] & PCI_HEADER_TYPE_MULTI_FUNCTION) |
+        PCI_HEADER_TYPE_BRIDGE;
+    pci_set_word(dev->config + PCI_SEC_STATUS,
+                 PCI_STATUS_66MHZ | PCI_STATUS_FAST_BACK);
+
+    /*
+     * If we don't specify the name, the bus will be addressed as <id>.0, where
+     * id is the device id.
+     * Since PCI Bridge devices have a single bus each, we don't need the index:
+     * let users address the bus using the device name.
+     */
+    if (!br->bus_name && dev->qdev.id && *dev->qdev.id) {
+            br->bus_name = dev->qdev.id;
+    }
+
+    qbus_init(sec_bus, sizeof(br->sec_bus), typename, DEVICE(dev),
+              br->bus_name);
+    sec_bus->parent_dev = dev;
+    sec_bus->map_irq = br->map_irq ? br->map_irq : pci_swizzle_map_irq_fn;
+    sec_bus->address_space_mem = &br->address_space_mem;
+    memory_region_init(&br->address_space_mem, OBJECT(br), "pci_bridge_pci", UINT64_MAX);
+    sec_bus->address_space_io = &br->address_space_io;
+    memory_region_init(&br->address_space_io, OBJECT(br), "pci_bridge_io",
+                       4 * GiB);
+    pci_bridge_region_init(br);
+    QLIST_INIT(&sec_bus->child);
+    QLIST_INSERT_HEAD(&parent->child, sec_bus, sibling);
+
+    /* For express secondary buses, secondary latency timer is RO 0 */
+    if (pci_bus_is_express(sec_bus) && !br->pcie_writeable_slt_bug) {
+        dev->wmask[PCI_SEC_LATENCY_TIMER] = 0;
+    }
+}
+
+/* default qdev clean up function for PCI-to-PCI bridge */
+void pci_bridge_exitfn(PCIDevice *pci_dev)
+{
+    PCIBridge *s = PCI_BRIDGE(pci_dev);
+    assert(QLIST_EMPTY(&s->sec_bus.child));
+    QLIST_REMOVE(&s->sec_bus, sibling);
+    pci_bridge_region_del(s, &s->windows);
+    pci_bridge_region_cleanup(s, &s->windows);
+    /* object_unparent() is called automatically during device deletion */
+}
+
+/*
+ * before qdev initialization(qdev_init()), this function sets bus_name and
+ * map_irq callback which are necessary for pci_bridge_initfn() to
+ * initialize bus.
+ */
+void pci_bridge_map_irq(PCIBridge *br, const char* bus_name,
+                        pci_map_irq_fn map_irq)
+{
+    br->map_irq = map_irq;
+    br->bus_name = bus_name;
+}
+
+
+int pci_bridge_qemu_reserve_cap_init(PCIDevice *dev, int cap_offset,
+                                     PCIResReserve res_reserve, Error **errp)
+{
+    if (res_reserve.mem_pref_32 != (uint64_t)-1 &&
+        res_reserve.mem_pref_64 != (uint64_t)-1) {
+        error_setg(errp,
+                   "PCI resource reserve cap: PREF32 and PREF64 conflict");
+        return -EINVAL;
+    }
+
+    if (res_reserve.mem_non_pref != (uint64_t)-1 &&
+        res_reserve.mem_non_pref >= 4 * GiB) {
+        error_setg(errp,
+                   "PCI resource reserve cap: mem-reserve must be less than 4G");
+        return -EINVAL;
+    }
+
+    if (res_reserve.mem_pref_32 != (uint64_t)-1 &&
+        res_reserve.mem_pref_32 >= 4 * GiB) {
+        error_setg(errp,
+                   "PCI resource reserve cap: pref32-reserve  must be less than 4G");
+        return -EINVAL;
+    }
+
+    if (res_reserve.bus == (uint32_t)-1 &&
+        res_reserve.io == (uint64_t)-1 &&
+        res_reserve.mem_non_pref == (uint64_t)-1 &&
+        res_reserve.mem_pref_32 == (uint64_t)-1 &&
+        res_reserve.mem_pref_64 == (uint64_t)-1) {
+        return 0;
+    }
+
+    size_t cap_len = sizeof(PCIBridgeQemuCap);
+    PCIBridgeQemuCap cap = {
+            .len = cap_len,
+            .type = REDHAT_PCI_CAP_RESOURCE_RESERVE,
+            .bus_res = cpu_to_le32(res_reserve.bus),
+            .io = cpu_to_le64(res_reserve.io),
+            .mem = cpu_to_le32(res_reserve.mem_non_pref),
+            .mem_pref_32 = cpu_to_le32(res_reserve.mem_pref_32),
+            .mem_pref_64 = cpu_to_le64(res_reserve.mem_pref_64)
+    };
+
+    int offset = pci_add_capability(dev, PCI_CAP_ID_VNDR,
+                                    cap_offset, cap_len, errp);
+    if (offset < 0) {
+        return offset;
+    }
+
+    memcpy(dev->config + offset + PCI_CAP_FLAGS,
+           (char *)&cap + PCI_CAP_FLAGS,
+           cap_len - PCI_CAP_FLAGS);
+    return 0;
+}
+
+static Property pci_bridge_properties[] = {
+    DEFINE_PROP_BOOL("x-pci-express-writeable-slt-bug", PCIBridge,
+                     pcie_writeable_slt_bug, false),
+    DEFINE_PROP_END_OF_LIST(),
+};
+
+static void pci_bridge_class_init(ObjectClass *klass, void *data)
+{
+    AcpiDevAmlIfClass *adevc = ACPI_DEV_AML_IF_CLASS(klass);
+    DeviceClass *k = DEVICE_CLASS(klass);
+
+    device_class_set_props(k, pci_bridge_properties);
+    adevc->build_dev_aml = build_pci_bridge_aml;
+}
+
+static const TypeInfo pci_bridge_type_info = {
+    .name = TYPE_PCI_BRIDGE,
+    .parent = TYPE_PCI_DEVICE,
+    .instance_size = sizeof(PCIBridge),
+    .class_init = pci_bridge_class_init,
+    .abstract = true,
+    .interfaces = (InterfaceInfo[]) {
+        { TYPE_ACPI_DEV_AML_IF },
+        { },
+    },
+};
+
+static void pci_bridge_register_types(void)
+{
+    type_register_static(&pci_bridge_type_info);
+}
+
+type_init(pci_bridge_register_types)
+```

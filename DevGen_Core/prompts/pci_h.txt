@@ -1,0 +1,9 @@
+/* Related register/macros/constants from driver (Stage①) */
+/* Example:
+ *   #define VENDOR_ID 0x8086
+ *   #define DEVICE_ID 0x19e3
+ *   #define CLASS_ID   PCI_CLASS_OTHERS
+ *   #define FACT_IRQ        0x00000001
+ *   #define DMA_IRQ         0x00000100
+ */
+#Related_Config_Info#

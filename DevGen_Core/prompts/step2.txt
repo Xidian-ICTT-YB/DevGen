@@ -1,0 +1,194 @@
+# Implementation Phase – Stage 2 (FULL BEHAVIOR IMPLEMENTATION)
+
+You are implementing the complete QEMU virtual PCI device for the Linux driver located at `DRIVER_PATH`.
+
+This phase converts the **Stage-1 structure-only template** into a **fully
+functional, compilable QEMU C device model** targeting **QEMU 8.2.10**.
+
+This is the ONLY phase where runtime behavior is implemented.
+
+--------------------------------------------------------------------
+## CORE OBJECTIVE
+--------------------------------------------------------------------
+
+Generate a **complete QEMU C source file** that:
+- Compiles cleanly on QEMU 8.2.10
+- Correctly emulates the hardware behavior required for the Linux driver
+- Allows the driver to successfully probe, initialize, and operate
+- Implements ONLY what is explicitly visible in the provided Linux driver code
+
+All behavior MUST be derived strictly from the driver source.
+No speculation or domain-knowledge invention is allowed.
+
+--------------------------------------------------------------------
+## REQUIRED IMPLEMENTATIONS (MANDATORY)
+--------------------------------------------------------------------
+
+You MUST implement all applicable items below, strictly based on driver code:
+
+1. MMIO / PIO read and write handlers  
+   - Derived from explicit register access patterns in the driver
+
+2. BAR layout
+   - BAR count, BAR size, BAR type
+   - memory_region_init_io / memory_region_init_ram usage
+   - pci_register_bar
+
+3. DMA logic (ONLY if explicitly used by the driver)
+   - Descriptor formats
+   - Rings / buffers
+   - dma_memory_read / dma_memory_write
+   - Only when formats and flows are visible in code
+
+4. Interrupt logic
+   - Legacy INTx / MSI / MSI-X
+   - Exactly matching driver usage
+   - IRQ raise/lower/pulse behavior as required
+
+5. Reset logic
+   - Reflecting driver reset sequences
+
+6. Initialization state
+   - Default register values
+   - State required for probe() success
+
+7. PCI realize / unrealize logic
+   - Device initialization
+   - IRQ/MSI/MSI-X setup
+   - BAR registration
+
+8. Runtime state transitions
+   - start / stop
+   - open / close
+   - tx / rx
+   - enable / disable paths
+   - ONLY if visible in driver code
+
+9. Any additional behavior strictly required for:
+   - probe()
+   - normal driver operation
+
+--------------------------------------------------------------------
+## STRICT PROHIBITIONS
+--------------------------------------------------------------------
+
+You MUST NOT:
+
+- Move code outside existing placeholder regions
+- Modify Stage-1 structure layout
+- Invent registers, BARs, DMA formats, or IRQ mechanisms
+- Add debug prints, fake logic, or placeholder behavior
+- Output pseudo-code, TODOs, ellipses, or explanations
+- Implement behavior not explicitly demonstrated in the driver
+- Rely on assumptions or typical hardware patterns
+
+--------------------------------------------------------------------
+## DRIVER-SPECIFIC HARD CONSTRAINTS
+--------------------------------------------------------------------
+
+1. NEVER modify:
+   `#define TYPE_PCIBASE_DEVICE`
+
+2. NEVER include or reference:
+   - pci_set_dma
+   - pci_set_dma_mask
+
+3. NEVER alter non-placeholder code.
+   Example:
+   - Do NOT change `msix_uninit(pdev, NULL, 0)`
+   - Do NOT refactor or simplify existing template logic
+
+--------------------------------------------------------------------
+## MISSING IMPLEMENTATION RULE
+--------------------------------------------------------------------
+
+If the driver references any function, struct, enum, macro, or constant that is
+NOT provided in the input:
+
+- DO NOT guess or invent it
+- Add ONLY its name to `"needed_sources"` using one of:
+   - function:XXX
+   - struct:XXX
+   - enum:XXX
+   - define:XXX
+
+You MUST NOT list:
+- Linux kernel public APIs
+- Standard PCI macros
+- Generic kernel helpers
+
+--------------------------------------------------------------------
+## BEHAVIOR INFERENCE BOUNDARY
+--------------------------------------------------------------------
+
+You MAY infer behavior ONLY when it is directly demonstrated by the driver:
+
+Allowed inference sources:
+- Explicit register read/write sequences
+- DMA descriptor parsing logic
+- ISR implementations
+- probe() initialization flows
+- Buffer allocation and mapping calls
+- Bitmask / atomic operations
+
+You MUST NOT:
+- Invent undocumented hardware behavior
+- Infer functionality from naming or comments
+- Assume standard device behavior
+
+--------------------------------------------------------------------
+## QEMU API RESTRICTIONS (QEMU 8.2.10 ONLY)
+--------------------------------------------------------------------
+
+You may use ONLY stable APIs available in QEMU 8.2.10, including:
+- memory_region_init_io
+- memory_region_init_ram
+- pci_register_bar
+- pci_default_read_config
+- pci_default_write_config
+- msi_init
+- msix_init
+- qemu_irq_raise / qemu_irq_lower
+- dma_memory_read / dma_memory_write
+- vmstate_register and vmstate helpers
+
+Do NOT use APIs introduced after QEMU 8.2.10.
+
+--------------------------------------------------------------------
+## OUTPUT FORMAT (STRICT)
+--------------------------------------------------------------------
+
+```json
+{
+  "code": "/* complete QEMU C source file, JSON-escaped */",
+  "needed_sources": [
+    "function:example_missing_func",
+    "struct:example_missing_struct"
+  ]
+}
+```
+-"code" MUST be a valid JSON string (escaped quotes and newlines).
+-"needed_sources" MUST contain ONLY missing driver-specific symbols.
+-If nothing is missing, output "needed_sources": [].
+-NO explanations or text outside the JSON object.
+
+# INPUTS
+## Stage-1 Completed QEMU Structural Template:
+```QEMU 
+`QEMU_CODE`
+```
+
+## Linux Driver Source (`DRIVER_PATH`):
+```c
+`Relevant_Source`
+``` 
+
+# YOUR TASK
+## Generate a complete, compilable, functional QEMU C device model that:
+   1.Implements all required behavior strictly following the Stage-1 structure.
+   2.Uses ONLY behavior explicitly visible in the provided Linux driver source.
+   3.Obeys all constraints and prohibitions above.
+   4.Lists any missing driver-specific symbols in "needed_sources".
+Produce the JSON output exactly as specified.
+
+## Your output
