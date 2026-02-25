@@ -1,0 +1,1007 @@
+failed to run ["ssh" "-p" "14891" "-F" "/dev/null" "-o" "UserKnownHostsFile=/dev/null" "-o" "IdentitiesOnly=yes" "-o" "BatchMode=yes" "-o" "StrictHostKeyChecking=no" "-o" "ConnectTimeout=10" "-i" "/home/wmy/Fuzzer/third_tool/Image-fuzz-6.18/bullseye.id_rsa" "root@localhost" "pwd"]: exit status 255[    0.000000] Linux version 6.18.0 (wmy@wmy) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #3 SMP PREEMPT_DYNAMIC Sat Dec 20 12:08:22 CST 2025
+[    0.000000] Command line: root=/dev/sda console=ttyS0 
+[    0.000000] x86/CPU: Model not found in latest microcode list
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000bffdffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000bffe0000-0x00000000bfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+[    0.000000] printk: legacy bootconsole [earlyser0] enabled
+[    0.000000] ERROR: earlyprintk= earlyser already used
+[    0.000000] ERROR: earlyprintk= earlyser already used
+[    0.000000] Hash pointers mode set to never.
+[    0.000000] Malformed early option 'vsyscall'
+[    0.000000] Malformed early option 'numa'
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] APIC: Static calls initialized
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[    0.000000] DMI: Memory slots populated: 1/1
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000008] kvm-clock: using sched offset of 1103318084 cycles
+[    0.002555] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.010713] tsc: Detected 2803.204 MHz processor
+[    0.019068] last_pfn = 0x140000 max_arch_pfn = 0x400000000
+[    0.022792] MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+[    0.026959] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.030536] last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+[    0.041895] found SMP MP-table at [mem 0x000f5460-0x000f546f]
+[    0.047551] ACPI: Early table checksum verification disabled
+[    0.050977] ACPI: RSDP 0x00000000000F5250 000014 (v00 BOCHS )
+[    0.053956] ACPI: RSDT 0x00000000BFFE1D7B 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.058486] ACPI: FACP 0x00000000BFFE1C17 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.063013] ACPI: DSDT 0x00000000BFFE0040 001BD7 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.067445] ACPI: FACS 0x00000000BFFE0000 000040
+[    0.069929] ACPI: APIC 0x00000000BFFE1C8B 000090 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.074449] ACPI: HPET 0x00000000BFFE1D1B 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.079016] ACPI: WAET 0x00000000BFFE1D53 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.083518] ACPI: Reserving FACP table memory at [mem 0xbffe1c17-0xbffe1c8a]
+[    0.087234] ACPI: Reserving DSDT table memory at [mem 0xbffe0040-0xbffe1c16]
+[    0.090876] ACPI: Reserving FACS table memory at [mem 0xbffe0000-0xbffe003f]
+[    0.094523] ACPI: Reserving APIC table memory at [mem 0xbffe1c8b-0xbffe1d1a]
+[    0.098564] ACPI: Reserving HPET table memory at [mem 0xbffe1d1b-0xbffe1d52]
+[    0.102972] ACPI: Reserving WAET table memory at [mem 0xbffe1d53-0xbffe1d7a]
+[    0.110175] No NUMA configuration found
+[    0.112769] Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+[    0.117141] NODE_DATA(0) allocated [mem 0x13fff9300-0x13fffccbf]
+[    0.210327] Zone ranges:
+[    0.211810]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.215065]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.218059]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.221325] Movable zone start for each node
+[    0.223541] Early memory node ranges
+[    0.225278]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.228393]   node   0: [mem 0x0000000000100000-0x00000000bffdffff]
+[    0.231381]   node   0: [mem 0x0000000100000000-0x000000013fffffff]
+[    0.234593] Initmem setup node 0 [mem 0x0000000000001000-0x000000013fffffff]
+[    0.238381] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.241552] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.277367] On node 0, zone Normal: 32 pages in unavailable ranges
+[    1.092307] KernelAddressSanitizer initialized (generic)
+[    1.098963] ACPI: PM-Timer IO Port: 0x608
+[    1.102090] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    1.106347] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    1.110784] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    1.114833] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    1.118872] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    1.122989] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    1.127308] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    1.131512] ACPI: Using ACPI (MADT) for SMP configuration information
+[    1.135378] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    1.138693] CPU topo: Max. logical packages:   1
+[    1.141644] CPU topo: Max. logical dies:       1
+[    1.144437] CPU topo: Max. dies per package:   1
+[    1.147136] CPU topo: Max. threads per core:   1
+[    1.149720] CPU topo: Num. cores per package:     4
+[    1.152250] CPU topo: Num. threads per package:   4
+[    1.154980] CPU topo: Allowing 4 present CPUs plus 0 hotplug CPUs
+[    1.158707] kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+[    1.163159] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    1.167616] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+[    1.172338] PM: hibernation: Registered nosave memory: [mem 0xbffe0000-0xffffffff]
+[    1.177029] [mem 0xc0000000-0xfeffbfff] available for PCI devices
+[    1.181000] Booting paravirtualized kernel on KVM
+[    1.184113] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    1.216690] setup_percpu: NR_CPUS:64 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+[    1.223767] percpu: Embedded 67 pages/cpu s237520 r8192 d28720 u524288
+[    1.227614] Kernel command line: net.ifnames=0 earlyprintk=serial sysctl.kernel.hung_task_all_cpu_backtrace=1 ima_policy=tcb nf-conntrack-ftp.ports=20000 nf-conntrack-tftp.ports=20000 nf-conntrack-sip.ports=20000 nf-conntrack-irc.ports=20000 nf-conntrack-sane.ports=20000 binder.debug_mask=0 rcupdate.rcu_expedited=1 no_hash_pointers page_owner=on sysctl.vm.nr_hugepages=4 sysctl.vm.nr_overcommit_hugepages=4 root=/dev/sda console=ttyS0 vsyscall=native numa=fake=2 kvm-intel.nested=1 spec_store_bypass_disable=prctl nopcid vivid.n_devs=16 vivid.multiplanar=1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2 netrom.nr_ndevs=16 rose.rose_ndevs=16 dummy_hcd.num=8 watchdog_thresh=55 workqueue.watchdog_thresh=140 sysctl.net.core.netdev_unregister_timeout_secs=140 panic_on_warn=0 root=/dev/sda console=ttyS0 
+[    1.269233] Unknown kernel command line parameters "ima_policy=tcb page_owner=on", will be passed to user space.
+[    1.274998] printk: log buffer data + meta data: 262144 + 917504 = 1179648 bytes
+[    1.285136] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    1.292674] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    1.297842] software IO TLB: area num 4.
+[    1.423400] Fallback order for Node 0: 0 
+[    1.423467] Built 1 zonelists, mobility grouping on.  Total pages: 1048446
+[    1.432507] Policy zone: Normal
+[    1.434554] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    1.438616] stackdepot: allocating hash table via alloc_large_system_hash
+[    1.442953] stackdepot hash table entries: 1048576 (order: 12, 16777216 bytes, linear)
+[    1.473908] stackdepot: allocating space for 8192 stack pools via memblock
+[    1.535777] **********************************************************
+[    1.539697] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    1.543174] **                                                      **
+[    1.546463] ** This system shows unhashed kernel memory addresses   **
+[    1.549825] ** via the console, logs, and other interfaces. This    **
+[    1.553175] ** might reduce the security of your system.            **
+[    1.556954] **                                                      **
+[    1.560864] ** If you see this message and you are not debugging    **
+[    1.564810] ** the kernel, report this immediately to your system   **
+[    1.568894] ** administrator!                                       **
+[    1.573052] **                                                      **
+[    1.576954] ** Use hash_pointers=always to force this mode off      **
+[    1.580912] **                                                      **
+[    1.584926] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    1.588462] **********************************************************
+[    1.592750] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    1.596808] Kernel/User page tables isolation: enabled
+[    1.664268] ftrace: allocating 76706 entries in 300 pages
+[    1.668292] ftrace: allocated 300 pages with 4 groups
+[    1.678984] Dynamic Preempt: voluntary
+[    1.683754] Running RCU self tests
+[    1.686182] Running RCU synchronous self tests
+[    1.689024] rcu: Preemptible hierarchical RCU implementation.
+[    1.692773] rcu: 	RCU event tracing is enabled.
+[    1.695797] rcu: 	RCU lockdep checking is enabled.
+[    1.698864] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=4.
+[    1.702901] 	All grace periods are expedited (rcu_expedited).
+[    1.706375] 	Trampoline variant of Tasks RCU enabled.
+[    1.709367] 	Rude variant of Tasks RCU enabled.
+[    1.712167] 	Tracing variant of Tasks RCU enabled.
+[    1.715235] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    1.720088] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    1.725036] Running RCU synchronous self tests
+[    1.727936] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    1.733448] RCU Tasks Rude: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    1.739514] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    1.901789] NR_IRQS: 4352, nr_irqs: 456, preallocated irqs: 16
+[    1.906945] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    1.957497] Console: colour VGA+ 80x25
+[    1.960118] printk: legacy console [ttyS0] enabled
+[    1.960118] printk: legacy console [ttyS0] enabled
+[    1.966077] printk: legacy bootconsole [earlyser0] disabled
+[    1.966077] printk: legacy bootconsole [earlyser0] disabled
+[    1.973567] Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+[    1.978713] ... MAX_LOCKDEP_SUBCLASSES:  8
+[    1.981707] ... MAX_LOCK_DEPTH:          48
+[    1.984818] ... MAX_LOCKDEP_KEYS:        8192
+[    1.987804] ... CLASSHASH_SIZE:          4096
+[    1.990667] ... MAX_LOCKDEP_ENTRIES:     32768
+[    1.993780] ... MAX_LOCKDEP_CHAINS:      65536
+[    1.996664] ... CHAINHASH_SIZE:          32768
+[    1.999309]  memory used by lock dependency info: 6429 kB
+[    2.002770]  memory used for stack traces: 4224 kB
+[    2.005885]  per task-struct memory footprint: 1920 bytes
+[    2.009657] ACPI: Core revision 20250807
+[    2.014410] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    2.021721] APIC: Switch to symmetric I/O mode setup
+[    2.041879] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    2.046054] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2868139ef5d, max_idle_ns: 440795282642 ns
+[    2.053032] Calibrating delay loop (skipped) preset value.. 5606.40 BogoMIPS (lpj=2803204)
+[    2.056986] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    2.056996] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    2.058037] mitigations: Enabled attack vectors: user_kernel, user_user, SMT mitigations: auto
+[    2.059016] Speculative Store Bypass: Vulnerable
+[    2.060010] Spectre V2 : Mitigation: Retpolines
+[    2.060994] ITS: Mitigation: Aligned branch/return thunks
+[    2.061993] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+[    2.063002] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    2.063994] Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+[    2.064998] active return thunk: its_return_thunk
+[    2.066026] x86/fpu: x87 FPU will use FXSAVE
+[    2.214701] Freeing SMP alternatives memory: 60K
+[    2.216036] pid_max: default: 32768 minimum: 301
+[    2.218034] LSM: initializing lsm=capability,selinux
+[    2.219338] SELinux:  Initializing.
+[    2.224361] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    2.226008] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    2.237682] Running RCU synchronous self tests
+[    2.237995] Running RCU synchronous self tests
+[    2.342986] smpboot: CPU0: Intel QEMU Virtual CPU version 2.5+ (family: 0xf, model: 0x6b, stepping: 0x1)
+[    2.346704] Performance Events: unsupported Netburst CPU model 107 no PMU driver, software events only.
+[    2.347378] signal: max sigframe size: 1440
+[    2.349381] rcu: Hierarchical SRCU implementation.
+[    2.350007] rcu: 	Max phase no-delay instances is 400.
+[    2.353530] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    2.382573] NMI watchdog: Perf NMI watchdog permanently disabled
+[    2.384434] smp: Bringing up secondary CPUs ...
+[    2.387420] smpboot: x86: Booting SMP configuration:
+[    2.387996] .... node  #0, CPUs:      #1 #2 #3
+[    2.414786] smp: Brought up 1 node, 4 CPUs
+[    2.415996] smpboot: Total of 4 processors activated (22425.63 BogoMIPS)
+[    2.422098] Memory: 3327776K/4193784K available (78319K kernel code, 14120K rwdata, 18148K rodata, 14700K init, 16336K bss, 855780K reserved, 0K cma-reserved)
+[    2.432109] devtmpfs: initialized
+[    2.457347] Running RCU synchronous self tests
+[    2.458075] Running RCU synchronous self tests
+[    2.462394] Running RCU Tasks wait API self tests
+[    2.465003] Running RCU Tasks Rude wait API self tests
+[    2.466012] Running RCU Tasks Trace wait API self tests
+[    2.480031] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    2.481103] posixtimers hash table entries: 2048 (order: 6, 147456 bytes, linear)
+[    2.482570] futex hash table entries: 1024 (131072 bytes on 1 NUMA nodes, total 128 KiB, linear).
+[    2.485391] pinctrl core: initialized pinctrl subsystem
+[    2.494993] PM: RTC time: 02:08:43, date: 2026-01-07
+[    2.501010] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    2.503009] Callback from call_rcu_tasks_trace() invoked.
+[    2.511543] audit: initializing netlink subsys (disabled)
+[    2.514367] audit: type=2000 audit(1767751723.845:1): state=initialized audit_enabled=0 res=1
+[    2.521803] thermal_sys: Registered thermal governor 'step_wise'
+[    2.521810] thermal_sys: Registered thermal governor 'user_space'
+[    2.523242] cpuidle: using governor menu
+[    2.532335] PCI: Using configuration type 1 for base access
+[    2.536553] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    2.547036] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    2.551998] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    2.581447] ACPI: Added _OSI(Module Device)
+[    2.589011] ACPI: Added _OSI(Processor Device)
+[    2.593135] ACPI: Added _OSI(Processor Aggregator Device)
+[    2.950994] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    2.995111] ACPI: Interpreter enabled
+[    2.999682] ACPI: PM: (supports S0 S3 S4 S5)
+[    3.003796] ACPI: Using IOAPIC for interrupt routing
+[    3.008750] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    3.015995] PCI: Using E820 reservations for host bridge windows
+[    3.032662] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    3.450727] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    3.456132] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+[    3.462010] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    3.469998] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+[    3.470070] PCI host bridge to bus 0000:00
+[    3.470208] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    3.470208] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    3.470208] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    3.470208] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    3.473385] pci_bus 0000:00: root bus resource [mem 0x140000000-0x1bfffffff window]
+[    3.478055] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    3.481376] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+[    3.500687] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+[    3.511986] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180 conventional PCI endpoint
+[    3.511986] pci 0000:00:01.1: BAR 4 [io  0xc0a0-0xc0af]
+[    3.511986] pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+[    3.511986] pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+[    3.511986] pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+[    3.513185] pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+[    3.522722] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+[    3.522747] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+[    3.522747] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+[    3.529986] pci 0000:00:02.0: [1234:1111] type 00 class 0x030000 conventional PCI endpoint
+[    3.546007] pci 0000:00:02.0: BAR 0 [mem 0xfd000000-0xfdffffff pref]
+[    3.553287] pci 0000:00:02.0: BAR 2 [mem 0xfc070000-0xfc070fff]
+[    3.557215] pci 0000:00:02.0: ROM [mem 0xfc060000-0xfc06ffff pref]
+[    3.571638] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    3.609530] pci 0000:00:03.0: [1af4:1005] type 00 class 0x00ff00 conventional PCI endpoint
+[    3.616057] pci 0000:00:03.0: BAR 0 [io  0xc080-0xc09f]
+[    3.617995] pci 0000:00:03.0: BAR 1 [mem 0xfc071000-0xfc071fff]
+[    3.620090] pci 0000:00:03.0: BAR 4 [mem 0xfe000000-0xfe003fff 64bit pref]
+[    3.854691] pci 0000:00:04.0: [1af4:1009] type 00 class 0x000200 conventional PCI endpoint
+[    3.865054] pci 0000:00:04.0: BAR 0 [io  0xc000-0xc03f]
+[    3.870068] pci 0000:00:04.0: BAR 1 [mem 0xfc072000-0xfc072fff]
+[    3.875214] pci 0000:00:04.0: BAR 4 [mem 0xfe004000-0xfe007fff 64bit pref]
+[    4.040362] pci 0000:00:05.0: [14f1:5b7a] type 00 class 0x040000 conventional PCI endpoint
+[    4.050055] pci 0000:00:05.0: BAR 0 [mem 0xf8000000-0xfbffffff]
+[    4.216010] pci 0000:00:06.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    4.226059] pci 0000:00:06.0: BAR 0 [mem 0xfc040000-0xfc05ffff]
+[    4.230060] pci 0000:00:06.0: BAR 1 [io  0xc040-0xc07f]
+[    4.234188] pci 0000:00:06.0: ROM [mem 0xfc000000-0xfc03ffff pref]
+[    4.556204] ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+[    4.581176] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    4.602114] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    4.621254] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[    4.629919] ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+[    4.702288] iommu: Default domain type: Translated
+[    4.705996] iommu: DMA domain TLB invalidation policy: lazy mode
+[    4.741855] SCSI subsystem initialized
+[    4.748819] ACPI: bus type USB registered
+[    4.753916] usbcore: registered new interface driver usbfs
+[    4.758519] usbcore: registered new interface driver hub
+[    4.762560] usbcore: registered new device driver usb
+[    4.769280] mc: Linux media interface: v0.10
+[    4.773204] videodev: Linux video capture interface: v2.00
+[    4.778151] pps_core: LinuxPPS API ver. 1 registered
+[    4.781994] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    4.788106] Callback from call_rcu_tasks() invoked.
+[    4.787379] PTP clock support registered
+[    4.799770] EDAC MC: Ver: 3.0.0
+[    4.811039] FPGA manager framework
+[    4.816471] Advanced Linux Sound Architecture Driver Initialized.
+[    4.837809] Bluetooth: Core ver 2.22
+[    4.841611] NET: Registered PF_BLUETOOTH protocol family
+[    4.844995] Bluetooth: HCI device and connection manager initialized
+[    4.849302] Bluetooth: HCI socket layer initialized
+[    4.852155] Bluetooth: L2CAP socket layer initialized
+[    4.855327] Bluetooth: SCO socket layer initialized
+[    4.859317] NET: Registered PF_ATMPVC protocol family
+[    4.861995] NET: Registered PF_ATMSVC protocol family
+[    4.865364] NetLabel: Initializing
+[    4.868046] NetLabel:  domain hash size = 128
+[    4.869992] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    4.874858] NetLabel:  unlabeled traffic allowed by default
+[    4.883461] nfc: nfc_init: NFC Core ver 0.1
+[    4.886008] NET: Registered PF_NFC protocol family
+[    4.889132] mctp: management component transport protocol core
+[    4.893013] NET: Registered PF_MCTP protocol family
+[    4.896287] PCI: Using ACPI for IRQ routing
+[    4.901384] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    4.901986] pci 0000:00:02.0: vgaarb: bridge control possible
+[    4.901986] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    4.913079] vgaarb: loaded
+[    4.918370] hpet: 3 channels of 0 reserved for per-cpu timers
+[    4.922165] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    4.924992] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    4.935802] clocksource: Switched to clocksource kvm-clock
+[    5.018568] VFS: Disk quotas dquot_6.6.0
+[    5.021312] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    5.033326] pnp: PnP ACPI init
+[    5.055031] pnp: PnP ACPI: found 6 devices
+[    5.169501] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    5.175696] NET: Registered PF_INET protocol family
+[    5.180251] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    5.193374] tcp_listen_portaddr_hash hash table entries: 2048 (order: 6, 147456 bytes, linear)
+[    5.199398] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    5.204261] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    5.213269] TCP bind hash table entries: 32768 (order: 11, 4718592 bytes, vmalloc hugepage)
+[    5.229358] TCP: Hash tables configured (established 32768 bind 32768)
+[    5.234621] UDP hash table entries: 2048 (order: 7, 524288 bytes, linear)
+[    5.239620] UDP-Lite hash table entries: 2048 (order: 7, 524288 bytes, linear)
+[    5.246846] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    5.256251] RPC: Registered named UNIX socket transport module.
+[    5.259887] RPC: Registered udp transport module.
+[    5.262956] RPC: Registered tcp transport module.
+[    5.265998] RPC: Registered tcp-with-tls transport module.
+[    5.269192] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    5.278502] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    5.282507] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    5.285642] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    5.288792] pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+[    5.292359] pci_bus 0000:00: resource 8 [mem 0x140000000-0x1bfffffff window]
+[    5.297258] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    5.300207] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    5.303607] PCI: CLS 0 bytes, default 64
+[    5.306364] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    5.310716] software IO TLB: mapped [mem 0x00000000bbfe0000-0x00000000bffe0000] (64MB)
+[    5.316328] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2868139ef5d, max_idle_ns: 440795282642 ns
+[    5.352564] Initialise system trusted keyrings
+[    5.356850] workingset: timestamp_bits=40 max_order=20 bucket_order=0
+[    5.370607] NFS: Registering the id_resolver key type
+[    5.373896] Key type id_resolver registered
+[    5.376411] Key type id_legacy registered
+[    5.380430] 9p: Installing v9fs 9p2000 file system support
+[    5.418418] Key type asymmetric registered
+[    5.421661] Asymmetric key parser 'x509' registered
+[    5.426831] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[    5.433136] io scheduler mq-deadline registered
+[    5.435834] io scheduler kyber registered
+[    5.444687] IPMI message handler: version 39.2
+[    5.452137] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    5.460605] ACPI: button: Power Button [PWRF]
+[    5.477975] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    5.489569] 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    5.516481] Non-volatile memory driver v1.3
+[    5.519699] Linux agpgart interface v0.103
+[    5.526015] parport_pc 00:03: reported by Plug and Play ACPI
+[    5.531864] parport0: PC-style at 0x378, irq 7 [PCSPP(,...)]
+[    5.660022] loop: module loaded
+[    5.668037] megaraid cmm: 2.20.2.7 (Release Date: Sun Jul 16 00:01:03 EST 2006)
+[    5.675941] hv_vmbus: registering driver hv_storvsc
+[    5.731859] scsi host0: ata_piix
+[    5.742825] scsi host1: ata_piix
+[    5.746479] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc0a0 irq 14 lpm-pol 0
+[    5.750947] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc0a8 irq 15 lpm-pol 0
+[    5.763219] Rounding down aligned max_sectors from 4294967295 to 4294967288
+[    5.770636] db_root: cannot open: /etc/target
+[    5.776160] MACsec IEEE 802.1AE
+[    5.791136] tun: Universal TUN/TAP device driver, 1.6
+[    5.797479] arcnet: arcnet loaded
+[    5.799986] CAN device driver interface
+[    5.802696] sja1000 CAN netdevice driver
+[    5.805639] e1000: Intel(R) PRO/1000 Network Driver
+[    5.808954] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    5.915573] ata1: found unknown device (class 0)
+[    5.921462] ata2: found unknown device (class 0)
+[    5.931911] ata1.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[    5.937533] ata1.00: 536870912 sectors, multi 16: LBA48 
+[    5.943434] ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[    5.959996] scsi 0:0:0:0: Direct-Access     ATA      QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+[    5.980871] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    5.988741] sd 0:0:0:0: [sda] 536870912 512-byte logical blocks: (275 GB/256 GiB)
+[    5.995906] scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+[    6.001466] sd 0:0:0:0: [sda] Write Protect is off
+[    6.016642] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    6.027689] sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+[    6.087486] sd 0:0:0:0: [sda] Attached SCSI disk
+[    6.093540] sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+[    6.097980] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    6.146733] sr 1:0:0:0: Attached scsi generic sg1 type 5
+[   14.263489] ACPI: \_SB_.LNKB: Enabled at IRQ 10
+[   14.899225] e1000 0000:00:06.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[   14.903473] e1000 0000:00:06.0 eth0: Intel(R) PRO/1000 Network Connection
+[   14.911619] QLogic FastLinQ 4xxxx Core Module qed
+[   14.915611] hdlc: HDLC support module revision 1.22
+[   14.922701] usbcore: registered new device driver r8152-cfgselector
+[   14.926589] usbcore: registered new interface driver r8152
+[   14.929842] usbcore: registered new interface driver cdc_ether
+[   14.934340] usbcore: registered new interface driver cdc_subset
+[   14.938388] usbcore: registered new interface driver r8153_ecm
+[   14.947641] VFIO - User Level meta-driver version: 0.3
+[   14.958271] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[   14.967923] serio: i8042 KBD port at 0x60,0x64 irq 1
+[   14.970819] serio: i8042 AUX port at 0x60,0x64 irq 12
+[   14.974506] hv_vmbus: registering driver hyperv_keyboard
+[   14.985556] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[   14.986854] rtc_cmos 00:05: RTC can wake from S4
+[   15.007474] rtc_cmos 00:05: registered as rtc0
+[   15.012677] rtc_cmos 00:05: alarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[   15.018647] i2c_dev: i2c /dev entries driver
+[   15.022280] gspca_main: v2.14.0 registered
+[   15.028386] Driver for 1-wire Dallas network protocol.
+[   15.037672] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[   15.043583] Modular ISDN core version 1.1.29
+[   15.048805] NET: Registered PF_ISDN protocol family
+[   15.051508] intel_pstate: CPU model not supported
+[   15.055070] sdhci: Secure Digital Host Controller Interface driver
+[   15.058991] sdhci: Copyright(c) Pierre Ossman
+[   15.070302] hid: raw HID events driver (C) Jiri Kosina
+[   15.088783] usbcore: registered new interface driver usbhid
+[   15.093345] usbhid: USB HID core driver
+[   15.097869] comedi: version 0.7.76 - http://www.comedi.org
+[   15.108479] SPI driver st-gyro-spi has no spi_device_id for st,l3g4200d-gyro
+[   15.112900] SPI driver st-gyro-spi has no spi_device_id for st,lsm330d-gyro
+[   15.117604] SPI driver st-gyro-spi has no spi_device_id for st,lsm330dl-gyro
+[   15.122834] SPI driver st-gyro-spi has no spi_device_id for st,lsm330dlc-gyro
+[   15.128464] SPI driver st-gyro-spi has no spi_device_id for st,l3gd20-gyro
+[   15.133878] SPI driver st-gyro-spi has no spi_device_id for st,l3gd20h-gyro
+[   15.139447] SPI driver st-gyro-spi has no spi_device_id for st,l3g4is-gyro
+[   15.145165] SPI driver st-gyro-spi has no spi_device_id for st,lsm330-gyro
+[   15.150957] SPI driver st-gyro-spi has no spi_device_id for st,lsm9ds0-gyro
+[   15.159698] SPI driver st-magn-spi has no spi_device_id for st,lis3mdl-magn
+[   15.165161] SPI driver st-magn-spi has no spi_device_id for st,lsm303agr-magn
+[   15.170843] SPI driver st-magn-spi has no spi_device_id for st,lsm9ds1-magn
+[   15.176534] SPI driver st-magn-spi has no spi_device_id for st,lsm303c-magn
+[   15.184478] gnss: GNSS driver registered with major 508
+[   15.202667] nf_conntrack_irc: failed to register helpers
+[   15.462552] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input3
+[   16.228032] nf_conntrack_sip: failed to register helpers
+[   16.234687] Initializing XFRM netlink socket
+[   16.238385] NET: Registered PF_INET6 protocol family
+[   16.252489] Segment Routing with IPv6
+[   16.255802] In-situ OAM (IOAM) with IPv6
+[   16.260240] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[   16.268554] NET: Registered PF_PACKET protocol family
+[   16.273353] can: controller area network core
+[   16.276543] NET: Registered PF_CAN protocol family
+[   16.279491] can: raw protocol
+[   16.281452] can: broadcast manager protocol
+[   16.284131] can: netlink gateway - max_hops=1
+[   16.288173] RPC: Registered rdma transport module.
+[   16.291142] RPC: Registered rdma backchannel transport module.
+[   16.296303] NET: Registered PF_PHONET protocol family
+[   16.300287] 8021q: 802.1Q VLAN Support v1.8
+[   16.303951] 9pnet: Installing 9P2000 support
+[   16.307247] NET: Registered PF_IEEE802154 protocol family
+[   16.310846] Key type dns_resolver registered
+[   16.327643] IPI shorthand broadcast: enabled
+[   16.500615] sched_clock: Marking stable (16362198678, 137989489)->(16904462419, -404274252)
+[   16.514701] registered taskstats version 1
+[   16.517427] Loading compiled-in X.509 certificates
+[   16.736230] Demotion targets for Node 0: null
+[   16.740187] kmemleak: Kernel memory leak detector initialized (mem pool available: 14702)
+[   16.740240] kmemleak: Automatic memory scanning thread started
+[   16.751479] PM:   Magic number: 10:766:105
+[   16.754521] netconsole: network logging started
+[   16.761023] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   16.770244] kworker/u16:0 (103) used greatest stack depth: 28648 bytes left
+[   16.777834] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   16.784486] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[   16.790496] faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+[   16.791996] clk: Disabling unused clocks
+[   16.796647] cfg80211: failed to load regulatory.db
+[   16.799749] ALSA device list:
+[   16.805355]   No soundcards found.
+[   16.811918] check access for rdinit=/init failed: -2, ignoring
+[   16.814410] md: Waiting for all devices to be available before autodetect
+[   16.817539] md: If you don't use raid, use raid=noautodetect
+[   16.820125] md: Autodetecting RAID arrays.
+[   16.822107] md: autorun ...
+[   16.823363] md: ... autorun DONE.
+[   17.163979] EXT4-fs (sda): mounted filesystem 7aa2f14d-7352-4fb8-97c6-28d78a5d37aa ro with ordered data mode. Quota mode: none.
+[   17.169632] VFS: Mounted root (ext4 filesystem) readonly on device 8:0.
+[   17.176719] devtmpfs: mounted
+[   17.256429] Freeing unused kernel image (initmem) memory: 14700K
+[   17.259852] Write protecting the kernel read-only data: 98304k
+[   17.280346] Freeing unused kernel image (text/rodata gap) memory: 1552K
+[   17.284354] Freeing unused kernel image (rodata/data gap) memory: 284K
+[   17.439224] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[   17.442125] x86/mm: Checking user space page tables
+[   17.614085] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[   17.623236] Run /sbin/init as init process
+[   21.301172] SELinux:  Permission firmware_load in class system not defined in policy.
+[   21.304052] SELinux:  Permission kexec_image_load in class system not defined in policy.
+[   21.306837] SELinux:  Permission kexec_initramfs_load in class system not defined in policy.
+[   21.310261] SELinux:  Permission policy_load in class system not defined in policy.
+[   21.313451] SELinux:  Permission x509_certificate_load in class system not defined in policy.
+[   21.316729] SELinux:  Permission watch_mountns in class file not defined in policy.
+[   21.319783] SELinux:  Permission watch_mountns in class dir not defined in policy.
+[   21.322833] SELinux:  Permission watch_mountns in class lnk_file not defined in policy.
+[   21.325988] SELinux:  Permission watch_mountns in class chr_file not defined in policy.
+[   21.329213] SELinux:  Permission watch_mountns in class blk_file not defined in policy.
+[   21.332382] SELinux:  Permission watch_mountns in class sock_file not defined in policy.
+[   21.335497] SELinux:  Permission watch_mountns in class fifo_file not defined in policy.
+[   21.338713] SELinux:  Permission nlmsg in class netlink_route_socket not defined in policy.
+[   21.342022] SELinux:  Permission nlmsg in class netlink_tcpdiag_socket not defined in policy.
+[   21.345520] SELinux:  Permission nlmsg in class netlink_xfrm_socket not defined in policy.
+[   21.348793] SELinux:  Permission nlmsg in class netlink_audit_socket not defined in policy.
+[   21.352270] SELinux:  Class mctp_socket not defined in policy.
+[   21.354500] SELinux:  Class anon_inode not defined in policy.
+[   21.356831] SELinux:  Class io_uring not defined in policy.
+[   21.359221] SELinux:  Class user_namespace not defined in policy.
+[   21.362123] SELinux: the above unknown classes and permissions will be allowed
+[   21.563866] SELinux:  policy capability network_peer_controls=1
+[   21.566768] SELinux:  policy capability open_perms=1
+[   21.569717] SELinux:  policy capability extended_socket_class=1
+[   21.572528] SELinux:  policy capability always_check_network=0
+[   21.575999] SELinux:  policy capability cgroup_seclabel=1
+[   21.579035] SELinux:  policy capability nnp_nosuid_transition=1
+[   21.582519] SELinux:  policy capability genfs_seclabel_symlinks=0
+[   21.585710] SELinux:  policy capability ioctl_skip_cloexec=0
+[   21.588777] SELinux:  policy capability userspace_initial_context=0
+[   21.591452] SELinux:  policy capability netlink_xperm=0
+[   21.594552] SELinux:  policy capability netif_wildcard=0
+[   21.596679] SELinux:  policy capability genfs_seclabel_wildcard=0
+[   21.598699] SELinux:  policy capability functionfs_seclabel=0
+[   21.621316] audit: type=1403 audit(1767751742.951:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[   21.633127] systemd[1]: Successfully loaded SELinux policy in 3.423459s.
+[   22.057770] systemd[1]: Relabelled /dev, /dev/shm, /run, /sys/fs/cgroup in 92.171ms.
+[   22.096053] systemd[1]: systemd 247.3-7+deb11u5 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +ZSTD +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=unified)
+[   22.107471] systemd[1]: Detected virtualization kvm.
+[   22.109452] systemd[1]: Detected architecture x86-64.
+
+Welcome to [1mDebian GNU/Linux 11 (bullseye)[0m!
+
+[   22.123468] systemd[1]: Set hostname to <syzkaller>.
+[   22.314863] selinuxenabled (114) used greatest stack depth: 26008 bytes left
+[   22.357321] random: crng init done
+[   22.454032] systemd-bless-b (111) used greatest stack depth: 25512 bytes left
+[   22.466842] systemd-cryptse (112) used greatest stack depth: 25232 bytes left
+[   23.716212] systemd[1]: Queued start job for default target Graphical Interface.
+[   23.724878] systemd[1]: system-getty.slice: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[   23.730368] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+[   23.796030] systemd[1]: Created slice system-getty.slice.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-getty.slice[0m.
+[   23.837029] systemd[1]: Created slice system-modprobe.slice.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-modprobe.slice[0m.
+[   23.865396] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[[0;32m  OK  [0m] Created slice [0;1;39msystem-serial\x2dgetty.slice[0m.
+[   23.876412] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Started [0;1;39mDispatch Password …ts to Console Directory Watch[0m.
+[   23.886863] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Started [0;1;39mForward Password R…uests to Wall Directory Watch[0m.
+[   23.899472] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[[0;32m  OK  [0m] Set up automount [0;1;39mArbitrary…s File System Automount Point[0m.
+[   23.908426] systemd[1]: Reached target Local Encrypted Volumes.
+[[0;32m  OK  [0m] Reached target [0;1;39mLocal Encrypted Volumes[0m.
+[   23.915214] systemd[1]: Reached target Paths.
+[[0;32m  OK  [0m] Reached target [0;1;39mPaths[0m.
+[   23.920163] systemd[1]: Reached target Remote File Systems.
+[[0;32m  OK  [0m] Reached target [0;1;39mRemote File Systems[0m.
+[   23.925193] systemd[1]: Reached target Slices.
+[[0;32m  OK  [0m] Reached target [0;1;39mSlices[0m.
+[   23.929831] systemd[1]: Reached target Swap.
+[[0;32m  OK  [0m] Reached target [0;1;39mSwap[0m.
+[   23.958517] systemd[1]: Listening on Syslog Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39mSyslog Socket[0m.
+[   23.967637] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on [0;1;39minitctl Compatibility Named Pipe[0m.
+[   23.980815] systemd[1]: Listening on Journal Audit Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39mJournal Audit Socket[0m.
+[   23.990013] systemd[1]: Listening on Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket (/dev/log)[0m.
+[   24.001594] systemd[1]: Listening on Journal Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket[0m.
+[   24.017664] systemd[1]: Listening on udev Control Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39mudev Control Socket[0m.
+[   24.027508] systemd[1]: Listening on udev Kernel Socket.
+[[0;32m  OK  [0m] Listening on [0;1;39mudev Kernel Socket[0m.
+[   24.033572] systemd[1]: Reached target Sockets.
+[[0;32m  OK  [0m] Reached target [0;1;39mSockets[0m.
+[   24.091933] systemd[1]: Mounting Huge Pages File System...
+         Mounting [0;1;39mHuge Pages File System[0m...
+[   24.142609] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting [0;1;39mPOSIX Message Queue File System[0m...
+[   24.203528] systemd[1]: Mounting /proc/sys/fs/binfmt_misc...
+         Mounting [0;1;39m/proc/sys/fs/binfmt_misc[0m...
+[   24.248775] systemd[1]: Mounting /sys/kernel/config...
+         Mounting [0;1;39m/sys/kernel/config[0m...
+[   24.301830] systemd[1]: Mounting /sys/kernel/debug...
+         Mounting [0;1;39m/sys/kernel/debug[0m...
+[   24.351361] systemd[1]: Mounting Kernel Trace File System...
+         Mounting [0;1;39mKernel Trace File System[0m...
+[   24.358961] systemd[1]: Condition check resulted in Create list of static device nodes for the current kernel being skipped.
+[   24.394881] systemd[1]: Starting Load Kernel Module fuse...
+         Starting [0;1;39mLoad Kernel Module fuse[0m...
+[   24.435606] systemd[1]: Starting Journal Service...
+         Starting [0;1;39mJournal Service[0m...
+[   24.442510] audit: type=1400 audit(1767751745.772:3): avc:  denied  { read } for  pid=133 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.455992] audit: type=1400 audit(1767751745.773:4): avc:  denied  { open } for  pid=133 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.470102] audit: type=1400 audit(1767751745.775:5): avc:  denied  { getattr } for  pid=133 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.483183] audit: type=1400 audit(1767751745.776:6): avc:  denied  { map } for  pid=133 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.519833] systemd[1]: Starting Load Kernel Modules...
+         Starting [0;1;39mLoad Kernel Modules[0m...
+[   24.563747] systemd[1]: Starting Remount Root and Kernel File Systems...
+         Starting [0;1;39mRemount Root and Kernel File Systems[0m...
+[   24.659620] audit: type=1400 audit(1767751745.989:7): avc:  denied  { search } for  pid=135 comm="systemd-modules" name="6.18.0" dev="sda" ino=9712356 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=dir permissive=1
+[   24.659810] systemd[1]: Starting Coldplug All udev Devices...
+         Starting [0;1;39mColdplug All udev Devices[0m...
+[   24.676291] audit: type=1400 audit(1767751745.990:8): avc:  denied  { read } for  pid=135 comm="systemd-modules" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.701257] audit: type=1400 audit(1767751745.990:9): avc:  denied  { open } for  pid=135 comm="systemd-modules" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.724487] audit: type=1400 audit(1767751745.990:10): avc:  denied  { getattr } for  pid=135 comm="systemd-modules" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.747240] audit: type=1400 audit(1767751745.994:11): avc:  denied  { map } for  pid=135 comm="systemd-modules" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:systemd_modules_load_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   24.761968] systemd[1]: Mounted Huge Pages File System.
+[[0;32m  OK  [0m] Mounted [0;1;39mHuge Pages File System[0m.
+[   24.791365] systemd[1]: Mounted POSIX Message Queue File System.
+[[0;32m  OK  [0m] Mounted [0;1;39mPOSIX Message Queue File System[0m.
+[   24.803892] systemd[1]: Mounted /proc/sys/fs/binfmt_misc.
+[[0;32m  OK  [0m] Mounted [0;1;39m/proc/sys/fs/binfmt_misc[0m.
+[   24.812504] systemd[1]: Mounted /sys/kernel/config.
+[[0;32m  OK  [0m] Mounted [0;1;39m/sys/kernel/config[0m.
+[   24.824893] EXT4-fs (sda): re-mounted 7aa2f14d-7352-4fb8-97c6-28d78a5d37aa r/w.
+[   24.826212] systemd[1]: Mounted /sys/kernel/debug.
+[[0;32m  OK  [0m] Mounted [0;1;39m/sys/kernel/debug[0m.
+[   24.843700] systemd[1]: Mounted Kernel Trace File System.
+[[0;32m  OK  [0m] Mounted [0;1;39mKernel Trace File System[0m.
+[   24.868329] systemd[1]: modprobe@fuse.service: Succeeded.
+[   24.891921] systemd[1]: Finished Load Kernel Module fuse.
+[[0;32m  OK  [0m] Finished [0;1;39mLoad Kernel Module fuse[0m.
+[   24.922397] systemd[1]: Finished Load Kernel Modules.
+[[0;32m  OK  [0m] Finished [0;1;39mLoad Kernel Modules[0m.
+[   24.950681] systemd[1]: Finished Remount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Finished [0;1;39mRemount Root and Kernel File Systems[0m.
+[   24.963612] systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+[   24.979522] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[   24.990938] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   24.996467] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[   25.054594] systemd[1]: Starting Load/Save Random Seed...
+         Starting [0;1;39mLoad/Save Random Seed[0m...
+[   25.122833] systemd[1]: Starting Apply Kernel Variables...
+         Starting [0;1;39mApply Kernel Variables[0m...
+[   25.192716] systemd[1]: Starting Create System Users...
+         Starting [0;1;39mCreate System Users[0m...
+[   25.363062] systemd[1]: Started Journal Service.
+[[0;32m  OK  [0m] Started [0;1;39mJournal Service[0m.
+[[0;32m  OK  [0m] Finished [0;1;39mLoad/Save Random Seed[0m.
+[[0;32m  OK  [0m] Finished [0;1;39mApply Kernel Variables[0m.
+         Starting [0;1;39mFlush Journal to Persistent Storage[0m...
+[[0;32m  OK  [0m] Finished [0;1;39mCreate System Users[0m.
+         Starting [0;1;39mCreate Static Device Nodes in /dev[0m...
+[   25.733853] systemd-journald[134]: Received client request to flush runtime journal.
+[   26.201101] systemd-tmpfile (147) used greatest stack depth: 25144 bytes left
+[[0;32m  OK  [0m] Finished [0;1;39mCreate Static Device Nodes in /dev[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mLocal File Systems (Pre)[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mLocal File Systems[0m.
+         Starting [0;1;39mRule-based Manage…for Device Events and Files[0m...
+[   26.902448] audit: type=1400 audit(1767751748.224:12): avc:  denied  { read } for  pid=148 comm="systemd-udevd" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   26.929368] audit: type=1400 audit(1767751748.227:13): avc:  denied  { open } for  pid=148 comm="systemd-udevd" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   26.973448] audit: type=1400 audit(1767751748.228:14): avc:  denied  { getattr } for  pid=148 comm="systemd-udevd" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   27.007065] audit: type=1400 audit(1767751748.237:15): avc:  denied  { map } for  pid=148 comm="systemd-udevd" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   27.336724] udevadm (137) used greatest stack depth: 24856 bytes left
+[[0;32m  OK  [0m] Started [0;1;39mRule-based Manager for Device Events and Files[0m.
+[[0;32m  OK  [0m] Finished [0;1;39mFlush Journal to Persistent Storage[0m.
+         Starting [0;1;39mCreate Volatile Files and Directories[0m...
+[[0;32m  OK  [0m] Finished [0;1;39mCreate Volatile Files and Directories[0m.
+         Starting [0;1;39mUpdate UTMP about System Boot/Shutdown[0m...
+[[0;32m  OK  [0m] Finished [0;1;39mUpdate UTMP about System Boot/Shutdown[0m.
+[   31.149651] audit: type=1400 audit(1767751752.474:16): avc:  denied  { module_load } for  pid=158 comm="systemd-udevd" path="/usr/lib/modules/6.18.0/kernel/drivers/i2c/i2c-smbus.ko" dev="sda" ino=9712880 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=system permissive=1
+[   31.502758] piix4_smbus 0000:00:01.3: SMBus Host Controller at 0x700, revision 0
+[[0;32m  OK  [0m] Found device [0;1;39m/dev/ttyS0[0m.
+[[0;32m  OK  [0m] Listening on [0;1;39mLoad/Save RF …itch Status /dev/rfkill Watch[0m.
+[   32.118775] audit: type=1400 audit(1767751753.434:17): avc:  denied  { create } for  pid=181 comm="ifquery" name="network" scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:var_run_t:s0 tclass=dir permissive=1
+[[0;32m  OK  [0m] Finished [0;1;39mColdplug All udev Devices[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mSystem Initialization[0m.
+[[0;32m  OK  [0m] Started [0;1;39mDaily apt download activities[0m.
+[[0;32m  OK  [0m] Started [0;1;39mDaily apt upgrade and clean activities[0m.
+[[0;32m  OK  [0m] Started [0;1;39mPeriodic ext4 Onli…ata Check for All Filesystems[0m.
+[[0;32m  OK  [0m] Started [0;1;39mDiscard unused blocks once a week[0m.
+[[0;32m  OK  [0m] Started [0;1;39mDaily rotation of log files[0m.
+[[0;32m  OK  [0m] Started [0;1;39mDaily Cleanup of Temporary Directories[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mBasic System[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mTimers[0m.
+[   32.764228] cx18:  Start initialization, version 1.5.1
+[   32.801456] cx18-0: Initializing card 0
+[   32.804185] cx18-0: Unknown card: vendor/device: [14f1:5b7a]
+[   32.809295] cx18-0:               subsystem vendor/device: [1af4:1100]
+[   32.813518] cx18-0: Defaulting to Hauppauge HVR-1600 card
+[   32.816857] cx18-0: Please mail the vendor/device and subsystem vendor/device IDs and what kind of
+[   32.821680] cx18-0: card you have to the linux-media mailinglist (www.linuxtv.org)
+[   32.826165] cx18-0: Prefix your subject line with [UNKNOWN CX18 CARD].
+[[0;32m  OK  [0m] Started [0;1;39mRegular background program processing daemon[0m.
+         Starting [0;1;39mRemove Stale Onli…t4 Metadata Check Snapshots[0m...
+         Starting [0;1;39mgetty on tty2-tty…nd logind are not available[0m...
+[   33.770277] ACPI: bus type drm_connector registered
+         Starting [0;1;39mHelper to synchronize boot up for ifupdown[0m...
+[   34.032117] bochs-drm 0000:00:02.0: vgaarb: deactivate vga console
+[   34.072741] Console: switching to colour dummy device 80x25
+         Starting [0;1;39mSystem Logging Service[0m...
+[   34.087475] [drm] Found bochs VGA, ID 0xb0c5.
+[   34.090749] [drm] Framebuffer size 16384 kB @ 0xfd000000, mmio @ 0xfc070000.
+[   34.141732] [drm] Initialized bochs-drm 1.0.0 for 0000:00:02.0 on minor 0
+         Starting [0;1;39mOnline ext4 Metad…a Check for All Filesystems[0m...
+         Starting [0;1;39mRotate log files[0m...
+[[0;32m  OK  [0m] Started [0;1;39mSystem Logging Service[0m.
+[[0;32m  OK  [0m] Finished [0;1;39mgetty on tty2-tty… and logind are not available[0m.
+[[0;32m  OK  [0m] Finished [0;1;39mOnline ext4 Metadata Check for All Filesystems[0m.
+[   34.621354] e2scrub_all (192) used greatest stack depth: 24760 bytes left
+[[0;32m  OK  [0m] Finished [0;1;39mRemove Stale Onli…ext4 Metadata Check Snapshots[0m.
+[[0;32m  OK  [0m] Finished [0;1;39mRotate log files[0m.
+[[0m[0;31m*     [0m] A start job is running for Helper t…t up for ifupdown (14s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (14s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (15s / 3min 10s)
+[   39.204256] audit: type=1400 audit(1767751760.534:18): avc:  denied  { getattr } for  pid=148 comm="systemd-udevd" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (15s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (16s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (16s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (17s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…t up for ifupdown (17s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (18s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (18s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (19s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (19s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (20s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (20s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…t up for ifupdown (21s / 3min 10s)
+[   45.133001] i2c i2c-0: Memory type 0x07 not supported yet, not instantiating SPD
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (21s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (22s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (22s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (23s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (23s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (24s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…t up for ifupdown (24s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (25s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (25s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (26s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (26s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (27s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (27s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…t up for ifupdown (28s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (28s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (29s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (29s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (30s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (30s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (31s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…t up for ifupdown (31s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (32s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (32s / 3min 10s)
+[   56.614041] ACPI: \_SB_.LNKC: Enabled at IRQ 11
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (33s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (33s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (34s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (34s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…t up for ifupdown (35s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (35s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (36s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (36s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (37s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (37s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (38s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…t up for ifupdown (38s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (39s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (39s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (40s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (40s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (41s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (41s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…t up for ifupdown (42s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (42s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (43s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (43s / 3min 10s)
+[   67.801464] ACPI: \_SB_.LNKA: Enabled at IRQ 10
+[   67.805520] cx18-0: Unreasonably low latency timer, setting to 64 (was 0)
+[   67.809718] cx18-0: cx23418 revision 00000000 (Unknown)
+[   67.858022] ACPI: \_SB_.LNKD: Enabled at IRQ 11
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (44s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (44s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (45s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…t up for ifupdown (45s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (46s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (46s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (47s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (47s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (48s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (48s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…t up for ifupdown (49s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (49s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (50s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (50s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (51s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (51s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (52s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…t up for ifupdown (52s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (53s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (53s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (54s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (54s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (55s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (55s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…t up for ifupdown (56s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…t up for ifupdown (56s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…t up for ifupdown (57s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…t up for ifupdown (57s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…t up for ifupdown (58s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…t up for ifupdown (58s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…t up for ifupdown (59s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…t up for ifupdown (59s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t… up for ifupdown (1min / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t… up for ifupdown (1min / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t… for ifupdown (1min 1s / 3min 10s)
+[   85.216007] tveeprom: Huh, no eeprom present (err=-6)?
+[   85.219072] cx18-0: Invalid EEPROM
+[   85.221252] cx18-0: Simultaneous Digital and Analog TV capture supported
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t… for ifupdown (1min 1s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t… for ifupdown (1min 2s / 3min 10s)
+[   86.574673] audit: type=1400 audit(1767751807.904:19): avc:  denied  { read } for  pid=217 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   86.589781] audit: type=1400 audit(1767751807.905:20): avc:  denied  { open } for  pid=217 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   86.601504] audit: type=1400 audit(1767751807.905:21): avc:  denied  { getattr } for  pid=217 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   86.613132] audit: type=1400 audit(1767751807.905:22): avc:  denied  { map } for  pid=217 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t… for ifupdown (1min 2s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t… for ifupdown (1min 3s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t… for ifupdown (1min 3s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t… for ifupdown (1min 4s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t… for ifupdown (1min 4s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t… for ifupdown (1min 5s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t… for ifupdown (1min 5s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t… for ifupdown (1min 6s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t… for ifupdown (1min 6s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t… for ifupdown (1min 7s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t… for ifupdown (1min 7s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t… for ifupdown (1min 8s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t… for ifupdown (1min 8s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t… for ifupdown (1min 9s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t… for ifupdown (1min 9s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 10s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 10s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 11s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 11s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 12s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 12s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 13s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 13s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 14s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 14s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 15s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 15s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 16s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 16s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 17s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 17s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 18s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 18s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 19s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 19s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 20s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 20s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 21s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 21s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 22s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 22s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 23s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 23s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 24s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 24s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 25s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 25s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 26s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 26s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 27s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 27s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 28s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 28s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 29s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 29s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 30s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 30s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 31s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 31s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 32s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 32s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 33s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 33s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 34s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 34s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 35s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 35s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 36s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 36s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 37s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 37s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 38s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 38s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 39s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 39s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 40s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 40s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 41s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 41s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 42s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 42s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 43s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 43s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 44s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 44s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 45s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 45s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 46s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 46s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 47s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 47s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 48s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 48s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 49s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 49s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 50s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 50s / 3min 10s)
+[  134.753500] audit: type=1400 audit(1767751856.083:23): avc:  denied  { module_load } for  pid=220 comm="modprobe" path="/usr/lib/modules/6.18.0/kernel/drivers/media/i2c/cs5345.ko" dev="sda" ino=9713455 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=system permissive=1
+[  134.796067] cs5345 1-004c: chip found @ 0x98 (cx18 i2c driver #0-0)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 51s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 51s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 52s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 52s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 53s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 53s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 54s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 54s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 55s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 55s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (1min 56s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t…for ifupdown (1min 56s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t…for ifupdown (1min 57s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t…for ifupdown (1min 57s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t…for ifupdown (1min 58s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 58s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t…for ifupdown (1min 59s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t…for ifupdown (1min 59s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t… up for ifupdown (2min / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t… up for ifupdown (2min / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t… for ifupdown (2min 1s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t… for ifupdown (2min 1s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t… for ifupdown (2min 2s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t… for ifupdown (2min 2s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t… for ifupdown (2min 3s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t… for ifupdown (2min 3s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t… for ifupdown (2min 4s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t… for ifupdown (2min 4s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t… for ifupdown (2min 5s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t… for ifupdown (2min 5s / 3min 10s)
+M[K[[0m[0;31m*     [0m] A start job is running for Helper t… for ifupdown (2min 6s / 3min 10s)
+M[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for Helper t… for ifupdown (2min 6s / 3min 10s)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for Helper t… for ifupdown (2min 7s / 3min 10s)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for Helper t… for ifupdown (2min 7s / 3min 10s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for Helper t… for ifupdown (2min 8s / 3min 10s)
+M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for Helper t… for ifupdown (2min 8s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t… for ifupdown (2min 9s / 3min 10s)
+M[K[     [0;31m*[0m] A start job is running for Helper t… for ifupdown (2min 9s / 3min 10s)
+M[K[    [0;31m*[0;1;31m*[0m] A start job is running for Helper t…for ifupdown (2min 10s / 3min 10s)
+M[K[[0;1;31mFAILED[0m] Failed to start [0;1;39mHelper to …chronize boot up for ifupdown[0m.
+[KSee 'systemctl status ifupdown-pre.service' for details.
+[[0;1;38;5;185mDEPEND[0m] Dependency failed for [0;1;39mRaise network interfaces[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mNetwork[0m.
+         Starting [0;1;39mOpenBSD Secure Shell server[0m...
+         Starting [0;1;39mPermit User Sessions[0m...
+[[0;32m  OK  [0m] Finished [0;1;39mPermit User Sessions[0m.
+[[0;32m  OK  [0m] Started [0;1;39mGetty on tty1[0m.
+[[0;32m  OK  [0m] Started [0;1;39mGetty on tty2[0m.
+[[0;32m  OK  [0m] Started [0;1;39mGetty on tty3[0m.
+[[0;32m  OK  [0m] Started [0;1;39mGetty on tty4[0m.
+[[0;32m  OK  [0m] Started [0;1;39mGetty on tty5[0m.
+[[0;32m  OK  [0m] Started [0;1;39mGetty on tty6[0m.
+[[0;32m  OK  [0m] Started [0;1;39mSerial Getty on ttyS0[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mLogin Prompts[0m.
+[[0;32m  OK  [0m] Started [0;1;39mOpenBSD Secure Shell server[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mMulti-User System[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mGraphical Interface[0m.
+         Starting [0;1;39mUpdate UTMP about System Runlevel Changes[0m...
+[[0;32m  OK  [0m] Finished [0;1;39mUpdate UTMP about System Runlevel Changes[0m.
+[  155.752494] audit: type=1400 audit(1767751877.079:24): avc:  denied  { checkpoint_restore } for  pid=225 comm="agetty" capability=40  scontext=system_u:system_r:getty_t:s0 tcontext=system_u:system_r:getty_t:s0 tclass=capability2 permissive=1
+
+Debian GNU/Linux 11 syzkaller ttyS0
+
+syzkaller login: [  247.006612] cx18-0: Registered device video0 for encoder MPEG (64 x 32.00 kB)
+[  247.009428] dvbdev: DVB: registering new adapter (cx18)
+[  247.024905] DVB: Unable to find symbol s5h1409_attach()
+[  247.026996] cx18-0: frontend initialization failed
+[  247.034565] cx18-0: DVB failed to register
+[  247.038846] cx18-0: Registered device video32 for encoder YUV (20 x 101.25 kB)
+[  247.044269] cx18-0: Registered device vbi0 for encoder VBI (20 x 51984 bytes)
+[  247.049925] cx18-0: Registered device video24 for encoder PCM audio (256 x 4.00 kB)
+[  247.056361] cx18-0: Registered device radio0 for encoder radio
+[  247.067665] cx18-0: unregister DVB
+[  247.102989] cx18-0: Error -1 registering devices
+[  247.121571] cx18-0: Error -1 on initialization
+[  247.124753] cx18 0000:00:05.0: probe with driver cx18 failed with error -1
+[  247.128638] cx18:  End initialization
+[  247.140344] systemd-udevd (171) used greatest stack depth: 23704 bytes left
+[  251.037577] systemd-udevd (176) used greatest stack depth: 22376 bytes left

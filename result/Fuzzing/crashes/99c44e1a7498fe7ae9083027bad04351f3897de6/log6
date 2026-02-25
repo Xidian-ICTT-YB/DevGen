@@ -1,0 +1,898 @@
+last executing test programs:
+
+23.110304536s ago: executing program 0 (id=1821):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1)
+r1 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000040)={0x0, 0x40, 0x2, &(0x7f0000000000)={0x1c, "c91af40fd0d0c8d4d5991a178dffe9a2b8e0aa10e7808a6f54f7eb94948aea9cf0"}})
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000080)={0x1, 0x7, 0x5, &(0x7f0000000040)={0x1a, "769fa91583aefd8dcd84d4a86aba26ed67230ccdf2af3deb803cbb4e5d952c5ef7"}})
+
+23.040012545s ago: executing program 1 (id=1825):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f00000003c0)={0x8081, 0x7f, 0x1, {0x1, @pix={0xa109, 0x4, 0x3147504d, 0x4, 0xb, 0xffffffff, 0x6, 0xee86, 0x0, 0x2, 0x0, 0x7}}, 0x26b})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000440), 0x2, 0x0)
+ioctl$VIDIOC_G_STD(r1, 0x80085617, &(0x7f00000005c0))
+r2 = syz_open_dev$I2C(&(0x7f0000000040), 0x1, 0x42280)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000380)={0x12, 0x9, 0x5, 0x0})
+
+23.038819018s ago: executing program 0 (id=1827):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000001c0), 0x2, 0x0)
+ioctl$VIDIOC_G_FMT(r0, 0xc0d05604, &(0x7f0000000200)={0x4, @win={{0x10000, 0xfffffffd, 0xfffffffc, 0x4d}, 0x0, 0x8, &(0x7f0000000080)={{0x9, 0x3, 0xff, 0x1}, &(0x7f0000000040)={{0x455d, 0x4, 0x8, 0x9}, &(0x7f0000000000)={{0x7, 0x80000000, 0x7fffffff, 0x3}}}}, 0x10001, &(0x7f00000000c0)="b293117bc77e6b057718d6dec3aa868a0202fc2517011e61de2743e12677c820b88840e46319cd0ff823bfb3ae23259c29531b54b2833fbb1e8c34b1b176f6335d087c141ba0f19dedc52e2b65d1946ab99dde9891c029f9521aadced20d3d742c891432be2498c3322facf51ccf3e922c6d2647f573973e84926aa8aa5b0028", 0x8}})
+ioctl$VIDIOC_TRY_FMT(r0, 0xc0d05640, &(0x7f00000009c0)={0x1, @sliced={0x1, [0x1, 0x81, 0x0, 0x1, 0xde, 0x3, 0x0, 0x200, 0x2, 0x200, 0x18, 0xfffe, 0xa, 0x80, 0x80, 0x2, 0x0, 0xfff0, 0x8001, 0x1, 0x9d, 0x2, 0x7, 0x0, 0x1c00, 0x8, 0x8, 0x2, 0x3, 0x9, 0x8001, 0x33bf, 0x2, 0x6, 0x2, 0x903, 0x5, 0x2, 0x3ff, 0x9, 0x4, 0x800, 0x6a8c, 0x7261, 0x70, 0xffff, 0xfffb, 0x9], 0x146}})
+
+23.038280397s ago: executing program 3 (id=1828):
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000440), 0x2, 0x0) (async)
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000440), 0x2, 0x0)
+ioctl$VIDIOC_S_STD(r0, 0x40085618, &(0x7f0000000040)=0x80008) (async)
+ioctl$VIDIOC_S_STD(r0, 0x40085618, &(0x7f0000000040)=0x80008)
+ioctl$VIDIOC_SUBDEV_S_EDID(r0, 0xc0285629, &(0x7f0000000180)={0x0, 0xe19, 0x2, '\x00', &(0x7f0000000140)=0x7f}) (async)
+ioctl$VIDIOC_SUBDEV_S_EDID(r0, 0xc0285629, &(0x7f0000000180)={0x0, 0xe19, 0x2, '\x00', &(0x7f0000000140)=0x7f})
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+ioctl$I2C_RDWR(r1, 0x707, &(0x7f0000000080)={&(0x7f0000002440), 0x1})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000c40), 0x2, 0x0)
+ioctl$VIDIOC_S_STD(r0, 0x40085618, &(0x7f00000001c0)=0x200)
+ioctl$VIDIOC_G_DV_TIMINGS(r2, 0xc0845658, &(0x7f0000000080)={0x0, @reserved})
+ioctl$VIDIOC_ENUMINPUT(r2, 0xc050561a, &(0x7f0000000000)={0x4, "6e9af08cc85a60a2a35babcf955e60f3b2ddc3fad6f3ffffffa6e71486d45fde", 0x3, 0xb, 0xbacf471800cd400d, 0xe0, 0x4020000, 0x8})
+
+15.167350396s ago: executing program 0 (id=1829):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_EXPBUF(r1, 0x541b, 0x0)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000180)={0x1, 0xff, 0x2, &(0x7f0000000140)={0xd, "1634a0c85dbf816610d225d13e74eba35b27ac88daced26d081954058c55a13a94"}})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000005c0), 0x2, 0x0)
+r3 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x40)
+ioctl$I2C_PEC(r3, 0x5421, 0x7ffffffff000)
+syz_open_dev$I2C(&(0x7f0000000180), 0x0, 0x203)
+ioctl$VIDIOC_G_EXT_CTRLS(r2, 0xc0205647, &(0x7f0000000680)={0x9b0000, 0x0, 0x8, 0xffffffffffffffff, 0x0, 0x0})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000005c0), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r4, 0xc0205647, &(0x7f0000000680)={0x9b0000, 0x0, 0x8, 0xffffffffffffffff, 0x0, 0x0})
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r5, 0xc100565c, &(0x7f00000003c0)={0x8001, 0x7f, 0x1, {0x1, @sliced={0x8, [0x9, 0x8044, 0x6, 0x0, 0xb, 0xff, 0xad, 0xfff, 0x1, 0x3, 0x7, 0xa, 0x963, 0x10, 0x3, 0x6, 0x9, 0x5, 0x1, 0x3, 0x800, 0x40, 0x8001, 0x9, 0xa06, 0x2, 0x3, 0xb, 0x92b, 0x2, 0x8, 0x7, 0x9, 0x4, 0xc, 0x0, 0x4, 0xffff, 0x6, 0xde2, 0x0, 0x8000, 0xe5d8, 0x9, 0x1, 0x1, 0x9, 0xfcc1], 0x5}}, 0x26b})
+r6 = syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800)
+ioctl$I2C_SMBUS(r6, 0x720, &(0x7f0000000000)={0x1, 0x8, 0x2, 0xffffffffffffffff})
+r7 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000040), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r7, 0xc100565c, &(0x7f00000004c0)={0x8081, 0x7f, 0x2, {0x1, @sdr={0x45533e4c, 0xfffffff7}}, 0x7})
+r8 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000002c0), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FMT(r8, 0xc0405602, &(0x7f0000000500)={0x99a7, 0x1, 0x3, "bacb751c7f799cc2afb14e7b830be696c830aa9619d3ba1bb933aabeb0f82b48", 0x56544943})
+ioctl$VIDIOC_G_EXT_CTRLS(0xffffffffffffffff, 0xc0205647, &(0x7f0000000240)={0x990000, 0x7, 0x3, 0xffffffffffffffff, 0x0, &(0x7f0000000200)={0x9909df, 0x5, '\x00', @p_u32=&(0x7f00000001c0)=0x9}})
+r9 = syz_open_dev$video(&(0x7f0000000280), 0x8, 0x227c0)
+r10 = syz_open_dev$I2C(&(0x7f0000000340), 0x9, 0x200801)
+ioctl$I2C_SMBUS(r10, 0x720, &(0x7f0000002800)={0x1, 0xb8, 0x1, &(0x7f00000027c0)={0x18, "c45a7c934d22dc666eb12123c906866f0486dc36fd4aad0e8eb6c31caf241e9afe"}})
+ioctl$VIDIOC_SUBDEV_G_EDID(r9, 0xc0285628, &(0x7f0000000300)={0x0, 0x2, 0xf93e, '\x00', &(0x7f00000002c0)})
+
+15.166426858s ago: executing program 1 (id=1830):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_REQBUFS(r0, 0xc0145608, &(0x7f0000000680)={0x1, 0x1, 0x1, 0x0, 0x1})
+ioctl$VIDIOC_STREAMON(r0, 0x40045612, &(0x7f0000000000)=0x8001)
+
+15.166127641s ago: executing program 2 (id=1831):
+r0 = syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x80)
+ioctl$I2C_FUNCS(r0, 0x705, 0xfffffffffffffffe)
+syz_open_dev$video(&(0x7f0000000000), 0x9, 0x62a802)
+
+15.163955999s ago: executing program 3 (id=1832):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_SELECTION(r0, 0xc040565f, &(0x7f0000001000)={0x1, 0x101, 0x4, {0x7, 0x5, 0x7d1}})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_LOG_STATUS(r2, 0x5646, 0x0)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_EXPBUF(r3, 0x5450, 0x0)
+ioctl$VIDIOC_G_INPUT(r1, 0x80045626, &(0x7f0000001100))
+
+15.105907542s ago: executing program 1 (id=1833):
+r0 = syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x80)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_INPUT(r1, 0xc0045627, &(0x7f00000003c0)=0x5)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000380)={0x1, 0x7, 0x7, 0x0})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+syz_open_dev$video(&(0x7f00000020c0), 0x2, 0x410142)
+ioctl$VIDIOC_REQBUFS(r2, 0xc0145608, &(0x7f0000000680)={0x1, 0x1, 0x1, 0x0, 0x1})
+ioctl$VIDIOC_STREAMON(r2, 0x40045612, &(0x7f0000000000)=0x8001)
+ioctl$VIDIOC_G_SELECTION(r2, 0xc040565e, &(0x7f0000000040)={0x8, 0x0, 0x1, {0x9, 0x1000, 0x1000, 0x1}})
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f00000000c0)={0x1, 0x5, 0x4, &(0x7f0000000080)={0xb, "0f6eea1351e4cca570c4936655b7147cb35dba210d446df8eb4344036518dfb334"}})
+
+15.105600312s ago: executing program 2 (id=1834):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20000)
+ioctl$VIDIOC_S_CTRL(0xffffffffffffffff, 0xc008561c, 0x0)
+r1 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r1, 0x541b, 0xffffffff)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0)
+ioctl$VIDIOC_S_FMT(r2, 0xc0d05605, &(0x7f00000006c0)={0x1, @pix_mp={0xd79f6ea3, 0x8, 0x38414762, 0x8, 0x7, [{0xec, 0x9}, {0x0, 0x5}, {0x5, 0x10003}, {0x3, 0x2e0d}, {0x1, 0x4eb}, {0xffff, 0xa}, {0x7fff, 0x1}, {0x101, 0x6}], 0x4, 0x0, 0x3, 0x1, 0x6}})
+ioctl$VIDIOC_G_TUNER(r2, 0xc054561d, &(0x7f0000000080)={0x5, "1be877b5948678bbfda43a1fe744a4a7da5843f60001d1475efb4ae20352f2f7", 0x2, 0x2, 0xfffffffb, 0x4, 0x4, 0x1, 0x6, 0x6})
+ioctl$I2C_PEC(r1, 0x708, 0x6)
+r3 = syz_open_dev$I2C(&(0x7f0000000040), 0x6, 0x4400)
+ioctl$I2C_PEC(r3, 0x708, 0x9)
+ioctl$VIDIOC_EXPBUF(0xffffffffffffffff, 0xc0405610, &(0x7f0000000ac0)={0x5, 0x2, 0x6, 0x880})
+r4 = syz_open_dev$I2C(&(0x7f0000000100), 0x4, 0x20400)
+ioctl$I2C_TIMEOUT(r4, 0x702, 0x3)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000780)={0x1, 0xb, 0x6, &(0x7f0000000740)={0x10, "f86fc6e12a4dba672897f09ec9e1e7f808411fe3ea701991b09c2abc0215672502"}})
+
+15.105405051s ago: executing program 3 (id=1835):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r1, 0xc100565c, &(0x7f00000003c0)={0x8081, 0x7f, 0x1, {0x1, @pix={0xa109, 0x4, 0x3147504d, 0x6, 0xb, 0x0, 0x6, 0xee86, 0x0, 0x2, 0x0, 0x7}}, 0x267})
+ioctl$I2C_TENBIT(r0, 0x40086602, 0x200000ffffff)
+r2 = syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x80)
+ioctl$I2C_FUNCS(r2, 0x705, 0xfffffffffffffffe)
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000180), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FMT(r4, 0xc0405602, &(0x7f0000000380)={0x2, 0x5, 0x1, "73eff375539d675d214eb56026f26a0ed670e870ca9bff6101320e36442fca07", 0x30314442})
+r5 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f0000000080)={0x1, 0x11, 0xfffffffe, 0x0})
+ioctl$I2C_TENBIT(0xffffffffffffffff, 0x40086602, 0x200000ffd000)
+ioctl$I2C_TENBIT(r3, 0x40086602, 0x200000ffd000)
+r6 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000440), 0x2, 0x0)
+ioctl$VIDIOC_G_STD(r6, 0x80085617, &(0x7f00000005c0))
+ioctl$I2C_SLAVE_FORCE(r2, 0x706, 0x187)
+
+15.039532241s ago: executing program 2 (id=1836):
+syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x101) (async)
+r0 = syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x101)
+r1 = syz_open_dev$vim2m(&(0x7f0000000000), 0x7222, 0x2)
+ioctl$vim2m_VIDIOC_G_FMT(r1, 0xc0d05604, &(0x7f0000000180)={0x2, @win={{0x4, 0xf287, 0x1ff, 0x6}, 0x4, 0x40, &(0x7f00000000c0)={{0x4, 0x202, 0x1, 0x7}, &(0x7f0000000080)={{0x7, 0xb, 0x0, 0x9}, &(0x7f0000000040)={{0x3, 0x6, 0x7fff, 0xd86}}}}, 0x4, &(0x7f0000000100)="d0e656d5ed5f95a0b1b2457a987c03cb40c660e953f640cee7245d23f14931d3474c1401bc78d29f0f3cec6cf08f173a39d5a59a6ee24e74499f25fc6f43be6d7d5673158e1ae51e2f62dc15c5d7c722ae900b5d09629524eba537584db9520ee1124a", 0x1}})
+ioctl$I2C_FUNCS(r0, 0x705, &(0x7f0000000440)=0xfffffffffffffff9)
+ioctl$I2C_FUNCS(r0, 0x705, &(0x7f0000000280)=0xbe4)
+
+7.831819917s ago: executing program 0 (id=1837):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000080), 0x2, 0x0)
+ioctl$VIDIOC_S_PRIORITY(r0, 0x40045644, 0x0)
+syz_open_dev$I2C(&(0x7f0000000700), 0x8, 0x4ca200)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_FMT(r1, 0xc0d05604, &(0x7f0000000300)={0x1, @pix_mp={0x680, 0x7, 0x47504a4d, 0x9, 0x4, [{0x40000, 0x18c0}, {0x54, 0x5}, {0x896d, 0x80000001}, {0x80000001}, {0xc, 0x7}, {0x40000, 0xc}, {0x1, 0x4}, {0x2, 0x472}], 0x17, 0x6, 0x1, 0x1, 0x6}})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_S_JPEGCOMP(r0, 0x408c563e, &(0x7f0000000500)={0x8000, 0x9, 0x35, "8d4a64aac19fbe15992ea199eaa6be7a921646217c1f99a84164f2e46bd2a7137efe3bf0bcb1cff5bc6a49221a66fc8e9a78af4f03e97b5b8d92608c", 0x27, "d11b8732bba50b08fa6f046240dbdc83607ceb39d5f8a67ab4d1eb714600942cbb9cc5ed8901f4224eb0d33eeb3185a0c6c0f8281a29e3aa44f87be3", 0xb13bc8bf9c86525d})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000004c0), 0x2, 0x0)
+ioctl$VIDIOC_QUERYSTD(r4, 0x8008563f, &(0x7f00000007c0))
+ioctl$VIDIOC_STREAMOFF(r3, 0xc0405626, &(0x7f0000000000)=0x7)
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_EXPBUF(r5, 0x5421, &(0x7f0000000ac0)={0x5, 0x2, 0x6, 0x880})
+ioctl$VIDIOC_CREATE_BUFS(r2, 0xc100565c, &(0x7f0000000100)={0x4, 0x0, 0x1, {0x1, @sliced={0x8, [0x2, 0x1, 0x5, 0x2843, 0x8, 0x5, 0x2, 0x0, 0x8, 0x1, 0x40, 0x5, 0x9, 0x5, 0x84cd, 0x34, 0xfff4, 0x800, 0xf, 0x98e9, 0x9, 0x6a2, 0x8, 0x7fff, 0x8, 0x0, 0x2400, 0x307, 0x7ffe, 0x4, 0x8, 0x35, 0x9, 0x2, 0x2, 0x6, 0x4, 0x3, 0x3, 0x3, 0xa000, 0x400, 0x1ff, 0x7, 0x0, 0x2, 0x0, 0xdfb1], 0x2}}, 0x3})
+r6 = syz_open_dev$vim2m(&(0x7f0000000040), 0x6, 0x2)
+ioctl$vim2m_VIDIOC_CREATE_BUFS(r6, 0xc100565c, &(0x7f0000000200)={0xa, 0x4, 0x2, {0x3, @sdr={0x34325241, 0xcb7}}, 0x6})
+syz_open_dev$I2C(&(0x7f0000000000), 0x4, 0x240)
+
+7.827000909s ago: executing program 1 (id=1838):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_PRIORITY(r0, 0x80045643, 0x1)
+r1 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_PEC(r1, 0x708, 0x3)
+ioctl$I2C_SLAVE_FORCE(r1, 0x706, 0x11)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000000)={0x0, 0xe, 0x4, &(0x7f0000000100)={0x20, "3f667cc673bf0500e2b500f1ff0079c613b39400"}})
+ioctl$VIDIOC_G_FBUF(r0, 0x8030560a, 0x0)
+ioctl$VIDIOC_S_STD(r0, 0x40085618, &(0x7f0000000340)=0x8000)
+ioctl$VIDIOC_STREAMOFF(0xffffffffffffffff, 0x40045613, 0x0)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_EXPBUF(r2, 0x541b, 0x0)
+ioctl$VIDIOC_SUBDEV_G_FMT(0xffffffffffffffff, 0xc0585604, 0x0)
+ioctl$VIDIOC_G_SELECTION(r0, 0xc040565e, 0x0)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000040), 0x2, 0x0)
+ioctl$VIDIOC_S_MODULATOR(r3, 0x40445637, &(0x7f0000000080)={0x3, "64e2550f622e480a4096dcd7767b273eb35495e8db67baf117b91df45cf912ef", 0x10, 0x401, 0x3, 0x2, 0x54e08a33887c16f6})
+r4 = openat$vimc0(0xffffffffffffff9c, 0x0, 0x2, 0x0)
+syz_open_dev$video(0x0, 0xe2e, 0x80000)
+ioctl$VIDIOC_ENCODER_CMD(0xffffffffffffffff, 0xc028564d, 0x0)
+ioctl$VIDIOC_S_SELECTION(r4, 0xc040565f, 0x0)
+ioctl$VIDIOC_DBG_G_REGISTER(r0, 0xc0385650, 0x0)
+ioctl$VIDIOC_S_HW_FREQ_SEEK(r0, 0x40305652, 0x0)
+ioctl$VIDIOC_DBG_S_REGISTER(r4, 0x4038564f, &(0x7f0000001300)={{0x2, @name="ed92e5791e2f0fcf79942899a6da9e3966f872e648fc54af8641280a0ec35801"}, 0x8, 0x4, 0x56c})
+r5 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f0000000780)={0x0, 0xfb, 0x2, &(0x7f0000000740)={0x9, "3f6678c6cb65be5a0ddc13abb512795b80a1b1eeb82bd0a6732500"}})
+
+7.826798448s ago: executing program 2 (id=1839):
+r0 = syz_open_dev$I2C(&(0x7f0000000040), 0x7ffe, 0x80)
+r1 = syz_open_dev$I2C(&(0x7f0000000a00), 0x0, 0x101000)
+syz_open_dev$video(&(0x7f0000000000), 0xa, 0x198001)
+ioctl$I2C_RETRIES(r1, 0x40049409, 0x3)
+ioctl$I2C_TENBIT(r0, 0x704, 0x1)
+
+7.825199395s ago: executing program 3 (id=1840):
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000000)={0x1, 0xd, 0x1, 0x0})
+r1 = syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x80)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000380)={0x2, 0x9, 0x5, 0x0})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000680), 0x2, 0x0)
+ioctl$VIDIOC_G_PARM(r3, 0xc0cc5615, &(0x7f0000001000)={0x1, @raw_data="b4238a5d5fbee9159f5b9f4cb2b6c93e8cecfedadeeddf814f45035ac137f2c28944e3b62ff6d652785e719b3ff22a577ef3be9b2f3359fb43f8bfbd5ec6791c9a1388cffdd32d087f953a460d03ca082e93c2288332da51f45bb80717a189f69ab5ac0ae8d4ce3b3aaeae63059bc6ed1d45931080827b5a1556dcc31478ac43661e1512d44d1f5bacdde07eea93db3c2897d7bfd6c485c170b20d921ad56eff94e30ca59b28a93dfd1d2afe587d50d4ff1ccea4db90842931fa2799e792ff164525eab329b8966b"})
+ioctl$VIDIOC_CREATE_BUFS(r2, 0xc100565c, &(0x7f00000003c0)={0x8001, 0x20007f, 0x1, {0x1, @pix_mp={0x2, 0xfffffff7, 0x3032344d, 0x0, 0xb, [{0x2, 0x40}, {0x8, 0xfffffff8}, {0x5, 0x5}, {0x7, 0x5}, {0x2, 0x100}, {0x8, 0xddbe}, {0x3, 0xc}, {0x2c0, 0x5}], 0x4, 0x65, 0x0, 0x1}}, 0x26b})
+
+7.767008461s ago: executing program 2 (id=1841):
+r0 = syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x420901)
+syz_open_dev$I2C(0x0, 0x0, 0xe2481)
+ioctl$I2C_TENBIT(r0, 0x704, 0x1)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000002780)={0x0, 0xe1, 0x40000005, 0x0})
+
+7.766480226s ago: executing program 0 (id=1842):
+syz_open_dev$video(&(0x7f0000000000), 0x7ffffffe, 0x6000)
+
+7.766003713s ago: executing program 3 (id=1843):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_CTRL(r0, 0xc008561c, &(0x7f0000000040)={0x380, 0x7f})
+ioctl$VIDIOC_QUERYCTRL(r0, 0xc0445624, &(0x7f0000000080)={0x35, 0x2, "66671b76f7da9e86b46cdc8b7e4611522efa0a8ac87dfd7d92da31b82bd1721d", 0x2, 0x9, 0x9, 0x8001, 0x40})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000100), 0x2, 0x0)
+ioctl$VIDIOC_ENUMSTD(r1, 0xc0485619, &(0x7f0000000140)={0x7223, 0x2, "22f70fbb17184da1d1594f481d9352bab84cfbc8c468c92c", {0x9, 0x3}, 0x6})
+ioctl$VIDIOC_SUBDEV_S_FRAME_INTERVAL(r1, 0xc0305616, &(0x7f00000001c0)={0x0, {0x7, 0x16b80000}})
+ioctl$VIDIOC_QUERY_EXT_CTRL(r0, 0xc0e85667, &(0x7f0000000200)={0x40000000, 0xb01a522dae8ecd, "5e22a6b5007fd8b8fc62367468dd2dd09c74ea2f311ec994949387083e6f77c8", 0x0, 0xfffffffffffff001, 0x5, 0x5, 0xb78, 0x8, 0xf21d, 0x9, [0x400, 0x18000, 0x92b]})
+r2 = syz_open_dev$video(&(0x7f0000000300), 0x8, 0x10040)
+ioctl$VIDIOC_G_FMT(r2, 0xc0d05604, &(0x7f0000000340)={0x3, @sdr={0x56595559, 0x200}})
+ioctl$VIDIOC_SUBDEV_QUERY_DV_TIMINGS(0xffffffffffffffff, 0x80845663, &(0x7f0000000440)={0x0, @reserved})
+ioctl$VIDIOC_G_STD(r0, 0x80085617, &(0x7f0000000500))
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000540), 0x2, 0x0)
+ioctl$VIDIOC_QUERYCAP(r3, 0x80685600, &(0x7f0000000580))
+ioctl$VIDIOC_S_TUNER(r0, 0x4054561e, &(0x7f0000000600)={0x9, "41f86a926ea9da994c13f52450aa80538f5422924f249281fad7b25bc9aa1ae8", 0x2, 0x1000, 0xfffffff9, 0xfffffff3, 0x4, 0x3, 0xb6, 0x6})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000680), 0x2, 0x0)
+ioctl$VIDIOC_ENUMSTD(r4, 0xc0485619, &(0x7f00000006c0)={0xf5, 0xff7fff, "43739f4101db9023d8e39b9703879958d7a3bb2a0b45ee66", {0x0, 0xfff}, 0x3})
+ioctl$VIDIOC_S_JPEGCOMP(r3, 0x408c563e, &(0x7f0000000740)={0xdf, 0x6, 0x5, "2ae0aa9f4b96f9702c68bc28f3939794e8de79aa147a28dfac22e2b850897e1f38aca2fa934dd2f0f11f3a0dd7360b6f299506e2ab3be76c8d9540f1", 0x11, "bb76f028b184f1261d0b256edc239ccafd21ff07fd7eecca459ee35518b20b7738fb5b7701df8699f661d0048e3c1ab4e7a66a1eba31bedd10eba2b3", 0xa0})
+ioctl$VIDIOC_DBG_S_REGISTER(r0, 0x4038564f, &(0x7f0000000800)={{0x0, @addr=0x6}, 0x8, 0x7fffffff, 0xa0})
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000840), 0x2, 0x0)
+ioctl$VIDIOC_G_PRIORITY(r5, 0x80045643, 0x2)
+ioctl$VIDIOC_SUBDEV_G_SELECTION(r5, 0xc040563d, &(0x7f0000000880)={0x1, 0x0, 0x3, 0x0, {0xbc, 0xd1, 0x100, 0x1}})
+ioctl$VIDIOC_SUBDEV_S_SELECTION(r5, 0xc040563e, &(0x7f00000008c0)={0x1, 0x0, 0x100, 0x6, {0xe, 0x0, 0x8, 0x5}})
+ioctl$VIDIOC_G_PRIORITY(r3, 0x80045643, 0x1)
+ioctl$VIDIOC_SUBDEV_ENUM_DV_TIMINGS(r3, 0xc0945662, &(0x7f0000000900)={0x9, 0x0, '\x00', {0x0, @bt={0xa310, 0x2, 0x1, 0x4, 0x9, 0x10, 0x506d, 0x3, 0x41f8, 0x8, 0x6, 0x8, 0x9, 0x4, 0x8, 0x14, {0x3, 0x6}, 0xd, 0x9}}})
+ioctl$VIDIOC_S_MODULATOR(r2, 0x40445637, &(0x7f00000009c0)={0xd, "53ecdf4e459ff16e7f79f05fbca4650495db4af5d5e7228d8a9445c54fe09ede", 0x1, 0x3, 0x0, 0x4, 0x3})
+ioctl$VIDIOC_TRY_FMT(r1, 0xc0d05640, &(0x7f0000000a40)={0xa, @raw_data="c25da7517989e0181c4a898e2562b721943b8fabd8ccc2bb20bed411ce7df02fc0e6b28526d4ff269bb15079b4bf947c2528b11e9c0b2d63a8f9141afed802d7965a0365d559fb2f1eea3a239a88f79ea5d5b05e307f98a9cdb2dd997c6d6034ff6e6408022484675897f3cde962cd0a210f25e564c33b49a856e7ccdf8cc8f1d0bdbe612d8fc597342d1348d3ccde37b0a732e18b8a3214881d7979dbf922832838fde684ed50ae8d0fa992d24b30510e083f0a21974997285d6edd922fc12b6479bc34c850ccdc"})
+ioctl$VIDIOC_G_JPEGCOMP(0xffffffffffffffff, 0x808c563d, &(0x7f0000000b40))
+ioctl$VIDIOC_G_INPUT(r4, 0x80045626, &(0x7f0000000c00))
+r6 = syz_open_dev$video(&(0x7f0000000c40), 0x2, 0x608600)
+ioctl$VIDIOC_SUBDEV_ENUM_DV_TIMINGS(r6, 0xc0945662, &(0x7f0000000c80)={0x9, 0x0, '\x00', {0x0, @bt={0x9, 0x4, 0x1, 0x0, 0x9, 0x6, 0x4, 0x400, 0x9, 0x37, 0x8, 0xec, 0x5, 0x0, 0x6, 0x5, {0xcf, 0x5}, 0x91, 0x7}}})
+
+7.765862566s ago: executing program 1 (id=1844):
+r0 = syz_open_dev$I2C(&(0x7f0000000040), 0xf63, 0x167f41)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000280), 0x2, 0x0)
+ioctl$VIDIOC_REQBUFS(r1, 0xc0145608, &(0x7f0000000540)={0x2, 0xc, 0x2, 0x0, 0xf8})
+ioctl$I2C_TENBIT(r0, 0x40086602, 0x200000ffffff)
+
+2.327051ms ago: executing program 0 (id=1845):
+r0 = openat$vimc0(0xffffffffffffff9c, 0x0, 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f0000000040)={0x8004, 0x5, 0x4, {0x1, @sliced={0x8, [0x9, 0x8044, 0x6, 0x0, 0xb, 0xff, 0xad, 0xfff, 0x1, 0x3, 0x7, 0xa, 0x963, 0x10, 0x3, 0x6, 0x3, 0x5, 0x1, 0x40, 0x800, 0x40, 0x8001, 0x49, 0xa06, 0x2, 0x3, 0xb, 0x92b, 0x2, 0x8, 0x7, 0x9, 0x4, 0x49, 0x0, 0x4, 0xdfff, 0x6, 0xde2, 0x0, 0x8000, 0xe5d8, 0x9, 0x1, 0x8, 0x7, 0xfcc1], 0xb14e}}, 0x226b})
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f00000003c0)={0x8005, 0x7f, 0x1, {0x1, @sliced={0x8, [0x9, 0x8044, 0x6, 0x0, 0xb, 0xff, 0xad, 0xfff, 0x1, 0x3, 0x7, 0xa, 0x963, 0x10, 0x3, 0x6, 0x9, 0x5, 0x1, 0x2003, 0x4e, 0x40, 0x2e, 0x9, 0xa06, 0x2, 0x3, 0x9, 0x92b, 0x2, 0x8, 0x7, 0x9, 0x4, 0xc, 0x0, 0x4, 0xffff, 0x6, 0xde2, 0x0, 0x8000, 0xe5d8, 0x9, 0x1, 0x1, 0x9, 0xfcc1], 0x5}}, 0x26b})
+
+927.231µs ago: executing program 1 (id=1846):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000280), 0x2, 0x0)
+ioctl$VIDIOC_REQBUFS(r0, 0xc0145608, &(0x7f0000000540)={0x2, 0xc, 0x3, 0x0, 0xf8})
+
+165.012µs ago: executing program 2 (id=1847):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_EXPBUF(r0, 0x5452, &(0x7f0000000ac0)={0x0, 0x2, 0x6, 0x80})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000180), 0x2, 0x0) (async)
+openat$vimc0(0xffffffffffffff9c, 0xffffffffffffffff, 0x2, 0x0)
+ioctl$VIDIOC_S_INPUT(r1, 0xc0045627, &(0x7f0000000300)=0x2)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+r3 = syz_open_dev$video(&(0x7f0000000200), 0x5, 0x100)
+ioctl$VIDIOC_S_HW_FREQ_SEEK(r3, 0x40305652, &(0x7f0000000500)={0xb, 0x3, 0x4, 0x3, 0xc, 0x1, 0xba2b})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r4, 0xc100565c, &(0x7f0000000100)={0x4, 0x4, 0x1, {0x1, @sliced={0x8, [0x40e1, 0x6a, 0x5, 0x2843, 0x6, 0x5, 0x2, 0x0, 0x8, 0x1, 0x40, 0x5, 0x9, 0x7, 0x84cd, 0x34, 0xfff4, 0x800, 0xf, 0x98e9, 0x4, 0x6a2, 0x8, 0x7fff, 0x8, 0x0, 0x2400, 0x307, 0x7fff, 0x4, 0x8, 0x35, 0x9, 0x2, 0x6, 0x8, 0x4, 0x3, 0x3, 0x3, 0xa000, 0x400, 0x1ff, 0x7, 0x0, 0x2, 0x0, 0xdfb1], 0x2}}, 0x3})
+syz_open_dev$I2C(&(0x7f0000000080), 0x8, 0x220000) (async)
+ioctl$I2C_RETRIES(0xffffffffffffffff, 0x701, 0xfffffffffffffff8) (async)
+ioctl$VIDIOC_ENUM_FREQ_BANDS(r2, 0xc0405665, &(0x7f0000000040)={0x4, 0x3, 0x5, 0x10, 0xca8, 0x8})
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0) (async)
+r6 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r6, 0xc100565c, &(0x7f00000003c0)={0x8001, 0x7f, 0x1, {0x1, @sliced={0x8, [0xfffa, 0x8044, 0x6, 0x0, 0xb, 0xff, 0xad, 0xc, 0x1, 0x3, 0x7, 0xa, 0x6, 0x10, 0xfaf3, 0x4, 0x9, 0x5, 0x1, 0x3, 0x800, 0x40, 0x8001, 0x9, 0xa06, 0x2, 0x3, 0xb, 0x92b, 0x1, 0x8, 0x7, 0x4009, 0x4, 0xc, 0x0, 0x4, 0xffff, 0x6, 0xde2, 0x0, 0x8000, 0xe5d8, 0x9, 0x2, 0x1, 0x1ff, 0xfcc1], 0x5}}, 0x26b}) (async)
+r7 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_SELECTION(r7, 0xc040565f, &(0x7f0000001000)={0x1, 0x101, 0x4, {0x7, 0x5, 0x7d1}}) (async)
+ioctl$VIDIOC_STREAMOFF(r6, 0x40045613, &(0x7f0000000000)=0x7) (async)
+syz_open_dev$video(&(0x7f0000000000), 0x80000001, 0x802)
+syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x787a00) (async)
+r8 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000000c0), 0x2, 0x0) (async)
+r9 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x101400)
+ioctl$I2C_SMBUS(r9, 0x720, &(0x7f0000000140)={0x1, 0x7, 0x4, &(0x7f0000000100)={0x5, "86ac7ff43d18ddd0b9b005f666a773ebbc780fc769df62139d7b3d15035f4b161d"}})
+ioctl$VIDIOC_CREATE_BUFS(r8, 0xc100565c, &(0x7f0000001dc0)={0x3, 0x10000, 0x3, {0xa, @win={{0x5, 0x81, 0x9, 0x8}, 0x1, 0x1, 0x0, 0x101, 0x0, 0x4}}, 0x4})
+ioctl$VIDIOC_SUBDEV_QUERY_DV_TIMINGS(r5, 0x80845663, &(0x7f0000000280)={0x0, @reserved}) (async)
+ioctl$VIDIOC_ENUMOUTPUT(r7, 0xc0485630, &(0x7f0000000340)={0xd502, "3601822caf5ca00f39bdb1d695679dd0d454e848c409882dba240a8bc8d62d07", 0x2, 0x4, 0xced0, 0x800, 0x4}) (async)
+ioctl$VIDIOC_REQBUFS(r2, 0xc0145608, &(0x7f00000004c0)={0x401, 0x9, 0x1, 0x0, 0x2b})
+
+0s ago: executing program 3 (id=1848):
+r0 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x101400)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000c40), 0x2, 0x0)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_SELECTION(r2, 0xc040565f, &(0x7f0000001000)={0x1, 0x101, 0x4, {0x7, 0x5, 0x7d1}})
+r3 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x40)
+ioctl$I2C_PEC(r3, 0x708, 0x9)
+ioctl$VIDIOC_ENUMINPUT(r1, 0xc050561a, &(0x7f0000000c80)={0x5, "6e9af08cc85a60a2a35babcf955e60f3b2ddc3fad681f1f25fa6e71486d45fde", 0x3, 0xb, 0x4, 0xe0, 0x4020000, 0x8})
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000100)={0x1, 0xf9, 0x7, &(0x7f00000001c0)={0x5, "86ac7ff43d18dd1a9ea05cf666a773ebbcff0fc764df62139d7b3d15035f4b161d"}})
+r4 = syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x80)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+r6 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_PEC(r6, 0x708, 0x3)
+ioctl$I2C_SLAVE_FORCE(r6, 0x706, 0x11)
+ioctl$I2C_SMBUS(r6, 0x720, &(0x7f0000000000)={0x0, 0xe, 0x4, &(0x7f0000000100)={0x20, "3f667cc673bf0500e2b500f1ff0079c613b39400"}})
+r7 = syz_open_dev$video(&(0x7f0000000080), 0x5, 0x1)
+ioctl$VIDIOC_G_PARM(r7, 0xc0cc5615, &(0x7f0000000280)={0x1, @capture={0x1000, 0x0, {0xffff, 0x10}, 0x1, 0x68}})
+ioctl$VIDIOC_STREAMOFF(r5, 0xc0405626, &(0x7f0000000000)=0x7)
+ioctl$I2C_TENBIT(r4, 0x704, 0x1)
+
+kernel console output (not intermixed with test programs):
+
+Warning: Permanently added '[localhost]:51510' (ED25519) to the list of known hosts.
+[   70.655366] cgroup: Unknown subsys name 'net'
+[   70.719026] cgroup: Unknown subsys name 'cpuset'
+[   70.730707] cgroup: Unknown subsys name 'rlimit'
+[   70.733173] cgroup: Unknown subsys name 'memory'
+[   70.791760] kmemleak: Automatic memory scanning thread ended
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=14532486-31fc-4c34-8022-c77dd141ebae
+[   81.402580] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[   83.655841] audit: type=1400 audit(1767367305.109:24): avc:  denied  { execmem } for  pid=292 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   83.829688] audit: type=1400 audit(1767367305.283:25): avc:  denied  { read } for  pid=302 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   83.849062] audit: type=1400 audit(1767367305.283:26): avc:  denied  { open } for  pid=302 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   83.868880] audit: type=1400 audit(1767367305.283:27): avc:  denied  { open } for  pid=301 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   83.892532] audit: type=1400 audit(1767367305.284:28): avc:  denied  { getattr } for  pid=301 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   83.907505] audit: type=1400 audit(1767367305.284:30): avc:  denied  { getattr } for  pid=302 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   83.925837] audit: type=1400 audit(1767367305.284:29): avc:  denied  { getattr } for  pid=300 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   83.941001] audit: type=1400 audit(1767367305.284:31): avc:  denied  { map } for  pid=301 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  122.525819] i2c i2c-0: Unsupported transaction 4
+[  122.611672] i2c i2c-0: Unsupported transaction 4
+[  129.891742] i2c i2c-0: Unsupported transaction 7
+[  143.878465] i2c i2c-0: Unsupported transaction 7
+[  143.888988] i2c i2c-0: Unsupported transaction 4
+[  151.243884] i2c i2c-0: Unsupported transaction 8
+[  158.303441] i2c i2c-0: Unsupported transaction 8
+[  158.309749] i2c i2c-0: Unsupported transaction 8
+[  166.337594] i2c i2c-0: Unsupported transaction 7
+[  166.408538] i2c i2c-0: Unsupported transaction 7
+[  174.298825] i2c i2c-0: Unsupported transaction 4
+[  174.364145] i2c i2c-0: Unsupported transaction 7
+[  182.165263] i2c i2c-0: Unsupported transaction 4
+[  204.779694] FAULT_INJECTION: forcing a failure.
+[  204.779694] name fail_usercopy, interval 1, probability 0, space 0, times 1
+[  204.786315] CPU: 3 UID: 0 PID: 2348 Comm: syz.2.126 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  204.786335] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  204.786383] Call Trace:
+[  204.786406]  <TASK>
+[  204.786412]  dump_stack_lvl+0x10b/0x140
+[  204.786614]  should_fail_ex+0x4d5/0x5e0
+[  204.786650]  _copy_from_user+0x30/0xd0
+[  204.786674]  video_usercopy+0xbb4/0x11d0
+[  204.786693]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  204.786712]  ? __pfx___video_do_ioctl+0x10/0x10
+[  204.786728]  ? __pfx_video_usercopy+0x10/0x10
+[  204.786745]  ? lock_acquire+0x169/0x300
+[  204.786767]  ? __fget_files+0x3a/0x3b0
+[  204.786782]  ? find_held_lock+0x2b/0x80
+[  204.786798]  ? __fget_files+0x1f6/0x3b0
+[  204.786811]  ? lock_release+0xd3/0x2a0
+[  204.786843]  v4l2_ioctl+0x1b5/0x240
+[  204.786857]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  204.786873]  __x64_sys_ioctl+0x194/0x210
+[  204.786897]  do_syscall_64+0xc6/0x390
+[  204.786920]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  204.786935] RIP: 0033:0x7f96bb6e059d
+[  204.787228] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  204.787240] RSP: 002b:00007f96ba11ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  204.787267] RAX: ffffffffffffffda RBX: 00007f96bb955fa0 RCX: 00007f96bb6e059d
+[  204.787277] RDX: 0000200000000ac0 RSI: 00000000c0405610 RDI: 0000000000000004
+[  204.787286] RBP: 00007f96ba11f010 R08: 0000000000000000 R09: 0000000000000000
+[  204.787295] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  204.787303] R13: 00007f96bb956038 R14: 00007f96bb955fa0 R15: 00007f96ba0ff000
+[  204.787327]  </TASK>
+[  213.265371] i2c i2c-0: Unsupported transaction 8
+[  244.806143] i2c i2c-0: Unsupported transaction 8
+[  244.812313] i2c i2c-0: Unsupported transaction 4
+[  268.222117] i2c i2c-0: Unsupported transaction 8
+[  276.655477] i2c i2c-0: Unsupported transaction 8
+[  292.845002] i2c i2c-0: Unsupported transaction 4
+[  300.804844] i2c i2c-0: Unsupported transaction 4
+[  307.921776] i2c i2c-0: Unsupported transaction 8
+[  323.924167] i2c i2c-0: Unsupported transaction 4
+[  330.749447] FAULT_INJECTION: forcing a failure.
+[  330.749447] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  330.755334] CPU: 2 UID: 0 PID: 2652 Comm: syz.0.249 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  330.755350] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  330.755395] Call Trace:
+[  330.755401]  <TASK>
+[  330.755407]  dump_stack_lvl+0x10b/0x140
+[  330.755430]  should_fail_ex+0x4d5/0x5e0
+[  330.755448]  _copy_to_user+0x32/0xd0
+[  330.755469]  simple_read_from_buffer+0xe5/0x180
+[  330.755491]  proc_fail_nth_read+0x18f/0x240
+[  330.755508]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  330.755524]  ? security_file_permission+0x27/0x90
+[  330.755544]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  330.755558]  vfs_read+0x1eb/0xc70
+[  330.755574]  ? __pfx___mutex_lock+0x10/0x10
+[  330.755594]  ? __pfx_vfs_read+0x10/0x10
+[  330.755607]  ? __fget_files+0x1f6/0x3b0
+[  330.755619]  ? lock_release+0xd3/0x2a0
+[  330.755641]  ? __fget_files+0x200/0x3b0
+[  330.755660]  ksys_read+0x126/0x240
+[  330.755673]  ? __pfx_ksys_read+0x10/0x10
+[  330.755687]  ? fput+0x6f/0x100
+[  330.755707]  do_syscall_64+0xc6/0x390
+[  330.755726]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  330.755790] RIP: 0033:0x7fab30afef6c
+[  330.755801] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  330.755813] RSP: 002b:00007fab2f546f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  330.755838] RAX: ffffffffffffffda RBX: 00007fab30d75fa0 RCX: 00007fab30afef6c
+[  330.755846] RDX: 000000000000000f RSI: 00007fab2f547020 RDI: 0000000000000004
+[  330.755853] RBP: 00007fab2f547010 R08: 0000000000000000 R09: 0000000000000000
+[  330.755860] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  330.755867] R13: 00007fab30d76038 R14: 00007fab30d75fa0 R15: 00007fab2f527000
+[  330.755888]  </TASK>
+[  330.860291] i2c i2c-0: Unsupported transaction 7
+[  338.314153] FAULT_INJECTION: forcing a failure.
+[  338.314153] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  338.318359] CPU: 0 UID: 0 PID: 2683 Comm: syz.3.264 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  338.318375] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  338.318384] Call Trace:
+[  338.318388]  <TASK>
+[  338.318392]  dump_stack_lvl+0x10b/0x140
+[  338.318409]  should_fail_ex+0x4d5/0x5e0
+[  338.318420]  _copy_to_user+0x32/0xd0
+[  338.318435]  simple_read_from_buffer+0xe5/0x180
+[  338.318450]  proc_fail_nth_read+0x18f/0x240
+[  338.318460]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  338.318470]  ? security_file_permission+0x27/0x90
+[  338.318482]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  338.318491]  vfs_read+0x1eb/0xc70
+[  338.318501]  ? __pfx___mutex_lock+0x10/0x10
+[  338.318514]  ? __pfx_vfs_read+0x10/0x10
+[  338.318522]  ? __fget_files+0x1f6/0x3b0
+[  338.318530]  ? lock_release+0xd3/0x2a0
+[  338.318545]  ? __fget_files+0x200/0x3b0
+[  338.318557]  ksys_read+0x126/0x240
+[  338.318564]  ? __pfx_ksys_read+0x10/0x10
+[  338.318572]  ? v4l2_ioctl+0x1bd/0x240
+[  338.318581]  ? fput+0x6f/0x100
+[  338.318593]  do_syscall_64+0xc6/0x390
+[  338.318605]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  338.318614] RIP: 0033:0x7f04e83eef6c
+[  338.318621] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  338.318629] RSP: 002b:00007f04e6e2ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  338.318637] RAX: ffffffffffffffda RBX: 00007f04e8665fa0 RCX: 00007f04e83eef6c
+[  338.318643] RDX: 000000000000000f RSI: 00007f04e6e2f020 RDI: 0000000000000004
+[  338.318647] RBP: 00007f04e6e2f010 R08: 0000000000000000 R09: 0000000000000000
+[  338.318652] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  338.318656] R13: 00007f04e8666038 R14: 00007f04e8665fa0 R15: 00007f04e6e0f000
+[  338.318669]  </TASK>
+[  345.297677] FAULT_INJECTION: forcing a failure.
+[  345.297677] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  345.302389] CPU: 2 UID: 0 PID: 2692 Comm: syz.0.265 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  345.302422] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  345.302432] Call Trace:
+[  345.302438]  <TASK>
+[  345.302444]  dump_stack_lvl+0x10b/0x140
+[  345.302466]  should_fail_ex+0x4d5/0x5e0
+[  345.302478]  _copy_from_user+0x30/0xd0
+[  345.302493]  i2cdev_ioctl+0x137/0x810
+[  345.302504]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  345.302514]  ? selinux_file_ioctl+0x18c/0x280
+[  345.302523]  ? selinux_file_ioctl+0xbe/0x280
+[  345.302533]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  345.302542]  __x64_sys_ioctl+0x194/0x210
+[  345.302557]  do_syscall_64+0xc6/0x390
+[  345.302570]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  345.302579] RIP: 0033:0x7fab30b0059d
+[  345.302587] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  345.302595] RSP: 002b:00007fab2f546f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  345.302604] RAX: ffffffffffffffda RBX: 00007fab30d75fa0 RCX: 00007fab30b0059d
+[  345.302609] RDX: 0000200000002780 RSI: 0000000000000720 RDI: 0000000000000003
+[  345.302614] RBP: 00007fab2f547010 R08: 0000000000000000 R09: 0000000000000000
+[  345.302619] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  345.302624] R13: 00007fab30d76038 R14: 00007fab30d75fa0 R15: 00007fab2f527000
+[  345.302636]  </TASK>
+[  353.171385] FAULT_INJECTION: forcing a failure.
+[  353.171385] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  353.175072] CPU: 3 UID: 0 PID: 2713 Comm: syz.0.273 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  353.175083] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  353.175089] Call Trace:
+[  353.175093]  <TASK>
+[  353.175096]  dump_stack_lvl+0x10b/0x140
+[  353.175162]  should_fail_ex+0x4d5/0x5e0
+[  353.175190]  _copy_from_user+0x30/0xd0
+[  353.175211]  ioctl_fssetxattr+0x110/0x250
+[  353.175231]  ? __pfx_ioctl_fssetxattr+0x10/0x10
+[  353.175243]  ? get_pid_task+0x10c/0x250
+[  353.175253]  ? proc_fail_nth_write+0x9c/0x220
+[  353.175262]  ? find_held_lock+0x2b/0x80
+[  353.175271]  ? ksys_write+0x126/0x240
+[  353.175280]  ? lock_is_held_type+0xa9/0x130
+[  353.175293]  do_vfs_ioctl+0xbf7/0x1470
+[  353.175304]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[  353.175314]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  353.175325]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[  353.175335]  ? lock_acquire+0x169/0x300
+[  353.175346]  ? __fget_files+0x3a/0x3b0
+[  353.175353]  ? find_held_lock+0x2b/0x80
+[  353.175361]  ? __fget_files+0x1f6/0x3b0
+[  353.175368]  ? lock_release+0xd3/0x2a0
+[  353.175381]  ? selinux_file_ioctl+0x18c/0x280
+[  353.175388]  ? selinux_file_ioctl+0xbe/0x280
+[  353.175399]  __x64_sys_ioctl+0x11b/0x210
+[  353.175410]  do_syscall_64+0xc6/0x390
+[  353.175422]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  353.175430] RIP: 0033:0x7fab30b0059d
+[  353.175437] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  353.175444] RSP: 002b:00007fab2f546f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  353.175452] RAX: ffffffffffffffda RBX: 00007fab30d75fa0 RCX: 00007fab30b0059d
+[  353.175457] RDX: 0000000000000000 RSI: 00000000401c5820 RDI: 0000000000000003
+[  353.175462] RBP: 00007fab2f547010 R08: 0000000000000000 R09: 0000000000000000
+[  353.175466] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  353.175470] R13: 00007fab30d76038 R14: 00007fab30d75fa0 R15: 00007fab2f527000
+[  353.175481]  </TASK>
+[  353.271205] i2c i2c-0: Unsupported transaction 7
+[  361.329564] i2c i2c-0: Unsupported transaction 8
+[  392.535610] i2c i2c-0: Unsupported transaction 4
+[  400.587591] FAULT_INJECTION: forcing a failure.
+[  400.587591] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  400.593577] CPU: 3 UID: 0 PID: 2835 Comm: syz.0.326 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  400.593590] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  400.593595] Call Trace:
+[  400.593598]  <TASK>
+[  400.593602]  dump_stack_lvl+0x10b/0x140
+[  400.593620]  should_fail_ex+0x4d5/0x5e0
+[  400.593631]  _copy_to_user+0x32/0xd0
+[  400.593644]  simple_read_from_buffer+0xe5/0x180
+[  400.593659]  proc_fail_nth_read+0x18f/0x240
+[  400.593668]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  400.593678]  ? security_file_permission+0x27/0x90
+[  400.593691]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  400.593753]  vfs_read+0x1eb/0xc70
+[  400.593763]  ? __pfx___mutex_lock+0x10/0x10
+[  400.593776]  ? __pfx_vfs_read+0x10/0x10
+[  400.593784]  ? __fget_files+0x1f6/0x3b0
+[  400.593792]  ? lock_release+0xd3/0x2a0
+[  400.593806]  ? __fget_files+0x200/0x3b0
+[  400.593818]  ksys_read+0x126/0x240
+[  400.593826]  ? __pfx_ksys_read+0x10/0x10
+[  400.593834]  ? fput+0x6f/0x100
+[  400.593846]  do_syscall_64+0xc6/0x390
+[  400.593858]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  400.593867] RIP: 0033:0x7fab30afef6c
+[  400.593874] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  400.593882] RSP: 002b:00007fab2f546f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  400.593890] RAX: ffffffffffffffda RBX: 00007fab30d75fa0 RCX: 00007fab30afef6c
+[  400.593896] RDX: 000000000000000f RSI: 00007fab2f547020 RDI: 0000000000000004
+[  400.593900] RBP: 00007fab2f547010 R08: 0000000000000000 R09: 0000000000000000
+[  400.593905] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  400.593909] R13: 00007fab30d76038 R14: 00007fab30d75fa0 R15: 00007fab2f527000
+[  400.593922]  </TASK>
+[  424.719941] i2c i2c-0: Unsupported transaction 4
+[  432.815224] i2c i2c-0: Unsupported transaction 8
+[  448.475179] i2c i2c-0: Unsupported transaction 8
+[  448.513925] i2c i2c-0: Unsupported transaction 4
+[  456.300321] i2c i2c-0: Unsupported transaction 4
+[  472.620070] i2c i2c-0: Unsupported transaction 4
+[  489.958955] i2c i2c-0: Unsupported transaction 4
+[  518.564598] i2c i2c-0: Unsupported transaction 8
+[  544.510248] i2c i2c-0: Unsupported transaction 8
+[  544.515888] i2c i2c-0: Unsupported transaction 8
+[  552.840420] i2c i2c-0: Unsupported transaction 4
+[  562.730526] i2c i2c-0: Unsupported transaction 8
+[  582.044739] i2c i2c-0: Unsupported transaction 4
+[  582.047632] i2c i2c-0: Unsupported transaction 8
+[  582.126189] i2c i2c-0: Unsupported transaction 7
+[  590.333407] i2c i2c-0: Unsupported transaction 4
+[  590.335692] i2c i2c-0: Unsupported transaction 4
+[  597.425882] i2c i2c-0: Unsupported transaction 8
+[  605.815831] i2c i2c-0: Unsupported transaction 4
+[  605.819825] i2c i2c-0: Unsupported transaction 7
+[  614.180541] i2c i2c-0: Unsupported transaction 8
+[  614.201700] i2c i2c-0: Unsupported transaction 4
+[  614.204186] i2c i2c-0: Unsupported transaction 4
+[  614.208729] i2c i2c-0: Unsupported transaction 8
+[  629.590385] i2c i2c-0: Unsupported transaction 4
+[  637.862563] i2c i2c-0: Unsupported transaction 8
+[  662.509121] FAULT_INJECTION: forcing a failure.
+[  662.509121] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  662.514907] CPU: 3 UID: 0 PID: 3428 Comm: syz.1.571 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  662.514925] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  662.514948] Call Trace:
+[  662.514977]  <TASK>
+[  662.514983]  dump_stack_lvl+0x10b/0x140
+[  662.515216]  should_fail_ex+0x4d5/0x5e0
+[  662.515299]  _copy_to_user+0x32/0xd0
+[  662.515350]  simple_read_from_buffer+0xe5/0x180
+[  662.515406]  proc_fail_nth_read+0x18f/0x240
+[  662.515430]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  662.515439]  ? security_file_permission+0x27/0x90
+[  662.515477]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  662.515486]  vfs_read+0x1eb/0xc70
+[  662.515515]  ? __pfx___mutex_lock+0x10/0x10
+[  662.515536]  ? __pfx_vfs_read+0x10/0x10
+[  662.515544]  ? __fget_files+0x1f6/0x3b0
+[  662.515560]  ? lock_release+0xd3/0x2a0
+[  662.515612]  ? __fget_files+0x200/0x3b0
+[  662.515624]  ksys_read+0x126/0x240
+[  662.515632]  ? __pfx_ksys_read+0x10/0x10
+[  662.515639]  ? v4l2_ioctl+0x1bd/0x240
+[  662.515690]  ? fput+0x6f/0x100
+[  662.515739]  do_syscall_64+0xc6/0x390
+[  662.515778]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  662.515839] RIP: 0033:0x7f92913cef6c
+[  662.515883] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  662.515895] RSP: 002b:00007f928fe0ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  662.515917] RAX: ffffffffffffffda RBX: 00007f9291645fa0 RCX: 00007f92913cef6c
+[  662.515926] RDX: 000000000000000f RSI: 00007f928fe0f020 RDI: 0000000000000004
+[  662.515933] RBP: 00007f928fe0f010 R08: 0000000000000000 R09: 0000000000000000
+[  662.515942] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  662.515950] R13: 00007f9291646038 R14: 00007f9291645fa0 R15: 00007f928fdef000
+[  662.515971]  </TASK>
+[  685.533157] i2c i2c-0: Unsupported transaction 7
+[  693.627639] i2c i2c-0: Unsupported transaction 8
+[  717.930644] FAULT_INJECTION: forcing a failure.
+[  717.930644] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  717.936734] CPU: 2 UID: 0 PID: 3582 Comm: syz.2.628 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  717.936753] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  717.936763] Call Trace:
+[  717.936768]  <TASK>
+[  717.936775]  dump_stack_lvl+0x10b/0x140
+[  717.936819]  should_fail_ex+0x4d5/0x5e0
+[  717.936841]  _copy_to_user+0x32/0xd0
+[  717.936866]  simple_read_from_buffer+0xe5/0x180
+[  717.936935]  proc_fail_nth_read+0x18f/0x240
+[  717.936954]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  717.936969]  ? security_file_permission+0x27/0x90
+[  717.936989]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  717.937006]  vfs_read+0x1eb/0xc70
+[  717.937024]  ? __pfx___mutex_lock+0x10/0x10
+[  717.937048]  ? __pfx_vfs_read+0x10/0x10
+[  717.937062]  ? __fget_files+0x1f6/0x3b0
+[  717.937075]  ? lock_release+0xd3/0x2a0
+[  717.937101]  ? __fget_files+0x200/0x3b0
+[  717.937124]  ksys_read+0x126/0x240
+[  717.937138]  ? __pfx_ksys_read+0x10/0x10
+[  717.937151]  ? v4l2_ioctl+0x1bd/0x240
+[  717.937167]  ? fput+0x6f/0x100
+[  717.937190]  do_syscall_64+0xc6/0x390
+[  717.937212]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  717.937228] RIP: 0033:0x7f96bb6def6c
+[  717.937240] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  717.937254] RSP: 002b:00007f96ba11ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  717.937269] RAX: ffffffffffffffda RBX: 00007f96bb955fa0 RCX: 00007f96bb6def6c
+[  717.937279] RDX: 000000000000000f RSI: 00007f96ba11f020 RDI: 0000000000000004
+[  717.937288] RBP: 00007f96ba11f010 R08: 0000000000000000 R09: 0000000000000000
+[  717.937296] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  717.937305] R13: 00007f96bb956038 R14: 00007f96bb955fa0 R15: 00007f96ba0ff000
+[  717.937330]  </TASK>
+[  734.366084] i2c i2c-0: Unsupported transaction 8
+[  734.371521] i2c i2c-0: Unsupported transaction 8
+[  758.249400] i2c i2c-0: Unsupported transaction 4
+[  788.786779] i2c i2c-0: Unsupported transaction 7
+[  796.720826] i2c i2c-0: Unsupported transaction 7
+[  803.760813] i2c i2c-0: Unsupported transaction 4
+[  811.552538] i2c i2c-0: Unsupported transaction 7
+[  811.598920] i2c i2c-0: Unsupported transaction 8
+[  819.957978] i2c i2c-0: Unsupported transaction 4
+[  820.045646] i2c i2c-0: Unsupported transaction 4
+[  837.044357] i2c i2c-0: Unsupported transaction 8
+[  853.348338] i2c i2c-0: Unsupported transaction 8
+[  853.397397] i2c i2c-0: Unsupported transaction 7
+[  885.685102] i2c i2c-0: Unsupported transaction 8
+[  893.626962] i2c i2c-0: Unsupported transaction 8
+[  901.431303] i2c i2c-0: Unsupported transaction 8
+[  901.486811] i2c i2c-0: Unsupported transaction 8
+[  918.004264] i2c i2c-0: Unsupported transaction 7
+[  918.007221] i2c i2c-0: Unsupported transaction 7
+[  918.010426] i2c i2c-0: Unsupported transaction 7
+[  918.018538] i2c i2c-0: Unsupported transaction 7
+[  918.021690] i2c i2c-0: Unsupported transaction 7
+[  918.024698] i2c i2c-0: Unsupported transaction 7
+[  918.028206] i2c i2c-0: Unsupported transaction 7
+[  918.030713] i2c i2c-0: Unsupported transaction 7
+[  918.032703] i2c i2c-0: Unsupported transaction 7
+[  918.034676] i2c i2c-0: Unsupported transaction 7
+[  918.036628] i2c i2c-0: Unsupported transaction 7
+[  918.039311] i2c i2c-0: Unsupported transaction 7
+[  918.042161] i2c i2c-0: Unsupported transaction 7
+[  918.044928] i2c i2c-0: Unsupported transaction 7
+[  918.047279] i2c i2c-0: Unsupported transaction 7
+[  918.049740] i2c i2c-0: Unsupported transaction 7
+[  918.052184] i2c i2c-0: Unsupported transaction 7
+[  918.054773] i2c i2c-0: Unsupported transaction 7
+[  918.057382] i2c i2c-0: Unsupported transaction 7
+[  918.060526] i2c i2c-0: Unsupported transaction 7
+[  918.062899] i2c i2c-0: Unsupported transaction 7
+[  918.065391] i2c i2c-0: Unsupported transaction 7
+[  918.067698] i2c i2c-0: Unsupported transaction 7
+[  918.070073] i2c i2c-0: Unsupported transaction 7
+[  918.072774] i2c i2c-0: Unsupported transaction 7
+[  918.075336] i2c i2c-0: Unsupported transaction 7
+[  918.077991] i2c i2c-0: Unsupported transaction 7
+[  918.080436] i2c i2c-0: Unsupported transaction 7
+[  918.082780] i2c i2c-0: Unsupported transaction 7
+[  918.085238] i2c i2c-0: Unsupported transaction 7
+[  918.087813] i2c i2c-0: Unsupported transaction 7
+[  918.090455] i2c i2c-0: Unsupported transaction 7
+[  918.093035] i2c i2c-0: Unsupported transaction 7
+[  933.075718] i2c i2c-0: Unsupported transaction 8
+[  933.079872] i2c i2c-0: Unsupported transaction 4
+[  940.272193] i2c i2c-0: Unsupported transaction 8
+[  956.963231] i2c i2c-0: Unsupported transaction 8
+[  964.332625] i2c i2c-0: Unsupported transaction 8
+[  964.334785] i2c i2c-0: Unsupported transaction 8
+[  964.391691] i2c i2c-0: Unsupported transaction 8
+[  987.890428] i2c i2c-0: Unsupported transaction 8
+[ 1003.809505] i2c i2c-0: Unsupported transaction 8
+[ 1011.506713] i2c i2c-0: Unsupported transaction 7
+[ 1019.475396] i2c i2c-0: Unsupported transaction 7
+[ 1027.156418] i2c i2c-0: Unsupported transaction 8
+[ 1043.272626] i2c i2c-0: Unsupported transaction 4
+[ 1043.278408] i2c i2c-0: Unsupported transaction 8
+[ 1051.552283] i2c i2c-0: Unsupported transaction 7
+[ 1066.757074] i2c i2c-0: Unsupported transaction 8
+[ 1066.777473] i2c i2c-0: Unsupported transaction 4
+[ 1066.840781] i2c i2c-0: Unsupported transaction 8
+[ 1074.903858] i2c i2c-0: Unsupported transaction 7
+[ 1082.108299] i2c i2c-0: Unsupported transaction 4
+[ 1082.134708] i2c i2c-0: Unsupported transaction 4
+[ 1098.893512] i2c i2c-0: Unsupported transaction 4
+[ 1098.898104] i2c i2c-0: Unsupported transaction 8
+[ 1123.678291] i2c i2c-0: Unsupported transaction 8
+[ 1140.915372] i2c i2c-0: Unsupported transaction 7
+[ 1151.234288] i2c i2c-0: Unsupported transaction 4
+[ 1166.533358] i2c i2c-0: Unsupported transaction 8
+[ 1182.637939] i2c i2c-0: Unsupported transaction 7
+[ 1182.643393] i2c i2c-0: Unsupported transaction 7
+[ 1215.387005] i2c i2c-0: Unsupported transaction 8
+[ 1215.389629] i2c i2c-0: Unsupported transaction 8
+[ 1215.399266] i2c i2c-0: Unsupported transaction 8
+[ 1215.458142] i2c i2c-0: Unsupported transaction 7
+[ 1223.801466] i2c i2c-0: Unsupported transaction 8
+[ 1239.412553] i2c i2c-0: Unsupported transaction 7
+[ 1247.092260] i2c i2c-0: Unsupported transaction 8
+[ 1247.112138] i2c i2c-0: Unsupported transaction 8
+[ 1294.134711] i2c i2c-0: Unsupported transaction 4
+[ 1308.973205] i2c i2c-0: Unsupported transaction 8
+[ 1324.769878] i2c i2c-0: Unsupported transaction 4
+[ 1339.301097] i2c i2c-0: Unsupported transaction 4
+[ 1339.305105] i2c i2c-0: Unsupported transaction 4
+[ 1346.854980] i2c i2c-0: Unsupported transaction 7
+[ 1354.471673] i2c i2c-0: Unsupported transaction 4
+[ 1369.833567] i2c i2c-0: Unsupported transaction 4
+[ 1385.422799] i2c i2c-0: Unsupported transaction 7
+[ 1393.480423] i2c i2c-0: Unsupported transaction 4
+[ 1393.527863] i2c i2c-0: Unsupported transaction 8
+[ 1400.214747] i2c i2c-0: Unsupported transaction 8
+[ 1407.981098] i2c i2c-0: Unsupported transaction 8
+[ 1407.991428] i2c i2c-0: Unsupported transaction 8
+[ 1407.999703] i2c i2c-0: Unsupported transaction 8
+[ 1423.491630] i2c i2c-0: Unsupported transaction 4
+[ 1447.889707] i2c i2c-0: Unsupported transaction 4
+[ 1471.713597] i2c i2c-0: Unsupported transaction 4
+[ 1479.532094] i2c i2c-0: Unsupported transaction 7
+[ 1495.435980] i2c i2c-0: Unsupported transaction 8
+[ 1526.602130] i2c i2c-0: Unsupported transaction 4
+[ 1526.605012] i2c i2c-0: Unsupported transaction 8
+[ 1526.627078] i2c i2c-0: Unsupported transaction 4
+[ 1534.513427] i2c i2c-0: Unsupported transaction 4
+[ 1542.149552] i2c i2c-0: Unsupported transaction 7
+[ 1542.189259] i2c i2c-0: Unsupported transaction 8
+[ 1550.303779] i2c i2c-0: Unsupported transaction 8
+[ 1550.337278] i2c i2c-0: Unsupported transaction 7
+[ 1557.273439] i2c i2c-0: Unsupported transaction 8
+[ 1557.294051] i2c i2c-0: Unsupported transaction 8
+[ 1557.301589] i2c i2c-0: Unsupported transaction 7
+[ 1572.350917] i2c i2c-0: Unsupported transaction 7
+[ 1572.374851] i2c i2c-0: Unsupported transaction 7
+[ 1579.264360] i2c i2c-0: Unsupported transaction 4
+[ 1594.454683] i2c i2c-0: Unsupported transaction 4
+[ 1594.456869] i2c i2c-0: Unsupported transaction 4
+[ 1594.489432] i2c i2c-0: Unsupported transaction 4
+[ 1594.510936] i2c i2c-0: Unsupported transaction 7
+[ 1609.062228] i2c i2c-0: Unsupported transaction 4
+[ 1617.206628] i2c i2c-0: Unsupported transaction 8
+[ 1625.266011] i2c i2c-0: Unsupported transaction 7
+[ 1647.407836] i2c i2c-0: Unsupported transaction 4
+[ 1647.410056] i2c i2c-0: Unsupported transaction 4
+[ 1655.508581] i2c i2c-0: Unsupported transaction 4
+[ 1663.606778] i2c i2c-0: Unsupported transaction 4
+[ 1703.018274] i2c i2c-0: Unsupported transaction 7
+[ 1703.023722] i2c i2c-0: Unsupported transaction 8
+[ 1703.026475] i2c i2c-0: Unsupported transaction 8
+[ 1725.752751] i2c i2c-0: Unsupported transaction 4
+[ 1733.707323] i2c i2c-0: Unsupported transaction 4
+[ 1733.710122] i2c i2c-0: Unsupported transaction 4
+[ 1757.527766] i2c i2c-0: Unsupported transaction 4
+[ 1757.545454] i2c i2c-0: Unsupported transaction 8
+[ 1757.569589] i2c i2c-0: Unsupported transaction 8
+[ 1765.598797] i2c i2c-0: Unsupported transaction 4
+[ 1765.665321] i2c i2c-0: Unsupported transaction 8
+[ 1765.668939] i2c i2c-0: Unsupported transaction 4
+[ 1772.610685] i2c i2c-0: Unsupported transaction 7
+[ 1780.769527] i2c i2c-0: Unsupported transaction 8
+[ 1796.377582] i2c i2c-0: Unsupported transaction 4
+[ 1826.488754] i2c i2c-0: Unsupported transaction 8
+[ 1826.516718] i2c i2c-0: Unsupported transaction 7
+[ 1842.667218] i2c i2c-0: Unsupported transaction 4
+[ 1849.670993] i2c i2c-0: Unsupported transaction 8
+[ 1849.673351] i2c i2c-0: Unsupported transaction 8
+[ 1849.732425] i2c i2c-0: Unsupported transaction 7
+[ 1865.746061] i2c i2c-0: Unsupported transaction 7
+[ 1882.494722] i2c i2c-0: Unsupported transaction 8
+[ 1890.479521] i2c i2c-0: Unsupported transaction 4
+[ 1898.475725] i2c i2c-0: Unsupported transaction 8
+[ 1898.478493] i2c i2c-0: Unsupported transaction 4
+[ 1905.749980] i2c i2c-0: Unsupported transaction 4
+[ 1913.578999] ------------[ cut here ]------------
+[ 1913.582188] WARNING: CPU: 1 PID: 6783 at mm/page_alloc.c:5154 __alloc_frozen_pages_noprof+0x306/0x1f60
+SYZFAIL: failed to recv rpc
+fd=3 want=4 recv=0 n=0 (errno 9: Bad file descriptor)
+[ 1913.587880] Modules linked in: bochs drm_shmem_helper drm_kms_helper virtio_pci drm ata_generic dt3155 i2c_piix4 virtio_pci_legacy_dev drm_panel_orientation_quirks i2c_smbus virtio_pci_modern_dev pata_acpi videobuf2_dma_contig
+[ 1913.598713] CPU: 1 UID: 0 PID: 6783 Comm: syz.2.1847 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[ 1913.603814] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1913.610575] RIP: 0010:__alloc_frozen_pages_noprof+0x306/0x1f60
+[ 1913.613966] Code: 5b 5d 41 5c 41 5d 41 5e 41 5f c3 cc cc cc cc 41 83 fe 0a 0f 86 08 fe ff ff 80 3d 3f e6 2a 06 00 75 0b c6 05 36 e6 2a 06 01 90 <0f> 0b 90 48 c7 44 24 10 00 00 00 00 e9 77 ff ff ff 48 8b 44 24 10
+[ 1913.623673] RSP: 0018:ffff88801b6f74d0 EFLAGS: 00010246
+[ 1913.626145] RAX: 0000000000000000 RBX: 0000000000000000 RCX: 0000000000000000
+[ 1913.630320] RDX: 0000000000000000 RSI: 1ffff110036deead RDI: 0000000000000cc4
+[ 1913.634780] RBP: 0000000000ffffff R08: 0000000000000000 R09: ffffed102036c01f
+[ 1913.642649] R10: 0000000000000000 R11: 0000000000000000 R12: 0000000000000000
+[ 1913.647067] R13: 0000000000000000 R14: 000000000000000b R15: 00000000ffffffff
+[ 1913.652394] FS:  00007f96ba11f640(0000) GS:ffff8881912bf000(0000) knlGS:0000000000000000
+[ 1913.657333] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 1913.661247] CR2: 00007ffffffff000 CR3: 0000000112070000 CR4: 00000000000006f0
+[ 1913.666381] Call Trace:
+[ 1913.668052]  <TASK>
+[ 1913.669584]  ? kernel_text_address+0x75/0xf0
+[ 1913.673225]  ? lock_acquire+0x169/0x300
+[ 1913.676097]  ? __kernel_text_address+0x12/0x40
+[ 1913.679386]  ? unwind_get_return_address+0x5e/0xa0
+[ 1913.682458]  ? __pfx_stack_trace_consume_entry+0x10/0x10
+[ 1913.685781]  ? arch_stack_walk+0xa1/0xf0
+[ 1913.688100]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[ 1913.691627]  ? stack_depot_save_flags+0x2c/0xa20
+[ 1913.695097]  ? __pfx_vb2_dc_alloc+0x10/0x10 [videobuf2_dma_contig]
+[ 1913.699099]  ? kasan_save_stack+0x34/0x50
+[ 1913.701905]  ? kasan_save_stack+0x24/0x50
+[ 1913.704605]  ? kasan_save_track+0x14/0x30
+[ 1913.707255]  ? __kasan_kmalloc+0x7f/0x90
+[ 1913.709802]  ? vb2_dc_alloc+0x68/0x850 [videobuf2_dma_contig]
+[ 1913.713503]  __alloc_pages_noprof+0x11/0x1c0
+[ 1913.716583]  __dma_direct_alloc_pages.constprop.0+0x3ac/0x850
+[ 1913.720360]  ? __pfx___dma_direct_alloc_pages.constprop.0+0x10/0x10
+[ 1913.723288]  ? find_held_lock+0x2b/0x80
+[ 1913.725251]  dma_direct_alloc+0x90/0x550
+[ 1913.727789]  ? _raw_spin_unlock_irqrestore+0x31/0x60
+[ 1913.730969]  dma_alloc_attrs+0x1c8/0x3d0
+[ 1913.733522]  ? __pfx_dma_alloc_attrs+0x10/0x10
+[ 1913.735836]  ? kasan_save_track+0x14/0x30
+[ 1913.738239]  ? __kasan_kmalloc+0x7f/0x90
+[ 1913.740853]  vb2_dc_alloc+0x325/0x850 [videobuf2_dma_contig]
+[ 1913.743507]  ? __pfx_vb2_dc_alloc+0x10/0x10 [videobuf2_dma_contig]
+[ 1913.746717]  __vb2_queue_alloc+0x7c0/0x10b0
+[ 1913.749252]  vb2_core_create_bufs+0x5b1/0xad0
+[ 1913.751556]  ? __pfx_vb2_core_create_bufs+0x10/0x10
+[ 1913.754923]  ? __pfx___mutex_trylock_common+0x10/0x10
+[ 1913.757120]  vb2_create_bufs+0x383/0x6e0
+[ 1913.758757]  ? __pfx_vb2_create_bufs+0x10/0x10
+[ 1913.760762]  ? v4l_sanitize_format+0x19d/0x440
+[ 1913.762408]  ? __pfx___mutex_lock+0x10/0x10
+[ 1913.764022]  ? vb2_set_flags_and_caps+0x279/0x3a0
+[ 1913.765788]  vb2_ioctl_create_bufs+0x24a/0x3f0
+[ 1913.768837]  ? check_fmt+0x4f9/0x910
+[ 1913.770737]  v4l_create_bufs+0x158/0x270
+[ 1913.772226]  __video_do_ioctl+0x662/0xdc0
+[ 1913.773901]  ? __pfx___video_do_ioctl+0x10/0x10
+[ 1913.776363]  ? __might_fault+0xe5/0x190
+[ 1913.778085]  video_usercopy+0x396/0x11d0
+[ 1913.780198]  ? __pfx___video_do_ioctl+0x10/0x10
+[ 1913.782677]  ? __pfx_video_usercopy+0x10/0x10
+[ 1913.784378]  ? lock_acquire+0x169/0x300
+[ 1913.786475]  ? __fget_files+0x3a/0x3b0
+[ 1913.788956]  ? find_held_lock+0x2b/0x80
+[ 1913.791447]  ? __fget_files+0x1f6/0x3b0
+[ 1913.793979]  ? lock_release+0xd3/0x2a0
+[ 1913.796377]  v4l2_ioctl+0x1b5/0x240
+[ 1913.798723]  ? __pfx_v4l2_ioctl+0x10/0x10
+[ 1913.800866]  __x64_sys_ioctl+0x194/0x210
+[ 1913.803289]  do_syscall_64+0xc6/0x390
+[ 1913.805423]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1913.808216] RIP: 0033:0x7f96bb6e059d
+[ 1913.810288] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1913.820055] RSP: 002b:00007f96ba11ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1913.824123] RAX: ffffffffffffffda RBX: 00007f96bb955fa0 RCX: 00007f96bb6e059d
+[ 1913.828481] RDX: 0000200000000100 RSI: 00000000c100565c RDI: 0000000000000007
+[ 1913.832852] RBP: 00007f96bb77e078 R08: 0000000000000000 R09: 0000000000000000
+[ 1913.836891] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[ 1913.841161] R13: 00007f96bb956038 R14: 00007f96bb955fa0 R15: 00007f96ba0ff000
+[ 1913.845344]  </TASK>
+[ 1913.847038] irq event stamp: 1391
+[ 1913.849230] hardirqs last  enabled at (1401): [<ffffffff8155bd39>] __up_console_sem+0x89/0xa0
+[ 1913.854166] hardirqs last disabled at (1410): [<ffffffff8155bd1e>] __up_console_sem+0x6e/0xa0
+[ 1913.859011] softirqs last  enabled at (1192): [<ffffffff813d2e09>] handle_softirqs+0x509/0x760
+[ 1913.864077] softirqs last disabled at (1181): [<ffffffff813d3140>] __irq_exit_rcu+0xd0/0x100
+[ 1913.868623] ---[ end trace 0000000000000000 ]---
+[ 1913.871500] dt3155 0000:00:05.0: dma alloc of size 4198400 failed

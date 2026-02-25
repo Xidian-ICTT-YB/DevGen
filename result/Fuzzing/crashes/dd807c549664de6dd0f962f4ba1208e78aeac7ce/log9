@@ -1,0 +1,443 @@
+last executing test programs:
+
+46.52698444s ago: executing program 0 (id=1):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x1d, 0x7810, 0x0, 0x0}], 0x1})
+
+46.329205665s ago: executing program 1 (id=11):
+r0 = syz_open_dev$I2C(0x0, 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x1d, 0x7811, 0x5, &(0x7f00000000c0)="4cb9fa53e1"}], 0x1})
+ioctl$I2C_RETRIES(r0, 0x701, 0xaca)
+
+46.32905938s ago: executing program 1 (id=12):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x3, 0x101800)
+ioctl$I2C_TENBIT(r0, 0x704, 0x0)
+ioctl$I2C_RDWR(r0, 0x707, 0x0)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f00000006c0)={0x1, 0xf0, 0x5, &(0x7f0000000680)={0x20, "bb127342d7dac3a1fed5405dc7311e92a6d7e106ac2958c77f28c577b9556197c2"}})
+ioctl$I2C_PEC(r0, 0x708, 0x8355)
+r1 = syz_open_dev$I2C(&(0x7f0000000700), 0x8, 0x4001)
+ioctl$I2C_SLAVE_FORCE(r1, 0x706, 0x376)
+ioctl$I2C_RETRIES(r1, 0x701, 0x2)
+ioctl$I2C_RDWR(r1, 0x707, &(0x7f0000000a00)={&(0x7f0000000980)=[{0x81, 0xe10, 0xd6, &(0x7f0000000740)="69b24e69b2ea8e449220fef8b14b9751a84bdf122f0fdb1bac8588cd773c30477e83dc6388e88e636994e2af3978a5f265c0d96dab922df56aeb1e05ec152c125503e66e3b9210e3d9877962af41e08b207299d290889728a1ee70da1f2a0f2ec9d026c66115413fcab937dc90f50848dca03a86768616c99d2f997c88dfc5210c9ab81838a5c2d70591202021e8a272c799f9c802d35888db0a9d04312c7b99246d56067289a6dae3948efd4ae34cea902ffd0d1377fde2ea51a90a2d6939bb840079dc1e9fe4a60d35a9073a1fa1ac9b889eaff24b"}, {0x0, 0x1410, 0x48, &(0x7f0000000840)="9890057052bb6606c427a82ebb1d425b2392d811011f292973707ce2dff3cec7732aa7ca54e186e370b6b77d17740a7c51aee96209ce1bf61076b027418146fb241f50e43268dae3"}, {0x7ff, 0x1, 0x17, &(0x7f00000008c0)="61c3b0bbc0a6e8a6b99354773afad6889e9876f46b73f9"}, {0xff, 0x1000, 0x31, &(0x7f0000000900)="d7bd1aad927fb49609be4c55388e4e1a529c5b4b4fa97337a197782e2b795f6bfdbbde0f0a8aa90092029081738a33d3d4"}, {0x2, 0x11, 0x3b, &(0x7f0000000940)="bf8e595d33dcd27a9a24c777f193e63b725a183a9816a77ac17dd27439df73e2b85daccbaa079bc68b9243b023352399d79852ecf955e9ee0e52aa"}], 0x5})
+ioctl$I2C_TIMEOUT(r0, 0x702, 0xf7)
+r2 = syz_open_dev$I2C(&(0x7f0000000a40), 0x8001, 0x4040)
+ioctl$I2C_RETRIES(r2, 0x701, 0x3)
+ioctl$I2C_TIMEOUT(r1, 0x702, 0x2)
+r3 = syz_open_dev$I2C(&(0x7f0000000a80), 0xc, 0x161842)
+ioctl$I2C_TENBIT(r3, 0x704, 0x0)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000b00)={0x1, 0x0, 0x0, &(0x7f0000000ac0)={0xe, "7850a813ee612c155c181ff14cafbecd70fd54cb424db10f82e0e234c46d991797"}})
+ioctl$I2C_TIMEOUT(r1, 0x702, 0xdc47)
+ioctl$I2C_SLAVE(r2, 0x703, 0x106)
+ioctl$I2C_RDWR(r3, 0x707, &(0x7f0000000bc0)={&(0x7f0000000b80)=[{0x3, 0x2a00, 0x25, &(0x7f0000000b40)="ae1ad4ab3efd085c846a0cd6a1195e38b41479960b1afcb77973d87eceb44c796360845a46"}], 0x1})
+ioctl$I2C_SLAVE(r2, 0x703, 0x3c3)
+ioctl$I2C_FUNCS(r0, 0x705, &(0x7f0000000c00)=0x6)
+ioctl$I2C_TENBIT(r2, 0x704, 0x0)
+ioctl$I2C_SLAVE_FORCE(r0, 0x706, 0x1f2)
+ioctl$I2C_RETRIES(r2, 0x701, 0x9)
+ioctl$I2C_RDWR(r2, 0x707, &(0x7f0000000e40)={&(0x7f0000000e00)=[{0xf72, 0x801, 0x32, &(0x7f0000000c40)="86f49586f6dc2be44280aef07e2837c85ba72a9030cd9aa8ad676da1979ccb2da0d08000544a2d47bef996a4370db21048c5"}, {0x1, 0x200, 0x17, &(0x7f0000000c80)="9ce71cf844f7742959bd800a11a63b689f0847a1dabe88"}, {0xfff4, 0x10, 0x12, &(0x7f0000000cc0)="6dd7e16f8081e1711533985d7b8c01ec15a9"}, {0xffff, 0x1000, 0xd6, &(0x7f0000000d00)="e3d509917f2968c35d150c989c9b6f41ad46ac406343c1c0ba4b43dd9c383ce5e6eb7e6cebcea61e053afbcb64d9fdd12f92d03eeebd5052b7e4669bdaa0bc0cb6eb9ebdb4501e3decf3176fa57d15e2b0bb3b70d83b1e565f92e717416a28bc0e667d497b01483518085960cd6856342abfd09b32b087d26058f6d6805d3fd130cced81be6f243034d9ef4319cbcfa2ea7bc336cd2145c17ce25777fc0ff04831d6a304a4a7f04ed5943a0743d704357b5624fae663ec6e49732dbee0702846bf793ccf35845968eb09449f63f3f9d7b639e68b09a1"}], 0x4})
+r4 = syz_open_dev$I2C(&(0x7f0000000e80), 0x8, 0x301002)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f0000000f00)={0x1, 0x7, 0x6, &(0x7f0000000ec0)={0x10, "c54b6d482d1c79708e7635765131aa10f66a4543c9c2e384f3a9a0e5c78bf71a8d"}})
+ioctl$I2C_PEC(0xffffffffffffffff, 0x708, 0x0)
+
+36.187314314s ago: executing program 0 (id=13):
+r0 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x101400)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000140)={0x1, 0x7, 0x4, &(0x7f0000000100)={0x5, "86ac7ff43d18ddd0b9b005f666a773ebbc780fc769df62139d7b3d15035f4b161d"}})
+r1 = syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x80)
+ioctl$I2C_SLAVE_FORCE(r1, 0x706, 0x34a)
+r2 = syz_open_dev$I2C(&(0x7f0000000040), 0x0, 0x80)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000380)={0x2, 0x9, 0x5, 0x0})
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000380)={0x1, 0x9, 0x3, &(0x7f0000000340)={0x5, "f2224ff8a910f10dd4a6ac31f3a855d0ff6d3e50fd33eb500327cb1bbf6e87746e"}})
+ioctl$I2C_RDWR(r1, 0x707, &(0x7f0000000080)={&(0x7f0000000000)=[{0x7ff, 0x8200, 0xbf, &(0x7f0000000180)="aa2e8ff6fb8731fc4677c4b6d15dd6aaa82375e4427318624f7aae1d2b4abefdbba7724483d622c027dbd22279113fbc17dbc8267a7c0d31a5e3dd172df96cd83a9b4c30b9de3fb3117e1a2ab813b2bd9b1990c8e336076c8ead7b40fdba40b4219f49d932a757bbfe39b34a3c487328cb8890468e8728326acb7e5f62142772e6d54ab00925a0b79845a632d60f088bc2a734f471d0224f879cec17f687b04130f859bff68e1ce3ad7e518f71f3340c16d4344622ee761502d35ee27d4942"}, {0x1442, 0x7a00, 0x7d, &(0x7f0000000240)="5cc5c3e5571c4061aeca8084edfbd4b882207b2add30fc2c85cdc82b8162ef61801899b71fa7056775a7ed1d08112c1c98dbd582317fc07ff8bbefba20cffac43cabaaca3cd66a9142d432c7460a7495d56287c077a43c949acec644754f97b4a6c983dddcfe03b209fe689c21557bdea23e81b606b824c48dfe0a1a0b"}], 0x2})
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1)
+ioctl$I2C_TENBIT(r3, 0x4020940d, 0x110e20fffc)
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0x720, 0x0)
+r4 = syz_open_dev$I2C(&(0x7f00000002c0), 0xff, 0x5b1000)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f00000003c0)={0x0, 0xa, 0x6, &(0x7f0000000300)={0x10, "8b332568a9ea4f652d315b6de771299ece9f4d39214a01c6e5608341978b0000f0"}})
+ioctl$I2C_RETRIES(0xffffffffffffffff, 0x701, 0x10001)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000440)={0x0, 0x45, 0x1, &(0x7f0000000400)={0x1a, "97b0aad12bb1aa0ce6bd1f30bce1f1b014495fd0417b3f8568d7af235f0911cf60"}})
+
+36.187153728s ago: executing program 1 (id=14):
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0x720, &(0x7f0000000100)={0x1, 0x7c, 0x6, &(0x7f0000000080)={0x1d, "e75303cb37cd7873ad3453669fe79d66d6c7f40093d3a1f4598e27a7d142af1efd"}})
+
+36.15249998s ago: executing program 2 (id=17):
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0x720, &(0x7f0000002780)={0x0, 0xe1, 0x3, &(0x7f0000002740)={0x8, "b283ea543cb78bab2fa5c5e874287edd62682e37523b0a5745de9a81a582891fdf"}})
+
+36.152366372s ago: executing program 1 (id=18):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000280)={&(0x7f0000000200)=[{0x6, 0x401, 0x79, &(0x7f0000000000)="accef61c2fca529e28aafa21a4a4e3787c42fc060957a67578476ae31adc76b8f7463eaf68ce84141d2beab28d77e3c6f7a399a74ec4cfc4ab43fd7df8dcbbd6058d7f0e073360dad9652eb07278c707f98f2c0418adfb96aa0cc44c492eadd7bfa065813dddd757207afe94f4f92acf36da703e1bd764bbda"}], 0x1})
+
+36.147064496s ago: executing program 0 (id=19):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20000)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000780)={0x1, 0x4, 0x0, 0x0})
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x0, 0xee00, 0x0, 0x0}], 0x1})
+
+36.098103597s ago: executing program 2 (id=20):
+r0 = syz_open_dev$I2C(&(0x7f0000000080), 0x5, 0x280)
+ioctl$I2C_PEC(r0, 0x708, 0x9)
+r1 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+syz_open_dev$I2C(&(0x7f0000002c80), 0x0, 0x200)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000040)={0x0, 0x5, 0x5, &(0x7f0000000000)={0x1b, "930e95fb6cae4f1e5cf4d8d84211c5f20f68d1aa17695975519b1cbf01ab3561fe"}})
+
+26.743186087s ago: executing program 0 (id=21):
+r0 = syz_open_dev$I2C(&(0x7f0000000080), 0x8, 0x20102)
+r1 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_FUNCS(r1, 0x4b47, 0x0)
+ioctl$I2C_SLAVE_FORCE(r0, 0x706, 0xaf)
+r2 = syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x101)
+ioctl$I2C_FUNCS(r2, 0x5452, &(0x7f0000000440)=0xfffffffffffffff9)
+r3 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+r4 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f0000000080)={0x0, 0xa, 0x8, 0xfffffffffffffffd})
+ioctl$I2C_RDWR(r3, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x1d, 0x7810, 0x0, 0x0}, {0x0, 0xee00, 0x0, 0x0}], 0x2})
+r5 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+r6 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x40)
+ioctl$I2C_PEC(r6, 0x80811501, 0x9)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f0000000780)={0x0, 0xd, 0x5, &(0x7f0000000100)={0x89, "3f6678c673bf0580a1b1eeb82bd0a6332500"}})
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000040)={0x1, 0x2, 0x4, &(0x7f0000000000)={0x11, "05682167984ae0f5c511a26d328ff789594f26f274be04cbfb208dc2c0be1ca816"}})
+
+26.740799291s ago: executing program 1 (id=22):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x1d, 0x7810, 0x5, &(0x7f00000000c0)="4cb9fa53e1"}], 0x1})
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x200)
+
+26.740718734s ago: executing program 2 (id=23):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x1d, 0x7810, 0x700, 0x0}], 0x1})
+
+26.681107312s ago: executing program 3 (id=25):
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r0, 0x720, 0x0)
+
+26.681024138s ago: executing program 2 (id=26):
+r0 = syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x101)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x80800)
+ioctl$I2C_PEC(r1, 0x708, 0x7)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000100)={0x0, 0x7c, 0x1, 0x0}) (async)
+ioctl$I2C_FUNCS(r0, 0x705, &(0x7f0000000440)=0xfffffffffffffff9)
+ioctl$I2C_TENBIT(r1, 0x704, 0x0)
+
+26.680836287s ago: executing program 3 (id=27):
+r0 = syz_open_dev$I2C(0x0, 0x1, 0x80800)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000100)={0x1, 0x7c, 0x6, &(0x7f0000000080)={0x1d, "e75303cb37cd7873ad3453669fe79d66d6c7f40093d3a1f4598e27a7d142af1efd"}})
+
+26.680812351s ago: executing program 3 (id=28):
+r0 = syz_open_dev$I2C(0x0, 0x0, 0x800)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000002780)={0x0, 0xe1, 0x3, &(0x7f0000002740)={0x8, "b283ea543cb78bab2fa5c5e874287edd62682e37523b0a5745de9a81a582891fdf"}})
+
+15.129357535s ago: executing program 0 (id=29):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x0, 0xee00, 0x0, 0x0}], 0x1})
+
+15.128706013s ago: executing program 1 (id=30):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000640)=[{0x6e, 0x10, 0xd8, &(0x7f0000000000)="211289d3207b762e99543a7aead7d6b7778283b5256788f2e7d00ce2854a5e2b4c838934e722f67790e62dee4a441175dd224b30cfe3642e5301255ae425bf264d99e7b9bc5253437542121b3cab70a16413dd94651e850ea57e96a96ab4402849b24b1472fe745dc02e1865899e21379aad22f0a803c07bde598131043ae389e80b2bd7902b1bf023c84352222b8c0d9c94bf50529736bd7dae5e93b1ca10f9e0785c87c46c001c0aa90ba59d113bd377b0106a76c4cec04cd3043a49afb4dbc6f67835393fa1fa883677f997348515a60715ca2e34f896"}, {0x9, 0x201, 0x29, &(0x7f0000000100)="2ce621b83a1ac999ee1072ef6646f61ad9de4db30a3de60596f6733aa700bc105eb3355ad591d8b604"}, {0x9, 0x4001, 0x5b, &(0x7f0000000140)="98857bac6300e18aa445008dccc84bb92f4b25660702e238753df45a728f3c928ab3d45045991e16d5170fa8cc204e85ffd3900ae527ed3bf687ac1cdb323f2a8af065646e473301b0231da0d2092f9ed93017af12e7d069efd6e3"}, {0x400, 0x4000, 0x7a, &(0x7f0000000200)="c6645d9e104dcce581ccb81c8079cf13c45cb70ca8ce098003ce0753a70482a64ce09c026ba41e7123ca1f86248facd56a95560973002ffd32dd6c6449072580a93484231795fd0c511ef7ee3c9730f35658f843f5573eaa4898c01d591c760c29424567cf0842bd6046bae85f79a7c1759faed1a3ba59acbda6"}, {0x1, 0x201, 0x94, &(0x7f0000000800)="be91a1149fd9f31f677ded10cdb963bf0e015bf6ffb87a0fbc499b17f8c10645e87d880773184ab899a685e981a6d65ee5effc9db69fe0939f278c0f4bec0b5b2825de67a1e2c948967d1f540d0bf5bdfea4b2790a624143bb32115afd48eab9a55f4ee2a588db2a197ece0ca0c8d486f4d8c3cb4e1b535dbe7da030351b2d7804cbde924a955c635d242a2786f3760cd2d18519"}, {0x7fff, 0x4000, 0xe4, &(0x7f0000000700)="46302113c3bffc76672912f3afddb8f1b255fe7dfe5b6344ef087678dabcbe6e4994aa4d829ffeddb943f360775d0e32cab51a1bc5a579df667af9018c09c5550bd0ec0f2f7515ed61c5cd0335e01b230edcf3d057ce092583000000000000000584eddd3a6a45377e479b6e86353ae6ca3b1df29be982d914a1e0ba9b87ebc8e2161bbbfe6df717502c5e3e34b7afe0e438b405eb4eef9da129c9dbebc35d429ebf2464ea1576c723f520d02afe54690e1c9abdce091425153fc4d74baf6cfd6d40bdc12ba2a1d8e067fa994fa9aa1009d7527e1e2b202e7700"/228}, {0x6, 0x4200, 0xf5, &(0x7f0000000380)="742315a37278d74542220ba9e6dd4740d3cded7005b78bf5c068378ac1f447e2c51c9316d34dea04e04415341056255e2447680e48a3e81a526f3473b41fc89533b25cc91bdb087c0cf0d381797488bfd60d35b44592dbf8522ab4c41327e3e877edf2a9a8f19261a9164de99c925bab2fafb480643634b01345ea86f211f146e14faf8540456e4b8fd88afb4e47028f5cdc88f62aea7b0ba9a1914f2de2a601a79e53b88c076148cb4349a54fc1791ad3af2ff354256508dc8f6f833b6c94a20052862a3b7a578dcdf38e09c1feca9d4de163187f135ca0c7f7b5f5f6b0857fc2c988ce1ea862a7aa5ebf55e755ec25f54353107e"}], 0x7})
+
+15.12863105s ago: executing program 2 (id=31):
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0x720, &(0x7f0000000080)={0x1, 0x8, 0x7, &(0x7f0000000040)={0x1e, "2e4a721be957b9ef427adb5f16f6781ff7fa003e17143e7a4e26c7123ed51f4509"}})
+
+15.128405747s ago: executing program 3 (id=32):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, 0x0)
+ioctl$I2C_RETRIES(r0, 0x701, 0xaca)
+
+15.073492122s ago: executing program 2 (id=33):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x1d, 0x7810, 0x0, 0x0}], 0x1})
+
+15.073140357s ago: executing program 0 (id=34):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x3, 0x101800)
+ioctl$I2C_TENBIT(r0, 0x704, 0x0)
+ioctl$I2C_RDWR(r0, 0x707, 0x0)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f00000006c0)={0x1, 0xf0, 0x5, &(0x7f0000000680)={0x20, "bb127342d7dac3a1fed5405dc7311e92a6d7e106ac2958c77f28c577b9556197c2"}})
+ioctl$I2C_PEC(r0, 0x708, 0x8355)
+r1 = syz_open_dev$I2C(&(0x7f0000000700), 0x8, 0x4001)
+ioctl$I2C_SLAVE_FORCE(r1, 0x706, 0x376)
+ioctl$I2C_RETRIES(r1, 0x701, 0x2)
+ioctl$I2C_RDWR(r1, 0x707, &(0x7f0000000a00)={&(0x7f0000000980)=[{0x81, 0xe10, 0xd6, &(0x7f0000000740)="69b24e69b2ea8e449220fef8b14b9751a84bdf122f0fdb1bac8588cd773c30477e83dc6388e88e636994e2af3978a5f265c0d96dab922df56aeb1e05ec152c125503e66e3b9210e3d9877962af41e08b207299d290889728a1ee70da1f2a0f2ec9d026c66115413fcab937dc90f50848dca03a86768616c99d2f997c88dfc5210c9ab81838a5c2d70591202021e8a272c799f9c802d35888db0a9d04312c7b99246d56067289a6dae3948efd4ae34cea902ffd0d1377fde2ea51a90a2d6939bb840079dc1e9fe4a60d35a9073a1fa1ac9b889eaff24b"}, {0x0, 0x1410, 0x48, &(0x7f0000000840)="9890057052bb6606c427a82ebb1d425b2392d811011f292973707ce2dff3cec7732aa7ca54e186e370b6b77d17740a7c51aee96209ce1bf61076b027418146fb241f50e43268dae3"}, {0x7ff, 0x1, 0x17, &(0x7f00000008c0)="61c3b0bbc0a6e8a6b99354773afad6889e9876f46b73f9"}, {0xff, 0x1000, 0x31, &(0x7f0000000900)="d7bd1aad927fb49609be4c55388e4e1a529c5b4b4fa97337a197782e2b795f6bfdbbde0f0a8aa90092029081738a33d3d4"}, {0x2, 0x11, 0x3b, &(0x7f0000000940)="bf8e595d33dcd27a9a24c777f193e63b725a183a9816a77ac17dd27439df73e2b85daccbaa079bc68b9243b023352399d79852ecf955e9ee0e52aa"}], 0x5})
+ioctl$I2C_TIMEOUT(r0, 0x702, 0xf7)
+r2 = syz_open_dev$I2C(&(0x7f0000000a40), 0x8001, 0x4040)
+ioctl$I2C_RETRIES(r2, 0x701, 0x3)
+ioctl$I2C_TIMEOUT(r1, 0x702, 0x2)
+r3 = syz_open_dev$I2C(&(0x7f0000000a80), 0xc, 0x161842)
+ioctl$I2C_TENBIT(r3, 0x704, 0x0)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000b00)={0x1, 0x0, 0x0, &(0x7f0000000ac0)={0xe, "7850a813ee612c155c181ff14cafbecd70fd54cb424db10f82e0e234c46d991797"}})
+ioctl$I2C_TIMEOUT(r1, 0x702, 0xdc47)
+ioctl$I2C_SLAVE(r2, 0x703, 0x106)
+ioctl$I2C_RDWR(r3, 0x707, &(0x7f0000000bc0)={&(0x7f0000000b80)=[{0x3, 0x2a00, 0x25, &(0x7f0000000b40)="ae1ad4ab3efd085c846a0cd6a1195e38b41479960b1afcb77973d87eceb44c796360845a46"}], 0x1})
+ioctl$I2C_SLAVE(r2, 0x703, 0x3c3)
+ioctl$I2C_FUNCS(r0, 0x705, &(0x7f0000000c00)=0x6)
+ioctl$I2C_TENBIT(r2, 0x704, 0x0)
+ioctl$I2C_SLAVE_FORCE(r0, 0x706, 0x1f2)
+ioctl$I2C_RETRIES(r2, 0x701, 0x9)
+ioctl$I2C_RDWR(r2, 0x707, &(0x7f0000000e40)={&(0x7f0000000e00)=[{0xf72, 0x801, 0x32, &(0x7f0000000c40)="86f49586f6dc2be44280aef07e2837c85ba72a9030cd9aa8ad676da1979ccb2da0d08000544a2d47bef996a4370db21048c5"}, {0x1, 0x200, 0x17, &(0x7f0000000c80)="9ce71cf844f7742959bd800a11a63b689f0847a1dabe88"}, {0xfff4, 0x10, 0x12, &(0x7f0000000cc0)="6dd7e16f8081e1711533985d7b8c01ec15a9"}, {0xffff, 0x1000, 0xd6, &(0x7f0000000d00)="e3d509917f2968c35d150c989c9b6f41ad46ac406343c1c0ba4b43dd9c383ce5e6eb7e6cebcea61e053afbcb64d9fdd12f92d03eeebd5052b7e4669bdaa0bc0cb6eb9ebdb4501e3decf3176fa57d15e2b0bb3b70d83b1e565f92e717416a28bc0e667d497b01483518085960cd6856342abfd09b32b087d26058f6d6805d3fd130cced81be6f243034d9ef4319cbcfa2ea7bc336cd2145c17ce25777fc0ff04831d6a304a4a7f04ed5943a0743d704357b5624fae663ec6e49732dbee0702846bf793ccf35845968eb09449f63f3f9d7b639e68b09a1"}], 0x4})
+r4 = syz_open_dev$I2C(&(0x7f0000000e80), 0x8, 0x301002)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f0000000f00)={0x1, 0x7, 0x6, &(0x7f0000000ec0)={0x10, "c54b6d482d1c79708e7635765131aa10f66a4543c9c2e384f3a9a0e5c78bf71a8d"}})
+ioctl$I2C_PEC(0xffffffffffffffff, 0x708, 0x0)
+
+15.072940955s ago: executing program 3 (id=35):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x0, 0xee29, 0x0, 0x0}], 0x1})
+
+15.071963554s ago: executing program 3 (id=36):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000040)={0x0, 0x5, 0x5, &(0x7f0000000000)={0x1b, "930e95fb6cae4f1e5cf4d8d84211c5f20f68d1aa17695975519b1cbf01ab3561fe"}})
+
+44.297276ms ago: executing program 32 (id=30):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000640)=[{0x6e, 0x10, 0xd8, &(0x7f0000000000)="211289d3207b762e99543a7aead7d6b7778283b5256788f2e7d00ce2854a5e2b4c838934e722f67790e62dee4a441175dd224b30cfe3642e5301255ae425bf264d99e7b9bc5253437542121b3cab70a16413dd94651e850ea57e96a96ab4402849b24b1472fe745dc02e1865899e21379aad22f0a803c07bde598131043ae389e80b2bd7902b1bf023c84352222b8c0d9c94bf50529736bd7dae5e93b1ca10f9e0785c87c46c001c0aa90ba59d113bd377b0106a76c4cec04cd3043a49afb4dbc6f67835393fa1fa883677f997348515a60715ca2e34f896"}, {0x9, 0x201, 0x29, &(0x7f0000000100)="2ce621b83a1ac999ee1072ef6646f61ad9de4db30a3de60596f6733aa700bc105eb3355ad591d8b604"}, {0x9, 0x4001, 0x5b, &(0x7f0000000140)="98857bac6300e18aa445008dccc84bb92f4b25660702e238753df45a728f3c928ab3d45045991e16d5170fa8cc204e85ffd3900ae527ed3bf687ac1cdb323f2a8af065646e473301b0231da0d2092f9ed93017af12e7d069efd6e3"}, {0x400, 0x4000, 0x7a, &(0x7f0000000200)="c6645d9e104dcce581ccb81c8079cf13c45cb70ca8ce098003ce0753a70482a64ce09c026ba41e7123ca1f86248facd56a95560973002ffd32dd6c6449072580a93484231795fd0c511ef7ee3c9730f35658f843f5573eaa4898c01d591c760c29424567cf0842bd6046bae85f79a7c1759faed1a3ba59acbda6"}, {0x1, 0x201, 0x94, &(0x7f0000000800)="be91a1149fd9f31f677ded10cdb963bf0e015bf6ffb87a0fbc499b17f8c10645e87d880773184ab899a685e981a6d65ee5effc9db69fe0939f278c0f4bec0b5b2825de67a1e2c948967d1f540d0bf5bdfea4b2790a624143bb32115afd48eab9a55f4ee2a588db2a197ece0ca0c8d486f4d8c3cb4e1b535dbe7da030351b2d7804cbde924a955c635d242a2786f3760cd2d18519"}, {0x7fff, 0x4000, 0xe4, &(0x7f0000000700)="46302113c3bffc76672912f3afddb8f1b255fe7dfe5b6344ef087678dabcbe6e4994aa4d829ffeddb943f360775d0e32cab51a1bc5a579df667af9018c09c5550bd0ec0f2f7515ed61c5cd0335e01b230edcf3d057ce092583000000000000000584eddd3a6a45377e479b6e86353ae6ca3b1df29be982d914a1e0ba9b87ebc8e2161bbbfe6df717502c5e3e34b7afe0e438b405eb4eef9da129c9dbebc35d429ebf2464ea1576c723f520d02afe54690e1c9abdce091425153fc4d74baf6cfd6d40bdc12ba2a1d8e067fa994fa9aa1009d7527e1e2b202e7700"/228}, {0x6, 0x4200, 0xf5, &(0x7f0000000380)="742315a37278d74542220ba9e6dd4740d3cded7005b78bf5c068378ac1f447e2c51c9316d34dea04e04415341056255e2447680e48a3e81a526f3473b41fc89533b25cc91bdb087c0cf0d381797488bfd60d35b44592dbf8522ab4c41327e3e877edf2a9a8f19261a9164de99c925bab2fafb480643634b01345ea86f211f146e14faf8540456e4b8fd88afb4e47028f5cdc88f62aea7b0ba9a1914f2de2a601a79e53b88c076148cb4349a54fc1791ad3af2ff354256508dc8f6f833b6c94a20052862a3b7a578dcdf38e09c1feca9d4de163187f135ca0c7f7b5f5f6b0857fc2c988ce1ea862a7aa5ebf55e755ec25f54353107e"}], 0x7})
+
+643.466µs ago: executing program 33 (id=33):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000001c0)={&(0x7f0000000440)=[{0x1d, 0x7810, 0x0, 0x0}], 0x1})
+
+0s ago: executing program 34 (id=36):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x1, 0x40)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000040)={0x0, 0x5, 0x5, &(0x7f0000000000)={0x1b, "930e95fb6cae4f1e5cf4d8d84211c5f20f68d1aa17695975519b1cbf01ab3561fe"}})
+
+kernel console output (not intermixed with test programs):
+
+[   60.588414] audit: type=1400 audit(1767021339.376:21): avc:  denied  { rlimitinh } for  pid=265 comm="bash" scontext=system_u:system_r:sshd_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   60.599677] audit: type=1400 audit(1767021339.376:22): avc:  denied  { siginh } for  pid=265 comm="bash" scontext=system_u:system_r:sshd_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   60.799693] systemd-udevd (175) used greatest stack depth: 23976 bytes left
+[   60.821761] systemd-udevd (167) used greatest stack depth: 22504 bytes left
+Warning: Permanently added '[localhost]:29763' (ED25519) to the list of known hosts.
+[   62.252653] cgroup: Unknown subsys name 'net'
+[   62.315082] cgroup: Unknown subsys name 'cpuset'
+[   62.323984] cgroup: Unknown subsys name 'rlimit'
+[   62.325911] cgroup: Unknown subsys name 'memory'
+[   62.361261] kmemleak: Automatic memory scanning thread ended
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=5c40f644-637c-424b-a09b-61b19846ae72
+[   71.352736] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[   72.908108] audit: type=1400 audit(1767021351.706:23): avc:  denied  { execmem } for  pid=287 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   73.018361] audit: type=1400 audit(1767021351.815:24): avc:  denied  { read } for  pid=292 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.038545] audit: type=1400 audit(1767021351.815:25): avc:  denied  { open } for  pid=292 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.056897] audit: type=1400 audit(1767021351.816:26): avc:  denied  { getattr } for  pid=292 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.071525] audit: type=1400 audit(1767021351.822:27): avc:  denied  { map } for  pid=294 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.244379] audit: type=1400 audit(1767021352.042:28): avc:  denied  { getattr } for  pid=149 comm="systemd-udevd" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.323372] audit: type=1400 audit(1767021352.121:29): avc:  denied  { read } for  pid=330 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.336383] audit: type=1400 audit(1767021352.121:30): avc:  denied  { open } for  pid=330 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.345067] audit: type=1400 audit(1767021352.121:31): avc:  denied  { getattr } for  pid=330 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   73.353687] audit: type=1400 audit(1767021352.132:32): avc:  denied  { map } for  pid=331 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   88.448056] i2c i2c-1: died at extended address code
+[   95.726416] i2c i2c-0: Unsupported transaction 4
+[   95.728509] i2c i2c-0: Unsupported transaction 8
+[   95.744654] i2c i2c-0: Unsupported transaction 8
+[  106.980970] i2c i2c-1: sendbytes: error -110
+[  266.743275] INFO: task syz.2.33:2106 blocked for more than 143 seconds.
+SYZFAIL: failed to recv rpc
+fd=3 want=4 recv=0 n=0 (errno 9: Bad file descriptor)
+[  266.746263]       Not tainted 6.18.0 #3
+[  266.749691] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[  266.753442] task:syz.2.33        state:D stack:29224 pid:2106  tgid:2105  ppid:295    task_flags:0x400040 flags:0x00080002
+[  266.759022] Call Trace:
+[  266.760405]  <TASK>
+[  266.761640]  __schedule+0xebb/0x3550
+[  266.763702]  ? __pfx___schedule+0x10/0x10
+[  266.766004]  ? find_held_lock+0x2b/0x80
+[  266.768571]  ? rt_mutex_slowlock_block.constprop.0+0x68/0x7e0
+[  266.772020]  rt_mutex_schedule+0xa0/0xf0
+[  266.774494]  rt_mutex_slowlock_block.constprop.0+0x77/0x7e0
+[  266.777812]  ? lock_is_held_type+0xa9/0x130
+[  266.780331]  __rt_mutex_slowlock_locked.constprop.0+0x1c8/0x670
+[  266.783438]  ? __pfx___rt_mutex_slowlock_locked.constprop.0+0x10/0x10
+[  266.786137]  ? rt_mutex_pre_schedule+0x1a1/0x210
+[  266.788136]  rt_mutex_slowlock.constprop.0+0x92/0x110
+[  266.790687]  ? __pfx_rt_mutex_slowlock.constprop.0+0x10/0x10
+[  266.793179]  rt_mutex_lock_nested+0xd8/0x110
+[  266.796209]  i2c_transfer+0x1d0/0x390
+[  266.799032]  i2cdev_ioctl_rdwr+0x38e/0x710
+[  266.801514]  i2cdev_ioctl+0x2df/0x810
+[  266.803801]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  266.806418]  ? selinux_file_ioctl+0xbe/0x280
+[  266.808172]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  266.810138]  __x64_sys_ioctl+0x194/0x210
+[  266.811890]  do_syscall_64+0xc6/0x390
+[  266.813496]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  266.815706] RIP: 0033:0x7febd6b9059d
+[  266.817559] RSP: 002b:00007febd55cef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  266.821016] RAX: ffffffffffffffda RBX: 00007febd6e05fa0 RCX: 00007febd6b9059d
+[  266.824174] RDX: 00002000000001c0 RSI: 0000000000000707 RDI: 0000000000000003
+[  266.827460] RBP: 00007febd6c2e078 R08: 0000000000000000 R09: 0000000000000000
+[  266.830773] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  266.834230] R13: 00007febd6e06038 R14: 00007febd6e05fa0 R15: 00007febd55af000
+[  266.837285]  </TASK>
+[  266.838408] INFO: task syz.3.36:2113 blocked for more than 143 seconds.
+[  266.841257]       Not tainted 6.18.0 #3
+[  266.843092] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[  266.846665] task:syz.3.36        state:D stack:29224 pid:2113  tgid:2112  ppid:297    task_flags:0x400040 flags:0x00080002
+[  266.851158] Call Trace:
+[  266.852408]  <TASK>
+[  266.853509]  __schedule+0xebb/0x3550
+[  266.854906]  ? __pfx___schedule+0x10/0x10
+[  266.856765]  ? lock_is_held_type+0xa9/0x130
+[  266.858650]  rt_mutex_schedule+0xa0/0xf0
+[  266.860586]  rt_mutex_slowlock_block.constprop.0+0x77/0x7e0
+[  266.863579]  ? lock_is_held_type+0xa9/0x130
+[  266.866017]  __rt_mutex_slowlock_locked.constprop.0+0x1c8/0x670
+[  266.869336]  ? __pfx___rt_mutex_slowlock_locked.constprop.0+0x10/0x10
+[  266.872915]  ? __pfx___futex_wait+0x10/0x10
+[  266.875295]  ? rt_mutex_pre_schedule+0x1a1/0x210
+[  266.877421]  rt_mutex_slowlock.constprop.0+0x92/0x110
+[  266.879651]  ? __pfx_rt_mutex_slowlock.constprop.0+0x10/0x10
+[  266.882155]  rt_mutex_lock_nested+0xd8/0x110
+[  266.884329]  i2c_smbus_xfer+0x1e8/0x3d0
+[  266.886116]  i2cdev_ioctl_smbus+0x2db/0x830
+[  266.888071]  ? __pfx_i2cdev_ioctl_smbus+0x10/0x10
+[  266.890099]  ? __might_fault+0x13d/0x190
+[  266.892333]  ? unmap_page_range+0x11b1/0x32d0
+[  266.894925]  i2cdev_ioctl+0x3a9/0x810
+[  266.897127]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  266.899592]  ? selinux_file_ioctl+0xbe/0x280
+[  266.902088]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  266.904533]  __x64_sys_ioctl+0x194/0x210
+[  266.906866]  do_syscall_64+0xc6/0x390
+[  266.909198]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  266.912223] RIP: 0033:0x7f508c1d059d
+[  266.914508] RSP: 002b:00007f508ac0ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  266.918797] RAX: ffffffffffffffda RBX: 00007f508c445fa0 RCX: 00007f508c1d059d
+[  266.922961] RDX: 0000200000000040 RSI: 0000000000000720 RDI: 0000000000000003
+[  266.926503] RBP: 00007f508c26e078 R08: 0000000000000000 R09: 0000000000000000
+[  266.929731] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  266.932836] R13: 00007f508c446038 R14: 00007f508c445fa0 R15: 00007f508abef000
+[  266.936157]  </TASK>
+[  266.937633] 
+[  266.937633] Showing all locks held in the system:
+[  266.940751] 1 lock held by khungtaskd/41:
+[  266.943099]  #0: ffffffff87206020 (rcu_read_lock){....}-{1:3}, at: debug_show_all_locks+0x36/0x1c0
+[  266.947817] 3 locks held by kworker/0:2/89:
+[  266.950123]  #0: ffff88810006a148 ((wq_completion)events){+.+.}-{0:0}, at: process_one_work+0x1296/0x19c0
+[  266.955488]  #1: ffff888104b67d30 (free_ipc_work){+.+.}-{0:0}, at: process_one_work+0x847/0x19c0
+[  266.960257]  #2: ffffffff872137f8 (rcu_state.exp_mutex){+.+.}-{4:4}, at: exp_funnel_lock+0x2cc/0x5c0
+[  266.965202] 1 lock held by in:imklog/203:
+[  266.967631] 2 locks held by syz-executor/291:
+[  266.970079]  #0: ffffffff87b56788 (rtnl_mutex){+.+.}-{4:4}, at: tun_chr_close+0x3d/0x230
+[  266.973544]  #1: ffffffff872137f8 (rcu_state.exp_mutex){+.+.}-{4:4}, at: exp_funnel_lock+0x4d2/0x5c0
+[  266.977697] 1 lock held by syz.1.30/2104:
+[  266.979810] 1 lock held by syz.2.33/2106:
+[  266.981866]  #0: ffff88811839c0e8 (i2c_register_adapter){+.+.}-{4:4}, at: i2c_transfer+0x1d0/0x390
+[  266.985881] 1 lock held by syz.3.36/2113:
+[  266.987641]  #0: ffff88811839c0e8 (i2c_register_adapter){+.+.}-{4:4}, at: i2c_smbus_xfer+0x1e8/0x3d0
+[  266.991498] 
+[  266.992256] =============================================
+[  266.992256] 
+[  266.995241] NMI backtrace for cpu 2
+[  266.995417] CPU: 2 UID: 0 PID: 41 Comm: khungtaskd Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  266.995427] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  266.995432] Call Trace:
+[  266.995435]  <TASK>
+[  266.995438]  dump_stack_lvl+0xdb/0x140
+[  266.995462]  ? lapic_can_unplug_cpu+0x71/0xb0
+[  266.995471]  nmi_cpu_backtrace+0x1fd/0x270
+[  266.995479]  ? __pfx_nmi_raise_cpu_backtrace+0x10/0x10
+[  266.995486]  nmi_trigger_cpumask_backtrace+0x22c/0x270
+[  266.995494]  watchdog+0x1188/0x14a0
+[  266.995504]  ? __kthread_parkme+0x1ac/0x250
+[  266.995512]  ? __pfx_watchdog+0x10/0x10
+[  266.995520]  kthread+0x3cd/0x740
+[  266.995529]  ? __pfx_kthread+0x10/0x10
+[  266.995537]  ? ret_from_fork+0x28/0x490
+[  266.995547]  ? lock_release+0xd3/0x2a0
+[  266.995557]  ? __pfx_kthread+0x10/0x10
+[  266.995567]  ret_from_fork+0x3a1/0x490
+[  266.995575]  ? __pfx_kthread+0x10/0x10
+[  266.995583]  ret_from_fork_asm+0x1a/0x30
+[  266.995599]  </TASK>
+[  266.995602] Sending NMI from CPU 2 to CPUs 0-1,3:
+[  267.048731] NMI backtrace for cpu 0
+[  267.048742] CPU: 0 UID: 0 PID: 0 Comm: swapper/0 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  267.048751] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  267.048756] RIP: 0010:pv_native_safe_halt+0x1e/0x30
+[  267.048801] Code: 90 90 90 90 90 90 90 90 90 90 90 90 f3 0f 1e fa 0f 1f 44 00 00 eb 0c 0f 1f 44 00 00 0f 00 2d 89 68 20 00 0f 1f 44 00 00 fb f4 <e9> fd 9f 02 00 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 90 90 90 90
+[  267.048809] RSP: 0018:ffffffff87007e10 EFLAGS: 00000206
+[  267.048816] RAX: 0000000000151d2b RBX: 0000000000000000 RCX: ffffffff85c4de44
+[  267.048820] RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffffffff814e1933
+[  267.048824] RBP: dffffc0000000000 R08: 0000000000000001 R09: ffffed102354651a
+[  267.048828] R10: ffff88811aa328d3 R11: 0000000000000001 R12: ffffffff87dbea50
+[  267.048832] R13: 1ffffffff0e00fc8 R14: 0000000000000000 R15: 0000000000000000
+[  267.048849] FS:  0000000000000000(0000) GS:ffff88819123f000(0000) knlGS:0000000000000000
+[  267.048857] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  267.048865] CR2: 00007f3070048f70 CR3: 0000000112ec0000 CR4: 00000000000006f0
+[  267.048968] Call Trace:
+[  267.048974]  <TASK>
+[  267.048977]  default_idle+0xe/0x20
+[  267.048988]  default_idle_call+0x6c/0xb0
+[  267.048999]  do_idle+0x313/0x3c0
+[  267.049013]  ? __pfx_do_idle+0x10/0x10
+[  267.049022]  ? find_held_lock+0x2b/0x80
+[  267.049030]  ? rest_init+0x155/0x290
+[  267.049038]  cpu_startup_entry+0x54/0x60
+[  267.049048]  ? __pfx_x86_late_time_init+0x10/0x10
+[  267.049059]  rest_init+0x169/0x290
+[  267.049064]  ? acpi_subsystem_init+0x138/0x180
+[  267.049075]  start_kernel+0x410/0x530
+[  267.049084]  x86_64_start_reservations+0x21/0x40
+[  267.049094]  x86_64_start_kernel+0xd0/0xe0
+[  267.049102]  common_startup_64+0x12c/0x138
+[  267.049113]  </TASK>
+[  267.049117] NMI backtrace for cpu 1
+[  267.049125] CPU: 1 UID: 0 PID: 2104 Comm: syz.1.30 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  267.049134] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  267.049138] RIP: 0010:cx8800_bit_getscl+0x37/0x50 [cx88xx]
+[  267.049168] Code: e8 fe 5c 74 e1 48 8d 7b 48 48 b8 00 00 00 00 00 fc ff df 48 89 fa 48 c1 ea 03 80 3c 02 00 75 15 48 8b 43 48 8b 80 00 80 36 00 <d1> e8 5b 83 e0 01 e9 ce 9b c5 e5 e8 19 70 b4 e1 eb e4 0f 1f 80 00
+[  267.049174] RSP: 0018:ffff88800cfffb90 EFLAGS: 00000246
+[  267.049180] RAX: 0000000000000000 RBX: ffff88811839c000 RCX: ffffc90002002000
+[  267.049185] RDX: 1ffff11023073809 RSI: ffffffffa001cd62 RDI: ffff88811839c048
+[  267.049189] RBP: dffffc0000000000 R08: 0000000000000001 R09: 00000000000020da
+[  267.049193] R10: 0000000000000063 R11: 0000000000000001 R12: ffffffffa001cd50
+[  267.049197] R13: ffffed10230738f0 R14: 00000000ffff76cc R15: ffff88811839c7a0
+[  267.049201] FS:  00007fc3cad1f640(0000) GS:ffff8881912bf000(0000) knlGS:0000000000000000
+[  267.049206] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  267.049210] CR2: 00007f306feff470 CR3: 0000000106834000 CR4: 00000000000006f0
+[  267.049387] Call Trace:
+[  267.049392]  <TASK>
+[  267.049395]  sclhi+0x179/0x370
+[  267.049408]  i2c_stop+0x9d/0x150
+[  267.049415]  try_address+0x95/0x2d0
+[  267.049423]  bit_xfer+0x381/0x1510
+[  267.049434]  __i2c_transfer+0x698/0x2020
+[  267.049444]  i2c_transfer+0x1e3/0x390
+[  267.049451]  i2cdev_ioctl_rdwr+0x38e/0x710
+[  267.049460]  i2cdev_ioctl+0x2df/0x810
+[  267.049467]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  267.049474]  ? selinux_file_ioctl+0xbe/0x280
+[  267.049483]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  267.049490]  __x64_sys_ioctl+0x194/0x210
+[  267.049502]  do_syscall_64+0xc6/0x390
+[  267.049513]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  267.049520] RIP: 0033:0x7fc3cc2e059d
+[  267.049528] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  267.049534] RSP: 002b:00007fc3cad1ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  267.049540] RAX: ffffffffffffffda RBX: 00007fc3cc555fa0 RCX: 00007fc3cc2e059d
+[  267.049544] RDX: 00002000000001c0 RSI: 0000000000000707 RDI: 0000000000000003
+[  267.049548] RBP: 00007fc3cc37e078 R08: 0000000000000000 R09: 0000000000000000
+[  267.049552] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  267.049555] R13: 00007fc3cc556038 R14: 00007fc3cc555fa0 R15: 00007fc3cacff000
+[  267.049563]  </TASK>
+[  267.049567] NMI backtrace for cpu 3
+[  267.049576] CPU: 3 UID: 0 PID: 0 Comm: swapper/3 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  267.049588] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  267.049595] RIP: 0010:pv_native_safe_halt+0x1e/0x30
+[  267.049612] Code: 90 90 90 90 90 90 90 90 90 90 90 90 f3 0f 1e fa 0f 1f 44 00 00 eb 0c 0f 1f 44 00 00 0f 00 2d 89 68 20 00 0f 1f 44 00 00 fb f4 <e9> fd 9f 02 00 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 90 90 90 90
+[  267.049621] RSP: 0018:ffff888100cb7e60 EFLAGS: 00000206
+[  267.049630] RAX: 0000000000099fff RBX: 0000000000000003 RCX: ffffffff85c4de44
+[  267.049637] RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffffffff814e1933
+[  267.049644] RBP: dffffc0000000000 R08: 0000000000000001 R09: ffffed102357651a
+[  267.049651] R10: ffff88811abb28d3 R11: 0000000000000001 R12: ffffffff87dbea50
+[  267.049657] R13: 1ffff11020196fd2 R14: 0000000000000000 R15: 0000000000000000
+[  267.049664] FS:  0000000000000000(0000) GS:ffff8881913bf000(0000) knlGS:0000000000000000
+[  267.049672] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  267.049680] CR2: 00007f4d58e73328 CR3: 00000001097a6000 CR4: 00000000000006f0
+[  267.049739] Call Trace:
+[  267.049744]  <TASK>
+[  267.049748]  default_idle+0xe/0x20
+[  267.049763]  default_idle_call+0x6c/0xb0
+[  267.049779]  do_idle+0x313/0x3c0
+[  267.049796]  ? cpuhp_online_idle+0xa8/0xc0
+[  267.049864]  ? __pfx_do_idle+0x10/0x10
+[  267.049879]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  267.049899]  cpu_startup_entry+0x54/0x60
+[  267.049914]  start_secondary+0x1c2/0x220
+[  267.049932]  common_startup_64+0x12c/0x138
+[  267.049948]  </TASK>

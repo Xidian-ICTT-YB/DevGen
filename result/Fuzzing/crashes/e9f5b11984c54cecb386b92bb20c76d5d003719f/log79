@@ -1,0 +1,568 @@
+last executing test programs:
+
+35.466119054s ago: executing program 1 (id=89):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000004c0), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r1, 0xc100565c, &(0x7f0000000100)={0x0, 0x4000, 0x1, {0x1, @raw_data="f55239778609f55e57fda07a747ca4d3ea65d094c0b7939887f3a2cc3a9e0c5289a9a271d33c248105d3098d6fa0794b2a108075f5f17860c6a9a206d4e909aa58a94bb1da621704841b6d725a7c704bbcf39bf66b4600f3c6c2e6123d07dd4d173504e08161657581f0a03fa3254854bc6a2b9d4244d90184bcaa8e3cf4b255942dca05eb0b230726813113aaa153a719fee3b870b30631982979a0785d0b1ca11848802bce7a7c23589b1e7065a1f21f5d6535d0ed52ab53b0bc4b31b1bc9c1ad0585af99a28d5"}, 0x3})
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000700)={0x9e2000, 0x200, 0x0, 0xffffffffffffffff, 0x0, &(0x7f00000006c0)={0xa20929, 0xbc6, '\x00', @p_u16=0x0}})
+
+30.909394421s ago: executing program 2 (id=94):
+r0 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x101400)
+r1 = syz_open_dev$I2C(&(0x7f0000000180), 0x0, 0x20100)
+ioctl$I2C_SLAVE_FORCE(r1, 0x706, 0x65)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000180)={0x0, 0x3, 0x6, &(0x7f0000000080)={0x5, "c06a520125cfea3c3d26fd83a07052f21358a6e973378f3564badd1d76d5b1de08"}})
+
+30.909230371s ago: executing program 3 (id=95):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x4001, 0x40501)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000300)={&(0x7f0000000280)=[{0x6, 0xea10, 0x0, 0x0}], 0x1})
+
+23.016700919s ago: executing program 0 (id=96):
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r0, 0x720, 0x0)
+
+23.014723447s ago: executing program 1 (id=97):
+syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x409c3)
+r0 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000440), 0x2, 0x0)
+ioctl$VIDIOC_S_STD(r1, 0x40085618, &(0x7f0000001240))
+r2 = syz_open_dev$I2C(&(0x7f0000000080), 0x0, 0x101400)
+ioctl$VIDIOC_QUERYSTD(r1, 0x8008563f, &(0x7f00000000c0))
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000140)={0x1, 0x7, 0x4, &(0x7f0000000100)={0x5, "86ac7ff43d18ddd0b9b005f666a773ebbc780fc769df62139d7b3d15035f4b161d"}})
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000040)={0x0, 0x40, 0x2, &(0x7f0000000000)={0x1c, "c91af40300d0c86f54f7eb94948aea0af000"}})
+
+23.014639184s ago: executing program 2 (id=98):
+r0 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000040)={0x0, 0x40, 0x2, &(0x7f0000000000)={0x1c, "c91af40300d0c86f54f7eb94948aea0af0a1ffffff00"}}) (fail_nth: 2)
+
+23.014591994s ago: executing program 3 (id=99):
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000380), 0x2, 0x0)
+r0 = syz_open_dev$I2C(&(0x7f0000000080), 0xffffffffffdffffd, 0x20801)
+r1 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r1, 0x541b, 0xff7fffff)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000001280)={&(0x7f0000001240)=[{0x36, 0x3829, 0x0, 0x0}], 0x1})
+
+22.964258112s ago: executing program 0 (id=100):
+r0 = syz_open_dev$I2C(0x0, 0x0, 0x22000)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000040)={0x0, 0x40, 0x2, &(0x7f0000000000)={0x1c, "c91af40300d0c86f54f7eb94948aea0af0ffffffffffffffa100"}})
+
+22.963946006s ago: executing program 2 (id=101):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000040), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f00000000c0)={0x9a0000, 0x2, 0x6, 0xffffffffffffffff, 0x0, &(0x7f0000000080)={0x990a5f, 0x1b5}})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_STD(r1, 0x40085618, &(0x7f0000000340)=0x8000)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000004c0), 0x2, 0x0)
+openat$vimc0(0xffffffffffffff9c, &(0x7f00000005c0), 0x2, 0x0) (async)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000005c0), 0x2, 0x0)
+ioctl$VIDIOC_TRY_FMT(r3, 0xc0d05640, &(0x7f0000000640)={0x7, @pix_mp={0x9, 0x5, 0x32525942, 0x2, 0x8, [{0x6, 0x7}, {0x1}, {0x28000000, 0x7}, {0xfffffffb, 0x6}, {0x2, 0x9}, {0x2, 0x4}, {0x7fffffff, 0xffff13ba}, {0x7, 0x10}], 0x2, 0x7b, 0x2, 0x2, 0x3}})
+ioctl$VIDIOC_G_EXT_CTRLS(r2, 0xc0205647, &(0x7f0000000700)={0x9e0000, 0x200, 0x0, 0xffffffffffffffff, 0x0, &(0x7f00000006c0)={0xa20929, 0xbc6, '\x00', @p_u16=0x0}})
+syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xe2481)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80) (async)
+r4 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r4, 0x40086602, 0xfffffffffffffffc) (async)
+ioctl$I2C_TENBIT(r4, 0x40086602, 0xfffffffffffffffc)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180) (async)
+r5 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f0000000240)={0x1, 0x8, 0x0, 0x0}) (async)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f0000000240)={0x1, 0x8, 0x0, 0x0})
+ioctl$VIDIOC_SUBDEV_QUERY_DV_TIMINGS(r1, 0x80845663, &(0x7f0000000040)={0x0, @reserved})
+ioctl$VIDIOC_S_HW_FREQ_SEEK(r2, 0x40305652, &(0x7f0000000100)={0x6, 0x5, 0x7, 0x10, 0xc, 0x5})
+
+22.963722975s ago: executing program 0 (id=102):
+r0 = syz_open_dev$I2C(&(0x7f0000000080), 0xffffffffffdffffd, 0x20801)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1a1402)
+ioctl$I2C_TENBIT(r1, 0x704, 0x0)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000001280)={&(0x7f0000000940)=[{0x4, 0x1010, 0x0, 0x0}, {0x103, 0xaa00, 0x0, 0x0}], 0x2})
+
+22.881518526s ago: executing program 1 (id=103):
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f00000000c0)={0x0, 0x7, 0x3, &(0x7f0000000040)={0x19, "9c72281910c057ebb909dd9fecde57ba3a68c7035da6d6c663623ceb8186b9428e"}})
+
+12.688441311s ago: executing program 0 (id=104):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000ac0), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000180), 0x2, 0x0)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000002c0), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FMT(r3, 0xc0405602, &(0x7f0000000500)={0x99a7, 0x1, 0x3, "bacb751c7f799cc2afb14e7b830be696c830aa9619d3ba1bb933aabeb0f82b48", 0x56544943})
+ioctl$VIDIOC_S_INPUT(r2, 0xc0045627, &(0x7f0000000100)=0x2)
+r4 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f0000000000)={0x1, 0x3, 0x2, 0xfffffffffffffffd})
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_UNSUBSCRIBE_EVENT(r5, 0x4020565b, &(0x7f00000000c0)={0x0, 0x1, 0x2})
+ioctl$VIDIOC_CREATE_BUFS(r1, 0xc100565c, &(0x7f0000001dc0)={0x6, 0x10000, 0x4, {0x1, @win={{0x8, 0x81, 0x8, 0x7}, 0x1, 0x2, 0x0, 0x6, 0x0, 0x4}}, 0x8001})
+ioctl$VIDIOC_S_HW_FREQ_SEEK(r1, 0x40305652, &(0x7f0000000300)={0x2, 0x3, 0x2, 0xffffffff, 0x0, 0xb, 0xfffffc01})
+syz_open_dev$video(&(0x7f0000000340), 0x0, 0x4901)
+ioctl$VIDIOC_G_AUDIO(r3, 0x80345621, &(0x7f00000003c0))
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000180), 0x2, 0x0)
+r6 = syz_open_dev$video(&(0x7f0000000040), 0x0, 0x0)
+ioctl$VIDIOC_SUBDEV_S_EDID(r6, 0xc0285629, &(0x7f00000000c0)={0x0, 0x7, 0xac5, '\x00', 0x0})
+ioctl$VIDIOC_ENUM_FMT(r1, 0xc0405602, &(0x7f0000000380)={0x2, 0x0, 0x3, "73eff3750000d7e500", 0x30323953})
+ioctl$VIDIOC_S_EXT_CTRLS(r5, 0xc0205648, &(0x7f0000000200)={0x9e0000, 0x68, 0x8001, 0xffffffffffffffff, 0x0, &(0x7f00000001c0)={0x9909d2, 0x0, '\x00', @p_u16=&(0x7f0000000080)=0x9}})
+r7 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r7, 0xc100565c, &(0x7f0000000100)={0x0, 0x4000, 0x1, {0x1, @sliced={0x8, [0x2, 0x1, 0x5, 0x2843, 0x8, 0x5, 0x2, 0x0, 0x8, 0x1, 0x40, 0x5, 0x9, 0x7, 0x84cd, 0x34, 0xfff4, 0xfff9, 0xf, 0x98e9, 0x9, 0x6a2, 0xfffb, 0x7fff, 0x8, 0x0, 0x2400, 0x307, 0x7fff, 0x4, 0x8, 0x35, 0x9, 0x2, 0x2, 0x6, 0x4, 0x3, 0x3, 0x3, 0xa000, 0x400, 0xd, 0x7, 0x0, 0x2, 0x1, 0xdfb1], 0x2}}, 0x3})
+r8 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FREQ_BANDS(r2, 0xc0405665, &(0x7f0000000040)={0x7d, 0x3, 0x7, 0x100, 0x8, 0x30b3, 0x1})
+ioctl$VIDIOC_REQBUFS(r8, 0xc0145608, &(0x7f0000000680)={0x1, 0x1, 0x1, 0x0, 0x1})
+r9 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+ioctl$I2C_SMBUS(r9, 0x720, &(0x7f0000000240)={0x1, 0x8, 0x0, 0x0})
+ioctl$VIDIOC_G_AUDOUT(r0, 0x80345631, &(0x7f0000000080))
+r10 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000005c0), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r10, 0xc0205647, &(0x7f0000000680)={0x9b0000, 0x0, 0x8, 0xffffffffffffffff, 0x0, 0x0})
+
+12.688205957s ago: executing program 1 (id=105):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000004c0), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r1, 0xc100565c, &(0x7f0000000100)={0x0, 0x4000, 0x1, {0x1, @raw_data="f55239778609f55e57fda07a747ca4d3ea65d094c0b7939887f3a2cc3a9e0c5289a9a271d33c248105d3098d6fa0794b2a108075f5f17860c6a9a206d4e909aa58a94bb1da621704841b6d725a7c704bbcf39bf66b4600f3c6c2e6123d07dd4d173504e08161657581f0a03fa3254854bc6a2b9d4244d90184bcaa8e3cf4b255942dca05eb0b230726813113aaa153a719fee3b870b30631982979a0785d0b1ca11848802bce7a7c23589b1e7065a1f21f5d6535d0ed52ab53b0bc4b31b1bc9c1ad0585af99a28d5"}, 0x3})
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000700)={0x9e0000, 0x200, 0x0, 0xffffffffffffffff, 0x0, &(0x7f00000006c0)={0xa20929, 0xbc6, '\x00', @p_u16=0x0}}) (fail_nth: 9)
+
+12.684508873s ago: executing program 2 (id=106):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000004c0), 0x2, 0x0)
+r1 = syz_open_dev$video(&(0x7f0000000000), 0xa, 0x980)
+ioctl$VIDIOC_SUBDEV_S_EDID(r1, 0xc0285629, &(0x7f0000000080)={0x0, 0x9, 0x0, '\x00', 0x0})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r2, 0xc100565c, &(0x7f0000000100)={0x0, 0x4000, 0x1, {0x1, @raw_data="f55239778609f55e57fda07a747ca4d3ea65d094c0b7939887f3a2cc3a9e0c5289a9a271d33c248105d3098d6fa0794b2a108075f5f17860c6a9a206d4e909aa58a94bb1da621704841b6d725a7c704bbcf39bf66b4600f3c6c2e6123d07dd4d173504e08161657581f0a03fa3254854bc6a2b9d4244d90184bcaa8e3cf4b255942dca05eb0b230726813113aaa153a719fee3b870b30631982979a0785d0b1ca11848802bce7a7c23589b1e7065a1f21f5d6535d0ed52ab53b0bc4b31b1bc9c1ad0585af99a28d5"}, 0x3})
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000700)={0x9e0000, 0x200, 0x0, 0xffffffffffffffff, 0x0, &(0x7f00000006c0)={0xa20929, 0xbc6, '\x00', @p_u16=0x0}})
+
+12.68161554s ago: executing program 3 (id=107):
+syz_open_dev$I2C(&(0x7f0000000040), 0x5, 0x1)
+r0 = syz_open_dev$video(&(0x7f0000000000), 0x8, 0x800) (async)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000340), 0x2, 0x0)
+ioctl$VIDIOC_REQBUFS(r1, 0xc0145608, &(0x7f0000000f00)={0x0, 0x1, 0x4, 0x0, 0x4e}) (async)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000ac0), 0x2, 0x0)
+ioctl$VIDIOC_G_FMT(r2, 0xc0d05604, &(0x7f0000000b00)={0x3, @sliced={0x9e08, [0x7ff, 0x81, 0x4, 0x6, 0x39b, 0x24fb, 0x8, 0x8584, 0x2, 0x7, 0x512, 0x5, 0x5, 0x8, 0xaf, 0x9, 0x70, 0x1, 0x62a, 0x101, 0x9, 0xfcd, 0xa, 0xb, 0xffc0, 0x6, 0xfbae, 0x8, 0xb, 0xb0, 0x7f, 0x1, 0xf5, 0x5, 0xd, 0x101, 0xe6, 0x0, 0x32, 0x5, 0x8, 0x1, 0xa894, 0x9, 0x6, 0x3, 0x9, 0x5], 0xbc54}}) (async, rerun: 32)
+ioctl$VIDIOC_G_FBUF(r0, 0x8030560a, &(0x7f00000000c0)={0x20, 0xc, &(0x7f0000000080)="1768998895", {0x56a0, 0x80, 0x43353039, 0x4, 0x0, 0x3ff, 0x7, 0xffffbffc}}) (rerun: 32)
+
+7.531903241s ago: executing program 3 (id=108):
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r0, 0x720, 0x0)
+
+7.53155724s ago: executing program 1 (id=109):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000180), 0x2, 0x0)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000002c0), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FMT(r2, 0xc0405602, &(0x7f0000000500)={0x99a7, 0x1, 0x3, "bacb751c7f799cc2afb14e7b830be696c830aa9619d3ba1bb933aabeb0f82b48", 0x56544943})
+ioctl$VIDIOC_S_INPUT(r1, 0xc0045627, &(0x7f0000000100)=0x2)
+r3 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000000)={0x1, 0x3, 0x2, 0xfffffffffffffffd})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_UNSUBSCRIBE_EVENT(r4, 0x4020565b, &(0x7f00000000c0)={0x0, 0x1, 0x2})
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f0000001dc0)={0x6, 0x10000, 0x4, {0x1, @win={{0x8, 0x81, 0x8, 0x7}, 0x1, 0x2, 0x0, 0x6, 0x0, 0x4}}, 0x8001})
+ioctl$VIDIOC_S_HW_FREQ_SEEK(r0, 0x40305652, &(0x7f0000000300)={0x2, 0x3, 0x2, 0xffffffff, 0x0, 0xb, 0xfffffc01})
+syz_open_dev$video(&(0x7f0000000340), 0x0, 0x4901)
+ioctl$VIDIOC_G_AUDIO(r2, 0x80345621, &(0x7f00000003c0))
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000180), 0x2, 0x0)
+r5 = syz_open_dev$video(&(0x7f0000000040), 0x0, 0x0)
+ioctl$VIDIOC_SUBDEV_S_EDID(r5, 0xc0285629, &(0x7f00000000c0)={0x0, 0x7, 0xac5, '\x00', 0x0})
+ioctl$VIDIOC_ENUM_FMT(r0, 0xc0405602, &(0x7f0000000380)={0x2, 0x0, 0x3, "73eff3750000d7e500", 0x30323953})
+ioctl$VIDIOC_S_EXT_CTRLS(r4, 0xc0205648, &(0x7f0000000200)={0x9e0000, 0x68, 0x8001, 0xffffffffffffffff, 0x0, &(0x7f00000001c0)={0x9909d2, 0x0, '\x00', @p_u16=&(0x7f0000000080)=0x9}})
+r6 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000380), 0x2, 0x0)
+ioctl$VIDIOC_STREAMOFF(r6, 0x40045613, &(0x7f0000000500)=0xb0)
+r7 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r7, 0xc100565c, &(0x7f0000000100)={0x0, 0x4000, 0x1, {0x1, @sliced={0x8, [0x2, 0x1, 0x5, 0x2843, 0x8, 0x5, 0x2, 0x0, 0x8, 0x1, 0x40, 0x5, 0x9, 0x7, 0x84cd, 0x34, 0xfff4, 0xfff9, 0xf, 0x98e9, 0x9, 0x6a2, 0xfffb, 0x7fff, 0x8, 0x0, 0x2400, 0x307, 0x7fff, 0x4, 0x8, 0x35, 0x9, 0x2, 0x2, 0x6, 0x4, 0x3, 0x3, 0x3, 0xa000, 0x400, 0xd, 0x7, 0x0, 0x2, 0x1, 0xdfb1], 0x2}}, 0x3})
+r8 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FREQ_BANDS(r1, 0xc0405665, &(0x7f0000000040)={0x7d, 0x3, 0x7, 0x100, 0x8, 0x30b3, 0x1})
+ioctl$VIDIOC_REQBUFS(r8, 0xc0145608, &(0x7f0000000680)={0x1, 0x1, 0x1, 0x0, 0x1})
+
+7.520480207s ago: executing program 0 (id=110):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000080), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000180), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FMT(r1, 0xc0405602, &(0x7f0000000380)={0x2, 0x5, 0x1, "73eff375539d675d214eb56026f26a0ed670e870ca9bff6101320e36442fca07", 0x30314442})
+ioctl$VIDIOC_G_SELECTION(r0, 0xc040565e, &(0x7f0000000000)={0x9, 0x103, 0x3, {0x4, 0x878, 0x8, 0x4}})
+
+7.507222892s ago: executing program 3 (id=111):
+r0 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+ioctl$I2C_SMBUS(r0, 0x720, 0x0)
+
+73.18642ms ago: executing program 0 (id=112):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_STD(r1, 0x40085618, &(0x7f0000000340)=0x8000)
+ioctl$VIDIOC_S_EDID(r1, 0xc0285629, &(0x7f00000000c0)={0x0, 0x1, 0x40, '\x00', &(0x7f0000000080)=0x4})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_EXPBUF(r2, 0x5421, &(0x7f0000000ac0)={0x0, 0x10, 0x9, 0x880, <r3=>0xffffffffffffffff})
+ioctl$VIDIOC_DECODER_CMD(r3, 0xc0485660, 0x0)
+ioctl$VIDIOC_ENCODER_CMD(r0, 0xc028564d, &(0x7f0000000040)={0x0, 0x0, [0x3, 0x2, 0xc6, 0xfffffff8, 0xc9, 0xfffffffd, 0x8, 0x5]})
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f00000002c0)={0x6, 0x58e, 0x1, {0x1, @sliced={0x1, [0x7, 0xfc01, 0x1, 0x1, 0x0, 0x4, 0x8, 0x0, 0x1, 0x8a6, 0x1, 0xd9d8, 0x2, 0x7, 0xfff, 0x0, 0x1, 0x9, 0x2, 0x1000, 0x5, 0x5, 0x4, 0x7, 0x200, 0x3, 0x5, 0x696, 0x7, 0xb00, 0x5, 0x5, 0x9, 0x0, 0x96b, 0x400, 0x1, 0x5, 0x9, 0x6, 0x644, 0x7, 0x1, 0x2, 0x4, 0x0, 0x4, 0x8], 0x1000}}, 0x4})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0)
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r5, 0xc100565c, &(0x7f00000002c0)={0x6, 0x58e, 0x1, {0x1, @sliced={0x1, [0x7, 0xfc01, 0x1, 0x1, 0x0, 0x4, 0x8, 0x0, 0x1, 0x8a6, 0x1, 0xd9d8, 0x2, 0x7, 0xfff, 0x0, 0x0, 0x9, 0x2, 0x1000, 0x5, 0x5, 0x4, 0x7, 0x200, 0x3, 0x5, 0x696, 0x7, 0xb00, 0x5, 0x5, 0x1, 0x0, 0x96b, 0x400, 0x1, 0x5, 0x9, 0x6, 0x644, 0x7, 0x1, 0x2, 0x4, 0x0, 0x4, 0x8], 0x1000}}, 0x4})
+ioctl$VIDIOC_STREAMOFF(r5, 0x40045613, &(0x7f0000000180)=0x1)
+ioctl$VIDIOC_CREATE_BUFS(r4, 0xc100565c, &(0x7f0000001dc0)={0x6, 0x10000, 0x4, {0x1, @raw_data="e52aaa3e769e219b67cc7d416519eba57bf2839d74db8801ec7621a84831623abe3d40731318f993d00d697f39a1fd67cbfc93f7b5ed3b274bad5d967c12115ca5305f250ffcee3260aef43e4f056bc7dd23a396a7c1ff12361c46314b15034ba232e5406d4d7676117fbe2f79fef275f34337403049bc3a95ee4ac1554c2c318934270bb199d736a08c91d06da97a7aff314513316e3b710ae860d4e94cdd6c65dffda4f0306cf50126569a88c734012aeaf95c43eb69e64df2a3b3b15501df06fef40e0afd0604"}, 0x8001})
+ioctl$VIDIOC_STREAMOFF(r0, 0x40045613, &(0x7f0000000180)=0x1)
+
+71.384526ms ago: executing program 1 (id=113):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f0000000100)={0x20000000, 0x4000, 0x1, {0x1, @raw_data="f55239778609f55e57fda07a747ca4d3ea65d094c0b7939887f3a2cc3a9e0c5289a9a271d33c248105d3098d6fa0794b2a108075f5f17860c6a9a206d4e909aa58a94bb1da621704841b6d725a7c704bbcf39bf66b4600f3c6c2e6123d07dd4d173504e08161657581f0a03fa3254854bc6a2b9d4244d90184bcaa8e3cf4b255942dca05eb0b230726813113aaa153a719fee3b870b30631982979a0785d0b1ca11848802bce7a7c23589b1e7065a1f21f5d6535d0ed52ab53b0bc4b31b1bc9c1ad0585af99a28d5"}, 0x3})
+
+69.741338ms ago: executing program 2 (id=114):
+r0 = syz_open_dev$video(&(0x7f0000000080), 0x9, 0x280)
+ioctl$VIDIOC_S_JPEGCOMP(r0, 0x408c563e, &(0x7f00000000c0)={0x39, 0xe, 0x2, "946a31902e24e7ca36dc2d352fdb3eca3d5b95800ca4424e50b6236d55e7b8214e10e3c9eaf9ac0e35df1967af7b7f840b5ae4c9700e3c6c5adf5571", 0x1e, "b2544084ab60fd32a52a9ce66d715fcb74ff5aacaa0f0a1a7d49aa6c1f43caeead0a245bd454e68aa3bb31965ce9f6615e8a41e2ef18822cad24a861", 0x100})
+r1 = syz_open_dev$I2C(&(0x7f0000000280), 0x3, 0x0)
+syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000040)={0x0, 0x40, 0x2, &(0x7f0000000000)={0x1c, "c91af40300d0c86f54f7eb94948aea0af000"}})
+ioctl$I2C_RETRIES(r1, 0x701, 0x9)
+
+67.818519ms ago: executing program 3 (id=115):
+r0 = syz_open_dev$I2C(&(0x7f0000000640), 0x1, 0x40000)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_FMT(r1, 0xc0d05604, &(0x7f0000000680)={0x1, @pix_mp={0x680, 0x7, 0x47504a4d, 0x9, 0x4, [{0x40000, 0x18c0}, {0x54, 0x5}, {0x3ff, 0x80000001}, {0x80000001}, {0x763, 0x7}, {0x40000, 0xc}, {0xf7, 0x4}, {0x2, 0x472}], 0x17, 0x6, 0x1, 0x1, 0x6}})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0)
+ioctl$VIDIOC_G_CROP(r2, 0xc014563b, &(0x7f0000000a00)={0x2, {0x785, 0x0, 0xeed4, 0x6098}})
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000040), 0x2, 0x0)
+r4 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f0000000040)={0x0, 0x40, 0x2, &(0x7f0000000000)={0x1c, "c91af40300d0c86f54f7eb94948aea0af0a1ffffff00"}})
+ioctl$VIDIOC_S_EXT_CTRLS(r3, 0xc0205648, &(0x7f0000000200)={0xa20000, 0x0, 0x3, 0xffffffffffffffff, 0x0, 0x0})
+r5 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_REQBUFS(r5, 0xc0145608, &(0x7f0000000680)={0x1, 0x1, 0x1, 0x0, 0x1})
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000500)={&(0x7f0000000480)=[{0x80, 0x5429, 0xda, &(0x7f0000000040)="ba"}], 0x1})
+
+0s ago: executing program 2 (id=116):
+r0 = syz_open_dev$video(&(0x7f0000000040), 0x7, 0x139200)
+ioctl$VIDIOC_G_FMT(r0, 0xc0d05604, &(0x7f0000000180)={0x7, @raw_data="829dd4b2f22b4e0948df417a5d115e48ec9cd1879ca649aef5f9bafd62bac9242c92f6a873a0913bf5061366deb4e9b56989c68ac25a96fcd50adeaf85bdb5126cf3b894435d5cec344dcb561e47e33d5b9607274830cafb25cf06891b98a4bd2de073de4d8a777ffa3e4bbaacfa8cf114fc407dcfbd7bd0ffbab15c06620e0e068f46ade656e3c3cd389e1c84574a121927ba9f3b9df6a1d4f6fd70bb258077df58636b034e6b740de84970bea0664f35682a209fc592221b1b658c8f231b549ef28147068ae8d8"})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000380), 0x2, 0x0)
+ioctl$VIDIOC_QUERYMENU(r1, 0xc02c5625, &(0x7f0000000280)={0x980001, 0x7, @name="9f51efc3595347989152ece9de38aad77a0be2aa9edb9591301327ac3e4b5b37"})
+ioctl$VIDIOC_TRY_EXT_CTRLS(r1, 0xc0205649, &(0x7f0000000340)={0xa30000, 0x80, 0x0, 0xffffffffffffffff, 0x0, &(0x7f0000000300)={0x9c0904, 0x32ed8959, '\x00', @p_u16=&(0x7f00000002c0)=0xfffb}})
+ioctl$VIDIOC_G_AUDOUT(r0, 0x80345631, &(0x7f00000000c0))
+r2 = syz_open_dev$I2C(&(0x7f0000000140), 0x4, 0x381902)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f00000000c0)={0x2, 0x2, 0x7, 0x0})
+r3 = syz_open_dev$I2C(&(0x7f0000000100), 0x1, 0xc0600)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000080)={0x0, 0x7f, 0x8, &(0x7f0000000000)={0x13, "a2dec57df6f84a5f81e78cb2b7ae9730e81116c921aa7befe559810034ef0642ae"}})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_LOG_STATUS(r4, 0x5646, 0x0)
+ioctl$I2C_TIMEOUT(r3, 0x702, 0x6)
+
+kernel console output (not intermixed with test programs):
+
+Warning: Permanently added '[localhost]:42314' (ED25519) to the list of known hosts.
+[   70.066993] cgroup: Unknown subsys name 'net'
+[   70.129434] cgroup: Unknown subsys name 'cpuset'
+[   70.137961] cgroup: Unknown subsys name 'rlimit'
+[   70.139675] cgroup: Unknown subsys name 'memory'
+[   70.174616] kmemleak: Automatic memory scanning thread ended
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=9efaa32b-9892-443a-a171-20475a326d35
+[   79.757728] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[   81.524997] audit: type=1400 audit(1768346272.083:24): avc:  denied  { execmem } for  pid=297 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   81.638726] audit: type=1400 audit(1768346272.194:25): avc:  denied  { read } for  pid=305 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   81.651121] audit: type=1400 audit(1768346272.195:26): avc:  denied  { open } for  pid=305 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   81.663168] audit: type=1400 audit(1768346272.195:27): avc:  denied  { getattr } for  pid=305 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   81.678578] audit: type=1400 audit(1768346272.196:28): avc:  denied  { map } for  pid=305 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   81.690208] audit: type=1400 audit(1768346272.196:29): avc:  denied  { map } for  pid=307 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   94.227284] i2c i2c-0: Unsupported transaction 8
+[  103.755017] syz.0.5 (2043) used greatest stack depth: 22504 bytes left
+[  110.644394] i2c i2c-0: Unsupported transaction 8
+[  135.362889] i2c i2c-0: Unsupported transaction 4
+[  135.882588] i2c i2c-1: sendbytes: error -110
+[  180.920959] FAULT_INJECTION: forcing a failure.
+[  180.920959] name fail_usercopy, interval 1, probability 0, space 0, times 1
+[  180.925482] CPU: 3 UID: 0 PID: 2235 Comm: syz.3.70 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  180.925501] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  180.925548] Call Trace:
+[  180.925569]  <TASK>
+[  180.925574]  dump_stack_lvl+0x10b/0x140
+[  180.925795]  should_fail_ex+0x4d5/0x5e0
+[  180.925815]  _copy_from_user+0x30/0xd0
+[  180.925837]  i2cdev_ioctl+0x137/0x810
+[  180.925855]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  180.925871]  ? selinux_file_ioctl+0x18c/0x280
+[  180.925886]  ? selinux_file_ioctl+0xbe/0x280
+[  180.925901]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  180.925917]  __x64_sys_ioctl+0x194/0x210
+[  180.925940]  do_syscall_64+0xc6/0x390
+[  180.925960]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  180.925974] RIP: 0033:0x7f35f5a0059d
+[  180.926069] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  180.926081] RSP: 002b:00007f35f443ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  180.926106] RAX: ffffffffffffffda RBX: 00007f35f5c75fa0 RCX: 00007f35f5a0059d
+[  180.926115] RDX: 00002000000000c0 RSI: 0000000000000720 RDI: 0000000000000003
+[  180.926123] RBP: 00007f35f443f010 R08: 0000000000000000 R09: 0000000000000000
+[  180.926131] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  180.926138] R13: 00007f35f5c76038 R14: 00007f35f5c75fa0 R15: 00007f35f441f000
+[  180.926173]  </TASK>
+[  196.198304] i2c i2c-0: Unsupported transaction 7
+[  196.213994] i2c i2c-0: Unsupported transaction 8
+[  205.697992] bttv0: =================  START STATUS  =================
+[  205.701307] bttv0: Brightness: 32768
+[  205.703209] bttv0: Contrast: 27648
+[  205.704427] bttv0: Saturation: 32768
+[  205.706650] bttv0: Color Killer: false
+[  205.708529] bttv0: Hue: 32768
+[  205.710089] bttv0: Chroma AGC: false
+[  205.711792] bttv0: Mute: false
+[  205.713394] bttv0: Comb Filter: false
+[  205.715369] bttv0: Auto Mute: true
+[  205.717301] bttv0: Luma Decimation Filter: false
+[  205.719901] bttv0: AGC Crush: true
+[  205.721333] bttv0: VCR Hack: false
+[  205.722576] bttv0: Whitecrush Lower: 127
+[  205.724302] bttv0: Whitecrush Upper: 207
+[  205.725768] bttv0: UV Ratio: 50
+[  205.726858] bttv0: Full Luma Range: false
+[  205.728129] bttv0: Coring: 0
+[  205.729461] bttv0: ==================  END STATUS  ==================
+[  205.953730] i2c i2c-1: sendbytes: error -110
+[  210.228022] i2c i2c-0: Unsupported transaction 8
+[  218.144402] FAULT_INJECTION: forcing a failure.
+[  218.144402] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  218.148866] CPU: 2 UID: 0 PID: 2309 Comm: syz.2.98 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  218.148876] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  218.148881] Call Trace:
+[  218.148884]  <TASK>
+[  218.148887]  dump_stack_lvl+0x10b/0x140
+[  218.148902]  should_fail_ex+0x4d5/0x5e0
+[  218.148912]  _copy_from_user+0x30/0xd0
+[  218.148923]  i2cdev_ioctl_smbus+0x1ed/0x830
+[  218.148946]  ? __pfx_i2cdev_ioctl_smbus+0x10/0x10
+[  218.148952]  ? __might_fault+0x13d/0x190
+[  218.148964]  ? vma_start_read+0x6f0/0x900
+[  218.148977]  i2cdev_ioctl+0x3a9/0x810
+[  218.148984]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  218.148992]  ? selinux_file_ioctl+0xbe/0x280
+[  218.149001]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  218.149009]  __x64_sys_ioctl+0x194/0x210
+[  218.149020]  do_syscall_64+0xc6/0x390
+[  218.149030]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  218.149038] RIP: 0033:0x7f5557f7059d
+[  218.149044] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  218.149049] i2c i2c-0: Unsupported transaction 4
+[  218.149051] RSP: 002b:00007f55569b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  218.149058] RAX: ffffffffffffffda RBX: 00007f55581e5fa0 RCX: 00007f5557f7059d
+[  218.149062] RDX: 0000200000000040 RSI: 0000000000000720 RDI: 0000000000000003
+[  218.149066] RBP: 00007f55569b7010 R08: 0000000000000000 R09: 0000000000000000
+[  218.149070] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  218.149074] R13: 00007f55581e6038 R14: 00007f55581e5fa0 R15: 00007f5556997000
+[  218.149083]  </TASK>
+[  228.527809] FAULT_INJECTION: forcing a failure.
+[  228.527809] name fail_page_alloc, interval 1, probability 0, space 0, times 1
+[  228.532788] CPU: 3 UID: 0 PID: 2334 Comm: syz.1.105 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  228.532798] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  228.532803] Call Trace:
+[  228.532806]  <TASK>
+[  228.532810]  dump_stack_lvl+0x10b/0x140
+[  228.532825]  should_fail_ex+0x4d5/0x5e0
+[  228.532836]  should_fail_alloc_page+0xe5/0x110
+[  228.532846]  prepare_alloc_pages+0x1ad/0x500
+[  228.532859]  __alloc_frozen_pages_noprof+0x184/0x1f60
+[  228.532868]  ? native_flush_tlb_one_user+0xc4/0x150
+[  228.532882]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[  228.532891]  ? __pfx_flush_tlb_func+0x10/0x10
+[  228.532901]  ? __pfx_flush_tlb_func+0x10/0x10
+[  228.532910]  ? __sanitizer_cov_trace_switch+0x54/0x90
+[  228.532920]  ? policy_nodemask+0xf0/0x4e0
+[  228.532930]  alloc_pages_mpol+0xf2/0x350
+[  228.532939]  ? __pfx_alloc_pages_mpol+0x10/0x10
+[  228.532947]  ? __pfx_pte_val+0x10/0x10
+[  228.532957]  ? get_vma_policy+0x241/0x350
+[  228.532968]  vma_alloc_folio_noprof+0xee/0x450
+[  228.532978]  ? __pfx_vma_alloc_folio_noprof+0x10/0x10
+[  228.532986]  ? pte_val+0x5b/0xb0
+[  228.532995]  ? __pfx_pte_val+0x10/0x10
+[  228.533003]  ? lock_release+0xd3/0x2a0
+[  228.533016]  do_wp_page+0x1310/0x2c70
+[  228.533027]  ? __pfx_do_wp_page+0x10/0x10
+[  228.533034]  ? do_raw_spin_lock+0x130/0x270
+[  228.533041]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[  228.533047]  ? ___pte_offset_map+0x182/0x300
+[  228.533061]  __handle_mm_fault+0xa6b/0x2490
+[  228.533069]  ? __pfx_mt_find+0x10/0x10
+[  228.533079]  ? __pfx___handle_mm_fault+0x10/0x10
+[  228.533092]  ? find_vma+0xc4/0x140
+[  228.533098]  ? __pfx_find_vma+0x10/0x10
+[  228.533106]  handle_mm_fault+0x2cc/0x900
+[  228.533113]  ? access_error+0x17d/0x370
+[  228.533121]  ? lock_mm_and_find_vma+0xaf/0x6f0
+[  228.533171]  do_user_addr_fault+0x39a/0xeb0
+[  228.533183]  exc_page_fault+0xb5/0x190
+[  228.533194]  asm_exc_page_fault+0x26/0x30
+[  228.533200] RIP: 0010:rep_movs_alternative+0x75/0x90
+[  228.533208] Code: 05 e9 ff cc 03 00 48 8b 06 48 89 07 48 8d 47 08 48 83 e0 f8 48 29 f8 48 01 c7 48 01 c6 48 29 c1 48 89 c8 48 c1 e9 03 83 e0 07 <f3> 48 a5 89 c1 85 c9 75 91 e9 cd cc 03 00 48 8d 0c c8 eb 86 0f 1f
+[  228.533214] RSP: 0018:ffff8880254efd18 EFLAGS: 00010246
+[  228.533221] RAX: 0000000000000000 RBX: 0000000000002800 RCX: 00000000000001d8
+[  228.533225] RDX: 0000000000000000 RSI: ffff8881163dd940 RDI: 0000200000002000
+[  228.533229] RBP: 00002000000006c0 R08: 0000000000000000 R09: ffffed1022c7bcff
+[  228.533233] R10: ffff8881163de7ff R11: 0000000000000000 R12: ffff8881163dc000
+[  228.533237] R13: 0000200000002ec0 R14: 00007ffffffff000 R15: 0000000000000000
+[  228.533248]  _copy_to_user+0xbe/0xd0
+[  228.533260]  video_usercopy+0xb5a/0x11d0
+[  228.533272]  ? __pfx_video_usercopy+0x10/0x10
+[  228.533280]  ? __fget_files+0x3a/0x3b0
+[  228.533289]  ? find_held_lock+0x2b/0x80
+[  228.533296]  ? __fget_files+0x1f6/0x3b0
+[  228.533302]  ? lock_release+0xd3/0x2a0
+[  228.533318]  v4l2_ioctl+0x1b5/0x240
+[  228.533324]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  228.533332]  __x64_sys_ioctl+0x194/0x210
+[  228.533343]  do_syscall_64+0xc6/0x390
+[  228.533352]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  228.533359] RIP: 0033:0x7efdef81059d
+[  228.533365] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  228.533371] RSP: 002b:00007efdee22df98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  228.533377] RAX: ffffffffffffffda RBX: 00007efdefa86090 RCX: 00007efdef81059d
+[  228.533381] RDX: 0000200000000700 RSI: 00000000c0205647 RDI: 0000000000000003
+[  228.533385] RBP: 00007efdee22e010 R08: 0000000000000000 R09: 0000000000000000
+[  228.533388] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  228.533392] R13: 00007efdefa86128 R14: 00007efdefa86090 R15: 00007efdee20e000
+[  228.533403]  </TASK>
+[  241.179455] bttv0: =================  START STATUS  =================
+[  241.183340] bttv0: Brightness: 32768
+[  241.185723] bttv0: Contrast: 27648
+[  241.187338] bttv0: Saturation: 32768
+[  241.189070] bttv0: Color Killer: false
+[  241.191250] bttv0: Hue: 32768
+[  241.193198] bttv0: Chroma AGC: false
+[  241.195086] bttv0: Mute: false
+[  241.197482] bttv0: Comb Filter: false
+[  241.199552] bttv0: Auto Mute: true
+[  241.201371] bttv0: Luma Decimation Filter: false
+[  241.203811] bttv0: AGC Crush: true
+[  241.206165] bttv0: VCR Hack: false
+[  241.207907] bttv0: Whitecrush Lower: 127
+[  241.210124] bttv0: Whitecrush Upper: 207
+[  241.212722] bttv0: UV Ratio: 50
+[  241.214841] bttv0: Full Luma Range: false
+[  241.217528] bttv0: Coring: 0
+[  241.219865] bttv0: ==================  END STATUS  ==================
+
+VM DIAGNOSIS:
+07:25:40  Registers:
+info registers vcpu 0
+
+CPU#0
+RAX=0000000000000000 RBX=0000000000000000 RCX=ffffffff8180fb46 RDX=0000000000000000
+RSI=0000000000000008 RDI=ffff88811aa328d0 RBP=ffff8881127d7538 RSP=ffff88811aa08ff0
+R8 =0000000000000000 R9 =fffffbfff0fb7d4a R10=ffffffff87dbea57 R11=ffff88811aa08ff8
+R12=0000000000000000 R13=0000000000000000 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff813d38a0 RFL=00010046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 00007f0ec1c778c0 ffffffff 00c00100
+GS =0000 ffff88819123f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007ffe9d589fc8 CR3=000000010152e000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000000 XMM01=ffffffffffff0000 ffffffff00ff0000
+XMM02=ffff000000000000 ffff000000000000 XMM03=ffffffffffffffff ffffffffffffffff
+XMM04=ffffffffffffffff ffff00ff00000000 XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000110 0000000000000101 XMM09=ffff000000000000 000000ffff00ffff
+XMM10=0000000000000000 0000000000000000 XMM11=ffff00ffffff00ff ffff00ffffffffff
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 1
+
+CPU#1
+RAX=0000000000000000 RBX=0000000000000000 RCX=ffffffff8180fb46 RDX=0000000000000000
+RSI=0000000000000008 RDI=ffff88811aab28d0 RBP=ffff888103c2f5a8 RSP=ffff88811aa88ff0
+R8 =0000000000000000 R9 =fffffbfff0fb7d4a R10=ffffffff87dbea57 R11=ffff88811aa88ff8
+R12=0000000000000000 R13=0000000000000000 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff813d38a0 RFL=00010046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 00007f4f7067f640 ffffffff 00c00100
+GS =0000 ffff8881912bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe000004a000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000048000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007feb88d9d128 CR3=000000000706c000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=00000000000f4240 0000000000000000 XMM01=0000000000000000 00000000000f4240
+XMM02=00007f35f67ad680 00007f35f67ad680 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 00000000000000ff XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000000 0000000000000000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 2
+
+CPU#2
+RAX=0000000000000001 RBX=0000000000000000 RCX=ffffffff8133b574 RDX=0000000000000000
+RSI=0000000000000008 RDI=ffff88811ab328d0 RBP=ffff888100ca7db8 RSP=ffff88811ab08ff0
+R8 =0000000000000000 R9 =fffffbfff0fb7d4a R10=ffffffff87dbea57 R11=0000000000000001
+R12=0000000000000001 R13=0000000000000000 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff813d3a60 RFL=00010002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff88819133f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000091000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe000008f000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f84fc968010 CR3=0000000111888000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000000 XMM01=a5c0000000180000 00200000000e0014
+XMM02=000c000000080004 0020000e00000000 XMM03=0000000000000000 0073000000200000
+XMM04=01bcc00100000100 00005e06d0010000 XMM05=000800080007000c 00080000000c0000
+XMM06=000c001a00100000 0014010000000000 XMM07=0003000000100008 0000000000000004
+XMM08=0000030000000000 0008ffffff3e0000 XMM09=ffffffffff000000 0000000000000000
+XMM10=2020202000000000 0000000000000000 XMM11=ffffffffffffffff ffffffffffffffff
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 3
+
+CPU#3
+RAX=0000000000000000 RBX=0000000000000000 RCX=ffffffff8180fb46 RDX=0000000000000000
+RSI=0000000000000008 RDI=ffff88811abb28d0 RBP=ffff888118177888 RSP=ffff88811ab88ff0
+R8 =0000000000000000 R9 =fffffbfff0fb7d4a R10=ffffffff87dbea57 R11=ffff88811ab88ff8
+R12=0000000000000000 R13=0000000000000000 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff813d38a0 RFL=00010046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 00007efdee24f640 ffffffff 00c00100
+GS =0000 ffff8881913bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe00000d8000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe00000d6000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f0ec2208970 CR3=00000001150d8000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000000 XMM01=00007ffe9d58b2e0 0000003000000010
+XMM02=0000000000000000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 000000000000ff00 XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000110 0000000000000101 XMM09=ffff000000000000 000000ffff00ffff
+XMM10=0000000000000000 0000000000000000 XMM11=ffff00ffffff00ff ffff00ffffffffff
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000

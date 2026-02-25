@@ -1,0 +1,431 @@
+last executing test programs:
+
+8.560534111s ago: executing program 1 (id=5):
+socket$nl_route(0x10, 0x3, 0x0)
+r0 = socket$packet(0x11, 0x3, 0x300)
+r1 = openat$tun(0xffffffffffffff9c, &(0x7f0000000000), 0x880, 0x0)
+ioctl$TUNSETIFF(r1, 0x400454ca, &(0x7f0000000240)={'\x00', 0x2})
+ioctl$TUNATTACHFILTER(r1, 0x401054d5, 0x0)
+r2 = socket$nl_xfrm(0x10, 0x3, 0x6)
+sendmsg$nl_xfrm(r2, &(0x7f0000000200)={0x0, 0x0, &(0x7f00000001c0)={&(0x7f0000000280)=@getsadinfo={0x14, 0x23, 0x1, 0x70bd2c, 0x25dfdbff}, 0x14}, 0x1, 0x0, 0x0, 0x4008}, 0x80)
+r3 = openat$sysfs(0xffffffffffffff9c, &(0x7f0000000000)='/sys/power/resume_offset', 0x4000, 0x10)
+ioctl$sock_SIOCSIFVLAN_SET_VLAN_NAME_TYPE_CMD(r3, 0x8983, &(0x7f00000000c0)={0x6, 'rose0\x00', {0x739}, 0x5084})
+ioctl$sock_SIOCGIFINDEX(r0, 0x8933, &(0x7f0000000100)={'sit0\x00'})
+mq_getsetattr(0xffffffffffffffff, &(0x7f0000000080)={0xe2, 0x85, 0xba, 0x40000ba}, &(0x7f0000000040))
+
+8.56028822s ago: executing program 3 (id=4):
+rt_sigqueueinfo(0x0, 0x2d, &(0x7f0000000440)={0xf, 0xa, 0x7f})
+pipe2(&(0x7f00000001c0)={<r0=>0xffffffffffffffff, <r1=>0xffffffffffffffff}, 0x0)
+r2 = geteuid()
+r3 = socket$can_raw(0x1d, 0x3, 0x1)
+getsockopt$sock_cred(r3, 0x1, 0x11, &(0x7f00000037c0)={0x0, 0x0, <r4=>0x0}, &(0x7f0000003800)=0xc)
+getrandom(0x0, 0x0, 0x7)
+r5 = socket$can_raw(0x1d, 0x3, 0x1)
+r6 = syz_open_dev$tty1(0xc, 0x4, 0x4)
+cachestat(r6, &(0x7f0000000000)={0xc00}, &(0x7f0000000040), 0x0)
+getsockopt$sock_cred(r5, 0x1, 0x11, &(0x7f00000037c0)={0x0, 0x0, <r7=>0x0}, &(0x7f0000003800)=0xc)
+setresgid(0xee01, r7, r4)
+r8 = socket$unix(0x1, 0x1, 0x0)
+shutdown(r8, 0x0)
+fchown(r0, r2, r7)
+r9 = socket$inet_tcp(0x2, 0x1, 0x0)
+listen(r9, 0x6)
+recvmsg(r9, &(0x7f0000000380)={0x0, 0x0, 0x0}, 0x0)
+r10 = socket$can_raw(0x1d, 0x3, 0x1)
+getsockopt$sock_cred(r10, 0x1, 0x11, &(0x7f00000037c0)={0x0, 0x0, <r11=>0x0}, &(0x7f0000003800)=0xc)
+setgroups(0x42e7, &(0x7f0000000500)=[0x0, 0x0, 0x0, r11, 0x0, 0x0, 0x0, r11, 0x0, 0x0])
+r12 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000000), 0x402)
+ioctl$SNDRV_SEQ_IOCTL_SET_CLIENT_POOL(r12, 0x4058534c, &(0x7f0000000240)={0x81, 0x9, 0x0, 0xfffffff8, 0x8, 0x4})
+setgroups(0x7, &(0x7f0000000000)=[r4, r4, r11, r4, r7, r7, r4])
+sendfile(r1, r1, 0x0, 0xa2e)
+
+8.47475844s ago: executing program 3 (id=6):
+r0 = socket$inet6_icmp_raw(0xa, 0x3, 0x3a)
+setsockopt$inet6_int(r0, 0x29, 0x5, &(0x7f00000000c0)=0x4, 0x4)
+r1 = socket$inet6(0xa, 0x2, 0x0)
+bind$inet6(r1, &(0x7f0000000000)={0xa, 0x4e20, 0x287, @mcast1, 0x3}, 0x1c)
+setsockopt$inet6_IPV6_PKTINFO(r1, 0x29, 0x32, &(0x7f0000000300)={@private1}, 0x14)
+r2 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
+syz_genetlink_get_family_id$netlbl_mgmt(&(0x7f0000001cc0), r2)
+r3 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000280), 0x2180)
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+flistxattr(r3, 0x0, 0x0)
+sendto(r0, 0x0, 0x0, 0x4040800, &(0x7f0000000180)=@l2tp6={0xa, 0x0, 0x8, @loopback, 0xec}, 0x80)
+r4 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000080), 0x20100)
+ioctl$SNDRV_SEQ_IOCTL_QUERY_SUBS(r4, 0xc058534f, &(0x7f00000000c0)={{}, 0x1000000, 0x6, 0xea6, {0x81, 0x4c}, 0x0, 0x3})
+recvmsg(r0, &(0x7f00000005c0)={0x0, 0x0, 0x0}, 0x0)
+r5 = socket$nl_route(0x10, 0x3, 0x0)
+r6 = socket$igmp6(0xa, 0x3, 0x2)
+setsockopt$inet6_int(r6, 0x29, 0x1a, &(0x7f0000000140)=0xd650, 0x4)
+r7 = socket$packet(0x11, 0x3, 0x300)
+r8 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
+r9 = syz_init_net_socket$nl_generic(0x10, 0x3, 0x10)
+r10 = syz_genetlink_get_family_id$netlbl_unlabel(&(0x7f00000003c0), r9)
+sendmsg$NLBL_UNLABEL_C_ACCEPT(r8, &(0x7f0000002680)={0x0, 0x0, &(0x7f0000002640)={&(0x7f0000000400)={0x14, r10, 0x1, 0x70bd27, 0x25dfdbfb}, 0x14}, 0x1, 0x0, 0x0, 0x20000000}, 0xc010)
+sendmsg$NLBL_UNLABEL_C_STATICADD(r2, &(0x7f0000000380)={&(0x7f0000000200)={0x10, 0x0, 0x0, 0x8000000}, 0xc, &(0x7f0000000340)={&(0x7f0000000240)={0x14, r10, 0x100, 0x70bd2b, 0x25dfdbfb}, 0x14}}, 0x4000050)
+r11 = socket$nl_xfrm(0x10, 0x3, 0x6)
+sendmsg$nl_xfrm(r11, &(0x7f00000002c0)={0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x40000}, 0x8000)
+io_cancel(0x0, &(0x7f0000001c00)={0x0, 0x0, 0x0, 0x7, 0x5, r7, 0x0, 0x0, 0x3}, 0x0)
+sendmsg$nl_route_sched_retired(r5, &(0x7f0000000100)={0x0, 0x0, 0x0, 0x1, 0x0, 0x0, 0x40001}, 0x48080)
+ioctl$sock_inet6_SIOCSIFADDR(r1, 0x8916, &(0x7f0000000040)={@rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01', 0x47})
+
+8.474406531s ago: executing program 0 (id=1):
+symlink(&(0x7f0000002580)='./file0/file0\x00', &(0x7f00000025c0)='./file0\x00')
+ioctl$AUTOFS_DEV_IOCTL_PROTOVER(0xffffffffffffffff, 0xc0189372, &(0x7f0000000000)={{0x1, 0x1, 0x18, <r0=>0xffffffffffffffff, {0x6}}, './file0/file0\x00'})
+ioctl$FS_IOC_GET_ENCRYPTION_POLICY_EX(r0, 0xc0096616, &(0x7f0000000180)={0x2, [0x0, 0x0]})
+prctl$PR_SET_DUMPABLE(0x4, 0x0)
+r1 = syz_clone(0x11, 0x0, 0x0, 0x0, 0x0, 0x0)
+lsetxattr(&(0x7f0000000280)='./file0/../file0\x00', &(0x7f0000000480)=ANY=[@ANYBLOB='securnty.]*(@.]\x00'], &(0x7f00000018c0)='/dev/ttyS3\x00', 0xb, 0x1)
+r2 = socket$inet6_icmp(0xa, 0x2, 0x3a)
+getsockopt$inet6_int(r2, 0x29, 0x21, 0x0, &(0x7f0000000080))
+process_vm_writev(r1, &(0x7f0000000440)=[{&(0x7f0000000000)=""/217, 0xd9}], 0x1, &(0x7f0000000600)=[{&(0x7f00000004c0)=""/153, 0x99}], 0x1, 0x0)
+r3 = openat$ttyS3(0xffffffffffffff9c, &(0x7f0000000440), 0x2000, 0x0)
+ioctl$AUTOFS_DEV_IOCTL_SETPIPEFD(r0, 0xc0189378, &(0x7f0000000140)={{0x1, 0x1, 0x18, r3, {<r4=>r3}}, './file0\x00'})
+flock(0xffffffffffffffff, 0x0)
+ioctl$AUTOFS_DEV_IOCTL_TIMEOUT(r4, 0xc018937a, &(0x7f00000001c0)={{0x1, 0x1, 0x18, <r5=>r2, {0x7}}, './file0\x00'})
+keyctl$assume_authority(0x10, 0x0)
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+ioctl$DRM_IOCTL_ADD_MAP(r5, 0xc0286415, &(0x7f0000000240)={&(0x7f000000b000/0x3000)=nil, 0x1, 0x4, 0x40})
+r6 = syz_open_dev$tty1(0xc, 0x4, 0x3)
+ioctl$TCSETSW(r6, 0x5403, &(0x7f0000000200)={0x4, 0x7, 0x10000, 0x7fffffff, 0x17, "b1cc3a02754c493326f6be4ecb4196429b4f16"})
+openat$sysfs(0xffffffffffffff9c, &(0x7f0000000040)='/sys/kernel/notes', 0x280, 0x79)
+mremap(&(0x7f000000c000/0x2000)=nil, 0x2000, 0x1000, 0x3, &(0x7f000000b000/0x1000)=nil)
+mincore(&(0x7f000000b000/0x4000)=nil, 0x4000, &(0x7f0000000080)=""/14)
+
+8.409518545s ago: executing program 1 (id=7):
+r0 = openat$selinux_commit_pending_bools(0xffffffffffffff9c, &(0x7f0000000000), 0x1, 0x0)
+syz_genetlink_get_family_id$nl80211(&(0x7f0000000080), 0xffffffffffffffff)
+lseek(r0, 0x7, 0x2)
+
+8.408905502s ago: executing program 0 (id=8):
+r0 = socket$inet_tcp(0x2, 0x1, 0x0)
+ioctl$sock_SIOCSIFBR(r0, 0x8941, &(0x7f0000000000)=@generic={0x1, 0x9, 0x6}) (fail_nth: 4)
+
+8.408754882s ago: executing program 1 (id=9):
+r0 = openat$tun(0xffffffffffffff9c, 0x0, 0x10041, 0x0)
+ioctl$TUNSETIFF(r0, 0x400454ca, &(0x7f0000000000)={'dummy0\x00', 0x6e00})
+r1 = syz_open_dev$tty20(0xc, 0x4, 0x1)
+ioctl$KDGKBDIACR(r1, 0x4b4a, 0x0)
+unshare(0x48060080)
+unshare(0x40000000)
+
+8.34970521s ago: executing program 0 (id=10):
+r0 = socket$inet6_udp(0xa, 0x2, 0x0)
+getsockopt$inet6_int(r0, 0x29, 0x4d, 0x0, &(0x7f0000000100))
+
+8.34954848s ago: executing program 0 (id=11):
+r0 = openat$tun(0xffffffffffffff9c, 0x0, 0x10041, 0x0)
+ioctl$TUNSETIFF(r0, 0x400454ca, 0x0)
+r1 = syz_open_dev$tty20(0xc, 0x4, 0x1)
+ioctl$KDGKBDIACR(r1, 0x4b4a, &(0x7f0000000100)=""/52)
+unshare(0x48060080)
+unshare(0x40000000)
+
+8.338680132s ago: executing program 2 (id=3):
+r0 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x1)
+r1 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r1, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r1, 0xc05064a7, 0x0)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000100)={&(0x7f0000000000)=[0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0], &(0x7f0000000240), &(0x7f0000000080)=[<r2=>0x0], &(0x7f00000000c0)=[0x0, 0x0, 0x0, 0x0, 0x0, 0x0], 0x9, 0x0, 0x4000000000000080, 0x6})
+ioctl$DRM_IOCTL_MODE_SETPROPERTY(r0, 0xc01064ab, &(0x7f0000000140)={0x6, 0x0, r2})
+
+8.265205526s ago: executing program 2 (id=12):
+openat$tun(0xffffffffffffff9c, &(0x7f0000000000), 0x880, 0x0)
+sendmmsg$inet6(0xffffffffffffffff, &(0x7f0000000900)=[{{&(0x7f0000000040)={0xa, 0x4e22, 0x7, @empty, 0x26b8}, 0x1c, 0x0, 0x0, &(0x7f0000000400)=ANY=[@ANYBLOB="1400000000000000290000000b0000000000000b0000000090"], 0xa8}}], 0x1, 0x4c810)
+
+113.163643ms ago: executing program 0 (id=13):
+r0 = syz_clone(0x11, 0x0, 0x0, 0x0, 0x0, 0x0)
+r1 = openat$tun(0xffffffffffffff9c, &(0x7f0000000000), 0x0, 0x0)
+ioctl$TUNSETIFF(r1, 0x400454ca, &(0x7f0000000300)={'erspan0\x00', 0x2})
+r2 = syz_open_dev$tty20(0xc, 0x4, 0x1)
+ioctl$VT_RESIZEX(r2, 0x5452, &(0x7f0000000140)={0x4, 0x5, 0x2c4e, 0xfff5, 0xa, 0x8})
+r3 = syz_open_dev$tty20(0xc, 0x4, 0x1)
+ioctl$VT_RESIZEX(r3, 0x5452, &(0x7f0000000080)={0x0, 0x5, 0x3, 0xfff5, 0x0, 0x8})
+ioctl$TIOCL_PASTESEL(r3, 0x541c, &(0x7f0000000100))
+ioctl$TUNSETIFINDEX(r1, 0x400454da, 0x0)
+r4 = syz_mount_image$ext4(&(0x7f0000000240)='ext4\x00', &(0x7f0000000280)='./mnt\x00', 0x4884, &(0x7f0000000000)={[{@debug}, {@noblock_validity}, {@noauto_da_alloc}, {@minixdf}, {@discard}, {@oldalloc}, {@dioread_nolock}]}, 0x0, 0x236, &(0x7f0000000300)="$eJzs3TFoM2UcBvDnLomf/b4gVRdBUEFEtFDqJrjURaEgpYgIKlREXJRWqC1urZOLg84qnVyKuFkdpUtxUQSnqh3qImhxsDjoELlcK9VGFFNz8t3vB5fcJe97//e4e95kOS5Aa00nmU/SSTKTpJekON/grnqZPt3cntpfTgaDx38shu3q7dpZv2tJtpI8mGSvLPJiN9nYffro54NH731jvXfPe7tPTU30IE8dHx0+dvLu4usfLjyw8fmX3y8WmU//D8d1+YoRn3WL5Jb/otj/RNFtegT8E0uvfvBVlftbk9w9zH8vZeqT9+baDXu93P/OX/V964cvbp/kWIHLNxj0qt/ArQHQOmWSfopyNkm9Xpazs/V/+K87V8uXVtdemXlhdX3l+aZnKuCy9JPDRz6+8tG1P+X/u06df+D6VeX/iaWdb6r1k07TowEmqcr/zLOb90X+oXXkH9pL/qG95B/aS/6hveQf2kv+ob3kH9pL/qG95B/a63z+AYB2GVxp+g5koClNzz8AAAAAAAAAAAAAAAAAAMBF21P7y2fLpGp++nZy/HCS7qj6neHziJMbh69XfyqqZr8r6m5jeebOMXcwpvcbvvv6pm+brf/ZHc3W31xJtl5LMtftXrz+itPr79+7+W++7z03ZoExPfRks/V/3Wm2/sJB8kk1/8yNmn/K3DZ8Hz3/9KvzN2b9l38ZcwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMzG8BAAD//8n0bSk=")
+r5 = openat(r4, &(0x7f0000000200)='./file0\x00', 0x46e1, 0x98)
+fstatfs(0xffffffffffffffff, &(0x7f0000000200)=""/159)
+r6 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCETHTOOL(r6, 0x8946, &(0x7f0000000100)={'lo\x00', &(0x7f0000000280)=@ethtool_cmd={0x47, 0x0, 0x8, 0x5, 0x10, 0x8, 0x2, 0x4a, 0xe, 0xc8, 0x5, 0x4b0c2, 0x6, 0x5, 0x40, 0x4, [0x4d, 0x1263]}})
+ptrace(0x10, r0)
+ioctl$TIOCSLCKTRMIOS(r5, 0x5457, &(0x7f00000001c0))
+syz_clone(0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+syz_genetlink_get_family_id$SEG6(0x0, 0xffffffffffffffff)
+ioctl$TUNGETDEVNETNS(r1, 0x54e3, 0x0)
+ptrace$PTRACE_GETSIGMASK(0x420a, r0, 0x0, 0x0)
+
+112.494165ms ago: executing program 1 (id=14):
+socket$inet_tcp(0x2, 0x1, 0x0) (async)
+openat(0xffffffffffffff9c, &(0x7f0000000040)='./file1\x00', 0x42, 0x1ff) (async)
+capset(&(0x7f0000000000)={0x20080522}, &(0x7f0000000080)) (async)
+syz_open_procfs(0x0, &(0x7f00000001c0)='fdinfo/4\x00') (async)
+openat$ttyS3(0xffffffffffffff9c, &(0x7f0000000100), 0xa0382, 0x0) (async)
+r0 = getgid() (async)
+getsockopt$sock_cred(0xffffffffffffffff, 0x1, 0x11, &(0x7f00000037c0)={0x0, 0x0, <r1=>0x0}, &(0x7f0000003800)=0xc)
+setgroups(0x42e7, &(0x7f0000000500)=[0x0, 0x0, 0x0, r1, 0x0, 0x0, 0x0, r1, 0x0, 0x0]) (async)
+stat(&(0x7f00000000c0)='./file1\x00', &(0x7f0000000140)={0x0, 0x0, 0x0, 0x0, 0x0, <r2=>0x0})
+setresgid(r0, r1, r2)
+
+112.39888ms ago: executing program 2 (id=15):
+r0 = syz_open_procfs$userns(0xffffffffffffffff, 0x0)
+r1 = openat$selinux_validatetrans(0xffffffffffffff9c, &(0x7f0000000000), 0x1, 0x0)
+ioctl$BTRFS_IOC_SCRUB(r0, 0xc400941b, &(0x7f0000000040)={<r2=>0x0, 0x1, 0xfff})
+ioctl$BTRFS_IOC_SCRUB(r0, 0xc400941b, &(0x7f0000000440)={r2, 0x100000000, 0xfffffffffffffffc, 0x1})
+write$selinux_validatetrans(r1, &(0x7f0000000840)={'system_u:object_r:sulogin_exec_t:s0', 0x20, 'system_u:object_r:udev_rules_t:s0', 0x20, 0x9, 0x20, '/usr/sbin/ntpd\x00'}, 0x6a)
+
+112.343399ms ago: executing program 3 (id=16):
+r0 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+ioctl$TIOCSTI(r0, 0x5412, &(0x7f0000000000)=0x13)
+ioctl$TCXONC(r0, 0x540a, 0x2)
+r1 = openat$tun(0xffffffffffffff9c, &(0x7f0000000200), 0x40000, 0x0)
+ioctl$TUNSETIFF(r1, 0x400454ca, &(0x7f0000000600)={'pim6reg0\x00', 0x2})
+close_range(0xffffffffffffffff, 0xffffffffffffffff, 0x2)
+r2 = socket$inet6(0xa, 0x1, 0x6)
+fremovexattr(r2, &(0x7f0000000640)=ANY=[@ANYBLOB="090065722e3a5d21004a94d7e57a5c616ce9a88f3ec5e5a8db8c3026d30a193ccc41110700000000000000de66cbaa802fc0789527daa8906dc31a692f412c4c3ae1bf6428ae741bc46e2c94b2a74b5eaa9b6cc84db0abd912fbd849978606d3a3002188888db63771aa225390c6c252e00d57a73567f30642d2c6f0718c57ce61e4313c484e82bb027589bee212683b5ca93035f312e8f7297c8dcb05e9329bd47f13179b01adce50aa98e09aff56388da5e5335d65f8508f165560b95df5484969b60673148360312c461ea9d3c1f9b88620b3f2fb592769175ba310d725b01f0425abf0a1ee9dfc1621713f1737aa73a296183ed355a4a3d4fdce055b084bfb7a3425e4bd52ec1036306563b2bb2e812042b2486af18e8ddc45aaf32ce869b46bb4932eb8ba653133327527ca4972d09cafca0736ed5ce633baa4cad7c6db12e6828c246ea1837ef679a7a883e4febaf0e532d4fb7ca84a2ab7a68b254ba0daa9dfc72f68e9cd4573b6296e7a565fcb5f3ff6f7f52c617b45a0dc8965a42f53"])
+
+51.925365ms ago: executing program 1 (id=17):
+socketpair$unix(0x1, 0x5, 0x0, &(0x7f0000000ec0))
+io_setup(0x8, &(0x7f0000000400))
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+r0 = socket$inet6_udplite(0xa, 0x2, 0x88)
+setsockopt$inet6_IPV6_HOPOPTS(r0, 0x29, 0x36, &(0x7f0000000100)={0x73, 0x7, '\x00', [@calipso={0x7, 0x28, {0x3, 0x8, 0x7, 0x8, [0x7, 0x5, 0x400, 0x5]}}, @hao={0xc9, 0x10, @empty}]}, 0x48)
+setsockopt$inet6_IPV6_HOPOPTS(r0, 0x29, 0x36, 0x0, 0x0)
+
+51.716181ms ago: executing program 2 (id=18):
+getsockopt$inet6_IPV6_XFRM_POLICY(0xffffffffffffffff, 0x29, 0x23, &(0x7f0000000100)={{{@in=@remote, @in=@remote}}, {{@in=@private}, 0x0, @in=@loopback}}, &(0x7f0000000200)=0xe8)
+r0 = socket$can_raw(0x1d, 0x3, 0x1)
+r1 = openat$tun(0xffffffffffffff9c, &(0x7f0000000040), 0x2000, 0x0)
+ioctl$TUNSETIFF(r1, 0x400454ca, &(0x7f0000000680)={'dvmrp1\x00', 0xbc3d4dd9b2b4155a})
+r2 = socket$inet6_tcp(0xa, 0x1, 0x0)
+setsockopt$inet6_IPV6_FLOWLABEL_MGR(r2, 0x29, 0x20, &(0x7f0000000000)={@local, 0x200, 0x0, 0x2, 0x8, 0x68e, 0xd}, 0x84)
+getsockopt$sock_cred(r0, 0x1, 0x11, &(0x7f00000003c0)={0x0, <r3=>0x0}, &(0x7f0000000400)=0xc)
+ioctl$TUNSETOWNER(r1, 0x400454cc, r3)
+setuid(r3)
+r4 = socket$inet_tcp(0x2, 0x1, 0x0)
+bind$inet(r4, &(0x7f0000000240)={0x2, 0x4e24, @multicast2}, 0x10)
+sendto$inet(r4, 0x0, 0x0, 0x20004000, &(0x7f00000000c0)={0x2, 0x4e24, @local}, 0x10)
+sendmsg$inet(r4, &(0x7f0000000040)={0x0, 0x0, &(0x7f0000000400)=[{&(0x7f0000000440)="d880604697", 0x5}], 0x1}, 0x40000)
+sendto$inet(r4, &(0x7f00000001c0)="a7b8918580578bd5000000", 0xfffffffffffffeb8, 0x4064884, 0x0, 0x0)
+
+441.367µs ago: executing program 3 (id=19):
+r0 = socket$inet_tcp(0x2, 0x1, 0x0)
+bind$inet(r0, &(0x7f0000000240)={0x2, 0x4e24, @multicast2}, 0x10)
+sendto$inet(r0, 0x0, 0x0, 0x20004000, 0x0, 0x0)
+sendmsg$inet(r0, &(0x7f0000000040)={0x0, 0x0, &(0x7f0000000400)=[{&(0x7f0000000440)="d880604697", 0x5}], 0x1}, 0x40000)
+sendto$inet(r0, &(0x7f00000001c0)="a7b8918580578bd5000000", 0xfffffffffffffeb8, 0x4064884, 0x0, 0x0)
+
+0s ago: executing program 1 (id=20):
+r0 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x1)
+r1 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r1, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r1, 0xc05064a7, 0x0)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000100)={&(0x7f0000000000)=[0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0], &(0x7f0000000240), &(0x7f0000000080)=[<r2=>0x0], &(0x7f00000000c0)=[0x0, 0x0, 0x0, 0x0, 0x0, 0x0], 0x9, 0x0, 0x4000000000000080, 0x6})
+ioctl$DRM_IOCTL_MODE_SETPROPERTY(r0, 0xc01064ab, &(0x7f0000000140)={0x6, 0x0, r2})
+
+kernel console output (not intermixed with test programs):
+
+[   54.538590] systemd-udevd (163) used greatest stack depth: 22680 bytes left
+Warning: Permanently added '[localhost]:17580' (ED25519) to the list of known hosts.
+[   55.903609] cgroup: Unknown subsys name 'net'
+[   55.968452] cgroup: Unknown subsys name 'cpuset'
+[   55.979882] cgroup: Unknown subsys name 'rlimit'
+[   55.982311] cgroup: Unknown subsys name 'memory'
+[   56.017819] kmemleak: Automatic memory scanning thread ended
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=1c3b6708-921a-4a5a-a63e-452c7b786525
+[   65.858704] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[   67.733044] audit: type=1400 audit(1768330694.490:24): avc:  denied  { execmem } for  pid=290 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   67.897922] audit: type=1400 audit(1768330694.654:25): avc:  denied  { read } for  pid=299 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   67.917449] audit: type=1400 audit(1768330694.654:26): avc:  denied  { open } for  pid=299 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   67.929250] audit: type=1400 audit(1768330694.654:27): avc:  denied  { getattr } for  pid=299 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   67.948040] audit: type=1400 audit(1768330694.655:28): avc:  denied  { map } for  pid=295 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   81.040374] FAULT_INJECTION: forcing a failure.
+[   81.040374] name fail_usercopy, interval 1, probability 0, space 0, times 1
+[   81.040806] CPU: 3 UID: 0 PID: 2053 Comm: syz.0.8 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[   81.040824] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[   81.040870] Call Trace:
+[   81.040890]  <TASK>
+[   81.040896]  dump_stack_lvl+0x10b/0x140
+[   81.040957]  should_fail_ex+0x4d5/0x5e0
+[   81.040977]  _copy_to_user+0x32/0xd0
+[   81.041000]  old_deviceless+0x48b/0x6c0
+[   81.041020]  ? __pfx___mutex_lock+0x10/0x10
+[   81.041040]  ? __pfx_old_deviceless+0x10/0x10
+[   81.041059]  ? __pfx___mutex_trylock_common+0x10/0x10
+[   81.041095]  br_ioctl_stub+0x111/0x470
+[   81.041114]  ? __pfx_br_ioctl_stub+0x10/0x10
+[   81.041130]  ? mark_held_locks+0x49/0x80
+[   81.041158]  ? __pfx_br_ioctl_stub+0x10/0x10
+[   81.041177]  ? trace_contention_end+0x28/0x110
+[   81.041198]  ? __pfx_br_ioctl_stub+0x10/0x10
+[   81.041217]  br_ioctl_call+0x59/0xa0
+[   81.041240]  sock_ioctl+0x389/0x6a0
+[   81.041261]  ? __pfx_sock_ioctl+0x10/0x10
+[   81.041279]  ? __fget_files+0x1f6/0x3b0
+[   81.041293]  ? lock_release+0xd3/0x2a0
+[   81.041317]  ? selinux_file_ioctl+0x18c/0x280
+[   81.041331]  ? selinux_file_ioctl+0xbe/0x280
+[   81.041347]  ? __pfx_sock_ioctl+0x10/0x10
+[   81.041369]  __x64_sys_ioctl+0x194/0x210
+[   81.041390]  do_syscall_64+0xc6/0x390
+[   81.041410]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[   81.041458] RIP: 0033:0x7ff899eb059d
+[   81.041470] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[   81.041483] RSP: 002b:00007ff8988eef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[   81.041525] RAX: ffffffffffffffda RBX: 00007ff89a125fa0 RCX: 00007ff899eb059d
+[   81.041533] RDX: 0000200000000000 RSI: 0000000000008941 RDI: 0000000000000003
+[   81.041540] RBP: 00007ff8988ef010 R08: 0000000000000000 R09: 0000000000000000
+[   81.041547] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[   81.041554] R13: 00007ff89a126038 R14: 00007ff89a125fa0 R15: 00007ff8988cf000
+[   81.041578]  </TASK>
+[   89.375077] UDPLite6: UDP-Lite is deprecated and scheduled to be removed in 2025, please contact the netdev mailing list
+[   89.391003] loop0: detected capacity change from 0 to 128
+[   89.396756] EXT4-fs: Ignoring removed oldalloc option
+[   89.408675] [EXT4 FS bs=1024, gc=1, bpg=8192, ipg=16, mo=c843c098, mo2=0002]
+[   89.416325] EXT4-fs (loop0): mounted filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09 r/w without journal. Quota mode: none.
+[   89.422103] ext4 filesystem being mounted at /4/mnt supports timestamps until 2038-01-19 (0x7fffffff)
+[   89.522193] EXT4-fs (loop0): unmounting filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09.
+
+VM DIAGNOSIS:
+03:03:41  Registers:
+info registers vcpu 0
+
+CPU#0
+RAX=ffffea00002d0000 RBX=0000000000000000 RCX=ffffffff81a2e2b4 RDX=ffff88810963b500
+RSI=ffffffff81a2f67a RDI=0000000000000000 RBP=000000000000015d RSP=ffff88800c3d7868
+R8 =0000000000000000 R9 =fffff9400005b7fe R10=000000000000b400 R11=0000000000000000
+R12=000000000000015d R13=800000000b400007 R14=dffffc0000000000 R15=ffff88800c3d7ce0
+RIP=ffffffff81a2f6a0 RFL=00000246 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff88819123f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fa096f37f00 CR3=000000000706c000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=00007fa0963db463 00007fa0963db463 XMM01=2525252525252525 2525252525252525
+XMM02=0000000000000000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 0000000000ff0000 XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000000 0000000000000000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 1
+
+CPU#1
+RAX=fffff9400005bec6 RBX=fffff9400005bec7 RCX=ffffffff81a86401 RDX=0000000000000001
+RSI=0000000000000004 RDI=ffffea00002df630 RBP=fffff9400005bec6 RSP=ffff88800c71f800
+R8 =0000000000000001 R9 =fffff9400005bec6 R10=ffffea00002df633 R11=0000000000000000
+R12=ffffea00002df600 R13=0000000000000000 R14=ffff8881132cfe00 R15=ffffea00002df630
+RIP=ffffffff81b6370e RFL=00000283 [--S---C] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff8881912bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe000004a000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000048000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fe6aaa77f00 CR3=000000000706c000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=00007fe6a9f1b463 00007fe6a9f1b463 XMM01=2525252525252525 2525252525252525
+XMM02=0000000000000000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 0000000000ff0000 XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000000 0000000000000000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 2
+
+CPU#2
+RAX=0000000000000001 RBX=0000000000000001 RCX=ffffffff85c74d33 RDX=fffffbfff0e5f965
+RSI=0000000000000004 RDI=ffffffff872fcb20 RBP=ffffffff872fcb20 RSP=ffff88801aa879f0
+R8 =0000000000000000 R9 =fffffbfff0e5f964 R10=ffffffff872fcb23 R11=0000000000000000
+R12=1ffff11003550f40 R13=0000000000000003 R14=fffffbfff0e5f964 R15=ffff88801aa87a30
+RIP=ffffffff85c74ec3 RFL=00000002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff88819133f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000091000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe000008f000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007fd40e277f00 CR3=000000000706c000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=00007fd40d71b463 00007fd40d71b463 XMM01=2525252525252525 2525252525252525
+XMM02=0000000000000000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 0000000000ff0000 XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000000 0000000000000000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 3
+
+CPU#3
+RAX=ffff888107cd5980 RBX=0000000000000000 RCX=ffffffff8153b860 RDX=ffff888107cd4280
+RSI=0000000000000000 RDI=ffff888107d5a800 RBP=ffff888107d5a800 RSP=ffff888018fa7be8
+R8 =0000000000000001 R9 =ffffed10031f4f6e R10=0000000000000003 R11=0000000000000000
+R12=ffff888118a822b8 R13=0000000000000246 R14=ffffea00041f5600 R15=ffff888107d5a800
+RIP=ffffffff81b98729 RFL=00000086 [--S--P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff8881913bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe00000d8000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe00000d6000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007ff6e0d26088 CR3=000000000706c000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=00007ff6e0cfb463 00007ff6e0cfb463 XMM01=2525252525252525 2525252525252525
+XMM02=0000000000ff0000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 0000000000ff0000 XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000000 0000000000000000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000

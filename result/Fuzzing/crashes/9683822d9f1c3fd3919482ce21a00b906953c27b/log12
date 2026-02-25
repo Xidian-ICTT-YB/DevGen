@@ -1,0 +1,2392 @@
+failed to run ["ssh" "-p" "64545" "-F" "/dev/null" "-o" "UserKnownHostsFile=/dev/null" "-o" "IdentitiesOnly=yes" "-o" "BatchMode=yes" "-o" "StrictHostKeyChecking=no" "-o" "ConnectTimeout=10" "-i" "/home/wmy/Fuzzer/third_tool/Image-fuzz-6.18-syzbot/bullseye.id_rsa" "root@localhost" "pwd"]: exit status 255[    0.000000][    T0] Linux version 6.18.0 (wmy@wmy) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #1 SMP PREEMPT_DYNAMIC Sat Dec 20 16:37:44 CST 2025
+[    0.000000][    T0] Command line: root=/dev/sda console=ttyS0 
+[    0.000000][    T0] KERNEL supported cpus:
+[    0.000000][    T0]   Intel GenuineIntel
+[    0.000000][    T0]   AMD AuthenticAMD
+[    0.000000][    T0] x86/CPU: Model not found in latest microcode list
+[    0.000000][    T0] BIOS-provided physical RAM map:
+[    0.000000][    T0] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000][    T0] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x0000000000100000-0x00000000bffdffff] usable
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000bffe0000-0x00000000bfffffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000][    T0] BIOS-e820: [mem 0x0000000100000000-0x000000013fffffff] usable
+[    0.000000][    T0] printk: legacy bootconsole [earlyser0] enabled
+[    0.000000][    T0] ERROR: earlyprintk= earlyser already used
+[    0.000000][    T0] ERROR: earlyprintk= earlyser already used
+[    0.000000][    T0] Hash pointers mode set to never.
+[    0.000000][    T0] Malformed early option 'vsyscall'
+[    0.000000][    T0] NX (Execute Disable) protection: active
+[    0.000000][    T0] APIC: Static calls initialized
+[    0.000000][    T0] SMBIOS 3.0.0 present.
+[    0.000000][    T0] DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[    0.000000][    T0] DMI: Memory slots populated: 1/1
+[    0.000000][    T0] Hypervisor detected: KVM
+[    0.000000][    T0] last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+[    0.000000][    T0] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000010][    T0] kvm-clock: using sched offset of 2680519719 cycles
+[    0.003983][    T0] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.017773][    T0] tsc: Detected 2803.204 MHz processor
+[    0.031757][    T0] last_pfn = 0x140000 max_arch_pfn = 0x400000000
+[    0.037708][    T0] MTRR map: 4 entries (3 fixed + 1 variable; max 19), built from 8 variable MTRRs
+[    0.044723][    T0] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.051093][    T0] last_pfn = 0xbffe0 max_arch_pfn = 0x400000000
+[    0.066932][    T0] found SMP MP-table at [mem 0x000f5460-0x000f546f]
+[    0.074810][    T0] ACPI: Early table checksum verification disabled
+[    0.079051][    T0] ACPI: RSDP 0x00000000000F5250 000014 (v00 BOCHS )
+[    0.083578][    T0] ACPI: RSDT 0x00000000BFFE1D7B 000034 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.090284][    T0] ACPI: FACP 0x00000000BFFE1C17 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.097347][    T0] ACPI: DSDT 0x00000000BFFE0040 001BD7 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.104144][    T0] ACPI: FACS 0x00000000BFFE0000 000040
+[    0.108042][    T0] ACPI: APIC 0x00000000BFFE1C8B 000090 (v03 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.114892][    T0] ACPI: HPET 0x00000000BFFE1D1B 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.121156][    T0] ACPI: WAET 0x00000000BFFE1D53 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+[    0.126231][    T0] ACPI: Reserving FACP table memory at [mem 0xbffe1c17-0xbffe1c8a]
+[    0.130206][    T0] ACPI: Reserving DSDT table memory at [mem 0xbffe0040-0xbffe1c16]
+[    0.135964][    T0] ACPI: Reserving FACS table memory at [mem 0xbffe0000-0xbffe003f]
+[    0.141838][    T0] ACPI: Reserving APIC table memory at [mem 0xbffe1c8b-0xbffe1d1a]
+[    0.147428][    T0] ACPI: Reserving HPET table memory at [mem 0xbffe1d1b-0xbffe1d52]
+[    0.151944][    T0] ACPI: Reserving WAET table memory at [mem 0xbffe1d53-0xbffe1d7a]
+[    0.159131][    T0] No NUMA configuration found
+[    0.162022][    T0] Faking a node at [mem 0x0000000000000000-0x000000013fffffff]
+[    0.167123][    T0] Faking node 0 at [mem 0x0000000000001000-0x0000000080000fff] (2048MB)
+[    0.172826][    T0] Faking node 1 at [mem 0x0000000080001000-0x000000013fffffff] (3071MB)
+[    0.179520][    T0] NODE_DATA(0) allocated [mem 0x7fffb400-0x80000fff]
+[    0.184694][    T0] NODE_DATA(1) allocated [mem 0x13fff6400-0x13fffbfff]
+[    0.308201][    T0] Zone ranges:
+[    0.310828][    T0]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.316181][    T0]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.321700][    T0]   Normal   [mem 0x0000000100000000-0x000000013fffffff]
+[    0.326821][    T0]   Device   empty
+[    0.329010][    T0] Movable zone start for each node
+[    0.332001][    T0] Early memory node ranges
+[    0.335433][    T0]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.342040][    T0]   node   0: [mem 0x0000000000100000-0x0000000080000fff]
+[    0.348552][    T0]   node   1: [mem 0x0000000080001000-0x00000000bffdffff]
+[    0.354270][    T0]   node   1: [mem 0x0000000100000000-0x000000013fffffff]
+[    0.359030][    T0] Initmem setup node 0 [mem 0x0000000000001000-0x0000000080000fff]
+[    0.365099][    T0] Initmem setup node 1 [mem 0x0000000080001000-0x000000013fffffff]
+[    0.370936][    T0] On node 0, zone DMA: 1 pages in unavailable ranges
+[    0.376336][    T0] On node 0, zone DMA: 97 pages in unavailable ranges
+[    0.427641][    T0] On node 1, zone Normal: 32 pages in unavailable ranges
+[    1.483851][    T0] KernelAddressSanitizer initialized (generic)
+[    1.489789][    T0] ACPI: PM-Timer IO Port: 0x608
+[    1.492952][    T0] ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+[    1.497694][    T0] IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+[    1.502296][    T0] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    1.506726][    T0] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+[    1.511332][    T0] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    1.516961][    T0] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+[    1.521428][    T0] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+[    1.526576][    T0] ACPI: Using ACPI (MADT) for SMP configuration information
+[    1.531249][    T0] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    1.534519][    T0] CPU topo: Max. logical packages:   1
+[    1.537755][    T0] CPU topo: Max. logical dies:       1
+[    1.541424][    T0] CPU topo: Max. dies per package:   1
+[    1.545294][    T0] CPU topo: Max. threads per core:   1
+[    1.548943][    T0] CPU topo: Num. cores per package:     4
+[    1.553007][    T0] CPU topo: Num. threads per package:   4
+[    1.557370][    T0] CPU topo: Allowing 4 present CPUs plus 0 hotplug CPUs
+[    1.563478][    T0] kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+[    1.570196][    T0] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    1.576922][    T0] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+[    1.584098][    T0] PM: hibernation: Registered nosave memory: [mem 0xbffe0000-0xffffffff]
+[    1.592189][    T0] [mem 0xc0000000-0xfeffbfff] available for PCI devices
+[    1.596554][    T0] Booting paravirtualized kernel on KVM
+[    1.600782][    T0] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    1.678916][    T0] setup_percpu: NR_CPUS:8 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:2
+[    1.693489][    T0] percpu: Embedded 70 pages/cpu s247752 r8192 d30776 u1048576
+[    1.698472][    T0] kvm-guest: PV spinlocks disabled, no host support
+[    1.703113][    T0] Kernel command line: earlyprintk=serial net.ifnames=0 sysctl.kernel.hung_task_all_cpu_backtrace=1 ima_policy=tcb nf-conntrack-ftp.ports=20000 nf-conntrack-tftp.ports=20000 nf-conntrack-sip.ports=20000 nf-conntrack-irc.ports=20000 nf-conntrack-sane.ports=20000 binder.debug_mask=0 rcupdate.rcu_expedited=1 rcupdate.rcu_cpu_stall_cputime=1 no_hash_pointers page_owner=on sysctl.vm.nr_hugepages=4 sysctl.vm.nr_overcommit_hugepages=4 secretmem.enable=1 sysctl.max_rcu_stall_to_panic=1 msr.allow_writes=off coredump_filter=0xffff root=/dev/sda console=ttyS0 vsyscall=native numa=fake=2 kvm-intel.nested=1 spec_store_bypass_disable=prctl nopcid vivid.n_devs=64 vivid.multiplanar=1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2 netrom.nr_ndevs=32 rose.rose_ndevs=32 smp.csd_lock_timeout=100000 watchdog_thresh=55 workqueue.watchdog_thresh=140 sysctl.net.core.netdev_unregister_timeout_secs=140 dummy_hcd.num=32 max_loop=32 nbds_max=32 comedi.comedi
+[    1.708818][    T0] Unknown kernel command line parameters "nbds_max=32", will be passed to user space.
+[    1.783492][    T0] printk: log buffer data + meta data: 262144 + 917504 = 1179648 bytes
+[    1.791052][    T0] software IO TLB: area num 4.
+[    1.928840][    T0] Fallback order for Node 0: 0 1 
+[    1.928984][    T0] Fallback order for Node 1: 1 0 
+[    1.929011][    T0] Built 2 zonelists, mobility grouping on.  Total pages: 1048446
+[    1.939363][    T0] Policy zone: Normal
+[    1.945501][    T0] mem auto-init: stack:off, heap alloc:on, heap free:off
+[    1.949084][    T0] stackdepot: allocating hash table via alloc_large_system_hash
+[    1.953288][    T0] stackdepot hash table entries: 1048576 (order: 12, 16777216 bytes, linear)
+[    1.984261][    T0] stackdepot: allocating space for 8192 stack pools via memblock
+[    2.297126][    T0] **********************************************************
+[    2.301954][    T0] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    2.306831][    T0] **                                                      **
+[    2.311923][    T0] ** This system shows unhashed kernel memory addresses   **
+[    2.317777][    T0] ** via the console, logs, and other interfaces. This    **
+[    2.322536][    T0] ** might reduce the security of your system.            **
+[    2.328071][    T0] **                                                      **
+[    2.333824][    T0] ** If you see this message and you are not debugging    **
+[    2.338019][    T0] ** the kernel, report this immediately to your system   **
+[    2.343576][    T0] ** administrator!                                       **
+[    2.349341][    T0] **                                                      **
+[    2.354520][    T0] ** Use hash_pointers=always to force this mode off      **
+[    2.360210][    T0] **                                                      **
+[    2.364756][    T0] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    2.370004][    T0] **********************************************************
+[    2.377594][    T0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=2
+[    2.631794][    T0] allocated 83886080 bytes of page_ext
+[    2.635021][    T0] Node 0, zone      DMA: page owner found early allocated 0 pages
+[    2.652439][    T0] Node 0, zone    DMA32: page owner found early allocated 10987 pages
+[    2.658910][    T0] Node 1, zone    DMA32: page owner found early allocated 0 pages
+[    2.669399][    T0] Node 1, zone   Normal: page owner found early allocated 9603 pages
+[    2.674807][    T0] Kernel/User page tables isolation: enabled
+[    2.681046][    T0] Dynamic Preempt: full
+[    2.685091][    T0] Running RCU self tests
+[    2.687471][    T0] Running RCU synchronous self tests
+[    2.690298][    T0] rcu: Preemptible hierarchical RCU implementation.
+[    2.693556][    T0] rcu: 	RCU lockdep checking is enabled.
+[    2.696360][    T0] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    2.700322][    T0] rcu: 	RCU callback double-/use-after-free debug is enabled.
+[    2.704102][    T0] rcu: 	RCU debug extended QS entry/exit.
+[    2.707203][    T0] 	All grace periods are expedited (rcu_expedited).
+[    2.710779][    T0] 	Trampoline variant of Tasks RCU enabled.
+[    2.713849][    T0] 	Tracing variant of Tasks RCU enabled.
+[    2.717441][    T0] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    2.723256][    T0] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    2.727487][    T0] Running RCU synchronous self tests
+[    2.730232][    T0] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    2.735917][    T0] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    2.912767][    T0] NR_IRQS: 4352, nr_irqs: 456, preallocated irqs: 16
+[    2.918633][    T0] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    2.924121][    T0] kfence: initialized - using 2097152 bytes for 255 objects at 0xffff888135c00000-0xffff888135e00000
+[    2.994187][    T0] Console: colour VGA+ 80x25
+[    2.997131][    T0] printk: legacy console [ttyS0] enabled
+[    2.997131][    T0] printk: legacy console [ttyS0] enabled
+[    3.003219][    T0] printk: legacy bootconsole [earlyser0] disabled
+[    3.003219][    T0] printk: legacy bootconsole [earlyser0] disabled
+[    3.010120][    T0] Lock dependency validator: Copyright (c) 2006 Red Hat, Inc., Ingo Molnar
+[    3.014392][    T0] ... MAX_LOCKDEP_SUBCLASSES:  8
+[    3.017284][    T0] ... MAX_LOCK_DEPTH:          48
+[    3.020254][    T0] ... MAX_LOCKDEP_KEYS:        8192
+[    3.023162][    T0] ... CLASSHASH_SIZE:          4096
+[    3.026283][    T0] ... MAX_LOCKDEP_ENTRIES:     1048576
+[    3.029442][    T0] ... MAX_LOCKDEP_CHAINS:      1048576
+[    3.032685][    T0] ... CHAINHASH_SIZE:          524288
+[    3.035624][    T0]  memory used by lock dependency info: 106625 kB
+[    3.039414][    T0]  memory used for stack traces: 8320 kB
+[    3.043143][    T0]  per task-struct memory footprint: 1920 bytes
+[    3.048028][    T0] mempolicy: Enabling automatic NUMA balancing. Configure with numa_balancing= or the kernel.numa_balancing sysctl
+[    3.057148][    T0] ACPI: Core revision 20250807
+[    3.062799][    T0] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    3.070702][    T0] APIC: Switch to symmetric I/O mode setup
+[    3.078318][    T0] x2apic enabled
+[    3.085138][    T0] APIC: Switched APIC routing to: physical x2apic
+[    3.103341][    T0] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    3.108074][    T0] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2868139ef5d, max_idle_ns: 440795282642 ns
+[    3.115284][    T0] Calibrating delay loop (skipped) preset value.. 5606.40 BogoMIPS (lpj=28032040)
+[    3.127666][    T0] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    3.130928][    T0] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    3.135324][    T0] mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+[    3.142562][    T0] Speculative Store Bypass: Vulnerable
+[    3.145281][    T0] Spectre V2 : Mitigation: Retpolines
+[    3.147894][    T0] ITS: Mitigation: Aligned branch/return thunks
+[    3.151171][    T0] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+[    3.155297][    T0] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    3.161322][    T0] Spectre V2 : Spectre v2 / SpectreRSB: Filling RSB on context switch and VMEXIT
+[    3.165291][    T0] active return thunk: its_return_thunk
+[    3.169041][    T0] x86/fpu: x87 FPU will use FXSAVE
+[    3.467119][    T0] Freeing SMP alternatives memory: 132K
+[    3.471647][    T0] pid_max: default: 32768 minimum: 301
+[    3.475854][    T0] LSM: initializing lsm=lockdown,capability,landlock,yama,safesetid,tomoyo,apparmor,bpf,ima,evm
+[    3.482813][    T0] landlock: Up and running.
+[    3.485287][    T0] Yama: becoming mindful.
+[    3.488326][    T0] TOMOYO Linux initialized
+[    3.491866][    T0] AppArmor: AppArmor initialized
+[    3.497349][    T0] LSM support for eBPF active
+[    3.510513][    T0] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, vmalloc hugepage)
+[    3.518618][    T0] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, vmalloc hugepage)
+[    3.525657][    T0] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, vmalloc)
+[    3.535634][    T0] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, vmalloc)
+[    3.548079][    T0] Running RCU synchronous self tests
+[    3.551700][    T0] Running RCU synchronous self tests
+[    3.676784][    T1] smpboot: CPU0: Intel QEMU Virtual CPU version 2.5+ (family: 0xf, model: 0x6b, stepping: 0x1)
+[    3.686133][    T1] Performance Events: unsupported Netburst CPU model 107 no PMU driver, software events only.
+[    3.693442][    T1] signal: max sigframe size: 1440
+[    3.696079][    T1] rcu: Hierarchical SRCU implementation.
+[    3.700505][    T1] rcu: 	Max phase no-delay instances is 1000.
+[    3.706174][    T1] Timer migration: 2 hierarchy levels; 8 children per group; 1 crossnode level
+[    3.758275][    T1] NMI watchdog: Perf NMI watchdog permanently disabled
+[    3.764509][    T1] smp: Bringing up secondary CPUs ...
+[    3.768308][    T1] smpboot: x86: Booting SMP configuration:
+[    3.775379][    T1] .... node  #1, CPUs:      #1
+[    3.783019][    T1] .... node  #0, CPUs:   #2
+[    3.791952][    T1] .... node  #1, CPUs:   #3
+[    3.817298][    T1] smp: Brought up 2 nodes, 4 CPUs
+[    3.818427][    T1] smpboot: Total of 4 processors activated (22425.63 BogoMIPS)
+[    3.841899][    T1] Memory: 2940376K/4193784K available (168261K kernel code, 41423K rwdata, 40108K rodata, 27048K init, 120456K bss, 1153864K reserved, 0K cma-reserved)
+[    3.848472][    T1] devtmpfs: initialized
+[    3.848675][    T1] x86/mm: Memory block size: 128MB
+[    3.900295][    T1] Running RCU synchronous self tests
+[    3.905394][    T1] Running RCU synchronous self tests
+[    3.915548][    T1] Running RCU Tasks wait API self tests
+[    3.919867][    T1] Running RCU Tasks Trace wait API self tests
+[    3.975337][    T1] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    3.985884][    T1] posixtimers hash table entries: 2048 (order: 6, 147456 bytes, vmalloc)
+[    3.990768][    T1] futex hash table entries: 512 (65536 bytes on 2 NUMA nodes, total 128 KiB, linear).
+[    3.999541][    T1] PM: RTC time: 16:10:07, date: 2026-01-09
+[    4.013824][    T1] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    4.032879][    T1] audit: initializing netlink subsys (disabled)
+[    4.035689][   T43] audit: type=2000 audit(1767975008.260:1): state=initialized audit_enabled=0 res=1
+[    4.039457][    T1] thermal_sys: Registered thermal governor 'step_wise'
+[    4.046096][   T41] Callback from call_rcu_tasks_trace() invoked.
+[    4.065339][    T1] cpuidle: using governor menu
+[    4.070260][    T1] NET: Registered PF_QIPCRTR protocol family
+[    4.081723][    T1] dca service started, version 1.12.1
+[    4.085756][    T1] PCI: Using configuration type 1 for base access
+[    4.106166][    T1] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    4.115283][    T1] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    4.126992][    T1] raid6: skipped pq benchmark and selected sse2x4
+[    4.132141][    T1] raid6: using intx1 recovery algorithm
+[    4.137802][    T1] ACPI: Added _OSI(Module Device)
+[    4.145389][   T40] Callback from call_rcu_tasks() invoked.
+[    4.141169][    T1] ACPI: Added _OSI(Processor Device)
+[    4.141179][    T1] ACPI: Added _OSI(Processor Aggregator Device)
+[    4.256010][    T1] ACPI: 1 ACPI AML tables successfully acquired and loaded
+[    4.289049][    T1] ACPI: Interpreter enabled
+[    4.293631][    T1] ACPI: PM: (supports S0 S3 S4 S5)
+[    4.305348][    T1] ACPI: Using IOAPIC for interrupt routing
+[    4.311072][    T1] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    4.315281][    T1] PCI: Using E820 reservations for host bridge windows
+[    4.335723][    T1] ACPI: Enabled 2 GPEs in block 00 to 0F
+[    4.555547][    T1] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    4.561704][    T1] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+[    4.565306][    T1] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    4.575607][    T1] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+[    4.588034][    T1] PCI host bridge to bus 0000:00
+[    4.591688][    T1] pci_bus 0000:00: Unknown NUMA node; performance will be reduced
+[    4.605740][    T1] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    4.612073][    T1] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    4.615305][    T1] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    4.625307][    T1] pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+[    4.632106][    T1] pci_bus 0000:00: root bus resource [mem 0x140000000-0x1bfffffff window]
+[    4.635357][    T1] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    4.645742][    T1] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+[    4.653842][    T1] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+[    4.668866][    T1] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180 conventional PCI endpoint
+[    4.690195][    T1] pci 0000:00:01.1: BAR 4 [io  0xc0a0-0xc0af]
+[    4.695627][    T1] pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+[    4.705287][    T1] pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+[    4.710572][    T1] pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+[    4.715280][    T1] pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+[    4.732224][    T1] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+[    4.747847][    T1] pci 0000:00:01.3: quirk: [io  0x0600-0x063f] claimed by PIIX4 ACPI
+[    4.755333][    T1] pci 0000:00:01.3: quirk: [io  0x0700-0x070f] claimed by PIIX4 SMB
+[    4.765483][    T1] pci 0000:00:01.3: quirk_piix4_acpi+0x0/0x200 took 19531 usecs
+[    4.771627][    T1] pci 0000:00:02.0: [1234:1111] type 00 class 0x030000 conventional PCI endpoint
+[    4.816457][    T1] pci 0000:00:02.0: BAR 0 [mem 0xfd000000-0xfdffffff pref]
+[    4.823375][    T1] pci 0000:00:02.0: BAR 2 [mem 0xfebc0000-0xfebc0fff]
+[    4.823375][    T1] pci 0000:00:02.0: ROM [mem 0xfeba0000-0xfebaffff pref]
+[    4.841736][    T1] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    4.868263][    T1] pci 0000:00:03.0: [1af4:1005] type 00 class 0x00ff00 conventional PCI endpoint
+[    4.889272][    T1] pci 0000:00:03.0: BAR 0 [io  0xc080-0xc09f]
+[    4.895358][    T1] pci 0000:00:03.0: BAR 1 [mem 0xfebc1000-0xfebc1fff]
+[    4.901209][    T1] pci 0000:00:03.0: BAR 4 [mem 0xfe000000-0xfe003fff 64bit pref]
+[    4.979866][    T1] pci 0000:00:04.0: [1af4:1009] type 00 class 0x000200 conventional PCI endpoint
+[    4.992511][    T1] pci 0000:00:04.0: BAR 0 [io  0xc000-0xc03f]
+[    4.995362][    T1] pci 0000:00:04.0: BAR 1 [mem 0xfebc2000-0xfebc2fff]
+[    5.005524][    T1] pci 0000:00:04.0: BAR 4 [mem 0xfe004000-0xfe007fff 64bit pref]
+[    5.101560][    T1] pci 0000:00:05.0: [8086:2652] type 00 class 0x010600 conventional PCI endpoint
+[    5.108882][    T1] pci 0000:00:05.0: BAR 5 [mem 0xfebb0000-0xfebbffff]
+[    5.193625][    T1] pci 0000:00:06.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+[    5.207751][    T1] pci 0000:00:06.0: BAR 0 [mem 0xfeb80000-0xfeb9ffff]
+[    5.213451][    T1] pci 0000:00:06.0: BAR 1 [io  0xc040-0xc07f]
+[    5.215568][    T1] pci 0000:00:06.0: ROM [mem 0xfeb40000-0xfeb7ffff pref]
+[    5.335656][    T1] ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+[    5.348274][    T1] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+[    5.358180][    T1] ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+[    5.369369][    T1] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+[    5.377220][    T1] ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+[    5.426030][    T1] iommu: Default domain type: Translated
+[    5.430625][    T1] iommu: DMA domain TLB invalidation policy: lazy mode
+[    5.489616][    T1] SCSI subsystem initialized
+[    5.499593][    T1] ACPI: bus type USB registered
+[    5.503929][    T1] usbcore: registered new interface driver usbfs
+[    5.506352][    T1] usbcore: registered new interface driver hub
+[    5.515707][    T1] usbcore: registered new device driver usb
+[    5.526776][    T1] mc: Linux media interface: v0.10
+[    5.531517][    T1] videodev: Linux video capture interface: v2.00
+[    5.537202][    T1] pps_core: LinuxPPS API ver. 1 registered
+[    5.541996][    T1] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    5.555473][    T1] PTP clock support registered
+[    5.558982][    T1] EDAC MC: Ver: 3.0.0
+[    5.585005][    T1] Advanced Linux Sound Architecture Driver Initialized.
+[    5.617993][    T1] Bluetooth: Core ver 2.22
+[    5.622722][    T1] NET: Registered PF_BLUETOOTH protocol family
+[    5.625303][    T1] Bluetooth: HCI device and connection manager initialized
+[    5.631327][    T1] Bluetooth: HCI socket layer initialized
+[    5.635435][    T1] Bluetooth: L2CAP socket layer initialized
+[    5.645783][    T1] Bluetooth: SCO socket layer initialized
+[    5.651455][    T1] NET: Registered PF_ATMPVC protocol family
+[    5.655455][    T1] NET: Registered PF_ATMSVC protocol family
+[    5.666533][    T1] NetLabel: Initializing
+[    5.669950][    T1] NetLabel:  domain hash size = 128
+[    5.675304][    T1] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    5.684933][    T1] NetLabel:  unlabeled traffic allowed by default
+[    5.697659][    T1] nfc: nfc_init: NFC Core ver 0.1
+[    5.705357][    T1] NET: Registered PF_NFC protocol family
+[    5.705705][    T1] mctp: management component transport protocol core
+[    5.711539][    T1] NET: Registered PF_MCTP protocol family
+[    5.716524][    T1] PCI: Using ACPI for IRQ routing
+[    5.727330][    T1] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    5.731266][    T1] pci 0000:00:02.0: vgaarb: bridge control possible
+[    5.735266][    T1] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    5.745306][    T1] vgaarb: loaded
+[    5.763051][    T1] hpet: 3 channels of 0 reserved for per-cpu timers
+[    5.765504][    T1] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    5.770008][    T1] hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+[    5.795266][    T1] clocksource: Switched to clocksource kvm-clock
+[    5.803186][    T1] VFS: Disk quotas dquot_6.6.0
+[    5.804738][    T1] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    5.828725][    T1] netfs: FS-Cache loaded
+[    5.835318][    T1] CacheFiles: Loaded
+[    5.843481][    T1] TOMOYO: 2.6.0
+[    5.846320][    T1] Mandatory Access Control activated.
+[    5.863407][    T1] AppArmor: AppArmor Filesystem Enabled
+[    5.868824][    T1] pnp: PnP ACPI init
+[    5.892922][    T1] pnp: PnP ACPI: found 6 devices
+[    5.985644][    T1] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    5.993650][    T1] NET: Registered PF_INET protocol family
+[    6.003951][    T1] IP idents hash table entries: 65536 (order: 7, 524288 bytes, vmalloc)
+[    6.019460][    T1] tcp_listen_portaddr_hash hash table entries: 2048 (order: 6, 147456 bytes, vmalloc)
+[    6.028575][    T1] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, vmalloc)
+[    6.037987][    T1] TCP established hash table entries: 32768 (order: 6, 262144 bytes, vmalloc)
+[    6.061370][    T1] TCP bind hash table entries: 32768 (order: 11, 4718592 bytes, vmalloc hugepage)
+[    6.071092][    T1] TCP: Hash tables configured (established 32768 bind 32768)
+[    6.083893][    T1] MPTCP token hash table entries: 4096 (order: 7, 360448 bytes, vmalloc)
+[    6.094570][    T1] UDP hash table entries: 2048 (order: 7, 524288 bytes, vmalloc)
+[    6.105283][    T1] UDP-Lite hash table entries: 2048 (order: 7, 524288 bytes, vmalloc)
+[    6.114370][    T1] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    6.124928][    T1] RPC: Registered named UNIX socket transport module.
+[    6.131667][    T1] RPC: Registered udp transport module.
+[    6.136587][    T1] RPC: Registered tcp transport module.
+[    6.141313][    T1] RPC: Registered tcp-with-tls transport module.
+[    6.146442][    T1] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    6.160346][    T1] NET: Registered PF_XDP protocol family
+[    6.167940][    T1] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    6.174281][    T1] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    6.180983][    T1] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    6.186770][    T1] pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+[    6.192495][    T1] pci_bus 0000:00: resource 8 [mem 0x140000000-0x1bfffffff window]
+[    6.200861][    T1] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[    6.206316][    T1] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    6.212215][    T1] PCI: CLS 0 bytes, default 64
+[    6.217237][    T1] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    6.223889][    T1] software IO TLB: mapped [mem 0x00000000bbfe0000-0x00000000bffe0000] (64MB)
+[    6.232120][    T1] ACPI: bus type thunderbolt registered
+[    6.244779][    T1] kvm_intel: VMX not supported by CPU 2
+[    6.245514][   T81] kworker/u17:0 (81) used greatest stack depth: 28312 bytes left
+[    6.249353][    T1] kvm_amd: CPU 2 isn't AMD or Hygon
+[    6.249459][    T1] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2868139ef5d, max_idle_ns: 440795282642 ns
+[    6.283375][   T82] kworker/u17:0 (82) used greatest stack depth: 27432 bytes left
+[    6.334683][    T1] twofish-x86_64-3way: performance on this CPU would be suboptimal: disabling twofish-x86_64-3way.
+[    6.341503][    T1] CPU feature 'AVX registers' is not supported.
+[    6.346235][    T1] CPU feature 'AVX registers' is not supported.
+[    6.351045][    T1] AVX2 instructions are not detected.
+[    6.358093][    T1] des3_ede-x86_64: performance on this CPU would be suboptimal: disabling des3_ede-x86_64.
+[    6.372859][    T1] camellia-x86_64: performance on this CPU would be suboptimal: disabling camellia-x86_64.
+[    6.395491][    T1] AVX or AES-NI instructions are not detected.
+[    6.405471][    T1] AVX2 or AES-NI instructions are not detected.
+[    6.418631][    T1] blowfish-x86_64: performance on this CPU would be suboptimal: disabling blowfish-x86_64.
+[    6.432019][    T1] CPU feature 'AVX registers' is not supported.
+[    6.446627][    T1] CPU feature 'AVX registers' is not supported.
+[    6.464474][    T1] sm3_avx_x86_64: AVX instruction are not detected.
+[    6.469643][    T1] AVX or AES-NI instructions are not detected.
+[    6.474955][    T1] AVX2 or AES-NI instructions are not detected.
+[    6.480897][    T1] AVX or AES-NI instructions are not detected.
+[    9.601226][    T1] Initialise system trusted keyrings
+[    9.606489][    T1] workingset: timestamp_bits=40 max_order=20 bucket_order=0
+[    9.616952][    T1] DLM installed
+[    9.623187][    T1] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    9.636062][    T1] NFS: Registering the id_resolver key type
+[    9.639785][    T1] Key type id_resolver registered
+[    9.643013][    T1] Key type id_legacy registered
+[    9.646232][    T1] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    9.651879][    T1] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    9.681342][    T1] Key type cifs.spnego registered
+[    9.685907][    T1] Key type cifs.idmap registered
+[    9.693094][    T1] ntfs3: Enabled Linux POSIX ACLs support
+[    9.696917][    T1] ntfs3: Read-only LZX/Xpress compression included
+[    9.701352][    T1] efs: 1.0a - http://aeschi.ch.eu.org/efs/
+[    9.705706][    T1] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    9.714749][    T1] romfs: ROMFS MTD (C) 2007 Red Hat, Inc.
+[    9.718026][    T1] QNX4 filesystem 0.2.3 registered.
+[    9.721017][    T1] qnx6: QNX6 filesystem 1.0.0 registered.
+[    9.726608][    T1] fuse: init (API version 7.45)
+[    9.734886][    T1] orangefs_debugfs_init: called with debug mask: :none: :0:
+[    9.740506][    T1] orangefs_init: module version upstream loaded
+[    9.745730][    T1] JFS: nTxBlock = 8192, nTxLock = 65536
+[    9.789946][    T1] SGI XFS with ACLs, security attributes, realtime, quota, no debug enabled
+[    9.799967][    T1] 9p: Installing v9fs 9p2000 file system support
+[    9.803949][    T1] NILFS version 2 loaded
+[    9.806486][    T1] befs: version: 0.9.3
+[    9.809779][    T1] ocfs2: Registered cluster interface o2cb
+[    9.814669][    T1] ocfs2: Registered cluster interface user
+[    9.819429][    T1] OCFS2 User DLM kernel interface loaded
+[    9.845838][    T1] gfs2: GFS2 installed
+[    9.860862][    T1] ceph: loaded (mds proto 32)
+[    9.873498][    T1] cryptd: max_cpu_qlen set to 1000
+[    9.912537][    T1] NET: Registered PF_ALG protocol family
+[    9.917169][    T1] xor: measuring software checksum speed
+[    9.922553][    T1]    prefetch64-sse  :  6286 MB/sec
+[    9.927617][    T1]    generic_sse     :  7451 MB/sec
+[    9.932144][    T1] xor: using function: generic_sse (7451 MB/sec)
+[    9.937372][    T1] async_tx: api initialized (async)
+[    9.942143][    T1] Key type asymmetric registered
+[    9.946760][    T1] Asymmetric key parser 'x509' registered
+[    9.951360][    T1] Asymmetric key parser 'pkcs8' registered
+[    9.955814][    T1] Key type pkcs7_test registered
+[    9.960688][    T1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 239)
+[    9.969112][    T1] io scheduler mq-deadline registered
+[    9.973667][    T1] io scheduler kyber registered
+[    9.976818][    T1] io scheduler bfq registered
+[    9.995711][    T1] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[   10.005320][    T1] ACPI: button: Power Button [PWRF]
+[   10.030494][    T1] ioatdma: Intel(R) QuickData Technology Driver 5.00
+[   14.591617][    T1] ACPI: \_SB_.LNKC: Enabled at IRQ 11
+[   19.607963][    T1] ACPI: \_SB_.LNKD: Enabled at IRQ 10
+[   20.138925][  T685] kworker/u17:1 (685) used greatest stack depth: 27208 bytes left
+[   20.201009][    T1] N_HDLC line discipline registered with maxframe=4096
+[   20.209895][    T1] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[   20.242908][    T1] 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[   20.296494][    T1] Non-volatile memory driver v1.3
+[   20.318930][  T781] random: crng init done
+[   20.320935][    T1] Linux agpgart interface v0.103
+[   20.333559][    T1] usbcore: registered new interface driver xillyusb
+[   20.367501][    T1] ACPI: bus type drm_connector registered
+[   20.387751][    T1] [drm] Initialized vgem 1.0.0 for vgem on minor 0
+[   20.407733][    T1] [drm] Initialized vkms 1.0.0 for vkms on minor 1
+[   20.531174][    T1] Console: switching to colour frame buffer device 128x48
+[   20.552887][    T1] faux_driver vkms: [drm] fb0: vkmsdrmfb frame buffer device
+[   20.560459][    T1] usbcore: registered new interface driver udl
+[   20.592917][    T1] bochs-drm 0000:00:02.0: vgaarb: deactivate vga console
+[   20.615363][    T1] [drm] Found bochs VGA, ID 0xb0c5.
+[   20.620118][    T1] [drm] Framebuffer size 16384 kB @ 0xfd000000, mmio @ 0xfebc0000.
+[   20.634608][    T1] [drm] Initialized bochs-drm 1.0.0 for 0000:00:02.0 on minor 2
+[   20.688547][    T1] fbcon: bochs-drmdrmfb (fb1) is primary device
+[   20.688601][    T1] fbcon: Remapping primary device, fb1, to tty 1-63
+[   21.649632][    T1] bochs-drm 0000:00:02.0: [drm] fb1: bochs-drmdrmfb frame buffer device
+[   21.657531][    T1] usbcore: registered new interface driver gm12u320
+[   21.662981][    T1] usbcore: registered new interface driver gud
+[   21.796376][    T1] brd: module loaded
+[   22.088445][    T1] loop: module loaded
+[   22.383899][    T1] zram: Added device: zram0
+[   22.403517][    T1] null_blk: disk nullb0 created
+[   22.407043][    T1] null_blk: module loaded
+[   22.412942][    T1] Guest personality initialized and is inactive
+[   22.418273][    T1] VMCI host device registered (name=vmci, major=10, minor=266)
+[   22.423602][    T1] Initialized host personality
+[   22.427998][    T1] usbcore: registered new interface driver rtsx_usb
+[   22.434955][    T1] usbcore: registered new interface driver viperboard
+[   22.440089][    T1] usbcore: registered new interface driver dln2
+[   22.446000][    T1] usbcore: registered new interface driver pn533_usb
+[   22.456222][    T1] nfcsim 0.2 initialized
+[   22.459970][    T1] usbcore: registered new interface driver port100
+[   22.465518][    T1] usbcore: registered new interface driver nfcmrvl
+[   22.490229][    T1] Loading iSCSI transport class v2.0-870.
+[   22.523983][    T1] st: Version 20160209, fixed bufsize 32768, s/g segs 256
+[   27.340607][    T1] ACPI: \_SB_.LNKA: Enabled at IRQ 10
+[   27.367054][    T1] ahci 0000:00:05.0: SSS flag set, parallel bus scan disabled
+[   27.384118][    T1] ahci 0000:00:05.0: AHCI vers 0103.0000, 1 command slots, ? Gbps, SATA mode
+[   27.390330][    T1] ahci 0000:00:05.0: 32/32 ports implemented (port mask 0xffffffff)
+[   27.396809][    T1] ahci 0000:00:05.0: flags: 64bit ncq stag only 
+[   27.636533][    T1] scsi host0: ahci
+[   27.653513][    T1] scsi host1: ahci
+[   27.665995][    T1] scsi host2: ahci
+[   27.677235][    T1] scsi host3: ahci
+[   27.690710][    T1] scsi host4: ahci
+[   27.705926][    T1] scsi host5: ahci
+[   27.716795][    T1] scsi host6: ahci
+[   27.726386][    T1] scsi host7: ahci
+[   27.733677][    T1] scsi host8: ahci
+[   27.739566][    T1] scsi host9: ahci
+[   27.747473][    T1] scsi host10: ahci
+[   27.755084][    T1] scsi host11: ahci
+[   27.761756][    T1] scsi host12: ahci
+[   27.768940][    T1] scsi host13: ahci
+[   27.775575][    T1] scsi host14: ahci
+[   27.784642][    T1] scsi host15: ahci
+[   27.791119][    T1] scsi host16: ahci
+[   27.799163][    T1] scsi host17: ahci
+[   27.810510][    T1] scsi host18: ahci
+[   27.820539][    T1] scsi host19: ahci
+[   27.829052][    T1] scsi host20: ahci
+[   27.836896][    T1] scsi host21: ahci
+[   27.844913][    T1] scsi host22: ahci
+[   27.854678][    T1] scsi host23: ahci
+[   27.864124][    T1] scsi host24: ahci
+[   27.874354][    T1] scsi host25: ahci
+[   27.881812][    T1] scsi host26: ahci
+[   27.890208][    T1] scsi host27: ahci
+[   27.899167][    T1] scsi host28: ahci
+[   27.906794][    T1] scsi host29: ahci
+[   27.914787][    T1] scsi host30: ahci
+[   27.923024][    T1] scsi host31: ahci
+[   27.928246][    T1] ata1: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0100 irq 26 lpm-pol 1
+[   27.934834][    T1] ata2: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0180 irq 27 lpm-pol 1
+[   27.939954][    T1] ata3: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0200 irq 28 lpm-pol 1
+[   27.946647][    T1] ata4: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0280 irq 29 lpm-pol 1
+[   27.953676][    T1] ata5: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0300 irq 30 lpm-pol 1
+[   27.959420][    T1] ata6: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0380 irq 31 lpm-pol 1
+[   27.966322][    T1] ata7: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0400 irq 32 lpm-pol 1
+[   27.973868][    T1] ata8: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0480 irq 33 lpm-pol 1
+[   27.980980][    T1] ata9: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0500 irq 34 lpm-pol 1
+[   27.988247][    T1] ata10: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0580 irq 35 lpm-pol 1
+[   27.996326][    T1] ata11: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0600 irq 36 lpm-pol 1
+[   28.003900][    T1] ata12: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0680 irq 37 lpm-pol 1
+[   28.012127][    T1] ata13: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0700 irq 38 lpm-pol 1
+[   28.020841][    T1] ata14: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0780 irq 39 lpm-pol 1
+[   28.029239][    T1] ata15: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0800 irq 40 lpm-pol 1
+[   28.038412][    T1] ata16: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0880 irq 41 lpm-pol 1
+[   28.046180][    T1] ata17: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0900 irq 42 lpm-pol 1
+[   28.054020][    T1] ata18: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0980 irq 43 lpm-pol 1
+[   28.068558][    T1] ata19: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0a00 irq 44 lpm-pol 1
+[   28.083958][    T1] ata20: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0a80 irq 45 lpm-pol 1
+[   28.092196][    T1] ata21: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0b00 irq 46 lpm-pol 1
+[   28.099120][    T1] ata22: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0b80 irq 47 lpm-pol 1
+[   28.107435][    T1] ata23: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0c00 irq 48 lpm-pol 1
+[   28.115013][    T1] ata24: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0c80 irq 49 lpm-pol 1
+[   28.124398][    T1] ata25: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0d00 irq 50 lpm-pol 1
+[   28.132534][    T1] ata26: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0d80 irq 51 lpm-pol 1
+[   28.141054][    T1] ata27: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0e00 irq 52 lpm-pol 1
+[   28.148040][    T1] ata28: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0e80 irq 53 lpm-pol 1
+[   28.155607][    T1] ata29: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0f00 irq 54 lpm-pol 1
+[   28.164141][    T1] ata30: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb0f80 irq 55 lpm-pol 1
+[   28.171160][    T1] ata31: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb1000 irq 56 lpm-pol 1
+[   28.176834][    T1] ata32: SATA max UDMA/133 abar m65536@0xfebb0000 port 0xfebb1080 irq 57 lpm-pol 1
+[   28.201892][    T1] scsi host32: ata_piix
+[   28.212984][    T1] scsi host33: ata_piix
+[   28.218356][    T1] ata33: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc0a0 irq 14 lpm-pol 0
+[   28.224498][    T1] ata34: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc0a8 irq 15 lpm-pol 0
+[   28.242014][    T1] Rounding down aligned max_sectors from 4294967295 to 4294967288
+[   28.253556][    T1] db_root: cannot open: /etc/target
+[   28.260958][    T1] slram: not enough parameters.
+[   28.278224][    T1] ftl_cs: FTL header not found.
+[   28.344064][    T1] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   28.354614][    T1] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   28.361774][    T1] eql: Equalizer2002: Simon Janes (simon@ncm.com) and David S. Miller (davem@redhat.com)
+[   28.392336][    T1] MACsec IEEE 802.1AE
+[   28.414656][    T1] usbcore: registered new interface driver mvusb_mdio
+[   28.420983][    T1] tun: Universal TUN/TAP device driver, 1.6
+[   28.426257][ T1334] ata33: found unknown device (class 0)
+[   28.429431][    T1] vcan: Virtual CAN interface driver
+[   28.438326][ T1343] ata34: found unknown device (class 0)
+[   28.438348][    T1] vxcan: Virtual CAN Tunnel driver
+[   28.446151][    T1] slcan: serial line CAN interface driver
+[   28.449090][ T1334] ata33.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+[   28.451732][    T1] CAN device driver interface
+[   28.458798][ T1334] ata33.00: 536870912 sectors, multi 16: LBA48 
+[   28.460119][    T1] usbcore: registered new interface driver usb_8dev
+[   28.468349][ T1343] ata34.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+[   28.470802][    T1] usbcore: registered new interface driver ems_usb
+[   28.482613][    T1] usbcore: registered new interface driver esd_usb
+[   28.489269][    T1] usbcore: registered new interface driver etas_es58x
+[   28.494738][    T1] usbcore: registered new interface driver f81604
+[   28.501153][    T1] usbcore: registered new interface driver gs_usb
+[   28.506950][    T1] usbcore: registered new interface driver kvaser_usb
+[   28.508805][ T1170] ata1: found unknown device (class 0)
+[   28.514752][    T1] usbcore: registered new interface driver mcba_usb
+[   28.518279][ T1170] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[   28.524133][    T1] usbcore: registered new interface driver peak_usb
+[   28.524670][    T1] usbcore: registered new interface driver ucan
+[   28.525315][    T1] e100: Intel(R) PRO/100 Network Driver
+[   28.525343][    T1] e100: Copyright(c) 1999-2006 Intel Corporation
+[   28.531154][ T1170] ata1: link online but 1 devices misclassified, retrying
+[   28.539514][    T1] e1000: Intel(R) PRO/1000 Network Driver
+[   28.544837][ T1170] ata1: reset failed (errno=-11), retrying in 10 secs
+[   28.550381][    T1] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[   33.277613][    T1] ACPI: \_SB_.LNKB: Enabled at IRQ 11
+[   34.026983][    T1] e1000 0000:00:06.0 eth0: (PCI:33MHz:32-bit) 52:54:00:12:34:56
+[   34.032507][    T1] e1000 0000:00:06.0 eth0: Intel(R) PRO/1000 Network Connection
+[   34.038112][    T1] e1000e: Intel(R) PRO/1000 Network Driver
+[   34.042086][    T1] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[   34.049687][    T1] mkiss: AX.25 Multikiss, Hans Albas PE1AYX
+[   34.053433][    T1] AX.25: bpqether driver version 004
+[   34.056601][    T1] PPP generic driver version 2.4.2
+[   34.061968][    T1] PPP BSD Compression module registered
+[   34.066973][    T1] PPP Deflate Compression module registered
+[   34.071949][    T1] PPP MPPE Compression module registered
+[   34.076555][    T1] NET: Registered PF_PPPOX protocol family
+[   34.081570][    T1] PPTP driver version 0.8.5
+[   34.087236][    T1] SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256) (6 bit encapsulation enabled).
+[   34.096513][    T1] CSLIP: code copyright 1989 Regents of the University of California.
+[   34.103403][    T1] SLIP linefill/keepalive option.
+[   34.108567][    T1] hdlc: HDLC support module revision 1.22
+[   34.114257][    T1] LAPB Ethernet driver version 0.02
+[   34.120604][    T1] usbcore: registered new interface driver ath9k_htc
+[   34.127035][    T1] usbcore: registered new interface driver carl9170
+[   34.133221][    T1] usbcore: registered new interface driver ath6kl_usb
+[   34.139424][    T1] usbcore: registered new interface driver ar5523
+[   34.146166][    T1] usbcore: registered new interface driver ath10k_usb
+[   34.151509][    T1] usbcore: registered new interface driver plfxlc
+[   34.156818][    T1] mac80211_hwsim: initializing netlink
+[   34.210013][    T1] usbcore: registered new interface driver atusb
+[   34.236400][    T1] mac802154_hwsim mac802154_hwsim: Added 2 mac802154 hwsim hardware radios
+[   34.250204][    T1] VMware vmxnet3 virtual NIC driver - version 1.9.0.0-k-NAPI
+[   34.257055][    T1] usbcore: registered new interface driver catc
+[   34.262744][    T1] usbcore: registered new interface driver kaweth
+[   34.267053][    T1] pegasus: Pegasus/Pegasus II USB Ethernet driver
+[   34.272216][    T1] usbcore: registered new interface driver pegasus
+[   34.277382][    T1] usbcore: registered new interface driver rtl8150
+[   34.281500][    T1] usbcore: registered new device driver r8152-cfgselector
+[   34.286546][    T1] usbcore: registered new interface driver r8152
+[   34.290681][    T1] usbcore: registered new interface driver hso
+[   34.294755][    T1] usbcore: registered new interface driver lan78xx
+[   34.299174][    T1] usbcore: registered new interface driver asix
+[   34.303272][    T1] usbcore: registered new interface driver ax88179_178a
+[   34.307998][    T1] usbcore: registered new interface driver cdc_ether
+[   34.313026][    T1] usbcore: registered new interface driver cdc_eem
+[   34.320101][    T1] usbcore: registered new interface driver dm9601
+[   34.326519][    T1] usbcore: registered new interface driver sr9700
+[   34.331336][    T1] usbcore: registered new interface driver CoreChips
+[   34.335282][    T1] usbcore: registered new interface driver smsc75xx
+[   34.339964][    T1] usbcore: registered new interface driver smsc95xx
+[   34.344808][    T1] usbcore: registered new interface driver gl620a
+[   34.350140][    T1] usbcore: registered new interface driver net1080
+[   34.355911][    T1] usbcore: registered new interface driver plusb
+[   34.360674][    T1] usbcore: registered new interface driver rndis_host
+[   34.365818][    T1] usbcore: registered new interface driver cdc_subset
+[   34.370306][    T1] usbcore: registered new interface driver zaurus
+[   34.374777][    T1] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[   34.380478][    T1] usbcore: registered new interface driver int51x1
+[   34.386693][    T1] usbcore: registered new interface driver cdc_phonet
+[   34.393197][    T1] usbcore: registered new interface driver kalmia
+[   34.398378][    T1] usbcore: registered new interface driver ipheth
+[   34.403356][    T1] usbcore: registered new interface driver sierra_net
+[   34.408704][    T1] usbcore: registered new interface driver cx82310_eth
+[   34.416672][    T1] usbcore: registered new interface driver cdc_ncm
+[   34.424647][    T1] usbcore: registered new interface driver huawei_cdc_ncm
+[   34.429112][    T1] usbcore: registered new interface driver lg-vl600
+[   34.434592][    T1] usbcore: registered new interface driver qmi_wwan
+[   34.440214][    T1] usbcore: registered new interface driver cdc_mbim
+[   34.444798][    T1] usbcore: registered new interface driver ch9200
+[   34.449893][    T1] usbcore: registered new interface driver aqc111
+[   34.454678][    T1] usbcore: registered new interface driver r8153_ecm
+[   34.464033][    T1] VFIO - User Level meta-driver version: 0.3
+[   34.477598][    T1] aoe: AoE v85 initialised.
+[   34.503857][    T1] usbcore: registered new interface driver cdc_acm
+[   34.508383][    T1] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[   34.514648][    T1] usbcore: registered new interface driver usblp
+[   34.518885][    T1] usbcore: registered new interface driver cdc_wdm
+[   34.522943][    T1] usbcore: registered new interface driver usbtmc
+[   34.526898][    T1] usbcore: registered new interface driver uas
+[   34.530620][    T1] usbcore: registered new interface driver usb-storage
+[   34.534554][    T1] usbcore: registered new interface driver ums-alauda
+[   34.538432][    T1] usbcore: registered new interface driver ums-cypress
+[   34.542644][    T1] usbcore: registered new interface driver ums-datafab
+[   34.548563][    T1] usbcore: registered new interface driver ums_eneub6250
+[   34.553604][    T1] usbcore: registered new interface driver ums-freecom
+[   34.559729][    T1] usbcore: registered new interface driver ums-isd200
+[   34.566231][    T1] usbcore: registered new interface driver ums-jumpshot
+[   34.571996][    T1] usbcore: registered new interface driver ums-karma
+[   34.576757][    T1] usbcore: registered new interface driver ums-onetouch
+[   34.582480][    T1] usbcore: registered new interface driver ums-realtek
+[   34.588709][    T1] usbcore: registered new interface driver ums-sddr09
+[   34.594869][    T1] usbcore: registered new interface driver ums-sddr55
+[   34.601023][    T1] usbcore: registered new interface driver ums-usbat
+[   34.616016][    T1] usbcore: registered new interface driver mdc800
+[   34.621568][    T1] mdc800: v0.7.5 (30/10/2000):USB Driver for Mustek MDC800 Digital Camera
+[   34.632898][    T1] usbcore: registered new interface driver microtekX6
+[   34.639974][    T1] usbcore: registered new interface driver usbserial_generic
+[   34.647066][    T1] usbserial: USB Serial support registered for generic
+[   34.653086][    T1] usbcore: registered new interface driver aircable
+[   34.658936][    T1] usbserial: USB Serial support registered for aircable
+[   34.666034][    T1] usbcore: registered new interface driver ark3116
+[   34.670651][    T1] usbserial: USB Serial support registered for ark3116
+[   34.675298][    T1] usbcore: registered new interface driver belkin_sa
+[   34.679172][    T1] usbserial: USB Serial support registered for Belkin / Peracom / GoHubs USB Serial Adapter
+[   34.688681][    T1] usbcore: registered new interface driver ch341
+[   34.693933][    T1] usbserial: USB Serial support registered for ch341-uart
+[   34.700096][    T1] usbcore: registered new interface driver cp210x
+[   34.705621][    T1] usbserial: USB Serial support registered for cp210x
+[   34.711709][    T1] usbcore: registered new interface driver cyberjack
+[   34.718624][    T1] usbserial: USB Serial support registered for Reiner SCT Cyberjack USB card reader
+[   34.735018][    T1] usbcore: registered new interface driver cypress_m8
+[   34.740630][    T1] usbserial: USB Serial support registered for DeLorme Earthmate USB
+[   34.748836][    T1] usbserial: USB Serial support registered for HID->COM RS232 Adapter
+[   34.755029][    T1] usbserial: USB Serial support registered for Nokia CA-42 V2 Adapter
+[   34.763351][    T1] usbcore: registered new interface driver usb_debug
+[   34.768819][    T1] usbserial: USB Serial support registered for debug
+[   34.779538][    T1] usbserial: USB Serial support registered for xhci_dbc
+[   34.787508][    T1] usbcore: registered new interface driver digi_acceleport
+[   34.796907][    T1] usbserial: USB Serial support registered for Digi 2 port USB adapter
+[   34.804263][    T1] usbserial: USB Serial support registered for Digi 4 port USB adapter
+[   34.813179][    T1] usbcore: registered new interface driver io_edgeport
+[   34.826819][    T1] usbserial: USB Serial support registered for Edgeport 2 port adapter
+[   34.834643][    T1] usbserial: USB Serial support registered for Edgeport 4 port adapter
+[   34.847478][    T1] usbserial: USB Serial support registered for Edgeport 8 port adapter
+[   34.854871][    T1] usbserial: USB Serial support registered for EPiC device
+[   34.860899][    T1] usbcore: registered new interface driver io_ti
+[   34.868679][    T1] usbserial: USB Serial support registered for Edgeport TI 1 port adapter
+[   34.876587][    T1] usbserial: USB Serial support registered for Edgeport TI 2 port adapter
+[   34.884524][    T1] usbcore: registered new interface driver empeg
+[   34.890231][    T1] usbserial: USB Serial support registered for empeg
+[   34.899555][    T1] usbcore: registered new interface driver f81534a_ctrl
+[   34.905968][    T1] usbcore: registered new interface driver f81232
+[   34.913314][    T1] usbserial: USB Serial support registered for f81232
+[   34.918320][    T1] usbserial: USB Serial support registered for f81534a
+[   34.924041][    T1] usbcore: registered new interface driver f81534
+[   34.929984][    T1] usbserial: USB Serial support registered for Fintek F81532/F81534
+[   34.936518][    T1] usbcore: registered new interface driver ftdi_sio
+[   34.941595][    T1] usbserial: USB Serial support registered for FTDI USB Serial Device
+[   34.951340][    T1] usbcore: registered new interface driver garmin_gps
+[   34.959860][    T1] usbserial: USB Serial support registered for Garmin GPS usb/tty
+[   34.966151][    T1] usbcore: registered new interface driver ipaq
+[   34.970928][    T1] usbserial: USB Serial support registered for PocketPC PDA
+[   34.976157][    T1] usbcore: registered new interface driver ipw
+[   34.980378][    T1] usbserial: USB Serial support registered for IPWireless converter
+[   34.986965][    T1] usbcore: registered new interface driver ir_usb
+[   34.991958][    T1] usbserial: USB Serial support registered for IR Dongle
+[   34.996735][    T1] usbcore: registered new interface driver iuu_phoenix
+[   35.001332][    T1] usbserial: USB Serial support registered for iuu_phoenix
+[   35.007688][    T1] usbcore: registered new interface driver keyspan
+[   35.012356][    T1] usbserial: USB Serial support registered for Keyspan - (without firmware)
+[   35.018367][    T1] usbserial: USB Serial support registered for Keyspan 1 port adapter
+[   35.024718][    T1] usbserial: USB Serial support registered for Keyspan 2 port adapter
+[   35.031514][    T1] usbserial: USB Serial support registered for Keyspan 4 port adapter
+[   35.038010][    T1] usbcore: registered new interface driver keyspan_pda
+[   35.042532][    T1] usbserial: USB Serial support registered for Keyspan PDA
+[   35.047621][    T1] usbserial: USB Serial support registered for Keyspan PDA - (prerenumeration)
+[   35.053916][    T1] usbcore: registered new interface driver kl5kusb105
+[   35.058070][    T1] usbserial: USB Serial support registered for KL5KUSB105D / PalmConnect
+[   35.064479][    T1] usbcore: registered new interface driver kobil_sct
+[   35.069111][    T1] usbserial: USB Serial support registered for KOBIL USB smart card terminal
+[   35.074830][    T1] usbcore: registered new interface driver mct_u232
+[   35.078799][    T1] usbserial: USB Serial support registered for MCT U232
+[   35.084722][    T1] usbcore: registered new interface driver metro_usb
+[   35.089647][    T1] usbserial: USB Serial support registered for Metrologic USB to Serial
+[   35.096422][    T1] usbcore: registered new interface driver mos7720
+[   35.101996][    T1] usbserial: USB Serial support registered for Moschip 2 port adapter
+[   35.109428][    T1] usbcore: registered new interface driver mos7840
+[   35.117623][    T1] usbserial: USB Serial support registered for Moschip 7840/7820 USB Serial Driver
+[   35.132622][    T1] usbcore: registered new interface driver mxuport
+[   35.136667][    T1] usbserial: USB Serial support registered for MOXA UPort
+[   35.141578][    T1] usbcore: registered new interface driver navman
+[   35.146900][    T1] usbserial: USB Serial support registered for navman
+[   35.151770][    T1] usbcore: registered new interface driver omninet
+[   35.156262][    T1] usbserial: USB Serial support registered for ZyXEL - omni.net usb
+[   35.162313][    T1] usbcore: registered new interface driver opticon
+[   35.166698][    T1] usbserial: USB Serial support registered for opticon
+[   35.172157][    T1] usbcore: registered new interface driver option
+[   35.178364][    T1] usbserial: USB Serial support registered for GSM modem (1-port)
+[   35.185197][    T1] usbcore: registered new interface driver oti6858
+[   35.190830][    T1] usbserial: USB Serial support registered for oti6858
+[   35.196885][    T1] usbcore: registered new interface driver pl2303
+[   35.201504][    T1] usbserial: USB Serial support registered for pl2303
+[   35.207347][    T1] usbcore: registered new interface driver qcaux
+[   35.213488][    T1] usbserial: USB Serial support registered for qcaux
+[   35.219028][    T1] usbcore: registered new interface driver qcserial
+[   35.224768][    T1] usbserial: USB Serial support registered for Qualcomm USB modem
+[   35.231355][    T1] usbcore: registered new interface driver quatech2
+[   35.236397][    T1] usbserial: USB Serial support registered for Quatech 2nd gen USB to Serial Driver
+[   35.243789][    T1] usbcore: registered new interface driver safe_serial
+[   35.248319][    T1] usbserial: USB Serial support registered for safe_serial
+[   35.254544][    T1] usbcore: registered new interface driver sierra
+[   35.259570][    T1] usbserial: USB Serial support registered for Sierra USB modem
+[   35.266091][    T1] usbcore: registered new interface driver usb_serial_simple
+[   35.272067][    T1] usbserial: USB Serial support registered for carelink
+[   35.277834][    T1] usbserial: USB Serial support registered for flashloader
+[   35.283811][    T1] usbserial: USB Serial support registered for funsoft
+[   35.289123][    T1] usbserial: USB Serial support registered for google
+[   35.294771][    T1] usbserial: USB Serial support registered for hp4x
+[   35.299476][    T1] usbserial: USB Serial support registered for kaufmann
+[   35.305197][    T1] usbserial: USB Serial support registered for libtransistor
+[   35.309736][    T1] usbserial: USB Serial support registered for moto_modem
+[   35.314000][    T1] usbserial: USB Serial support registered for motorola_tetra
+[   35.318622][    T1] usbserial: USB Serial support registered for nokia
+[   35.323016][    T1] usbserial: USB Serial support registered for novatel_gps
+[   35.328189][    T1] usbserial: USB Serial support registered for owon
+[   35.333370][    T1] usbserial: USB Serial support registered for siemens_mpi
+[   35.338077][    T1] usbserial: USB Serial support registered for suunto
+[   35.350055][    T1] usbserial: USB Serial support registered for vivopay
+[   35.356038][    T1] usbserial: USB Serial support registered for zio
+[   35.362223][    T1] usbcore: registered new interface driver spcp8x5
+[   35.366545][    T1] usbserial: USB Serial support registered for SPCP8x5
+[   35.374089][    T1] usbcore: registered new interface driver ssu100
+[   35.379030][    T1] usbserial: USB Serial support registered for Quatech SSU-100 USB to Serial Driver
+[   35.386963][    T1] usbcore: registered new interface driver symbolserial
+[   35.392402][    T1] usbserial: USB Serial support registered for symbol
+[   35.397405][    T1] usbcore: registered new interface driver ti_usb_3410_5052
+[   35.402295][    T1] usbserial: USB Serial support registered for TI USB 3410 1 port adapter
+[   35.407938][    T1] usbserial: USB Serial support registered for TI USB 5052 2 port adapter
+[   35.415970][    T1] usbcore: registered new interface driver upd78f0730
+[   35.421056][    T1] usbserial: USB Serial support registered for upd78f0730
+[   35.426112][    T1] usbcore: registered new interface driver visor
+[   35.431016][    T1] usbserial: USB Serial support registered for Handspring Visor / Palm OS
+[   35.437576][    T1] usbserial: USB Serial support registered for Sony Clie 5.0
+[   35.443492][    T1] usbserial: USB Serial support registered for Sony Clie 3.5
+[   35.447332][    T1] usbcore: registered new interface driver wishbone_serial
+[   35.452039][    T1] usbserial: USB Serial support registered for wishbone_serial
+[   35.458198][    T1] usbcore: registered new interface driver whiteheat
+[   35.462460][    T1] usbserial: USB Serial support registered for Connect Tech - WhiteHEAT - (prerenumeration)
+[   35.473894][    T1] usbserial: USB Serial support registered for Connect Tech - WhiteHEAT
+[   35.480557][    T1] usbcore: registered new interface driver xr_serial
+[   35.485019][    T1] usbserial: USB Serial support registered for xr_serial
+[   35.489817][    T1] usbcore: registered new interface driver xsens_mt
+[   35.494565][    T1] usbserial: USB Serial support registered for xsens_mt
+[   35.499938][    T1] usbcore: registered new interface driver adutux
+[   35.504839][    T1] usbcore: registered new interface driver appledisplay
+[   35.510279][    T1] usbcore: registered new interface driver cypress_cy7c63
+[   35.515608][    T1] usbcore: registered new interface driver cytherm
+[   35.520260][    T1] usbcore: registered new interface driver emi26 - firmware loader
+[   35.525983][    T1] usbcore: registered new interface driver emi62 - firmware loader
+[   35.530367][    T1] usbcore: registered new device driver apple-mfi-fastcharge
+[   35.536745][    T1] usbcore: registered new interface driver ljca
+[   35.542102][    T1] usbcore: registered new interface driver idmouse
+[   35.554768][    T1] usbcore: registered new interface driver iowarrior
+[   35.561133][    T1] usbcore: registered new interface driver isight_firmware
+[   35.570869][    T1] usbcore: registered new interface driver usblcd
+[   35.576339][    T1] usbcore: registered new interface driver ldusb
+[   35.581636][    T1] usbcore: registered new interface driver legousbtower
+[   35.588441][    T1] usbcore: registered new interface driver usbtest
+[   35.596386][    T1] usbcore: registered new interface driver usb_ehset_test
+[   35.604236][    T1] usbcore: registered new interface driver trancevibrator
+[   35.612094][    T1] usbcore: registered new interface driver uss720
+[   35.616503][    T1] uss720: USB Parport Cable driver for Cables using the Lucent Technologies USS720 Chip
+[   35.627775][    T1] uss720: NOTE: this is a special purpose driver to allow nonstandard
+[   35.637231][    T1] uss720: protocols (eg. bitbang) over USS720 usb to parallel cables
+[   35.646779][    T1] uss720: If you just want to connect to a printer, use usblp instead
+[   35.655294][    T1] usbcore: registered new interface driver usbsevseg
+[   35.661709][    T1] usbcore: registered new interface driver yurex
+[   35.672507][    T1] usbcore: registered new interface driver chaoskey
+[   35.678090][    T1] usbcore: registered new interface driver sisusb
+[   35.684580][    T1] usbcore: registered new interface driver lvs
+[   35.690389][    T1] usbcore: registered new interface driver cxacru
+[   35.697569][    T1] usbcore: registered new interface driver speedtch
+[   35.703180][    T1] usbcore: registered new interface driver ueagle-atm
+[   35.707500][    T1] xusbatm: malformed module parameters
+[   35.716079][    T1] dummy_hcd dummy_hcd.0: USB Host+Gadget Emulator, driver 02 May 2005
+[   35.723556][    T1] dummy_hcd dummy_hcd.0: Dummy host controller
+[   35.730326][    T1] dummy_hcd dummy_hcd.0: new USB bus registered, assigned bus number 1
+[   35.750563][    T1] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   35.759628][    T1] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   35.768458][    T1] usb usb1: Product: Dummy host controller
+[   35.772998][    T1] usb usb1: Manufacturer: Linux 6.18.0 dummy_hcd
+[   35.778427][    T1] usb usb1: SerialNumber: dummy_hcd.0
+[   35.794868][    T1] hub 1-0:1.0: USB hub found
+[   35.800249][    T1] hub 1-0:1.0: 1 port detected
+[   35.812338][    T1] dummy_hcd dummy_hcd.1: USB Host+Gadget Emulator, driver 02 May 2005
+[   35.818193][    T1] dummy_hcd dummy_hcd.1: Dummy host controller
+[   35.824467][    T1] dummy_hcd dummy_hcd.1: new USB bus registered, assigned bus number 2
+[   35.831637][    T1] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   35.837556][    T1] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   35.842477][    T1] usb usb2: Product: Dummy host controller
+[   35.845808][    T1] usb usb2: Manufacturer: Linux 6.18.0 dummy_hcd
+[   35.849274][    T1] usb usb2: SerialNumber: dummy_hcd.1
+[   35.854729][    T1] hub 2-0:1.0: USB hub found
+[   35.857452][    T1] hub 2-0:1.0: 1 port detected
+[   35.863783][    T1] dummy_hcd dummy_hcd.2: USB Host+Gadget Emulator, driver 02 May 2005
+[   35.868758][    T1] dummy_hcd dummy_hcd.2: Dummy host controller
+[   35.874543][    T1] dummy_hcd dummy_hcd.2: new USB bus registered, assigned bus number 3
+[   35.881205][    T1] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   35.887136][    T1] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   35.893269][    T1] usb usb3: Product: Dummy host controller
+[   35.896732][    T1] usb usb3: Manufacturer: Linux 6.18.0 dummy_hcd
+[   35.900500][    T1] usb usb3: SerialNumber: dummy_hcd.2
+[   35.906688][    T1] hub 3-0:1.0: USB hub found
+[   35.909786][    T1] hub 3-0:1.0: 1 port detected
+[   35.917181][    T1] dummy_hcd dummy_hcd.3: USB Host+Gadget Emulator, driver 02 May 2005
+[   35.922485][    T1] dummy_hcd dummy_hcd.3: Dummy host controller
+[   35.927093][    T1] dummy_hcd dummy_hcd.3: new USB bus registered, assigned bus number 4
+[   35.933530][    T1] usb usb4: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   35.938799][    T1] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   35.944561][    T1] usb usb4: Product: Dummy host controller
+[   35.949018][    T1] usb usb4: Manufacturer: Linux 6.18.0 dummy_hcd
+[   35.953790][    T1] usb usb4: SerialNumber: dummy_hcd.3
+[   35.962598][    T1] hub 4-0:1.0: USB hub found
+[   35.966810][    T1] hub 4-0:1.0: 1 port detected
+[   35.974427][    T1] dummy_hcd dummy_hcd.4: USB Host+Gadget Emulator, driver 02 May 2005
+[   35.980949][    T1] dummy_hcd dummy_hcd.4: Dummy host controller
+[   35.987419][    T1] dummy_hcd dummy_hcd.4: new USB bus registered, assigned bus number 5
+[   35.994503][    T1] usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.001531][    T1] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.006901][    T1] usb usb5: Product: Dummy host controller
+[   36.010543][    T1] usb usb5: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.014729][    T1] usb usb5: SerialNumber: dummy_hcd.4
+[   36.022276][    T1] hub 5-0:1.0: USB hub found
+[   36.025547][    T1] hub 5-0:1.0: 1 port detected
+[   36.032137][    T1] dummy_hcd dummy_hcd.5: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.037541][    T1] dummy_hcd dummy_hcd.5: Dummy host controller
+[   36.043591][    T1] dummy_hcd dummy_hcd.5: new USB bus registered, assigned bus number 6
+[   36.049918][    T1] usb usb6: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.055310][    T1] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.060419][    T1] usb usb6: Product: Dummy host controller
+[   36.063983][    T1] usb usb6: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.067543][    T1] usb usb6: SerialNumber: dummy_hcd.5
+[   36.077326][    T1] hub 6-0:1.0: USB hub found
+[   36.080431][    T1] hub 6-0:1.0: 1 port detected
+[   36.087728][    T1] dummy_hcd dummy_hcd.6: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.092762][    T1] dummy_hcd dummy_hcd.6: Dummy host controller
+[   36.099266][    T1] dummy_hcd dummy_hcd.6: new USB bus registered, assigned bus number 7
+[   36.107350][    T1] usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.116273][    T1] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.126047][    T1] usb usb7: Product: Dummy host controller
+[   36.131382][    T1] usb usb7: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.137989][    T1] usb usb7: SerialNumber: dummy_hcd.6
+[   36.148492][    T1] hub 7-0:1.0: USB hub found
+[   36.151962][    T1] hub 7-0:1.0: 1 port detected
+[   36.163813][    T1] dummy_hcd dummy_hcd.7: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.171573][    T1] dummy_hcd dummy_hcd.7: Dummy host controller
+[   36.181056][    T1] dummy_hcd dummy_hcd.7: new USB bus registered, assigned bus number 8
+[   36.189769][    T1] usb usb8: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.198559][    T1] usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.209220][    T1] usb usb8: Product: Dummy host controller
+[   36.214906][    T1] usb usb8: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.218689][    T1] usb usb8: SerialNumber: dummy_hcd.7
+[   36.230542][    T1] hub 8-0:1.0: USB hub found
+[   36.236638][    T1] hub 8-0:1.0: 1 port detected
+[   36.254651][    T1] dummy_hcd dummy_hcd.8: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.261141][    T1] dummy_hcd dummy_hcd.8: Dummy host controller
+[   36.267916][    T1] dummy_hcd dummy_hcd.8: new USB bus registered, assigned bus number 9
+[   36.277076][    T1] usb usb9: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.284722][    T1] usb usb9: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.290862][    T1] usb usb9: Product: Dummy host controller
+[   36.295328][    T1] usb usb9: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.300039][    T1] usb usb9: SerialNumber: dummy_hcd.8
+[   36.308753][    T1] hub 9-0:1.0: USB hub found
+[   36.312554][    T1] hub 9-0:1.0: 1 port detected
+[   36.320031][    T1] dummy_hcd dummy_hcd.9: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.326700][    T1] dummy_hcd dummy_hcd.9: Dummy host controller
+[   36.333420][    T1] dummy_hcd dummy_hcd.9: new USB bus registered, assigned bus number 10
+[   36.342704][    T1] usb usb10: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.350444][    T1] usb usb10: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.356722][    T1] usb usb10: Product: Dummy host controller
+[   36.361183][    T1] usb usb10: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.366185][    T1] usb usb10: SerialNumber: dummy_hcd.9
+[   36.379720][    T1] hub 10-0:1.0: USB hub found
+[   36.383957][    T1] hub 10-0:1.0: 1 port detected
+[   36.390533][    T1] dummy_hcd dummy_hcd.10: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.403823][    T1] dummy_hcd dummy_hcd.10: Dummy host controller
+[   36.410143][    T1] dummy_hcd dummy_hcd.10: new USB bus registered, assigned bus number 11
+[   36.416702][    T1] usb usb11: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.423646][    T1] usb usb11: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.431156][    T1] usb usb11: Product: Dummy host controller
+[   36.435115][    T1] usb usb11: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.438895][    T1] usb usb11: SerialNumber: dummy_hcd.10
+[   36.445427][    T1] hub 11-0:1.0: USB hub found
+[   36.448939][    T1] hub 11-0:1.0: 1 port detected
+[   36.456732][    T1] dummy_hcd dummy_hcd.11: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.461702][    T1] dummy_hcd dummy_hcd.11: Dummy host controller
+[   36.466775][    T1] dummy_hcd dummy_hcd.11: new USB bus registered, assigned bus number 12
+[   36.476974][    T1] usb usb12: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.482715][    T1] usb usb12: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.488629][    T1] usb usb12: Product: Dummy host controller
+[   36.493263][    T1] usb usb12: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.497639][    T1] usb usb12: SerialNumber: dummy_hcd.11
+[   36.506919][    T1] hub 12-0:1.0: USB hub found
+[   36.511907][    T1] hub 12-0:1.0: 1 port detected
+[   36.519921][    T1] dummy_hcd dummy_hcd.12: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.526035][    T1] dummy_hcd dummy_hcd.12: Dummy host controller
+[   36.532869][    T1] dummy_hcd dummy_hcd.12: new USB bus registered, assigned bus number 13
+[   36.541439][    T1] usb usb13: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.549681][    T1] usb usb13: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.556365][    T1] usb usb13: Product: Dummy host controller
+[   36.560530][    T1] usb usb13: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.565595][    T1] usb usb13: SerialNumber: dummy_hcd.12
+[   36.573897][    T1] hub 13-0:1.0: USB hub found
+[   36.578842][    T1] hub 13-0:1.0: 1 port detected
+[   36.586939][    T1] dummy_hcd dummy_hcd.13: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.592935][    T1] dummy_hcd dummy_hcd.13: Dummy host controller
+[   36.602079][    T1] dummy_hcd dummy_hcd.13: new USB bus registered, assigned bus number 14
+[   36.612985][    T1] usb usb14: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.621974][    T1] usb usb14: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.628049][    T1] usb usb14: Product: Dummy host controller
+[   36.631933][    T1] usb usb14: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.635323][    T1] usb usb14: SerialNumber: dummy_hcd.13
+[   36.642051][    T1] hub 14-0:1.0: USB hub found
+[   36.645784][    T1] hub 14-0:1.0: 1 port detected
+[   36.654908][    T1] dummy_hcd dummy_hcd.14: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.661221][    T1] dummy_hcd dummy_hcd.14: Dummy host controller
+[   36.675793][    T1] dummy_hcd dummy_hcd.14: new USB bus registered, assigned bus number 15
+[   36.683949][    T1] usb usb15: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.690657][    T1] usb usb15: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.697231][    T1] usb usb15: Product: Dummy host controller
+[   36.702009][    T1] usb usb15: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.706193][    T1] usb usb15: SerialNumber: dummy_hcd.14
+[   36.718926][    T1] hub 15-0:1.0: USB hub found
+[   36.725078][    T1] hub 15-0:1.0: 1 port detected
+[   36.735592][    T1] dummy_hcd dummy_hcd.15: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.747930][    T1] dummy_hcd dummy_hcd.15: Dummy host controller
+[   36.756181][    T1] dummy_hcd dummy_hcd.15: new USB bus registered, assigned bus number 16
+[   36.763021][    T1] usb usb16: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.770000][    T1] usb usb16: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.776124][    T1] usb usb16: Product: Dummy host controller
+[   36.780439][    T1] usb usb16: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.785542][    T1] usb usb16: SerialNumber: dummy_hcd.15
+[   36.792708][    T1] hub 16-0:1.0: USB hub found
+[   36.798786][    T1] hub 16-0:1.0: 1 port detected
+[   36.807376][    T1] dummy_hcd dummy_hcd.16: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.813048][    T1] dummy_hcd dummy_hcd.16: Dummy host controller
+[   36.819403][    T1] dummy_hcd dummy_hcd.16: new USB bus registered, assigned bus number 17
+[   36.826208][    T1] usb usb17: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.833145][    T1] usb usb17: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.839637][    T1] usb usb17: Product: Dummy host controller
+[   36.845270][    T1] usb usb17: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.851096][    T1] usb usb17: SerialNumber: dummy_hcd.16
+[   36.862519][    T1] hub 17-0:1.0: USB hub found
+[   36.868135][    T1] hub 17-0:1.0: 1 port detected
+[   36.879519][    T1] dummy_hcd dummy_hcd.17: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.888448][    T1] dummy_hcd dummy_hcd.17: Dummy host controller
+[   36.908454][    T1] dummy_hcd dummy_hcd.17: new USB bus registered, assigned bus number 18
+[   36.918096][    T1] usb usb18: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.925463][    T1] usb usb18: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.930620][    T1] usb usb18: Product: Dummy host controller
+[   36.935258][    T1] usb usb18: Manufacturer: Linux 6.18.0 dummy_hcd
+[   36.940016][    T1] usb usb18: SerialNumber: dummy_hcd.17
+[   36.947957][    T1] hub 18-0:1.0: USB hub found
+[   36.954448][    T1] hub 18-0:1.0: 1 port detected
+[   36.964038][    T1] dummy_hcd dummy_hcd.18: USB Host+Gadget Emulator, driver 02 May 2005
+[   36.969306][    T1] dummy_hcd dummy_hcd.18: Dummy host controller
+[   36.975059][    T1] dummy_hcd dummy_hcd.18: new USB bus registered, assigned bus number 19
+[   36.981637][    T1] usb usb19: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   36.987781][    T1] usb usb19: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   36.993307][    T1] usb usb19: Product: Dummy host controller
+[   36.996975][    T1] usb usb19: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.001173][    T1] usb usb19: SerialNumber: dummy_hcd.18
+[   37.008439][    T1] hub 19-0:1.0: USB hub found
+[   37.012389][    T1] hub 19-0:1.0: 1 port detected
+[   37.024765][    T1] dummy_hcd dummy_hcd.19: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.030616][    T1] dummy_hcd dummy_hcd.19: Dummy host controller
+[   37.036260][    T1] dummy_hcd dummy_hcd.19: new USB bus registered, assigned bus number 20
+[   37.043403][    T1] usb usb20: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.048415][    T1] usb usb20: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.055070][    T1] usb usb20: Product: Dummy host controller
+[   37.059144][    T1] usb usb20: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.065099][    T1] usb usb20: SerialNumber: dummy_hcd.19
+[   37.074427][    T1] hub 20-0:1.0: USB hub found
+[   37.078473][    T1] hub 20-0:1.0: 1 port detected
+[   37.089138][    T1] dummy_hcd dummy_hcd.20: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.095633][    T1] dummy_hcd dummy_hcd.20: Dummy host controller
+[   37.102665][    T1] dummy_hcd dummy_hcd.20: new USB bus registered, assigned bus number 21
+[   37.111991][    T1] usb usb21: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.118850][    T1] usb usb21: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.125396][    T1] usb usb21: Product: Dummy host controller
+[   37.130135][    T1] usb usb21: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.135249][    T1] usb usb21: SerialNumber: dummy_hcd.20
+[   37.143172][    T1] hub 21-0:1.0: USB hub found
+[   37.148281][    T1] hub 21-0:1.0: 1 port detected
+[   37.160042][    T1] dummy_hcd dummy_hcd.21: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.169603][    T1] dummy_hcd dummy_hcd.21: Dummy host controller
+[   37.178098][    T1] dummy_hcd dummy_hcd.21: new USB bus registered, assigned bus number 22
+[   37.193801][    T1] usb usb22: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.200846][    T1] usb usb22: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.208798][    T1] usb usb22: Product: Dummy host controller
+[   37.214313][    T1] usb usb22: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.220687][    T1] usb usb22: SerialNumber: dummy_hcd.21
+[   37.230432][    T1] hub 22-0:1.0: USB hub found
+[   37.237607][    T1] hub 22-0:1.0: 1 port detected
+[   37.248631][    T1] dummy_hcd dummy_hcd.22: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.256972][    T1] dummy_hcd dummy_hcd.22: Dummy host controller
+[   37.263798][    T1] dummy_hcd dummy_hcd.22: new USB bus registered, assigned bus number 23
+[   37.273001][    T1] usb usb23: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.279565][    T1] usb usb23: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.285504][    T1] usb usb23: Product: Dummy host controller
+[   37.289797][    T1] usb usb23: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.294290][    T1] usb usb23: SerialNumber: dummy_hcd.22
+[   37.302231][    T1] hub 23-0:1.0: USB hub found
+[   37.305574][    T1] hub 23-0:1.0: 1 port detected
+[   37.313589][    T1] dummy_hcd dummy_hcd.23: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.319190][    T1] dummy_hcd dummy_hcd.23: Dummy host controller
+[   37.325719][    T1] dummy_hcd dummy_hcd.23: new USB bus registered, assigned bus number 24
+[   37.332297][    T1] usb usb24: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.337698][    T1] usb usb24: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.344288][    T1] usb usb24: Product: Dummy host controller
+[   37.348125][    T1] usb usb24: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.351952][    T1] usb usb24: SerialNumber: dummy_hcd.23
+[   37.357800][    T1] hub 24-0:1.0: USB hub found
+[   37.360862][    T1] hub 24-0:1.0: 1 port detected
+[   37.366890][    T1] dummy_hcd dummy_hcd.24: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.371675][    T1] dummy_hcd dummy_hcd.24: Dummy host controller
+[   37.377488][    T1] dummy_hcd dummy_hcd.24: new USB bus registered, assigned bus number 25
+[   37.384517][    T1] usb usb25: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.390837][    T1] usb usb25: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.396339][    T1] usb usb25: Product: Dummy host controller
+[   37.400508][    T1] usb usb25: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.404878][    T1] usb usb25: SerialNumber: dummy_hcd.24
+[   37.412024][    T1] hub 25-0:1.0: USB hub found
+[   37.415193][    T1] hub 25-0:1.0: 1 port detected
+[   37.421978][    T1] dummy_hcd dummy_hcd.25: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.428277][    T1] dummy_hcd dummy_hcd.25: Dummy host controller
+[   37.435162][    T1] dummy_hcd dummy_hcd.25: new USB bus registered, assigned bus number 26
+[   37.442618][    T1] usb usb26: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.449201][    T1] usb usb26: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.455833][    T1] usb usb26: Product: Dummy host controller
+[   37.460170][    T1] usb usb26: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.465816][    T1] usb usb26: SerialNumber: dummy_hcd.25
+[   37.477962][    T1] hub 26-0:1.0: USB hub found
+[   37.482427][    T1] hub 26-0:1.0: 1 port detected
+[   37.491455][    T1] dummy_hcd dummy_hcd.26: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.497274][    T1] dummy_hcd dummy_hcd.26: Dummy host controller
+[   37.504536][    T1] dummy_hcd dummy_hcd.26: new USB bus registered, assigned bus number 27
+[   37.513243][    T1] usb usb27: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.519917][    T1] usb usb27: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.526295][    T1] usb usb27: Product: Dummy host controller
+[   37.531329][    T1] usb usb27: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.536584][    T1] usb usb27: SerialNumber: dummy_hcd.26
+[   37.550202][    T1] hub 27-0:1.0: USB hub found
+[   37.554072][    T1] hub 27-0:1.0: 1 port detected
+[   37.563174][    T1] dummy_hcd dummy_hcd.27: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.569938][    T1] dummy_hcd dummy_hcd.27: Dummy host controller
+[   37.575957][    T1] dummy_hcd dummy_hcd.27: new USB bus registered, assigned bus number 28
+[   37.583849][    T1] usb usb28: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.590356][    T1] usb usb28: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.595768][    T1] usb usb28: Product: Dummy host controller
+[   37.599859][    T1] usb usb28: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.605682][    T1] usb usb28: SerialNumber: dummy_hcd.27
+[   37.613290][    T1] hub 28-0:1.0: USB hub found
+[   37.617111][    T1] hub 28-0:1.0: 1 port detected
+[   37.625426][    T1] dummy_hcd dummy_hcd.28: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.631558][    T1] dummy_hcd dummy_hcd.28: Dummy host controller
+[   37.638654][    T1] dummy_hcd dummy_hcd.28: new USB bus registered, assigned bus number 29
+[   37.646481][    T1] usb usb29: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.653715][    T1] usb usb29: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.660217][    T1] usb usb29: Product: Dummy host controller
+[   37.665395][    T1] usb usb29: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.671080][    T1] usb usb29: SerialNumber: dummy_hcd.28
+[   37.694048][    T1] hub 29-0:1.0: USB hub found
+[   37.698253][    T1] hub 29-0:1.0: 1 port detected
+[   37.710018][    T1] dummy_hcd dummy_hcd.29: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.717599][    T1] dummy_hcd dummy_hcd.29: Dummy host controller
+[   37.724553][    T1] dummy_hcd dummy_hcd.29: new USB bus registered, assigned bus number 30
+[   37.732041][    T1] usb usb30: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.740339][    T1] usb usb30: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.747951][    T1] usb usb30: Product: Dummy host controller
+[   37.753111][    T1] usb usb30: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.757329][    T1] usb usb30: SerialNumber: dummy_hcd.29
+[   37.766529][    T1] hub 30-0:1.0: USB hub found
+[   37.770347][    T1] hub 30-0:1.0: 1 port detected
+[   37.777285][    T1] dummy_hcd dummy_hcd.30: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.782481][    T1] dummy_hcd dummy_hcd.30: Dummy host controller
+[   37.787139][    T1] dummy_hcd dummy_hcd.30: new USB bus registered, assigned bus number 31
+[   37.793931][    T1] usb usb31: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.799382][    T1] usb usb31: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.804052][    T1] usb usb31: Product: Dummy host controller
+[   37.808109][    T1] usb usb31: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.811879][    T1] usb usb31: SerialNumber: dummy_hcd.30
+[   37.817512][    T1] hub 31-0:1.0: USB hub found
+[   37.820983][    T1] hub 31-0:1.0: 1 port detected
+[   37.829375][    T1] dummy_hcd dummy_hcd.31: USB Host+Gadget Emulator, driver 02 May 2005
+[   37.835859][    T1] dummy_hcd dummy_hcd.31: Dummy host controller
+[   37.842255][    T1] dummy_hcd dummy_hcd.31: new USB bus registered, assigned bus number 32
+[   37.849171][    T1] usb usb32: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   37.855927][    T1] usb usb32: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   37.862225][    T1] usb usb32: Product: Dummy host controller
+[   37.866042][    T1] usb usb32: Manufacturer: Linux 6.18.0 dummy_hcd
+[   37.869491][    T1] usb usb32: SerialNumber: dummy_hcd.31
+[   37.878110][    T1] hub 32-0:1.0: USB hub found
+[   37.882861][    T1] hub 32-0:1.0: 1 port detected
+[   38.002763][    T1] SPI driver max3420-udc has no spi_device_id for maxim,max3421-udc
+[   38.010968][    T1] gadgetfs: USB Gadget filesystem, version 24 Aug 2004
+[   38.019648][    T1] vhci_hcd vhci_hcd.0: USB/IP Virtual Host Controller
+[   38.026678][    T1] vhci_hcd vhci_hcd.0: new USB bus registered, assigned bus number 33
+[   38.034025][    T1] vhci_hcd: created sysfs vhci_hcd.0
+[   38.039457][    T1] usb usb33: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   38.047916][    T1] usb usb33: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.054307][    T1] usb usb33: Product: USB/IP Virtual Host Controller
+[   38.059689][    T1] usb usb33: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.065053][    T1] usb usb33: SerialNumber: vhci_hcd.0
+[   38.077452][    T1] hub 33-0:1.0: USB hub found
+[   38.085190][    T1] hub 33-0:1.0: 8 ports detected
+[   38.101644][    T1] vhci_hcd vhci_hcd.0: USB/IP Virtual Host Controller
+[   38.116097][    T1] vhci_hcd vhci_hcd.0: new USB bus registered, assigned bus number 34
+[   38.124367][    T1] usb usb34: We don't know the algorithms for LPM for this host, disabling LPM.
+[   38.131837][    T1] usb usb34: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   38.138287][    T1] usb usb34: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.144601][    T1] usb usb34: Product: USB/IP Virtual Host Controller
+[   38.150162][    T1] usb usb34: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.155275][    T1] usb usb34: SerialNumber: vhci_hcd.0
+[   38.165198][    T1] hub 34-0:1.0: USB hub found
+[   38.169861][    T1] hub 34-0:1.0: 8 ports detected
+[   38.190394][    T1] vhci_hcd vhci_hcd.1: USB/IP Virtual Host Controller
+[   38.200661][    T1] vhci_hcd vhci_hcd.1: new USB bus registered, assigned bus number 35
+[   38.208621][    T1] usb usb35: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   38.215924][    T1] usb usb35: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.221384][    T1] usb usb35: Product: USB/IP Virtual Host Controller
+[   38.226090][    T1] usb usb35: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.230747][    T1] usb usb35: SerialNumber: vhci_hcd.1
+[   38.239181][    T1] hub 35-0:1.0: USB hub found
+[   38.244106][    T1] hub 35-0:1.0: 8 ports detected
+[   38.261400][    T1] vhci_hcd vhci_hcd.1: USB/IP Virtual Host Controller
+[   38.272844][    T1] vhci_hcd vhci_hcd.1: new USB bus registered, assigned bus number 36
+[   38.278871][    T1] usb usb36: We don't know the algorithms for LPM for this host, disabling LPM.
+[   38.286886][    T1] usb usb36: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   38.295557][    T1] usb usb36: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.302988][    T1] usb usb36: Product: USB/IP Virtual Host Controller
+[   38.317384][    T1] usb usb36: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.324808][    T1] usb usb36: SerialNumber: vhci_hcd.1
+[   38.336590][    T1] hub 36-0:1.0: USB hub found
+[   38.342952][    T1] hub 36-0:1.0: 8 ports detected
+[   38.365942][    T1] vhci_hcd vhci_hcd.2: USB/IP Virtual Host Controller
+[   38.372568][    T1] vhci_hcd vhci_hcd.2: new USB bus registered, assigned bus number 37
+[   38.379323][    T1] usb usb37: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   38.386875][    T1] usb usb37: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.393097][    T1] usb usb37: Product: USB/IP Virtual Host Controller
+[   38.396683][    T1] usb usb37: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.400400][    T1] usb usb37: SerialNumber: vhci_hcd.2
+[   38.407981][    T1] hub 37-0:1.0: USB hub found
+[   38.412604][    T1] hub 37-0:1.0: 8 ports detected
+[   38.424261][    T1] vhci_hcd vhci_hcd.2: USB/IP Virtual Host Controller
+[   38.429802][    T1] vhci_hcd vhci_hcd.2: new USB bus registered, assigned bus number 38
+[   38.436046][    T1] usb usb38: We don't know the algorithms for LPM for this host, disabling LPM.
+[   38.442430][    T1] usb usb38: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   38.448133][    T1] usb usb38: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.453902][    T1] usb usb38: Product: USB/IP Virtual Host Controller
+[   38.459077][    T1] usb usb38: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.463570][    T1] usb usb38: SerialNumber: vhci_hcd.2
+[   38.472373][    T1] hub 38-0:1.0: USB hub found
+[   38.475679][    T1] hub 38-0:1.0: 8 ports detected
+[   38.490679][    T1] vhci_hcd vhci_hcd.3: USB/IP Virtual Host Controller
+[   38.497829][    T1] vhci_hcd vhci_hcd.3: new USB bus registered, assigned bus number 39
+[   38.505657][    T1] usb usb39: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   38.514001][    T1] usb usb39: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.521019][    T1] usb usb39: Product: USB/IP Virtual Host Controller
+[   38.527137][    T1] usb usb39: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.532043][    T1] usb usb39: SerialNumber: vhci_hcd.3
+[   38.545260][    T1] hub 39-0:1.0: USB hub found
+[   38.548930][    T1] hub 39-0:1.0: 8 ports detected
+[   38.563134][    T1] vhci_hcd vhci_hcd.3: USB/IP Virtual Host Controller
+[   38.569394][    T1] vhci_hcd vhci_hcd.3: new USB bus registered, assigned bus number 40
+[   38.577885][    T1] usb usb40: We don't know the algorithms for LPM for this host, disabling LPM.
+[   38.585218][    T1] usb usb40: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   38.591665][    T1] usb usb40: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.597589][    T1] usb usb40: Product: USB/IP Virtual Host Controller
+[   38.604081][    T1] usb usb40: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.609134][    T1] usb usb40: SerialNumber: vhci_hcd.3
+[   38.617476][    T1] hub 40-0:1.0: USB hub found
+[   38.621354][    T1] hub 40-0:1.0: 8 ports detected
+[   38.641423][    T1] vhci_hcd vhci_hcd.4: USB/IP Virtual Host Controller
+[   38.649537][    T1] vhci_hcd vhci_hcd.4: new USB bus registered, assigned bus number 41
+[   38.657608][    T1] usb usb41: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   38.665485][    T1] usb usb41: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.670551][    T1] usb usb41: Product: USB/IP Virtual Host Controller
+[   38.674761][    T1] usb usb41: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.678931][    T1] usb usb41: SerialNumber: vhci_hcd.4
+[   38.686681][    T1] hub 41-0:1.0: USB hub found
+[   38.689647][    T1] hub 41-0:1.0: 8 ports detected
+[   38.702341][    T1] vhci_hcd vhci_hcd.4: USB/IP Virtual Host Controller
+[   38.708585][    T1] vhci_hcd vhci_hcd.4: new USB bus registered, assigned bus number 42
+[   38.715418][    T1] usb usb42: We don't know the algorithms for LPM for this host, disabling LPM.
+[   38.721730][    T1] usb usb42: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   38.727576][    T1] usb usb42: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.733369][    T1] usb usb42: Product: USB/IP Virtual Host Controller
+[   38.737157][    T1] usb usb42: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.741595][    T1] usb usb42: SerialNumber: vhci_hcd.4
+[   38.749315][    T1] hub 42-0:1.0: USB hub found
+[   38.752718][    T1] hub 42-0:1.0: 8 ports detected
+[   38.771856][    T1] vhci_hcd vhci_hcd.5: USB/IP Virtual Host Controller
+[   38.781307][    T1] vhci_hcd vhci_hcd.5: new USB bus registered, assigned bus number 43
+[   38.791048][    T1] usb usb43: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   38.799137][    T1] usb usb43: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.806141][    T1] usb usb43: Product: USB/IP Virtual Host Controller
+[   38.811971][    T1] usb usb43: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.817356][    T1] usb usb43: SerialNumber: vhci_hcd.5
+[   38.827420][    T1] hub 43-0:1.0: USB hub found
+[   38.835799][    T1] hub 43-0:1.0: 8 ports detected
+[   38.855044][    T1] vhci_hcd vhci_hcd.5: USB/IP Virtual Host Controller
+[   38.862479][    T1] vhci_hcd vhci_hcd.5: new USB bus registered, assigned bus number 44
+[   38.868849][    T1] usb usb44: We don't know the algorithms for LPM for this host, disabling LPM.
+[   38.876475][    T1] usb usb44: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   38.884727][    T1] usb usb44: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.889638][    T1] usb usb44: Product: USB/IP Virtual Host Controller
+[   38.893961][    T1] usb usb44: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.898114][    T1] usb usb44: SerialNumber: vhci_hcd.5
+[   38.904208][    T1] hub 44-0:1.0: USB hub found
+[   38.907978][    T1] hub 44-0:1.0: 8 ports detected
+[   38.923957][    T1] vhci_hcd vhci_hcd.6: USB/IP Virtual Host Controller
+[   38.929753][    T1] vhci_hcd vhci_hcd.6: new USB bus registered, assigned bus number 45
+[   38.936288][    T1] usb usb45: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   38.941593][    T1] usb usb45: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   38.947074][    T1] usb usb45: Product: USB/IP Virtual Host Controller
+[   38.951874][    T1] usb usb45: Manufacturer: Linux 6.18.0 vhci_hcd
+[   38.956540][    T1] usb usb45: SerialNumber: vhci_hcd.6
+[   38.963302][    T1] hub 45-0:1.0: USB hub found
+[   38.967141][    T1] hub 45-0:1.0: 8 ports detected
+[   38.983062][    T1] vhci_hcd vhci_hcd.6: USB/IP Virtual Host Controller
+[   38.989435][    T1] vhci_hcd vhci_hcd.6: new USB bus registered, assigned bus number 46
+[   38.995397][    T1] usb usb46: We don't know the algorithms for LPM for this host, disabling LPM.
+[   39.003085][    T1] usb usb46: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   39.009366][    T1] usb usb46: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.015625][    T1] usb usb46: Product: USB/IP Virtual Host Controller
+[   39.021086][    T1] usb usb46: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.025907][    T1] usb usb46: SerialNumber: vhci_hcd.6
+[   39.034070][    T1] hub 46-0:1.0: USB hub found
+[   39.038170][    T1] hub 46-0:1.0: 8 ports detected
+[   39.059390][    T1] vhci_hcd vhci_hcd.7: USB/IP Virtual Host Controller
+[   39.069213][    T1] vhci_hcd vhci_hcd.7: new USB bus registered, assigned bus number 47
+[   39.075609][    T1] usb usb47: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   39.081680][    T1] usb usb47: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.088219][    T1] usb usb47: Product: USB/IP Virtual Host Controller
+[   39.092660][    T1] usb usb47: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.092815][ T1170] ata1: found unknown device (class 0)
+[   39.097216][    T1] usb usb47: SerialNumber: vhci_hcd.7
+[   39.102647][ T1170] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[   39.110523][    T1] hub 47-0:1.0: USB hub found
+[   39.111181][ T1170] ata1: link online but 1 devices misclassified, retrying
+[   39.116663][    T1] hub 47-0:1.0: 8 ports detected
+[   39.128302][ T1170] ata1: reset failed (errno=-11), retrying in 10 secs
+[   39.149381][    T1] vhci_hcd vhci_hcd.7: USB/IP Virtual Host Controller
+[   39.160646][    T1] vhci_hcd vhci_hcd.7: new USB bus registered, assigned bus number 48
+[   39.169866][    T1] usb usb48: We don't know the algorithms for LPM for this host, disabling LPM.
+[   39.178189][    T1] usb usb48: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   39.185080][    T1] usb usb48: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.191846][    T1] usb usb48: Product: USB/IP Virtual Host Controller
+[   39.197060][    T1] usb usb48: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.202100][    T1] usb usb48: SerialNumber: vhci_hcd.7
+[   39.210998][    T1] hub 48-0:1.0: USB hub found
+[   39.215414][    T1] hub 48-0:1.0: 8 ports detected
+[   39.236595][    T1] vhci_hcd vhci_hcd.8: USB/IP Virtual Host Controller
+[   39.243566][    T1] vhci_hcd vhci_hcd.8: new USB bus registered, assigned bus number 49
+[   39.249681][    T1] usb usb49: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   39.255853][    T1] usb usb49: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.260459][    T1] usb usb49: Product: USB/IP Virtual Host Controller
+[   39.264263][    T1] usb usb49: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.268300][    T1] usb usb49: SerialNumber: vhci_hcd.8
+[   39.276542][    T1] hub 49-0:1.0: USB hub found
+[   39.281393][    T1] hub 49-0:1.0: 8 ports detected
+[   39.295568][    T1] vhci_hcd vhci_hcd.8: USB/IP Virtual Host Controller
+[   39.301584][    T1] vhci_hcd vhci_hcd.8: new USB bus registered, assigned bus number 50
+[   39.307646][    T1] usb usb50: We don't know the algorithms for LPM for this host, disabling LPM.
+[   39.316504][    T1] usb usb50: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   39.323511][    T1] usb usb50: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.330049][    T1] usb usb50: Product: USB/IP Virtual Host Controller
+[   39.338349][    T1] usb usb50: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.343372][    T1] usb usb50: SerialNumber: vhci_hcd.8
+[   39.353614][    T1] hub 50-0:1.0: USB hub found
+[   39.357844][    T1] hub 50-0:1.0: 8 ports detected
+[   39.378118][    T1] vhci_hcd vhci_hcd.9: USB/IP Virtual Host Controller
+[   39.385619][    T1] vhci_hcd vhci_hcd.9: new USB bus registered, assigned bus number 51
+[   39.394695][    T1] usb usb51: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   39.405301][    T1] usb usb51: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.412280][    T1] usb usb51: Product: USB/IP Virtual Host Controller
+[   39.417575][    T1] usb usb51: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.424890][    T1] usb usb51: SerialNumber: vhci_hcd.9
+[   39.443252][    T1] hub 51-0:1.0: USB hub found
+[   39.446974][    T1] hub 51-0:1.0: 8 ports detected
+[   39.460694][    T1] vhci_hcd vhci_hcd.9: USB/IP Virtual Host Controller
+[   39.467558][    T1] vhci_hcd vhci_hcd.9: new USB bus registered, assigned bus number 52
+[   39.476311][    T1] usb usb52: We don't know the algorithms for LPM for this host, disabling LPM.
+[   39.483674][    T1] usb usb52: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   39.492031][    T1] usb usb52: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.497364][    T1] usb usb52: Product: USB/IP Virtual Host Controller
+[   39.502187][    T1] usb usb52: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.507517][    T1] usb usb52: SerialNumber: vhci_hcd.9
+[   39.516022][    T1] hub 52-0:1.0: USB hub found
+[   39.520132][    T1] hub 52-0:1.0: 8 ports detected
+[   39.540653][    T1] vhci_hcd vhci_hcd.10: USB/IP Virtual Host Controller
+[   39.545814][    T1] vhci_hcd vhci_hcd.10: new USB bus registered, assigned bus number 53
+[   39.550903][    T1] usb usb53: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   39.557017][    T1] usb usb53: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.561560][    T1] usb usb53: Product: USB/IP Virtual Host Controller
+[   39.565686][    T1] usb usb53: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.569768][    T1] usb usb53: SerialNumber: vhci_hcd.10
+[   39.576956][    T1] hub 53-0:1.0: USB hub found
+[   39.581566][    T1] hub 53-0:1.0: 8 ports detected
+[   39.596537][    T1] vhci_hcd vhci_hcd.10: USB/IP Virtual Host Controller
+[   39.602800][    T1] vhci_hcd vhci_hcd.10: new USB bus registered, assigned bus number 54
+[   39.609607][    T1] usb usb54: We don't know the algorithms for LPM for this host, disabling LPM.
+[   39.618871][    T1] usb usb54: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   39.627360][    T1] usb usb54: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.633699][    T1] usb usb54: Product: USB/IP Virtual Host Controller
+[   39.638142][    T1] usb usb54: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.642393][    T1] usb usb54: SerialNumber: vhci_hcd.10
+[   39.649846][    T1] hub 54-0:1.0: USB hub found
+[   39.654573][    T1] hub 54-0:1.0: 8 ports detected
+[   39.675091][    T1] vhci_hcd vhci_hcd.11: USB/IP Virtual Host Controller
+[   39.682986][    T1] vhci_hcd vhci_hcd.11: new USB bus registered, assigned bus number 55
+[   39.692518][    T1] usb usb55: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   39.702913][    T1] usb usb55: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.710038][    T1] usb usb55: Product: USB/IP Virtual Host Controller
+[   39.714620][    T1] usb usb55: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.719223][    T1] usb usb55: SerialNumber: vhci_hcd.11
+[   39.728673][    T1] hub 55-0:1.0: USB hub found
+[   39.734461][    T1] hub 55-0:1.0: 8 ports detected
+[   39.747997][    T1] vhci_hcd vhci_hcd.11: USB/IP Virtual Host Controller
+[   39.755337][    T1] vhci_hcd vhci_hcd.11: new USB bus registered, assigned bus number 56
+[   39.762714][    T1] usb usb56: We don't know the algorithms for LPM for this host, disabling LPM.
+[   39.772791][    T1] usb usb56: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   39.779412][    T1] usb usb56: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.786028][    T1] usb usb56: Product: USB/IP Virtual Host Controller
+[   39.790941][    T1] usb usb56: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.796722][    T1] usb usb56: SerialNumber: vhci_hcd.11
+[   39.806087][    T1] hub 56-0:1.0: USB hub found
+[   39.809726][    T1] hub 56-0:1.0: 8 ports detected
+[   39.831225][    T1] vhci_hcd vhci_hcd.12: USB/IP Virtual Host Controller
+[   39.839681][    T1] vhci_hcd vhci_hcd.12: new USB bus registered, assigned bus number 57
+[   39.850136][    T1] usb usb57: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   39.860670][    T1] usb usb57: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.867888][    T1] usb usb57: Product: USB/IP Virtual Host Controller
+[   39.873790][    T1] usb usb57: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.880006][    T1] usb usb57: SerialNumber: vhci_hcd.12
+[   39.888936][    T1] hub 57-0:1.0: USB hub found
+[   39.893176][    T1] hub 57-0:1.0: 8 ports detected
+[   39.909157][    T1] vhci_hcd vhci_hcd.12: USB/IP Virtual Host Controller
+[   39.914887][    T1] vhci_hcd vhci_hcd.12: new USB bus registered, assigned bus number 58
+[   39.920815][    T1] usb usb58: We don't know the algorithms for LPM for this host, disabling LPM.
+[   39.927041][    T1] usb usb58: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   39.932467][    T1] usb usb58: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   39.937223][    T1] usb usb58: Product: USB/IP Virtual Host Controller
+[   39.941156][    T1] usb usb58: Manufacturer: Linux 6.18.0 vhci_hcd
+[   39.945151][    T1] usb usb58: SerialNumber: vhci_hcd.12
+[   39.952984][    T1] hub 58-0:1.0: USB hub found
+[   39.956622][    T1] hub 58-0:1.0: 8 ports detected
+[   39.976105][    T1] vhci_hcd vhci_hcd.13: USB/IP Virtual Host Controller
+[   39.986376][    T1] vhci_hcd vhci_hcd.13: new USB bus registered, assigned bus number 59
+[   39.995405][    T1] usb usb59: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   40.003508][    T1] usb usb59: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   40.009484][    T1] usb usb59: Product: USB/IP Virtual Host Controller
+[   40.014318][    T1] usb usb59: Manufacturer: Linux 6.18.0 vhci_hcd
+[   40.018712][    T1] usb usb59: SerialNumber: vhci_hcd.13
+[   40.036825][    T1] hub 59-0:1.0: USB hub found
+[   40.040464][    T1] hub 59-0:1.0: 8 ports detected
+[   40.060340][    T1] vhci_hcd vhci_hcd.13: USB/IP Virtual Host Controller
+[   40.071256][    T1] vhci_hcd vhci_hcd.13: new USB bus registered, assigned bus number 60
+[   40.078315][    T1] usb usb60: We don't know the algorithms for LPM for this host, disabling LPM.
+[   40.085624][    T1] usb usb60: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   40.093506][    T1] usb usb60: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   40.100073][    T1] usb usb60: Product: USB/IP Virtual Host Controller
+[   40.105455][    T1] usb usb60: Manufacturer: Linux 6.18.0 vhci_hcd
+[   40.109508][    T1] usb usb60: SerialNumber: vhci_hcd.13
+[   40.117426][    T1] hub 60-0:1.0: USB hub found
+[   40.121047][    T1] hub 60-0:1.0: 8 ports detected
+[   40.144618][    T1] vhci_hcd vhci_hcd.14: USB/IP Virtual Host Controller
+[   40.151525][    T1] vhci_hcd vhci_hcd.14: new USB bus registered, assigned bus number 61
+[   40.160483][    T1] usb usb61: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   40.168707][    T1] usb usb61: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   40.175441][    T1] usb usb61: Product: USB/IP Virtual Host Controller
+[   40.180893][    T1] usb usb61: Manufacturer: Linux 6.18.0 vhci_hcd
+[   40.185771][    T1] usb usb61: SerialNumber: vhci_hcd.14
+[   40.197778][    T1] hub 61-0:1.0: USB hub found
+[   40.201552][    T1] hub 61-0:1.0: 8 ports detected
+[   40.218666][    T1] vhci_hcd vhci_hcd.14: USB/IP Virtual Host Controller
+[   40.229408][    T1] vhci_hcd vhci_hcd.14: new USB bus registered, assigned bus number 62
+[   40.238169][    T1] usb usb62: We don't know the algorithms for LPM for this host, disabling LPM.
+[   40.246899][    T1] usb usb62: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.18
+[   40.255267][    T1] usb usb62: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   40.261728][    T1] usb usb62: Product: USB/IP Virtual Host Controller
+[   40.267065][    T1] usb usb62: Manufacturer: Linux 6.18.0 vhci_hcd
+[   40.271699][    T1] usb usb62: SerialNumber: vhci_hcd.14
+[   40.279670][    T1] hub 62-0:1.0: USB hub found
+[   40.283113][    T1] hub 62-0:1.0: 8 ports detected
+[   40.302574][    T1] vhci_hcd vhci_hcd.15: USB/IP Virtual Host Controller
+[   40.309412][    T1] vhci_hcd vhci_hcd.15: new USB bus registered, assigned bus number 63
+[   40.316612][    T1] usb usb63: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.18
+[   40.324155][    T1] usb usb63: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   40.329561][    T1] usb usb63: Product: USB/IP Virtual Host Controller
+[   40.334691][    T1] usb usb63: Manufacturer: Linux 6.18.0 vhci_hcd
+[   40.339815][    T1] usb usb63: SerialNumber: vhci_hcd.15
+[   40.348440][    T1] hub 63-0:1.0: USB hub found
+[   40.351421][    T1] hub 63-0:1.0: 8 ports detected
+[   40.363150][    T1] vhci_hcd vhci_hcd.15: USB/IP Virtual Host Controller
+[   40.368459][    T1] usbcore: failed to get bus number
+[   40.372554][    T1] vhci_hcd: usb_add_hcd ss failed -7
+[   40.376279][    T1] vhci_hcd vhci_hcd.15: remove, state 4
+[   40.380903][    T1] usb usb63: USB disconnect, device number 1
+[   40.399598][   T13] vhci_hcd: stop threads
+[   40.405767][   T13] vhci_hcd: release socket
+[   40.410386][   T13] vhci_hcd: disconnect device
+[   40.418900][   T13] vhci_hcd: stop threads
+[   40.423202][   T13] vhci_hcd: release socket
+[   40.426606][   T13] vhci_hcd: disconnect device
+[   40.437310][   T13] vhci_hcd: stop threads
+[   40.442793][   T13] vhci_hcd: release socket
+[   40.446392][   T13] vhci_hcd: disconnect device
+[   40.456694][   T13] vhci_hcd: stop threads
+[   40.461338][   T13] vhci_hcd: release socket
+[   40.464370][   T13] vhci_hcd: disconnect device
+[   40.467384][   T13] vhci_hcd: stop threads
+[   40.469829][   T13] vhci_hcd: release socket
+[   40.474132][   T13] vhci_hcd: disconnect device
+[   40.479183][   T13] vhci_hcd: stop threads
+[   40.482550][   T13] vhci_hcd: release socket
+[   40.486007][   T13] vhci_hcd: disconnect device
+[   40.490615][   T13] vhci_hcd: stop threads
+[   40.494723][   T13] vhci_hcd: release socket
+[   40.498349][   T13] vhci_hcd: disconnect device
+[   40.504614][   T13] vhci_hcd: stop threads
+[   40.507491][   T13] vhci_hcd: release socket
+[   40.511020][   T13] vhci_hcd: disconnect device
+[   40.514435][    T1] vhci_hcd vhci_hcd.15: USB bus 63 deregistered
+[   40.521207][    T1] vhci_hcd vhci_hcd.15: probe with driver vhci_hcd failed with error -7
+[   40.530661][    T1] usbcore: registered new device driver usbip-host
+[   40.550692][    T1] i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+[   40.563096][    T1] serio: i8042 KBD port at 0x60,0x64 irq 1
+[   40.568138][    T1] serio: i8042 AUX port at 0x60,0x64 irq 12
+[   40.579153][    T1] mousedev: PS/2 mouse device common for all mice
+[   40.593969][    T1] usbcore: registered new interface driver appletouch
+[   40.594747][   T34] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[   40.599344][    T1] usbcore: registered new interface driver bcm5974
+[   40.616092][    T1] usbcore: registered new interface driver synaptics_usb
+[   40.626841][    T1] usbcore: registered new interface driver iforce
+[   40.634134][    T1] usbcore: registered new interface driver pxrc
+[   40.639970][    T1] usbcore: registered new interface driver xpad
+[   40.645912][    T1] usbcore: registered new interface driver usb_acecad
+[   40.656657][    T1] usbcore: registered new interface driver aiptek
+[   40.665133][    T1] usbcore: registered new interface driver hanwang
+[   40.671112][    T1] usbcore: registered new interface driver kbtab
+[   40.677024][    T1] usbcore: registered new interface driver pegasus_notetaker
+[   40.684126][    T1] usbcore: registered new interface driver usbtouchscreen
+[   40.691194][    T1] usbcore: registered new interface driver sur40
+[   40.699974][    T1] usbcore: registered new interface driver ati_remote2
+[   40.709717][    T1] cm109: Keymap for Komunikate KIP1000 phone loaded
+[   40.718348][    T1] usbcore: registered new interface driver cm109
+[   40.723324][    T1] cm109: CM109 phone driver: 20080805 (C) Alfred E. Heggestad
+[   40.729039][    T1] usbcore: registered new interface driver ims_pcu
+[   40.735072][    T1] usbcore: registered new interface driver keyspan_remote
+[   40.742088][    T1] usbcore: registered new interface driver powermate
+[   40.748959][    T1] usbcore: registered new interface driver yealink
+[   40.756750][    T1] rtc_cmos 00:05: RTC can wake from S4
+[   40.773950][    T1] rtc_cmos 00:05: registered as rtc0
+[   40.777862][    T1] rtc_cmos 00:05: alarms up to one day, y3k, 242 bytes nvram, hpet irqs
+[   40.785226][    T1] i2c_dev: i2c /dev entries driver
+[   40.790059][    T1] usbcore: registered new interface driver i2c-diolan-u2c
+[   40.800441][    T1] usbcore: registered new interface driver i2c-cp2615
+[   40.807313][    T1] usbcore: registered new interface driver RobotFuzz Open Source InterFace, OSIF
+[   40.818973][    T1] usbcore: registered new interface driver i2c-tiny-usb
+[   40.835944][    T1] usbcore: registered new interface driver igorplugusb
+[   40.843057][    T1] usbcore: registered new interface driver iguanair
+[   40.849486][    T1] usbcore: registered new interface driver imon
+[   40.855340][    T1] usbcore: registered new interface driver imon_raw
+[   40.862090][    T1] usbcore: registered new interface driver mceusb
+[   40.868801][    T1] usbcore: registered new interface driver redrat3
+[   40.875170][    T1] usbcore: registered new interface driver streamzap
+[   40.881365][    T1] usbcore: registered new interface driver ir_toy
+[   40.887481][    T1] usbcore: registered new interface driver ttusbir
+[   40.893916][    T1] usbcore: registered new interface driver ati_remote
+[   40.900128][    T1] usbcore: registered new interface driver xbox_remote
+[   40.907323][    T1] b2c2-flexcop: B2C2 FlexcopII/II(b)/III digital TV receiver chip loaded successfully
+[   40.916295][    T1] usbcore: registered new interface driver b2c2_flexcop_usb
+[   40.922560][    T1] usbcore: registered new interface driver dvb_usb_vp7045
+[   40.928539][    T1] usbcore: registered new interface driver dvb_usb_vp702x
+[   40.936032][    T1] usbcore: registered new interface driver dvb_usb_gp8psk
+[   40.941681][    T1] usbcore: registered new interface driver dvb_usb_dtt200u
+[   40.947660][    T1] usbcore: registered new interface driver dvb_usb_a800
+[   40.953156][    T1] usbcore: registered new interface driver dvb_usb_dibusb_mb
+[   40.958178][    T1] usbcore: registered new interface driver dvb_usb_dibusb_mc
+[   40.963556][    T1] usbcore: registered new interface driver dvb_usb_nova_t_usb2
+[   40.969355][    T1] usbcore: registered new interface driver dvb_usb_umt_010
+[   40.974496][    T1] usbcore: registered new interface driver dvb_usb_m920x
+[   40.979110][    T1] usbcore: registered new interface driver dvb_usb_digitv
+[   40.984914][    T1] usbcore: registered new interface driver dvb_usb_cxusb
+[   40.990700][    T1] usbcore: registered new interface driver dvb_usb_ttusb2
+[   40.997047][    T1] usbcore: registered new interface driver dvb_usb_dib0700
+[   41.002933][    T1] usbcore: registered new interface driver opera1
+[   41.007456][    T1] usbcore: registered new interface driver dvb_usb_af9005
+[   41.012905][    T1] failing symbol_get of non-GPLONLY symbol af9005_rc_decode.
+[   41.019991][    T1] failing symbol_get of non-GPLONLY symbol af9005_rc_decode.
+[   41.024875][    T1] failing symbol_get of non-GPLONLY symbol rc_map_af9005_table.
+[   41.031210][    T1] failing symbol_get of non-GPLONLY symbol rc_map_af9005_table.
+[   41.036723][    T1] failing symbol_get of non-GPLONLY symbol rc_map_af9005_table_size.
+[   41.043151][    T1] failing symbol_get of non-GPLONLY symbol rc_map_af9005_table_size.
+[   41.048527][    T1] af9005: af9005_rc_decode function not found, disabling remote
+[   41.054501][    T1] usbcore: registered new interface driver pctv452e
+[   41.058938][    T1] usbcore: registered new interface driver dw2102
+[   41.063989][    T1] usbcore: registered new interface driver dvb_usb_dtv5100
+[   41.069589][    T1] usbcore: registered new interface driver cinergyT2
+[   41.074883][    T1] usbcore: registered new interface driver dvb_usb_az6027
+[   41.080428][    T1] usbcore: registered new interface driver dvb_usb_technisat_usb2
+[   41.088717][    T1] usbcore: registered new interface driver dvb_usb_af9015
+[   41.097803][    T1] usbcore: registered new interface driver dvb_usb_af9035
+[   41.106082][    T1] usbcore: registered new interface driver dvb_usb_anysee
+[   41.113761][    T1] usbcore: registered new interface driver dvb_usb_au6610
+[   41.123861][    T1] usbcore: registered new interface driver dvb_usb_az6007
+[   41.133349][    T1] usbcore: registered new interface driver dvb_usb_ce6230
+[   41.139998][    T1] usbcore: registered new interface driver dvb_usb_ec168
+[   41.145970][    T1] usbcore: registered new interface driver dvb_usb_lmedm04
+[   41.152443][    T1] usbcore: registered new interface driver dvb_usb_gl861
+[   41.159768][    T1] usbcore: registered new interface driver dvb_usb_mxl111sf
+[   41.168343][    T1] usbcore: registered new interface driver dvb_usb_rtl28xxu
+[   41.180104][    T1] usbcore: registered new interface driver dvb_usb_dvbsky
+[   41.191710][    T1] usbcore: registered new interface driver zd1301
+[   41.199374][    T1] usbcore: registered new interface driver s2255
+[   41.202249][   T34] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input3
+[   41.210044][    T1] usbcore: registered new interface driver smsusb
+[   41.220824][    T1] usbcore: registered new interface driver ttusb
+[   41.227571][    T1] usbcore: registered new interface driver ttusb-dec
+[   41.235899][    T1] usbcore: registered new interface driver Abilis Systems as10x usb driver
+[   41.248280][    T1] usbcore: registered new interface driver airspy
+[   41.259046][    T1] gspca_main: v2.14.0 registered
+[   41.265775][    T1] usbcore: registered new interface driver benq
+[   41.279461][    T1] usbcore: registered new interface driver conex
+[   41.287315][    T1] usbcore: registered new interface driver cpia1
+[   41.294193][    T1] usbcore: registered new interface driver dtcs033
+[   41.300228][    T1] usbcore: registered new interface driver etoms
+[   41.306115][    T1] usbcore: registered new interface driver finepix
+[   41.311960][    T1] usbcore: registered new interface driver jeilinj
+[   41.317819][    T1] usbcore: registered new interface driver jl2005bcd
+[   41.323865][    T1] usbcore: registered new interface driver kinect
+[   41.329901][    T1] usbcore: registered new interface driver konica
+[   41.335740][    T1] usbcore: registered new interface driver mars
+[   41.341529][    T1] usbcore: registered new interface driver mr97310a
+[   41.347901][    T1] usbcore: registered new interface driver nw80x
+[   41.354034][    T1] usbcore: registered new interface driver ov519
+[   41.359196][    T1] usbcore: registered new interface driver ov534
+[   41.377123][    T1] usbcore: registered new interface driver ov534_9
+[   41.383214][    T1] usbcore: registered new interface driver pac207
+[   41.388637][    T1] usbcore: registered new interface driver gspca_pac7302
+[   41.394987][    T1] usbcore: registered new interface driver pac7311
+[   41.400789][    T1] usbcore: registered new interface driver se401
+[   41.406795][    T1] usbcore: registered new interface driver sn9c2028
+[   41.412423][    T1] usbcore: registered new interface driver gspca_sn9c20x
+[   41.418820][    T1] usbcore: registered new interface driver sonixb
+[   41.424269][    T1] usbcore: registered new interface driver sonixj
+[   41.429098][    T1] usbcore: registered new interface driver spca500
+[   41.434396][    T1] usbcore: registered new interface driver spca501
+[   41.438782][    T1] usbcore: registered new interface driver spca505
+[   41.442859][    T1] usbcore: registered new interface driver spca506
+[   41.446792][    T1] usbcore: registered new interface driver spca508
+[   41.451351][    T1] usbcore: registered new interface driver spca561
+[   41.455617][    T1] usbcore: registered new interface driver spca1528
+[   41.459920][    T1] usbcore: registered new interface driver sq905
+[   41.464441][    T1] usbcore: registered new interface driver sq905c
+[   41.468589][    T1] usbcore: registered new interface driver sq930x
+[   41.473724][    T1] usbcore: registered new interface driver sunplus
+[   41.479564][    T1] usbcore: registered new interface driver stk014
+[   41.486045][    T1] usbcore: registered new interface driver stk1135
+[   41.491132][    T1] usbcore: registered new interface driver stv0680
+[   41.497300][    T1] usbcore: registered new interface driver t613
+[   41.503136][    T1] usbcore: registered new interface driver gspca_topro
+[   41.509630][    T1] usbcore: registered new interface driver touptek
+[   41.515756][    T1] usbcore: registered new interface driver tv8532
+[   41.521487][    T1] usbcore: registered new interface driver vc032x
+[   41.527354][    T1] usbcore: registered new interface driver vicam
+[   41.533218][    T1] usbcore: registered new interface driver xirlink-cit
+[   41.539606][    T1] usbcore: registered new interface driver gspca_zc3xx
+[   41.546048][    T1] usbcore: registered new interface driver ALi m5602
+[   41.550697][    T1] usbcore: registered new interface driver STV06xx
+[   41.555515][    T1] usbcore: registered new interface driver gspca_gl860
+[   41.561529][    T1] usbcore: registered new interface driver hackrf
+[   41.567699][    T1] usbcore: registered new interface driver msi2500
+[   41.573088][    T1] usbcore: registered new interface driver Philips webcam
+[   41.580814][    T1] usbcore: registered new interface driver uvcvideo
+[   41.586239][    T1] au0828: au0828 driver loaded
+[   41.595318][    T1] usbcore: registered new interface driver au0828
+[   41.600320][    T1] usbcore: registered new interface driver cx231xx
+[   41.607785][    T1] usbcore: registered new interface driver em28xx
+[   41.613063][    T1] em28xx: Registered (Em28xx v4l2 Extension) extension
+[   41.620881][    T1] em28xx: Registered (Em28xx Audio Extension) extension
+[   41.629015][    T1] em28xx: Registered (Em28xx dvb Extension) extension
+[   41.634152][    T1] em28xx: Registered (Em28xx Input Extension) extension
+[   41.640302][    T1] usbcore: registered new interface driver go7007
+[   41.647867][    T1] usbcore: registered new interface driver go7007-loader
+[   41.656987][    T1] usbcore: registered new interface driver hdpvr
+[   41.665597][    T1] usbcore: registered new interface driver pvrusb2
+[   41.671218][    T1] pvrusb2: V4L in-tree version:Hauppauge WinTV-PVR-USB2 MPEG2 Encoder/Tuner
+[   41.686897][    T1] pvrusb2: Debug mask is 31 (0x1f)
+[   41.693258][    T1] usbcore: registered new interface driver stk1160
+[   41.698295][    T1] usbcore: registered new interface driver usbtv
+[   41.708677][    T1] dvbdev: DVB: registering new adapter (dvb_vidtv_bridge)
+[   41.727328][    T1] i2c i2c-0: DVB: registering adapter 0 frontend 0 (Dummy demod for DVB-T/T2/C/S/S2)...
+[   41.739428][    T1] dvbdev: dvb_create_media_entity: media entity 'Dummy demod for DVB-T/T2/C/S/S2' registered.
+[   41.771685][    T1] dvbdev: dvb_create_media_entity: media entity 'dvb-demux' registered.
+[   41.790102][    T1] vidtv vidtv.0: Successfully initialized vidtv!
+[   41.799918][    T1] vicodec vicodec.0: Device 'stateful-encoder' registered as /dev/video0
+[   41.807593][    T1] vicodec vicodec.0: Device 'stateful-decoder' registered as /dev/video1
+[   41.815678][    T1] vicodec vicodec.0: Device 'stateless-decoder' registered as /dev/video2
+[   41.825683][    T1] vim2m vim2m.0: Device registered as /dev/video3
+[   41.875048][    T1] vivid-000: using single planar format API
+[   41.915586][    T1] vivid-000: CEC adapter cec0 registered for HDMI input
+[   41.921697][    T1] vivid-000: V4L2 capture device registered as video7
+[   41.930460][    T1] vivid-000: CEC adapter cec1 registered for HDMI output 0
+[   41.936144][    T1] vivid-000: V4L2 output device registered as video8
+[   41.940832][    T1] vivid-000: V4L2 capture device registered as vbi0, supports raw and sliced VBI
+[   41.948257][    T1] vivid-000: V4L2 output device registered as vbi1, supports raw and sliced VBI
+[   41.954692][    T1] vivid-000: V4L2 capture device registered as swradio0
+[   41.960140][    T1] vivid-000: V4L2 receiver device registered as radio0
+[   41.966393][    T1] vivid-000: V4L2 transmitter device registered as radio1
+[   41.973343][    T1] vivid-000: V4L2 metadata capture device registered as video9
+[   41.980056][    T1] vivid-000: V4L2 metadata output device registered as video10
+[   41.986833][    T1] vivid-000: V4L2 touch capture device registered as v4l-touch0
+[   41.993119][    T1] vivid-001: using multiplanar format API
+[   42.028062][    T1] vivid-001: CEC adapter cec2 registered for HDMI input
+[   42.032866][    T1] vivid-001: V4L2 capture device registered as video11
+[   42.037561][    T1] vivid-001: CEC adapter cec3 registered for HDMI output 0
+[   42.043859][    T1] vivid-001: V4L2 output device registered as video12
+[   42.049140][    T1] vivid-001: V4L2 capture device registered as vbi2, supports raw and sliced VBI
+[   42.056416][    T1] vivid-001: V4L2 output device registered as vbi3, supports raw and sliced VBI
+[   42.063648][    T1] vivid-001: V4L2 capture device registered as swradio1
+[   42.069163][    T1] vivid-001: V4L2 receiver device registered as radio2
+[   42.074699][    T1] vivid-001: V4L2 transmitter device registered as radio3
+[   42.080795][    T1] vivid-001: V4L2 metadata capture device registered as video13
+[   42.086712][    T1] vivid-001: V4L2 metadata output device registered as video14
+[   42.092878][    T1] vivid-001: V4L2 touch capture device registered as v4l-touch1
+[   42.098564][    T1] vivid-002: using single planar format API
+[   42.132507][    T1] vivid-002: CEC adapter cec4 registered for HDMI input
+[   42.146674][    T1] vivid-002: V4L2 capture device registered as video15
+[   42.152467][    T1] vivid-002: CEC adapter cec5 registered for HDMI output 0
+[   42.165292][    T1] vivid-002: V4L2 output device registered as video16
+[   42.173099][    T1] vivid-002: V4L2 capture device registered as vbi4, supports raw and sliced VBI
+[   42.186763][    T1] vivid-002: V4L2 output device registered as vbi5, supports raw and sliced VBI
+[   42.195862][    T1] vivid-002: V4L2 capture device registered as swradio2
+[   42.206587][    T1] vivid-002: V4L2 receiver device registered as radio4
+[   42.214880][    T1] vivid-002: V4L2 transmitter device registered as radio5
+[   42.222214][    T1] vivid-002: V4L2 metadata capture device registered as video17
+[   42.231257][    T1] vivid-002: V4L2 metadata output device registered as video18
+[   42.243809][    T1] vivid-002: V4L2 touch capture device registered as v4l-touch2
+[   42.250590][    T1] vivid-003: using multiplanar format API
+[   42.287352][    T1] vivid-003: CEC adapter cec6 registered for HDMI input
+[   42.293800][    T1] vivid-003: V4L2 capture device registered as video19
+[   42.300031][    T1] vivid-003: CEC adapter cec7 registered for HDMI output 0
+[   42.307568][    T1] vivid-003: V4L2 output device registered as video20
+[   42.314266][    T1] vivid-003: V4L2 capture device registered as vbi6, supports raw and sliced VBI
+[   42.322846][    T1] vivid-003: V4L2 output device registered as vbi7, supports raw and sliced VBI
+[   42.330857][    T1] vivid-003: V4L2 capture device registered as swradio3
+[   42.338884][    T1] vivid-003: V4L2 receiver device registered as radio6
+[   42.345544][    T1] vivid-003: V4L2 transmitter device registered as radio7
+[   42.351607][    T1] vivid-003: V4L2 metadata capture device registered as video21
+[   42.359027][    T1] vivid-003: V4L2 metadata output device registered as video22
+[   42.365481][    T1] vivid-003: V4L2 touch capture device registered as v4l-touch3
+[   42.371685][    T1] vivid-004: using single planar format API
+[   42.405372][    T1] vivid-004: CEC adapter cec8 registered for HDMI input
+[   42.411160][    T1] vivid-004: V4L2 capture device registered as video23
+[   42.417914][    T1] vivid-004: CEC adapter cec9 registered for HDMI output 0
+[   42.424285][    T1] vivid-004: V4L2 output device registered as video24
+[   42.428961][    T1] vivid-004: V4L2 capture device registered as vbi8, supports raw and sliced VBI
+[   42.435867][    T1] vivid-004: V4L2 output device registered as vbi9, supports raw and sliced VBI
+[   42.443365][    T1] vivid-004: V4L2 capture device registered as swradio4
+[   42.449057][    T1] vivid-004: V4L2 receiver device registered as radio8
+[   42.454578][    T1] vivid-004: V4L2 transmitter device registered as radio9
+[   42.459825][    T1] vivid-004: V4L2 metadata capture device registered as video25
+[   42.466752][    T1] vivid-004: V4L2 metadata output device registered as video26
+[   42.473357][    T1] vivid-004: V4L2 touch capture device registered as v4l-touch4
+[   42.481202][    T1] vivid-005: using multiplanar format API
+[   42.535528][    T1] vivid-005: CEC adapter cec10 registered for HDMI input
+[   42.543960][    T1] vivid-005: V4L2 capture device registered as video27
+[   42.558389][    T1] vivid-005: CEC adapter cec11 registered for HDMI output 0
+[   42.563652][    T1] vivid-005: V4L2 output device registered as video28
+[   42.573175][    T1] vivid-005: V4L2 capture device registered as vbi10, supports raw and sliced VBI
+[   42.583287][    T1] vivid-005: V4L2 output device registered as vbi11, supports raw and sliced VBI
+[   42.592748][    T1] vivid-005: V4L2 capture device registered as swradio5
+[   42.600216][    T1] vivid-005: V4L2 receiver device registered as radio10
+[   42.607350][    T1] vivid-005: V4L2 transmitter device registered as radio11
+[   42.614813][    T1] vivid-005: V4L2 metadata capture device registered as video29
+[   42.622548][    T1] vivid-005: V4L2 metadata output device registered as video30
+[   42.628029][    T1] vivid-005: V4L2 touch capture device registered as v4l-touch5
+[   42.634764][    T1] vivid-006: using single planar format API
+[   42.687669][    T1] vivid-006: CEC adapter cec12 registered for HDMI input
+[   42.697618][    T1] vivid-006: V4L2 capture device registered as video31
+[   42.707042][    T1] vivid-006: CEC adapter cec13 registered for HDMI output 0
+[   42.715160][    T1] vivid-006: V4L2 output device registered as video32
+[   42.720879][    T1] vivid-006: V4L2 capture device registered as vbi12, supports raw and sliced VBI
+[   42.728799][    T1] vivid-006: V4L2 output device registered as vbi13, supports raw and sliced VBI
+[   42.737504][    T1] vivid-006: V4L2 capture device registered as swradio6
+[   42.743367][    T1] vivid-006: V4L2 receiver device registered as radio12
+[   42.748631][    T1] vivid-006: V4L2 transmitter device registered as radio13
+[   42.754317][    T1] vivid-006: V4L2 metadata capture device registered as video33
+[   42.761311][    T1] vivid-006: V4L2 metadata output device registered as video34
+[   42.768845][    T1] vivid-006: V4L2 touch capture device registered as v4l-touch6
+[   42.777236][    T1] vivid-007: using multiplanar format API
+[   42.815171][    T1] vivid-007: CEC adapter cec14 registered for HDMI input
+[   42.825095][    T1] vivid-007: V4L2 capture device registered as video35
+[   42.830743][    T1] vivid-007: CEC adapter cec15 registered for HDMI output 0
+[   42.836985][    T1] vivid-007: V4L2 output device registered as video36
+[   42.845928][    T1] vivid-007: V4L2 capture device registered as vbi14, supports raw and sliced VBI
+[   42.855017][    T1] vivid-007: V4L2 output device registered as vbi15, supports raw and sliced VBI
+[   42.863915][    T1] vivid-007: V4L2 capture device registered as swradio7
+[   42.879828][    T1] vivid-007: V4L2 receiver device registered as radio14
+[   42.885575][    T1] vivid-007: V4L2 transmitter device registered as radio15
+[   42.891595][    T1] vivid-007: V4L2 metadata capture device registered as video37
+[   42.899028][    T1] vivid-007: V4L2 metadata output device registered as video38
+[   42.906051][    T1] vivid-007: V4L2 touch capture device registered as v4l-touch7
+[   42.913562][    T1] vivid-008: using single planar format API
+[   42.960765][    T1] vivid-008: CEC adapter cec16 registered for HDMI input
+[   42.967650][    T1] vivid-008: V4L2 capture device registered as video39
+[   42.974336][    T1] vivid-008: CEC adapter cec17 registered for HDMI output 0
+[   42.982209][    T1] vivid-008: V4L2 output device registered as video40
+[   42.987859][    T1] vivid-008: V4L2 capture device registered as vbi16, supports raw and sliced VBI
+[   42.996509][    T1] vivid-008: V4L2 output device registered as vbi17, supports raw and sliced VBI
+[   43.004412][    T1] vivid-008: V4L2 capture device registered as swradio8
+[   43.019120][    T1] vivid-008: V4L2 receiver device registered as radio16
+[   43.025418][    T1] vivid-008: V4L2 transmitter device registered as radio17
+[   43.031237][    T1] vivid-008: V4L2 metadata capture device registered as video41
+[   43.039392][    T1] vivid-008: V4L2 metadata output device registered as video42
+[   43.045494][    T1] vivid-008: V4L2 touch capture device registered as v4l-touch8
+[   43.053291][    T1] vivid-009: using multiplanar format API
+[   43.091619][    T1] vivid-009: CEC adapter cec18 registered for HDMI input
+[   43.099191][    T1] vivid-009: V4L2 capture device registered as video43
+[   43.105472][    T1] vivid-009: CEC adapter cec19 registered for HDMI output 0
+[   43.111849][    T1] vivid-009: V4L2 output device registered as video44
+[   43.118948][    T1] vivid-009: V4L2 capture device registered as vbi18, supports raw and sliced VBI
+[   43.127127][    T1] vivid-009: V4L2 output device registered as vbi19, supports raw and sliced VBI
+[   43.135994][    T1] vivid-009: V4L2 capture device registered as swradio9
+[   43.144121][    T1] vivid-009: V4L2 receiver device registered as radio18
+[   43.151641][    T1] vivid-009: V4L2 transmitter device registered as radio19
+[   43.157778][    T1] vivid-009: V4L2 metadata capture device registered as video45
+[   43.164781][    T1] vivid-009: V4L2 metadata output device registered as video46
+[   43.171429][    T1] vivid-009: V4L2 touch capture device registered as v4l-touch9
+[   43.179718][    T1] vivid-010: using single planar format API
+[   43.247165][    T1] vivid-010: CEC adapter cec20 registered for HDMI input
+[   43.254099][    T1] vivid-010: V4L2 capture device registered as video47
+[   43.260266][    T1] vivid-010: CEC adapter cec21 registered for HDMI output 0
+[   43.267263][    T1] vivid-010: V4L2 output device registered as video48
+[   43.273285][    T1] vivid-010: V4L2 capture device registered as vbi20, supports raw and sliced VBI
+[   43.281980][    T1] vivid-010: V4L2 output device registered as vbi21, supports raw and sliced VBI
+[   43.289262][    T1] vivid-010: V4L2 capture device registered as swradio10
+[   43.296243][    T1] vivid-010: V4L2 receiver device registered as radio20
+[   43.303412][    T1] vivid-010: V4L2 transmitter device registered as radio21
+[   43.313072][    T1] vivid-010: V4L2 metadata capture device registered as video49
+[   43.320981][    T1] vivid-010: V4L2 metadata output device registered as video50
+[   43.328549][    T1] vivid-010: V4L2 touch capture device registered as v4l-touch10
+[   43.337466][    T1] vivid-011: using multiplanar format API
+[   43.380925][    T1] vivid-011: CEC adapter cec22 registered for HDMI input
+[   43.387940][    T1] vivid-011: V4L2 capture device registered as video51
+[   43.396376][    T1] vivid-011: CEC adapter cec23 registered for HDMI output 0
+[   43.407101][    T1] vivid-011: V4L2 output device registered as video52
+[   43.414349][    T1] vivid-011: V4L2 capture device registered as vbi22, supports raw and sliced VBI
+[   43.424681][    T1] vivid-011: V4L2 output device registered as vbi23, supports raw and sliced VBI
+[   43.433828][    T1] vivid-011: V4L2 capture device registered as swradio11
+[   43.448364][    T1] vivid-011: V4L2 receiver device registered as radio22
+[   43.454847][    T1] vivid-011: V4L2 transmitter device registered as radio23
+[   43.461647][    T1] vivid-011: V4L2 metadata capture device registered as video53
+[   43.469458][    T1] vivid-011: V4L2 metadata output device registered as video54
+[   43.476954][    T1] vivid-011: V4L2 touch capture device registered as v4l-touch11
+[   43.483855][    T1] vivid-012: using single planar format API
+[   43.527062][    T1] vivid-012: CEC adapter cec24 registered for HDMI input
+[   43.533598][    T1] vivid-012: V4L2 capture device registered as video55
+[   43.539359][    T1] vivid-012: CEC adapter cec25 registered for HDMI output 0
+[   43.545780][    T1] vivid-012: V4L2 output device registered as video56
+[   43.552130][    T1] vivid-012: V4L2 capture device registered as vbi24, supports raw and sliced VBI
+[   43.559852][    T1] vivid-012: V4L2 output device registered as vbi25, supports raw and sliced VBI
+[   43.566367][    T1] vivid-012: V4L2 capture device registered as swradio12
+[   43.572178][    T1] vivid-012: V4L2 receiver device registered as radio24
+[   43.578406][    T1] vivid-012: V4L2 transmitter device registered as radio25
+[   43.584191][    T1] vivid-012: V4L2 metadata capture device registered as video57
+[   43.589779][    T1] vivid-012: V4L2 metadata output device registered as video58
+[   43.595819][    T1] vivid-012: V4L2 touch capture device registered as v4l-touch12
+[   43.602759][    T1] vivid-013: using multiplanar format API
+[   43.647784][    T1] vivid-013: CEC adapter cec26 registered for HDMI input
+[   43.654225][    T1] vivid-013: V4L2 capture device registered as video59
+[   43.660972][    T1] vivid-013: CEC adapter cec27 registered for HDMI output 0
+[   43.668181][    T1] vivid-013: V4L2 output device registered as video60
+[   43.674845][    T1] vivid-013: V4L2 capture device registered as vbi26, supports raw and sliced VBI
+[   43.682004][    T1] vivid-013: V4L2 output device registered as vbi27, supports raw and sliced VBI
+[   43.690930][    T1] vivid-013: V4L2 capture device registered as swradio13
+[   43.697050][    T1] vivid-013: V4L2 receiver device registered as radio26
+[   43.703964][    T1] vivid-013: V4L2 transmitter device registered as radio27
+[   43.710640][    T1] vivid-013: V4L2 metadata capture device registered as video61
+[   43.717014][    T1] vivid-013: V4L2 metadata output device registered as video62
+[   43.723089][    T1] vivid-013: V4L2 touch capture device registered as v4l-touch13
+[   43.728140][    T1] vivid-014: using single planar format API
+[   43.765260][    T1] vivid-014: CEC adapter cec28 registered for HDMI input
+[   43.772017][    T1] vivid-014: V4L2 capture device registered as video63
+[   43.779778][    T1] vivid-014: CEC adapter cec29 registered for HDMI output 0
+[   43.787657][    T1] vivid-014: V4L2 output device registered as video64
+[   43.795384][    T1] vivid-014: V4L2 capture device registered as vbi28, supports raw and sliced VBI
+[   43.804550][    T1] vivid-014: V4L2 output device registered as vbi29, supports raw and sliced VBI
+[   43.812186][    T1] vivid-014: V4L2 capture device registered as swradio14
+[   43.817715][    T1] vivid-014: V4L2 receiver device registered as radio28
+[   43.823311][    T1] vivid-014: V4L2 transmitter device registered as radio29
+[   43.831903][    T1] vivid-014: V4L2 metadata capture device registered as video65
+[   43.839472][    T1] vivid-014: V4L2 metadata output device registered as video66
+[   43.846998][    T1] vivid-014: V4L2 touch capture device registered as v4l-touch14
+[   43.855490][    T1] vivid-015: using multiplanar format API
+[   43.894970][    T1] vivid-015: CEC adapter cec30 registered for HDMI input
+[   43.901679][    T1] vivid-015: V4L2 capture device registered as video67
+[   43.911407][    T1] vivid-015: CEC adapter cec31 registered for HDMI output 0
+[   43.919643][    T1] vivid-015: V4L2 output device registered as video68
+[   43.927534][    T1] vivid-015: V4L2 capture device registered as vbi30, supports raw and sliced VBI
+[   43.937732][    T1] vivid-015: V4L2 output device registered as vbi31, supports raw and sliced VBI
+[   43.944133][    T1] vivid-015: V4L2 capture device registered as swradio15
+[   43.949849][    T1] vivid-015: V4L2 receiver device registered as radio30
+[   43.955605][    T1] vivid-015: V4L2 transmitter device registered as radio31
+[   43.962178][    T1] vivid-015: V4L2 metadata capture device registered as video69
+[   43.968163][    T1] vivid-015: V4L2 metadata output device registered as video70
+[   43.975077][    T1] vivid-015: V4L2 touch capture device registered as v4l-touch15
+[   43.983080][    T1] vivid-016: using single planar format API
+[   44.019529][    T1] vivid-016: CEC adapter cec32 registered for HDMI input
+[   44.027942][    T1] vivid-016: V4L2 capture device registered as video71
+[   44.034167][    T1] vivid-016: CEC adapter cec33 registered for HDMI output 0
+[   44.039981][    T1] vivid-016: V4L2 output device registered as video72
+[   44.047026][    T1] vivid-016: V4L2 capture device registered as vbi32, supports raw and sliced VBI
+[   44.056640][    T1] vivid-016: V4L2 output device registered as vbi33, supports raw and sliced VBI
+[   44.064401][    T1] vivid-016: V4L2 capture device registered as swradio16
+[   44.070080][    T1] vivid-016: V4L2 receiver device registered as radio32
+[   44.075408][    T1] vivid-016: V4L2 transmitter device registered as radio33
+[   44.081789][    T1] vivid-016: V4L2 metadata capture device registered as video73
+[   44.087433][    T1] vivid-016: V4L2 metadata output device registered as video74
+[   44.095702][    T1] vivid-016: V4L2 touch capture device registered as v4l-touch16
+[   44.102101][    T1] vivid-017: using multiplanar format API
+[   44.148791][    T1] vivid-017: CEC adapter cec34 registered for HDMI input
+[   44.154252][    T1] vivid-017: V4L2 capture device registered as video75
+[   44.158642][    T1] vivid-017: CEC adapter cec35 registered for HDMI output 0
+[   44.164634][    T1] vivid-017: V4L2 output device registered as video76
+[   44.172472][    T1] vivid-017: V4L2 capture device registered as vbi34, supports raw and sliced VBI
+[   44.180336][    T1] vivid-017: V4L2 output device registered as vbi35, supports raw and sliced VBI
+[   44.194315][    T1] vivid-017: V4L2 capture device registered as swradio17
+[   44.201101][    T1] vivid-017: V4L2 receiver device registered as radio34
+[   44.208018][    T1] vivid-017: V4L2 transmitter device registered as radio35
+[   44.215541][    T1] vivid-017: V4L2 metadata capture device registered as video77
+[   44.222754][    T1] vivid-017: V4L2 metadata output device registered as video78
+[   44.232461][    T1] vivid-017: V4L2 touch capture device registered as v4l-touch17
+[   44.240558][    T1] vivid-018: using single planar format API
+[   44.286813][    T1] vivid-018: CEC adapter cec36 registered for HDMI input
+[   44.293682][    T1] vivid-018: V4L2 capture device registered as video79
+[   44.301277][    T1] vivid-018: CEC adapter cec37 registered for HDMI output 0
+[   44.308695][    T1] vivid-018: V4L2 output device registered as video80
+[   44.314687][    T1] vivid-018: V4L2 capture device registered as vbi36, supports raw and sliced VBI
+[   44.322075][    T1] vivid-018: V4L2 output device registered as vbi37, supports raw and sliced VBI
+[   44.328997][    T1] vivid-018: V4L2 capture device registered as swradio18
+[   44.336123][    T1] vivid-018: V4L2 receiver device registered as radio36
+[   44.342562][    T1] vivid-018: V4L2 transmitter device registered as radio37
+[   44.349341][    T1] vivid-018: V4L2 metadata capture device registered as video81
+[   44.356694][    T1] vivid-018: V4L2 metadata output device registered as video82
+[   44.367840][    T1] vivid-018: V4L2 touch capture device registered as v4l-touch18
+[   44.374667][    T1] vivid-019: using multiplanar format API
+[   44.419028][    T1] vivid-019: CEC adapter cec38 registered for HDMI input
+[   44.427449][    T1] vivid-019: V4L2 capture device registered as video83
+[   44.434277][    T1] vivid-019: CEC adapter cec39 registered for HDMI output 0
+[   44.441331][    T1] vivid-019: V4L2 output device registered as video84
+[   44.448853][    T1] vivid-019: V4L2 capture device registered as vbi38, supports raw and sliced VBI
+[   44.457325][    T1] vivid-019: V4L2 output device registered as vbi39, supports raw and sliced VBI
+[   44.468360][    T1] vivid-019: V4L2 capture device registered as swradio19
+[   44.478681][    T1] vivid-019: V4L2 receiver device registered as radio38
+[   44.495027][    T1] vivid-019: V4L2 transmitter device registered as radio39
+[   44.502485][    T1] vivid-019: V4L2 metadata capture device registered as video85
+[   44.513305][    T1] vivid-019: V4L2 metadata output device registered as video86
+[   44.523942][    T1] vivid-019: V4L2 touch capture device registered as v4l-touch19
+[   44.532306][    T1] vivid-020: using single planar format API
+[   44.570371][    T1] vivid-020: CEC adapter cec40 registered for HDMI input
+[   44.579819][    T1] vivid-020: V4L2 capture device registered as video87
+[   44.586868][    T1] vivid-020: CEC adapter cec41 registered for HDMI output 0
+[   44.595678][    T1] vivid-020: V4L2 output device registered as video88
+[   44.603165][    T1] vivid-020: V4L2 capture device registered as vbi40, supports raw and sliced VBI
+[   44.614085][    T1] vivid-020: V4L2 output device registered as vbi41, supports raw and sliced VBI
+[   44.621857][    T1] vivid-020: V4L2 capture device registered as swradio20
+[   44.628146][    T1] vivid-020: V4L2 receiver device registered as radio40
+[   44.634475][    T1] vivid-020: V4L2 transmitter device registered as radio41
+[   44.640059][    T1] vivid-020: V4L2 metadata capture device registered as video89
+[   44.645910][    T1] vivid-020: V4L2 metadata output device registered as video90
+[   44.652312][    T1] vivid-020: V4L2 touch capture device registered as v4l-touch20
+[   44.659043][    T1] vivid-021: using multiplanar format API
+[   44.694887][    T1] vivid-021: CEC adapter cec42 registered for HDMI input
+[   44.701438][    T1] vivid-021: V4L2 capture device registered as video91
+[   44.707598][    T1] vivid-021: CEC adapter cec43 registered for HDMI output 0
+[   44.713895][    T1] vivid-021: V4L2 output device registered as video92
+[   44.719637][    T1] vivid-021: V4L2 capture device registered as vbi42, supports raw and sliced VBI
+[   44.727330][    T1] vivid-021: V4L2 output device registered as vbi43, supports raw and sliced VBI
+[   44.735409][    T1] vivid-021: V4L2 capture device registered as swradio21
+[   44.741471][    T1] vivid-021: V4L2 receiver device registered as radio42
+[   44.746288][    T1] vivid-021: V4L2 transmitter device registered as radio43
+[   44.751861][    T1] vivid-021: V4L2 metadata capture device registered as video93
+[   44.758473][    T1] vivid-021: V4L2 metadata output device registered as video94
+[   44.764057][    T1] vivid-021: V4L2 touch capture device registered as v4l-touch21
+[   44.770484][    T1] vivid-022: using single planar format API
+[   44.800101][    T1] vivid-022: CEC adapter cec44 registered for HDMI input
+[   44.810873][    T1] vivid-022: V4L2 capture device registered as video95
+[   44.817978][    T1] vivid-022: CEC adapter cec45 registered for HDMI output 0
+[   44.825515][    T1] vivid-022: V4L2 output device registered as video96
+[   44.832663][    T1] vivid-022: V4L2 capture device registered as vbi44, supports raw and sliced VBI
+[   44.842369][    T1] vivid-022: V4L2 output device registered as vbi45, supports raw and sliced VBI
+[   44.852365][    T1] vivid-022: V4L2 capture device registered as swradio22
+[   44.860710][    T1] vivid-022: V4L2 receiver device registered as radio44
+[   44.869022][    T1] vivid-022: V4L2 transmitter device registered as radio45
+[   44.876429][    T1] vivid-022: V4L2 metadata capture device registered as video97
+[   44.883183][    T1] vivid-022: V4L2 metadata output device registered as video98
+[   44.890207][    T1] vivid-022: V4L2 touch capture device registered as v4l-touch22
+[   44.897570][    T1] vivid-023: using multiplanar format API
+[   44.942520][    T1] vivid-023: CEC adapter cec46 registered for HDMI input
+[   44.948187][    T1] vivid-023: V4L2 capture device registered as video99
+[   44.954318][    T1] vivid-023: CEC adapter cec47 registered for HDMI output 0
+[   44.960920][    T1] vivid-023: V4L2 output device registered as video100
+[   44.969421][    T1] vivid-023: V4L2 capture device registered as vbi46, supports raw and sliced VBI
+[   44.976916][    T1] vivid-023: V4L2 output device registered as vbi47, supports raw and sliced VBI
+[   44.984790][    T1] vivid-023: V4L2 capture device registered as swradio23
+[   44.990132][    T1] vivid-023: V4L2 receiver device registered as radio46
+[   44.995011][    T1] vivid-023: V4L2 transmitter device registered as radio47
+[   45.000299][    T1] vivid-023: V4L2 metadata capture device registered as video101
+[   45.006021][    T1] vivid-023: V4L2 metadata output device registered as video102
+[   45.011626][    T1] vivid-023: V4L2 touch capture device registered as v4l-touch23
+[   45.016646][    T1] vivid-024: using single planar format API
+[   45.053760][    T1] vivid-024: CEC adapter cec48 registered for HDMI input
+[   45.066063][    T1] vivid-024: V4L2 capture device registered as video103
+[   45.072547][    T1] vivid-024: CEC adapter cec49 registered for HDMI output 0
+[   45.078717][    T1] videodev: could not get a free minor
+[   45.124537][    T1] usbcore: registered new interface driver radioshark2
+[   45.135442][    T1] usbcore: registered new interface driver radioshark
+[   45.146361][    T1] usbcore: registered new interface driver radio-si470x
+[   45.152560][    T1] usbcore: registered new interface driver radio-usb-si4713
+[   45.162877][    T1] usbcore: registered new interface driver dsbr100
+[   45.170577][    T1] usbcore: registered new interface driver radio-keene
+[   45.176934][    T1] usbcore: registered new interface driver radio-ma901
+[   45.183914][    T1] usbcore: registered new interface driver radio-mr800
+[   45.190300][    T1] usbcore: registered new interface driver radio-raremono
+[   45.197315][    T1] usbcore: registered new interface driver powerz
+[   45.202737][    T1] usbcore: registered new interface driver pcwd_usb
+[   45.213114][    T1] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[   45.223691][    T1] device-mapper: uevent: version 1.0.3
+[   45.230389][    T1] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[   45.243049][    T1] device-mapper: multipath round-robin: version 1.2.0 loaded
+[   45.248046][    T1] device-mapper: multipath queue-length: version 0.2.0 loaded
+[   45.253860][    T1] device-mapper: multipath service-time: version 0.3.0 loaded
+[   45.261362][    T1] Bluetooth: HCI UART driver ver 2.3
+[   45.265106][    T1] Bluetooth: HCI UART protocol H4 registered
+[   45.268186][    T1] Bluetooth: HCI UART protocol BCSP registered
+[   45.272151][    T1] Bluetooth: HCI UART protocol LL registered
+[   45.276369][    T1] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[   45.282668][    T1] Bluetooth: HCI UART protocol QCA registered
+[   45.287337][    T1] Bluetooth: HCI UART protocol AG6XX registered
+[   45.291481][    T1] Bluetooth: HCI UART protocol Marvell registered
+[   45.299540][    T1] usbcore: registered new interface driver bcm203x
+[   45.305928][    T1] usbcore: registered new interface driver bpa10x
+[   45.311259][    T1] usbcore: registered new interface driver bfusb
+[   45.317751][    T1] usbcore: registered new interface driver btusb
+[   45.323352][    T1] usbcore: registered new interface driver ath3k
+[   45.333960][    T1] Modular ISDN core version 1.1.29
+[   45.342620][    T1] NET: Registered PF_ISDN protocol family
+[   45.347569][    T1] DSP module 2.0
+[   45.350604][    T1] mISDN_dsp: DSP clocks every 80 samples. This equals 1 jiffies.
+[   45.372220][    T1] mISDN: Layer-1-over-IP driver Rev. 2.00
+[   45.377442][    T1] 0 virtual devices registered
+[   45.382788][    T1] usbcore: registered new interface driver HFC-S_USB
+[   45.389197][    T1] intel_pstate: CPU model not supported
+[   45.393848][    T1] VUB300 Driver rom wait states = 1C irqpoll timeout = 0400
+[   45.396988][    T1] usbcore: registered new interface driver vub300
+[   45.410976][    T1] usbcore: registered new interface driver ushc
+[   45.438755][    T1] iscsi: registered transport (iser)
+[   45.456502][    T1] SoftiWARP attached
+[   45.496745][    T1] hid: raw HID events driver (C) Jiri Kosina
+[   45.606770][    T1] usbcore: registered new interface driver usbhid
+[   45.614020][    T1] usbhid: USB HID core driver
+[   45.628203][    T1] usbcore: registered new interface driver es2_ap_driver
+[   45.635402][    T1] comedi: version 0.7.76 - http://www.comedi.org
+[   45.648265][    T1] comedi comedi4: comedi_test: 1000000 microvolt, 100000 microsecond waveform attached
+[   45.673203][    T1] comedi comedi4: driver 'comedi_test' has successfully auto-configured 'comedi_test'.
+[   45.683139][    T1] usbcore: registered new interface driver dt9812
+[   45.689156][    T1] usbcore: registered new interface driver ni6501
+[   45.696426][    T1] usbcore: registered new interface driver usbdux
+[   45.703508][    T1] usbcore: registered new interface driver usbduxfast
+[   45.709945][    T1] usbcore: registered new interface driver usbduxsigma
+[   45.715061][    T1] usbcore: registered new interface driver vmk80xx
+[   45.721097][    T1] greybus: registered new driver hid
+[   45.726068][    T1] greybus: registered new driver gbphy
+[   45.731013][    T1] gb_gbphy: registered new driver usb
+[   45.740084][    T1] asus_wmi: ASUS WMI generic driver loaded
+[   45.752720][    T1] gnss: GNSS driver registered with major 494
+[   45.758691][    T1] usbcore: registered new interface driver gnss-usb
+[   45.764435][    T1] usbcore: registered new interface driver hdm_usb
+[   45.881052][    T1] usbcore: registered new interface driver snd-usb-audio
+[   45.887980][    T1] usbcore: registered new interface driver snd-ua101
+[   45.894415][    T1] usbcore: registered new interface driver snd-usb-usx2y
+[   45.901431][    T1] usbcore: registered new interface driver snd-usb-us122l
+[   45.908318][    T1] usbcore: registered new interface driver snd-usb-caiaq
+[   45.914436][    T1] usbcore: registered new interface driver snd-usb-6fire
+[   45.921076][    T1] usbcore: registered new interface driver snd-usb-hiface
+[   45.931824][    T1] usbcore: registered new interface driver snd-bcd2000
+[   45.939198][    T1] usbcore: registered new interface driver snd_usb_pod
+[   45.953776][    T1] usbcore: registered new interface driver snd_usb_podhd
+[   45.960253][    T1] usbcore: registered new interface driver snd_usb_toneport
+[   45.967330][    T1] usbcore: registered new interface driver snd_usb_variax
+[   45.983497][    T1] drop_monitor: Initializing network drop monitor service
+[   45.990666][    T1] NET: Registered PF_LLC protocol family
+[   45.995298][    T1] GACT probability on
+[   45.998113][    T1] Mirror/redirect action on
+[   46.001380][    T1] Simple TC action Loaded
+[   46.013308][    T1] netem: version 1.3
+[   46.017848][    T1] u32 classifier
+[   46.024517][    T1]     Performance counters on
+[   46.027806][    T1]     input device check on
+[   46.031135][    T1]     Actions configured
+[   46.039677][    T1] nf_conntrack_irc: failed to register helpers
+[   46.045153][    T1] nf_conntrack_sane: failed to register helpers
+[   46.152913][    T1] nf_conntrack_sip: failed to register helpers
+[   46.169948][    T1] xt_time: kernel timezone is -0000
+[   46.173892][    T1] IPVS: Registered protocols (TCP, UDP, SCTP, AH, ESP)
+[   46.178136][    T1] IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+[   46.185280][    T1] IPVS: ipvs loaded.
+[   46.188328][    T1] IPVS: [rr] scheduler registered.
+[   46.191589][    T1] IPVS: [wrr] scheduler registered.
+[   46.195251][    T1] IPVS: [lc] scheduler registered.
+[   46.199211][    T1] IPVS: [wlc] scheduler registered.
+[   46.202949][    T1] IPVS: [fo] scheduler registered.
+[   46.207116][    T1] IPVS: [ovf] scheduler registered.
+[   46.210640][    T1] IPVS: [lblc] scheduler registered.
+[   46.215288][    T1] IPVS: [lblcr] scheduler registered.
+[   46.219336][    T1] IPVS: [dh] scheduler registered.
+[   46.223428][    T1] IPVS: [sh] scheduler registered.
+[   46.227290][    T1] IPVS: [mh] scheduler registered.
+[   46.231069][    T1] IPVS: [sed] scheduler registered.
+[   46.234867][    T1] IPVS: [nq] scheduler registered.
+[   46.238333][    T1] IPVS: [twos] scheduler registered.
+[   46.241413][    T1] IPVS: [sip] pe registered.
+[   46.244511][    T1] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[   46.254060][    T1] gre: GRE over IPv4 demultiplexer driver
+[   46.258313][    T1] ip_gre: GRE over IPv4 tunneling driver
+[   46.276709][    T1] IPv4 over IPsec tunneling driver
+[   46.285844][    T1] Initializing XFRM netlink socket
+[   46.289113][    T1] IPsec XFRM device driver
+[   46.293735][    T1] NET: Registered PF_INET6 protocol family
+[   46.316633][    T1] Segment Routing with IPv6
+[   46.320173][    T1] RPL Segment Routing with IPv6
+[   46.324351][    T1] In-situ OAM (IOAM) with IPv6
+[   46.327955][    T1] mip6: Mobile IPv6
+[   46.338055][    T1] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[   46.349475][    T1] ip6_gre: GRE over IPv6 tunneling driver
+[   46.359929][    T1] NET: Registered PF_PACKET protocol family
+[   46.365072][    T1] NET: Registered PF_KEY protocol family
+[   46.371327][    T1] Bridge firewalling registered
+[   46.380304][    T1] NET: Registered PF_X25 protocol family
+[   46.384972][    T1] X25: Linux Version 0.2
+[   46.500027][    T1] NET: Registered PF_NETROM protocol family
+[   46.623126][    T1] NET: Registered PF_ROSE protocol family
+[   46.627216][    T1] NET: Registered PF_AX25 protocol family
+[   46.630635][    T1] can: controller area network core
+[   46.635118][    T1] NET: Registered PF_CAN protocol family
+[   46.638365][    T1] can: raw protocol
+[   46.640774][    T1] can: broadcast manager protocol
+[   46.644732][    T1] can: netlink gateway - max_hops=1
+[   46.648154][    T1] can: SAE J1939
+[   46.650619][    T1] can: isotp protocol (max_pdu_size 8300)
+[   46.654668][    T1] Bluetooth: RFCOMM TTY layer initialized
+[   46.658165][    T1] Bluetooth: RFCOMM socket layer initialized
+[   46.662921][    T1] Bluetooth: RFCOMM ver 1.11
+[   46.665794][    T1] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   46.668467][    T1] Bluetooth: BNEP filters: protocol multicast
+[   46.671844][    T1] Bluetooth: BNEP socket layer initialized
+[   46.674536][    T1] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[   46.678896][    T1] Bluetooth: HIDP socket layer initialized
+[   46.687958][    T1] NET: Registered PF_RXRPC protocol family
+[   46.691999][    T1] Key type rxrpc registered
+[   46.694451][    T1] Key type rxrpc_s registered
+[   46.698248][    T1] NET: Registered PF_KCM protocol family
+[   46.703989][    T1] lec:lane_module_init: lec.c: initialized
+[   46.708574][    T1] mpoa:atm_mpoa_init: mpc.c: initialized
+[   46.713566][    T1] l2tp_core: L2TP core driver, V2.0
+[   46.717528][    T1] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[   46.721702][    T1] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+[   46.728674][    T1] l2tp_netlink: L2TP netlink interface
+[   46.733791][    T1] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+[   46.739052][    T1] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
+[   46.745781][    T1] NET: Registered PF_PHONET protocol family
+[   46.751144][    T1] 8021q: 802.1Q VLAN Support v1.8
+[   46.757956][    T1] sctp: Hash tables configured (bind 32/56)
+[   46.769332][    T1] NET: Registered PF_RDS protocol family
+[   46.781538][    T1] Registered RDS/infiniband transport
+[   46.791292][    T1] Registered RDS/tcp transport
+[   46.796320][    T1] tipc: Activated (version 2.0.0)
+[   46.803180][    T1] NET: Registered PF_TIPC protocol family
+[   46.810667][    T1] tipc: Started in single node mode
+[   46.825618][    T1] smc: adding smcd device lo without pnetid
+[   46.834844][    T1] NET: Registered PF_SMC protocol family
+[   46.841552][    T1] 9pnet: Installing 9P2000 support
+[   46.869739][    T1] NET: Registered PF_CAIF protocol family
+[   46.914708][    T1] NET: Registered PF_IEEE802154 protocol family
+[   46.921361][    T1] Key type dns_resolver registered
+[   46.926367][    T1] Key type ceph registered
+[   46.932735][    T1] libceph: loaded (mon/osd proto 15/24)
+[   46.940196][    T1] batman_adv: B.A.T.M.A.N. advanced 2025.4 (compatibility version 15) loaded
+[   46.952608][    T1] openvswitch: Open vSwitch switching datapath
+[   46.964976][    T1] NET: Registered PF_VSOCK protocol family
+[   46.973638][    T1] mpls_gso: MPLS GSO support
+[   47.029780][    T1] IPI shorthand broadcast: enabled
+[   48.206018][    T1] sched_clock: Marking stable (48041506643, 161629439)->(48294625356, -91489274)
+[   48.224283][    T1] registered taskstats version 1
+[   48.263163][    T1] Loading compiled-in X.509 certificates
+[   48.317247][    T1] Loaded X.509 cert 'Build time autogenerated kernel key: fc7465d2a1ccdfac86f2142470686b71ef760543'
+[   48.785346][    T1] zswap: loaded using pool 842
+[   48.801562][    T1] Demotion targets for Node 0: null
+[   48.806408][    T1] Demotion targets for Node 1: null
+[   48.811614][    T1] debug_vm_pgtable: [debug_vm_pgtable         ]: Validating architecture page table helpers
+[   48.876144][    T1] Key type .fscrypt registered
+[   48.879788][    T1] Key type fscrypt-provisioning registered
+[   48.890070][    T1] kAFS: Red Hat AFS client v0.1 registering.
+[   48.922394][    T1] Btrfs loaded, assert=on, zoned=yes, fsverity=yes
+[   48.927773][    T1] Key type big_key registered
+[   48.943229][    T1] Key type encrypted registered
+[   48.946529][    T1] AppArmor: AppArmor sha256 policy hashing enabled
+[   48.952701][    T1] ima: No TPM chip found, activating TPM-bypass!
+[   48.958403][    T1] Loading compiled-in module X.509 certificates
+[   49.007480][    T1] Loaded X.509 cert 'Build time autogenerated kernel key: fc7465d2a1ccdfac86f2142470686b71ef760543'
+[   49.017254][    T1] ima: Allocated hash algorithm: sha256
+[   49.022560][    T1] ima: No architecture policies found
+[   49.026922][    T1] evm: Initialising EVM extended attributes:
+[   49.030643][    T1] evm: security.selinux (disabled)
+[   49.034053][    T1] evm: security.SMACK64 (disabled)
+[   49.037508][    T1] evm: security.SMACK64EXEC (disabled)
+[   49.042036][    T1] evm: security.SMACK64TRANSMUTE (disabled)
+[   49.046344][    T1] evm: security.SMACK64MMAP (disabled)
+[   49.050365][    T1] evm: security.apparmor
+[   49.054116][    T1] evm: security.ima
+[   49.057765][    T1] evm: security.capability
+[   49.061244][    T1] evm: HMAC attrs: 0x1
+[   49.067020][    T1] PM:   Magic number: 10:956:185
+[   49.071600][    T1] sound mixer: hash matches
+[   49.077542][    T1] netconsole: network logging started
+[   49.082965][    T1] gtp: GTP module loaded (pdp ctx size 128 bytes)
+[   49.093062][    T1] rdma_rxe: loaded
+[   49.099103][    T1] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   49.109727][    T1] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   49.115433][    T1] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[   49.122260][ T1006] faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+[   49.123263][    T1] clk: Disabling unused clocks
+[   49.129481][ T1006] faux_driver regulatory: Falling back to sysfs fallback for: regulatory.db
+[   49.132729][    T1] ALSA device list:
+[   49.140404][    T1]   #0: Dummy 1
+[   49.142502][    T1]   #1: Loopback 1
+[   49.144882][    T1]   #2: Virtual MIDI Card 1
+[   49.152464][    T1] check access for rdinit=/init failed: -2, ignoring
+[   49.333079][ T1170] ata1: found unknown device (class 0)
+[   49.335698][ T1170] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[   49.338115][ T1170] ata1: link online but 1 devices misclassified, retrying
+[   49.340355][ T1170] ata1: reset failed (errno=-11), retrying in 35 secs
+[   84.212382][ T1170] ata1: limiting SATA link speed to 1.5 Gbps
+[   84.536088][ T1170] ata1: found unknown device (class 0)
+[   84.538760][ T1170] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[   84.541402][ T1170] ata1: link online but 1 devices misclassified, device detection might fail
+[   84.866032][ T1175] ata2: found unknown device (class 0)
+[   84.867899][ T1175] ata2: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[   84.869745][ T1175] ata2: link online but 1 devices misclassified, retrying
+[   84.871946][ T1175] ata2: reset failed (errno=-11), retrying in 10 secs
+[   95.415417][ T1175] ata2: found unknown device (class 0)
+[   95.417659][ T1175] ata2: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[   95.420758][ T1175] ata2: link online but 1 devices misclassified, retrying
+[   95.424261][ T1175] ata2: reset failed (errno=-11), retrying in 10 secs
+[  105.652551][ T1175] ata2: found unknown device (class 0)
+[  105.654811][ T1175] ata2: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  105.657397][ T1175] ata2: link online but 1 devices misclassified, retrying
+[  105.659787][ T1175] ata2: reset failed (errno=-11), retrying in 35 secs
+[  113.653596][ T1006] cfg80211: failed to load regulatory.db
+[  140.532354][ T1175] ata2: limiting SATA link speed to 1.5 Gbps
+[  140.855220][ T1175] ata2: found unknown device (class 0)
+[  140.858476][ T1175] ata2: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  140.861204][ T1175] ata2: link online but 1 devices misclassified, device detection might fail
+[  141.185605][ T1180] ata3: found unknown device (class 0)
+[  141.187842][ T1180] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  141.190624][ T1180] ata3: link online but 1 devices misclassified, retrying
+[  141.192839][ T1180] ata3: reset failed (errno=-11), retrying in 10 secs
+[  151.736013][ T1180] ata3: found unknown device (class 0)
+[  151.738841][ T1180] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  151.741500][ T1180] ata3: link online but 1 devices misclassified, retrying
+[  151.744268][ T1180] ata3: reset failed (errno=-11), retrying in 10 secs
+[  161.973109][ T1180] ata3: found unknown device (class 0)
+[  161.975394][ T1180] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  161.977574][ T1180] ata3: link online but 1 devices misclassified, retrying
+[  161.980085][ T1180] ata3: reset failed (errno=-11), retrying in 35 secs
+[  196.852508][ T1180] ata3: limiting SATA link speed to 1.5 Gbps
+[  197.175104][ T1180] ata3: found unknown device (class 0)
+[  197.177710][ T1180] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  197.182125][ T1180] ata3: link online but 1 devices misclassified, device detection might fail
+[  197.504335][ T1184] ata4: found unknown device (class 0)
+[  197.506413][ T1184] ata4: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  197.508798][ T1184] ata4: link online but 1 devices misclassified, retrying
+[  197.511928][ T1184] ata4: reset failed (errno=-11), retrying in 10 secs
+[  208.056076][ T1184] ata4: found unknown device (class 0)
+[  208.058924][ T1184] ata4: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  208.062687][ T1184] ata4: link online but 1 devices misclassified, retrying
+[  208.064869][ T1184] ata4: reset failed (errno=-11), retrying in 10 secs
+[  218.297244][ T1184] ata4: found unknown device (class 0)
+[  218.300279][ T1184] ata4: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  218.303626][ T1184] ata4: link online but 1 devices misclassified, retrying
+[  218.306365][ T1184] ata4: reset failed (errno=-11), retrying in 35 secs
+[  253.172243][ T1184] ata4: limiting SATA link speed to 1.5 Gbps
+[  253.494634][ T1184] ata4: found unknown device (class 0)
+[  253.496534][ T1184] ata4: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  253.498855][ T1184] ata4: link online but 1 devices misclassified, device detection might fail
+[  253.824589][ T1190] ata5: found unknown device (class 0)
+[  253.827020][ T1190] ata5: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  253.829602][ T1190] ata5: link online but 1 devices misclassified, retrying
+[  253.832804][ T1190] ata5: reset failed (errno=-11), retrying in 10 secs
+[  264.376116][ T1190] ata5: found unknown device (class 0)
+[  264.378327][ T1190] ata5: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  264.380798][ T1190] ata5: link online but 1 devices misclassified, retrying
+[  264.383245][ T1190] ata5: reset failed (errno=-11), retrying in 10 secs
+[  274.616462][ T1190] ata5: found unknown device (class 0)
+[  274.618678][ T1190] ata5: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  274.621318][ T1190] ata5: link online but 1 devices misclassified, retrying
+[  274.623646][ T1190] ata5: reset failed (errno=-11), retrying in 35 secs
+[  309.493012][ T1190] ata5: limiting SATA link speed to 1.5 Gbps
+[  309.815813][ T1190] ata5: found unknown device (class 0)
+[  309.818091][ T1190] ata5: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  309.821096][ T1190] ata5: link online but 1 devices misclassified, device detection might fail
+[  310.143878][ T1194] ata6: found unknown device (class 0)
+[  310.146442][ T1194] ata6: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  310.148884][ T1194] ata6: link online but 1 devices misclassified, retrying
+[  310.151355][ T1194] ata6: reset failed (errno=-11), retrying in 10 secs
+[  320.696493][ T1194] ata6: found unknown device (class 0)
+[  320.699701][ T1194] ata6: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  320.702682][ T1194] ata6: link online but 1 devices misclassified, retrying
+[  320.706328][ T1194] ata6: reset failed (errno=-11), retrying in 10 secs
+[  330.936862][ T1194] ata6: found unknown device (class 0)
+[  330.938949][ T1194] ata6: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  330.940912][ T1194] ata6: link online but 1 devices misclassified, retrying
+[  330.944119][ T1194] ata6: reset failed (errno=-11), retrying in 35 secs
+[  348.132808][ T1412] kworker/u18:37 (1412) used greatest stack depth: 26616 bytes left
+[  348.542481][ T5058] kworker/u17:6 (5058) used greatest stack depth: 26376 bytes left
+[  348.545001][  T171] kworker/u17:3 (171) used greatest stack depth: 26104 bytes left
+[  348.548027][   T85] kworker/u17:2 (85) used greatest stack depth: 25816 bytes left
+[  365.812166][ T1194] ata6: limiting SATA link speed to 1.5 Gbps
+[  366.132830][ T1194] ata6: found unknown device (class 0)
+[  366.135112][ T1194] ata6: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  366.137120][ T1194] ata6: link online but 1 devices misclassified, device detection might fail
+[  366.462363][ T1199] ata7: found unknown device (class 0)
+[  366.464408][ T1199] ata7: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  366.466698][ T1199] ata7: link online but 1 devices misclassified, retrying
+[  366.469148][ T1199] ata7: reset failed (errno=-11), retrying in 10 secs
+[  377.017702][ T1199] ata7: found unknown device (class 0)
+[  377.020897][ T1199] ata7: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  377.024169][ T1199] ata7: link online but 1 devices misclassified, retrying
+[  377.027144][ T1199] ata7: reset failed (errno=-11), retrying in 10 secs
+[  387.257277][ T1199] ata7: found unknown device (class 0)
+[  387.259205][ T1199] ata7: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  387.261369][ T1199] ata7: link online but 1 devices misclassified, retrying
+[  387.264153][ T1199] ata7: reset failed (errno=-11), retrying in 35 secs
+[  422.132485][ T1199] ata7: limiting SATA link speed to 1.5 Gbps
+[  422.455879][ T1199] ata7: found unknown device (class 0)
+[  422.458393][ T1199] ata7: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  422.461128][ T1199] ata7: link online but 1 devices misclassified, device detection might fail
+[  422.783301][ T1205] ata8: found unknown device (class 0)
+[  422.785622][ T1205] ata8: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  422.788389][ T1205] ata8: link online but 1 devices misclassified, retrying
+[  422.792222][ T1205] ata8: reset failed (errno=-11), retrying in 10 secs
+[  433.336136][ T1205] ata8: found unknown device (class 0)
+[  433.338541][ T1205] ata8: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  433.340841][ T1205] ata8: link online but 1 devices misclassified, retrying
+[  433.343037][ T1205] ata8: reset failed (errno=-11), retrying in 10 secs
+[  443.575296][ T1205] ata8: found unknown device (class 0)
+[  443.577642][ T1205] ata8: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  443.580198][ T1205] ata8: link online but 1 devices misclassified, retrying
+[  443.582704][ T1205] ata8: reset failed (errno=-11), retrying in 35 secs
+[  478.452096][ T1205] ata8: limiting SATA link speed to 1.5 Gbps
+[  478.774063][ T1205] ata8: found unknown device (class 0)
+[  478.776019][ T1205] ata8: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  478.778240][ T1205] ata8: link online but 1 devices misclassified, device detection might fail
+[  479.104145][ T1210] ata9: found unknown device (class 0)
+[  479.106380][ T1210] ata9: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  479.109155][ T1210] ata9: link online but 1 devices misclassified, retrying
+[  479.111686][ T1210] ata9: reset failed (errno=-11), retrying in 10 secs
+[  489.654058][ T1210] ata9: found unknown device (class 0)
+[  489.656102][ T1210] ata9: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  489.658301][ T1210] ata9: link online but 1 devices misclassified, retrying
+[  489.660143][ T1210] ata9: reset failed (errno=-11), retrying in 10 secs
+[  499.896010][ T1210] ata9: found unknown device (class 0)
+[  499.898020][ T1210] ata9: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  499.900231][ T1210] ata9: link online but 1 devices misclassified, retrying
+[  499.904751][ T1210] ata9: reset failed (errno=-11), retrying in 35 secs
+[  534.772091][ T1210] ata9: limiting SATA link speed to 1.5 Gbps
+[  535.096639][ T1210] ata9: found unknown device (class 0)
+[  535.098797][ T1210] ata9: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  535.100911][ T1210] ata9: link online but 1 devices misclassified, device detection might fail
+[  535.422967][ T1215] ata10: found unknown device (class 0)
+[  535.425095][ T1215] ata10: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  535.427215][ T1215] ata10: link online but 1 devices misclassified, retrying
+[  535.429928][ T1215] ata10: reset failed (errno=-11), retrying in 10 secs
+[  545.972144][ T1215] ata10: found unknown device (class 0)
+[  545.974897][ T1215] ata10: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  545.977896][ T1215] ata10: link online but 1 devices misclassified, retrying
+[  545.980743][ T1215] ata10: reset failed (errno=-11), retrying in 10 secs
+[  556.215975][ T1215] ata10: found unknown device (class 0)
+[  556.218245][ T1215] ata10: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  556.221570][ T1215] ata10: link online but 1 devices misclassified, retrying
+[  556.224226][ T1215] ata10: reset failed (errno=-11), retrying in 35 secs
+[  591.092093][ T1215] ata10: limiting SATA link speed to 1.5 Gbps
+[  591.413330][ T1215] ata10: found unknown device (class 0)
+[  591.415359][ T1215] ata10: SATA link up 3.0 Gbps (SStatus 123 SControl 310)
+[  591.417417][ T1215] ata10: link online but 1 devices misclassified, device detection might fail
+[  591.742089][ T1220] ata11: found unknown device (class 0)
+[  591.744387][ T1220] ata11: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  591.746703][ T1220] ata11: link online but 1 devices misclassified, retrying
+[  591.748612][ T1220] ata11: reset failed (errno=-11), retrying in 10 secs
+[  602.295932][ T1220] ata11: found unknown device (class 0)
+[  602.298754][ T1220] ata11: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[  602.301273][ T1220] ata11: link online but 1 devices misclassified, retrying
+[  602.303787][ T1220] ata11: reset failed (errno=-11), retrying in 10 secs

@@ -1,0 +1,2775 @@
+last executing test programs:
+
+45m6.924832943s ago: executing program 1 (id=2):
+openat(0xffffffffffffff9c, &(0x7f0000000040)='/dev/dri/renderD128', 0x0, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000080)='/dev/dri/renderD128', 0x1, 0x0)
+openat(0xffffffffffffff9c, &(0x7f00000000c0)='/dev/dri/renderD128', 0x2, 0x0)
+openat(0xffffffffffffff9c, &(0x7f0000000100)='/dev/dri/renderD128', 0x800, 0x0)
+
+45m6.911725707s ago: executing program 0 (id=1):
+ioctl(0xffffffffffffffff, 0x0, &(0x7f0000000000))
+
+45m6.857811048s ago: executing program 0 (id=6):
+syz_open_dev$dri(&(0x7f0000000040), 0x0, 0x0)
+syz_open_dev$dri(&(0x7f0000000080), 0x0, 0x1)
+syz_open_dev$dri(&(0x7f00000000c0), 0x0, 0x2)
+syz_open_dev$dri(&(0x7f0000000100), 0x0, 0x800)
+syz_open_dev$dri(&(0x7f0000000140), 0x1, 0x0)
+syz_open_dev$dri(&(0x7f0000000180), 0x1, 0x1)
+syz_open_dev$dri(&(0x7f00000001c0), 0x1, 0x2)
+syz_open_dev$dri(&(0x7f0000000200), 0x1, 0x800)
+syz_open_dev$dri(&(0x7f0000000240), 0x2, 0x0)
+syz_open_dev$dri(&(0x7f0000000280), 0x2, 0x1)
+syz_open_dev$dri(&(0x7f00000002c0), 0x2, 0x2)
+syz_open_dev$dri(&(0x7f0000000300), 0x2, 0x800)
+syz_open_dev$dri(&(0x7f0000000340), 0x3, 0x0)
+syz_open_dev$dri(&(0x7f0000000380), 0x3, 0x1)
+syz_open_dev$dri(&(0x7f00000003c0), 0x3, 0x2)
+syz_open_dev$dri(&(0x7f0000000400), 0x3, 0x800)
+syz_open_dev$dri(&(0x7f0000000440), 0x4, 0x0)
+syz_open_dev$dri(&(0x7f0000000480), 0x4, 0x1)
+syz_open_dev$dri(&(0x7f00000004c0), 0x4, 0x2)
+syz_open_dev$dri(&(0x7f0000000500), 0x4, 0x800)
+
+45m6.857618671s ago: executing program 1 (id=7):
+syz_open_dev$drirender(&(0x7f0000000040), 0x0, 0x0)
+syz_open_dev$drirender(&(0x7f0000000080), 0x0, 0x1)
+syz_open_dev$drirender(&(0x7f00000000c0), 0x0, 0x2)
+syz_open_dev$drirender(&(0x7f0000000100), 0x0, 0x800)
+syz_open_dev$drirender(&(0x7f0000000140), 0x1, 0x0)
+syz_open_dev$drirender(&(0x7f0000000180), 0x1, 0x1)
+syz_open_dev$drirender(&(0x7f00000001c0), 0x1, 0x2)
+syz_open_dev$drirender(&(0x7f0000000200), 0x1, 0x800)
+syz_open_dev$drirender(&(0x7f0000000240), 0x2, 0x0)
+syz_open_dev$drirender(&(0x7f0000000280), 0x2, 0x1)
+syz_open_dev$drirender(&(0x7f00000002c0), 0x2, 0x2)
+syz_open_dev$drirender(&(0x7f0000000300), 0x2, 0x800)
+syz_open_dev$drirender(&(0x7f0000000340), 0x3, 0x0)
+syz_open_dev$drirender(&(0x7f0000000380), 0x3, 0x1)
+syz_open_dev$drirender(&(0x7f00000003c0), 0x3, 0x2)
+syz_open_dev$drirender(&(0x7f0000000400), 0x3, 0x800)
+syz_open_dev$drirender(&(0x7f0000000440), 0x4, 0x0)
+syz_open_dev$drirender(&(0x7f0000000480), 0x4, 0x1)
+syz_open_dev$drirender(&(0x7f00000004c0), 0x4, 0x2)
+syz_open_dev$drirender(&(0x7f0000000500), 0x4, 0x800)
+
+45m6.611076557s ago: executing program 1 (id=8):
+mmap(&(0x7efffffff000/0x1000)=nil, 0x1000, 0x0, 0x32, 0xffffffffffffffff, 0x0)
+mmap(&(0x7f0000000000/0x1000000)=nil, 0x1000000, 0x7, 0x32, 0xffffffffffffffff, 0x0)
+mmap(&(0x7f0001000000/0x1000)=nil, 0x1000, 0x0, 0x32, 0xffffffffffffffff, 0x0)
+
+45m6.509011188s ago: executing program 0 (id=9):
+mmap(&(0x7efffffff000/0x1000)=nil, 0x1000, 0x0, 0x32, 0xffffffffffffffff, 0x0)
+mmap(&(0x7f0000000000/0x1000000)=nil, 0x1000000, 0x7, 0x32, 0xffffffffffffffff, 0x0)
+mmap(&(0x7f0001000000/0x1000)=nil, 0x1000, 0x0, 0x32, 0xffffffffffffffff, 0x0)
+
+45m6.409898744s ago: executing program 0 (id=13):
+mmap(&(0x7efffffff000/0x1000)=nil, 0x1000, 0x0, 0x32, 0xffffffffffffffff, 0x0)
+mmap(&(0x7f0000000000/0x1000000)=nil, 0x1000000, 0x7, 0x32, 0xffffffffffffffff, 0x0)
+mmap(&(0x7f0001000000/0x1000)=nil, 0x1000, 0x0, 0x32, 0xffffffffffffffff, 0x0)
+
+22.386916094s ago: executing program 2 (id=4985):
+r0 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x6c8400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r1=>0x0], 0x0, 0x0, 0x0, 0x1})
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0x1, 0x2000)
+r3 = syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0x40800)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r3, 0xc02064b2, 0x0)
+ioctl$DRM_IOCTL_MODE_GETPLANE(0xffffffffffffffff, 0xc02064b6, &(0x7f00000003c0)={0x0, <r4=>0x0, <r5=>0x0, 0x0, 0x0, 0x7, &(0x7f0000000380)=[0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0]})
+ioctl$DRM_IOCTL_MODE_GETFB2(r0, 0xc06864ce, &(0x7f00000004c0)={r5, 0x53eb, 0x800, 0x3, 0x7, [], [0xfffffffb, 0x80000001, 0x1, 0x7ffffffc], [0x6, 0x2, 0x5, 0x1], [0xfff, 0x7f, 0x8000, 0x4]})
+r6 = syz_open_dev$dri(&(0x7f0000000540), 0xfaa, 0x800)
+ioctl$DRM_IOCTL_SET_VERSION(r6, 0xc0106407, &(0x7f0000000100)={0x1, 0x0, 0x2, 0x1})
+ioctl$DRM_IOCTL_MODE_MAP_DUMB(r3, 0xc01064b3, &(0x7f0000000100))
+r7 = syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffc, 0x12d800)
+ioctl$DRM_IOCTL_GET_CAP(r2, 0xc010640c, &(0x7f0000000200)={0x4})
+r8 = syz_open_dev$dri(0x0, 0xe3c, 0x121200)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(0xffffffffffffffff, 0xc04064a0, &(0x7f0000000140)={&(0x7f0000000040)=[<r9=>0x0, <r10=>0x0], 0x0, 0x0, 0x0, 0x2})
+ioctl$DRM_IOCTL_PRIME_HANDLE_TO_FD(r8, 0xc00c642d, 0x0)
+ioctl$DRM_IOCTL_GET_MAP(r7, 0xc0286404, &(0x7f0000000440)={&(0x7f0000ffc000/0x1000)=nil})
+ioctl$DRM_IOCTL_MODE_RMFB(r8, 0xc00464af, &(0x7f0000000300))
+r11 = syz_open_dev$dri(&(0x7f0000000000), 0xa, 0x1)
+ioctl$DRM_IOCTL_SET_SAREA_CTX(r11, 0x4010641c, 0x0)
+r12 = syz_open_dev$dri(&(0x7f0000000000), 0x0, 0x103082)
+ioctl$DRM_IOCTL_MODE_SETCRTC(r12, 0xc06864a2, &(0x7f0000000ac0)={0x0, 0x0, 0x0, r9, 0xf, 0x0, 0x5, 0x556f, {0xffff36b0, 0x3, 0xb4, 0x400, 0x4, 0x4, 0x7, 0x100, 0xab50, 0xa9, 0x2, 0x5, 0x0, 0x9, "f23eeb780d9e5ad71a7cc9ad72a5e28931bc59ef9964b4e43997223619ae3db4"}})
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(0xffffffffffffffff, 0xc04064a0, &(0x7f0000000840)={&(0x7f0000000740), 0x0, 0x0, 0x0})
+r13 = syz_open_dev$dri(&(0x7f0000000a80), 0x0, 0x800)
+ioctl$DRM_IOCTL_MODE_SETCRTC(r13, 0xc06864a2, &(0x7f0000000b40)={0x0, 0x0, r4, r10, 0xbf, 0x6d3e83c4, 0x3, 0x800, {0x81, 0x3, 0x3, 0x9, 0x2, 0x7, 0x3, 0xefe, 0xb5, 0xffff, 0x1, 0x6, 0x6, 0x44840, "ac9e0c6e63d8ecff0631dbdba055a74cbe5c44e7a48f000000b57ac1baa8fe8b"}})
+r14 = syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffb, 0x0)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r14, 0xc01064bd, &(0x7f0000000180)={&(0x7f0000000080)="7c2772857a834be7ae4d44d445cf9005999d5e56438892322b2223a8aaaf9e9f14a4b2fd8f003c5fc63d45c1284d4415120f0f47da6951fb126bf521dc909d6e7ec264529cc196ac9ee1382d36f63eda11484bd7668d5ccf64cf963a2818cfc4fa70eac3ef17b361938f4e7f0057adae5fcf13357a6af880bf70e132cc8655cfc24841ec657da1d381584e00fe0891949c717f9fc004f503131ab7f85d821ba515686ef591c936b831c077a03a13cd7894151eef069b62a937663176b4a37301", 0xc0})
+ioctl$DRM_IOCTL_RM_MAP(r3, 0x4028641b, &(0x7f00000002c0)={0x0, 0x0, 0x0, 0x0, &(0x7f0000ffc000/0x1000)=nil})
+syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r7, 0xc05064a7, &(0x7f0000000240)={0x0, 0x0, &(0x7f0000000140), &(0x7f0000000380), 0x0, 0x0, 0x0, 0x0, r1})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(r14, 0xc04064aa, &(0x7f0000000040)={0x0, &(0x7f0000000340)=[{}], 0x0, 0x0, '\x00', 0x0, 0x1})
+
+22.326955492s ago: executing program 4 (id=4988):
+r0 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0xa0400)
+ioctl$DRM_IOCTL_GET_CAP(r0, 0xc010640c, &(0x7f0000000080)={0x6})
+r1 = syz_open_dev$dri(&(0x7f0000000340), 0xfaa, 0x800)
+ioctl$DRM_IOCTL_SET_VERSION(r1, 0xc0106407, &(0x7f0000000100)={0x1, 0x0, 0x2, 0x1})
+ioctl$DRM_IOCTL_GEM_FLINK(r0, 0xc008640a, &(0x7f0000000040))
+syz_open_dev$dri(&(0x7f0000000140), 0x9, 0x48000)
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0x2, 0x1)
+ioctl$DRM_IOCTL_MODE_ADDFB(r2, 0xc01c64ae, &(0x7f0000000040)={0x0, 0x2000, 0x1, 0x1000, 0x18, 0x18, 0x5})
+syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0xe500)
+r3 = syz_open_dev$dri(&(0x7f0000000000), 0x2, 0x1)
+ioctl$DRM_IOCTL_MODE_ADDFB(r3, 0xc01c64ae, &(0x7f0000000040)={0x0, 0x7, 0x1, 0x1000, 0x18, 0x18, 0x5})
+r4 = syz_open_dev$dri(&(0x7f0000000000), 0x5, 0x400200)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r4, 0xc02064b2, &(0x7f0000000080)={0x9, 0x8, 0x2})
+r5 = syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0xe500)
+syz_open_dev$dri(&(0x7f0000000000), 0x2, 0x1)
+ioctl$DRM_IOCTL_SYNCOBJ_WAIT(r5, 0xc02864c3, 0x0)
+syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffc, 0x10d000)
+r6 = syz_open_dev$dri(0x0, 0xfffffffffffffffd, 0x2)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r6, 0xc02064b2, &(0x7f0000000040)={0x10001, 0x5, 0x9, 0x0, <r7=>0x0})
+ioctl$DRM_IOCTL_MODE_MAP_DUMB(r6, 0xc01064b3, &(0x7f0000000200)={r7})
+r8 = syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffc, 0x0)
+ioctl$DRM_IOCTL_MODE_LIST_LESSEES(0xffffffffffffffff, 0xc01064c7, 0x0)
+r9 = syz_open_dev$dri(0xfffffffffffffffe, 0xf2b, 0x21ab43)
+r10 = syz_open_dev$dri(&(0x7f00000000c0), 0x0, 0x30141)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r10, 0xc01064bd, 0x0)
+ioctl$DRM_IOCTL_GEM_OPEN(r8, 0xc010640b, 0x0)
+syz_open_dev$dri(&(0x7f0000000d40), 0x3, 0x434480)
+syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffc, 0x0)
+ioctl$DRM_IOCTL_GEM_CLOSE(r9, 0x40086409, 0x0)
+ioctl$DRM_IOCTL_MODE_CREATE_LEASE(0xffffffffffffffff, 0xc01864c6, 0x0)
+
+22.326746044s ago: executing program 2 (id=4989):
+r0 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x1)
+ioctl$DRM_IOCTL_MODE_GETCRTC(0xffffffffffffffff, 0xc06864a1, 0x0)
+ioctl$DRM_IOCTL_MODE_PAGE_FLIP(r0, 0xc01864b0, &(0x7f0000000240)={0x0, 0x0, 0x5, 0xfffffff7})
+r1 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r1, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r2=>0x0})
+syz_open_dev$dri(0x0, 0x0, 0x1)
+syz_open_dev$dri(0x0, 0x3fffc0, 0x48000)
+r3 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r3, 0xc02064b2, 0x0)
+r4 = syz_open_dev$dri(&(0x7f0000000380), 0x3fffc0, 0x48000)
+r5 = syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0xa0a03)
+ioctl$DRM_IOCTL_GEM_OPEN(r5, 0xc010640b, &(0x7f0000000840))
+r6 = syz_open_dev$dri(&(0x7f0000000180), 0x3, 0x4001)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r6, 0xc04064a0, &(0x7f0000000140)={0x0, &(0x7f0000000040)=[0x0], &(0x7f00000000c0)=[0x0], &(0x7f0000000100)=[0x0], 0x0, 0x1, 0x1, 0x1})
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r4, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r7=>0x0})
+r8 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r8, 0xc02064b2, &(0x7f0000000040)={0xa, 0x8, 0x10000})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r4, 0xc00464b4, &(0x7f0000000780)={r7})
+r9 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x2a500)
+r10 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+r11 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r11, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r12=>0x0], 0x0, 0x0, 0x0, 0x1})
+r13 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x2a500)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r13, 0xc01064bd, &(0x7f0000000140)={&(0x7f00000000c0)="b08c45", 0x3, <r14=>0x0})
+ioctl$DRM_IOCTL_MODE_OBJ_GETPROPERTIES(r13, 0xc02064b9, &(0x7f00000003c0)={0x0, 0x0, 0x0, r14})
+ioctl$DRM_IOCTL_MODE_CREATE_LEASE(r10, 0xc01864c6, &(0x7f0000001400)={&(0x7f00000013c0)=[r12], 0x1})
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r9, 0x401c5820, &(0x7f0000000380)={0xc6, 0xc0, 0x4})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r1, 0xc00464b4, &(0x7f0000000780)={r2})
+
+22.326600103s ago: executing program 5 (id=4990):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+r1 = syz_open_dev$dri(&(0x7f0000000080), 0x0, 0x20000)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r1, 0xc01064bd, &(0x7f0000000340)={&(0x7f0000000380)="cddaa56ee1", 0x5, <r2=>0x0})
+syz_open_dev$dri(&(0x7f0000000840), 0x495c, 0x400)
+ioctl$DRM_IOCTL_MODE_DESTROYPROPBLOB(r0, 0xc00464be, &(0x7f0000000180)={r2})
+
+14.668833305s ago: executing program 5 (id=4991):
+r0 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r1=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(0xffffffffffffffff, 0xc05064a7, &(0x7f0000000240)={0x0, 0x0, &(0x7f0000000140)=[<r2=>0x0], &(0x7f0000000340), 0x0, 0x1, 0x0, 0x0, r1})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(0xffffffffffffffff, 0xc04064aa, &(0x7f00000002c0)={0x0, 0x0, r2, 0x0, '\x00', 0x0, 0x300})
+
+14.668376792s ago: executing program 4 (id=4992):
+r0 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+r1 = syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0x2a2a03)
+ioctl$DRM_IOCTL_MODE_ADDFB(r1, 0xc01c64ae, 0x0)
+ioctl$DRM_IOCTL_AGP_ENABLE(r0, 0x40086432, &(0x7f00000000c0)=0x2)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r2=>0x0], 0x0, 0x0, 0x0, 0x1})
+r3 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+r4 = syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0x40800)
+r5 = syz_open_dev$dri(&(0x7f0000000000), 0x2ae6, 0x4f4140)
+ioctl$DRM_IOCTL_GEM_FLINK(r0, 0xc008640a, &(0x7f0000000040)={0x0, <r6=>0x0})
+ioctl$DRM_IOCTL_GEM_OPEN(r5, 0xc010640b, &(0x7f0000000080)={r6})
+ioctl$DRM_IOCTL_AGP_ACQUIRE(r5, 0x6430)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r4, 0xc04064a0, &(0x7f0000000180)={0x0, &(0x7f0000001180)=[0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r3, 0xc05064a7, &(0x7f0000000240)={0x0, 0x0, &(0x7f0000000140)=[<r7=>0x0], &(0x7f0000000340), 0x0, 0x1, 0x0, 0x0, r2})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(r3, 0xc04064aa, &(0x7f00000002c0)={0x0, 0x0, r7})
+
+14.668173202s ago: executing program 2 (id=4993):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r0, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r1=>0x0})
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r2, 0xc02064b2, &(0x7f0000000040)={0x200000b, 0x8, 0x10001})
+r3 = syz_open_dev$dri(0x0, 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r3, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r4=>0x0})
+r5 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r5, 0xc02064b2, &(0x7f0000000040)={0xa, 0x8, 0x10000})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r3, 0xc00464b4, &(0x7f0000000780)={r4})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r0, 0xc00464b4, &(0x7f0000000780)={r1})
+r6 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0xa0580)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r6, 0xc04064a0, &(0x7f0000000100)={0x0, &(0x7f0000000040)=[0x0], 0x0, 0x0, 0x0, 0x1, 0xfffffffffffffecc})
+syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0x2a0a02)
+syz_open_dev$dri(&(0x7f0000000140), 0x1, 0x2e0200)
+syz_open_dev$dri(&(0x7f0000000380), 0xfaa, 0x800)
+r7 = syz_open_dev$dri(&(0x7f0000000000), 0xa, 0x1)
+ioctl$DRM_IOCTL_GET_UNIQUE(r7, 0xc0106401, &(0x7f0000000340)={0xfffffffffffffe09, 0x0})
+ioctl$DRM_IOCTL_NEW_CTX(r2, 0x40086425, &(0x7f0000000200)={0x0, 0x2})
+r8 = syz_open_dev$dri(&(0x7f0000000f40), 0xfffffffffffffffe, 0xb0e03)
+syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0xa0a03)
+ioctl$DRM_IOCTL_MODE_ADDFB(r8, 0xc01c64ae, &(0x7f0000000100)={0x0, 0xa, 0xff, 0xff, 0x2, 0x7fff, 0x6})
+syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+r9 = syz_open_dev$dri(&(0x7f00000000c0), 0xe, 0x0)
+ioctl$DRM_IOCTL_DMA(r9, 0xc0406429, &(0x7f0000000540)={0x0, 0x7, &(0x7f0000000280)=[0xc, 0x1, 0x1, 0xfffffc01, 0x3, 0x200, 0xffff], &(0x7f00000002c0)=[0x6, 0x5, 0x9, 0x0, 0x3], 0x10, 0x7, 0x7, &(0x7f00000003c0)=[0x7fff, 0x8ea6, 0x1, 0x0, 0xb0ce6446, 0x3, 0x4], &(0x7f0000000440)=[0x1, 0x0, 0x7ff, 0xf, 0xf0, 0x7, 0x0, 0x730]})
+r10 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r10, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r11=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r10, 0xc05064a7, &(0x7f00000004c0)={0x0, 0x0, &(0x7f0000000300)=[0x0], 0x0, 0x0, 0x1, 0x0, 0x0, r11})
+ioctl$DRM_IOCTL_SET_CLIENT_CAP(r9, 0x4010640d, &(0x7f0000000040)={0x2})
+ioctl$DRM_IOCTL_MODE_ADDFB(r8, 0xc01c64ae, &(0x7f0000000100)={0x0, 0xa, 0xff, 0x4, 0x4, 0xa, 0x7fff})
+syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x1)
+
+14.667497294s ago: executing program 3 (id=4994):
+r0 = syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0xa0a03)
+ioctl$DRM_IOCTL_MODE_ADDFB(r0, 0xc01c64ae, &(0x7f0000000100)={0x0, 0xa, 0xff, 0x4, 0x20, 0x6, 0x4})
+r1 = syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffdfff9, 0x414002)
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0xa, 0x1)
+ioctl$DRM_IOCTL_GET_MAGIC(r2, 0x80046402, 0x0)
+ioctl$DRM_IOCTL_AUTH_MAGIC(r2, 0x40046411, &(0x7f00000000c0)=0x1)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r1, 0xc04064a0, &(0x7f0000000140)={0x0, &(0x7f0000000080)=[<r3=>0x0], 0x0, 0x0, 0x0, 0x1})
+r4 = syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0xe500)
+syz_open_dev$dri(&(0x7f0000000000), 0x2, 0x1)
+ioctl$DRM_IOCTL_SYNCOBJ_WAIT(r4, 0xc02864c3, 0x0)
+r5 = syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0x40800)
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r5, 0xc05064a7, 0x0)
+ioctl$DRM_IOCTL_MODE_ATOMIC(r5, 0xc03864bc, &(0x7f0000000a80)={0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x200})
+ioctl$DRM_IOCTL_MODE_GETGAMMA(r1, 0xc02064a4, &(0x7f0000000280)={r3, 0x0, 0x0, 0x0, 0x0})
+
+14.608754465s ago: executing program 5 (id=4995):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+r1 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_ADDFB(r1, 0xc01c64ae, &(0x7f00000001c0)={0x0, 0x2, 0x1, 0x80, 0x8, 0x200, 0x3})
+ioctl$DRM_IOCTL_GET_CAP(r0, 0xc010640c, &(0x7f0000000080)={0x12})
+r2 = syz_open_dev$dri(&(0x7f0000000340), 0xfaa, 0x800)
+ioctl$DRM_IOCTL_GET_CAP(r2, 0xc010640c, &(0x7f00000000c0)={0x13})
+syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0xa0a03)
+
+14.608556403s ago: executing program 4 (id=4996):
+r0 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+r1 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r1, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r2=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_CREATE_LEASE(r0, 0xc01864c6, &(0x7f0000001400)={&(0x7f00000013c0)=[r2], 0x1})
+syz_open_dev$dri(&(0x7f0000000840), 0x2, 0x0)
+
+14.608455565s ago: executing program 3 (id=4997):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r0, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r1=>0x0})
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r0, 0xc02064b2, &(0x7f00000001c0)={0x1, 0x1, 0x7})
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+r3 = syz_open_dev$dri(&(0x7f0000000080), 0x0, 0x20000)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r3, 0xc01064bd, &(0x7f0000000340)={&(0x7f0000000380)="cddaa56ee1", 0x5, <r4=>0x0})
+ioctl$DRM_IOCTL_MODE_DESTROYPROPBLOB(r2, 0xc00464be, &(0x7f0000000180)={r4})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r0, 0xc00464b4, &(0x7f0000000780)={r1})
+
+14.608305235s ago: executing program 2 (id=4998):
+r0 = syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0x40800)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000180)={0x0, &(0x7f0000001180)=[0x0], 0x0, 0x0, 0x0, 0x1, 0x0, 0x810})
+
+6.840238084s ago: executing program 5 (id=4999):
+r0 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+r1 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x48000)
+r2 = syz_open_dev$dri(&(0x7f0000000080), 0x0, 0x20000)
+ioctl$DRM_IOCTL_SYNCOBJ_CREATE(r1, 0xc00864bf, &(0x7f0000000100)={<r3=>0x0})
+ioctl$DRM_IOCTL_SYNCOBJ_TIMELINE_SIGNAL(r0, 0xc01864cd, &(0x7f0000000240)={&(0x7f00000001c0)=[r3], &(0x7f0000000200)=[0x29, 0x8, 0x9, 0x2, 0x7, 0xc97, 0xe, 0x0], 0x1})
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r2, 0xc01064bd, &(0x7f0000000340)={&(0x7f0000000380)="cddaa56ee1", 0x5, <r4=>0x0})
+ioctl$DRM_IOCTL_MODE_DESTROYPROPBLOB(r1, 0xc00464be, &(0x7f0000000180)={r4})
+ioctl$DRM_IOCTL_MODE_DESTROYPROPBLOB(r0, 0xc00464be, &(0x7f00000000c0)={r4})
+r5 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x20000)
+syz_open_dev$dri(&(0x7f0000000840), 0x495c, 0x400)
+ioctl$DRM_IOCTL_MODE_GET_LEASE(r5, 0xc01064c8, &(0x7f00000000c0)={0x1, 0x0, &(0x7f0000000040)=[<r6=>0x0]})
+ioctl$DRM_IOCTL_MODE_GETPLANE(r1, 0xc02064b6, &(0x7f0000000540)={r6, 0x0, 0x0, 0x0, 0x0, 0x8, &(0x7f0000000500)=[0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0]})
+ioctl$DRM_IOCTL_MODE_CREATE_LEASE(r0, 0xc01864c6, &(0x7f0000001400)={0x0, 0x0, 0x0, 0x0, <r7=>0xffffffffffffffff})
+r8 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x2a500)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r8, 0xc04064a0, &(0x7f0000000140)={0x0, &(0x7f0000000080)=[<r9=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCRTC(r7, 0xc06864a1, &(0x7f0000000040)={&(0x7f0000000000)=[0x0], 0x1, r9})
+
+6.839423507s ago: executing program 4 (id=5000):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffa, 0x0)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000280)={0x0, &(0x7f00000001c0)=[<r1=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_SETCRTC(r0, 0xc06864a2, &(0x7f00000002c0)={0x0, 0x0, r1, 0x0, 0x10, 0x9, 0x0, 0x13, {0x7, 0x7, 0x1, 0x7fff, 0x6, 0x7, 0x101, 0x2, 0x8, 0x7b59, 0x8, 0x8bd, 0x4, 0x0, "728880b02104841853c764dd555b4fade35d9f61cfd73196b5ab13e2349159cb"}})
+r2 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r2, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r3=>0x0], 0x0, 0x0, 0x0, 0x1})
+r4 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r4, 0xc05064a7, &(0x7f0000000240)={0x0, 0x0, &(0x7f0000000140)=[0x0, 0x0, 0x0], &(0x7f0000000340), 0x0, 0x3, 0x0, 0x0, r3})
+r5 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_UNLOCK(r0, 0x4008642b, &(0x7f0000000440)={0x0, 0x10})
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r5, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r6=>0x0], 0x0, 0x0, 0x0, 0x1})
+syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+ioctl$DRM_IOCTL_MODE_SETCRTC(r0, 0xc06864a2, &(0x7f00000003c0)={&(0x7f0000000040)=[r3, 0x0, r6], 0x3, r1, 0x0, 0x5, 0x7fff, 0xb, 0x0, {0x3, 0x7fff, 0x7, 0xd622, 0xf, 0x4c, 0x142, 0x4, 0x4, 0xfffe, 0x7, 0x6, 0x101, 0x80ef, "5b2d6e8768a3b8a3115da72b545e092f27b2126b1307f8141142bad92c7294a2"}})
+
+6.839063495s ago: executing program 2 (id=5001):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffa, 0x0)
+r1 = syz_open_dev$dri(&(0x7f0000000840), 0x2, 0x0)
+ioctl$DRM_IOCTL_MODE_GETPLANERESOURCES(r0, 0xc01064b5, &(0x7f0000000280)={&(0x7f0000000240)=[0x0, 0x0, 0x0], 0x3})
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0xa, 0x1)
+r3 = syz_open_dev$dri(&(0x7f0000000000), 0xa, 0x1)
+ioctl$DRM_IOCTL_GET_MAGIC(r3, 0x80046402, 0x0)
+ioctl$DRM_IOCTL_GET_MAGIC(r3, 0x80046402, &(0x7f0000000040)=0x3)
+ioctl$DRM_IOCTL_ADD_CTX(r1, 0xc0086420, &(0x7f0000000300)={<r4=>0x0})
+ioctl$DRM_IOCTL_LOCK(r2, 0x4008642a, &(0x7f0000000340)={r4, 0x12})
+ioctl$DRM_IOCTL_MODE_ADDFB(r2, 0xc01c64ae, &(0x7f00000002c0)={0x0, 0x80000000, 0x5, 0x101, 0x2, 0x8, 0x5})
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r0, 0xc01064bd, &(0x7f0000000180)={&(0x7f0000000080)="7c2772857a834be7ae4d44d445cf9005999d5e56438892322b2223a8aaaf9e9f14a4b2fd8f003c5fc63d45c1284d4415120f0f47da6951fb126bf521dc909d6e7ec264529cc196ac9ee1382d36f63eda11484bd7668d5ccf64cf963a2818cfc4fa70eac3ef17b361938f4e7f0057adae5fcf13357a6af880bf70e132cc8655cfc24841ec657da1d381584e00fe0891949c717f9fc004f503131ab7f85d821ba515686ef591c936b831c077a03a13cd7894151eef069b62a937663176b4a373018f", 0x2000000})
+r5 = syz_open_dev$dri(&(0x7f0000000000), 0xfffffffffffffffa, 0x0)
+r6 = syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0xa0a03)
+ioctl$DRM_IOCTL_SYNCOBJ_CREATE(r6, 0xc00864bf, &(0x7f0000000200))
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r5, 0xc01064bd, &(0x7f0000000180)={&(0x7f0000000080)="7c2772857a834be7ae4d44d445cf9005999d5e56438892322b2223a8aaaf9e9f14a4b2fd8f003c5fc63d45c1284d4415120f0f47da6951fb126bf521dc909d6e7ec264529cc196ac9ee1382d36f63eda11484bd7668d5ccf64cf963a2818cfc4fa70eac3ef17b361938f4e7f0057adae5fcf13357a6af880bf70e132cc8655cfc24841ec657da1d381584e00fe0891949c717f9fc004f503131ab7f85d821ba515686ef591c936b831c077a03a13cd7894151eef069b62a937663176b4a373018f", 0x2000000})
+ioctl$DRM_IOCTL_PRIME_HANDLE_TO_FD(r0, 0xc00c642d, &(0x7f0000000040)={0x0, 0x80000, <r7=>0xffffffffffffffff})
+ioctl$DRM_IOCTL_SYNCOBJ_HANDLE_TO_FD_SYNC_FILE(r5, 0xc01864c1, &(0x7f00000001c0)={0x0, 0x1, <r8=>0xffffffffffffffff})
+r9 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x20000)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r9, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r10=>0x0})
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r9, 0xc02064b2, &(0x7f0000000380)={0x1, 0x1, 0x7})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r9, 0xc00464b4, &(0x7f0000000780)={r10})
+r11 = syz_open_dev$dri(&(0x7f0000000000), 0x0, 0x100)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r11, 0xc02064b2, &(0x7f0000000080)={0x8, 0x2, 0x7})
+r12 = syz_open_dev$dri(&(0x7f00000001c0), 0xa8c, 0x80000)
+ioctl$DRM_IOCTL_MODE_GETPLANE(r12, 0xc02064b6, &(0x7f0000000080)={0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0})
+ioctl$DRM_IOCTL_SYNCOBJ_FD_TO_HANDLE_SYNC_FILE(r7, 0xc01864c2, &(0x7f0000000200)={0x0, 0x1, r8})
+
+6.838832824s ago: executing program 3 (id=5002):
+r0 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r1=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r0, 0xc05064a7, &(0x7f00000000c0)={0x0, 0x0, &(0x7f0000000040)=[<r2=>0x0], &(0x7f0000000080), 0x0, 0x1, 0x0, 0x0, r1})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(r0, 0xc04064aa, &(0x7f00000002c0)={0x0, 0x0, r2})
+
+6.713026829s ago: executing program 4 (id=5003):
+r0 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r1=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(0xffffffffffffffff, 0xc05064a7, &(0x7f0000000240)={0x0, 0x0, &(0x7f0000000140)=[<r2=>0x0], &(0x7f0000000340), 0x0, 0x1, 0x0, 0x0, r1})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(0xffffffffffffffff, 0xc04064aa, &(0x7f00000002c0)={0x0, 0x0, r2, 0x0, '\x00', 0x0, 0x300})
+
+6.712771601s ago: executing program 5 (id=5004):
+r0 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r1=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r0, 0xc05064a7, &(0x7f00000000c0)={0x0, 0x0, &(0x7f0000000040)=[<r2=>0x0], &(0x7f0000000080), 0x0, 0x1, 0x0, 0x0, r1})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(r0, 0xc04064aa, &(0x7f00000002c0)={0x0, 0x0, r2}) (fail_nth: 3)
+
+6.707392372s ago: executing program 3 (id=5005):
+r0 = syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0xe500)
+syz_open_dev$dri(&(0x7f0000000000), 0x2, 0x1)
+r1 = syz_open_dev$dri(&(0x7f0000000080), 0x8, 0x20000)
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0x0, 0x141000)
+ioctl$DRM_IOCTL_GET_CAP(r2, 0x5460, 0x0)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r1, 0xc01064bd, 0x0)
+ioctl$DRM_IOCTL_SYNCOBJ_WAIT(r0, 0xc02864c3, 0x0)
+
+6.707196165s ago: executing program 3 (id=5006):
+r0 = syz_open_dev$dri(&(0x7f0000000f40), 0x0, 0xa0a03)
+r1 = syz_open_dev$dri(&(0x7f0000000340), 0xfaa, 0x800)
+ioctl$DRM_IOCTL_GET_CAP(r1, 0xc010640c, &(0x7f00000000c0)={0x13})
+syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+r2 = syz_open_dev$dri(&(0x7f0000000000), 0x0, 0x103000)
+ioctl$DRM_IOCTL_MODE_GETENCODER(r2, 0xc01464a6, &(0x7f0000000140))
+r3 = syz_open_dev$dri(&(0x7f0000000000), 0xa, 0x1)
+ioctl$DRM_IOCTL_GET_MAGIC(r3, 0x80046402, 0x0)
+ioctl$DRM_IOCTL_GET_MAGIC(r3, 0x80046402, &(0x7f0000000040)=0x3)
+r4 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r4, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r5=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r4, 0xc05064a7, &(0x7f00000000c0)={0x0, 0x0, &(0x7f0000000040)=[<r6=>0x0], &(0x7f0000000080), 0x0, 0x1, 0x0, 0x0, r5})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(r4, 0xc04064aa, &(0x7f00000002c0)={0x0, 0x0, r6})
+ioctl$DRM_IOCTL_SYNCOBJ_FD_TO_HANDLE_FD(r0, 0xc01864c2, &(0x7f0000000000)={<r7=>0x0, 0x0, r0})
+ioctl$DRM_IOCTL_SYNCOBJ_FD_TO_HANDLE_FD(r0, 0xc01864c2, &(0x7f0000000040)={<r8=>0x0})
+ioctl$DRM_IOCTL_SYNCOBJ_TIMELINE_WAIT(r0, 0xc03064ca, &(0x7f0000000140)={&(0x7f0000000080)=[r7, r8], &(0x7f00000000c0)=[0x3, 0x100, 0xd3f, 0x5, 0x0, 0x4, 0x9, 0x6], 0x400, 0x2, 0x1})
+r9 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x1)
+ioctl$DRM_IOCTL_SYNCOBJ_FD_TO_HANDLE_SYNC_FILE(r9, 0xc01864c2, &(0x7f0000000040))
+ioctl$DRM_IOCTL_AGP_ENABLE(r0, 0x40086432, &(0x7f0000000180)=0x63)
+ioctl$DRM_IOCTL_MODE_ADDFB(r0, 0xc01c64ae, &(0x7f0000000100)={0x0, 0xa, 0xff, 0x4, 0x20, 0x6, 0x7fff})
+
+1.886516ms ago: executing program 5 (id=5007):
+r0 = syz_open_dev$dri(0x0, 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400)=[<r1=>0x0], 0x0, 0x0, 0x0, 0x1})
+r2 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r2, 0xc05064a7, &(0x7f0000000240)={0x0, 0x0, &(0x7f0000000140)=[<r3=>0x0], &(0x7f0000000340), 0x0, 0x1, 0x0, 0x0, r1})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(r2, 0xc04064aa, &(0x7f00000002c0)={0x0, &(0x7f0000000040)=[{}], r3, 0x0, '\x00', 0x300, 0x1})
+
+475.307µs ago: executing program 4 (id=5008):
+r0 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r0, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000400), 0x0})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r0, 0xc05064a7, &(0x7f00000000c0)={0x0, 0x0, &(0x7f0000000040)=[<r1=>0x0], &(0x7f0000000080), 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_GETPROPERTY(r0, 0xc04064aa, &(0x7f00000002c0)={0x0, 0x0, r1})
+
+204.787µs ago: executing program 2 (id=5009):
+r0 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x80203)
+ioctl$DRM_IOCTL_MODE_CREATE_LEASE(r0, 0xc01864c6, &(0x7f0000001400)={0x0})
+ioctl$DRM_IOCTL_MODE_GETPLANE(r0, 0xc02064b6, &(0x7f0000000040)={0x0, <r1=>0x0, 0x0, 0x0, 0x0, 0x4, &(0x7f0000000000)=[0x0, 0x0, 0x0, 0x0]})
+ioctl$DRM_IOCTL_MODE_CURSOR(r0, 0xc01c64a3, &(0x7f0000000080)={0x3, r1, 0xfffffffb, 0xd7, 0x6, 0x4, 0x800})
+
+0s ago: executing program 3 (id=5010):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0x0, 0x20100)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r0, 0xc01064bd, &(0x7f0000000640)={&(0x7f0000000580)="e7f778", 0x3})
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r0, 0xc01064bd, &(0x7f0000000140)={&(0x7f0000000040)="8e0b8e", 0x3, <r1=>0x0})
+ioctl$DRM_IOCTL_MODE_DESTROYPROPBLOB(r0, 0xc00464be, &(0x7f0000000180)={r1})
+ioctl$DRM_IOCTL_MODE_LIST_LESSEES(r0, 0xc01064c7, &(0x7f00000000c0)={0x4, 0x0, &(0x7f0000000080)=[0x0, 0x0, 0x0, 0x0]})
+
+0s ago: executing program 4 (id=5012):
+r0 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x2a500)
+r1 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x53f980)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r1, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r2=>0x0})
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r1, 0xc02064b2, &(0x7f00000001c0)={0x1, 0x1, 0x7})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r1, 0xc00464b4, &(0x7f0000000780)={r2})
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r0, 0xc02064b2, &(0x7f0000000080)={0x8, 0x4, 0x10000, 0x0, <r3=>0x0})
+syz_open_dev$dri(&(0x7f0000000300), 0xfffffffffffffffa, 0x40800)
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r1, 0xc05064a7, &(0x7f0000000f00)={0x0, 0x0, 0x0, 0x0})
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r0, 0xc02064d2, &(0x7f0000000380)={0x1, 0xfffffffd, 0xffff})
+ioctl$DRM_IOCTL_MODE_DESTROY_DUMB(r0, 0xc00464b4, &(0x7f0000000780)={r3})
+syz_open_dev$dri(&(0x7f0000000000), 0x2, 0x1)
+r4 = syz_open_dev$dri(&(0x7f0000000000), 0x7fffffff, 0x830180)
+ioctl$DRM_IOCTL_MODE_GET_LEASE(r4, 0xc01064c8, &(0x7f00000000c0)={0x1, 0x0, &(0x7f0000000040)=[<r5=>0x0]})
+ioctl$DRM_IOCTL_MODE_CREATE_LEASE(r4, 0xc01864c6, &(0x7f0000000440)={&(0x7f0000000400)=[r5], 0x1, 0x80000})
+r6 = syz_open_dev$dri(&(0x7f0000000200), 0xffffffffffffdffc, 0x183000)
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r6, 0xc04064a0, &(0x7f0000000100)={0x0, &(0x7f0000000040)=[<r7=>0x0], 0x0, 0x0, 0x0, 0x1})
+ioctl$DRM_IOCTL_MODE_SETGAMMA(r6, 0xc02064a5, &(0x7f0000000240)={r7, 0x0, 0x0, &(0x7f0000000180), 0x0})
+r8 = syz_open_dev$dri(&(0x7f0000000000), 0x3fffc0, 0x20800)
+ioctl$DRM_IOCTL_MODE_CREATE_LEASE(r8, 0xc01864c6, &(0x7f0000000440)={&(0x7f0000000400)=[0x0], 0x1, 0x80000, 0x0, <r9=>0xffffffffffffffff})
+ioctl$DRM_IOCTL_MODE_GETPLANE(r0, 0xc02064b6, &(0x7f0000000200)={r5, r7, 0x0, 0x0, 0x0, 0x3, &(0x7f0000000180)=[0x0, 0x0, 0x0]})
+r10 = syz_open_dev$dri(&(0x7f00000001c0), 0x0, 0x80400)
+ioctl$DRM_IOCTL_GET_CAP(r10, 0xc010640c, &(0x7f0000000140)={0x10})
+r11 = syz_open_dev$dri(&(0x7f0000000340), 0x9, 0x8442)
+ioctl$DRM_IOCTL_MODE_CREATEPROPBLOB(r11, 0xc01064bd, &(0x7f00000000c0)={&(0x7f0000000f80)="2e8dc08d40146f59144decd32a6b3fbfaf27a28d83668d6b1df042930774b30fc83feb175c3cb50bf070a8a61123187b34d777eb23c50c9613f477b7e84780c36315c0959db37081c76619cb72d128713787d89a631fae3a286bdeb7c52486de13d88aa68211bae8dcc33810efe0ede84929becfb0a8131f7cc31517612809059908e020ec40fa21fa9e93c619691053b01be9f457c96ec1fe4746d79d41b50b385f8bd78fe461808cd66aa450ce21039bbdc8bf81ace0283b818359a54b36e4710c3eafb04ac67fe4721aa02d9cba327a40b010ceb8dc614f2b532c8c2fac60f8a14ce791ab94df6aaa0cf4ef39fddf533dfb64ca355c74287ad77c63d7eed19d95cd996ade149bd3e5f1921c3c4ce5b622ae3acd9621b9656faf8ec5c6f522e6f4ea04d09f08e8c23ecd4d4534065ae44fec5a9e599fc7a230cce6a0edb547f1fdfebed703dae241af4a302522dfb27d84f2dd8c654921fa9acd96ae640e908fed80ba0d0d85ef184794cd12340d854ff2952d3d15855f8b81510741779fccc37c224fe7096d506b62003e16bdc75d7de59772f5833eff82e1843257020a63e9391ed5fed6930b677fa1d1c2fabdd870c5cb6feb8fd5f18125e33acc4ab5b8e55da3fa58ca5684725913dcbc1a0f437a502c994a9017c6cd73c96d690c786b2fe4f8e30bf92ae34a3923f5d63af4d6ccc560e8ded9ae7c276e5b0593a506512174fd868c8beb932713cda0ee609a0412d23904c6ac9e3019a891420c312bd8138577acc6a0ab34bd5e438b939fc003d65ff09e60db63e33c3753116a7fe87e0c73bd937ad56d83bac56cf7b383c6311838c8cb6d614e1e28d8fdb890b51e0d3f3d1132f1fbbe5e6fe66df701ee23bdb8327b03219a78a3df5ada9c41c643d5c53b0af169f32076cf3428632a59f2d3a33a684614f4a08044e21ae98596802a733e7b3426660405669bacf6047f7442ebc1d381f5ad10bb77453667f549d9d1b0fa6c4d81a578b1b5ba36d21ab932ffe2a32c53a26ce9d34887707404c51fa94c5a7018d944b21165613ae3d6795f288618d850ad79bb292b9111c1378b462c36579cf0cd405a3a529212acd3b5a8a10fea347f326cb32714aa6c73eb24450b105181ea4e8c2b82a23349bfdfc664a619c4964564a202fa60108bcfbb40ffb8a42246824af4bace8e482c424a685e3cbb08d788c9d74996fd9241cfcea15464c6e5d132aa81fd21041a6b1af4dd9ad530ed77dfc913b423cd1e7433bdf71009b1a2364ba329823be2ada820d048212825b195a84b08bbc2a69c1ac951e0a1e4d1a2f93f49eed6e22f8e123f0c6548feaf651b089a6f87fea033315b5b131003306c7ce08f7a9c28030c13499c03ce29c34628aa620604033307c2774ab986f67c04f2145d0fbc553549c58731cb239d8fe3cc659b174434f3e99491e5e1dd4862a5eed726418522a8cd62d4bcf563b6f202c68880a231dc6035ccdef6896e8efeb2e48d4a89f126802886288dfb68bf5b3deacc7a6553f9f66ca1b3cb5731938b11a8a13f8e864d348406610aaf16cb7d050b255cf871e23ce94dbfe851b980b0b98e6313b46a70a9ca32303068a6673600e997df48b116ca965d774b20b6ae5ba7993d7f7447718211aa08d27dfbe768a2419726070dbf7335be129fb9c62d9be245107db98b76871293ce4c1711b91d9a6d66a1970dffbb2d47a3f42b72883bc1980d0358cef7e50e2a33497ed1c835ab709d7a071e7c83dea8550fe0d99364cd37919d837cd4375c6aecd13c8d2931e44a0708fd9001384f324b1eb2f697dc0b18f2cca01daad09fe098115a24c90a3526e38437fdfd68de35581d96c614b15e4f472df854e7969608e798298850322a0687f9345c3aadf19d8beeada4b51acc55c3102c77b85a304f782c2b80b7ac6461551bfab8b1de46453ded50dc4d221af5d865b633c3744f95217591f2c96be539c1cfc7db7f1b153e1e547574b7b8b8eb38240bcb544a14553c3db0c6cf72f1edfee0826fa8820ee16548d2359f09af258c8be1d59b079f78097afef58235726b0ee7c74f8908c9e26170a17cd89eeecd18e89eb9111926473c818f00a376b2a06121b77c9c155942e72b5987836b6cf614c7fd43002a2bfe799d3008fe45fa76839a594623705225bbcd72215fcc2b2494f5dee0c0904b8f3eb066b0a5fcf813b262549fbdde01fa3bac215d54358716b65e216001097b27d15becbf895ad908b24e32fc88ee580d52a11e200554253e6497b68a91837379cf56114b3499e631f1da55616aa2eec235590a74e25c9a3b8897a01d607f411a02325007ce4fe9a2757b979293f9412e8caae31ff17c4f72834ac1ed5ca8a23ecc19bd34d0f4a284659e7704c1c0ebc821946f4352e01a922c8d66cfa42c8870ec155f9db3a515d58184fdc31285555f605a347fa63bc4d57ec35238f9543afa12ca1609b3d98886ad6099b584a7779e935c383d5b4a10f020d56929ffadbf6215642641f026ad031d1bd4bcb636e83d9e33635ea3e18a0af43c26cfce36042172d3de2b3ef93a92c52c02dd9bedd7ef836923efec679506160b304b84cc083543ba7eea93ffa62491bd7c9ee3dfb2d037b1347f2457926ba636cb0734e55945de8f2f4851ea9f2c476127b7c2e1b5bf97824ca8273fb1d9fd92f800310a8387d38f7ed37e18837dc0c0959d853eb49a3898f864b92d9f31d06ed07f29290128c6b63333521c82d76cb8a6fb9b4e452d2c79be734f9c4966959216305ff20f63f44c1526efb64270ad274518aeea71c65d3df2acc0cd9aed3b38b7c037621b77d4f24dfeea8c7486a4469fd2530f92584f873ecdc16bc4c1abb82cedff99fdb4db432307b04c370ed1a24511ac0d8f24aae79ac54aa04b398ffef16fc455aef2b89c29e594154c98f2bb8cafd798186691144fb6ca2dc7527a64e514f7c2351470136ac6659e07f627ce87cc60de0ef0609d41015600f5bbeb8e017cc80edd2b6e68b933c51ecd1505ff7dee78870b141251b08e147c0e34222542e8480d70f470fd33f2a52052643b5131b5de3304bf34f5edd209052e3adce22096a7016685f6245782be9335517f026a586e823753cae5d63988775be76e2242387e0fc714833dc5f20c35ce3b41eaf481d34db445bdfec0f7838af2cb074e44a598f00473f9ae44c1fbaa701069d3cb4bb97990a722b7113f7a3afef8d06633fb7af54d5e720cbc0fc264ef2a5f23bdedaeeb611e484b8675e8cade649c3772e93d347e7b3a09854d6a5f76cdbd8cc104f51ab50f4ded1bcf2158ebca5b44f3850312922b30a71d029052b474b314196abc6f60c870a850c611768f28cc91f8867a2040235586de3227030313d7c04bb7b2b14c7b5ed1c65d144f29c2522bce4c247ca87de8f17cee884e0ed4602503ded620fcf45e94ed1f593b26686f6c9db681e7684879b2e081d1af2ac0f85880037559d29d372ba47cda51ffdb884b0a9e3ec7c816e2f92d282328a4a24896da051a34ce5e97d0e6ed31be0fcccd39eb258b56d588d43bd13f100707b28b9debcae44c8a3c0cf112feee9adb407e3952f474bba2575e56eb645bfd116ab17761cf4abf2379d8307f0bab0bca85bc76531cdfbe4f556b5e71762b2b3a8c8be15021d4affbdcb82cb5461b054db105754df966109189019beb055b96de8f11fb174694956be1b36f75df6e54145f2cdf011903b9233c0b94b00112488460cb12a3a4940944eb0bef4b29d3733c9311c830100d61a4051887b75a7260e81c7ddedba6e43de2399237a8461c4fa089384639faa00b346d07c95a53be61314d36f738fd9590d7c8e5bbb33681c76a164ff9d5491253854005f15e699aa86704db0539822549dbda67938741a5315cc6c88b7e22128a293e5ccac38c0d83224a1efeefc9599016097ec20ddb443f41e395ac3393cc4bd280616374d19224ec5b43e992c177ac0e6c3c348f73dbb7e47f8df4b0e0de12d4a7b79d238b4179470c70b0f7276a94030c542b56f5001ef642dad087e812d923f48afdedb1f08c16b684d0c00672f7b8b44113da66405a8eaff645f7913ce1f4ddee6f7e37445e7e7482eaccb00464d86c87920998cbf1ac21983dfce1d913857ff4903db6894940fa1fd2cd252ac271f2f23457d8b35d2b44617064deb8776813e1b03a3899d0c3539d51b0f66901d3a416588f6cc94d89fddf2f7db31dd5b32c4ec4eddb3985da41d69ab088fa5ecfe312cc4e72b9c46ab930a9515effcec6c4cce4821090b405bceccb6954420f7e88d24ae91cc733ec92b7bbb571b0c1d88fbb5e43df8a6fff393c15afa9ec9ee80aab05e04e2291ff75a64d88d0883fc3f165695db29c7f592d1567f9ca14ac706b779e8a5549504514455bd6837e3f1cd848266a66fd08d082e0c69b6b359c162fe69cfbdb4ccbcc95efd7c535c1144e160a2c77366351c5402757144150605bcc0e6e7b2a430fe33bead606ac6e53ba43caf90835c4067e3802e85fd090d4ef3dabaad759bcd6fa45706dcb3435bc4c738dde39b36f92ed3c3f78b7f87424581b83568fa98dad30f0329e6bb4b08d3dde38c659a2b44ead540f82d312bd62c1bf1c9aeec04f7618ec0a06abbdea9e64e86bca27c0d3a1e0e7980c50369be10759fb742a9e5f303d3e0325c6095f767c86512d9da77ef9812389f0b84a018889be4a6f94c5a7f5854e32125ec2fd71dfeefb0a6f7af68996db7be0cfad19641a2b84edab02e4f84622b8938a0c553eebcd353a2a98d86c9b631334242f1494489a9a5601afa53fec652f135967b6081d77935a6e8dff3827107e81983ce2d0808b4b99a053ed47d05334d737f2532507126a32fabda38a1b53ece2fd704071600f6f20ef0953ba49580889d171a9b4c97a3b995cc7e5d38d7f1631733d2bed708d8668447a0efd42e3813609f4da6802478b028ed3070c21b2daff4f6f1988f9c470425f2593616f46920b63ac2542e1b64f595177098f7038bed82cd6805b90561cc3a3da1effe54158fcea08ad03f5e80936adc46f2384da90b31c300a321b93dee09966f508f7605207a3d620b5b5d883384bce4a82375ce9e39a5920cd55f2bb497d283f6043c685cd3ece7be028e70f07fd3bb6e9b532ed22e8cc1bd3c6be171f57f2cbc5ff531ec8a6d5f1ec2303f9de358c1ea479297bdebd45069f12c97d73a9901fffaece5d0652217ca5c2e6f5a84c3cd34775e6ba2da24c9fc4907eb0f587430ee99f60aec2667baf5c49a835da86ec12243d291ea4f5060ebfe3af173675a893b1687d57db6735527a047bb9fe9fa7cbd33e693b96775a54353511b5072cd2e2ea470c89e0abbdc2d3ccc4be7978232b129a712ff2dcf48115808d6026b20e4e04d5e0a58a0c6192ccce1e355676126d0c3c24ba10f45e2d061f793f99e03a719f13b679fb68ccbe4811545937824eb4a35c06e225196138e174d17271f99a44636e426394a184f884b5c0bce20a50c92048dbd2d503d9b08339245b3aa55d6cf328b858b42b4743985917ebb4c6d5eb4ce88843d713a75d7aab6e738ea3dd82a4f3ab3bdaa1bab7e68e0dd3eceea01ab5db29ae2db46b8597d047d3a0aa3035196a2e7a453af78a8b91c6b9db8d60b0aa4db395d3f27a10f8f7e4fe37892c2bfe8a6c3d780cac0e2b37770a85c474e1bac2e7fff0184906d2054f155a528cef9c2672417389cb7f5c479f43afc4d05dfe3e33ee8651eb2e22e23ce5ad82ccde756aa3fb006485a84a8fbb26bdee97e1db84eb1119c8384f035a558679d08510", 0x1000, <r12=>0x0})
+ioctl$DRM_IOCTL_MODE_GETPROPBLOB(r11, 0xc01064ac, &(0x7f0000000100)={r12, 0x1000, &(0x7f0000001f80)=""/4096})
+r13 = syz_open_dev$dri(&(0x7f0000000180), 0x0, 0x1)
+ioctl$DRM_IOCTL_MODE_CREATE_DUMB(r13, 0xc02064b2, &(0x7f0000000240)={0x9, 0x8000, 0x7})
+ioctl$DRM_IOCTL_MODE_GETRESOURCES(r10, 0xc04064a0, &(0x7f0000000480)={0x0, 0x0, &(0x7f0000000000)=[0x0, <r14=>0x0], 0x0, 0x0, 0x0, 0x2})
+ioctl$DRM_IOCTL_MODE_GETCONNECTOR(r10, 0xc05064a7, &(0x7f00000004c0)={0x0, 0x0, &(0x7f0000000300)=[0x0], 0x0, 0x0, 0x287, 0x0, 0x0, r14})
+ioctl$DRM_IOCTL_SYNCOBJ_FD_TO_HANDLE_SYNC_FILE(0xffffffffffffffff, 0xc01864c2, &(0x7f0000000280)={0x0, 0x1, r9})
+
+kernel console output (not intermixed with test programs):
+
+000000000101
+[  349.806931] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007f5ba430ed94
+[  349.806940] RDX: 0000000000040000 RSI: 00007f5ba2d4eb60 RDI: 00000000ffffff9c
+[  349.806949] RBP: 00007f5ba2d4eb60 R08: 0000000000000000 R09: 0000000000000000
+[  349.806957] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  349.806965] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[  349.806988]  </TASK>
+[  365.655247] FAULT_INJECTION: forcing a failure.
+[  365.655247] name failslab, interval 1, probability 0, space 0, times 0
+[  365.659283] CPU: 2 UID: 0 PID: 9129 Comm: syz.3.2473 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  365.659292] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  365.659297] Call Trace:
+[  365.659300]  <TASK>
+[  365.659303]  dump_stack_lvl+0x10b/0x140
+[  365.659318]  should_fail_ex+0x4d5/0x5e0
+[  365.659327]  ? __d_alloc+0x36/0xa10
+[  365.659350]  should_failslab+0xc7/0x130
+[  365.659358]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[  365.659368]  ? find_held_lock+0x2b/0x80
+[  365.659412]  ? __d_alloc+0x36/0xa10
+[  365.659418]  __d_alloc+0x36/0xa10
+[  365.659425]  ? mpol_shared_policy_init+0x254/0x390
+[  365.659449]  d_alloc_pseudo+0x22/0xc0
+[  365.659458]  alloc_file_pseudo+0xc3/0x220
+[  365.659469]  ? __pfx_alloc_file_pseudo+0x10/0x10
+[  365.659478]  ? __shmem_get_inode+0x67b/0xe70
+[  365.659513]  __shmem_file_setup+0x1ac/0x370
+[  365.659522]  drm_gem_object_init_with_mnt+0xc8/0xe0 [drm]
+[  365.659828]  __drm_gem_shmem_create+0x115/0x430 [drm_shmem_helper]
+[  365.659846]  drm_gem_shmem_dumb_create+0x14d/0x330 [drm_shmem_helper]
+[  365.659863]  drm_mode_create_dumb+0x286/0x320 [drm]
+[  365.660131]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[  365.660379]  ? __pfx_drm_mode_create_dumb_ioctl+0x10/0x10 [drm]
+[  365.660629]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[  365.660884]  drm_ioctl+0x580/0xb70 [drm]
+[  365.661161]  ? __pfx_drm_mode_create_dumb_ioctl+0x10/0x10 [drm]
+[  365.661406]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[  365.661665]  ? lock_acquire+0x169/0x300
+[  365.661675]  ? __fget_files+0x3a/0x3b0
+[  365.661684]  ? lock_release+0xd3/0x2a0
+[  365.661696]  ? selinux_file_ioctl+0x18c/0x280
+[  365.661733]  ? selinux_file_ioctl+0xbe/0x280
+[  365.661742]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[  365.661994]  __x64_sys_ioctl+0x194/0x210
+[  365.662005]  do_syscall_64+0xc6/0x390
+[  365.662017]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  365.662025] RIP: 0033:0x7fd9aca6059d
+[  365.662031] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  365.662038] RSP: 002b:00007fd9ab49ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  365.662045] RAX: ffffffffffffffda RBX: 00007fd9accd5fa0 RCX: 00007fd9aca6059d
+[  365.662050] RDX: 0000200000000080 RSI: 00000000c02064b2 RDI: 0000000000000003
+[  365.662054] RBP: 00007fd9ab49f010 R08: 0000000000000000 R09: 0000000000000000
+[  365.662058] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  365.662062] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[  365.662073]  </TASK>
+[  394.351742] FAULT_INJECTION: forcing a failure.
+[  394.351742] name failslab, interval 1, probability 0, space 0, times 0
+[  394.356607] CPU: 2 UID: 0 PID: 9597 Comm: syz.2.2488 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  394.356628] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  394.356637] Call Trace:
+[  394.356642]  <TASK>
+[  394.356648]  dump_stack_lvl+0x10b/0x140
+[  394.356676]  should_fail_ex+0x4d5/0x5e0
+[  394.356732]  ? alloc_empty_file+0x5a/0x1e0
+[  394.356750]  should_failslab+0xc7/0x130
+[  394.356767]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  394.356793]  ? alloc_empty_file+0x5a/0x1e0
+[  394.356810]  ? unwind_get_return_address+0x5e/0xa0
+[  394.357044]  alloc_empty_file+0x5a/0x1e0
+[  394.357066]  path_openat+0xe5/0x2880
+[  394.357092]  ? __pfx_path_openat+0x10/0x10
+[  394.357105]  ? __lock_acquire+0x64e/0x18c0
+[  394.357136]  do_filp_open+0x1fc/0x460
+[  394.357152]  ? __pfx_do_filp_open+0x10/0x10
+[  394.357167]  ? find_held_lock+0x2b/0x80
+[  394.357202]  ? find_held_lock+0x2b/0x80
+[  394.357216]  ? alloc_fd+0x3c2/0x780
+[  394.357238]  ? lock_release+0xd3/0x2a0
+[  394.357259]  ? _raw_spin_unlock+0x23/0x40
+[  394.357298]  ? alloc_fd+0x3c2/0x780
+[  394.357330]  do_sys_openat2+0x109/0x1c0
+[  394.357351]  ? __pfx_do_sys_openat2+0x10/0x10
+[  394.357374]  ? __fget_files+0x200/0x3b0
+[  394.357393]  __x64_sys_openat+0x144/0x200
+[  394.357415]  ? __pfx___x64_sys_openat+0x10/0x10
+[  394.357434]  ? ksys_write+0x1a8/0x240
+[  394.357454]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  394.357481]  do_syscall_64+0xc6/0x390
+[  394.357503]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  394.357518] RIP: 0033:0x7f5ba430ed94
+[  394.357531] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  394.357545] RSP: 002b:00007f5ba2d4eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  394.357560] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007f5ba430ed94
+[  394.357570] RDX: 0000000000040000 RSI: 00007f5ba2d4eb60 RDI: 00000000ffffff9c
+[  394.357579] RBP: 00007f5ba2d4eb60 R08: 0000000000000000 R09: 0000000000000000
+[  394.357588] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  394.357596] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[  394.357620]  </TASK>
+[  394.420171] FAULT_INJECTION: forcing a failure.
+[  394.420171] name failslab, interval 1, probability 0, space 0, times 0
+[  394.475454] CPU: 1 UID: 0 PID: 9608 Comm: syz.3.2493 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  394.475467] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  394.475473] Call Trace:
+[  394.475477]  <TASK>
+[  394.475480]  dump_stack_lvl+0x10b/0x140
+[  394.475498]  should_fail_ex+0x4d5/0x5e0
+[  394.475511]  ? alloc_empty_file+0x5a/0x1e0
+[  394.475522]  should_failslab+0xc7/0x130
+[  394.475532]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  394.475543]  ? d_instantiate+0x7e/0xa0
+[  394.475552]  ? lock_release+0xd3/0x2a0
+[  394.475570]  ? alloc_empty_file+0x5a/0x1e0
+[  394.475579]  alloc_empty_file+0x5a/0x1e0
+[  394.475590]  alloc_file_pseudo+0x130/0x220
+[  394.475601]  ? __pfx_alloc_file_pseudo+0x10/0x10
+[  394.475616]  __shmem_file_setup+0x1ac/0x370
+[  394.475628]  drm_gem_object_init_with_mnt+0xc8/0xe0 [drm]
+[  394.475926]  __drm_gem_shmem_create+0x115/0x430 [drm_shmem_helper]
+[  394.475946]  drm_gem_shmem_dumb_create+0x14d/0x330 [drm_shmem_helper]
+[  394.475966]  drm_mode_create_dumb+0x286/0x320 [drm]
+[  394.476328]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[  394.476783]  ? __pfx_drm_mode_create_dumb_ioctl+0x10/0x10 [drm]
+[  394.477272]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[  394.477577]  drm_ioctl+0x580/0xb70 [drm]
+[  394.477872]  ? __pfx_drm_mode_create_dumb_ioctl+0x10/0x10 [drm]
+[  394.478144]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[  394.478515]  ? lock_acquire+0x169/0x300
+[  394.478529]  ? __fget_files+0x3a/0x3b0
+[  394.478539]  ? lock_release+0xd3/0x2a0
+[  394.478553]  ? selinux_file_ioctl+0x18c/0x280
+[  394.478563]  ? selinux_file_ioctl+0xbe/0x280
+[  394.478572]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[  394.478944]  __x64_sys_ioctl+0x194/0x210
+[  394.478958]  do_syscall_64+0xc6/0x390
+[  394.478971]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  394.478980] RIP: 0033:0x7fd9aca6059d
+[  394.478987] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  394.478995] RSP: 002b:00007fd9ab49ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  394.479003] RAX: ffffffffffffffda RBX: 00007fd9accd5fa0 RCX: 00007fd9aca6059d
+[  394.479008] RDX: 0000200000000080 RSI: 00000000c02064b2 RDI: 0000000000000003
+[  394.479013] RBP: 00007fd9ab49f010 R08: 0000000000000000 R09: 0000000000000000
+[  394.479018] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  394.479022] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[  394.479034]  </TASK>
+[  418.961551] FAULT_INJECTION: forcing a failure.
+[  418.961551] name failslab, interval 1, probability 0, space 0, times 0
+[  418.965117] FAULT_INJECTION: forcing a failure.
+[  418.965117] name failslab, interval 1, probability 0, space 0, times 0
+[  418.967244] CPU: 2 UID: 0 PID: 9710 Comm: syz.5.2510 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  418.967262] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  418.967270] Call Trace:
+[  418.967275]  <TASK>
+[  418.967279]  dump_stack_lvl+0x10b/0x140
+[  418.967303]  should_fail_ex+0x4d5/0x5e0
+[  418.967319]  ? security_file_alloc+0x3a/0x150
+[  418.967385]  should_failslab+0xc7/0x130
+[  418.967400]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  418.967418]  ? __create_object+0x5e/0x90
+[  418.967451]  ? security_file_alloc+0x3a/0x150
+[  418.967467]  security_file_alloc+0x3a/0x150
+[  418.967486]  init_file+0x9a/0x4d0
+[  418.967504]  alloc_empty_file+0x78/0x1e0
+[  418.967522]  path_openat+0xe5/0x2880
+[  418.967545]  ? __pfx_path_openat+0x10/0x10
+[  418.967557]  ? __lock_acquire+0x64e/0x18c0
+[  418.967597]  do_filp_open+0x1fc/0x460
+[  418.967612]  ? __pfx_do_filp_open+0x10/0x10
+[  418.967625]  ? find_held_lock+0x2b/0x80
+[  418.967649]  ? find_held_lock+0x2b/0x80
+[  418.967664]  ? alloc_fd+0x3c2/0x780
+[  418.967684]  ? lock_release+0xd3/0x2a0
+[  418.967707]  ? _raw_spin_unlock+0x23/0x40
+[  418.967724]  ? alloc_fd+0x3c2/0x780
+[  418.967752]  do_sys_openat2+0x109/0x1c0
+[  418.967771]  ? __pfx_do_sys_openat2+0x10/0x10
+[  418.967793]  ? __fget_files+0x200/0x3b0
+[  418.967811]  __x64_sys_openat+0x144/0x200
+[  418.967830]  ? __pfx___x64_sys_openat+0x10/0x10
+[  418.967848]  ? ksys_write+0x1a8/0x240
+[  418.967862]  ? handle_softirqs+0x509/0x760
+[  418.967947]  do_syscall_64+0xc6/0x390
+[  418.967967]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  418.967982] RIP: 0033:0x7f0f2e8fed94
+[  418.967993] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  418.968006] RSP: 002b:00007f0f2d346ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  418.968020] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007f0f2e8fed94
+[  418.968028] RDX: 0000000000040000 RSI: 00007f0f2d346b60 RDI: 00000000ffffff9c
+[  418.968037] RBP: 00007f0f2d346b60 R08: 0000000000000000 R09: 0000000000000000
+[  418.968045] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  418.968053] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[  418.968083]  </TASK>
+[  419.088155] CPU: 3 UID: 0 PID: 9712 Comm: syz.4.2511 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  419.088167] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  419.088172] Call Trace:
+[  419.088176]  <TASK>
+[  419.088180]  dump_stack_lvl+0x10b/0x140
+[  419.088196]  should_fail_ex+0x4d5/0x5e0
+[  419.088206]  ? security_file_alloc+0x3a/0x150
+[  419.088216]  should_failslab+0xc7/0x130
+[  419.088225]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  419.088236]  ? __create_object+0x5e/0x90
+[  419.088250]  ? security_file_alloc+0x3a/0x150
+[  419.088259]  security_file_alloc+0x3a/0x150
+[  419.088269]  init_file+0x9a/0x4d0
+[  419.088280]  alloc_empty_file+0x78/0x1e0
+[  419.088290]  alloc_file_pseudo+0x130/0x220
+[  419.088300]  ? __pfx_alloc_file_pseudo+0x10/0x10
+[  419.088314]  __shmem_file_setup+0x1ac/0x370
+[  419.088325]  drm_gem_object_init_with_mnt+0xc8/0xe0 [drm]
+[  419.088622]  __drm_gem_shmem_create+0x115/0x430 [drm_shmem_helper]
+[  419.088646]  drm_gem_shmem_dumb_create+0x14d/0x330 [drm_shmem_helper]
+[  419.088665]  drm_mode_create_dumb+0x286/0x320 [drm]
+[  419.088918]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[  419.089256]  ? __pfx_drm_mode_create_dumb_ioctl+0x10/0x10 [drm]
+[  419.089512]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[  419.089784]  drm_ioctl+0x580/0xb70 [drm]
+[  419.090043]  ? __pfx_drm_mode_create_dumb_ioctl+0x10/0x10 [drm]
+[  419.090328]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[  419.090595]  ? lock_acquire+0x169/0x300
+[  419.090615]  ? __fget_files+0x3a/0x3b0
+[  419.090629]  ? lock_release+0xd3/0x2a0
+[  419.090649]  ? selinux_file_ioctl+0x18c/0x280
+[  419.090662]  ? selinux_file_ioctl+0xbe/0x280
+[  419.090676]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[  419.090968]  __x64_sys_ioctl+0x194/0x210
+[  419.090981]  do_syscall_64+0xc6/0x390
+[  419.090994]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  419.091003] RIP: 0033:0x7fe839ad059d
+[  419.091010] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  419.091017] RSP: 002b:00007fe838516f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  419.091025] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839ad059d
+[  419.091030] RDX: 0000200000000080 RSI: 00000000c02064b2 RDI: 0000000000000003
+[  419.091035] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[  419.091039] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  419.091043] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[  419.091054]  </TASK>
+[  458.454502] FAULT_INJECTION: forcing a failure.
+[  458.454502] name failslab, interval 1, probability 0, space 0, times 0
+[  458.460864] CPU: 0 UID: 0 PID: 9818 Comm: syz.4.2554 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  458.460877] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  458.460892] Call Trace:
+[  458.460910]  <TASK>
+[  458.460914]  dump_stack_lvl+0x10b/0x140
+[  458.461168]  should_fail_ex+0x4d5/0x5e0
+[  458.461231]  should_failslab+0xc7/0x130
+[  458.461286]  __kmalloc_node_track_caller_noprof+0xc6/0x7c0
+[  458.461313]  ? __pfx_vsnprintf+0x10/0x10
+[  458.461337]  ? kasprintf+0xbe/0x100
+[  458.461383]  ? find_held_lock+0x2b/0x80
+[  458.461429]  ? kvasprintf+0xbd/0x160
+[  458.461440]  kvasprintf+0xbd/0x160
+[  458.461451]  ? __pfx_kvasprintf+0x10/0x10
+[  458.461469]  kasprintf+0xbe/0x100
+[  458.461480]  ? __pfx_kasprintf+0x10/0x10
+[  458.461491]  ? is_module_address+0x71/0x130
+[  458.461527]  ? __module_address.part.0+0x22/0x1a0
+[  458.461541]  ? drm_file_alloc+0x5c0/0xb50 [drm]
+[  458.461958]  drm_debugfs_clients_add+0x4d/0x210 [drm]
+[  458.462424]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  458.462911]  drm_open_helper+0x20a/0x500 [drm]
+[  458.463353]  drm_open+0x1a5/0x3e0 [drm]
+[  458.463809]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  458.464247]  drm_stub_open+0x214/0x490 [drm]
+[  458.464683]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  458.465175]  chrdev_open+0x23b/0x690
+[  458.465230]  ? __pfx_chrdev_open+0x10/0x10
+[  458.465246]  ? lock_release+0xd3/0x2a0
+[  458.465283]  do_dentry_open+0x6c6/0x1390
+[  458.465309]  ? __pfx_chrdev_open+0x10/0x10
+[  458.465328]  vfs_open+0x87/0x400
+[  458.465344]  ? may_open+0x1f8/0x420
+[  458.465373]  path_openat+0x1cbc/0x2880
+[  458.465396]  ? __pfx_path_openat+0x10/0x10
+[  458.465408]  ? __lock_acquire+0x64e/0x18c0
+[  458.465434]  do_filp_open+0x1fc/0x460
+[  458.465449]  ? __pfx_do_filp_open+0x10/0x10
+[  458.465462]  ? find_held_lock+0x2b/0x80
+[  458.465485]  ? find_held_lock+0x2b/0x80
+[  458.465501]  ? alloc_fd+0x3c2/0x780
+[  458.465540]  ? lock_release+0xd3/0x2a0
+[  458.465560]  ? _raw_spin_unlock+0x23/0x40
+[  458.465595]  ? alloc_fd+0x3c2/0x780
+[  458.465624]  do_sys_openat2+0x109/0x1c0
+[  458.465642]  ? __pfx_do_sys_openat2+0x10/0x10
+[  458.465662]  ? __fget_files+0x200/0x3b0
+[  458.465677]  __x64_sys_openat+0x144/0x200
+[  458.465694]  ? __pfx___x64_sys_openat+0x10/0x10
+[  458.465710]  ? ksys_write+0x1a8/0x240
+[  458.465726]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  458.465818]  do_syscall_64+0xc6/0x390
+[  458.465848]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  458.465909] RIP: 0033:0x7fe839aced94
+[  458.465941] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  458.465971] RSP: 002b:00007fe838516ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  458.465997] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007fe839aced94
+[  458.466007] RDX: 0000000000040000 RSI: 00007fe838516b60 RDI: 00000000ffffff9c
+[  458.466016] RBP: 00007fe838516b60 R08: 0000000000000000 R09: 0000000000000000
+[  458.466024] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  458.466032] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[  458.466055]  </TASK>
+[  492.264964] FAULT_INJECTION: forcing a failure.
+[  492.264964] name failslab, interval 1, probability 0, space 0, times 0
+[  492.272850] CPU: 3 UID: 0 PID: 9904 Comm: syz.4.2586 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  492.272869] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  492.272877] Call Trace:
+[  492.272882]  <TASK>
+[  492.272887]  dump_stack_lvl+0x10b/0x140
+[  492.272913]  should_fail_ex+0x4d5/0x5e0
+[  492.272929]  ? __d_alloc+0x36/0xa10
+[  492.272943]  should_failslab+0xc7/0x130
+[  492.272959]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[  492.272977]  ? kasan_save_stack+0x24/0x50
+[  492.273179]  ? kasan_save_track+0x14/0x30
+[  492.273193]  ? __kasan_kmalloc+0x7f/0x90
+[  492.273206]  ? __kmalloc_node_track_caller_noprof+0x2b7/0x7c0
+[  492.273230]  ? drm_debugfs_clients_add+0x4d/0x210 [drm]
+[  492.273719]  ? __d_alloc+0x36/0xa10
+[  492.273732]  ? put_dec+0x2e/0xd0
+[  492.273750]  __d_alloc+0x36/0xa10
+[  492.273767]  d_alloc_parallel+0x117/0x1330
+[  492.273794]  ? __pfx_format_decode+0x10/0x10
+[  492.273808]  ? __pfx_d_alloc_parallel+0x10/0x10
+[  492.273824]  ? find_held_lock+0x2b/0x80
+[  492.273841]  ? lockdep_init_map_type+0x4b/0x250
+[  492.273864]  ? lockdep_init_map_type+0x4b/0x250
+[  492.273892]  __lookup_slow+0x197/0x480
+[  492.273913]  ? __pfx___lookup_slow+0x10/0x10
+[  492.273931]  ? __d_lookup+0x78/0x4a0
+[  492.273968]  ? d_lookup+0x7c/0xa0
+[  492.273994]  lookup_noperm+0xe8/0x110
+[  492.274015]  simple_start_creating+0xd8/0x1b0
+[  492.274123]  debugfs_start_creating+0xc7/0x180
+[  492.274188]  debugfs_create_dir+0x2c/0x5c0
+[  492.274210]  drm_debugfs_clients_add+0x74/0x210 [drm]
+[  492.274691]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  492.275204]  drm_open_helper+0x20a/0x500 [drm]
+[  492.275691]  drm_open+0x1a5/0x3e0 [drm]
+[  492.276181]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  492.276670]  drm_stub_open+0x214/0x490 [drm]
+[  492.277166]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  492.277630]  chrdev_open+0x23b/0x690
+[  492.277649]  ? __pfx_chrdev_open+0x10/0x10
+[  492.277663]  ? lock_release+0xd3/0x2a0
+[  492.277689]  do_dentry_open+0x6c6/0x1390
+[  492.277705]  ? __pfx_chrdev_open+0x10/0x10
+[  492.277723]  vfs_open+0x87/0x400
+[  492.277740]  ? may_open+0x1f8/0x420
+[  492.277762]  path_openat+0x1cbc/0x2880
+[  492.277785]  ? __pfx_path_openat+0x10/0x10
+[  492.277796]  ? __lock_acquire+0x64e/0x18c0
+[  492.277821]  do_filp_open+0x1fc/0x460
+[  492.277835]  ? __pfx_do_filp_open+0x10/0x10
+[  492.277847]  ? find_held_lock+0x2b/0x80
+[  492.277872]  ? find_held_lock+0x2b/0x80
+[  492.277886]  ? alloc_fd+0x3c2/0x780
+[  492.277905]  ? lock_release+0xd3/0x2a0
+[  492.277925]  ? _raw_spin_unlock+0x23/0x40
+[  492.277941]  ? alloc_fd+0x3c2/0x780
+[  492.277967]  do_sys_openat2+0x109/0x1c0
+[  492.277984]  ? __pfx_do_sys_openat2+0x10/0x10
+[  492.278007]  ? __fget_files+0x200/0x3b0
+[  492.278024]  __x64_sys_openat+0x144/0x200
+[  492.278045]  ? __pfx___x64_sys_openat+0x10/0x10
+[  492.278062]  ? ksys_write+0x1a8/0x240
+[  492.278078]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  492.278102]  do_syscall_64+0xc6/0x390
+[  492.278154]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  492.278168] RIP: 0033:0x7fe839aced94
+[  492.278180] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  492.278192] RSP: 002b:00007fe838516ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  492.278207] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007fe839aced94
+[  492.278215] RDX: 0000000000040000 RSI: 00007fe838516b60 RDI: 00000000ffffff9c
+[  492.278223] RBP: 00007fe838516b60 R08: 0000000000000000 R09: 0000000000000000
+[  492.278231] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  492.278238] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[  492.278259]  </TASK>
+[  510.954259] FAULT_INJECTION: forcing a failure.
+[  510.954259] name failslab, interval 1, probability 0, space 0, times 0
+[  510.962502] CPU: 1 UID: 0 PID: 9949 Comm: syz.5.2602 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  510.962524] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  510.962569] Call Trace:
+[  510.962618]  <TASK>
+[  510.962625]  dump_stack_lvl+0x10b/0x140
+[  510.962964]  should_fail_ex+0x4d5/0x5e0
+[  510.963066]  ? alloc_inode+0x6d/0x250
+[  510.963174]  should_failslab+0xc7/0x130
+[  510.963210]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[  510.963247]  ? __pfx_debugfs_alloc_inode+0x10/0x10
+[  510.963338]  ? alloc_inode+0x6d/0x250
+[  510.963354]  alloc_inode+0x6d/0x250
+[  510.963373]  new_inode+0x23/0x160
+[  510.963394]  debugfs_create_dir+0x9f/0x5c0
+[  510.963421]  drm_debugfs_clients_add+0x74/0x210 [drm]
+[  510.964022]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  510.964505]  drm_open_helper+0x20a/0x500 [drm]
+[  510.964981]  drm_open+0x1a5/0x3e0 [drm]
+[  510.965484]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  510.965961]  drm_stub_open+0x214/0x490 [drm]
+[  510.966677]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  510.967313]  chrdev_open+0x23b/0x690
+[  510.967361]  ? __pfx_chrdev_open+0x10/0x10
+[  510.967377]  ? lock_release+0xd3/0x2a0
+[  510.967471]  do_dentry_open+0x6c6/0x1390
+[  510.967498]  ? __pfx_chrdev_open+0x10/0x10
+[  510.967516]  vfs_open+0x87/0x400
+[  510.967532]  ? may_open+0x1f8/0x420
+[  510.967565]  path_openat+0x1cbc/0x2880
+[  510.967600]  ? __pfx_path_openat+0x10/0x10
+[  510.967612]  ? __lock_acquire+0x64e/0x18c0
+[  510.967637]  do_filp_open+0x1fc/0x460
+[  510.967652]  ? __pfx_do_filp_open+0x10/0x10
+[  510.967666]  ? find_held_lock+0x2b/0x80
+[  510.967692]  ? find_held_lock+0x2b/0x80
+[  510.967708]  ? alloc_fd+0x3c2/0x780
+[  510.967730]  ? lock_release+0xd3/0x2a0
+[  510.967754]  ? _raw_spin_unlock+0x23/0x40
+[  510.967835]  ? alloc_fd+0x3c2/0x780
+[  510.967867]  do_sys_openat2+0x109/0x1c0
+[  510.967887]  ? __pfx_do_sys_openat2+0x10/0x10
+[  510.967911]  ? __fget_files+0x200/0x3b0
+[  510.967931]  __x64_sys_openat+0x144/0x200
+[  510.967952]  ? __pfx___x64_sys_openat+0x10/0x10
+[  510.967970]  ? ksys_write+0x1a8/0x240
+[  510.967988]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  510.968059]  do_syscall_64+0xc6/0x390
+[  510.968112]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  510.968174] RIP: 0033:0x7f0f2e8fed94
+[  510.968204] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  510.968231] RSP: 002b:00007f0f2d346ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  510.968257] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007f0f2e8fed94
+[  510.968267] RDX: 0000000000040000 RSI: 00007f0f2d346b60 RDI: 00000000ffffff9c
+[  510.968274] RBP: 00007f0f2d346b60 R08: 0000000000000000 R09: 0000000000000000
+[  510.968282] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  510.968289] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[  510.968312]  </TASK>
+[  511.093479] debugfs: out of free dentries, can not create directory 'client-5255'
+[  519.469952] FAULT_INJECTION: forcing a failure.
+[  519.469952] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  519.475253] CPU: 0 UID: 0 PID: 9971 Comm: syz.2.2609 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  519.475273] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  519.475282] Call Trace:
+[  519.475288]  <TASK>
+[  519.475293]  dump_stack_lvl+0x10b/0x140
+[  519.475321]  should_fail_ex+0x4d5/0x5e0
+[  519.475340]  _copy_to_user+0x32/0xd0
+[  519.475439]  simple_read_from_buffer+0xe5/0x180
+[  519.475501]  proc_fail_nth_read+0x18f/0x240
+[  519.475538]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  519.475555]  ? security_file_permission+0x27/0x90
+[  519.475619]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  519.475636]  vfs_read+0x1eb/0xc70
+[  519.475651]  ? __pfx___mutex_lock+0x10/0x10
+[  519.475672]  ? __pfx_vfs_read+0x10/0x10
+[  519.475686]  ? __fget_files+0x1f6/0x3b0
+[  519.475699]  ? lock_release+0xd3/0x2a0
+[  519.475726]  ? __fget_files+0x200/0x3b0
+[  519.475748]  ksys_read+0x126/0x240
+[  519.475762]  ? __pfx_ksys_read+0x10/0x10
+[  519.475778]  ? fput+0x6f/0x100
+[  519.475801]  do_syscall_64+0xc6/0x390
+[  519.475823]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  519.475838] RIP: 0033:0x7f5ba430ef6c
+[  519.475850] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  519.475864] RSP: 002b:00007f5ba2d4ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  519.475879] RAX: ffffffffffffffda RBX: 00007f5ba4585fa0 RCX: 00007f5ba430ef6c
+[  519.475888] RDX: 000000000000000f RSI: 00007f5ba2d4f020 RDI: 0000000000000004
+[  519.475896] RBP: 00007f5ba2d4f010 R08: 0000000000000000 R09: 0000000000000000
+[  519.475905] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  519.475913] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[  519.475937]  </TASK>
+[  534.208014] FAULT_INJECTION: forcing a failure.
+[  534.208014] name failslab, interval 1, probability 0, space 0, times 0
+[  534.213922] CPU: 1 UID: 0 PID: 10005 Comm: syz.4.2624 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  534.213959] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  534.213967] Call Trace:
+[  534.213972]  <TASK>
+[  534.213977]  dump_stack_lvl+0x10b/0x140
+[  534.214002]  should_fail_ex+0x4d5/0x5e0
+[  534.214018]  ? security_inode_alloc+0x43/0x150
+[  534.214033]  should_failslab+0xc7/0x130
+[  534.214047]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  534.214061]  ? __pfx_map_id_range_down+0x10/0x10
+[  534.214110]  ? security_inode_alloc+0x43/0x150
+[  534.214122]  security_inode_alloc+0x43/0x150
+[  534.214137]  inode_init_always_gfp+0xca0/0xfe0
+[  534.214153]  alloc_inode+0x93/0x250
+[  534.214167]  new_inode+0x23/0x160
+[  534.214183]  debugfs_create_dir+0x9f/0x5c0
+[  534.214205]  drm_debugfs_clients_add+0x74/0x210 [drm]
+[  534.214653]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  534.215100]  drm_open_helper+0x20a/0x500 [drm]
+[  534.215519]  drm_open+0x1a5/0x3e0 [drm]
+[  534.215924]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  534.216359]  drm_stub_open+0x214/0x490 [drm]
+[  534.216774]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  534.217200]  chrdev_open+0x23b/0x690
+[  534.217217]  ? __pfx_chrdev_open+0x10/0x10
+[  534.217230]  ? lock_release+0xd3/0x2a0
+[  534.217253]  do_dentry_open+0x6c6/0x1390
+[  534.217267]  ? __pfx_chrdev_open+0x10/0x10
+[  534.217284]  vfs_open+0x87/0x400
+[  534.217299]  ? may_open+0x1f8/0x420
+[  534.217318]  path_openat+0x1cbc/0x2880
+[  534.217339]  ? __pfx_path_openat+0x10/0x10
+[  534.217349]  ? __lock_acquire+0x64e/0x18c0
+[  534.217373]  do_filp_open+0x1fc/0x460
+[  534.217385]  ? __pfx_do_filp_open+0x10/0x10
+[  534.217397]  ? find_held_lock+0x2b/0x80
+[  534.217417]  ? find_held_lock+0x2b/0x80
+[  534.217430]  ? alloc_fd+0x3c2/0x780
+[  534.217459]  ? lock_release+0xd3/0x2a0
+[  534.217479]  ? _raw_spin_unlock+0x23/0x40
+[  534.217495]  ? alloc_fd+0x3c2/0x780
+[  534.217521]  do_sys_openat2+0x109/0x1c0
+[  534.217537]  ? __pfx_do_sys_openat2+0x10/0x10
+[  534.217556]  ? __fget_files+0x200/0x3b0
+[  534.217571]  __x64_sys_openat+0x144/0x200
+[  534.217588]  ? __pfx___x64_sys_openat+0x10/0x10
+[  534.217603]  ? ksys_write+0x1a8/0x240
+[  534.217619]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  534.217641]  do_syscall_64+0xc6/0x390
+[  534.217659]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  534.217672] RIP: 0033:0x7fe839aced94
+[  534.217682] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  534.217694] RSP: 002b:00007fe838516ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  534.217706] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007fe839aced94
+[  534.217713] RDX: 0000000000040000 RSI: 00007fe838516b60 RDI: 00000000ffffff9c
+[  534.217721] RBP: 00007fe838516b60 R08: 0000000000000000 R09: 0000000000000000
+[  534.217727] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  534.217734] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[  534.217753]  </TASK>
+[  534.342321] debugfs: out of free dentries, can not create directory 'client-5306'
+[  575.384586] FAULT_INJECTION: forcing a failure.
+[  575.384586] name failslab, interval 1, probability 0, space 0, times 0
+[  575.389542] CPU: 3 UID: 0 PID: 10114 Comm: syz.3.2666 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  575.389563] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  575.389572] Call Trace:
+[  575.389577]  <TASK>
+[  575.389583]  dump_stack_lvl+0x10b/0x140
+[  575.389609]  should_fail_ex+0x4d5/0x5e0
+[  575.389625]  ? alloc_inode+0x6d/0x250
+[  575.389636]  should_failslab+0xc7/0x130
+[  575.389649]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[  575.389666]  ? __pfx_debugfs_alloc_inode+0x10/0x10
+[  575.389681]  ? alloc_inode+0x6d/0x250
+[  575.389690]  alloc_inode+0x6d/0x250
+[  575.389700]  new_inode+0x23/0x160
+[  575.389711]  debugfs_create_dir+0x9f/0x5c0
+[  575.389725]  drm_debugfs_clients_add+0x74/0x210 [drm]
+[  575.390064]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  575.390536]  drm_open_helper+0x20a/0x500 [drm]
+[  575.390840]  drm_open+0x1a5/0x3e0 [drm]
+[  575.391350]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  575.391731]  drm_stub_open+0x214/0x490 [drm]
+[  575.392063]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  575.392343]  chrdev_open+0x23b/0x690
+[  575.392355]  ? __pfx_chrdev_open+0x10/0x10
+[  575.392364]  ? lock_release+0xd3/0x2a0
+[  575.392380]  do_dentry_open+0x6c6/0x1390
+[  575.392390]  ? __pfx_chrdev_open+0x10/0x10
+[  575.392402]  vfs_open+0x87/0x400
+[  575.392412]  ? may_open+0x1f8/0x420
+[  575.392425]  path_openat+0x1cbc/0x2880
+[  575.392439]  ? __pfx_path_openat+0x10/0x10
+[  575.392446]  ? __lock_acquire+0x64e/0x18c0
+[  575.392481]  do_filp_open+0x3b0/0x460
+[  575.392495]  ? __pfx_do_filp_open+0x10/0x10
+[  575.392507]  ? find_held_lock+0x2b/0x80
+[  575.392531]  ? find_held_lock+0x2b/0x80
+[  575.392545]  ? alloc_fd+0x3c2/0x780
+[  575.392564]  ? lock_release+0xd3/0x2a0
+[  575.392586]  ? _raw_spin_unlock+0x23/0x40
+[  575.392604]  ? alloc_fd+0x3c2/0x780
+[  575.392630]  do_sys_openat2+0x109/0x1c0
+[  575.392648]  ? __pfx_do_sys_openat2+0x10/0x10
+[  575.392670]  ? __fget_files+0x200/0x3b0
+[  575.392689]  __x64_sys_openat+0x144/0x200
+[  575.392748]  ? __pfx___x64_sys_openat+0x10/0x10
+[  575.392766]  ? ksys_write+0x1a8/0x240
+[  575.392786]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  575.392813]  do_syscall_64+0xc6/0x390
+[  575.392836]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  575.392851] RIP: 0033:0x7fd9aca5ed94
+[  575.392863] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  575.392877] RSP: 002b:00007fd9ab49eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  575.392892] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007fd9aca5ed94
+[  575.392902] RDX: 0000000000040000 RSI: 00007fd9ab49eb60 RDI: 00000000ffffff9c
+[  575.392911] RBP: 00007fd9ab49eb60 R08: 0000000000000000 R09: 0000000000000000
+[  575.392920] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  575.392929] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[  575.392954]  </TASK>
+[  575.506338] debugfs: out of free dentries, can not create directory 'client-5433'
+[  583.462916] FAULT_INJECTION: forcing a failure.
+[  583.462916] name failslab, interval 1, probability 0, space 0, times 0
+[  583.468963] CPU: 3 UID: 0 PID: 10142 Comm: syz.5.2676 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  583.468981] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  583.468989] Call Trace:
+[  583.468994]  <TASK>
+[  583.468999]  dump_stack_lvl+0x10b/0x140
+[  583.469024]  should_fail_ex+0x4d5/0x5e0
+[  583.469040]  ? alloc_inode+0x6d/0x250
+[  583.469055]  should_failslab+0xc7/0x130
+[  583.469069]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[  583.469092]  ? __pfx_debugfs_alloc_inode+0x10/0x10
+[  583.469112]  ? alloc_inode+0x6d/0x250
+[  583.469126]  alloc_inode+0x6d/0x250
+[  583.469140]  new_inode+0x23/0x160
+[  583.469159]  __debugfs_create_file+0xd8/0x660
+[  583.469177]  ? drm_debugfs_clients_add+0x9e/0x210 [drm]
+[  583.469638]  debugfs_create_file_full+0x46/0x60
+[  583.469664]  drm_debugfs_clients_add+0xde/0x210 [drm]
+[  583.470144]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  583.470597]  drm_open_helper+0x20a/0x500 [drm]
+[  583.471068]  drm_open+0x1a5/0x3e0 [drm]
+[  583.471514]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  583.472001]  drm_stub_open+0x214/0x490 [drm]
+[  583.472437]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  583.472886]  chrdev_open+0x23b/0x690
+[  583.472905]  ? __pfx_chrdev_open+0x10/0x10
+[  583.472919]  ? lock_release+0xd3/0x2a0
+[  583.472962]  do_dentry_open+0x6c6/0x1390
+[  583.472977]  ? __pfx_chrdev_open+0x10/0x10
+[  583.472997]  vfs_open+0x87/0x400
+[  583.473013]  ? may_open+0x1f8/0x420
+[  583.473033]  path_openat+0x1cbc/0x2880
+[  583.473057]  ? __pfx_path_openat+0x10/0x10
+[  583.473068]  ? __lock_acquire+0x64e/0x18c0
+[  583.473094]  do_filp_open+0x1fc/0x460
+[  583.473109]  ? __pfx_do_filp_open+0x10/0x10
+[  583.473121]  ? find_held_lock+0x2b/0x80
+[  583.473145]  ? find_held_lock+0x2b/0x80
+[  583.473160]  ? alloc_fd+0x3c2/0x780
+[  583.473180]  ? lock_release+0xd3/0x2a0
+[  583.473202]  ? _raw_spin_unlock+0x23/0x40
+[  583.473218]  ? alloc_fd+0x3c2/0x780
+[  583.473246]  do_sys_openat2+0x109/0x1c0
+[  583.473264]  ? __pfx_do_sys_openat2+0x10/0x10
+[  583.473284]  ? __fget_files+0x200/0x3b0
+[  583.473301]  __x64_sys_openat+0x144/0x200
+[  583.473320]  ? __pfx___x64_sys_openat+0x10/0x10
+[  583.473337]  ? ksys_write+0x1a8/0x240
+[  583.473361]  do_syscall_64+0xc6/0x390
+[  583.473381]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  583.473394] RIP: 0033:0x7f0f2e8fed94
+[  583.473405] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  583.473417] RSP: 002b:00007f0f2d346ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  583.473439] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007f0f2e8fed94
+[  583.473446] RDX: 0000000000040000 RSI: 00007f0f2d346b60 RDI: 00000000ffffff9c
+[  583.473453] RBP: 00007f0f2d346b60 R08: 0000000000000000 R09: 0000000000000000
+[  583.473461] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  583.473468] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[  583.473488]  </TASK>
+[  583.564228] debugfs: out of free dentries, can not create file 'proc_info'
+[  607.112908] FAULT_INJECTION: forcing a failure.
+[  607.112908] name failslab, interval 1, probability 0, space 0, times 0
+[  607.118687] CPU: 2 UID: 0 PID: 10192 Comm: syz.4.2696 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  607.118704] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  607.118712] Call Trace:
+[  607.118716]  <TASK>
+[  607.118722]  dump_stack_lvl+0x10b/0x140
+[  607.118749]  should_fail_ex+0x4d5/0x5e0
+[  607.118767]  ? security_inode_alloc+0x43/0x150
+[  607.118782]  should_failslab+0xc7/0x130
+[  607.118797]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  607.118815]  ? __pfx_map_id_range_down+0x10/0x10
+[  607.118837]  ? security_inode_alloc+0x43/0x150
+[  607.118852]  security_inode_alloc+0x43/0x150
+[  607.118870]  inode_init_always_gfp+0xca0/0xfe0
+[  607.118888]  alloc_inode+0x93/0x250
+[  607.118905]  new_inode+0x23/0x160
+[  607.118925]  __debugfs_create_file+0xd8/0x660
+[  607.118946]  ? drm_debugfs_clients_add+0x9e/0x210 [drm]
+[  607.119427]  debugfs_create_file_full+0x46/0x60
+[  607.119455]  drm_debugfs_clients_add+0xde/0x210 [drm]
+[  607.119931]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  607.120393]  drm_open_helper+0x20a/0x500 [drm]
+[  607.120881]  drm_open+0x1a5/0x3e0 [drm]
+[  607.121340]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  607.121809]  drm_stub_open+0x214/0x490 [drm]
+[  607.122266]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  607.122747]  chrdev_open+0x23b/0x690
+[  607.122768]  ? __pfx_chrdev_open+0x10/0x10
+[  607.122784]  ? lock_release+0xd3/0x2a0
+[  607.122811]  do_dentry_open+0x6c6/0x1390
+[  607.122829]  ? __pfx_chrdev_open+0x10/0x10
+[  607.122849]  vfs_open+0x87/0x400
+[  607.122866]  ? may_open+0x1f8/0x420
+[  607.122888]  path_openat+0x1cbc/0x2880
+[  607.122913]  ? __pfx_path_openat+0x10/0x10
+[  607.122925]  ? __lock_acquire+0x64e/0x18c0
+[  607.122952]  do_filp_open+0x1fc/0x460
+[  607.122967]  ? __pfx_do_filp_open+0x10/0x10
+[  607.122980]  ? find_held_lock+0x2b/0x80
+[  607.123005]  ? find_held_lock+0x2b/0x80
+[  607.123020]  ? alloc_fd+0x3c2/0x780
+[  607.123041]  ? lock_release+0xd3/0x2a0
+[  607.123064]  ? _raw_spin_unlock+0x23/0x40
+[  607.123082]  ? alloc_fd+0x3c2/0x780
+[  607.123122]  do_sys_openat2+0x109/0x1c0
+[  607.123141]  ? __pfx_do_sys_openat2+0x10/0x10
+[  607.123163]  ? __fget_files+0x200/0x3b0
+[  607.123181]  __x64_sys_openat+0x144/0x200
+[  607.123201]  ? __pfx___x64_sys_openat+0x10/0x10
+[  607.123218]  ? ksys_write+0x1a8/0x240
+[  607.123237]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  607.123262]  do_syscall_64+0xc6/0x390
+[  607.123282]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  607.123297] RIP: 0033:0x7fe839aced94
+[  607.123309] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  607.123322] RSP: 002b:00007fe838516ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  607.123336] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007fe839aced94
+[  607.123345] RDX: 0000000000040000 RSI: 00007fe838516b60 RDI: 00000000ffffff9c
+[  607.123353] RBP: 00007fe838516b60 R08: 0000000000000000 R09: 0000000000000000
+[  607.123361] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  607.123369] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[  607.123391]  </TASK>
+[  607.265077] debugfs: out of free dentries, can not create file 'proc_info'
+[  637.735189] FAULT_INJECTION: forcing a failure.
+[  637.735189] name failslab, interval 1, probability 0, space 0, times 0
+[  637.741247] CPU: 0 UID: 0 PID: 10279 Comm: syz.2.2729 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  637.741266] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  637.741275] Call Trace:
+[  637.741280]  <TASK>
+[  637.741297]  dump_stack_lvl+0x10b/0x140
+[  637.741322]  should_fail_ex+0x4d5/0x5e0
+[  637.741342]  should_failslab+0xc7/0x130
+[  637.741356]  __kmalloc_node_track_caller_noprof+0xc6/0x7c0
+[  637.741374]  ? __pfx_vsnprintf+0x10/0x10
+[  637.741413]  ? kasprintf+0xbe/0x100
+[  637.741452]  ? __lock_acquire+0xbb0/0x18c0
+[  637.741478]  ? kvasprintf+0xbd/0x160
+[  637.741496]  kvasprintf+0xbd/0x160
+[  637.741516]  ? __pfx_kvasprintf+0x10/0x10
+[  637.741537]  ? find_held_lock+0x2b/0x80
+[  637.741553]  ? __debugfs_create_file+0x40b/0x660
+[  637.741574]  ? lock_release+0xd3/0x2a0
+[  637.741597]  kasprintf+0xbe/0x100
+[  637.741617]  ? __pfx_kasprintf+0x10/0x10
+[  637.741639]  ? __debugfs_create_file+0x410/0x660
+[  637.741660]  ? drm_debugfs_clients_add+0x9e/0x210 [drm]
+[  637.742135]  ? up_write+0x19a/0x520
+[  637.742152]  drm_debugfs_clients_add+0x160/0x210 [drm]
+[  637.742586]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  637.742905]  drm_open_helper+0x20a/0x500 [drm]
+[  637.743262]  drm_open+0x1a5/0x3e0 [drm]
+[  637.743537]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  637.743850]  drm_stub_open+0x214/0x490 [drm]
+[  637.744115]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  637.744381]  chrdev_open+0x23b/0x690
+[  637.744421]  ? __pfx_chrdev_open+0x10/0x10
+[  637.744435]  ? lock_release+0xd3/0x2a0
+[  637.744460]  do_dentry_open+0x6c6/0x1390
+[  637.744474]  ? __pfx_chrdev_open+0x10/0x10
+[  637.744493]  vfs_open+0x87/0x400
+[  637.744510]  ? may_open+0x1f8/0x420
+[  637.744532]  path_openat+0x1cbc/0x2880
+[  637.744557]  ? __pfx_path_openat+0x10/0x10
+[  637.744569]  ? __lock_acquire+0x64e/0x18c0
+[  637.744596]  do_filp_open+0x1fc/0x460
+[  637.744611]  ? __pfx_do_filp_open+0x10/0x10
+[  637.744624]  ? find_held_lock+0x2b/0x80
+[  637.744648]  ? find_held_lock+0x2b/0x80
+[  637.744663]  ? alloc_fd+0x3c2/0x780
+[  637.744684]  ? lock_release+0xd3/0x2a0
+[  637.744707]  ? _raw_spin_unlock+0x23/0x40
+[  637.744725]  ? alloc_fd+0x3c2/0x780
+[  637.744754]  do_sys_openat2+0x109/0x1c0
+[  637.744773]  ? __pfx_do_sys_openat2+0x10/0x10
+[  637.744795]  ? __fget_files+0x200/0x3b0
+[  637.744813]  __x64_sys_openat+0x144/0x200
+[  637.744833]  ? __pfx___x64_sys_openat+0x10/0x10
+[  637.744851]  ? ksys_write+0x1a8/0x240
+[  637.744869]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  637.744931]  do_syscall_64+0xc6/0x390
+[  637.744953]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  637.744967] RIP: 0033:0x7f5ba430ed94
+[  637.744979] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  637.744992] RSP: 002b:00007f5ba2d4eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  637.745016] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007f5ba430ed94
+[  637.745025] RDX: 0000000000040000 RSI: 00007f5ba2d4eb60 RDI: 00000000ffffff9c
+[  637.745034] RBP: 00007f5ba2d4eb60 R08: 0000000000000000 R09: 0000000000000000
+[  637.745042] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  637.745050] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[  637.745073]  </TASK>
+[  674.752577] FAULT_INJECTION: forcing a failure.
+[  674.752577] name failslab, interval 1, probability 0, space 0, times 0
+[  674.759014] CPU: 0 UID: 0 PID: 10405 Comm: syz.2.2774 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  674.759034] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  674.759043] Call Trace:
+[  674.759048]  <TASK>
+[  674.759054]  dump_stack_lvl+0x10b/0x140
+[  674.759098]  should_fail_ex+0x4d5/0x5e0
+[  674.759116]  ? __d_alloc+0x36/0xa10
+[  674.759130]  should_failslab+0xc7/0x130
+[  674.759144]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[  674.759169]  ? __d_alloc+0x36/0xa10
+[  674.759181]  __d_alloc+0x36/0xa10
+[  674.759194]  ? stack_trace_save+0x93/0xd0
+[  674.759273]  d_alloc_parallel+0x117/0x1330
+[  674.759300]  ? __x64_sys_openat+0x144/0x200
+[  674.759341]  ? kasan_save_stack+0x24/0x50
+[  674.759365]  ? kasan_save_track+0x14/0x30
+[  674.759377]  ? __kasan_kmalloc+0x7f/0x90
+[  674.759389]  ? __kmalloc_node_track_caller_noprof+0x2b7/0x7c0
+[  674.759407]  ? kstrdup+0x43/0xc0
+[  674.759455]  ? __pfx_d_alloc_parallel+0x10/0x10
+[  674.759475]  ? drm_open_helper+0x20a/0x500 [drm]
+[  674.759943]  ? drm_open+0x1a5/0x3e0 [drm]
+[  674.760402]  ? drm_stub_open+0x214/0x490 [drm]
+[  674.760889]  ? lockdep_init_map_type+0x4b/0x250
+[  674.760913]  ? lockdep_init_map_type+0x4b/0x250
+[  674.760938]  __lookup_slow+0x197/0x480
+[  674.760951]  ? __pfx___lookup_slow+0x10/0x10
+[  674.760961]  ? __d_lookup+0x78/0x4a0
+[  674.760982]  ? d_lookup+0x7c/0xa0
+[  674.760996]  lookup_noperm+0xe8/0x110
+[  674.761007]  simple_start_creating+0xd8/0x1b0
+[  674.761022]  debugfs_start_creating+0xc7/0x180
+[  674.761036]  debugfs_create_symlink+0x4b/0x2f0
+[  674.761050]  drm_debugfs_clients_add+0x19a/0x210 [drm]
+[  674.761354]  drm_file_alloc+0x5d2/0xb50 [drm]
+[  674.761842]  drm_open_helper+0x20a/0x500 [drm]
+[  674.762378]  drm_open+0x1a5/0x3e0 [drm]
+[  674.762733]  ? __pfx_drm_open+0x10/0x10 [drm]
+[  674.763045]  drm_stub_open+0x214/0x490 [drm]
+[  674.763333]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[  674.763606]  chrdev_open+0x23b/0x690
+[  674.763617]  ? __pfx_chrdev_open+0x10/0x10
+[  674.763626]  ? lock_release+0xd3/0x2a0
+[  674.763641]  do_dentry_open+0x6c6/0x1390
+[  674.763651]  ? __pfx_chrdev_open+0x10/0x10
+[  674.763663]  vfs_open+0x87/0x400
+[  674.763672]  ? may_open+0x1f8/0x420
+[  674.763685]  path_openat+0x1cbc/0x2880
+[  674.763699]  ? __pfx_path_openat+0x10/0x10
+[  674.763706]  ? __lock_acquire+0x64e/0x18c0
+[  674.763721]  do_filp_open+0x1fc/0x460
+[  674.763730]  ? __pfx_do_filp_open+0x10/0x10
+[  674.763737]  ? find_held_lock+0x2b/0x80
+[  674.763751]  ? find_held_lock+0x2b/0x80
+[  674.763760]  ? alloc_fd+0x3c2/0x780
+[  674.763772]  ? lock_release+0xd3/0x2a0
+[  674.763785]  ? _raw_spin_unlock+0x23/0x40
+[  674.763796]  ? alloc_fd+0x3c2/0x780
+[  674.763872]  do_sys_openat2+0x109/0x1c0
+[  674.763894]  ? __pfx_do_sys_openat2+0x10/0x10
+[  674.763916]  ? __fget_files+0x200/0x3b0
+[  674.763935]  __x64_sys_openat+0x144/0x200
+[  674.763954]  ? __pfx___x64_sys_openat+0x10/0x10
+[  674.763972]  ? ksys_write+0x1a8/0x240
+[  674.763991]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  674.764018]  do_syscall_64+0xc6/0x390
+[  674.764039]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  674.764054] RIP: 0033:0x7f5ba430ed94
+[  674.764066] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  674.764079] RSP: 002b:00007f5ba2d4eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  674.764093] RAX: ffffffffffffffda RBX: 1931999999999666 RCX: 00007f5ba430ed94
+[  674.764103] RDX: 0000000000040000 RSI: 00007f5ba2d4eb60 RDI: 00000000ffffff9c
+[  674.764111] RBP: 00007f5ba2d4eb60 R08: 0000000000000000 R09: 0000000000000000
+[  674.764119] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000040000
+[  674.764126] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[  674.764150]  </TASK>
+[  734.568734] FAULT_INJECTION: forcing a failure.
+[  734.568734] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  734.574290] CPU: 2 UID: 0 PID: 10562 Comm: syz.2.2835 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[  734.574310] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  734.574319] Call Trace:
+[  734.574324]  <TASK>
+[  734.574329]  dump_stack_lvl+0x10b/0x140
+[  734.574358]  should_fail_ex+0x4d5/0x5e0
+[  734.574377]  _copy_to_user+0x32/0xd0
+[  734.574429]  simple_read_from_buffer+0xe5/0x180
+[  734.574452]  proc_fail_nth_read+0x18f/0x240
+[  734.574467]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  734.574482]  ? security_file_permission+0x27/0x90
+[  734.574502]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  734.574517]  vfs_read+0x1eb/0xc70
+[  734.574534]  ? __pfx___mutex_lock+0x10/0x10
+[  734.574556]  ? __pfx_vfs_read+0x10/0x10
+[  734.574569]  ? __fget_files+0x1f6/0x3b0
+[  734.574582]  ? lock_release+0xd3/0x2a0
+[  734.574606]  ? __fget_files+0x200/0x3b0
+[  734.574627]  ksys_read+0x126/0x240
+[  734.574639]  ? __pfx_ksys_read+0x10/0x10
+[  734.574654]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  734.574679]  do_syscall_64+0xc6/0x390
+[  734.574699]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  734.574713] RIP: 0033:0x7f5ba430ef6c
+[  734.574725] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  734.574737] RSP: 002b:00007f5ba2d4ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  734.574752] RAX: ffffffffffffffda RBX: 00007f5ba4585fa0 RCX: 00007f5ba430ef6c
+[  734.574761] RDX: 000000000000000f RSI: 00007f5ba2d4f020 RDI: 0000000000000003
+[  734.574769] RBP: 00007f5ba2d4f010 R08: 0000000000000000 R09: 0000000000000000
+[  734.574776] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  734.574784] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[  734.574807]  </TASK>
+[ 1169.226047] FAULT_INJECTION: forcing a failure.
+[ 1169.226047] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1169.230011] CPU: 0 UID: 0 PID: 11783 Comm: syz.5.3300 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1169.230022] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1169.230026] Call Trace:
+[ 1169.230029]  <TASK>
+[ 1169.230033]  dump_stack_lvl+0x10b/0x140
+[ 1169.230047]  should_fail_ex+0x4d5/0x5e0
+[ 1169.230067]  _copy_from_user+0x30/0xd0
+[ 1169.230079]  drm_ioctl+0x4e9/0xb70 [drm]
+[ 1169.230342]  ? __pfx_drm_connector_property_set_ioctl+0x10/0x10 [drm]
+[ 1169.230608]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1169.230845]  ? lock_acquire+0x169/0x300
+[ 1169.230856]  ? __fget_files+0x3a/0x3b0
+[ 1169.230863]  ? find_held_lock+0x2b/0x80
+[ 1169.230871]  ? __fget_files+0x1f6/0x3b0
+[ 1169.230877]  ? lock_release+0xd3/0x2a0
+[ 1169.230888]  ? selinux_file_ioctl+0x18c/0x280
+[ 1169.230931]  ? selinux_file_ioctl+0xbe/0x280
+[ 1169.230940]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1169.231190]  __x64_sys_ioctl+0x194/0x210
+[ 1169.231202]  do_syscall_64+0xc6/0x390
+[ 1169.231213]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1169.231220] RIP: 0033:0x7f0f2e90059d
+[ 1169.231226] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1169.231233] RSP: 002b:00007f0f2d346f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1169.231240] RAX: ffffffffffffffda RBX: 00007f0f2eb75fa0 RCX: 00007f0f2e90059d
+[ 1169.231245] RDX: 9999999999999999 RSI: 00000000c01064ab RDI: 0000000000000003
+[ 1169.231249] RBP: 00007f0f2d347010 R08: 0000000000000000 R09: 0000000000000000
+[ 1169.231253] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1169.231256] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[ 1169.231267]  </TASK>
+[ 1347.966647] FAULT_INJECTION: forcing a failure.
+[ 1347.966647] name failslab, interval 1, probability 0, space 0, times 0
+[ 1347.970729] CPU: 3 UID: 0 PID: 12258 Comm: syz.4.3493 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1347.970740] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1347.970753] Call Trace:
+[ 1347.970770]  <TASK>
+[ 1347.970773]  dump_stack_lvl+0x10b/0x140
+[ 1347.970941]  should_fail_ex+0x4d5/0x5e0
+[ 1347.971036]  ? radix_tree_node_alloc.constprop.0+0x7c/0x310
+[ 1347.971073]  should_failslab+0xc7/0x130
+[ 1347.971113]  kmem_cache_alloc_noprof+0x77/0x6d0
+[ 1347.971147]  ? radix_tree_node_alloc.constprop.0+0x7c/0x310
+[ 1347.971154]  radix_tree_node_alloc.constprop.0+0x7c/0x310
+[ 1347.971164]  idr_get_free+0x4b5/0x900
+[ 1347.971177]  idr_alloc_u32+0x173/0x2d0
+[ 1347.971194]  ? __pfx_idr_alloc_u32+0x10/0x10
+[ 1347.971205]  ? __pfx___mutex_lock+0x10/0x10
+[ 1347.971224]  idr_alloc+0xc5/0x140
+[ 1347.971233]  ? __pfx_idr_alloc+0x10/0x10
+[ 1347.971242]  ? drm_dev_enter+0x5a/0x180 [drm]
+[ 1347.971547]  drm_getmagic+0x179/0x230 [drm]
+[ 1347.971775]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[ 1347.972053]  ? __pfx_drm_getmagic+0x10/0x10 [drm]
+[ 1347.972279]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[ 1347.972536]  drm_ioctl+0x580/0xb70 [drm]
+[ 1347.972776]  ? __pfx_drm_getmagic+0x10/0x10 [drm]
+[ 1347.973025]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1347.973262]  ? lock_acquire+0x169/0x300
+[ 1347.973306]  ? __fget_files+0x3a/0x3b0
+[ 1347.973324]  ? __fget_files+0x1f6/0x3b0
+[ 1347.973340]  ? lock_release+0xd3/0x2a0
+[ 1347.973364]  ? selinux_file_ioctl+0x18c/0x280
+[ 1347.973401]  ? selinux_file_ioctl+0xbe/0x280
+[ 1347.973409]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1347.973651]  __x64_sys_ioctl+0x194/0x210
+[ 1347.973682]  do_syscall_64+0xc6/0x390
+[ 1347.973705]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1347.973738] RIP: 0033:0x7fe839ad059d
+[ 1347.973754] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1347.973770] RSP: 002b:00007fe838516f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1347.973783] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839ad059d
+[ 1347.973788] RDX: 0000200000000000 RSI: 0000000080046402 RDI: 0000000000000003
+[ 1347.973792] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[ 1347.973795] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1347.973799] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1347.973810]  </TASK>
+[ 1377.783843] FAULT_INJECTION: forcing a failure.
+[ 1377.783843] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1377.790050] CPU: 2 UID: 0 PID: 12331 Comm: syz.4.3525 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1377.790061] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1377.790067] Call Trace:
+[ 1377.790070]  <TASK>
+[ 1377.790073]  dump_stack_lvl+0x10b/0x140
+[ 1377.790101]  should_fail_ex+0x4d5/0x5e0
+[ 1377.790112]  _copy_to_user+0x32/0xd0
+[ 1377.790177]  simple_read_from_buffer+0xe5/0x180
+[ 1377.790216]  proc_fail_nth_read+0x18f/0x240
+[ 1377.790238]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1377.790247]  ? security_file_permission+0x27/0x90
+[ 1377.790272]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1377.790280]  vfs_read+0x1eb/0xc70
+[ 1377.790297]  ? __pfx___mutex_lock+0x10/0x10
+[ 1377.790309]  ? __pfx_vfs_read+0x10/0x10
+[ 1377.790316]  ? __fget_files+0x1f6/0x3b0
+[ 1377.790323]  ? lock_release+0xd3/0x2a0
+[ 1377.790337]  ? __fget_files+0x200/0x3b0
+[ 1377.790348]  ksys_read+0x126/0x240
+[ 1377.790355]  ? __pfx_ksys_read+0x10/0x10
+[ 1377.790363]  ? fput+0x6f/0x100
+[ 1377.790375]  do_syscall_64+0xc6/0x390
+[ 1377.790387]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1377.790395] RIP: 0033:0x7fe839acef6c
+[ 1377.790402] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 1377.790409] RSP: 002b:00007fe838516f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 1377.790417] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839acef6c
+[ 1377.790422] RDX: 000000000000000f RSI: 00007fe838517020 RDI: 0000000000000004
+[ 1377.790426] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[ 1377.790430] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1377.790434] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1377.790446]  </TASK>
+[ 1431.161999] FAULT_INJECTION: forcing a failure.
+[ 1431.161999] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1431.168227] CPU: 2 UID: 0 PID: 12493 Comm: syz.4.3587 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1431.168240] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1431.168246] Call Trace:
+[ 1431.168249]  <TASK>
+[ 1431.168253]  dump_stack_lvl+0x10b/0x140
+[ 1431.168269]  should_fail_ex+0x4d5/0x5e0
+[ 1431.168280]  _copy_from_user+0x30/0xd0
+[ 1431.168333]  ioctl_fssetxattr+0x110/0x250
+[ 1431.168374]  ? __pfx_ioctl_fssetxattr+0x10/0x10
+[ 1431.168393]  ? get_pid_task+0x10c/0x250
+[ 1431.168447]  ? proc_fail_nth_write+0x9c/0x220
+[ 1431.168461]  ? find_held_lock+0x2b/0x80
+[ 1431.168470]  ? ksys_write+0x126/0x240
+[ 1431.168479]  ? lock_is_held_type+0xa9/0x130
+[ 1431.168493]  do_vfs_ioctl+0xbf7/0x1470
+[ 1431.168505]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[ 1431.168515]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[ 1431.168526]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[ 1431.168537]  ? lock_acquire+0x169/0x300
+[ 1431.168547]  ? __fget_files+0x3a/0x3b0
+[ 1431.168555]  ? find_held_lock+0x2b/0x80
+[ 1431.168564]  ? __fget_files+0x1f6/0x3b0
+[ 1431.168570]  ? lock_release+0xd3/0x2a0
+[ 1431.168584]  ? selinux_file_ioctl+0x18c/0x280
+[ 1431.168592]  ? selinux_file_ioctl+0xbe/0x280
+[ 1431.168603]  __x64_sys_ioctl+0x11b/0x210
+[ 1431.168615]  do_syscall_64+0xc6/0x390
+[ 1431.168627]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1431.168635] RIP: 0033:0x7fe839ad059d
+[ 1431.168642] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1431.168650] RSP: 002b:00007fe838516f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1431.168659] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839ad059d
+[ 1431.168664] RDX: 0000200000000380 RSI: 00000000401c5820 RDI: 0000000000000003
+[ 1431.168669] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[ 1431.168673] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1431.168678] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1431.168690]  </TASK>
+[ 1602.931052] FAULT_INJECTION: forcing a failure.
+[ 1602.931052] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1602.936896] CPU: 2 UID: 0 PID: 12934 Comm: syz.3.3769 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1602.936907] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1602.936912] Call Trace:
+[ 1602.936915]  <TASK>
+[ 1602.936918]  dump_stack_lvl+0x10b/0x140
+[ 1602.936935]  should_fail_ex+0x4d5/0x5e0
+[ 1602.936945]  strncpy_from_user+0x3b/0x2f0
+[ 1602.936974]  getname_flags.part.0+0x95/0x560
+[ 1602.936996]  getname_flags+0x9a/0xe0
+[ 1602.937003]  do_sys_openat2+0xa4/0x1c0
+[ 1602.937021]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1602.937033]  ? __fget_files+0x200/0x3b0
+[ 1602.937043]  __x64_sys_openat+0x144/0x200
+[ 1602.937053]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1602.937063]  ? ksys_write+0x1a8/0x240
+[ 1602.937073]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1602.937211]  do_syscall_64+0xc6/0x390
+[ 1602.937223]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1602.937232] RIP: 0033:0x7fd9aca5ed94
+[ 1602.937239] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1602.937247] RSP: 002b:00007fd9ab49eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1602.937254] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007fd9aca5ed94
+[ 1602.937259] RDX: 0000000000080203 RSI: 00007fd9ab49eb60 RDI: 00000000ffffff9c
+[ 1602.937264] RBP: 00007fd9ab49eb60 R08: 0000000000000000 R09: 0000000000000000
+[ 1602.937268] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1602.937272] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[ 1602.937284]  </TASK>
+[ 1640.155200] FAULT_INJECTION: forcing a failure.
+[ 1640.155200] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1640.161052] CPU: 2 UID: 0 PID: 13026 Comm: syz.4.3805 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1640.161069] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1640.161077] Call Trace:
+[ 1640.161082]  <TASK>
+[ 1640.161087]  dump_stack_lvl+0x10b/0x140
+[ 1640.161112]  should_fail_ex+0x4d5/0x5e0
+[ 1640.161128]  _copy_from_user+0x30/0xd0
+[ 1640.161150]  drm_ioctl+0x4e9/0xb70 [drm]
+[ 1640.161649]  ? __pfx_drm_mode_createblob_ioctl+0x10/0x10 [drm]
+[ 1640.162103]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1640.162569]  ? lock_acquire+0x169/0x300
+[ 1640.162589]  ? __fget_files+0x3a/0x3b0
+[ 1640.162602]  ? find_held_lock+0x2b/0x80
+[ 1640.162616]  ? __fget_files+0x1f6/0x3b0
+[ 1640.162627]  ? lock_release+0xd3/0x2a0
+[ 1640.162649]  ? selinux_file_ioctl+0x18c/0x280
+[ 1640.162662]  ? selinux_file_ioctl+0xbe/0x280
+[ 1640.162677]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1640.163127]  __x64_sys_ioctl+0x194/0x210
+[ 1640.163148]  do_syscall_64+0xc6/0x390
+[ 1640.163167]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1640.163180] RIP: 0033:0x7fe839ad059d
+[ 1640.163191] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1640.163202] RSP: 002b:00007fe838516f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1640.163215] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839ad059d
+[ 1640.163223] RDX: 0000200000000180 RSI: 00000000c01064bd RDI: 0000000000000005
+[ 1640.163231] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[ 1640.163238] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1640.163245] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1640.163264]  </TASK>
+[ 1655.710727] FAULT_INJECTION: forcing a failure.
+[ 1655.710727] name failslab, interval 1, probability 0, space 0, times 0
+[ 1655.717197] CPU: 2 UID: 0 PID: 13075 Comm: syz.3.3825 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1655.717217] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1655.717226] Call Trace:
+[ 1655.717231]  <TASK>
+[ 1655.717237]  dump_stack_lvl+0x10b/0x140
+[ 1655.717300]  should_fail_ex+0x4d5/0x5e0
+[ 1655.717319]  should_failslab+0xc7/0x130
+[ 1655.717335]  __kmalloc_cache_noprof+0x78/0x6f0
+[ 1655.717350]  ? find_held_lock+0x2b/0x80
+[ 1655.717366]  ? drm_minor_acquire+0x2a4/0x3f0 [drm]
+[ 1655.717856]  ? drm_file_alloc+0x77/0xb50 [drm]
+[ 1655.718363]  ? lock_release+0xd3/0x2a0
+[ 1655.718389]  ? drm_file_alloc+0x77/0xb50 [drm]
+[ 1655.718867]  drm_file_alloc+0x77/0xb50 [drm]
+[ 1655.719333]  drm_open_helper+0x20a/0x500 [drm]
+[ 1655.719831]  drm_open+0x1a5/0x3e0 [drm]
+[ 1655.720318]  ? __pfx_drm_open+0x10/0x10 [drm]
+[ 1655.720820]  drm_stub_open+0x214/0x490 [drm]
+[ 1655.721297]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[ 1655.721787]  chrdev_open+0x23b/0x690
+[ 1655.721807]  ? __pfx_chrdev_open+0x10/0x10
+[ 1655.721823]  ? lock_release+0xd3/0x2a0
+[ 1655.721850]  do_dentry_open+0x6c6/0x1390
+[ 1655.721868]  ? __pfx_chrdev_open+0x10/0x10
+[ 1655.721885]  ? inode_permission+0x15c/0x630
+[ 1655.721907]  vfs_open+0x87/0x400
+[ 1655.721924]  ? may_open+0x1f8/0x420
+[ 1655.721945]  path_openat+0x1cbc/0x2880
+[ 1655.721969]  ? __pfx_path_openat+0x10/0x10
+[ 1655.721982]  ? __lock_acquire+0x64e/0x18c0
+[ 1655.722023]  do_filp_open+0x1fc/0x460
+[ 1655.722039]  ? __pfx_do_filp_open+0x10/0x10
+[ 1655.722052]  ? find_held_lock+0x2b/0x80
+[ 1655.722077]  ? find_held_lock+0x2b/0x80
+[ 1655.722093]  ? alloc_fd+0x3c2/0x780
+[ 1655.722135]  ? lock_release+0xd3/0x2a0
+[ 1655.722158]  ? _raw_spin_unlock+0x23/0x40
+[ 1655.722189]  ? alloc_fd+0x3c2/0x780
+[ 1655.722219]  do_sys_openat2+0x109/0x1c0
+[ 1655.722240]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1655.722263]  ? __fget_files+0x200/0x3b0
+[ 1655.722282]  __x64_sys_openat+0x144/0x200
+[ 1655.722302]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1655.722321]  ? ksys_write+0x1a8/0x240
+[ 1655.722340]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1655.722367]  do_syscall_64+0xc6/0x390
+[ 1655.722388]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1655.722403] RIP: 0033:0x7fd9aca5ed94
+[ 1655.722415] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1655.722429] RSP: 002b:00007fd9ab49eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1655.722443] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007fd9aca5ed94
+[ 1655.722452] RDX: 0000000000080203 RSI: 00007fd9ab49eb60 RDI: 00000000ffffff9c
+[ 1655.722461] RBP: 00007fd9ab49eb60 R08: 0000000000000000 R09: 0000000000000000
+[ 1655.722469] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1655.722477] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[ 1655.722500]  </TASK>
+[ 1710.179209] FAULT_INJECTION: forcing a failure.
+[ 1710.179209] name failslab, interval 1, probability 0, space 0, times 0
+[ 1710.182602] CPU: 2 UID: 0 PID: 13215 Comm: syz.3.3881 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1710.182613] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1710.182619] Call Trace:
+[ 1710.182622]  <TASK>
+[ 1710.182626]  dump_stack_lvl+0x10b/0x140
+[ 1710.182643]  should_fail_ex+0x4d5/0x5e0
+[ 1710.182653]  should_failslab+0xc7/0x130
+[ 1710.182663]  kmem_cache_alloc_node_noprof+0x7e/0x6f0
+[ 1710.182674]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1710.182687]  ? alloc_vmap_area+0xd7b/0x25b0
+[ 1710.182735]  ? alloc_vmap_area+0xd7b/0x25b0
+[ 1710.182745]  alloc_vmap_area+0xd7b/0x25b0
+[ 1710.182759]  ? __create_object+0x5e/0x90
+[ 1710.182777]  ? __pfx_alloc_vmap_area+0x10/0x10
+[ 1710.182788]  ? __is_insn_slot_addr+0x145/0x290
+[ 1710.182830]  __get_vm_area_node+0x1bd/0x290
+[ 1710.182840]  __vmalloc_node_range_noprof+0x23a/0x13e0
+[ 1710.182849]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1710.183127]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1710.183436]  ? alloc_pages_mpol+0x159/0x350
+[ 1710.183464]  ? __pfx___vmalloc_node_range_noprof+0x10/0x10
+[ 1710.183472]  ? avc_has_extended_perms+0x37d/0xf20
+[ 1710.183494]  ? ___kmalloc_large_node+0xcf/0x130
+[ 1710.183504]  __kvmalloc_node_noprof+0x395/0x8c0
+[ 1710.183516]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1710.183789]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1710.184066]  ? lock_acquire+0x169/0x300
+[ 1710.184081]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1710.184385]  drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1710.184657]  drm_mode_createblob_ioctl+0x13e/0x420 [drm]
+[ 1710.184938]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[ 1710.185209]  ? __pfx_drm_mode_createblob_ioctl+0x10/0x10 [drm]
+[ 1710.185511]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[ 1710.185788]  drm_ioctl+0x580/0xb70 [drm]
+[ 1710.186073]  ? __pfx_drm_mode_createblob_ioctl+0x10/0x10 [drm]
+[ 1710.186343]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1710.186654]  ? lock_acquire+0x169/0x300
+[ 1710.186665]  ? __fget_files+0x3a/0x3b0
+[ 1710.186673]  ? __fget_files+0x1f6/0x3b0
+[ 1710.186680]  ? lock_release+0xd3/0x2a0
+[ 1710.186693]  ? selinux_file_ioctl+0x18c/0x280
+[ 1710.186701]  ? selinux_file_ioctl+0xbe/0x280
+[ 1710.186710]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1710.187080]  __x64_sys_ioctl+0x194/0x210
+[ 1710.187107]  do_syscall_64+0xc6/0x390
+[ 1710.187128]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1710.187143] RIP: 0033:0x7fd9aca6059d
+[ 1710.187154] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1710.187167] RSP: 002b:00007fd9ab49ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1710.187181] RAX: ffffffffffffffda RBX: 00007fd9accd5fa0 RCX: 00007fd9aca6059d
+[ 1710.187190] RDX: 0000200000000180 RSI: 00000000c01064bd RDI: 0000000000000005
+[ 1710.187199] RBP: 00007fd9ab49f010 R08: 0000000000000000 R09: 0000000000000000
+[ 1710.187207] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1710.187215] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[ 1710.187237]  </TASK>
+[ 1717.861793] FAULT_INJECTION: forcing a failure.
+[ 1717.861793] name failslab, interval 1, probability 0, space 0, times 0
+[ 1717.866117] CPU: 2 UID: 0 PID: 13233 Comm: syz.4.3889 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1717.866135] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1717.866144] Call Trace:
+[ 1717.866149]  <TASK>
+[ 1717.866154]  dump_stack_lvl+0x10b/0x140
+[ 1717.866181]  should_fail_ex+0x4d5/0x5e0
+[ 1717.866197]  ? alloc_inode+0x6d/0x250
+[ 1717.866213]  should_failslab+0xc7/0x130
+[ 1717.866228]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[ 1717.866251]  ? __pfx_debugfs_alloc_inode+0x10/0x10
+[ 1717.866349]  ? alloc_inode+0x6d/0x250
+[ 1717.866363]  alloc_inode+0x6d/0x250
+[ 1717.866379]  new_inode+0x23/0x160
+[ 1717.866396]  debugfs_create_dir+0x9f/0x5c0
+[ 1717.866419]  drm_debugfs_clients_add+0x74/0x210 [drm]
+[ 1717.866889]  drm_file_alloc+0x5d2/0xb50 [drm]
+[ 1717.867348]  drm_open_helper+0x20a/0x500 [drm]
+[ 1717.867829]  drm_open+0x1a5/0x3e0 [drm]
+[ 1717.868282]  ? __pfx_drm_open+0x10/0x10 [drm]
+[ 1717.868746]  drm_stub_open+0x214/0x490 [drm]
+[ 1717.869187]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[ 1717.869656]  chrdev_open+0x23b/0x690
+[ 1717.869674]  ? __pfx_chrdev_open+0x10/0x10
+[ 1717.869688]  ? lock_release+0xd3/0x2a0
+[ 1717.869713]  do_dentry_open+0x6c6/0x1390
+[ 1717.869729]  ? __pfx_chrdev_open+0x10/0x10
+[ 1717.869743]  ? inode_permission+0x15c/0x630
+[ 1717.869763]  vfs_open+0x87/0x400
+[ 1717.869778]  ? may_open+0x1f8/0x420
+[ 1717.869797]  path_openat+0x1cbc/0x2880
+[ 1717.869819]  ? __pfx_path_openat+0x10/0x10
+[ 1717.869830]  ? __lock_acquire+0x64e/0x18c0
+[ 1717.869855]  do_filp_open+0x1fc/0x460
+[ 1717.869868]  ? __pfx_do_filp_open+0x10/0x10
+[ 1717.869880]  ? find_held_lock+0x2b/0x80
+[ 1717.869902]  ? find_held_lock+0x2b/0x80
+[ 1717.869915]  ? alloc_fd+0x3c2/0x780
+[ 1717.869935]  ? lock_release+0xd3/0x2a0
+[ 1717.869956]  ? _raw_spin_unlock+0x23/0x40
+[ 1717.869973]  ? alloc_fd+0x3c2/0x780
+[ 1717.869999]  do_sys_openat2+0x109/0x1c0
+[ 1717.870016]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1717.870036]  ? __fget_files+0x200/0x3b0
+[ 1717.870064]  __x64_sys_openat+0x144/0x200
+[ 1717.870082]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1717.870098]  ? ksys_write+0x1a8/0x240
+[ 1717.870115]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1717.870138]  do_syscall_64+0xc6/0x390
+[ 1717.870157]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1717.870170] RIP: 0033:0x7fe839aced94
+[ 1717.870180] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1717.870192] RSP: 002b:00007fe838516ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1717.870206] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007fe839aced94
+[ 1717.870214] RDX: 0000000000080203 RSI: 00007fe838516b60 RDI: 00000000ffffff9c
+[ 1717.870221] RBP: 00007fe838516b60 R08: 0000000000000000 R09: 0000000000000000
+[ 1717.870229] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1717.870236] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1717.870256]  </TASK>
+[ 1717.985828] debugfs: out of free dentries, can not create directory 'client-11312'
+[ 1731.504801] FAULT_INJECTION: forcing a failure.
+[ 1731.504801] name failslab, interval 1, probability 0, space 0, times 0
+[ 1731.509516] CPU: 0 UID: 0 PID: 13265 Comm: syz.4.3901 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1731.509526] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1731.509531] Call Trace:
+[ 1731.509534]  <TASK>
+[ 1731.509537]  dump_stack_lvl+0x10b/0x140
+[ 1731.509551]  should_fail_ex+0x4d5/0x5e0
+[ 1731.509561]  should_failslab+0xc7/0x130
+[ 1731.509569]  __kmalloc_cache_node_noprof+0x7b/0x710
+[ 1731.509580]  ? __lock_acquire+0xbb0/0x18c0
+[ 1731.509590]  ? __get_vm_area_node+0xf5/0x290
+[ 1731.509597]  ? lock_release+0x50/0x2a0
+[ 1731.509608]  ? __get_vm_area_node+0xf5/0x290
+[ 1731.509613]  __get_vm_area_node+0xf5/0x290
+[ 1731.509621]  __vmalloc_node_range_noprof+0x23a/0x13e0
+[ 1731.509630]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.509868]  ? lock_release+0xd3/0x2a0
+[ 1731.509880]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.510132]  ? __pfx___vmalloc_node_range_noprof+0x10/0x10
+[ 1731.510139]  ? __pfx_alloc_vmap_area+0x10/0x10
+[ 1731.510148]  ? __is_insn_slot_addr+0x145/0x290
+[ 1731.510163]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.510399]  __vmalloc_node_noprof+0xb1/0x100
+[ 1731.510406]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.510696]  __vmalloc_node_range_noprof+0x39f/0x13e0
+[ 1731.510707]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.510956]  ? __pfx___vmalloc_node_range_noprof+0x10/0x10
+[ 1731.510963]  ? avc_has_extended_perms+0x37d/0xf20
+[ 1731.510976]  ? ___kmalloc_large_node+0xcf/0x130
+[ 1731.510984]  __kvmalloc_node_noprof+0x395/0x8c0
+[ 1731.510995]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.511237]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.511520]  ? lock_acquire+0x169/0x300
+[ 1731.511532]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.511775]  drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.512028]  drm_mode_createblob_ioctl+0x13e/0x420 [drm]
+[ 1731.512272]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[ 1731.512555]  ? __pfx_drm_mode_createblob_ioctl+0x10/0x10 [drm]
+[ 1731.512803]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[ 1731.513062]  drm_ioctl+0x580/0xb70 [drm]
+[ 1731.513391]  ? __pfx_drm_mode_createblob_ioctl+0x10/0x10 [drm]
+[ 1731.513859]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1731.514306]  ? lock_acquire+0x169/0x300
+[ 1731.514325]  ? __fget_files+0x3a/0x3b0
+[ 1731.514340]  ? __fget_files+0x1f6/0x3b0
+[ 1731.514352]  ? lock_release+0xd3/0x2a0
+[ 1731.514375]  ? selinux_file_ioctl+0x18c/0x280
+[ 1731.514388]  ? selinux_file_ioctl+0xbe/0x280
+[ 1731.514404]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1731.514861]  __x64_sys_ioctl+0x194/0x210
+[ 1731.514883]  do_syscall_64+0xc6/0x390
+[ 1731.514902]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1731.514916] RIP: 0033:0x7fe839ad059d
+[ 1731.514940] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1731.514952] RSP: 002b:00007fe838516f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1731.514966] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839ad059d
+[ 1731.514974] RDX: 0000200000000180 RSI: 00000000c01064bd RDI: 0000000000000005
+[ 1731.514982] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[ 1731.514999] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1731.515007] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1731.515028]  </TASK>
+[ 1731.647866] syz.4.3901: vmalloc error: size 69632, vm_struct allocation failed, mode:0xdc0(GFP_KERNEL|__GFP_ZERO), nodemask=(null),cpuset=/,mems_allowed=0
+[ 1731.653689] CPU: 0 UID: 0 PID: 13265 Comm: syz.4.3901 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1731.653698] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1731.653703] Call Trace:
+[ 1731.653707]  <TASK>
+[ 1731.653710]  dump_stack_lvl+0x10b/0x140
+[ 1731.653725]  warn_alloc+0x216/0x370
+[ 1731.653748]  ? __pfx_warn_alloc+0x10/0x10
+[ 1731.653755]  ? should_failslab+0xc7/0x130
+[ 1731.653763]  ? __kmalloc_cache_node_noprof+0x27f/0x710
+[ 1731.653774]  ? __lock_acquire+0xbb0/0x18c0
+[ 1731.653786]  ? __kasan_kmalloc+0x6f/0x90
+[ 1731.653794]  ? __get_vm_area_node+0x1df/0x290
+[ 1731.653803]  __vmalloc_node_range_noprof+0xafd/0x13e0
+[ 1731.653810]  ? lock_release+0xd3/0x2a0
+[ 1731.653823]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.654089]  ? __pfx___vmalloc_node_range_noprof+0x10/0x10
+[ 1731.654097]  ? __pfx_alloc_vmap_area+0x10/0x10
+[ 1731.654106]  ? __is_insn_slot_addr+0x145/0x290
+[ 1731.654121]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.654356]  __vmalloc_node_noprof+0xb1/0x100
+[ 1731.654363]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.654632]  __vmalloc_node_range_noprof+0x39f/0x13e0
+[ 1731.654643]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.654884]  ? __pfx___vmalloc_node_range_noprof+0x10/0x10
+[ 1731.654891]  ? avc_has_extended_perms+0x37d/0xf20
+[ 1731.654905]  ? ___kmalloc_large_node+0xcf/0x130
+[ 1731.654913]  __kvmalloc_node_noprof+0x395/0x8c0
+[ 1731.654924]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.655174]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.655410]  ? lock_acquire+0x169/0x300
+[ 1731.655422]  ? drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.655680]  drm_property_create_blob.part.0+0x35/0x2b0 [drm]
+[ 1731.655921]  drm_mode_createblob_ioctl+0x13e/0x420 [drm]
+[ 1731.656171]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[ 1731.656409]  ? __pfx_drm_mode_createblob_ioctl+0x10/0x10 [drm]
+[ 1731.656670]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[ 1731.656913]  drm_ioctl+0x580/0xb70 [drm]
+[ 1731.657162]  ? __pfx_drm_mode_createblob_ioctl+0x10/0x10 [drm]
+[ 1731.657398]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1731.657675]  ? lock_acquire+0x169/0x300
+[ 1731.657685]  ? __fget_files+0x3a/0x3b0
+[ 1731.657693]  ? __fget_files+0x1f6/0x3b0
+[ 1731.657698]  ? lock_release+0xd3/0x2a0
+[ 1731.657710]  ? selinux_file_ioctl+0x18c/0x280
+[ 1731.657717]  ? selinux_file_ioctl+0xbe/0x280
+[ 1731.657725]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1731.657967]  __x64_sys_ioctl+0x194/0x210
+[ 1731.657978]  do_syscall_64+0xc6/0x390
+[ 1731.657989]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1731.658004] RIP: 0033:0x7fe839ad059d
+[ 1731.658031] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1731.658038] RSP: 002b:00007fe838516f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1731.658045] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839ad059d
+[ 1731.658049] RDX: 0000200000000180 RSI: 00000000c01064bd RDI: 0000000000000005
+[ 1731.658053] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[ 1731.658057] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1731.658061] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1731.658071]  </TASK>
+[ 1731.781059] Mem-Info:
+[ 1731.782740] active_anon:37 inactive_anon:10208 isolated_anon:0
+[ 1731.782740]  active_file:12382 inactive_file:33496 isolated_file:0
+[ 1731.782740]  unevictable:0 dirty:358 writeback:0
+[ 1731.782740]  slab_reclaimable:7786 slab_unreclaimable:58592
+[ 1731.782740]  mapped:30347 shmem:55 pagetables:858
+[ 1731.782740]  sec_pagetables:0 bounce:0
+[ 1731.782740]  kernel_misc_reclaimable:0
+[ 1731.782740]  free:655763 free_pcp:4716 free_cma:0
+[ 1731.795684] Node 0 active_anon:148kB inactive_anon:40832kB active_file:49528kB inactive_file:133984kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:121388kB dirty:1432kB writeback:0kB shmem:220kB kernel_stack:4608kB pagetables:3136kB sec_pagetables:0kB all_unreclaimable? no Balloon:0kB
+[ 1731.805279] Node 0 DMA free:15360kB boost:0kB min:32kB low:44kB high:56kB reserved_highatomic:0KB free_highatomic:0KB active_anon:0kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB zspages:0kB present:15992kB managed:15360kB mlocked:0kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[ 1731.814282] lowmem_reserve[]: 0 2856 3260 3260
+[ 1731.816268] Node 0 DMA32 free:2600916kB boost:0kB min:6364kB low:9272kB high:12180kB reserved_highatomic:0KB free_highatomic:0KB active_anon:56kB inactive_anon:15692kB active_file:14644kB inactive_file:82604kB unevictable:0kB writepending:88kB zspages:0kB present:3129216kB managed:2924592kB mlocked:0kB bounce:0kB free_pcp:13732kB local_pcp:7168kB free_cma:0kB
+[ 1731.827924] lowmem_reserve[]: 0 0 404 404
+[ 1731.829824] Node 0 Normal free:6936kB boost:2592kB min:3496kB low:3908kB high:4320kB reserved_highatomic:0KB free_highatomic:0KB active_anon:92kB inactive_anon:25140kB active_file:34884kB inactive_file:51380kB unevictable:0kB writepending:1356kB zspages:0kB present:1048576kB managed:414588kB mlocked:0kB bounce:0kB free_pcp:5800kB local_pcp:408kB free_cma:0kB
+[ 1731.839814] lowmem_reserve[]: 0 0 0 0
+[ 1731.841304] Node 0 DMA: 0*4kB 0*8kB 0*16kB 0*32kB 0*64kB 0*128kB 0*256kB 0*512kB 1*1024kB (U) 1*2048kB (M) 3*4096kB (M) = 15360kB
+[ 1731.845942] Node 0 DMA32: 151*4kB (UME) 371*8kB (UME) 133*16kB (UM) 262*32kB (UME) 97*64kB (UME) 53*128kB (UME) 29*256kB (UME) 37*512kB (UME) 88*1024kB (UME) 18*2048kB (UM) 591*4096kB (UM) = 2601156kB
+[ 1731.851482] Node 0 Normal: 4*4kB (U) 323*8kB (U) 243*16kB (U) 8*32kB (U) 3*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 6936kB
+[ 1731.856093] Node 0 hugepages_total=4 hugepages_free=4 hugepages_surp=0 hugepages_size=2048kB
+[ 1731.859098] 45933 total pagecache pages
+[ 1731.860673] 0 pages in swap cache
+[ 1731.862266] Free swap  = 124996kB
+[ 1731.863400] Total swap = 124996kB
+[ 1731.864682] 1048446 pages RAM
+[ 1731.866107] 0 pages HighMem/MovableOnly
+[ 1731.867820] 209811 pages reserved
+[ 1739.458939] FAULT_INJECTION: forcing a failure.
+[ 1739.458939] name failslab, interval 1, probability 0, space 0, times 0
+[ 1739.462889] CPU: 1 UID: 0 PID: 13285 Comm: syz.3.3911 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1739.462898] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1739.462902] Call Trace:
+[ 1739.462905]  <TASK>
+[ 1739.462908]  dump_stack_lvl+0x10b/0x140
+[ 1739.462922]  should_fail_ex+0x4d5/0x5e0
+[ 1739.462931]  ? security_inode_alloc+0x43/0x150
+[ 1739.462939]  should_failslab+0xc7/0x130
+[ 1739.462947]  kmem_cache_alloc_noprof+0x77/0x6d0
+[ 1739.462956]  ? __pfx_map_id_range_down+0x10/0x10
+[ 1739.462986]  ? security_inode_alloc+0x43/0x150
+[ 1739.462992]  security_inode_alloc+0x43/0x150
+[ 1739.462999]  inode_init_always_gfp+0xca0/0xfe0
+[ 1739.463008]  alloc_inode+0x93/0x250
+[ 1739.463015]  new_inode+0x23/0x160
+[ 1739.463023]  debugfs_create_dir+0x9f/0x5c0
+[ 1739.463034]  drm_debugfs_clients_add+0x74/0x210 [drm]
+[ 1739.463394]  drm_file_alloc+0x5d2/0xb50 [drm]
+[ 1739.463602]  drm_open_helper+0x20a/0x500 [drm]
+[ 1739.463831]  drm_open+0x1a5/0x3e0 [drm]
+[ 1739.464065]  ? __pfx_drm_open+0x10/0x10 [drm]
+[ 1739.464377]  drm_stub_open+0x214/0x490 [drm]
+[ 1739.464611]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[ 1739.464845]  chrdev_open+0x23b/0x690
+[ 1739.464854]  ? __pfx_chrdev_open+0x10/0x10
+[ 1739.464862]  ? lock_release+0xd3/0x2a0
+[ 1739.464876]  do_dentry_open+0x6c6/0x1390
+[ 1739.464885]  ? __pfx_chrdev_open+0x10/0x10
+[ 1739.464892]  ? inode_permission+0x15c/0x630
+[ 1739.464911]  vfs_open+0x87/0x400
+[ 1739.464920]  ? may_open+0x1f8/0x420
+[ 1739.464931]  path_openat+0x1cbc/0x2880
+[ 1739.464942]  ? __pfx_path_openat+0x10/0x10
+[ 1739.464948]  ? __lock_acquire+0x64e/0x18c0
+[ 1739.464961]  do_filp_open+0x1fc/0x460
+[ 1739.464969]  ? __pfx_do_filp_open+0x10/0x10
+[ 1739.464975]  ? find_held_lock+0x2b/0x80
+[ 1739.464987]  ? find_held_lock+0x2b/0x80
+[ 1739.464994]  ? alloc_fd+0x3c2/0x780
+[ 1739.465004]  ? lock_release+0xd3/0x2a0
+[ 1739.465015]  ? _raw_spin_unlock+0x23/0x40
+[ 1739.465025]  ? alloc_fd+0x3c2/0x780
+[ 1739.465039]  do_sys_openat2+0x109/0x1c0
+[ 1739.465048]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1739.465059]  ? __fget_files+0x200/0x3b0
+[ 1739.465068]  __x64_sys_openat+0x144/0x200
+[ 1739.465077]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1739.465086]  ? ksys_write+0x1a8/0x240
+[ 1739.465095]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1739.465108]  do_syscall_64+0xc6/0x390
+[ 1739.465118]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1739.465126] RIP: 0033:0x7fd9aca5ed94
+[ 1739.465132] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1739.465139] RSP: 002b:00007fd9ab49eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1739.465147] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007fd9aca5ed94
+[ 1739.465151] RDX: 0000000000080203 RSI: 00007fd9ab49eb60 RDI: 00000000ffffff9c
+[ 1739.465155] RBP: 00007fd9ab49eb60 R08: 0000000000000000 R09: 0000000000000000
+[ 1739.465159] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1739.465163] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[ 1739.465173]  </TASK>
+[ 1739.568324] debugfs: out of free dentries, can not create directory 'client-11395'
+[ 1739.602837] FAULT_INJECTION: forcing a failure.
+[ 1739.602837] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1739.609780] CPU: 2 UID: 0 PID: 13298 Comm: syz.3.3912 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1739.609799] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1739.609808] Call Trace:
+[ 1739.609813]  <TASK>
+[ 1739.609820]  dump_stack_lvl+0x10b/0x140
+[ 1739.609847]  should_fail_ex+0x4d5/0x5e0
+[ 1739.609866]  _copy_from_user+0x30/0xd0
+[ 1739.609888]  ioctl_fssetxattr+0x110/0x250
+[ 1739.609910]  ? __pfx_ioctl_fssetxattr+0x10/0x10
+[ 1739.609929]  ? get_pid_task+0x10c/0x250
+[ 1739.609948]  ? proc_fail_nth_write+0x9c/0x220
+[ 1739.609965]  ? find_held_lock+0x2b/0x80
+[ 1739.609982]  ? ksys_write+0x126/0x240
+[ 1739.609997]  ? lock_is_held_type+0xa9/0x130
+[ 1739.610022]  do_vfs_ioctl+0xbf7/0x1470
+[ 1739.610042]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[ 1739.610059]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[ 1739.610078]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[ 1739.610099]  ? lock_acquire+0x169/0x300
+[ 1739.610118]  ? __fget_files+0x3a/0x3b0
+[ 1739.610130]  ? find_held_lock+0x2b/0x80
+[ 1739.610145]  ? __fget_files+0x1f6/0x3b0
+[ 1739.610157]  ? lock_release+0xd3/0x2a0
+[ 1739.610181]  ? selinux_file_ioctl+0x18c/0x280
+[ 1739.610194]  ? selinux_file_ioctl+0xbe/0x280
+[ 1739.610214]  __x64_sys_ioctl+0x11b/0x210
+[ 1739.610236]  do_syscall_64+0xc6/0x390
+[ 1739.610256]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1739.610270] RIP: 0033:0x7fd9aca6059d
+[ 1739.610282] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1739.610295] RSP: 002b:00007fd9ab49ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1739.610350] RAX: ffffffffffffffda RBX: 00007fd9accd5fa0 RCX: 00007fd9aca6059d
+[ 1739.610359] RDX: 0000200000000380 RSI: 00000000401c5820 RDI: 0000000000000003
+[ 1739.610368] RBP: 00007fd9ab49f010 R08: 0000000000000000 R09: 0000000000000000
+[ 1739.610376] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1739.610383] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[ 1739.610404]  </TASK>
+[ 1790.940562] FAULT_INJECTION: forcing a failure.
+[ 1790.940562] name failslab, interval 1, probability 0, space 0, times 0
+[ 1790.945976] CPU: 0 UID: 0 PID: 13421 Comm: syz.2.3969 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1790.945991] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1790.945996] Call Trace:
+[ 1790.946000]  <TASK>
+[ 1790.946003]  dump_stack_lvl+0x10b/0x140
+[ 1790.946019]  should_fail_ex+0x4d5/0x5e0
+[ 1790.946030]  ? alloc_inode+0x6d/0x250
+[ 1790.946040]  should_failslab+0xc7/0x130
+[ 1790.946048]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[ 1790.946062]  ? __pfx_debugfs_alloc_inode+0x10/0x10
+[ 1790.946075]  ? alloc_inode+0x6d/0x250
+[ 1790.946084]  alloc_inode+0x6d/0x250
+[ 1790.946093]  new_inode+0x23/0x160
+[ 1790.946104]  __debugfs_create_file+0xd8/0x660
+[ 1790.946116]  ? drm_debugfs_clients_add+0x9e/0x210 [drm]
+[ 1790.946456]  debugfs_create_file_full+0x46/0x60
+[ 1790.946481]  drm_debugfs_clients_add+0xde/0x210 [drm]
+[ 1790.946774]  drm_file_alloc+0x5d2/0xb50 [drm]
+[ 1790.947056]  drm_open_helper+0x20a/0x500 [drm]
+[ 1790.947327]  drm_open+0x1a5/0x3e0 [drm]
+[ 1790.947689]  ? __pfx_drm_open+0x10/0x10 [drm]
+[ 1790.947972]  drm_stub_open+0x214/0x490 [drm]
+[ 1790.948238]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[ 1790.948584]  chrdev_open+0x23b/0x690
+[ 1790.948594]  ? __pfx_chrdev_open+0x10/0x10
+[ 1790.948603]  ? lock_release+0xd3/0x2a0
+[ 1790.948618]  do_dentry_open+0x6c6/0x1390
+[ 1790.948628]  ? __pfx_chrdev_open+0x10/0x10
+[ 1790.948637]  ? inode_permission+0x15c/0x630
+[ 1790.948648]  vfs_open+0x87/0x400
+[ 1790.948658]  ? may_open+0x1f8/0x420
+[ 1790.948670]  path_openat+0x1cbc/0x2880
+[ 1790.948683]  ? __pfx_path_openat+0x10/0x10
+[ 1790.948689]  ? __lock_acquire+0x64e/0x18c0
+[ 1790.948705]  do_filp_open+0x1fc/0x460
+[ 1790.948713]  ? __pfx_do_filp_open+0x10/0x10
+[ 1790.948720]  ? find_held_lock+0x2b/0x80
+[ 1790.948734]  ? find_held_lock+0x2b/0x80
+[ 1790.948742]  ? alloc_fd+0x3c2/0x780
+[ 1790.948754]  ? lock_release+0xd3/0x2a0
+[ 1790.948766]  ? _raw_spin_unlock+0x23/0x40
+[ 1790.948777]  ? alloc_fd+0x3c2/0x780
+[ 1790.948793]  do_sys_openat2+0x109/0x1c0
+[ 1790.948803]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1790.948815]  ? __fget_files+0x200/0x3b0
+[ 1790.948825]  __x64_sys_openat+0x144/0x200
+[ 1790.948836]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1790.948861]  ? ksys_write+0x1a8/0x240
+[ 1790.948878]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1790.948892]  do_syscall_64+0xc6/0x390
+[ 1790.948904]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1790.948912] RIP: 0033:0x7f5ba430ed94
+[ 1790.948919] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1790.948927] RSP: 002b:00007f5ba2d4eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1790.948935] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f5ba430ed94
+[ 1790.948940] RDX: 0000000000080203 RSI: 00007f5ba2d4eb60 RDI: 00000000ffffff9c
+[ 1790.948945] RBP: 00007f5ba2d4eb60 R08: 0000000000000000 R09: 0000000000000000
+[ 1790.948949] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1790.948954] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[ 1790.948966]  </TASK>
+[ 1791.076876] debugfs: out of free dentries, can not create file 'proc_info'
+[ 1827.978266] FAULT_INJECTION: forcing a failure.
+[ 1827.978266] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1827.983074] CPU: 1 UID: 0 PID: 13518 Comm: syz.3.4008 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1827.983090] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1827.983097] Call Trace:
+[ 1827.983101]  <TASK>
+[ 1827.983106]  dump_stack_lvl+0x10b/0x140
+[ 1827.983128]  should_fail_ex+0x4d5/0x5e0
+[ 1827.983141]  _copy_to_user+0x32/0xd0
+[ 1827.983160]  drm_mode_getblob_ioctl+0x26d/0x360 [drm]
+[ 1827.983615]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[ 1827.984021]  ? __pfx_drm_mode_getblob_ioctl+0x10/0x10 [drm]
+[ 1827.984438]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[ 1827.984867]  drm_ioctl+0x580/0xb70 [drm]
+[ 1827.985264]  ? __pfx_drm_mode_getblob_ioctl+0x10/0x10 [drm]
+[ 1827.985695]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1827.986120]  ? lock_acquire+0x169/0x300
+[ 1827.986139]  ? __fget_files+0x3a/0x3b0
+[ 1827.986153]  ? __fget_files+0x1f6/0x3b0
+[ 1827.986164]  ? lock_release+0xd3/0x2a0
+[ 1827.986186]  ? selinux_file_ioctl+0x18c/0x280
+[ 1827.986199]  ? selinux_file_ioctl+0xbe/0x280
+[ 1827.986215]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1827.986660]  __x64_sys_ioctl+0x194/0x210
+[ 1827.986679]  do_syscall_64+0xc6/0x390
+[ 1827.986698]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1827.986710] RIP: 0033:0x7fd9aca6059d
+[ 1827.986721] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1827.986733] RSP: 002b:00007fd9ab49ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1827.986745] RAX: ffffffffffffffda RBX: 00007fd9accd5fa0 RCX: 00007fd9aca6059d
+[ 1827.986753] RDX: 0000200000000100 RSI: 00000000c01064ac RDI: 0000000000000004
+[ 1827.986761] RBP: 00007fd9ab49f010 R08: 0000000000000000 R09: 0000000000000000
+[ 1827.986768] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1827.986775] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[ 1827.986805]  </TASK>
+[ 1827.989617] FAULT_INJECTION: forcing a failure.
+[ 1827.989617] name fail_page_alloc, interval 1, probability 0, space 0, times 0
+[ 1828.143260] CPU: 3 UID: 0 PID: 13522 Comm: syz.4.4010 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1828.143271] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1828.143276] Call Trace:
+[ 1828.143280]  <TASK>
+[ 1828.143284]  dump_stack_lvl+0x10b/0x140
+[ 1828.143308]  should_fail_ex+0x4d5/0x5e0
+[ 1828.143323]  should_fail_alloc_page+0xe5/0x110
+[ 1828.143338]  prepare_alloc_pages+0x1ad/0x500
+[ 1828.143355]  ? find_held_lock+0x2b/0x80
+[ 1828.143366]  __alloc_frozen_pages_noprof+0x184/0x1f60
+[ 1828.143376]  ? vfs_open+0x87/0x400
+[ 1828.143386]  ? path_openat+0x1cbc/0x2880
+[ 1828.143392]  ? kernel_text_address+0x16/0xf0
+[ 1828.143402]  ? __x64_sys_openat+0x144/0x200
+[ 1828.143411]  ? __kernel_text_address+0x12/0x40
+[ 1828.143420]  ? unwind_get_return_address+0x5e/0xa0
+[ 1828.143450]  ? __pfx_stack_trace_consume_entry+0x10/0x10
+[ 1828.143476]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[ 1828.143488]  ? register_lock_class+0x47/0x4c0
+[ 1828.143499]  ? __lock_acquire+0xbb0/0x18c0
+[ 1828.143509]  ? __sanitizer_cov_trace_switch+0x54/0x90
+[ 1828.143519]  ? policy_nodemask+0xf0/0x4e0
+[ 1828.143530]  alloc_pages_mpol+0xf2/0x350
+[ 1828.143539]  ? __pfx_alloc_pages_mpol+0x10/0x10
+[ 1828.143547]  ? do_raw_spin_lock+0x130/0x270
+[ 1828.143554]  ? find_held_lock+0x2b/0x80
+[ 1828.143563]  alloc_pages_noprof+0xa6/0x390
+[ 1828.143572]  get_free_pages_noprof+0x15/0xb0
+[ 1828.143582]  inode_doinit_with_dentry+0x8d6/0x1160
+[ 1828.143594]  ? __pfx_inode_doinit_with_dentry+0x10/0x10
+[ 1828.143601]  ? find_held_lock+0x2b/0x80
+[ 1828.143608]  ? new_inode+0x111/0x160
+[ 1828.143619]  selinux_d_instantiate+0x2c/0x40
+[ 1828.143626]  security_d_instantiate+0x5d/0xc0
+[ 1828.143644]  d_instantiate+0x63/0xa0
+[ 1828.143654]  __debugfs_create_file+0x23e/0x660
+[ 1828.143667]  ? drm_debugfs_clients_add+0x9e/0x210 [drm]
+[ 1828.143919]  debugfs_create_file_full+0x46/0x60
+[ 1828.143932]  drm_debugfs_clients_add+0xde/0x210 [drm]
+[ 1828.144169]  drm_file_alloc+0x5d2/0xb50 [drm]
+[ 1828.144437]  drm_open_helper+0x20a/0x500 [drm]
+[ 1828.144675]  drm_open+0x1a5/0x3e0 [drm]
+[ 1828.144920]  ? __pfx_drm_open+0x10/0x10 [drm]
+[ 1828.145159]  drm_stub_open+0x214/0x490 [drm]
+[ 1828.145413]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[ 1828.145645]  chrdev_open+0x23b/0x690
+[ 1828.145653]  ? __pfx_chrdev_open+0x10/0x10
+[ 1828.145661]  ? lock_release+0xd3/0x2a0
+[ 1828.145674]  do_dentry_open+0x6c6/0x1390
+[ 1828.145682]  ? __pfx_chrdev_open+0x10/0x10
+[ 1828.145690]  ? inode_permission+0x15c/0x630
+[ 1828.145701]  vfs_open+0x87/0x400
+[ 1828.145709]  ? may_open+0x1f8/0x420
+[ 1828.145719]  path_openat+0x1cbc/0x2880
+[ 1828.145731]  ? __pfx_path_openat+0x10/0x10
+[ 1828.145737]  ? __lock_acquire+0x64e/0x18c0
+[ 1828.145750]  do_filp_open+0x1fc/0x460
+[ 1828.145757]  ? __pfx_do_filp_open+0x10/0x10
+[ 1828.145764]  ? find_held_lock+0x2b/0x80
+[ 1828.145775]  ? find_held_lock+0x2b/0x80
+[ 1828.145782]  ? alloc_fd+0x3c2/0x780
+[ 1828.145801]  ? lock_release+0xd3/0x2a0
+[ 1828.145813]  ? _raw_spin_unlock+0x23/0x40
+[ 1828.145822]  ? alloc_fd+0x3c2/0x780
+[ 1828.145836]  do_sys_openat2+0x109/0x1c0
+[ 1828.145845]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1828.145856]  ? __fget_files+0x200/0x3b0
+[ 1828.145864]  __x64_sys_openat+0x144/0x200
+[ 1828.145874]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1828.145883]  ? ksys_write+0x1a8/0x240
+[ 1828.145891]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1828.145904]  do_syscall_64+0xc6/0x390
+[ 1828.145915]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1828.145922] RIP: 0033:0x7fe839aced94
+[ 1828.145929] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1828.145936] RSP: 002b:00007fe838516ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1828.145943] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007fe839aced94
+[ 1828.145948] RDX: 0000000000080203 RSI: 00007fe838516b60 RDI: 00000000ffffff9c
+[ 1828.145952] RBP: 00007fe838516b60 R08: 0000000000000000 R09: 0000000000000000
+[ 1828.145956] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1828.145960] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1828.145970]  </TASK>
+[ 1851.211996] FAULT_INJECTION: forcing a failure.
+[ 1851.211996] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1851.217850] CPU: 1 UID: 0 PID: 13571 Comm: syz.2.4031 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1851.217868] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1851.217876] Call Trace:
+[ 1851.217881]  <TASK>
+[ 1851.217886]  dump_stack_lvl+0x10b/0x140
+[ 1851.217911]  should_fail_ex+0x4d5/0x5e0
+[ 1851.217928]  _copy_to_user+0x32/0xd0
+[ 1851.217950]  drm_ioctl+0x5ba/0xb70 [drm]
+[ 1851.218431]  ? __pfx_drm_mode_getblob_ioctl+0x10/0x10 [drm]
+[ 1851.218897]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1851.219325]  ? lock_acquire+0x169/0x300
+[ 1851.219391]  ? __fget_files+0x3a/0x3b0
+[ 1851.219406]  ? __fget_files+0x1f6/0x3b0
+[ 1851.219417]  ? lock_release+0xd3/0x2a0
+[ 1851.219438]  ? selinux_file_ioctl+0x18c/0x280
+[ 1851.219453]  ? selinux_file_ioctl+0xbe/0x280
+[ 1851.219468]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 1851.219896]  __x64_sys_ioctl+0x194/0x210
+[ 1851.219917]  do_syscall_64+0xc6/0x390
+[ 1851.219936]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1851.219949] RIP: 0033:0x7f5ba431059d
+[ 1851.219959] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 1851.219971] RSP: 002b:00007f5ba2d4ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 1851.219984] RAX: ffffffffffffffda RBX: 00007f5ba4585fa0 RCX: 00007f5ba431059d
+[ 1851.219992] RDX: 0000200000000100 RSI: 00000000c01064ac RDI: 0000000000000004
+[ 1851.219999] RBP: 00007f5ba2d4f010 R08: 0000000000000000 R09: 0000000000000000
+[ 1851.220007] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1851.220014] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[ 1851.220034]  </TASK>
+[ 1858.678342] FAULT_INJECTION: forcing a failure.
+[ 1858.678342] name failslab, interval 1, probability 0, space 0, times 0
+[ 1858.684142] CPU: 0 UID: 0 PID: 13600 Comm: syz.4.4043 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1858.684161] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1858.684170] Call Trace:
+[ 1858.684175]  <TASK>
+[ 1858.684181]  dump_stack_lvl+0x10b/0x140
+[ 1858.684208]  should_fail_ex+0x4d5/0x5e0
+[ 1858.684227]  should_failslab+0xc7/0x130
+[ 1858.684243]  __kmalloc_node_track_caller_noprof+0xc6/0x7c0
+[ 1858.684265]  ? __pfx_kasprintf+0x10/0x10
+[ 1858.684334]  ? debugfs_create_symlink+0x2f/0x2f0
+[ 1858.684364]  ? kstrdup+0x43/0xc0
+[ 1858.684408]  kstrdup+0x43/0xc0
+[ 1858.684426]  debugfs_create_symlink+0x2f/0x2f0
+[ 1858.684450]  drm_debugfs_clients_add+0x19a/0x210 [drm]
+[ 1858.684931]  drm_file_alloc+0x5d2/0xb50 [drm]
+[ 1858.685425]  drm_open_helper+0x20a/0x500 [drm]
+[ 1858.685894]  drm_open+0x1a5/0x3e0 [drm]
+[ 1858.686368]  ? __pfx_drm_open+0x10/0x10 [drm]
+[ 1858.686820]  drm_stub_open+0x214/0x490 [drm]
+[ 1858.687308]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[ 1858.687738]  chrdev_open+0x23b/0x690
+[ 1858.687756]  ? __pfx_chrdev_open+0x10/0x10
+[ 1858.687770]  ? lock_release+0xd3/0x2a0
+[ 1858.687796]  do_dentry_open+0x6c6/0x1390
+[ 1858.687812]  ? __pfx_chrdev_open+0x10/0x10
+[ 1858.687828]  ? inode_permission+0x15c/0x630
+[ 1858.687848]  vfs_open+0x87/0x400
+[ 1858.687865]  ? may_open+0x1f8/0x420
+[ 1858.687887]  path_openat+0x1cbc/0x2880
+[ 1858.687910]  ? __pfx_path_openat+0x10/0x10
+[ 1858.687922]  ? __lock_acquire+0x64e/0x18c0
+[ 1858.687947]  do_filp_open+0x1fc/0x460
+[ 1858.687963]  ? __pfx_do_filp_open+0x10/0x10
+[ 1858.687976]  ? find_held_lock+0x2b/0x80
+[ 1858.688000]  ? find_held_lock+0x2b/0x80
+[ 1858.688015]  ? alloc_fd+0x3c2/0x780
+[ 1858.688036]  ? lock_release+0xd3/0x2a0
+[ 1858.688059]  ? _raw_spin_unlock+0x23/0x40
+[ 1858.688077]  ? alloc_fd+0x3c2/0x780
+[ 1858.688139]  do_sys_openat2+0x109/0x1c0
+[ 1858.688158]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1858.688180]  ? __fget_files+0x200/0x3b0
+[ 1858.688196]  __x64_sys_openat+0x144/0x200
+[ 1858.688216]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1858.688234]  ? ksys_write+0x1a8/0x240
+[ 1858.688252]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1858.688277]  do_syscall_64+0xc6/0x390
+[ 1858.688297]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1858.688312] RIP: 0033:0x7fe839aced94
+[ 1858.688323] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1858.688335] RSP: 002b:00007fe838516ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1858.688348] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007fe839aced94
+[ 1858.688357] RDX: 0000000000080203 RSI: 00007fe838516b60 RDI: 00000000ffffff9c
+[ 1858.688365] RBP: 00007fe838516b60 R08: 0000000000000000 R09: 0000000000000000
+[ 1858.688374] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1858.688382] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 1858.688404]  </TASK>
+[ 1880.210419] FAULT_INJECTION: forcing a failure.
+[ 1880.210419] name failslab, interval 1, probability 0, space 0, times 0
+[ 1880.215813] CPU: 3 UID: 0 PID: 13652 Comm: syz.5.4066 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1880.215824] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1880.215829] Call Trace:
+[ 1880.215832]  <TASK>
+[ 1880.215835]  dump_stack_lvl+0x10b/0x140
+[ 1880.215850]  should_fail_ex+0x4d5/0x5e0
+[ 1880.215860]  ? __d_alloc+0x36/0xa10
+[ 1880.215868]  should_failslab+0xc7/0x130
+[ 1880.215876]  kmem_cache_alloc_lru_noprof+0x7b/0x6e0
+[ 1880.215890]  ? __d_alloc+0x36/0xa10
+[ 1880.215896]  __d_alloc+0x36/0xa10
+[ 1880.215903]  ? stack_trace_save+0x93/0xd0
+[ 1880.215913]  d_alloc_parallel+0x117/0x1330
+[ 1880.215922]  ? __x64_sys_openat+0x144/0x200
+[ 1880.215933]  ? kasan_save_stack+0x24/0x50
+[ 1880.215940]  ? kasan_save_track+0x14/0x30
+[ 1880.215946]  ? __kasan_kmalloc+0x7f/0x90
+[ 1880.215952]  ? __kmalloc_node_track_caller_noprof+0x2b7/0x7c0
+[ 1880.215962]  ? kstrdup+0x43/0xc0
+[ 1880.215970]  ? __pfx_d_alloc_parallel+0x10/0x10
+[ 1880.215979]  ? drm_open_helper+0x20a/0x500 [drm]
+[ 1880.216287]  ? drm_open+0x1a5/0x3e0 [drm]
+[ 1880.216523]  ? drm_stub_open+0x214/0x490 [drm]
+[ 1880.216781]  ? lockdep_init_map_type+0x4b/0x250
+[ 1880.216794]  ? lockdep_init_map_type+0x4b/0x250
+[ 1880.216806]  __lookup_slow+0x197/0x480
+[ 1880.216817]  ? __pfx___lookup_slow+0x10/0x10
+[ 1880.216825]  ? __d_lookup+0x78/0x4a0
+[ 1880.216842]  ? d_lookup+0x7c/0xa0
+[ 1880.216853]  lookup_noperm+0xe8/0x110
+[ 1880.216863]  simple_start_creating+0xd8/0x1b0
+[ 1880.216876]  debugfs_start_creating+0xc7/0x180
+[ 1880.216888]  debugfs_create_symlink+0x4b/0x2f0
+[ 1880.216899]  drm_debugfs_clients_add+0x19a/0x210 [drm]
+[ 1880.217161]  drm_file_alloc+0x5d2/0xb50 [drm]
+[ 1880.217399]  drm_open_helper+0x20a/0x500 [drm]
+[ 1880.217655]  drm_open+0x1a5/0x3e0 [drm]
+[ 1880.217893]  ? __pfx_drm_open+0x10/0x10 [drm]
+[ 1880.218157]  drm_stub_open+0x214/0x490 [drm]
+[ 1880.218390]  ? __pfx_drm_stub_open+0x10/0x10 [drm]
+[ 1880.218630]  chrdev_open+0x23b/0x690
+[ 1880.218640]  ? __pfx_chrdev_open+0x10/0x10
+[ 1880.218647]  ? lock_release+0xd3/0x2a0
+[ 1880.218660]  do_dentry_open+0x6c6/0x1390
+[ 1880.218668]  ? __pfx_chrdev_open+0x10/0x10
+[ 1880.218676]  ? inode_permission+0x15c/0x630
+[ 1880.218686]  vfs_open+0x87/0x400
+[ 1880.218694]  ? may_open+0x1f8/0x420
+[ 1880.218705]  path_openat+0x1cbc/0x2880
+[ 1880.218717]  ? __pfx_path_openat+0x10/0x10
+[ 1880.218723]  ? __lock_acquire+0x64e/0x18c0
+[ 1880.218736]  do_filp_open+0x1fc/0x460
+[ 1880.218743]  ? __pfx_do_filp_open+0x10/0x10
+[ 1880.218749]  ? find_held_lock+0x2b/0x80
+[ 1880.218761]  ? find_held_lock+0x2b/0x80
+[ 1880.218769]  ? alloc_fd+0x3c2/0x780
+[ 1880.218779]  ? lock_release+0xd3/0x2a0
+[ 1880.218790]  ? _raw_spin_unlock+0x23/0x40
+[ 1880.218799]  ? alloc_fd+0x3c2/0x780
+[ 1880.218813]  do_sys_openat2+0x109/0x1c0
+[ 1880.218822]  ? __pfx_do_sys_openat2+0x10/0x10
+[ 1880.218833]  ? __fget_files+0x200/0x3b0
+[ 1880.218842]  __x64_sys_openat+0x144/0x200
+[ 1880.218851]  ? __pfx___x64_sys_openat+0x10/0x10
+[ 1880.218860]  ? ksys_write+0x1a8/0x240
+[ 1880.218869]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[ 1880.218881]  do_syscall_64+0xc6/0x390
+[ 1880.218892]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1880.218899] RIP: 0033:0x7f0f2e8fed94
+[ 1880.218906] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[ 1880.218913] RSP: 002b:00007f0f2d346ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[ 1880.218920] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f0f2e8fed94
+[ 1880.218924] RDX: 0000000000080203 RSI: 00007f0f2d346b60 RDI: 00000000ffffff9c
+[ 1880.218928] RBP: 00007f0f2d346b60 R08: 0000000000000000 R09: 0000000000000000
+[ 1880.218932] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000080203
+[ 1880.218936] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[ 1880.218947]  </TASK>
+[ 1942.113466] FAULT_INJECTION: forcing a failure.
+[ 1942.113466] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1942.118355] CPU: 3 UID: 0 PID: 13818 Comm: syz.5.4130 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 1942.118368] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1942.118373] Call Trace:
+[ 1942.118376]  <TASK>
+[ 1942.118380]  dump_stack_lvl+0x10b/0x140
+[ 1942.118396]  should_fail_ex+0x4d5/0x5e0
+[ 1942.118406]  _copy_to_user+0x32/0xd0
+[ 1942.118420]  simple_read_from_buffer+0xe5/0x180
+[ 1942.118434]  proc_fail_nth_read+0x18f/0x240
+[ 1942.118444]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1942.118453]  ? security_file_permission+0x27/0x90
+[ 1942.118465]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1942.118474]  vfs_read+0x1eb/0xc70
+[ 1942.118484]  ? __pfx___mutex_lock+0x10/0x10
+[ 1942.118496]  ? __pfx_vfs_read+0x10/0x10
+[ 1942.118504]  ? __fget_files+0x1f6/0x3b0
+[ 1942.118511]  ? lock_release+0xd3/0x2a0
+[ 1942.118525]  ? __fget_files+0x200/0x3b0
+[ 1942.118536]  ksys_read+0x126/0x240
+[ 1942.118544]  ? __pfx_ksys_read+0x10/0x10
+[ 1942.118556]  do_syscall_64+0xc6/0x390
+[ 1942.118567]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1942.118575] RIP: 0033:0x7f0f2e8fef6c
+[ 1942.118582] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 1942.118590] RSP: 002b:00007f0f2d346f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 1942.118598] RAX: ffffffffffffffda RBX: 00007f0f2eb75fa0 RCX: 00007f0f2e8fef6c
+[ 1942.118603] RDX: 000000000000000f RSI: 00007f0f2d347020 RDI: 0000000000000003
+[ 1942.118607] RBP: 00007f0f2d347010 R08: 0000000000000000 R09: 0000000000000000
+[ 1942.118612] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[ 1942.118616] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[ 1942.118628]  </TASK>
+[ 2008.469717] FAULT_INJECTION: forcing a failure.
+[ 2008.469717] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2008.476443] CPU: 0 UID: 0 PID: 13984 Comm: syz.2.4200 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2008.476461] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2008.476469] Call Trace:
+[ 2008.476475]  <TASK>
+[ 2008.476480]  dump_stack_lvl+0x10b/0x140
+[ 2008.476504]  should_fail_ex+0x4d5/0x5e0
+[ 2008.476521]  _copy_from_user+0x30/0xd0
+[ 2008.476553]  kstrtouint_from_user+0xbc/0x180
+[ 2008.476568]  ? __pfx_kstrtouint_from_user+0x10/0x10
+[ 2008.476582]  ? __lock_acquire+0xbb0/0x18c0
+[ 2008.476597]  ? __mutex_trylock_common+0xf9/0x260
+[ 2008.476611]  proc_fail_nth_write+0x80/0x220
+[ 2008.476621]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[ 2008.476630]  ? lock_is_held_type+0xa9/0x130
+[ 2008.476643]  vfs_write+0x2b6/0x1170
+[ 2008.476651]  ? __pfx_proc_fail_nth_write+0x10/0x10
+[ 2008.476661]  ? __pfx___mutex_lock+0x10/0x10
+[ 2008.476672]  ? __pfx_vfs_write+0x10/0x10
+[ 2008.476682]  ? __fget_files+0x1f6/0x3b0
+[ 2008.476694]  ? lock_release+0xd3/0x2a0
+[ 2008.476714]  ? __fget_files+0x200/0x3b0
+[ 2008.476732]  ksys_write+0x126/0x240
+[ 2008.476743]  ? __pfx_ksys_write+0x10/0x10
+[ 2008.476751]  ? fput+0x6f/0x100
+[ 2008.476763]  do_syscall_64+0xc6/0x390
+[ 2008.476774]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2008.476783] RIP: 0033:0x7f5ba430f00f
+[ 2008.476790] Code: 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 69 0d 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 b8 01 00 00 00 0f 05 <48> 3d 00 f0 ff ff 77 31 44 89 c7 48 89 44 24 08 e8 ac 0d 03 00 48
+[ 2008.476798] RSP: 002b:00007f5ba2d4ef90 EFLAGS: 00000293 ORIG_RAX: 0000000000000001
+[ 2008.476806] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f5ba430f00f
+[ 2008.476811] RDX: 0000000000000001 RSI: 00007f5ba2d4f020 RDI: 0000000000000006
+[ 2008.476815] RBP: 00007f5ba2d4f010 R08: 0000000000000000 R09: 0000000000000000
+[ 2008.476820] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000002
+[ 2008.476824] R13: 00007f5ba4586038 R14: 00007f5ba4585fa0 R15: 00007f5ba2d2f000
+[ 2008.476836]  </TASK>
+[ 2196.809665] FAULT_INJECTION: forcing a failure.
+[ 2196.809665] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2196.815357] CPU: 0 UID: 0 PID: 14480 Comm: syz.3.4401 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2196.815376] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2196.815397] Call Trace:
+[ 2196.815421]  <TASK>
+[ 2196.815426]  dump_stack_lvl+0x10b/0x140
+[ 2196.815722]  should_fail_ex+0x4d5/0x5e0
+[ 2196.815809]  _copy_to_user+0x32/0xd0
+[ 2196.815875]  drm_ioctl+0x5ba/0xb70 [drm]
+[ 2196.816429]  ? __pfx_drm_mode_getproperty_ioctl+0x10/0x10 [drm]
+[ 2196.816857]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2196.817314]  ? lock_acquire+0x169/0x300
+[ 2196.817393]  ? __fget_files+0x3a/0x3b0
+[ 2196.817451]  ? selinux_file_ioctl+0x18c/0x280
+[ 2196.817488]  ? selinux_file_ioctl+0xbe/0x280
+[ 2196.817517]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2196.817933]  __x64_sys_ioctl+0x194/0x210
+[ 2196.818010]  do_syscall_64+0xc6/0x390
+[ 2196.818049]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2196.818105] RIP: 0033:0x7fd9aca6059d
+[ 2196.818134] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2196.818162] RSP: 002b:00007fd9ab49ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2196.818185] RAX: ffffffffffffffda RBX: 00007fd9accd5fa0 RCX: 00007fd9aca6059d
+[ 2196.818194] RDX: 00002000000002c0 RSI: 00000000c04064aa RDI: 0000000000000004
+[ 2196.818201] RBP: 00007fd9ab49f010 R08: 0000000000000000 R09: 0000000000000000
+[ 2196.818208] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2196.818215] R13: 00007fd9accd6038 R14: 00007fd9accd5fa0 R15: 00007fd9ab47f000
+[ 2196.818234]  </TASK>
+[ 2460.542602] audit: type=1400 audit(1768104446.819:30): avc:  denied  { execmem } for  pid=15180 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[ 2560.478959] FAULT_INJECTION: forcing a failure.
+[ 2560.478959] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2560.485752] CPU: 3 UID: 0 PID: 16267 Comm: syz.3.4761 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2560.485773] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2560.485801] Call Trace:
+[ 2560.485838]  <TASK>
+[ 2560.485845]  dump_stack_lvl+0x10b/0x140
+[ 2560.486302]  should_fail_ex+0x4d5/0x5e0
+[ 2560.486405]  _copy_from_user+0x30/0xd0
+[ 2560.486485]  drm_ioctl+0x4e9/0xb70 [drm]
+[ 2560.487447]  ? __pfx_drm_mode_getproperty_ioctl+0x10/0x10 [drm]
+[ 2560.487974]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2560.488537]  ? lock_acquire+0x169/0x300
+[ 2560.488628]  ? __fget_files+0x3a/0x3b0
+[ 2560.488687]  ? find_held_lock+0x2b/0x80
+[ 2560.488704]  ? __fget_files+0x1f6/0x3b0
+[ 2560.488717]  ? lock_release+0xd3/0x2a0
+[ 2560.488755]  ? selinux_file_ioctl+0x18c/0x280
+[ 2560.488799]  ? selinux_file_ioctl+0xbe/0x280
+[ 2560.488817]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2560.489350]  __x64_sys_ioctl+0x194/0x210
+[ 2560.489387]  do_syscall_64+0xc6/0x390
+[ 2560.489429]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2560.489488] RIP: 0033:0x7f221fbb059d
+[ 2560.489518] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2560.489546] RSP: 002b:00007f221e5f6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2560.489571] RAX: ffffffffffffffda RBX: 00007f221fe25fa0 RCX: 00007f221fbb059d
+[ 2560.489581] RDX: 00002000000002c0 RSI: 00000000c04064aa RDI: 0000000000000004
+[ 2560.489589] RBP: 00007f221e5f7010 R08: 0000000000000000 R09: 0000000000000000
+[ 2560.489598] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2560.489605] R13: 00007f221fe26038 R14: 00007f221fe25fa0 R15: 00007f221e5d7000
+[ 2560.489627]  </TASK>
+[ 2584.088739] FAULT_INJECTION: forcing a failure.
+[ 2584.088739] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2584.094510] CPU: 2 UID: 0 PID: 16329 Comm: syz.4.4783 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2584.094529] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2584.094538] Call Trace:
+[ 2584.094543]  <TASK>
+[ 2584.094550]  dump_stack_lvl+0x10b/0x140
+[ 2584.094578]  should_fail_ex+0x4d5/0x5e0
+[ 2584.094597]  _copy_to_user+0x32/0xd0
+[ 2584.094620]  drm_mode_getproperty_ioctl+0x53c/0x770 [drm]
+[ 2584.095125]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[ 2584.095601]  ? __pfx_drm_mode_getproperty_ioctl+0x10/0x10 [drm]
+[ 2584.096069]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[ 2584.096559]  drm_ioctl+0x580/0xb70 [drm]
+[ 2584.097095]  ? __pfx_drm_mode_getproperty_ioctl+0x10/0x10 [drm]
+[ 2584.097589]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2584.098063]  ? lock_acquire+0x169/0x300
+[ 2584.098084]  ? __fget_files+0x3a/0x3b0
+[ 2584.098107]  ? selinux_file_ioctl+0x18c/0x280
+[ 2584.098122]  ? selinux_file_ioctl+0xbe/0x280
+[ 2584.098139]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2584.098628]  __x64_sys_ioctl+0x194/0x210
+[ 2584.098652]  do_syscall_64+0xc6/0x390
+[ 2584.098674]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2584.098689] RIP: 0033:0x7fe839ad059d
+[ 2584.098701] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2584.098767] RSP: 002b:00007fe838516f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2584.098781] RAX: ffffffffffffffda RBX: 00007fe839d45fa0 RCX: 00007fe839ad059d
+[ 2584.098790] RDX: 00002000000002c0 RSI: 00000000c04064aa RDI: 0000000000000004
+[ 2584.098799] RBP: 00007fe838517010 R08: 0000000000000000 R09: 0000000000000000
+[ 2584.098807] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2584.098814] R13: 00007fe839d46038 R14: 00007fe839d45fa0 R15: 00007fe8384f7000
+[ 2584.098837]  </TASK>
+[ 2599.598875] FAULT_INJECTION: forcing a failure.
+[ 2599.598875] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2599.603224] CPU: 0 UID: 0 PID: 16371 Comm: syz.5.4798 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2599.603247] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2599.603257] Call Trace:
+[ 2599.603262]  <TASK>
+[ 2599.603267]  dump_stack_lvl+0x10b/0x140
+[ 2599.603296]  should_fail_ex+0x4d5/0x5e0
+[ 2599.603316]  _copy_from_user+0x30/0xd0
+[ 2599.603339]  drm_ioctl+0x4e9/0xb70 [drm]
+[ 2599.603826]  ? __pfx_drm_mode_getresources+0x10/0x10 [drm]
+[ 2599.604318]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2599.604798]  ? lock_acquire+0x169/0x300
+[ 2599.604822]  ? __fget_files+0x3a/0x3b0
+[ 2599.604836]  ? find_held_lock+0x2b/0x80
+[ 2599.604852]  ? __fget_files+0x1f6/0x3b0
+[ 2599.604864]  ? lock_release+0xd3/0x2a0
+[ 2599.604889]  ? selinux_file_ioctl+0x18c/0x280
+[ 2599.604904]  ? selinux_file_ioctl+0xbe/0x280
+[ 2599.604922]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2599.605411]  __x64_sys_ioctl+0x194/0x210
+[ 2599.605443]  do_syscall_64+0xc6/0x390
+[ 2599.605468]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2599.605484] RIP: 0033:0x7f0f2e90059d
+[ 2599.605496] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2599.605509] RSP: 002b:00007f0f2d346f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2599.605523] RAX: ffffffffffffffda RBX: 00007f0f2eb75fa0 RCX: 00007f0f2e90059d
+[ 2599.605532] RDX: 0000200000000180 RSI: 00000000c04064a0 RDI: 0000000000000003
+[ 2599.605540] RBP: 00007f0f2d347010 R08: 0000000000000000 R09: 0000000000000000
+[ 2599.605548] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2599.605556] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[ 2599.605578]  </TASK>
+[ 2621.429378] FAULT_INJECTION: forcing a failure.
+[ 2621.429378] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2621.434104] CPU: 2 UID: 0 PID: 16825 Comm: syz.2.4808 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2621.434121] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2621.434128] Call Trace:
+[ 2621.434132]  <TASK>
+[ 2621.434152]  dump_stack_lvl+0x10b/0x140
+[ 2621.434210]  should_fail_ex+0x4d5/0x5e0
+[ 2621.434228]  _copy_from_user+0x30/0xd0
+[ 2621.434247]  drm_ioctl+0x4e9/0xb70 [drm]
+[ 2621.434656]  ? __pfx_drm_mode_getproperty_ioctl+0x10/0x10 [drm]
+[ 2621.435064]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2621.435495]  ? lock_acquire+0x169/0x300
+[ 2621.435515]  ? __fget_files+0x3a/0x3b0
+[ 2621.435527]  ? find_held_lock+0x2b/0x80
+[ 2621.435540]  ? __fget_files+0x1f6/0x3b0
+[ 2621.435551]  ? lock_release+0xd3/0x2a0
+[ 2621.435573]  ? selinux_file_ioctl+0x18c/0x280
+[ 2621.435587]  ? selinux_file_ioctl+0xbe/0x280
+[ 2621.435602]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2621.436036]  __x64_sys_ioctl+0x194/0x210
+[ 2621.436057]  do_syscall_64+0xc6/0x390
+[ 2621.436077]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2621.436089] RIP: 0033:0x7f112eda059d
+[ 2621.436099] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2621.436111] RSP: 002b:00007f112d7def98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2621.436148] RAX: ffffffffffffffda RBX: 00007f112f015fa0 RCX: 00007f112eda059d
+[ 2621.436155] RDX: 00002000000002c0 RSI: 00000000c04064aa RDI: 0000000000000004
+[ 2621.436161] RBP: 00007f112d7df010 R08: 0000000000000000 R09: 0000000000000000
+[ 2621.436168] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2621.436174] R13: 00007f112f016038 R14: 00007f112f015fa0 R15: 00007f112d7bf000
+[ 2621.436191]  </TASK>
+[ 2621.462819] FAULT_INJECTION: forcing a failure.
+[ 2621.462819] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2621.515940] CPU: 3 UID: 0 PID: 16838 Comm: syz.3.4811 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2621.515952] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2621.515957] Call Trace:
+[ 2621.515960]  <TASK>
+[ 2621.515963]  dump_stack_lvl+0x10b/0x140
+[ 2621.515978]  should_fail_ex+0x4d5/0x5e0
+[ 2621.515988]  _copy_to_user+0x32/0xd0
+[ 2621.516000]  simple_read_from_buffer+0xe5/0x180
+[ 2621.516063]  proc_fail_nth_read+0x18f/0x240
+[ 2621.516083]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2621.516091]  ? security_file_permission+0x27/0x90
+[ 2621.516113]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2621.516121]  vfs_read+0x1eb/0xc70
+[ 2621.516166]  ? __pfx___mutex_lock+0x10/0x10
+[ 2621.516185]  ? __pfx_vfs_read+0x10/0x10
+[ 2621.516192]  ? __fget_files+0x1f6/0x3b0
+[ 2621.516199]  ? lock_release+0xd3/0x2a0
+[ 2621.516212]  ? __fget_files+0x200/0x3b0
+[ 2621.516222]  ksys_read+0x126/0x240
+[ 2621.516228]  ? __pfx_ksys_read+0x10/0x10
+[ 2621.516236]  ? fput+0x6f/0x100
+[ 2621.516247]  do_syscall_64+0xc6/0x390
+[ 2621.516257]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2621.516265] RIP: 0033:0x7f221fbaef6c
+[ 2621.516271] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 2621.516278] RSP: 002b:00007f221e5f6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 2621.516286] RAX: ffffffffffffffda RBX: 00007f221fe25fa0 RCX: 00007f221fbaef6c
+[ 2621.516290] RDX: 000000000000000f RSI: 00007f221e5f7020 RDI: 0000000000000005
+[ 2621.516294] RBP: 00007f221e5f7010 R08: 0000000000000000 R09: 0000000000000000
+[ 2621.516298] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2621.516302] R13: 00007f221fe26038 R14: 00007f221fe25fa0 R15: 00007f221e5d7000
+[ 2621.516313]  </TASK>
+[ 2636.655390] FAULT_INJECTION: forcing a failure.
+[ 2636.655390] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2636.661554] CPU: 2 UID: 0 PID: 16866 Comm: syz.3.4825 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2636.661572] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2636.661579] Call Trace:
+[ 2636.661584]  <TASK>
+[ 2636.661589]  dump_stack_lvl+0x10b/0x140
+[ 2636.661612]  should_fail_ex+0x4d5/0x5e0
+[ 2636.661629]  _copy_to_user+0x32/0xd0
+[ 2636.661648]  drm_ioctl+0x5ba/0xb70 [drm]
+[ 2636.662069]  ? __pfx_drm_mode_getresources+0x10/0x10 [drm]
+[ 2636.662507]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2636.662966]  ? lock_acquire+0x169/0x300
+[ 2636.662986]  ? __fget_files+0x3a/0x3b0
+[ 2636.663007]  ? selinux_file_ioctl+0x18c/0x280
+[ 2636.663020]  ? selinux_file_ioctl+0xbe/0x280
+[ 2636.663036]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2636.663506]  __x64_sys_ioctl+0x194/0x210
+[ 2636.663526]  do_syscall_64+0xc6/0x390
+[ 2636.663546]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2636.663559] RIP: 0033:0x7f221fbb059d
+[ 2636.663569] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2636.663581] RSP: 002b:00007f221e5f6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2636.663593] RAX: ffffffffffffffda RBX: 00007f221fe25fa0 RCX: 00007f221fbb059d
+[ 2636.663601] RDX: 0000200000000180 RSI: 00000000c04064a0 RDI: 0000000000000003
+[ 2636.663609] RBP: 00007f221e5f7010 R08: 0000000000000000 R09: 0000000000000000
+[ 2636.663616] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2636.663623] R13: 00007f221fe26038 R14: 00007f221fe25fa0 R15: 00007f221e5d7000
+[ 2636.663643]  </TASK>
+[ 2643.888478] FAULT_INJECTION: forcing a failure.
+[ 2643.888478] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2643.894215] CPU: 3 UID: 0 PID: 16883 Comm: syz.3.4833 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2643.894228] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2643.894233] Call Trace:
+[ 2643.894236]  <TASK>
+[ 2643.894239]  dump_stack_lvl+0x10b/0x140
+[ 2643.894256]  should_fail_ex+0x4d5/0x5e0
+[ 2643.894267]  _copy_to_user+0x32/0xd0
+[ 2643.894280]  simple_read_from_buffer+0xe5/0x180
+[ 2643.894293]  proc_fail_nth_read+0x18f/0x240
+[ 2643.894303]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2643.894312]  ? security_file_permission+0x27/0x90
+[ 2643.894324]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2643.894333]  vfs_read+0x1eb/0xc70
+[ 2643.894342]  ? __pfx___mutex_lock+0x10/0x10
+[ 2643.894354]  ? __pfx_vfs_read+0x10/0x10
+[ 2643.894361]  ? __fget_files+0x1f6/0x3b0
+[ 2643.894368]  ? lock_release+0xd3/0x2a0
+[ 2643.894382]  ? __fget_files+0x200/0x3b0
+[ 2643.894393]  ksys_read+0x126/0x240
+[ 2643.894400]  ? __pfx_ksys_read+0x10/0x10
+[ 2643.894408]  ? fput+0x6f/0x100
+[ 2643.894420]  do_syscall_64+0xc6/0x390
+[ 2643.894431]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2643.894439] RIP: 0033:0x7f221fbaef6c
+[ 2643.894447] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 2643.894454] RSP: 002b:00007f221e5f6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 2643.894462] RAX: ffffffffffffffda RBX: 00007f221fe25fa0 RCX: 00007f221fbaef6c
+[ 2643.894467] RDX: 000000000000000f RSI: 00007f221e5f7020 RDI: 0000000000000005
+[ 2643.894472] RBP: 00007f221e5f7010 R08: 0000000000000000 R09: 0000000000000000
+[ 2643.894476] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2643.894480] R13: 00007f221fe26038 R14: 00007f221fe25fa0 R15: 00007f221e5d7000
+[ 2643.894492]  </TASK>
+[ 2775.671427] FAULT_INJECTION: forcing a failure.
+[ 2775.671427] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2775.676770] CPU: 2 UID: 0 PID: 17235 Comm: syz.5.4980 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2775.676788] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2775.676796] Call Trace:
+[ 2775.676802]  <TASK>
+[ 2775.676807]  dump_stack_lvl+0x10b/0x140
+[ 2775.676833]  should_fail_ex+0x4d5/0x5e0
+[ 2775.676850]  _copy_from_user+0x30/0xd0
+[ 2775.676874]  drm_ioctl+0x4e9/0xb70 [drm]
+[ 2775.677375]  ? __pfx_drm_mode_getproperty_ioctl+0x10/0x10 [drm]
+[ 2775.677863]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2775.678379]  ? lock_acquire+0x169/0x300
+[ 2775.678403]  ? __fget_files+0x3a/0x3b0
+[ 2775.678416]  ? find_held_lock+0x2b/0x80
+[ 2775.678433]  ? __fget_files+0x1f6/0x3b0
+[ 2775.678445]  ? lock_release+0xd3/0x2a0
+[ 2775.678471]  ? selinux_file_ioctl+0x18c/0x280
+[ 2775.678502]  ? selinux_file_ioctl+0xbe/0x280
+[ 2775.678518]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2775.679027]  __x64_sys_ioctl+0x194/0x210
+[ 2775.679051]  do_syscall_64+0xc6/0x390
+[ 2775.679073]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2775.679088] RIP: 0033:0x7f0f2e90059d
+[ 2775.679101] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2775.679114] RSP: 002b:00007f0f2d346f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2775.679128] RAX: ffffffffffffffda RBX: 00007f0f2eb75fa0 RCX: 00007f0f2e90059d
+[ 2775.679138] RDX: 00002000000002c0 RSI: 00000000c04064aa RDI: 0000000000000003
+[ 2775.679147] RBP: 00007f0f2d347010 R08: 0000000000000000 R09: 0000000000000000
+[ 2775.679155] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2775.679163] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[ 2775.679186]  </TASK>
+[ 2798.626646] FAULT_INJECTION: forcing a failure.
+[ 2798.626646] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2798.633307] CPU: 3 UID: 0 PID: 17284 Comm: syz.5.5004 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2798.633325] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2798.633334] Call Trace:
+[ 2798.633339]  <TASK>
+[ 2798.633344]  dump_stack_lvl+0x10b/0x140
+[ 2798.633369]  should_fail_ex+0x4d5/0x5e0
+[ 2798.633386]  _copy_to_user+0x32/0xd0
+[ 2798.633406]  simple_read_from_buffer+0xe5/0x180
+[ 2798.633429]  proc_fail_nth_read+0x18f/0x240
+[ 2798.633447]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2798.633463]  ? security_file_permission+0x27/0x90
+[ 2798.633484]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2798.633500]  vfs_read+0x1eb/0xc70
+[ 2798.633516]  ? __pfx___mutex_lock+0x10/0x10
+[ 2798.633537]  ? __pfx_vfs_read+0x10/0x10
+[ 2798.633551]  ? __fget_files+0x1f6/0x3b0
+[ 2798.633564]  ? lock_release+0xd3/0x2a0
+[ 2798.633588]  ? __fget_files+0x200/0x3b0
+[ 2798.633610]  ksys_read+0x126/0x240
+[ 2798.633623]  ? __pfx_ksys_read+0x10/0x10
+[ 2798.633638]  ? fput+0x6f/0x100
+[ 2798.633660]  do_syscall_64+0xc6/0x390
+[ 2798.633679]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2798.633693] RIP: 0033:0x7f0f2e8fef6c
+[ 2798.633704] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 2798.633716] RSP: 002b:00007f0f2d346f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 2798.633764] RAX: ffffffffffffffda RBX: 00007f0f2eb75fa0 RCX: 00007f0f2e8fef6c
+[ 2798.633773] RDX: 000000000000000f RSI: 00007f0f2d347020 RDI: 0000000000000004
+[ 2798.633781] RBP: 00007f0f2d347010 R08: 0000000000000000 R09: 0000000000000000
+[ 2798.633789] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2798.633797] R13: 00007f0f2eb76038 R14: 00007f0f2eb75fa0 R15: 00007f0f2d327000
+[ 2798.633822]  </TASK>
+[ 2805.453878] ------------[ cut here ]------------
+[ 2805.455847] WARNING: CPU: 0 PID: 17297 at lib/idr.c:84 idr_alloc+0x123/0x140
+[ 2805.458355] Modules linked in: bochs drm_shmem_helper drm_kms_helper drm virtio_pci ata_generic virtio_pci_legacy_dev i2c_piix4 pata_acpi virtio_pci_modern_dev i2c_smbus drm_panel_orientation_quirks
+SYZFAIL: failed to recv rpc
+fd=3 want=4 recv=0 n=0 (errno 9: Bad file descriptor)
+[ 2805.465235] CPU: 0 UID: 0 PID: 17297 Comm: syz.4.5012 Not tainted 6.18.0 #9 PREEMPT(voluntary) 
+[ 2805.469136] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2805.474111] RIP: 0010:idr_alloc+0x123/0x140
+[ 2805.476539] Code: 8b 44 24 58 65 48 2b 05 83 50 c2 03 75 27 48 83 c4 60 44 89 e0 5b 5d 41 5c 41 5d 41 5e 41 5f e9 c3 a9 0b 00 e8 be 6a ba fb 90 <0f> 0b 90 41 bc ea ff ff ff eb b2 e8 4d 0f 09 00 66 66 2e 0f 1f 84
+[ 2805.487192] RSP: 0018:ffff88802aadfb60 EFLAGS: 00010212
+[ 2805.489810] RAX: 0000000000000093 RBX: 00000000fffffffe RCX: ffffc90001449000
+[ 2805.492492] RDX: 0000000000080000 RSI: ffffffff85bbbfa2 RDI: 0000000000000005
+[ 2805.495026] RBP: 1ffff1100555bf6c R08: 0000000000002800 R09: ffffed100555bf71
+[ 2805.497848] R10: 00000000fffffffd R11: 0000000000000000 R12: 00000000fffffffd
+[ 2805.500815] R13: ffff8880240a3088 R14: ffff888111512000 R15: 0000000000002800
+[ 2805.503231] FS:  00007fdb9fc37640(0000) GS:ffff88819123f000(0000) knlGS:0000000000000000
+[ 2805.506172] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 2805.508274] CR2: 000000110c282a9b CR3: 000000011873c000 CR4: 00000000000006f0
+[ 2805.511080] Call Trace:
+[ 2805.512359]  <TASK>
+[ 2805.513068]  ? __pfx_idr_alloc+0x10/0x10
+[ 2805.514553]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[ 2805.516321]  ? _raw_spin_unlock+0x23/0x40
+[ 2805.518003]  drm_gem_change_handle_ioctl+0x2bf/0x4f0 [drm]
+[ 2805.520397]  ? __pfx_drm_gem_change_handle_ioctl+0x10/0x10 [drm]
+[ 2805.522757]  ? find_held_lock+0x2b/0x80
+[ 2805.524079]  ? drm_dev_exit+0x48/0x70 [drm]
+[ 2805.525966]  ? lock_release+0xd3/0x2a0
+[ 2805.527390]  drm_ioctl_kernel+0x1f2/0x3e0 [drm]
+[ 2805.529976]  ? __pfx_drm_gem_change_handle_ioctl+0x10/0x10 [drm]
+[ 2805.533663]  ? __pfx_drm_ioctl_kernel+0x10/0x10 [drm]
+[ 2805.536446]  drm_ioctl+0x580/0xb70 [drm]
+[ 2805.538966]  ? __pfx_drm_gem_change_handle_ioctl+0x10/0x10 [drm]
+[ 2805.542381]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2805.544963]  ? lock_acquire+0x169/0x300
+[ 2805.546847]  ? __fget_files+0x3a/0x3b0
+[ 2805.549076]  ? lock_release+0xd3/0x2a0
+[ 2805.551281]  ? selinux_file_ioctl+0x18c/0x280
+[ 2805.553839]  ? selinux_file_ioctl+0xbe/0x280
+[ 2805.555996]  ? __pfx_drm_ioctl+0x10/0x10 [drm]
+[ 2805.559188]  __x64_sys_ioctl+0x194/0x210
+[ 2805.561146]  do_syscall_64+0xc6/0x390
+[ 2805.563072]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2805.565592] RIP: 0033:0x7fdba11f059d
+[ 2805.567480] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2805.573871] RSP: 002b:00007fdb9fc36f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2805.576636] RAX: ffffffffffffffda RBX: 00007fdba1465fa0 RCX: 00007fdba11f059d
+[ 2805.579822] RDX: 0000200000000380 RSI: 00000000c02064d2 RDI: 0000000000000003
+[ 2805.582287] RBP: 00007fdba128e078 R08: 0000000000000000 R09: 0000000000000000
+[ 2805.585079] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[ 2805.588332] R13: 00007fdba1466038 R14: 00007fdba1465fa0 R15: 00007fdb9fc17000
+[ 2805.591496]  </TASK>
+[ 2805.592842] irq event stamp: 2011
+[ 2805.594569] hardirqs last  enabled at (2021): [<ffffffff8155bd39>] __up_console_sem+0x89/0xa0
+[ 2805.598080] hardirqs last disabled at (2030): [<ffffffff8155bd1e>] __up_console_sem+0x6e/0xa0
+[ 2805.601886] softirqs last  enabled at (1932): [<ffffffff813d2e09>] handle_softirqs+0x509/0x760
+[ 2805.605838] softirqs last disabled at (1917): [<ffffffff813d3140>] __irq_exit_rcu+0xd0/0x100
+[ 2805.609725] ---[ end trace 0000000000000000 ]---

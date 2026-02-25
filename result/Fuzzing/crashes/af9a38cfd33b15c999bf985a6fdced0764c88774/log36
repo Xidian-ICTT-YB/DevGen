@@ -1,0 +1,1 @@
+qemu-system-x86_64: -device pcwd_pci_pci: 'pcwd_pci_pci' is not a valid device model name

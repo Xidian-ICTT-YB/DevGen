@@ -1,0 +1,1342 @@
+last executing test programs:
+
+49.597087973s ago: executing program 3 (id=359):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f00000002c0)={0x0, 0x8, 0x4, &(0x7f0000000280)={0x18, "4738b38652c5f9d33e34dc4c5df200"}})
+
+36.164821454s ago: executing program 1 (id=363):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_ENUMINPUT(r0, 0xc050561a, &(0x7f0000000880)={0x0, "ec92e99c81ed5e7f65c7f718e7021632d56aab1df3aafad0113676d759dfbc16", 0x3, 0x6, 0x5, 0x400, 0x200, 0x2}) (async)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r1, 0xc100565c, &(0x7f00000003c0)={0x3, 0x40007f, 0x1, {0x1, @sliced={0x8, [0x9, 0x8044, 0x6, 0x0, 0x8, 0xff, 0xad, 0xc, 0x1, 0x3, 0x7, 0xa, 0x6, 0x10, 0x3, 0x4, 0x9, 0x5, 0x101, 0x3, 0x800, 0x40, 0x8001, 0x9, 0xa06, 0x2, 0x3, 0xb, 0x92b, 0x1, 0x8, 0x7, 0x9, 0x4, 0xc, 0x0, 0x4, 0xffff, 0x6, 0xde2, 0x0, 0x8000, 0xe5d8, 0x9, 0x1, 0x1, 0x1ff, 0xfcc1], 0x5}}, 0x26b}) (async)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+
+36.164347644s ago: executing program 2 (id=364):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000040), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000680)={0x9b0000, 0x0, 0x8, 0xffffffffffffffff, 0x0, 0x0}) (async)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000680), 0x2, 0x0)
+ioctl$VIDIOC_G_PARM(r1, 0xc0cc5615, &(0x7f0000001000)={0xf, @capture={0x0, 0x0, {0x0, 0x6}, 0x1, 0x1ff}}) (async)
+r2 = syz_open_dev$vim2m(&(0x7f0000000140), 0x0, 0x2)
+ioctl$vim2m_VIDIOC_STREAMON(r2, 0x40045612, &(0x7f0000000180)=0x1) (async)
+r3 = syz_open_dev$I2C(&(0x7f0000000400), 0x1, 0x200800)
+ioctl$vim2m_VIDIOC_REQBUFS(r2, 0xc0145608, &(0x7f0000000080)={0x200, 0x2, 0x3, 0x0, 0xd}) (async)
+ioctl$I2C_SLAVE(r3, 0x703, 0x17c) (async)
+ioctl$VIDIOC_QUERYSTD(r0, 0x8008563f, &(0x7f0000000000))
+
+36.16422281s ago: executing program 3 (id=365):
+r0 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+r1 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_RDWR(r1, 0x707, &(0x7f0000001740)={&(0x7f0000001700)=[{0x8, 0xc800, 0x0, 0x0}, {0x5, 0x4000, 0x4, &(0x7f0000001640)="27fc6376"}], 0x2})
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000440)={&(0x7f0000000400)=[{0x2, 0x200, 0x51, &(0x7f0000000280)="7413bec0c7d298b71d1273e7047800cf1cad94fd90732842433861c90bed0446e28cb68b46f36f97745d79f146c887e6a862310d90875418412a9df549c194d486000b63fe7f496a450ed6e53302f4f5f3"}, {0x101, 0x4810, 0x5a, &(0x7f0000000300)="cb4ece69f0b028668ce3a6383f4da638f7090ec5fe4c6df0cbdf9e8a7a33b03a531b8b8b2276411179e2e8ca5a6d98c58feaf7801d1afb920c1f042cba46801317ae2ffe77456c4c248e7573bca5d732339d03bb6db03dd6387e"}, {0x80, 0x6800, 0x6a, &(0x7f0000000380)="622924761acfdc10068ffe65873d196229074297160a9e0d1a803c8b3c9709c44487cd8ec288070cf6242d9ae9cd27f9c4ebdb1613d6ae2da7b9507b12c67c5cb86751c8785359c7072db54155bf968277d520903ca201021779053ca0bc4d63be004b59820b235f7842"}], 0x3})
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r2, 0xc0205647, &(0x7f0000000a00)={0xa30000, 0x81, 0x4, 0xffffffffffffffff, 0x0, &(0x7f00000009c0)={0x9a0919, 0xb, '\x00', @value=0x40}})
+syz_open_dev$I2C(&(0x7f0000000480), 0xfffffffffffffbff, 0x40000)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000100)={&(0x7f00000000c0)=[{0xa58, 0x8401, 0x92, &(0x7f0000000000)="9f6832a8ad1de76684c1ef64c46338a94cd3663518be010b078e5188da9c04fa57691b90cee12d96c7810695d2980d1064bf52e2e8379ac9a6c71506ea0764b84410a3d0d2d013374c02ed4e73e58d71e65bf5fcfd7ade92282c299db2bd9bf094b9105b41e5df03b4b47139110184e662f74df969a0380b8c01f5be2f96d8770cdcc10dada96e32796bdda5b7d18920b3b9"}, {0x5, 0x11, 0xdf, &(0x7f0000000180)="fa98607517237d69382dd18cb2144c981ab9838e3d9c6911eaf6684c32bff99b0a8648021b066b45ccb42d91a59b8e818f8cadc69d8f73f83aadf84784b3a59dd6cfb49520db63a1549ee9680ae8155df4d818ec4c45125d44ace949b2c20733f059976f7935f4cb4ddb6142c7833bd17214b4f62e3e9e867f33fec309cfa78dac4473ca6781a343e4ba61069a238361662faab278ef9eb3faf0b603b8799f9434d113bf935570b4bd6261bc20e0b9054e250239a34efeb420c7eb44e86667d2bb5b8900fbe26fc77c5ff26a805519a382453322667251d9747636ac025f8b"}], 0x2})
+
+36.10586149s ago: executing program 1 (id=366):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000800), 0x2, 0x0)
+ioctl$VIDIOC_S_EXT_CTRLS(r0, 0xc0205648, &(0x7f00000008c0)={0xf010000, 0xff, 0x7, 0xffffffffffffffff, 0x3000000, &(0x7f0000000880)={0xa20001, 0x4d, '\x00', @p_u32=0x0}})
+
+36.105646878s ago: executing program 0 (id=367):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+r1 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_RDWR(r1, 0xc0189436, &(0x7f0000001740)={0x0})
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000a00)={0xa30000, 0x81, 0x4, 0xffffffffffffffff, 0x0, &(0x7f00000009c0)={0x9a0919, 0xb, '\x00', @value=0x40}})
+
+36.104781869s ago: executing program 2 (id=368):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x201) (async)
+r1 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r1, 0x5452, 0xffffffff) (async)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000001740)={&(0x7f0000001700)=[{0x8, 0xc800, 0x0, 0x0}, {0x5, 0x4000, 0x0, 0x0}], 0x2})
+
+36.104469446s ago: executing program 0 (id=369):
+r0 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_RDWR(r0, 0xc0189436, 0x0)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_RDWR(r1, 0x707, &(0x7f0000002280)={&(0x7f0000002200)=[{0x3, 0x2200, 0x0, 0x0}, {0x8001, 0x2c00, 0x0, 0x0}], 0x2})
+r2 = syz_open_dev$I2C(&(0x7f0000000100), 0x89, 0x0)
+ioctl$I2C_SLAVE_FORCE(r2, 0x706, 0x60)
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_RDWR(r3, 0x707, &(0x7f0000000180)={&(0x7f0000000140)=[{0x1, 0x1200, 0x3, &(0x7f0000000040)="2af91f"}], 0x1})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000280), 0x2, 0x0)
+ioctl$VIDIOC_TRY_FMT(r4, 0xc0d05640, &(0x7f0000000680)={0xb, @vbi={0x9, 0x8, 0x7, 0x32314d59, [0x81, 0x3], [0x3], 0x2}})
+ioctl$VIDIOC_QUERYMENU(r4, 0xc02c5625, &(0x7f0000000080)={0x1, 0x0, @name="6e1b14942c049b29e15f90227ca94873d68b513693aad2885f529b5b1926845e"})
+
+26.638174148s ago: executing program 0 (id=370):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000180)={&(0x7f0000000140)})
+
+26.635956775s ago: executing program 1 (id=371):
+r0 = syz_open_dev$I2C(&(0x7f0000000040), 0xd, 0x140)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000080), 0x2, 0x0)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+syz_open_dev$video(&(0x7f00000000c0), 0x3, 0x40100)
+ioctl$VIDIOC_CREATE_BUFS(r1, 0xc100565c, &(0x7f00000003c0)={0x8001, 0x7f, 0x1, {0x1, @win={{0xb, 0x55, 0x1, 0x8}, 0x1, 0x85d3, 0x0, 0x10001, 0x0, 0xe}}, 0x268})
+ioctl$VIDIOC_QUERYCAP(0xffffffffffffffff, 0x80685600, 0x0)
+ioctl$VIDIOC_G_DV_TIMINGS(0xffffffffffffffff, 0xc0845658, &(0x7f00000000c0)={0x0, @reserved})
+ioctl$VIDIOC_ENUM_FRAMESIZES(0xffffffffffffffff, 0xc02c564a, &(0x7f0000000180)={0x7, 0x3136564e, 0x1, @stepwise={0x100, 0xb, 0x4, 0x8, 0x0, 0x5}})
+ioctl$VIDIOC_G_PRIORITY(0xffffffffffffffff, 0x80045643, 0x1)
+ioctl$VIDIOC_S_SELECTION(0xffffffffffffffff, 0xc040565f, &(0x7f00000001c0)={0x8, 0x1, 0x0, {0xee22, 0x7, 0x73, 0x10000}})
+ioctl$VIDIOC_G_FBUF(0xffffffffffffffff, 0x8030560a, &(0x7f0000000240)={0x2, 0x10, 0x0, {0x3000, 0x5, 0x30314442, 0x0, 0x3, 0xfffffffb, 0x4, 0x1}})
+ioctl$VIDIOC_S_STD(0xffffffffffffffff, 0x40085618, &(0x7f0000000340)=0x8000)
+ioctl$VIDIOC_STREAMOFF(0xffffffffffffffff, 0x40045613, 0x0)
+ioctl$VIDIOC_SUBDEV_G_FMT(0xffffffffffffffff, 0xc0585604, 0x0)
+ioctl$VIDIOC_G_SELECTION(0xffffffffffffffff, 0xc040565e, 0x0)
+r2 = openat$vimc0(0xffffffffffffff9c, 0x0, 0x2, 0x0)
+ioctl$VIDIOC_G_ENC_INDEX(r2, 0x8818564c, 0x0)
+syz_open_dev$video(0x0, 0xe2e, 0x80000)
+ioctl$VIDIOC_SUBDEV_S_FMT(r2, 0xc0585605, 0x0)
+ioctl$VIDIOC_ENCODER_CMD(0xffffffffffffffff, 0xc028564d, 0x0)
+ioctl$VIDIOC_S_SELECTION(r2, 0xc040565f, 0x0)
+ioctl$VIDIOC_DBG_G_REGISTER(0xffffffffffffffff, 0xc0385650, 0x0)
+ioctl$VIDIOC_S_HW_FREQ_SEEK(0xffffffffffffffff, 0x40305652, &(0x7f0000001240)={0x3, 0x3, 0x3e2, 0xfffffffc, 0x8, 0x7fff, 0x2})
+ioctl$VIDIOC_ENUMOUTPUT(0xffffffffffffffff, 0xc0485630, &(0x7f0000001280)={0xfffff30f, "6cd31252c33fd1f728cc1451668c6d6fcd1700a4cf2e1726085fcb47a98ed4a0", 0x3, 0x3b8f, 0xc48, 0xe0, 0x2})
+ioctl$VIDIOC_DBG_S_REGISTER(r2, 0x4038564f, &(0x7f0000001300)={{0x2}, 0x8, 0x1, 0x56c})
+ioctl$VIDIOC_STREAMON(r1, 0x40045612, &(0x7f0000000800)=0x6)
+ioctl$I2C_TIMEOUT(r0, 0x702, 0x5)
+syz_open_dev$I2C(&(0x7f0000000380), 0x3ff, 0x200)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_INPUT(r3, 0xc0045627, &(0x7f00000003c0)=0x5)
+
+26.635843665s ago: executing program 2 (id=372):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000800), 0x2, 0x0)
+ioctl$VIDIOC_S_EXT_CTRLS(r0, 0xc0205648, &(0x7f00000008c0)={0xf030000, 0xff, 0x7, 0xffffffffffffffff, 0x2000000, &(0x7f0000000880)={0xa20001, 0x4d, '\x00', @p_u32=0x0}})
+
+26.635176395s ago: executing program 3 (id=373):
+r0 = syz_open_dev$video(&(0x7f0000000040), 0x1, 0x4000)
+ioctl$VIDIOC_CROPCAP(r0, 0xc02c563a, &(0x7f0000000080)={0x0, {0x3, 0x7, 0x9, 0x6}, {0x2, 0x7, 0x7, 0x8f}, {0x1ff, 0x180000}})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+r2 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+r3 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000780)={0x0, 0xd, 0x2, &(0x7f0000000740)={0x9, "3f6678c673f7ea7c3c1af4cb65be5a0ddc13abb512795b80a1b1eeb82bd0a67325"}})
+ioctl$I2C_RDWR(r2, 0x4020940d, &(0x7f0000001740)={0x0})
+ioctl$VIDIOC_CROPCAP(r1, 0xc02c563a, &(0x7f0000000180)={0xa, {0x9, 0x3, 0x6, 0x5}, {0x8, 0x6, 0xffffffff, 0x5}, {0x4, 0x5}})
+r4 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000ac0), 0x2, 0x0)
+ioctl$VIDIOC_G_PRIORITY(r4, 0x80045643, 0x26486256f58aafb6)
+r5 = syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x8000)
+ioctl$I2C_FUNCS(r5, 0x705, &(0x7f0000000440)=0xfffffffffffffff9)
+ioctl$VIDIOC_QUERY_EXT_CTRL(r0, 0xc0e85667, &(0x7f00000001c0)={0x40000000, 0x7, "1e1f2ce916b928fca7e8839f5de739359a476f92c3855fec9342a53f99e17911", 0x1, 0x6, 0x80, 0x1, 0x8, 0x7, 0x8, 0x6, [0x2, 0xb3, 0x200, 0x9]})
+
+26.573407824s ago: executing program 0 (id=374):
+r0 = syz_open_dev$vim2m(&(0x7f0000000440), 0x0, 0x2)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_FMT(r1, 0xc0d05604, &(0x7f0000000680)={0x1, @pix_mp={0x680, 0x7, 0x47504a4d, 0x9, 0x4, [{0x40000, 0x18c0}, {0x54, 0x5}, {0x3ff, 0x80000001}, {0x80000001}, {0x763, 0x7}, {0x40000, 0xc}, {0xf7, 0x4}, {0x2, 0x472}], 0x17, 0x6, 0x1, 0x1, 0x6}})
+ioctl$vim2m_VIDIOC_REQBUFS(r0, 0xc0145608, &(0x7f00000007c0)={0x4, 0x1, 0x3, 0x0, 0x63})
+syz_open_dev$video(&(0x7f0000000340), 0x0, 0x4901)
+
+26.573055441s ago: executing program 2 (id=375):
+r0 = syz_open_dev$video(&(0x7f0000000000), 0xa, 0x980)
+ioctl$VIDIOC_QUERYCTRL(r0, 0xc0445624, &(0x7f00000000c0)={0xffffffff, 0x6, "db6a428e3401226e84ca8cac22198f407c0b11dbd3c4f1b83de1d7860b3672bb", 0x4, 0x9, 0xd483, 0x9c420000, 0x240})
+syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800) (async)
+r1 = syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20000)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000700)={0x1, 0xe, 0x7, &(0x7f00000006c0)={0x6, "237810f2bacf3ac082e2230da4b31dfc33c42d49aa167e16ecef3724f136334346"}})
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000002780)={0x0, 0xe1, 0x15, &(0x7f0000002740)={0x9, "b283ea543cb78bab2fa5c5e874287edd62682e37523b0a5745de9a81a582891fdf"}}) (async)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000002780)={0x0, 0xe1, 0x15, &(0x7f0000002740)={0x9, "b283ea543cb78bab2fa5c5e874287edd62682e37523b0a5745de9a81a582891fdf"}})
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_EDID(r3, 0xc0285629, &(0x7f00000002c0)={0x0, 0x0, 0xffffffff, '\x00', &(0x7f00000000c0)=0x9})
+syz_open_dev$video(&(0x7f00000020c0), 0x2, 0x410142)
+ioctl$VIDIOC_LOG_STATUS(r3, 0x5646, 0x0)
+r4 = syz_open_dev$video(&(0x7f0000000300), 0xfffffffffffffff8, 0x20000)
+syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0) (async)
+r5 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_SLAVE_FORCE(r5, 0x706, 0x60)
+ioctl$VIDIOC_QUERYMENU(r4, 0xc02c5625, &(0x7f00000004c0)={0x9, 0x9, @name="69bca497c64471564098d7c881d512623019f173d0847325fdb7f09a8684fa19"})
+r6 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000001280), 0x2, 0x0)
+ioctl$VIDIOC_CROPCAP(r6, 0xc02c563a, &(0x7f0000001400)={0x7, {0xfffffffc, 0x4, 0x0, 0x9}, {0x541, 0x2, 0x6, 0x7}, {0xc4b9, 0xab2}})
+syz_open_dev$I2C(&(0x7f00000008c0), 0x4, 0x5726b4a889a79199) (async)
+r7 = syz_open_dev$I2C(&(0x7f00000008c0), 0x4, 0x5726b4a889a79199)
+syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400) (async)
+r8 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r8, 0x5452, 0xffffffff)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0) (async)
+r9 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_S_EXT_CTRLS(r9, 0xc0205648, &(0x7f00000006c0)={0xfffffff, 0x0, 0x18220161, 0xffffffffffffffff, 0x0, 0x0})
+ioctl$I2C_RDWR(r7, 0x707, &(0x7f0000002480)={0x0})
+r10 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r10, 0x801c581f, 0xffffffff)
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0) (async)
+r11 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_ENUMSTD(r11, 0xc0485619, &(0x7f0000000340)={0x10, 0x80, "c626c74ff175259196a1d4dace967bdd87000d775ca266a7", {}, 0xffffffff})
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000500), 0x2, 0x0) (async)
+r12 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000500), 0x2, 0x0)
+ioctl$VIDIOC_EXPBUF(r12, 0xc0405610, &(0x7f0000000540)={0x3, 0x4, 0xa6, 0x84080}) (async)
+ioctl$VIDIOC_EXPBUF(r12, 0xc0405610, &(0x7f0000000540)={0x3, 0x4, 0xa6, 0x84080})
+ioctl$VIDIOC_G_PARM(r3, 0xc0cc5615, &(0x7f00000003c0)={0x8, @raw_data="160084e6ef5ce06050937970126bd1d58a3829d857c2dc8da04d84b6e97b518aa0cdac9b96bdb240895a1b4343b04ddae03c2667d9ea2d77bec6efe572395c0b4ea8210ee8a6b7ca10feb56c107802332f1105557bcc8202ce04399cc610508d3e7321618083290a116b5bdae5e931b702e1332da88e98b275b6b47105793b674910fb970c1b7c75d9b99085765886e82fbadc56e4902021b6e89ad52e4a1d3102b50b370ff0aced2977727e59fdc0ae546399147aa2b242fd61ba72089f89653089da107e86fa35"}) (async)
+ioctl$VIDIOC_G_PARM(r3, 0xc0cc5615, &(0x7f00000003c0)={0x8, @raw_data="160084e6ef5ce06050937970126bd1d58a3829d857c2dc8da04d84b6e97b518aa0cdac9b96bdb240895a1b4343b04ddae03c2667d9ea2d77bec6efe572395c0b4ea8210ee8a6b7ca10feb56c107802332f1105557bcc8202ce04399cc610508d3e7321618083290a116b5bdae5e931b702e1332da88e98b275b6b47105793b674910fb970c1b7c75d9b99085765886e82fbadc56e4902021b6e89ad52e4a1d3102b50b370ff0aced2977727e59fdc0ae546399147aa2b242fd61ba72089f89653089da107e86fa35"})
+ioctl$I2C_RDWR(r7, 0x707, &(0x7f0000000280)={&(0x7f0000000100)=[{0xe0, 0x10, 0xd, &(0x7f0000000040)="dcd36881fb00857e054060a28f"}, {0xf89, 0x1010, 0x1e, &(0x7f0000000080)="553205856b0e9f9fa87e5086a279a3ee199af8d4721723edebee3c67ccfb"}, {0x893, 0x0, 0x0, &(0x7f00000000c0)}, {0x5, 0x10, 0xd9, &(0x7f0000000180)="15f9d9a778ad51d7818a6b24794856218d60f05de2e6ebba37fcc3999a8d908da1e6ac91779217fa1835945c405d45bbdf9b17e2aa336a9c8b97cbe642f544b759c461583dfb2e17f90eb10a7a6667e8877f374bae17c250e71c5d705509bd4bca118de94bb05c1c5449e93cee269990ccb395443c60474a9ce477ece4470d028856f48f0754001829099651fe294b7a8ef5c61a2991683f20789cd391e6232a032d6d74692f9e7ccc2ce232180c55abfc752430238b9338784e434b6702bb1b6e525d3393404eb4c2e8ae1122651675607ea0552802506e54"}], 0x4})
+
+26.571584308s ago: executing program 1 (id=376):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_SLICED_VBI_CAP(r0, 0xc0745645, &(0x7f0000000040)={0x7ff, [0x4, 0xc, 0x1, 0x4, 0x7, 0x5, 0x7, 0x1000, 0x0, 0x8, 0x73, 0x1, 0x3, 0x6, 0x4, 0x6, 0x9, 0x3, 0x6, 0x8, 0x4, 0x400, 0x2, 0x4, 0x8, 0x480, 0xeb8, 0x3, 0x3, 0xc4f, 0x3, 0x3ff, 0x1ff, 0xc3a, 0x1, 0xe4cf, 0x10, 0x5, 0xfffc, 0x7, 0x10, 0x9, 0x6, 0x0, 0x7ff, 0x8001, 0x6, 0x2], 0x9})
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_ENUMSTD(r1, 0xc0485619, &(0x7f0000000340)={0x10, 0x80, "c626010400000000005f7b948efce3220d1ec0f99960e2a7", {}, 0xffffffff}) (async)
+syz_open_dev$I2C(&(0x7f0000000380), 0x3ff, 0x200)
+
+26.571091687s ago: executing program 1 (id=377):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000400), 0x2, 0x0)
+ioctl$VIDIOC_TRY_FMT(r0, 0xc0d05640, &(0x7f0000000700)={0x4, @sdr={0x38414262, 0x9}}) (async)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0) (async)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+r3 = syz_open_dev$I2C(&(0x7f00000008c0), 0x7d0, 0x0)
+ioctl$I2C_TIMEOUT(r3, 0x702, 0x4a76975a) (async)
+r4 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_RDWR(r4, 0xc0189436, &(0x7f0000001740)={0x0}) (async)
+r5 = syz_open_dev$I2C(&(0x7f0000000400), 0x1, 0x200800)
+ioctl$I2C_SLAVE(r5, 0x703, 0x17c)
+r6 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_SMBUS(r6, 0x720, &(0x7f0000000580)={0x0, 0x76, 0x3, &(0x7f0000000540)={0x17, "3118891af8090a6da2c68837b0fe5fe8e34c47ee3b090b915c4c6066e9f1bb37d0"}}) (async)
+ioctl$VIDIOC_G_INPUT(r2, 0x80045626, &(0x7f0000001100)) (async)
+ioctl$VIDIOC_ENUMINPUT(r1, 0xc050561a, &(0x7f0000000040)={0x7f, "a4746f80b00ce0514e20b9ad3c32eb1084bd4443981e4a727af1ae13798467ff", 0x0, 0x8, 0x1, 0xe0, 0x210, 0x2})
+ioctl$VIDIOC_G_EXT_CTRLS(r1, 0xc0205647, &(0x7f0000000a00)={0xa30000, 0x7e, 0x4, 0xffffffffffffffff, 0x0, &(0x7f00000009c0)={0x9a0919, 0xb, '\x00', @value=0x43}})
+
+15.66357273s ago: executing program 0 (id=378):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000800), 0x2, 0x0)
+ioctl$VIDIOC_S_EXT_CTRLS(r0, 0xc0205648, &(0x7f00000008c0)={0xf010000, 0xff, 0x7, 0xffffffffffffffff, 0x8100000, &(0x7f0000000880)={0xa20001, 0x4d, '\x00', @p_u32=0x0}})
+
+15.662638731s ago: executing program 1 (id=379):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000680), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000ec0), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FREQ_BANDS(r1, 0xc0405665, &(0x7f0000001200)={0x180, 0x2, 0x3, 0x2, 0x7f, 0x3, 0x2})
+ioctl$VIDIOC_G_PRIORITY(r0, 0x80045643, 0x2)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_RDWR(r2, 0x707, &(0x7f0000000180)={&(0x7f0000000140)=[{0x1, 0x1200, 0x3, &(0x7f0000000040)="2af91f"}], 0x1})
+ioctl$I2C_RDWR(r2, 0x707, &(0x7f0000000640)={&(0x7f00000005c0)=[{0xb8, 0x8000, 0xa8, &(0x7f0000000080)="13767512537aacbeb535db23c7bee63c0b75271ec1072b59ce7f0f102986f8a2e385914426844f8cc0ec706fe86910dee4712af75b118a3e3fe65320647cf1eb66812c84db46368cda2fd0ab5a7fa26b8a7b6b56da861144015c67c3e105658728b3bbc76350f9a65d4c38a5829c20c79952663ed4c3832011209f2f759d46cae67371707fb347d1b90f3286385a78cf50af71e9d39cec5b4cffb07e0484e46ed14a3c1a8094eb50"}, {0x8000, 0x5400, 0x10, &(0x7f00000001c0)="605fc4ba0d011082c4713732a3eb541c"}, {0xff, 0x1000, 0xd1, &(0x7f0000000200)="a8386b11fe71f963fff375fd73f35300fda234ed00d8cc4c0a8baf398f73d63d49bddf32f44f155804dec74b63736898f7edc376daa8bb4b0076a230a5125d0af9e80d02de95934e073dadb481872645cd2d643725aef849e7df6e4e714bdef103e8c95be8256050a9b255484e445319fc98a6d39739d1c6473197a27f421484a63c008449123aeedacefe167dd505d3e9cf9491aab2b5b7e2b8a8111f6bbd321b17a7e9ed383b0c6b0dece079bf1b355b76b27dedbb425c3cef6e9ab634c4777d6bb8e0e042e5304992e7233a4d4c6a71"}, {0x400, 0x201, 0x0, &(0x7f0000000300)}, {0x100, 0x0, 0xa6, &(0x7f0000000340)="74bcd9e6520b32daa73e324c7d9d4d0cea7376d30b17537fa62b75948ce0530620ef9c9b74d32d862494829fd469dd4b95a89a5b9ca5f555e33d9e939aff2c0d9c7abf2a0496a38c02fc31cfbaec751d75b2811d994d6453cbfe1277da8c062e504ad0ca7e4ba60deac99d8db07eec3d9160fc3c4cd5e7d24cd8ce73c71fc5a8c2fb03094fd8bc6d927e76dd3b6e5059aaaa9ce304b54d2a0b41b51e736c12249acc62c5c059"}, {0x0, 0x1001, 0x8d, &(0x7f0000000400)="9892c726af4cf5652b220cfd8f26ccd8a8464821c879c5d4e52e9ae545c90ee405594a7333f4a9b7a9164c9b9ada59e7151dac235338eeb7c13fb816ceb70b0e5bcde6d569dd77eb4aba464e08f1795b9e458543611726e50289365f8bac0396b9b8cda0d6c388455cd9e1432bb2b89e2742dfb613e5f61ae834da328cfe6e9e58d15afb09d1aabcfc6aaf62e4"}, {0x4, 0x8000, 0xd4, &(0x7f00000004c0)="5470dc670870e4575be3fd842955045e63c5c461116a4f897921a44bcd6db339a7e6b615a7195fb87cb1689d45fa2c07db216130d3528f6a281b2a93fbf6134f97154dc97653de9ff56b07b596cb11b82bbf9e90bc5b212093abc1122ff22591632bf3047779965b214f009bade5e2cb2031c530cd54e2e0e00c7ac9488e0bffba46ce556efd704bc58b364c1f02d46a78ad2034a4dce21bd7207907dd784b3bc0fe5151bc1190263c17e18554065eab2df052db2319fa3c47a6f09f39ed9dc8a70290652d69c939fcba08d895919de26a7844bc"}], 0x7})
+
+15.660127688s ago: executing program 2 (id=380):
+openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+r0 = syz_open_dev$video(&(0x7f0000000040), 0x8, 0x2c6980)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000000c0), 0x2, 0x0)
+ioctl$VIDIOC_G_DV_TIMINGS(r1, 0xc0845658, &(0x7f0000000140)={0x0, @bt={0x1220, 0x4, 0x1, 0x2, 0x7, 0x4, 0x0, 0x4, 0x4, 0x0, 0xffff, 0x6, 0x4, 0x2, 0x0, 0x4, {0x33, 0x7}, 0x2, 0x7}})
+ioctl$VIDIOC_G_EXT_CTRLS(r1, 0xc0205647, &(0x7f0000000100)={0xf000000, 0x7d, 0x4, 0xffffffffffffffff, 0x0, &(0x7f00000009c0)={0x981910, 0xb, '\x00', @p_u32=0x0}})
+r2 = syz_open_dev$video(&(0x7f0000000080), 0xfffffffffffffffd, 0x80000)
+ioctl$VIDIOC_SUBDEV_G_FRAME_INTERVAL(r0, 0xc0305615, &(0x7f0000000200)={0x0, {0x20000, 0x8}})
+ioctl$VIDIOC_LOG_STATUS(r2, 0x5646, 0x0)
+
+15.659157425s ago: executing program 3 (id=381):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+r1 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_QUERYMENU(r1, 0xc02c5625, &(0x7f0000000200)={0x5, 0x4, @value=0x7f}) (async)
+ioctl$VIDIOC_S_CROP(r0, 0x4014563c, &(0x7f0000000280)={0x9, {0xffff, 0xfffffff7, 0xffffffff}})
+r2 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1) (async)
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000007c0), 0x2, 0x0)
+ioctl$VIDIOC_S_EXT_CTRLS(r3, 0xc0205648, &(0x7f0000000900)={0x990000, 0x9, 0x5, 0xffffffffffffffff, 0x0, &(0x7f00000008c0)={0x990a66, 0x72ec, '\x00', @ptr=0xd52b}})
+r4 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r4, 0x5452, 0xffffffff) (async)
+r5 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r5, 0x5450, 0xffffffff) (async)
+syz_open_dev$I2C(&(0x7f0000000400), 0x1, 0x200800) (async)
+ioctl$VIDIOC_EXPBUF(r3, 0xc0405610, &(0x7f0000000100)={0x8, 0xc, 0xbf76, 0x40000}) (async)
+ioctl$VIDIOC_SUBDEV_S_FMT(r0, 0xc0585605, &(0x7f0000000040)={0x0, 0x0, {0x4, 0x2, 0x3012, 0x2, 0x0, 0x3, 0x1, 0x1}}) (async)
+ioctl$I2C_RDWR(r2, 0x707, &(0x7f0000001740)={&(0x7f0000000000)=[{0x8, 0xc800, 0x1c, 0x0}, {0x5, 0x4001, 0x0, 0x0}], 0x2})
+ioctl$VIDIOC_REQBUFS(r1, 0xc0145608, &(0x7f00000000c0)={0x36, 0x5, 0x1, 0x0, 0x7})
+
+15.591876236s ago: executing program 3 (id=382):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x1, 0x0)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000180)={&(0x7f0000000140)})
+
+15.590871476s ago: executing program 0 (id=383):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_SELECTION(r0, 0xc040565f, &(0x7f0000001000)={0x1, 0x101, 0x4, {0x7, 0x5, 0x7d1}})
+r1 = syz_open_dev$video(&(0x7f0000000000), 0xa, 0x980)
+ioctl$VIDIOC_QUERYCTRL(r1, 0xc0445624, &(0x7f00000000c0)={0xffffffff, 0x6, "db6a428e3401226e84ca8cac22198f407c0b11dbd3c4f1b83de1d7860b3672bb", 0x4, 0x9, 0xd483, 0x9c421000, 0x240})
+r2 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000100)={0x0, 0x5, 0x5, &(0x7f00000000c0)={0x16, "130fbde78521e532b06df8c4bea38281d6e568b0c7e88814a49b4fe4133eff525e"}})
+ioctl$I2C_RETRIES(r2, 0x701, 0x6228)
+syz_open_dev$I2C(&(0x7f0000000280), 0x2, 0x82000)
+
+15.59062496s ago: executing program 2 (id=384):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000004c0), 0x2, 0x0)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_ENUMSTD(r2, 0xc0485619, &(0x7f0000000340)={0x10, 0x80, "c626c74ff175259196a1d4dace967bdd87000d775ca266a7", {}, 0xffffffff})
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r3, 0xc0205647, &(0x7f0000000100)={0xf000000, 0x7d, 0x4, 0xffffffffffffffff, 0x0, &(0x7f00000009c0)={0x981910, 0xb, '\x00', @p_u32=0x0}})
+r4 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_RDWR(r4, 0x4020940d, &(0x7f0000001740)={0x0})
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f00000000c0)={0x0, 0xa, 0x1, 0x0})
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000700)={0xf010000, 0x200, 0x0, 0xffffffffffffffff, 0x0, &(0x7f00000006c0)={0xa20929, 0xbc6, '\x00', @p_u16=0x0}})
+r5 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+r6 = syz_open_dev$I2C(&(0x7f0000000d00), 0x1, 0x20080)
+ioctl$I2C_FUNCS(r6, 0x705, &(0x7f0000000d40)=0x3)
+r7 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_SMBUS(r7, 0x720, &(0x7f0000000040)={0x3, 0x76, 0x5, 0x0})
+ioctl$I2C_SMBUS(r6, 0x720, &(0x7f0000000080)={0x0, 0x6, 0x4, &(0x7f0000000040)={0x1b, "bf5e0a4dca11904650e76c51c584175ad3ef273f9957c9146ce4ec94209a63d1ee"}})
+ioctl$I2C_RETRIES(r1, 0x701, 0x8)
+ioctl$I2C_SLAVE(r5, 0x703, 0x285)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f00000000c0)={0x1, 0x7, 0x0, 0x0})
+
+15.590514884s ago: executing program 3 (id=385):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000800), 0x2, 0x0)
+ioctl$VIDIOC_S_EXT_CTRLS(r0, 0xc0205648, &(0x7f00000008c0)={0xf030000, 0xff, 0x7, 0xffffffffffffffff, 0x3000000, &(0x7f0000000880)={0xa20001, 0x4d, '\x00', @p_u32=0x0}})
+
+10.839693ms ago: executing program 32 (id=383):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_S_SELECTION(r0, 0xc040565f, &(0x7f0000001000)={0x1, 0x101, 0x4, {0x7, 0x5, 0x7d1}})
+r1 = syz_open_dev$video(&(0x7f0000000000), 0xa, 0x980)
+ioctl$VIDIOC_QUERYCTRL(r1, 0xc0445624, &(0x7f00000000c0)={0xffffffff, 0x6, "db6a428e3401226e84ca8cac22198f407c0b11dbd3c4f1b83de1d7860b3672bb", 0x4, 0x9, 0xd483, 0x9c421000, 0x240})
+r2 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000100)={0x0, 0x5, 0x5, &(0x7f00000000c0)={0x16, "130fbde78521e532b06df8c4bea38281d6e568b0c7e88814a49b4fe4133eff525e"}})
+ioctl$I2C_RETRIES(r2, 0x701, 0x6228)
+syz_open_dev$I2C(&(0x7f0000000280), 0x2, 0x82000)
+
+0s ago: executing program 33 (id=384):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000004c0), 0x2, 0x0)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+r2 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_ENUMSTD(r2, 0xc0485619, &(0x7f0000000340)={0x10, 0x80, "c626c74ff175259196a1d4dace967bdd87000d775ca266a7", {}, 0xffffffff})
+r3 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r3, 0xc0205647, &(0x7f0000000100)={0xf000000, 0x7d, 0x4, 0xffffffffffffffff, 0x0, &(0x7f00000009c0)={0x981910, 0xb, '\x00', @p_u32=0x0}})
+r4 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_RDWR(r4, 0x4020940d, &(0x7f0000001740)={0x0})
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f00000000c0)={0x0, 0xa, 0x1, 0x0})
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000700)={0xf010000, 0x200, 0x0, 0xffffffffffffffff, 0x0, &(0x7f00000006c0)={0xa20929, 0xbc6, '\x00', @p_u16=0x0}})
+r5 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+r6 = syz_open_dev$I2C(&(0x7f0000000d00), 0x1, 0x20080)
+ioctl$I2C_FUNCS(r6, 0x705, &(0x7f0000000d40)=0x3)
+r7 = syz_open_dev$I2C(&(0x7f0000000500), 0x53d, 0x1)
+ioctl$I2C_SMBUS(r7, 0x720, &(0x7f0000000040)={0x3, 0x76, 0x5, 0x0})
+ioctl$I2C_SMBUS(r6, 0x720, &(0x7f0000000080)={0x0, 0x6, 0x4, &(0x7f0000000040)={0x1b, "bf5e0a4dca11904650e76c51c584175ad3ef273f9957c9146ce4ec94209a63d1ee"}})
+ioctl$I2C_RETRIES(r1, 0x701, 0x8)
+ioctl$I2C_SLAVE(r5, 0x703, 0x285)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f00000000c0)={0x1, 0x7, 0x0, 0x0})
+
+kernel console output (not intermixed with test programs):
+
+Warning: Permanently added '[localhost]:16048' (ED25519) to the list of known hosts.
+[   63.273573] cgroup: Unknown subsys name 'net'
+[   63.347875] cgroup: Unknown subsys name 'cpuset'
+[   63.357631] cgroup: Unknown subsys name 'rlimit'
+[   63.360148] cgroup: Unknown subsys name 'memory'
+[   63.409163] kmemleak: Automatic memory scanning thread ended
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=5dd9281a-ac81-4ef8-a27e-128c21691766
+[   73.947804] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[   76.201771] audit: type=1400 audit(1766793433.453:24): avc:  denied  { execmem } for  pid=291 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   76.352273] audit: type=1400 audit(1766793433.603:25): avc:  denied  { read } for  pid=298 comm="modprobe" name="modules.softdep" dev="sda" ino=9712363 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   76.370161] audit: type=1400 audit(1766793433.604:26): avc:  denied  { open } for  pid=298 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9712363 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   76.388085] audit: type=1400 audit(1766793433.604:27): avc:  denied  { getattr } for  pid=302 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9712363 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   76.409474] audit: type=1400 audit(1766793433.604:28): avc:  denied  { map } for  pid=302 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9712369 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   94.476971] i2c i2c-1: sendbytes: error -110
+[  109.896990] i2c i2c-1: sendbytes: error -110
+[  121.297173] i2c i2c-0: Unsupported transaction 8
+[  121.347241] FAULT_INJECTION: forcing a failure.
+[  121.347241] name fail_usercopy, interval 1, probability 0, space 0, times 1
+[  121.354552] CPU: 3 UID: 0 PID: 2103 Comm: syz.2.26 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  121.354571] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  121.354628] Call Trace:
+[  121.354645]  <TASK>
+[  121.354651]  dump_stack_lvl+0x10b/0x140
+[  121.354717]  should_fail_ex+0x4d5/0x5e0
+[  121.354736]  _copy_from_user+0x30/0xd0
+[  121.354760]  i2cdev_ioctl_smbus+0x1ed/0x830
+[  121.354779]  ? __pfx_i2cdev_ioctl_smbus+0x10/0x10
+[  121.354792]  ? __might_fault+0x13d/0x190
+[  121.354817]  ? vma_start_read+0x6f0/0x900
+[  121.354845]  i2cdev_ioctl+0x3a9/0x810
+[  121.354860]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  121.354877]  ? selinux_file_ioctl+0xbe/0x280
+[  121.354897]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  121.354914]  __x64_sys_ioctl+0x194/0x210
+[  121.354950]  do_syscall_64+0xc6/0x390
+[  121.354969]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  121.354984] RIP: 0033:0x7f56698a059d
+[  121.354997] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  121.355009] RSP: 002b:00007f56682e6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  121.355034] RAX: ffffffffffffffda RBX: 00007f5669b15fa0 RCX: 00007f56698a059d
+[  121.355043] RDX: 00002000000002c0 RSI: 0000000000000720 RDI: 0000000000000003
+[  121.355052] RBP: 00007f56682e7010 R08: 0000000000000000 R09: 0000000000000000
+[  121.355060] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  121.355068] R13: 00007f5669b16038 R14: 00007f5669b15fa0 R15: 00007f56682c7000
+[  121.355091]  </TASK>
+[  172.037606] i2c i2c-0: Unsupported transaction 4
+[  172.043812] i2c i2c-0: Unsupported transaction 8
+[  184.474066] bttv0: =================  START STATUS  =================
+[  184.477395] bttv0: Brightness: 32768
+[  184.479294] bttv0: Contrast: 27648
+[  184.480882] bttv0: Saturation: 32768
+[  184.482917] bttv0: Color Killer: false
+[  184.484830] bttv0: Hue: 32768
+[  184.486260] bttv0: Chroma AGC: false
+[  184.488594] bttv0: Mute: false
+[  184.490062] bttv0: Comb Filter: false
+[  184.491916] bttv0: Auto Mute: true
+[  184.494039] bttv0: Luma Decimation Filter: false
+[  184.496248] bttv0: AGC Crush: true
+[  184.497855] bttv0: VCR Hack: false
+[  184.499567] i2c i2c-1: Invalid block write size 64
+[  184.502206] bttv0: Whitecrush Lower: 127
+[  184.504347] bttv0: Whitecrush Upper: 207
+[  184.506337] bttv0: UV Ratio: 50
+[  184.508167] bttv0: Full Luma Range: false
+[  184.510472] bttv0: Coring: 0
+[  184.512267] bttv0: ==================  END STATUS  ==================
+[  200.911357] i2c i2c-0: Unsupported transaction 4
+[  201.308894] i2c i2c-1: sendbytes: error -110
+[  213.871204] i2c i2c-0: Unsupported transaction 8
+[  230.631366] i2c i2c-0: Unsupported transaction 7
+[  234.562329] i2c i2c-1: Invalid block write size 64
+[  250.303671] i2c i2c-0: Unsupported transaction 8
+[  288.933688] bttv0: =================  START STATUS  =================
+[  288.936810] bttv0: Brightness: 32768
+[  288.938901] bttv0: Contrast: 27648
+[  288.940995] bttv0: Saturation: 32768
+[  288.943043] bttv0: Color Killer: false
+[  288.944868] bttv0: Hue: 32768
+[  288.946439] bttv0: Chroma AGC: false
+[  288.948211] bttv0: Mute: false
+[  288.949774] bttv0: Comb Filter: false
+[  288.951600] bttv0: Auto Mute: true
+[  288.953249] bttv0: Luma Decimation Filter: false
+[  288.955561] bttv0: AGC Crush: true
+[  288.957782] bttv0: VCR Hack: false
+[  288.959971] bttv0: Whitecrush Lower: 127
+[  288.962221] bttv0: Whitecrush Upper: 207
+[  288.964622] bttv0: UV Ratio: 50
+[  288.966564] bttv0: Full Luma Range: false
+[  288.968821] bttv0: Coring: 0
+[  288.971059] bttv0: ==================  END STATUS  ==================
+[  296.167885] i2c i2c-1: sendbytes: error -110
+[  307.315565] i2c i2c-0: Unsupported transaction 8
+[  316.511043] i2c i2c-0: Unsupported transaction 4
+[  324.925727] bttv0: =================  START STATUS  =================
+[  324.928754] bttv0: Brightness: 32768
+[  324.931026] bttv0: Contrast: 27648
+[  324.933299] bttv0: Saturation: 32768
+[  324.935472] bttv0: Color Killer: false
+[  324.937726] bttv0: Hue: 32768
+[  324.939514] bttv0: Chroma AGC: false
+[  324.941312] bttv0: Mute: false
+[  324.943077] bttv0: Comb Filter: false
+[  324.945240] bttv0: Auto Mute: true
+[  324.946995] bttv0: Luma Decimation Filter: false
+[  324.949661] bttv0: AGC Crush: true
+[  324.951595] bttv0: VCR Hack: false
+[  324.953558] bttv0: Whitecrush Lower: 127
+[  324.955734] bttv0: Whitecrush Upper: 207
+[  324.957914] bttv0: UV Ratio: 50
+[  324.960360] bttv0: Full Luma Range: false
+[  324.962682] bttv0: Coring: 0
+[  324.964531] bttv0: ==================  END STATUS  ==================
+[  325.321049] i2c i2c-1: sendbytes: error -110
+[  337.089852] bttv0: =================  START STATUS  =================
+[  337.095707] bttv0: Brightness: 32768
+[  337.098934] bttv0: Contrast: 27648
+[  337.101191] bttv0: Saturation: 32768
+[  337.102770] bttv0: Color Killer: false
+[  337.104713] bttv0: Hue: 32768
+[  337.106557] bttv0: Chroma AGC: false
+[  337.108887] bttv0: Mute: false
+[  337.110721] bttv0: Comb Filter: false
+[  337.113077] bttv0: Auto Mute: true
+[  337.115288] bttv0: Luma Decimation Filter: false
+[  337.118129] bttv0: AGC Crush: true
+[  337.120161] bttv0: VCR Hack: false
+[  337.122233] bttv0: Whitecrush Lower: 127
+[  337.124548] bttv0: Whitecrush Upper: 207
+[  337.126979] bttv0: UV Ratio: 50
+[  337.128994] bttv0: Full Luma Range: false
+[  337.131093] bttv0: Coring: 0
+[  337.133141] bttv0: ==================  END STATUS  ==================
+[  337.164715] FAULT_INJECTION: forcing a failure.
+[  337.164715] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  337.170854] CPU: 2 UID: 0 PID: 2428 Comm: syz.0.151 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  337.170874] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  337.170924] Call Trace:
+[  337.170930]  <TASK>
+[  337.170936]  dump_stack_lvl+0x10b/0x140
+[  337.171144]  should_fail_ex+0x4d5/0x5e0
+[  337.171162]  _copy_from_user+0x30/0xd0
+[  337.171184]  i2cdev_ioctl+0x248/0x810
+[  337.171200]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  337.171215]  ? selinux_file_ioctl+0x18c/0x280
+[  337.171229]  ? selinux_file_ioctl+0xbe/0x280
+[  337.171246]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  337.171263]  __x64_sys_ioctl+0x194/0x210
+[  337.171285]  do_syscall_64+0xc6/0x390
+[  337.171306]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  337.171321] RIP: 0033:0x7fd17b47059d
+[  337.171436] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  337.171450] RSP: 002b:00007fd179eb6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  337.171465] RAX: ffffffffffffffda RBX: 00007fd17b6e5fa0 RCX: 00007fd17b47059d
+[  337.171474] RDX: 0000200000000180 RSI: 0000000000000707 RDI: 0000000000000003
+[  337.171483] RBP: 00007fd179eb7010 R08: 0000000000000000 R09: 0000000000000000
+[  337.171491] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  337.171502] R13: 00007fd17b6e6038 R14: 00007fd17b6e5fa0 R15: 00007fd179e97000
+[  337.171526]  </TASK>
+[  337.175565] bttv0: =================  START STATUS  =================
+[  337.237346] bttv0: Brightness: 
+[  337.242382] 32768
+[  337.249181] 
+[  337.250529] bttv0: Contrast: 27648
+[  337.252704] bttv0: Saturation: 32768
+[  337.255867] bttv0: Color Killer: false
+[  337.258947] bttv0: Hue: 32768
+[  337.260964] bttv0: Chroma AGC: false
+[  337.263076] bttv0: Mute: false
+[  337.265010] bttv0: Comb Filter: false
+[  337.267415] bttv0: Auto Mute: true
+[  337.269578] bttv0: Luma Decimation Filter: false
+[  337.272579] bttv0: AGC Crush: true
+[  337.274503] bttv0: VCR Hack: false
+[  337.276858] bttv0: Whitecrush Lower: 127
+[  337.279366] bttv0: Whitecrush Upper: 207
+[  337.281500] bttv0: UV Ratio: 50
+[  337.283197] bttv0: Full Luma Range: false
+[  337.285612] bttv0: Coring: 0
+[  337.287247] bttv0: ==================  END STATUS  ==================
+[  346.007871] i2c i2c-1: sendbytes: error -110
+[  354.537979] FAULT_INJECTION: forcing a failure.
+[  354.537979] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  354.542518] CPU: 1 UID: 0 PID: 2457 Comm: syz.2.162 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  354.542536] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  354.542545] Call Trace:
+[  354.542549]  <TASK>
+[  354.542554]  dump_stack_lvl+0x10b/0x140
+[  354.542579]  should_fail_ex+0x4d5/0x5e0
+[  354.542596]  _copy_from_user+0x30/0xd0
+[  354.542616]  video_usercopy+0xbb4/0x11d0
+[  354.542633]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  354.542650]  ? __pfx___video_do_ioctl+0x10/0x10
+[  354.542663]  ? __pfx_video_usercopy+0x10/0x10
+[  354.542681]  ? __x64_sys_ioctl+0x99/0x210
+[  354.542700]  ? __sanitizer_cov_trace_switch+0x16/0x90
+[  354.542725]  v4l2_ioctl+0x1b5/0x240
+[  354.542738]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  354.542751]  __x64_sys_ioctl+0x194/0x210
+[  354.542771]  do_syscall_64+0xc6/0x390
+[  354.542789]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  354.542802] RIP: 0033:0x7f56698a059d
+[  354.542814] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  354.542826] RSP: 002b:00007f56682e6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  354.542839] RAX: ffffffffffffffda RBX: 00007f5669b15fa0 RCX: 00007f56698a059d
+[  354.542847] RDX: 00002000000008c0 RSI: 00000000c0205648 RDI: 0000000000000003
+[  354.542854] RBP: 00007f56682e7010 R08: 0000000000000000 R09: 0000000000000000
+[  354.542862] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  354.542916] R13: 00007f5669b16038 R14: 00007f5669b15fa0 R15: 00007f56682c7000
+[  354.542938]  </TASK>
+[  355.221196] bttv0: =================  START STATUS  =================
+[  355.225831] bttv0: Brightness: 32768
+[  355.228420] bttv0: Contrast: 27648
+[  355.230899] bttv0: Saturation: 32768
+[  355.233355] bttv0: Color Killer: false
+[  355.236028] bttv0: Hue: 32768
+[  355.238211] bttv0: Chroma AGC: false
+[  355.240680] bttv0: Mute: false
+[  355.242951] bttv0: Comb Filter: false
+[  355.245494] bttv0: Auto Mute: true
+[  355.247920] bttv0: Luma Decimation Filter: false
+[  355.251107] bttv0: AGC Crush: true
+[  355.253569] bttv0: VCR Hack: false
+[  355.256405] bttv0: Whitecrush Lower: 127
+[  355.259100] bttv0: Whitecrush Upper: 207
+[  355.261832] bttv0: UV Ratio: 50
+[  355.264141] bttv0: Full Luma Range: false
+[  355.266731] bttv0: Coring: 0
+[  355.268826] bttv0: ==================  END STATUS  ==================
+[  374.344547] i2c i2c-0: Unsupported transaction 8
+[  374.406666] FAULT_INJECTION: forcing a failure.
+[  374.406666] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  374.412478] CPU: 2 UID: 0 PID: 2521 Comm: syz.1.183 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  374.412490] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  374.412496] Call Trace:
+[  374.412499]  <TASK>
+[  374.412502]  dump_stack_lvl+0x10b/0x140
+[  374.412520]  should_fail_ex+0x4d5/0x5e0
+[  374.412531]  _copy_from_user+0x30/0xd0
+[  374.412544]  video_usercopy+0xbb4/0x11d0
+[  374.412556]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  374.412566]  ? __pfx___video_do_ioctl+0x10/0x10
+[  374.412575]  ? __pfx_video_usercopy+0x10/0x10
+[  374.412583]  ? lock_acquire+0x169/0x300
+[  374.412596]  ? __fget_files+0x3a/0x3b0
+[  374.412604]  ? find_held_lock+0x2b/0x80
+[  374.412613]  ? __fget_files+0x1f6/0x3b0
+[  374.412619]  ? lock_release+0xd3/0x2a0
+[  374.412637]  v4l2_ioctl+0x1b5/0x240
+[  374.412644]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  374.412652]  __x64_sys_ioctl+0x194/0x210
+[  374.412665]  do_syscall_64+0xc6/0x390
+[  374.412676]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  374.412685] RIP: 0033:0x7f47c0bb059d
+[  374.412692] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  374.412700] RSP: 002b:00007f47bf5f6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  374.412708] RAX: ffffffffffffffda RBX: 00007f47c0e25fa0 RCX: 00007f47c0bb059d
+[  374.412713] RDX: 0000200000000100 RSI: 00000000c0205647 RDI: 0000000000000003
+[  374.412718] RBP: 00007f47bf5f7010 R08: 0000000000000000 R09: 0000000000000000
+[  374.412723] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  374.412727] R13: 00007f47c0e26038 R14: 00007f47c0e25fa0 R15: 00007f47bf5d7000
+[  374.412738]  </TASK>
+[  374.919863] i2c i2c-1: sendbytes: error -110
+[  383.568229] FAULT_INJECTION: forcing a failure.
+[  383.568229] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  383.573476] CPU: 2 UID: 0 PID: 2537 Comm: syz.2.191 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  383.573496] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  383.573505] Call Trace:
+[  383.573511]  <TASK>
+[  383.573518]  dump_stack_lvl+0x10b/0x140
+[  383.573547]  should_fail_ex+0x4d5/0x5e0
+[  383.573568]  _copy_from_user+0x30/0xd0
+[  383.573592]  memdup_user+0x83/0xe0
+[  383.573613]  i2cdev_ioctl+0x2ac/0x810
+[  383.573631]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  383.573650]  ? selinux_file_ioctl+0xbe/0x280
+[  383.573669]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  383.573686]  __x64_sys_ioctl+0x194/0x210
+[  383.573710]  do_syscall_64+0xc6/0x390
+[  383.573732]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  383.573748] RIP: 0033:0x7f56698a059d
+[  383.573760] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  383.573773] RSP: 002b:00007f56682e6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  383.573789] RAX: ffffffffffffffda RBX: 00007f5669b15fa0 RCX: 00007f56698a059d
+[  383.573798] RDX: 0000200000000180 RSI: 0000000000000707 RDI: 0000000000000003
+[  383.573808] RBP: 00007f56682e7010 R08: 0000000000000000 R09: 0000000000000000
+[  383.573816] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  383.573825] R13: 00007f5669b16038 R14: 00007f5669b15fa0 R15: 00007f56682c7000
+[  383.573849]  </TASK>
+[  391.977477] bttv0: =================  START STATUS  =================
+[  391.981747] bttv0: Brightness: 32768
+[  391.984093] bttv0: Contrast: 27648
+[  391.986326] bttv0: Saturation: 32768
+[  391.989043] bttv0: Color Killer: false
+[  391.991589] bttv0: Hue: 32768
+[  391.993631] bttv0: Chroma AGC: false
+[  391.995912] bttv0: Mute: false
+[  391.998173] bttv0: Comb Filter: false
+[  392.000796] bttv0: Auto Mute: true
+[  392.003030] bttv0: Luma Decimation Filter: false
+[  392.006248] bttv0: AGC Crush: true
+[  392.008610] bttv0: VCR Hack: false
+[  392.010817] bttv0: Whitecrush Lower: 127
+[  392.013748] bttv0: Whitecrush Upper: 207
+[  392.016593] bttv0: UV Ratio: 50
+[  392.018933] bttv0: Full Luma Range: false
+[  392.021544] bttv0: Coring: 0
+[  392.023709] bttv0: ==================  END STATUS  ==================
+[  392.068394] FAULT_INJECTION: forcing a failure.
+[  392.068394] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  392.075390] CPU: 3 UID: 0 PID: 2559 Comm: syz.3.198 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  392.075409] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  392.075419] Call Trace:
+[  392.075424]  <TASK>
+[  392.075430]  dump_stack_lvl+0x10b/0x140
+[  392.075465]  should_fail_ex+0x4d5/0x5e0
+[  392.075485]  _copy_from_user+0x30/0xd0
+[  392.075515]  video_usercopy+0xb07/0x11d0
+[  392.075532]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  392.075549]  ? __pfx___video_do_ioctl+0x10/0x10
+[  392.075564]  ? __pfx_video_usercopy+0x10/0x10
+[  392.075580]  ? __fget_files+0x3a/0x3b0
+[  392.075592]  ? find_held_lock+0x2b/0x80
+[  392.075607]  ? __fget_files+0x1f6/0x3b0
+[  392.075617]  ? lock_release+0xd3/0x2a0
+[  392.075644]  v4l2_ioctl+0x1b5/0x240
+[  392.075657]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  392.075670]  __x64_sys_ioctl+0x194/0x210
+[  392.075689]  do_syscall_64+0xc6/0x390
+[  392.075709]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  392.075723] RIP: 0033:0x7fcb64c7059d
+[  392.075734] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  392.075746] RSP: 002b:00007fcb636b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  392.075758] RAX: ffffffffffffffda RBX: 00007fcb64ee5fa0 RCX: 00007fcb64c7059d
+[  392.075766] RDX: 00002000000008c0 RSI: 00000000c0205648 RDI: 0000000000000003
+[  392.075774] RBP: 00007fcb636b7010 R08: 0000000000000000 R09: 0000000000000000
+[  392.075781] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  392.075788] R13: 00007fcb64ee6038 R14: 00007fcb64ee5fa0 R15: 00007fcb63697000
+[  392.075807]  </TASK>
+[  392.187047] i2c i2c-1: sendbytes: error -110
+[  405.717524] bttv0: =================  START STATUS  =================
+[  405.720135] bttv0: Brightness: 32768
+[  405.721357] FAULT_INJECTION: forcing a failure.
+[  405.721357] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  405.721808] bttv0: Contrast: 
+[  405.728338] CPU: 1 UID: 0 PID: 2571 Comm: syz.3.203 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  405.728356] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  405.728364] Call Trace:
+[  405.728369]  <TASK>
+[  405.728374]  dump_stack_lvl+0x10b/0x140
+[  405.728399]  should_fail_ex+0x4d5/0x5e0
+[  405.728416]  _copy_from_user+0x30/0xd0
+[  405.728448]  video_usercopy+0xb07/0x11d0
+[  405.728465]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  405.728481]  ? __pfx___video_do_ioctl+0x10/0x10
+[  405.728493]  ? __pfx_video_usercopy+0x10/0x10
+[  405.728509]  ? __fget_files+0x3a/0x3b0
+[  405.728521]  ? find_held_lock+0x2b/0x80
+[  405.728535]  ? __fget_files+0x1f6/0x3b0
+[  405.728546]  ? lock_release+0xd3/0x2a0
+[  405.728572]  v4l2_ioctl+0x1b5/0x240
+[  405.728583]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  405.728596]  __x64_sys_ioctl+0x194/0x210
+[  405.728616]  do_syscall_64+0xc6/0x390
+[  405.728634]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  405.728648] RIP: 0033:0x7fcb64c7059d
+[  405.728658] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  405.728669] RSP: 002b:00007fcb636b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  405.728682] RAX: ffffffffffffffda RBX: 00007fcb64ee5fa0 RCX: 00007fcb64c7059d
+[  405.728689] RDX: 00002000000008c0 RSI: 00000000c0205648 RDI: 0000000000000003
+[  405.728697] RBP: 00007fcb636b7010 R08: 0000000000000000 R09: 0000000000000000
+[  405.728703] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  405.728711] R13: 00007fcb64ee6038 R14: 00007fcb64ee5fa0 R15: 00007fcb63697000
+[  405.728729]  </TASK>
+[  405.742237] 27648
+[  405.744987] 
+[  405.744994] bttv0: Saturation: 32768
+[  405.745009] bttv0: Color Killer: false
+[  405.745023] bttv0: Hue: 32768
+[  405.745036] bttv0: Chroma AGC: false
+[  405.745049] bttv0: Mute: false
+[  405.745061] bttv0: Comb Filter: false
+[  405.745075] bttv0: Auto Mute: true
+[  405.745089] bttv0: Luma Decimation Filter: false
+[  405.745102] bttv0: AGC Crush: true
+[  405.745114] bttv0: VCR Hack: false
+[  405.745127] bttv0: Whitecrush Lower: 127
+[  405.745140] bttv0: Whitecrush Upper: 
+[  405.760380] 207
+[  405.764627] 
+[  405.769130] bttv0: UV Ratio: 
+[  405.855327] 50
+[  405.866085] bttv0: Full Luma Range: false
+[  405.868861] bttv0: Coring: 0
+[  405.871274] bttv0: ==================  END STATUS  ==================
+[  406.117781] i2c i2c-1: sendbytes: error -110
+[  414.873206] FAULT_INJECTION: forcing a failure.
+[  414.873206] name fail_page_alloc, interval 1, probability 0, space 0, times 1
+[  414.879374] CPU: 1 UID: 0 PID: 2603 Comm: syz.3.215 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  414.879394] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  414.879403] Call Trace:
+[  414.879408]  <TASK>
+[  414.879414]  dump_stack_lvl+0x10b/0x140
+[  414.879440]  should_fail_ex+0x4d5/0x5e0
+[  414.879459]  should_fail_alloc_page+0xe5/0x110
+[  414.879477]  prepare_alloc_pages+0x1ad/0x500
+[  414.879504]  __alloc_frozen_pages_noprof+0x184/0x1f60
+[  414.879521]  ? register_lock_class+0x47/0x4c0
+[  414.879549]  ? __lock_acquire+0xbb0/0x18c0
+[  414.879570]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[  414.879594]  ? __lock_acquire+0x64e/0x18c0
+[  414.879613]  ? __lock_acquire+0x592/0x18c0
+[  414.879637]  ? __sanitizer_cov_trace_switch+0x54/0x90
+[  414.879657]  ? policy_nodemask+0xf0/0x4e0
+[  414.879678]  alloc_pages_mpol+0xf2/0x350
+[  414.879696]  ? __pfx_alloc_pages_mpol+0x10/0x10
+[  414.879714]  ? __pfx_pte_val+0x10/0x10
+[  414.879775]  ? get_vma_policy+0x241/0x350
+[  414.879797]  vma_alloc_folio_noprof+0xee/0x450
+[  414.879817]  ? __pfx_vma_alloc_folio_noprof+0x10/0x10
+[  414.879835]  ? pte_val+0x5b/0xb0
+[  414.879853]  ? __pfx_pte_val+0x10/0x10
+[  414.879870]  ? lock_release+0xd3/0x2a0
+[  414.879895]  do_wp_page+0x1310/0x2c70
+[  414.879918]  ? __pfx_do_wp_page+0x10/0x10
+[  414.879934]  ? do_raw_spin_lock+0x130/0x270
+[  414.879948]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[  414.879962]  ? ___pte_offset_map+0x182/0x300
+[  414.879990]  __handle_mm_fault+0xa6b/0x2490
+[  414.880007]  ? __pfx_mt_find+0x10/0x10
+[  414.880027]  ? __pfx___handle_mm_fault+0x10/0x10
+[  414.880057]  ? find_vma+0xc4/0x140
+[  414.880069]  ? __pfx_find_vma+0x10/0x10
+[  414.880081]  ? __up_read+0x197/0x750
+[  414.880097]  handle_mm_fault+0x2cc/0x900
+[  414.880113]  ? access_error+0x17d/0x370
+[  414.880130]  ? lock_mm_and_find_vma+0xaf/0x6f0
+[  414.880150]  do_user_addr_fault+0x39a/0xeb0
+[  414.880173]  exc_page_fault+0xb5/0x190
+[  414.880192]  asm_exc_page_fault+0x26/0x30
+[  414.880206] RIP: 0010:rep_movs_alternative+0x75/0x90
+[  414.880257] Code: 05 e9 ff cc 03 00 48 8b 06 48 89 07 48 8d 47 08 48 83 e0 f8 48 29 f8 48 01 c7 48 01 c6 48 29 c1 48 89 c8 48 c1 e9 03 83 e0 07 <f3> 48 a5 89 c1 85 c9 75 91 e9 cd cc 03 00 48 8d 0c c8 eb 86 0f 1f
+[  414.880269] RSP: 0018:ffff888116de7d18 EFLAGS: 00010202
+[  414.880282] RAX: 0000000000000004 RBX: 00000000000013ec RCX: 000000000000018d
+[  414.880291] RDX: ffffed102095c27d RSI: ffff888104ae0780 RDI: 0000200000001000
+[  414.880301] RBP: 0000200000000880 R08: 0000000000000000 R09: ffffed102095c27d
+[  414.880309] R10: 0000000000000003 R11: 0000000000000000 R12: ffff888104ae0000
+[  414.880317] R13: 0000200000001c6c R14: 00007ffffffff000 R15: 0000000000000000
+[  414.880339]  _copy_to_user+0xbe/0xd0
+[  414.880362]  video_usercopy+0xb5a/0x11d0
+[  414.880384]  ? __pfx_video_usercopy+0x10/0x10
+[  414.880401]  ? __fget_files+0x3a/0x3b0
+[  414.880413]  ? find_held_lock+0x2b/0x80
+[  414.880427]  ? __fget_files+0x1f6/0x3b0
+[  414.880439]  ? lock_release+0xd3/0x2a0
+[  414.880467]  v4l2_ioctl+0x1b5/0x240
+[  414.880481]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  414.880495]  __x64_sys_ioctl+0x194/0x210
+[  414.880517]  do_syscall_64+0xc6/0x390
+[  414.880537]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  414.880550] RIP: 0033:0x7fcb64c7059d
+[  414.880561] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  414.880573] RSP: 002b:00007fcb636b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  414.880585] RAX: ffffffffffffffda RBX: 00007fcb64ee5fa0 RCX: 00007fcb64c7059d
+[  414.880593] RDX: 00002000000008c0 RSI: 00000000c0205648 RDI: 0000000000000003
+[  414.880601] RBP: 00007fcb636b7010 R08: 0000000000000000 R09: 0000000000000000
+[  414.880609] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  414.880616] R13: 00007fcb64ee6038 R14: 00007fcb64ee5fa0 R15: 00007fcb63697000
+[  414.880638]  </TASK>
+[  418.267999] i2c i2c-1: sendbytes: error -110
+[  427.381340] FAULT_INJECTION: forcing a failure.
+[  427.381340] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  427.388382] CPU: 2 UID: 0 PID: 2613 Comm: syz.3.219 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  427.388401] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  427.388409] Call Trace:
+[  427.388414]  <TASK>
+[  427.388419]  dump_stack_lvl+0x10b/0x140
+[  427.388445]  should_fail_ex+0x4d5/0x5e0
+[  427.388463]  _copy_from_user+0x30/0xd0
+[  427.388484]  video_usercopy+0xb07/0x11d0
+[  427.388502]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  427.388519]  ? __pfx___video_do_ioctl+0x10/0x10
+[  427.388531]  ? __pfx_video_usercopy+0x10/0x10
+[  427.388546]  ? __fget_files+0x3a/0x3b0
+[  427.388558]  ? find_held_lock+0x2b/0x80
+[  427.388573]  ? __fget_files+0x1f6/0x3b0
+[  427.388584]  ? lock_release+0xd3/0x2a0
+[  427.388610]  v4l2_ioctl+0x1b5/0x240
+[  427.388623]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  427.388637]  __x64_sys_ioctl+0x194/0x210
+[  427.388657]  do_syscall_64+0xc6/0x390
+[  427.388677]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  427.388691] RIP: 0033:0x7fcb64c7059d
+[  427.388702] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  427.388715] RSP: 002b:00007fcb636b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  427.388728] RAX: ffffffffffffffda RBX: 00007fcb64ee5fa0 RCX: 00007fcb64c7059d
+[  427.388737] RDX: 0000200000000100 RSI: 00000000c0205647 RDI: 0000000000000003
+[  427.388745] RBP: 00007fcb636b7010 R08: 0000000000000000 R09: 0000000000000000
+[  427.388752] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  427.388759] R13: 00007fcb64ee6038 R14: 00007fcb64ee5fa0 R15: 00007fcb63697000
+[  427.388781]  </TASK>
+[  427.777880] i2c i2c-1: sendbytes: error -110
+[  427.981025] i2c i2c-1: Invalid block write size 64
+[  438.924710] FAULT_INJECTION: forcing a failure.
+[  438.924710] name fail_page_alloc, interval 1, probability 0, space 0, times 0
+[  438.932291] CPU: 1 UID: 0 PID: 2630 Comm: syz.1.225 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  438.932312] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  438.932321] Call Trace:
+[  438.932326]  <TASK>
+[  438.932331]  dump_stack_lvl+0x10b/0x140
+[  438.932359]  should_fail_ex+0x4d5/0x5e0
+[  438.932378]  should_fail_alloc_page+0xe5/0x110
+[  438.932396]  prepare_alloc_pages+0x1ad/0x500
+[  438.932423]  __alloc_frozen_pages_noprof+0x184/0x1f60
+[  438.932440]  ? register_lock_class+0x47/0x4c0
+[  438.932468]  ? __lock_acquire+0xbb0/0x18c0
+[  438.932490]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[  438.932514]  ? __lock_acquire+0x64e/0x18c0
+[  438.932533]  ? __lock_acquire+0x592/0x18c0
+[  438.932558]  ? __sanitizer_cov_trace_switch+0x54/0x90
+[  438.932578]  ? policy_nodemask+0xf0/0x4e0
+[  438.932599]  alloc_pages_mpol+0xf2/0x350
+[  438.932617]  ? __pfx_alloc_pages_mpol+0x10/0x10
+[  438.932634]  ? __pfx_pte_val+0x10/0x10
+[  438.932654]  ? get_vma_policy+0x241/0x350
+[  438.932676]  vma_alloc_folio_noprof+0xee/0x450
+[  438.932696]  ? __pfx_vma_alloc_folio_noprof+0x10/0x10
+[  438.932713]  ? pte_val+0x5b/0xb0
+[  438.932770]  ? __pfx_pte_val+0x10/0x10
+[  438.932785]  ? lock_release+0xd3/0x2a0
+[  438.932808]  do_wp_page+0x1310/0x2c70
+[  438.932828]  ? __pfx_do_wp_page+0x10/0x10
+[  438.932843]  ? do_raw_spin_lock+0x130/0x270
+[  438.932858]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[  438.932872]  ? ___pte_offset_map+0x182/0x300
+[  438.932899]  __handle_mm_fault+0xa6b/0x2490
+[  438.932917]  ? __pfx_mt_find+0x10/0x10
+[  438.932936]  ? __pfx___handle_mm_fault+0x10/0x10
+[  438.932968]  ? find_vma+0xc4/0x140
+[  438.932979]  ? __pfx_find_vma+0x10/0x10
+[  438.932990]  ? __up_read+0x197/0x750
+[  438.933007]  handle_mm_fault+0x2cc/0x900
+[  438.933024]  ? access_error+0x17d/0x370
+[  438.933040]  ? lock_mm_and_find_vma+0xaf/0x6f0
+[  438.933063]  do_user_addr_fault+0x39a/0xeb0
+[  438.933087]  exc_page_fault+0xb5/0x190
+[  438.933108]  asm_exc_page_fault+0x26/0x30
+[  438.933122] RIP: 0010:rep_movs_alternative+0x75/0x90
+[  438.933137] Code: 05 e9 ff cc 03 00 48 8b 06 48 89 07 48 8d 47 08 48 83 e0 f8 48 29 f8 48 01 c7 48 01 c6 48 29 c1 48 89 c8 48 c1 e9 03 83 e0 07 <f3> 48 a5 89 c1 85 c9 75 91 e9 cd cc 03 00 48 8d 0c c8 eb 86 0f 1f
+[  438.933151] RSP: 0018:ffff8880190cfd18 EFLAGS: 00010202
+[  438.933163] RAX: 0000000000000004 RBX: 00000000000013ec RCX: 000000000000018d
+[  438.933171] RDX: ffffed100195527d RSI: ffff88800caa8780 RDI: 0000200000001000
+[  438.933180] RBP: 0000200000000880 R08: 0000000000000000 R09: ffffed100195527d
+[  438.933189] R10: 0000000000000003 R11: 0000000000000000 R12: ffff88800caa8000
+[  438.933197] R13: 0000200000001c6c R14: 00007ffffffff000 R15: 0000000000000000
+[  438.933221]  _copy_to_user+0xbe/0xd0
+[  438.933256]  video_usercopy+0xb5a/0x11d0
+[  438.933278]  ? __pfx_video_usercopy+0x10/0x10
+[  438.933296]  ? __fget_files+0x3a/0x3b0
+[  438.933309]  ? find_held_lock+0x2b/0x80
+[  438.933324]  ? __fget_files+0x1f6/0x3b0
+[  438.933337]  ? lock_release+0xd3/0x2a0
+[  438.933367]  v4l2_ioctl+0x1b5/0x240
+[  438.933379]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  438.933393]  __x64_sys_ioctl+0x194/0x210
+[  438.933415]  do_syscall_64+0xc6/0x390
+[  438.933435]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  438.933448] RIP: 0033:0x7f47c0bb059d
+[  438.933459] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  438.933471] RSP: 002b:00007f47bf5f6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  438.933483] RAX: ffffffffffffffda RBX: 00007f47c0e25fa0 RCX: 00007f47c0bb059d
+[  438.933492] RDX: 00002000000008c0 RSI: 00000000c0205648 RDI: 0000000000000003
+[  438.933499] RBP: 00007f47bf5f7010 R08: 0000000000000000 R09: 0000000000000000
+[  438.933508] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  438.933515] R13: 00007f47c0e26038 R14: 00007f47c0e25fa0 R15: 00007f47bf5d7000
+[  438.933537]  </TASK>
+[  439.083417] FAULT_INJECTION: forcing a failure.
+[  439.083417] name failslab, interval 1, probability 0, space 0, times 0
+[  439.094996] bttv0: =================  START STATUS  =================
+[  439.095012] bttv0: Brightness: 32768
+[  439.095032] bttv0: Contrast: 27648
+[  439.095047] bttv0: Saturation: 32768
+[  439.095059] bttv0: Color Killer: false
+[  439.095074] bttv0: Hue: 32768
+[  439.095088] bttv0: Chroma AGC: false
+[  439.095102] bttv0: Mute: false
+[  439.095117] bttv0: Comb Filter: false
+[  439.095131] bttv0: Auto Mute: true
+[  439.095144] bttv0: Luma Decimation Filter: false
+[  439.095159] bttv0: AGC Crush: true
+[  439.095173] bttv0: VCR Hack: false
+[  439.095187] bttv0: Whitecrush Lower: 127
+[  439.095199] bttv0: Whitecrush Upper: 207
+[  439.095211] bttv0: UV Ratio: 50
+[  439.095222] bttv0: Full Luma Range: false
+[  439.095246] bttv0: Coring: 0
+[  439.095259] bttv0: ==================  END STATUS  ==================
+[  439.157370] CPU: 2 UID: 0 PID: 2644 Comm: syz.0.231 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  439.157388] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  439.157396] Call Trace:
+[  439.157401]  <TASK>
+[  439.157407]  dump_stack_lvl+0x10b/0x140
+[  439.157433]  should_fail_ex+0x4d5/0x5e0
+[  439.157450]  should_failslab+0xc7/0x130
+[  439.157465]  __kvmalloc_node_noprof+0x116/0x8c0
+[  439.157486]  ? v4l2_g_ext_ctrls_common+0x339/0x1110
+[  439.157511]  ? v4l2_g_ext_ctrls_common+0x339/0x1110
+[  439.157527]  v4l2_g_ext_ctrls_common+0x339/0x1110
+[  439.157546]  ? __pfx_css_rstat_updated+0x10/0x10
+[  439.157570]  ? __pfx_v4l2_g_ext_ctrls_common+0x10/0x10
+[  439.157587]  ? rcu_read_unlock+0x2d/0xb0
+[  439.157606]  ? __up_read+0x197/0x750
+[  439.157620]  ? __pfx___up_read+0x10/0x10
+[  439.157633]  ? lock_release+0xd3/0x2a0
+[  439.157656]  v4l2_g_ext_ctrls+0x69/0xb0
+[  439.157674]  v4l_g_ext_ctrls+0x209/0x2d0
+[  439.157696]  __video_do_ioctl+0x662/0xdc0
+[  439.157716]  ? __pfx___video_do_ioctl+0x10/0x10
+[  439.157767]  ? rep_movs_alternative+0x75/0x90
+[  439.157787]  video_usercopy+0x396/0x11d0
+[  439.157805]  ? __pfx___video_do_ioctl+0x10/0x10
+[  439.157819]  ? __pfx_video_usercopy+0x10/0x10
+[  439.157835]  ? __fget_files+0x3a/0x3b0
+[  439.157848]  ? find_held_lock+0x2b/0x80
+[  439.157863]  ? __fget_files+0x1f6/0x3b0
+[  439.157875]  ? lock_release+0xd3/0x2a0
+[  439.157902]  v4l2_ioctl+0x1b5/0x240
+[  439.157914]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  439.157929]  __x64_sys_ioctl+0x194/0x210
+[  439.157951]  do_syscall_64+0xc6/0x390
+[  439.157970]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  439.157985] RIP: 0033:0x7fd17b47059d
+[  439.157996] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  439.158009] RSP: 002b:00007fd179eb6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  439.158023] RAX: ffffffffffffffda RBX: 00007fd17b6e5fa0 RCX: 00007fd17b47059d
+[  439.158032] RDX: 0000200000000100 RSI: 00000000c0205647 RDI: 0000000000000003
+[  439.158040] RBP: 00007fd179eb7010 R08: 0000000000000000 R09: 0000000000000000
+[  439.158048] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  439.158055] R13: 00007fd17b6e6038 R14: 00007fd17b6e5fa0 R15: 00007fd179e97000
+[  439.158077]  </TASK>
+[  447.863598] i2c i2c-0: Unsupported transaction 4
+[  447.948687] FAULT_INJECTION: forcing a failure.
+[  447.948687] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  447.955604] CPU: 1 UID: 0 PID: 2663 Comm: syz.2.238 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  447.955623] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  447.955633] Call Trace:
+[  447.955638]  <TASK>
+[  447.955644]  dump_stack_lvl+0x10b/0x140
+[  447.955671]  should_fail_ex+0x4d5/0x5e0
+[  447.955690]  _copy_to_user+0x32/0xd0
+[  447.955713]  video_usercopy+0xc1a/0x11d0
+[  447.955735]  ? __pfx_video_usercopy+0x10/0x10
+[  447.955751]  ? __fget_files+0x3a/0x3b0
+[  447.955765]  ? find_held_lock+0x2b/0x80
+[  447.955819]  ? __fget_files+0x1f6/0x3b0
+[  447.955832]  ? lock_release+0xd3/0x2a0
+[  447.955862]  v4l2_ioctl+0x1b5/0x240
+[  447.955875]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  447.955890]  __x64_sys_ioctl+0x194/0x210
+[  447.955912]  do_syscall_64+0xc6/0x390
+[  447.955933]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  447.955948] RIP: 0033:0x7f56698a059d
+[  447.955960] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  447.955973] RSP: 002b:00007f56682e6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  447.955987] RAX: ffffffffffffffda RBX: 00007f5669b15fa0 RCX: 00007f56698a059d
+[  447.955996] RDX: 00002000000008c0 RSI: 00000000c0205648 RDI: 0000000000000003
+[  447.956004] RBP: 00007f56682e7010 R08: 0000000000000000 R09: 0000000000000000
+[  447.956012] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  447.956020] R13: 00007f5669b16038 R14: 00007f5669b15fa0 R15: 00007f56682c7000
+[  447.956042]  </TASK>
+[  464.483779] i2c i2c-1: sendbytes: error -110
+[  473.480383] i2c i2c-0: Unsupported transaction 7
+[  478.231393] i2c i2c-1: Invalid block write size 64
+[  486.439075] FAULT_INJECTION: forcing a failure.
+[  486.439075] name fail_page_alloc, interval 1, probability 0, space 0, times 0
+[  486.445169] CPU: 1 UID: 0 PID: 2720 Comm: syz.0.261 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  486.445187] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  486.445195] Call Trace:
+[  486.445200]  <TASK>
+[  486.445206]  dump_stack_lvl+0x10b/0x140
+[  486.445231]  should_fail_ex+0x4d5/0x5e0
+[  486.445244]  should_fail_alloc_page+0xe5/0x110
+[  486.445255]  prepare_alloc_pages+0x1ad/0x500
+[  486.445268]  ? __is_insn_slot_addr+0x33/0x290
+[  486.445284]  __alloc_frozen_pages_noprof+0x184/0x1f60
+[  486.445296]  ? __is_insn_slot_addr+0x145/0x290
+[  486.445309]  ? kernel_text_address+0x75/0xf0
+[  486.445320]  ? unwind_get_return_address+0x5e/0xa0
+[  486.445329]  ? __kernel_text_address+0x12/0x40
+[  486.445340]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[  486.445349]  ? arch_stack_walk+0xa1/0xf0
+[  486.445367]  ? stack_trace_save+0x93/0xd0
+[  486.445378]  ? __sanitizer_cov_trace_switch+0x54/0x90
+[  486.445389]  ? policy_nodemask+0xf0/0x4e0
+[  486.445401]  alloc_pages_mpol+0xf2/0x350
+[  486.445411]  ? __pfx_alloc_pages_mpol+0x10/0x10
+[  486.445421]  ? __pfx_pte_val+0x10/0x10
+[  486.445431]  ? v4l_g_ext_ctrls+0x209/0x2d0
+[  486.445445]  ? video_usercopy+0x396/0x11d0
+[  486.445453]  ? v4l2_ioctl+0x1b5/0x240
+[  486.445459]  ? get_vma_policy+0x241/0x350
+[  486.445471]  vma_alloc_folio_noprof+0xee/0x450
+[  486.445482]  ? __pfx_vma_alloc_folio_noprof+0x10/0x10
+[  486.445493]  ? pte_val+0x5b/0xb0
+[  486.445503]  ? __pfx_pte_val+0x10/0x10
+[  486.445512]  ? lock_release+0xd3/0x2a0
+[  486.445527]  do_wp_page+0x1310/0x2c70
+[  486.445539]  ? __pfx_do_wp_page+0x10/0x10
+[  486.445548]  ? do_raw_spin_lock+0x130/0x270
+[  486.445556]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[  486.445564]  ? ___pte_offset_map+0x182/0x300
+[  486.445596]  __handle_mm_fault+0xa6b/0x2490
+[  486.445612]  ? __pfx_mt_find+0x10/0x10
+[  486.445640]  ? __pfx___handle_mm_fault+0x10/0x10
+[  486.445656]  ? find_vma+0xc4/0x140
+[  486.445664]  ? __pfx_find_vma+0x10/0x10
+[  486.445670]  ? __up_read+0x197/0x750
+[  486.445679]  handle_mm_fault+0x2cc/0x900
+[  486.445688]  ? access_error+0x17d/0x370
+[  486.445697]  ? lock_mm_and_find_vma+0xaf/0x6f0
+[  486.445709]  do_user_addr_fault+0x39a/0xeb0
+[  486.445722]  exc_page_fault+0xb5/0x190
+[  486.445735]  asm_exc_page_fault+0x26/0x30
+[  486.445743] RIP: 0010:rep_movs_alternative+0x75/0x90
+[  486.445752] Code: 05 e9 ff cc 03 00 48 8b 06 48 89 07 48 8d 47 08 48 83 e0 f8 48 29 f8 48 01 c7 48 01 c6 48 29 c1 48 89 c8 48 c1 e9 03 83 e0 07 <f3> 48 a5 89 c1 85 c9 75 91 e9 cd cc 03 00 48 8d 0c c8 eb 86 0f 1f
+[  486.445760] RSP: 0018:ffff888114d9fd18 EFLAGS: 00010202
+[  486.445767] RAX: 0000000000000004 RBX: 00000000000009c4 RCX: 0000000000000070
+[  486.445772] RDX: ffffed100310d138 RSI: ffff888018868640 RDI: 0000200000001000
+[  486.445777] RBP: 00002000000009c0 R08: 0000000000000000 R09: ffffed100310d138
+[  486.445781] R10: 0000000000000003 R11: 0000000000000000 R12: ffff888018868000
+[  486.445786] R13: 0000200000001384 R14: 00007ffffffff000 R15: 0000000000000000
+[  486.445798]  _copy_to_user+0xbe/0xd0
+[  486.445811]  video_usercopy+0xb5a/0x11d0
+[  486.445823]  ? __pfx_video_usercopy+0x10/0x10
+[  486.445833]  ? __fget_files+0x3a/0x3b0
+[  486.445840]  ? find_held_lock+0x2b/0x80
+[  486.445849]  ? __fget_files+0x1f6/0x3b0
+[  486.445856]  ? lock_release+0xd3/0x2a0
+[  486.445873]  v4l2_ioctl+0x1b5/0x240
+[  486.445880]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  486.445889]  __x64_sys_ioctl+0x194/0x210
+[  486.445901]  do_syscall_64+0xc6/0x390
+[  486.445913]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  486.445920] RIP: 0033:0x7fd17b47059d
+[  486.445928] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  486.445935] RSP: 002b:00007fd179eb6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  486.445942] RAX: ffffffffffffffda RBX: 00007fd17b6e5fa0 RCX: 00007fd17b47059d
+[  486.445946] RDX: 0000200000000100 RSI: 00000000c0205647 RDI: 0000000000000003
+[  486.445951] RBP: 00007fd179eb7010 R08: 0000000000000000 R09: 0000000000000000
+[  486.445955] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  486.445960] R13: 00007fd17b6e6038 R14: 00007fd17b6e5fa0 R15: 00007fd179e97000
+[  486.445972]  </TASK>
+[  486.605033] i2c i2c-1: Invalid block write size 64
+[  494.726896] i2c i2c-0: Unsupported transaction 8
+[  497.053199] i2c i2c-1: Invalid block write size 34
+[  508.093995] bttv0: =================  START STATUS  =================
+[  508.097748] bttv0: Brightness: 32768
+[  508.100443] bttv0: Contrast: 27648
+[  508.102236] bttv0: Saturation: 32768
+[  508.104629] bttv0: Color Killer: false
+[  508.107024] bttv0: Hue: 32768
+[  508.109093] bttv0: Chroma AGC: false
+[  508.111266] bttv0: Mute: false
+[  508.113412] bttv0: Comb Filter: false
+[  508.115652] bttv0: Auto Mute: true
+[  508.117971] bttv0: Luma Decimation Filter: false
+[  508.121222] bttv0: AGC Crush: true
+[  508.123652] bttv0: VCR Hack: false
+[  508.125867] bttv0: Whitecrush Lower: 127
+[  508.128342] bttv0: Whitecrush Upper: 207
+[  508.131049] bttv0: UV Ratio: 50
+[  508.132572] bttv0: Full Luma Range: false
+[  508.135240] bttv0: Coring: 0
+[  508.137077] bttv0: ==================  END STATUS  ==================
+[  519.487814] i2c i2c-1: sendbytes: error -110
+[  537.122187] bttv0: =================  START STATUS  =================
+[  537.125233] bttv0: Brightness: 32768
+[  537.126979] bttv0: Contrast: 27648
+[  537.128794] bttv0: Saturation: 32768
+[  537.131231] bttv0: Color Killer: false
+[  537.133499] bttv0: Hue: 32768
+[  537.135553] bttv0: Chroma AGC: false
+[  537.137942] bttv0: Mute: false
+[  537.139401] bttv0: Comb Filter: false
+[  537.141552] bttv0: Auto Mute: true
+[  537.143835] bttv0: Luma Decimation Filter: false
+[  537.146692] bttv0: AGC Crush: true
+[  537.149223] bttv0: VCR Hack: false
+[  537.151511] bttv0: Whitecrush Lower: 127
+[  537.155070] bttv0: Whitecrush Upper: 207
+[  537.157012] bttv0: UV Ratio: 50
+[  537.158732] bttv0: Full Luma Range: false
+[  537.161561] bttv0: Coring: 0
+[  537.164540] bttv0: ==================  END STATUS  ==================
+[  537.593910] i2c i2c-1: sendbytes: error -110
+[  546.507254] i2c i2c-0: Unsupported transaction 4
+[  564.203123] i2c i2c-0: Unsupported transaction 7
+[  582.982019] i2c i2c-1: sendbytes: error -110
+[  600.842230] bttv0: =================  START STATUS  =================
+[  600.848308] bttv0: Brightness: 32768
+[  600.850879] bttv0: Contrast: 27648
+[  600.853080] bttv0: Saturation: 32768
+[  600.854941] bttv0: Color Killer: false
+[  600.856932] bttv0: Hue: 32768
+[  600.859321] bttv0: Chroma AGC: false
+[  600.861389] bttv0: Mute: false
+[  600.863661] bttv0: Comb Filter: false
+[  600.866104] bttv0: Auto Mute: true
+[  600.868385] bttv0: Luma Decimation Filter: false
+[  600.870643] bttv0: AGC Crush: true
+[  600.872812] bttv0: VCR Hack: false
+[  600.875890] bttv0: Whitecrush Lower: 127
+[  600.878805] bttv0: Whitecrush Upper: 207
+[  600.880759] bttv0: UV Ratio: 50
+[  600.882646] bttv0: Full Luma Range: false
+[  600.885139] bttv0: Coring: 0
+[  600.887272] bttv0: ==================  END STATUS  ==================
+[  614.472762] i2c i2c-1: sendbytes: error -110
+[  615.278402] i2c i2c-1: sendbytes: error -110
+[  623.846540] i2c i2c-0: Unsupported transaction 7
+[  623.857286] bttv0: =================  START STATUS  =================
+[  623.862290] bttv0: Brightness: 32768
+[  623.867679] bttv0: Contrast: 27648
+[  623.872156] bttv0: Saturation: 32768
+[  623.875956] bttv0: Color Killer: false
+[  623.878974] bttv0: Hue: 32768
+[  623.880873] bttv0: Chroma AGC: false
+[  623.883169] bttv0: Mute: false
+[  623.884654] bttv0: Comb Filter: false
+[  623.886484] bttv0: Auto Mute: true
+[  623.888279] bttv0: Luma Decimation Filter: false
+[  623.890681] bttv0: AGC Crush: true
+[  623.892577] bttv0: VCR Hack: false
+[  623.894520] bttv0: Whitecrush Lower: 127
+[  623.897969] bttv0: Whitecrush Upper: 207
+[  623.900143] bttv0: UV Ratio: 50
+[  623.901719] bttv0: Full Luma Range: false
+[  623.903619] bttv0: Coring: 0
+[  623.905238] bttv0: ==================  END STATUS  ==================
+[  635.175812] i2c i2c-1: sendbytes: error -110
+[  779.590130] INFO: task syz.2.384:3055 blocked for more than 143 seconds.
+[  779.592963]       Not tainted 6.18.0 #3
+SYZFAIL: failed to recv rpc
+fd=3 want=4 recv=0 n=0 (errno 9: Bad file descriptor)
+[  779.595104] "echo 0 > /proc/sys/kernel/hung_task_timeout_secs" disables this message.
+[  779.598828] task:syz.2.384       state:D stack:29112 pid:3055  tgid:3053  ppid:297    task_flags:0x400040 flags:0x00080002
+[  779.604965] Call Trace:
+[  779.606525]  <TASK>
+[  779.607732]  __schedule+0xebb/0x3550
+[  779.609709]  ? __pfx___schedule+0x10/0x10
+[  779.611986]  ? lock_is_held_type+0xa9/0x130
+[  779.613899]  rt_mutex_schedule+0xa0/0xf0
+[  779.616122]  rt_mutex_slowlock_block.constprop.0+0x77/0x7e0
+[  779.619701]  ? lock_is_held_type+0xa9/0x130
+[  779.626339]  __rt_mutex_slowlock_locked.constprop.0+0x1c8/0x670
+[  779.631765]  ? __pfx___rt_mutex_slowlock_locked.constprop.0+0x10/0x10
+[  779.634674]  ? rt_mutex_pre_schedule+0x1a1/0x210
+[  779.636912]  rt_mutex_slowlock.constprop.0+0x92/0x110
+[  779.639448]  ? __pfx_rt_mutex_slowlock.constprop.0+0x10/0x10
+[  779.642985]  rt_mutex_lock_nested+0xd8/0x110
+[  779.645283]  i2c_smbus_xfer+0x1e8/0x3d0
+[  779.647383]  i2cdev_ioctl_smbus+0x2db/0x830
+[  779.649474]  ? __pfx_i2cdev_ioctl_smbus+0x10/0x10
+[  779.651861]  ? __might_fault+0x13d/0x190
+[  779.653747]  ? vma_start_read+0x6f0/0x900
+[  779.656407]  i2cdev_ioctl+0x3a9/0x810
+[  779.659537]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  779.662267]  ? selinux_file_ioctl+0xbe/0x280
+[  779.665272]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  779.667998]  __x64_sys_ioctl+0x194/0x210
+[  779.671049]  do_syscall_64+0xc6/0x390
+[  779.673818]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  779.677200] RIP: 0033:0x7f56698a059d
+[  779.679314] RSP: 002b:00007f56682e6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  779.684156] RAX: ffffffffffffffda RBX: 00007f5669b15fa0 RCX: 00007f56698a059d
+[  779.688794] RDX: 0000200000000080 RSI: 0000000000000720 RDI: 0000000000000009
+[  779.693296] RBP: 00007f566993e078 R08: 0000000000000000 R09: 0000000000000000
+[  779.698262] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  779.702789] R13: 00007f5669b16038 R14: 00007f5669b15fa0 R15: 00007f56682c7000
+[  779.708005]  </TASK>
+[  779.710244] 
+[  779.710244] Showing all locks held in the system:
+[  779.713890] 1 lock held by khungtaskd/41:
+[  779.716116]  #0: ffffffff87206020 (rcu_read_lock){....}-{1:3}, at: debug_show_all_locks+0x36/0x1c0
+[  779.721696] 4 locks held by rs:main Q:Reg/205:
+[  779.723662]  #0: ffff88811ab384d8 (&rq->__lock){-.-.}-{2:2}, at: __schedule+0x23b/0x3550
+[  779.727355]  #1: ffff8881094443f8 (sb_writers#4){.+.+}-{0:0}, at: ksys_write+0x126/0x240
+[  779.731612]  #2: ffff8880090e6290 (&sb->s_type->i_mutex_key#8){++++}-{4:4}, at: ext4_buffered_write_iter+0xb0/0x440
+[  779.737226]  #3: ffffffff872fcb38 (kmemleak_lock){..-.}-{2:2}, at: unwind_next_frame+0xbe/0x20c0
+[  779.741399] 1 lock held by syz-executor/295:
+[  779.744071]  #0: ffffffff872137f8 (rcu_state.exp_mutex){+.+.}-{4:4}, at: exp_funnel_lock+0x2cc/0x5c0
+[  779.749393] 1 lock held by syz-executor/300:
+[  779.752276]  #0: ffffffff87b56788 (rtnl_mutex){+.+.}-{4:4}, at: tun_chr_close+0x3d/0x230
+[  779.756738] 1 lock held by syz.0.383/3052:
+[  779.759128] 1 lock held by syz.2.384/3055:
+[  779.761453]  #0: ffff888117918140 (i2c_register_adapter){+.+.}-{4:4}, at: i2c_smbus_xfer+0x1e8/0x3d0
+[  779.766233] 3 locks held by kworker/0:0/3067:
+[  779.768915]  #0: ffff88810006a148 ((wq_completion)events){+.+.}-{0:0}, at: process_one_work+0x1296/0x19c0
+[  779.774225]  #1: ffff888019f6fd30 (free_ipc_work){+.+.}-{0:0}, at: process_one_work+0x847/0x19c0
+[  779.778974]  #2: ffffffff872137f8 (rcu_state.exp_mutex){+.+.}-{4:4}, at: exp_funnel_lock+0x2cc/0x5c0
+[  779.784485] 
+[  779.785914] =============================================
+[  779.785914] 
+[  779.790494] NMI backtrace for cpu 3
+[  779.790507] CPU: 3 UID: 0 PID: 41 Comm: khungtaskd Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  779.790522] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  779.790531] Call Trace:
+[  779.790536]  <TASK>
+[  779.790554]  dump_stack_lvl+0xdb/0x140
+[  779.790598]  ? lapic_can_unplug_cpu+0x71/0xb0
+[  779.790612]  nmi_cpu_backtrace+0x1fd/0x270
+[  779.790625]  ? lock_release+0xd3/0x2a0
+[  779.790645]  ? __pfx_nmi_raise_cpu_backtrace+0x10/0x10
+[  779.790658]  nmi_trigger_cpumask_backtrace+0x22c/0x270
+[  779.790674]  watchdog+0x1188/0x14a0
+[  779.790692]  ? __kthread_parkme+0x1ac/0x250
+[  779.790707]  ? __pfx_watchdog+0x10/0x10
+[  779.790720]  kthread+0x3cd/0x740
+[  779.790737]  ? __pfx_kthread+0x10/0x10
+[  779.790752]  ? ret_from_fork+0x28/0x490
+[  779.790775]  ? lock_release+0xd3/0x2a0
+[  779.790794]  ? __pfx_kthread+0x10/0x10
+[  779.790811]  ret_from_fork+0x3a1/0x490
+[  779.790827]  ? __pfx_kthread+0x10/0x10
+[  779.790843]  ret_from_fork_asm+0x1a/0x30
+[  779.790874]  </TASK>
+[  779.790878] Sending NMI from CPU 3 to CPUs 0-2:
+[  779.850288] NMI backtrace for cpu 0
+[  779.850299] CPU: 0 UID: 0 PID: 0 Comm: swapper/0 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  779.850308] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  779.850313] RIP: 0010:pv_native_safe_halt+0x1e/0x30
+[  779.850328] Code: 90 90 90 90 90 90 90 90 90 90 90 90 f3 0f 1e fa 0f 1f 44 00 00 eb 0c 0f 1f 44 00 00 0f 00 2d 89 68 20 00 0f 1f 44 00 00 fb f4 <e9> fd 9f 02 00 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 90 90 90 90
+[  779.850334] RSP: 0018:ffffffff87007e10 EFLAGS: 00000202
+[  779.850341] RAX: 00000000002b1231 RBX: 0000000000000000 RCX: ffffffff85c4de44
+[  779.850346] RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffffffff814e1933
+[  779.850350] RBP: dffffc0000000000 R08: 0000000000000001 R09: ffffed102354651a
+[  779.850354] R10: ffff88811aa328d3 R11: 0000000000000001 R12: ffffffff87dbea50
+[  779.850358] R13: 1ffffffff0e00fc8 R14: 0000000000000000 R15: 0000000000000000
+[  779.850363] FS:  0000000000000000(0000) GS:ffff88819123f000(0000) knlGS:0000000000000000
+[  779.850368] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  779.850372] CR2: 00007f739e8714f0 CR3: 0000000111216000 CR4: 00000000000006f0
+[  779.850483] Call Trace:
+[  779.850490]  <TASK>
+[  779.850494]  default_idle+0xe/0x20
+[  779.850512]  default_idle_call+0x6c/0xb0
+[  779.850527]  do_idle+0x313/0x3c0
+[  779.850558]  ? __pfx_do_idle+0x10/0x10
+[  779.850573]  ? find_held_lock+0x2b/0x80
+[  779.850585]  ? rest_init+0x155/0x290
+[  779.850597]  cpu_startup_entry+0x54/0x60
+[  779.850613]  ? __pfx_x86_late_time_init+0x10/0x10
+[  779.850629]  rest_init+0x169/0x290
+[  779.850638]  ? acpi_subsystem_init+0x138/0x180
+[  779.850662]  start_kernel+0x410/0x530
+[  779.850674]  x86_64_start_reservations+0x21/0x40
+[  779.850688]  x86_64_start_kernel+0xd0/0xe0
+[  779.850702]  common_startup_64+0x12c/0x138
+[  779.850719]  </TASK>
+[  779.850724] NMI backtrace for cpu 1
+[  779.850733] CPU: 1 UID: 0 PID: 3052 Comm: syz.0.383 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  779.850741] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  779.850746] RIP: 0010:bttv_bit_getscl+0x2b/0x50 [bttv]
+[  779.850801] Code: 0f 1e fa 0f 1f 44 00 00 53 48 89 fb e8 ae e5 73 e1 48 8d bb f8 07 00 00 e8 52 ed b3 e1 48 8b 83 f8 07 00 00 8b 98 10 01 00 00 <83> e3 02 31 ff 89 de e8 89 e0 73 e1 31 c0 85 db 5b 0f 95 c0 e9 7c
+[  779.850807] RSP: 0018:ffff8880187ef880 EFLAGS: 00000246
+[  779.850813] RAX: ffffc9000133b000 RBX: 0000000000000000 RCX: ffffffffa00244be
+[  779.850818] RDX: dffffc0000000000 RSI: ffffffffa00244b2 RDI: ffff8881179187f8
+[  779.850822] RBP: dffffc0000000000 R08: ffffffffa0024384 R09: 00000000000020da
+[  779.850827] R10: 0000000000000046 R11: 0000000000000000 R12: ffffffffa00244a0
+[  779.850831] R13: ffffed1022f23111 R14: 0000000100074882 R15: ffff8881179188a8
+[  779.850835] FS:  00007fd179eb7640(0000) GS:ffff8881912bf000(0000) knlGS:0000000000000000
+[  779.850841] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  779.850845] CR2: 00007f739e6d5e90 CR3: 0000000104ebe000 CR4: 00000000000006f0
+[  779.851025] Call Trace:
+[  779.851032]  <TASK>
+[  779.851052]  sclhi+0x179/0x370
+[  779.851071]  ? __pfx_bttv_bit_setsda+0x10/0x10 [bttv]
+[  779.851132]  i2c_outb+0xf2/0x520
+[  779.851148]  try_address+0x106/0x2d0
+[  779.851163]  bit_xfer+0xd85/0x1510
+[  779.851180]  __i2c_transfer+0x698/0x2020
+[  779.851194]  ? i2c_smbus_try_get_dmabuf+0x62/0x130
+[  779.851207]  i2c_smbus_xfer_emulated+0x1d1/0x11f0
+[  779.851226]  ? __pfx_i2c_smbus_xfer_emulated+0x10/0x10
+[  779.851241]  ? __rt_mutex_slowlock_locked.constprop.0+0x27d/0x670
+[  779.851254]  ? __pfx___futex_wait+0x10/0x10
+[  779.851274]  ? mark_held_locks+0x49/0x80
+[  779.851293]  __i2c_smbus_xfer+0x716/0xe60
+[  779.851309]  i2c_smbus_xfer+0x20c/0x3d0
+[  779.851325]  i2cdev_ioctl_smbus+0x2db/0x830
+[  779.851338]  ? __pfx_i2cdev_ioctl_smbus+0x10/0x10
+[  779.851349]  ? __might_fault+0x13d/0x190
+[  779.851368]  ? finish_mkwrite_fault+0x172/0x270
+[  779.851387]  i2cdev_ioctl+0x3a9/0x810
+[  779.851398]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  779.851411]  ? selinux_file_ioctl+0xbe/0x280
+[  779.851425]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  779.851437]  __x64_sys_ioctl+0x194/0x210
+[  779.851455]  do_syscall_64+0xc6/0x390
+[  779.851471]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  779.851483] RIP: 0033:0x7fd17b47059d
+[  779.851494] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  779.851503] RSP: 002b:00007fd179eb6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  779.851515] RAX: ffffffffffffffda RBX: 00007fd17b6e5fa0 RCX: 00007fd17b47059d
+[  779.851522] RDX: 0000200000000100 RSI: 0000000000000720 RDI: 0000000000000005
+[  779.851528] RBP: 00007fd17b50e078 R08: 0000000000000000 R09: 0000000000000000
+[  779.851532] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  779.851551] R13: 00007fd17b6e6038 R14: 00007fd17b6e5fa0 R15: 00007fd179e97000
+[  779.851565]  </TASK>
+[  779.851571] NMI backtrace for cpu 2
+[  779.851579] CPU: 2 UID: 0 PID: 0 Comm: swapper/2 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  779.851591] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  779.851604] RIP: 0010:pv_native_safe_halt+0x1e/0x30
+[  779.851619] Code: 90 90 90 90 90 90 90 90 90 90 90 90 f3 0f 1e fa 0f 1f 44 00 00 eb 0c 0f 1f 44 00 00 0f 00 2d 89 68 20 00 0f 1f 44 00 00 fb f4 <e9> fd 9f 02 00 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 90 90 90 90
+[  779.851629] RSP: 0018:ffff888100ca7e60 EFLAGS: 00000206
+[  779.851638] RAX: 0000000000107827 RBX: 0000000000000002 RCX: ffffffff85c4de44
+[  779.851644] RDX: 0000000000000000 RSI: 0000000000000000 RDI: ffffffff814e1933
+[  779.851651] RBP: dffffc0000000000 R08: 0000000000000001 R09: ffffed102356651a
+[  779.851658] R10: ffff88811ab328d3 R11: 0000000000000001 R12: ffffffff87dbea50
+[  779.851665] R13: 1ffff11020194fd2 R14: 0000000000000000 R15: 0000000000000000
+[  779.851672] FS:  0000000000000000(0000) GS:ffff88819133f000(0000) knlGS:0000000000000000
+[  779.851681] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  779.851688] CR2: 00007f739e811770 CR3: 00000001061d2000 CR4: 00000000000006f0
+[  779.851801] Call Trace:
+[  779.851806]  <TASK>
+[  779.851810]  default_idle+0xe/0x20
+[  779.851826]  default_idle_call+0x6c/0xb0
+[  779.851843]  do_idle+0x313/0x3c0
+[  779.851862]  ? cpuhp_online_idle+0xa8/0xc0
+[  779.851876]  ? __pfx_do_idle+0x10/0x10
+[  779.851892]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  779.851910]  cpu_startup_entry+0x54/0x60
+[  779.851926]  start_secondary+0x1c2/0x220
+[  779.851945]  common_startup_64+0x12c/0x138
+[  779.851959]  </TASK>

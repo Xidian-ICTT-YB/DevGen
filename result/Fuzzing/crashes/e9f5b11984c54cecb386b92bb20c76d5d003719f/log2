@@ -1,0 +1,521 @@
+last executing test programs:
+
+34.326259014s ago: executing program 3 (id=4):
+r0 = syz_mount_image$ext4(&(0x7f0000000240)='ext4\x00', &(0x7f0000000280)='./mnt\x00', 0x0, &(0x7f0000000540)={[{@grpquota}, {@noblock_validity}, {@nogrpid}, {@delalloc}, {@discard}, {@stripe={'stripe', 0x3d, 0x4}}, {@dioread_nolock}]}, 0x0, 0x236, &(0x7f0000000300)="$eJzs3TFoM2UcBvDnLomf/b4gVRdBUEFEtFDqJrjURaEgpYgIKlREXJRWqC1urZOLg84qnVyKuFkdpUtxUQSnqh3qImhxsDjoELlcK9VGFFNz8t3vB5fcJe97//e4e95kOS5Aa00nmU/SSTKTpJekON/grnqZPt3cntpfTgaDx38shu3q7dpZv2tJtpI8mGSvLPJiN9nYffro54NH731jvXfPe7tPTU30IE8dHx0+dvLu4usfLjyw8fmX3y8WmU//D8d1+YoRn3WL5Jb/otj/RNFtegT8E0uvfvBVlftbk9w9zH8vZeqT9+baDXu93P/OX/V964cvbp/kWIHLNxj0qt/ArQHQOmWSfopyNkm9Xpazs/V/+K87V8uXVtdemXlhdX3l+aZnKuCy9JPDRz6+8tG1P+X/u06df+D6VeX/iaWdb6r1k07TowEmqcr/zLOb90X+oXXkH9pL/qG95B/aS/6hveQf2kv+ob3kH9pL/qG95B/a63z+AYB2GVxp+g5koClNzz8AAAAAAAAAAAAAAAAAAMBF21P7y2fLpGp++nZy/HCS7qj6neHziJMbh69XfyqqZr8r6m5jeebOMXcwpvcbvvv6pm+brf/ZHc3W31xJtl5LMtftXrz+itPr79+7+W++7z03ZoExPfRks/V/3Wm2/sJB8kk1/8yNmn/K3DZ8Hz3/9KvzN2b9l38ZcwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMzG8BAAD//8n0bSk=")
+r1 = syz_genetlink_get_family_id$batadv(&(0x7f00000002c0), 0xffffffffffffffff)
+sendmsg$BATADV_CMD_GET_NEIGHBORS(0xffffffffffffffff, &(0x7f0000000640)={&(0x7f00000001c0)={0x10, 0x0, 0x0, 0x20000000}, 0xc, &(0x7f0000000600)={&(0x7f00000005c0)=ANY=[@ANYBLOB="19000000", @ANYRES16=r1, @ANYBLOB="00012cbd7000fbdbdf250900000008003b0029040000"], 0x1c}, 0x1, 0x0, 0x0, 0x84}, 0x4000)
+r2 = syz_init_net_socket$802154_dgram(0x24, 0x2, 0x0)
+sendmsg(r2, &(0x7f0000002fc0)={&(0x7f0000000240)=@generic={0x11, "ea454fa1783212c5b5866768d1fb7fe5729a1af46b5ed585d6af3c706d8d2bac650c27420871a31db5df2ec5212e0d948a8919df19febbfd9790dcdaea4d9f78a7c439a4f35249b2f02e961f61da8b9d4010c58f5710fc50a25ad8277d96b1c3a816b5a4e6140d0d497050316e23e987cf94b57e7a65ee276d7f90f6a469"}, 0x80, 0x0}, 0x844)
+seccomp$SECCOMP_GET_NOTIF_SIZES(0x3, 0x0, &(0x7f0000000240))
+setuid(0xee01)
+syz_open_dev$tty1(0xc, 0x4, 0x3)
+r3 = openat$ttyS3(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$INCFS_IOC_READ_FILE_SIGNATURE(r3, 0x8010671f, &(0x7f0000000140)={&(0x7f0000000040)=""/231, 0xe7})
+openat(r0, &(0x7f0000000200)='./file0\x00', 0x46e1, 0x98)
+
+25.709989405s ago: executing program 0 (id=14):
+ioctl$TCFLSH(0xffffffffffffffff, 0x540b, 0x0)
+ioctl$TIOCSPTLCK(0xffffffffffffffff, 0x40045431, 0x0)
+r0 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+r1 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+syz_open_dev$tty1(0xc, 0x4, 0x4)
+r2 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+ioctl$TIOCL_PASTESEL(r2, 0x560e, &(0x7f0000000180))
+ioctl$TIOCSETD(0xffffffffffffffff, 0x5423, 0x0)
+ioctl$TIOCSIG(0xffffffffffffffff, 0x400455c8, 0x8000000000034)
+openat$ptmx(0xffffffffffffff9c, 0x0, 0x200, 0x0)
+r3 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000000), 0x200, 0x0)
+ioctl$TIOCVHANGUP(r3, 0x5437, 0x0)
+ioctl$TIOCVHANGUP(0xffffffffffffffff, 0x5437, 0x0)
+ioctl$TIOCSTI(r1, 0x5412, &(0x7f0000000040)=0x84)
+ioctl$TCGETS2(0xffffffffffffffff, 0x802c542a, &(0x7f0000000000))
+ioctl$TIOCL_BLANKSCREEN(r0, 0x541c, &(0x7f0000000080))
+ioctl$KDMKTONE(0xffffffffffffffff, 0x4b30, 0x80000000)
+
+25.709745651s ago: executing program 1 (id=15):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+ioctl$I2C_RDWR(r0, 0x707, 0x0) (fail_nth: 2)
+
+25.704379585s ago: executing program 3 (id=17):
+r0 = syz_open_dev$loop(&(0x7f0000000400), 0x7c, 0x46000)
+io_submit(0x0, 0x1, &(0x7f0000000280)=[&(0x7f00000000c0)={0x0, 0x0, 0x0, 0x8, 0x7, 0xffffffffffffffff, &(0x7f0000000000)="443c0d8ad9a1b9b85483e65457e2b168a7a714b487ad16eb661e465de79aa364817db61a79d1900a59c457025ffe93bf7c4288a92b7fe6cdad293596ed02fa2d1c388e1f91ebaf65c6821697dc68bc3ff043b8752e2135589b60b9c46cc203851fef1b2903c02e27ab530425e6c56d97bea75e9afbe9d08be7b792d24c4a018c887e534fcb68520d5ce6c24bb206ce435338a0d3fa91e6a1083657083fbbb497010000003f", 0xa5, 0x7, 0x0, 0x3}])
+syz_clone3(&(0x7f0000000080)={0x11, 0x0, 0x0, 0x0, {0x11}, 0x0, 0x0, 0x0, 0x0, 0x0, {0x0}}, 0x58)
+r1 = openat$selinux_mls(0xffffffffffffff9c, &(0x7f0000000440), 0x0, 0x0)
+r2 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000000), 0x402)
+ioctl$SNDRV_SEQ_IOCTL_CREATE_QUEUE(r2, 0xc08c5332, &(0x7f00000001c0)={0x7, 0xc46, 0x0, 'queue1\x00', 0x6})
+write$sndseq(r2, &(0x7f0000000300)=[{0x6, 0x7f, 0x0, 0x0, @time={0x1, 0x80000001}, {0x2c, 0x6}, {0xd}, @control={0x9, 0x2000009, 0x5}}], 0xfede)
+ioctl$SNDRV_SEQ_IOCTL_REMOVE_EVENTS(r2, 0x4040534e, &(0x7f0000000040)={0x102, @tick, 0xa, {0xad, 0xbb}, 0xff, 0x2})
+ioctl$LOOP_CONFIGURE(r0, 0x4c0a, &(0x7f00000005c0)={r1, 0x8000, {0x0, 0x0, 0x0, 0x3, 0x0, 0x0, 0x4, 0x10, 0x10, "31d576078d9edd6198aaca937048ca74e43e37f85a12c8de3084fb9b326d4afae53cd7ba8a0bbb761b2d3e9c55cab53747bdc327a52fd77dadf16925e4f8992d", "ae915cd9a2bd3d6d4a820d362e053db87f89e44a22188757d562c1c868e92c939c8e8c961f32e1a7cdc9ebe9ae3ebe27d9f7f1ed592efd8d17a6758060c73eec", "3c5f619ce07dc1df6282707407d98a195e298599b18cb5081dcbfc37786f4e71", [0x5, 0x4]}})
+r3 = openat$tun(0xffffffffffffff9c, &(0x7f0000000000), 0x880, 0x0)
+socketpair$unix(0x1, 0x2, 0x0, &(0x7f0000000000)={<r4=>0xffffffffffffffff})
+connect$can_bcm(r4, &(0x7f0000000100), 0x10)
+openat$tun(0xffffffffffffff9c, &(0x7f0000000040), 0x800, 0x0)
+ioctl$TUNSETIFF(r3, 0x400454ca, 0x0)
+connect$can_bcm(r1, &(0x7f0000000140), 0x10)
+
+25.613015365s ago: executing program 2 (id=18):
+r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000000), 0x880, 0x0)
+ioctl$TUNSETIFF(r0, 0x400454ca, 0x0)
+
+25.612641268s ago: executing program 3 (id=19):
+openat$tun(0xffffffffffffff9c, &(0x7f0000000000), 0x840, 0x0)
+r0 = openat$sndseq(0xffffffffffffff9c, &(0x7f0000000280), 0x2180)
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+flistxattr(r0, &(0x7f0000000180)=""/223, 0xdf)
+
+25.608703326s ago: executing program 2 (id=20):
+openat$sndseq(0xffffffffffffff9c, &(0x7f00000000c0), 0x121000)
+syz_open_dev$tty1(0xc, 0x4, 0x3)
+r0 = getpid()
+syz_open_procfs(r0, &(0x7f0000000000)='attr/current\x00')
+
+25.544150404s ago: executing program 2 (id=21):
+r0 = openat$tun(0xffffffffffffff9c, &(0x7f0000000000), 0x880, 0x0)
+ioctl$TUNSETIFF(r0, 0x400454ca, 0x0) (fail_nth: 2)
+
+17.453265855s ago: executing program 0 (id=22):
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000200), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_DEBUG_GET(r1, &(0x7f00000005c0)={0x0, 0x0, &(0x7f0000000580)={&(0x7f00000000c0)=ANY=[@ANYBLOB='(\x00\x00\x00', @ANYRES16=r2, @ANYBLOB="01032dbd7000fcdbdf2507000000140001"], 0x28}, 0x1, 0x0, 0x0, 0x4000041}, 0x4000)
+r3 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCGIFINDEX(r3, 0x8933, &(0x7f0000000100)={'sit0\x00', <r4=>0x0})
+bind$packet(r3, &(0x7f0000000000)={0x11, 0x3, r4, 0x1, 0x3, 0x6, @broadcast}, 0x14)
+timer_create(0x2, 0x0, &(0x7f00000002c0)=<r5=>0x0)
+timer_settime(r5, 0x1, &(0x7f00000001c0)={{0x0, 0x3938700}}, &(0x7f0000000200))
+ioctl$sock_ipv6_tunnel_SIOCCHGTUNNEL(0xffffffffffffffff, 0x89f3, &(0x7f0000000180)={'ip6tnl0\x00', &(0x7f0000000100)={'ip6gre0\x00', <r6=>0x0, 0x2f, 0x5, 0x7, 0x8, 0x16, @rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02', @mcast1, 0x20, 0x10, 0x4, 0x30}})
+ioctl$sock_ipv6_tunnel_SIOCADDTUNNEL(0xffffffffffffffff, 0x89f1, &(0x7f0000000240)={'ip6tnl0\x00', &(0x7f00000001c0)={'syztnl0\x00', <r7=>0x0, 0x4, 0x3b, 0xe, 0x1, 0x30, @local, @mcast2, 0x7, 0x8000, 0x5, 0x4}})
+getsockopt$PNPIPE_IFINDEX(0xffffffffffffffff, 0x113, 0x2, &(0x7f0000000280)=<r8=>0x0, &(0x7f00000002c0)=0x4)
+socket$igmp(0x2, 0x3, 0x2)
+socket$packet(0x11, 0x3, 0x300)
+sendmsg$ETHTOOL_MSG_RINGS_SET(r0, &(0x7f0000000440)={&(0x7f0000000040)={0x10, 0x0, 0x0, 0x800000}, 0xc, &(0x7f0000000400)={&(0x7f0000000300)={0xc8, r2, 0x1, 0x70bd27, 0x25dfdbfe, {}, [@ETHTOOL_A_RINGS_HEADER={0x30, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x2}, @ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'veth0_to_bond\x00'}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r4}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x3}]}, @ETHTOOL_A_RINGS_RX_MINI={0x8}, @ETHTOOL_A_RINGS_RX={0x8, 0x6, 0x3}, @ETHTOOL_A_RINGS_RX={0x8, 0x6, 0xffffff01}, @ETHTOOL_A_RINGS_HEADER={0xc, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r6}]}, @ETHTOOL_A_RINGS_TX={0x8, 0x9, 0x6}, @ETHTOOL_A_RINGS_HEADER={0x58, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x3}, @ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'tunl0\x00'}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r7}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x3}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x2}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r8}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x1}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x1}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8}]}]}, 0xc8}, 0x1, 0x0, 0x0, 0x20088884}, 0x0)
+
+17.450080665s ago: executing program 1 (id=23):
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+r0 = syz_mount_image$ext4(&(0x7f0000000240)='ext4\x00', &(0x7f0000000280)='./mnt\x00', 0x8810, &(0x7f0000000540)={[{@grpquota}, {@noblock_validity}, {@nogrpid}, {@delalloc}, {@discard}, {@stripe={'stripe', 0x3d, 0x4}}, {@dioread_nolock}]}, 0x0, 0x236, &(0x7f00000005c0)="$eJzs3TFoM2UcBvDnLomf/b4gVRdBUEFEtFDqJrjURaEgpYgIKlREXJRWqC1urZOLg84qnVyKuFkdpUtxUQSnqh3qImhxsDjoELlcK9VGFFNz8t3vB5fcJe97//e4e95kOS5Aa00nmU/SSTKTpJekON/grnqZPt3cntpfTgaDx38shu3q7dpZv2tJtpI8mGSvLPJiN9nYffro54NH731jvXfPe7tPTU30IE8dHx0+dvLu4usfLjyw8fmX3y8WmU//D8d1+YoRn3WL5Jb/otj/RNFtegT8E0uvfvBVlftbk9w9zH8vZeqT9+baDXu93P/OX/V964cvbp/kWIHLNxj0qt/ArQHQOmWSfopyNkm9Xpazs/V/+K87V8uXVtdemXlhdX3l+aZnKuCy9JPDRz6+8tG1P+X/u06df+D6VeX/iaWdb6r1k07TowEmqcr/zLOb90X+oXXkH9pL/qG95B/aS/6hveQf2kv+ob3kH9pL/qG95B/a63z+AYB2GVxp+g5koClNzz8AAAAAAAAAAAAAAAAAAMBF21P7y2fLpGp++nZy/HCS7qj6neHziJMbh69XfyqqZr8r6m5jeebOMXcwpvcbvvv6pm+brf/ZHc3W31xJtl5LMtftXrz+itPr79+7+W++7z03ZoExPfRks/V/3Wm2/sJB8kk1/8yNmn/K3DZ8Hz3/9KvzN2b9l38ZcwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMzG8BAAD//8n0bSk=")
+r1 = openat(r0, &(0x7f0000000200)='./file0\x00', 0x46e1, 0x98)
+inotify_rm_watch(r1, 0x0)
+rseq(&(0x7f0000000180)={0x0, 0x0, 0x0, 0xf}, 0x20, 0x0, 0x0)
+
+17.450001247s ago: executing program 2 (id=24):
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+r0 = syz_mount_image$ext4(&(0x7f0000000240)='ext4\x00', &(0x7f0000000280)='./mnt\x00', 0x8810, &(0x7f0000000540)={[{@grpquota}, {@noblock_validity}, {@nogrpid}, {@delalloc}, {@discard}, {@stripe={'stripe', 0x3d, 0x4}}, {@dioread_nolock}]}, 0x0, 0x236, &(0x7f00000005c0)="$eJzs3TFoM2UcBvDnLomf/b4gVRdBUEFEtFDqJrjURaEgpYgIKlREXJRWqC1urZOLg84qnVyKuFkdpUtxUQSnqh3qImhxsDjoELlcK9VGFFNz8t3vB5fcJe97//e4e95kOS5Aa00nmU/SSTKTpJekON/grnqZPt3cntpfTgaDx38shu3q7dpZv2tJtpI8mGSvLPJiN9nYffro54NH731jvXfPe7tPTU30IE8dHx0+dvLu4usfLjyw8fmX3y8WmU//D8d1+YoRn3WL5Jb/otj/RNFtegT8E0uvfvBVlftbk9w9zH8vZeqT9+baDXu93P/OX/V964cvbp/kWIHLNxj0qt/ArQHQOmWSfopyNkm9Xpazs/V/+K87V8uXVtdemXlhdX3l+aZnKuCy9JPDRz6+8tG1P+X/u06df+D6VeX/iaWdb6r1k07TowEmqcr/zLOb90X+oXXkH9pL/qG95B/aS/6hveQf2kv+ob3kH9pL/qG95B/a63z+AYB2GVxp+g5koClNzz8AAAAAAAAAAAAAAAAAAMBF21P7y2fLpGp++nZy/HCS7qj6neHziJMbh69XfyqqZr8r6m5jeebOMXcwpvcbvvv6pm+brf/ZHc3W31xJtl5LMtftXrz+itPr79+7+W++7z03ZoExPfRks/V/3Wm2/sJB8kk1/8yNmn/K3DZ8Hz3/9KvzN2b9l38ZcwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMzG8BAAD//8n0bSk=")
+r1 = openat(r0, &(0x7f0000000200)='./file0\x00', 0x46e1, 0x98)
+inotify_rm_watch(r1, 0x0)
+
+17.449928145s ago: executing program 3 (id=25):
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+r0 = syz_mount_image$ext4(&(0x7f0000000240)='ext4\x00', &(0x7f0000000280)='./mnt\x00', 0x8810, &(0x7f0000000540)={[{@grpquota}, {@noblock_validity}, {@nogrpid}, {@delalloc}, {@discard}, {@stripe={'stripe', 0x3d, 0x4}}, {@dioread_nolock}]}, 0x0, 0x236, &(0x7f00000005c0)="$eJzs3TFoM2UcBvDnLomf/b4gVRdBUEFEtFDqJrjURaEgpYgIKlREXJRWqC1urZOLg84qnVyKuFkdpUtxUQSnqh3qImhxsDjoELlcK9VGFFNz8t3vB5fcJe97//e4e95kOS5Aa00nmU/SSTKTpJekON/grnqZPt3cntpfTgaDx38shu3q7dpZv2tJtpI8mGSvLPJiN9nYffro54NH731jvXfPe7tPTU30IE8dHx0+dvLu4usfLjyw8fmX3y8WmU//D8d1+YoRn3WL5Jb/otj/RNFtegT8E0uvfvBVlftbk9w9zH8vZeqT9+baDXu93P/OX/V964cvbp/kWIHLNxj0qt/ArQHQOmWSfopyNkm9Xpazs/V/+K87V8uXVtdemXlhdX3l+aZnKuCy9JPDRz6+8tG1P+X/u06df+D6VeX/iaWdb6r1k07TowEmqcr/zLOb90X+oXXkH9pL/qG95B/aS/6hveQf2kv+ob3kH9pL/qG95B/a63z+AYB2GVxp+g5koClNzz8AAAAAAAAAAAAAAAAAAMBF21P7y2fLpGp++nZy/HCS7qj6neHziJMbh69XfyqqZr8r6m5jeebOMXcwpvcbvvv6pm+brf/ZHc3W31xJtl5LMtftXrz+itPr79+7+W++7z03ZoExPfRks/V/3Wm2/sJB8kk1/8yNmn/K3DZ8Hz3/9KvzN2b9l38ZcwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMzG8BAAD//8n0bSk=")
+r1 = openat(r0, &(0x7f0000000200)='./file0\x00', 0x46e1, 0x98)
+inotify_rm_watch(r1, 0x0)
+rseq(&(0x7f0000000180)={0x0, 0x0, 0x0, 0xf}, 0x20, 0x0, 0x0)
+syz_clone(0x11, 0x0, 0x0, 0x0, 0x0, 0x0)
+
+17.35142163s ago: executing program 0 (id=26):
+setuid(0xee01)
+syz_open_dev$dri(&(0x7f00000001c0), 0xa8c, 0x80000)
+syz_mount_image$msdos(&(0x7f0000000540), &(0x7f0000000580)='./file0\x00', 0x0, &(0x7f0000000000)={[{@dots}, {@dots}, {@nodots}, {@nodots}, {@fat=@sys_immutable}, {@fat=@gid={'gid', 0x3d, 0xee01}}]}, 0x1, 0x52e, &(0x7f0000000600)="$eJzs2j+LE0EcBuAxd+YOG1OLxYKN1XFaWbpIDg4XhMgWWrlwsdkVYbfZpLpvI/jZ7NJcF7nskrv4rzFx1DwPhHnJm8Bvmt0p5t3DD+XFx+b9sy+fwvHzJAxCCIOrEEar1LnTr4NVHobbLgMA8K+ZTIo09gzsVl2nxfUZ7ui7Jv8cZSAAAAAAAAAAAAB+m/v/ALB/3P///9V1Wgz789sm9/8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAeK6Wy/vLX3xizwcAbJ/3PwDsn9dv3r5Ms2w8SZLjEBaXbd7m3dr1Z+fZ+DRZGd38a9G2+cG6f9L1yWZ/N9zr+6c/7Ifh8aOuv+5evMq+6Y/Cxe63DwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANxykqyNbr5dtG1+0PUnP+u7dHaejU/7H2z2h+HB4R/bBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAFzWxeFlU1rQVBENYh9pMJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIpZnNy6KqpnUTexIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G/RzOZlUVXTeoch9h4BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2L6vAQAA//+aYmE9")
+
+17.34986377s ago: executing program 1 (id=27):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+r1 = openat$rdma_cm(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+write$RDMA_USER_CM_CMD_DESTROY_ID(r1, &(0x7f0000000240)={0x1, 0x10, 0xfa00, {0x0}}, 0x18)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000080)={0x0})
+ioctl$AUTOFS_DEV_IOCTL_EXPIRE(0xffffffffffffffff, 0xc018937c, &(0x7f0000000040)={{0x1, 0x1, 0x18, <r2=>r0, {0x6}}, './file0\x00'})
+ioctl$SNDRV_SEQ_IOCTL_GET_SUBSCRIPTION(r2, 0xc0505350, &(0x7f00000000c0)={{0x7, 0x6}, {0x1, 0x85}, 0x2bb, 0x2, 0x2})
+
+17.343017779s ago: executing program 0 (id=28):
+r0 = socket$inet_udp(0x2, 0x2, 0x0)
+setsockopt$SO_TIMESTAMP(r0, 0x1, 0x34, &(0x7f0000000000), 0x4)
+
+17.326608923s ago: executing program 3 (id=29):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000080)={0x0})
+
+10.14162504s ago: executing program 0 (id=30):
+ioctl$TCFLSH(0xffffffffffffffff, 0x540b, 0x0)
+ioctl$TIOCSPTLCK(0xffffffffffffffff, 0x40045431, 0x0)
+r0 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+r1 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+ioctl$TIOCSTI(r0, 0x5412, 0x0)
+r2 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+ioctl$TIOCL_PASTESEL(r2, 0x560e, &(0x7f0000000180))
+ioctl$TIOCSETD(0xffffffffffffffff, 0x5423, 0x0)
+ioctl$TIOCSIG(0xffffffffffffffff, 0x400455c8, 0x8000000000034)
+openat$ptmx(0xffffffffffffff9c, 0x0, 0x200, 0x0)
+r3 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000000), 0x200, 0x0)
+ioctl$TIOCVHANGUP(r3, 0x5437, 0x0)
+ioctl$TIOCVHANGUP(0xffffffffffffffff, 0x5437, 0x0)
+ioctl$TIOCSTI(r1, 0x5412, &(0x7f0000000040)=0x84)
+ioctl$TCGETS2(0xffffffffffffffff, 0x802c542a, &(0x7f0000000000))
+ioctl$TIOCL_BLANKSCREEN(r0, 0x541c, &(0x7f0000000080))
+ioctl$KDMKTONE(0xffffffffffffffff, 0x4b30, 0x80000000)
+
+10.14148351s ago: executing program 1 (id=31):
+r0 = openat$sndseq(0xffffffffffffff9c, 0x0, 0x2180)
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+flistxattr(r0, &(0x7f0000000180)=""/223, 0xdf)
+
+10.141386984s ago: executing program 2 (id=32):
+ioctl$TCFLSH(0xffffffffffffffff, 0x540b, 0x0)
+ioctl$TIOCSPTLCK(0xffffffffffffffff, 0x40045431, 0x0)
+r0 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+r1 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+syz_open_dev$tty1(0xc, 0x4, 0x4)
+r2 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+ioctl$TIOCL_PASTESEL(r2, 0x560e, &(0x7f0000000180))
+ioctl$TIOCSETD(0xffffffffffffffff, 0x5423, 0x0)
+ioctl$TIOCSIG(0xffffffffffffffff, 0x400455c8, 0x8000000000034)
+openat$ptmx(0xffffffffffffff9c, 0x0, 0x200, 0x0)
+r3 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000000), 0x200, 0x0)
+ioctl$TIOCVHANGUP(r3, 0x5437, 0x0)
+ioctl$TIOCVHANGUP(0xffffffffffffffff, 0x5437, 0x0)
+ioctl$TIOCSTI(r1, 0x5412, &(0x7f0000000040)=0x84)
+ioctl$TCGETS2(0xffffffffffffffff, 0x802c542a, &(0x7f0000000000))
+ioctl$TIOCL_BLANKSCREEN(r0, 0x541c, &(0x7f0000000080))
+ioctl$KDMKTONE(0xffffffffffffffff, 0x4b30, 0x80000000)
+
+10.08462519s ago: executing program 1 (id=34):
+r0 = socket$nl_generic(0x10, 0x3, 0x10)
+r1 = socket$nl_generic(0x10, 0x3, 0x10)
+r2 = syz_genetlink_get_family_id$ethtool(&(0x7f0000000200), 0xffffffffffffffff)
+sendmsg$ETHTOOL_MSG_DEBUG_GET(r1, &(0x7f00000005c0)={0x0, 0x0, &(0x7f0000000580)={&(0x7f00000000c0)=ANY=[@ANYBLOB='(\x00\x00\x00', @ANYRES16=r2, @ANYBLOB="01032dbd7000fcdbdf2507000000140001"], 0x28}, 0x1, 0x0, 0x0, 0x4000041}, 0x4000)
+r3 = socket$packet(0x11, 0x3, 0x300)
+ioctl$sock_SIOCGIFINDEX(r3, 0x8933, &(0x7f0000000100)={'sit0\x00', <r4=>0x0})
+bind$packet(r3, &(0x7f0000000000)={0x11, 0x3, r4, 0x1, 0x3, 0x6, @broadcast}, 0x14)
+timer_create(0x2, 0x0, &(0x7f00000002c0)=<r5=>0x0)
+timer_settime(r5, 0x1, &(0x7f00000001c0)={{0x0, 0x3938700}}, &(0x7f0000000200))
+ioctl$sock_ipv6_tunnel_SIOCCHGTUNNEL(0xffffffffffffffff, 0x89f3, &(0x7f0000000180)={'ip6tnl0\x00', &(0x7f0000000100)={'ip6gre0\x00', <r6=>0x0, 0x2f, 0x5, 0x7, 0x8, 0x16, @rand_addr=' \x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02', @mcast1, 0x20, 0x10, 0x4, 0x30}})
+ioctl$sock_ipv6_tunnel_SIOCADDTUNNEL(0xffffffffffffffff, 0x89f1, &(0x7f0000000240)={'ip6tnl0\x00', &(0x7f00000001c0)={'syztnl0\x00', <r7=>0x0, 0x4, 0x3b, 0xe, 0x1, 0x30, @local, @mcast2, 0x7, 0x8000, 0x5, 0x4}})
+getsockopt$PNPIPE_IFINDEX(0xffffffffffffffff, 0x113, 0x2, &(0x7f0000000280)=<r8=>0x0, &(0x7f00000002c0)=0x4)
+socket$igmp(0x2, 0x3, 0x2)
+sendmsg$ETHTOOL_MSG_RINGS_SET(r0, &(0x7f0000000440)={&(0x7f0000000040)={0x10, 0x0, 0x0, 0x800000}, 0xc, &(0x7f0000000400)={&(0x7f0000000300)={0xc8, r2, 0x1, 0x70bd27, 0x25dfdbfe, {}, [@ETHTOOL_A_RINGS_HEADER={0x30, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x2}, @ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'veth0_to_bond\x00'}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r4}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x3}]}, @ETHTOOL_A_RINGS_RX_MINI={0x8}, @ETHTOOL_A_RINGS_RX={0x8, 0x6, 0x3}, @ETHTOOL_A_RINGS_RX={0x8, 0x6, 0xffffff01}, @ETHTOOL_A_RINGS_HEADER={0xc, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r6}]}, @ETHTOOL_A_RINGS_TX={0x8, 0x9, 0x6}, @ETHTOOL_A_RINGS_HEADER={0x58, 0x1, 0x0, 0x1, [@ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x3}, @ETHTOOL_A_HEADER_DEV_NAME={0x14, 0x2, 'tunl0\x00'}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r7}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x3}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x2}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8, 0x1, r8}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x1}, @ETHTOOL_A_HEADER_FLAGS={0x8, 0x3, 0x1}, @ETHTOOL_A_HEADER_DEV_INDEX={0x8}]}]}, 0xc8}, 0x1, 0x0, 0x0, 0x20088884}, 0x0)
+
+10.084148286s ago: executing program 1 (id=35):
+ioctl$TCFLSH(0xffffffffffffffff, 0x540b, 0x0)
+ioctl$TIOCSPTLCK(0xffffffffffffffff, 0x40045431, 0x0)
+r0 = syz_open_dev$tty1(0xc, 0x4, 0x1)
+r1 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+syz_open_dev$tty1(0xc, 0x4, 0x4)
+r2 = syz_open_dev$tty20(0xc, 0x4, 0x0)
+ioctl$TIOCL_PASTESEL(r2, 0x560e, &(0x7f0000000180))
+ioctl$TIOCSETD(0xffffffffffffffff, 0x5423, 0x0)
+ioctl$TIOCSIG(0xffffffffffffffff, 0x400455c8, 0x8000000000034)
+openat$ptmx(0xffffffffffffff9c, 0x0, 0x200, 0x0)
+r3 = openat$ptmx(0xffffffffffffff9c, &(0x7f0000000000), 0x200, 0x0)
+ioctl$TIOCVHANGUP(r3, 0x5437, 0x0)
+ioctl$TIOCVHANGUP(0xffffffffffffffff, 0x5437, 0x0)
+ioctl$TIOCSTI(r1, 0x5412, &(0x7f0000000040)=0x84)
+ioctl$TCGETS2(0xffffffffffffffff, 0x802c542a, &(0x7f0000000000))
+ioctl$TIOCL_BLANKSCREEN(r0, 0x541c, &(0x7f0000000080))
+ioctl$KDMKTONE(0xffffffffffffffff, 0x4b30, 0x80000000)
+
+9.290575408s ago: executing program 0 (id=36):
+rseq(&(0x7f0000000180)={0x0, 0x0, 0x0, 0xf}, 0x20, 0x0, 0x0)
+
+9.279985633s ago: executing program 2 (id=37):
+prctl$PR_SET_SYSCALL_USER_DISPATCH_ON(0x3b, 0x1, 0x5, 0x5, &(0x7f00000002c0))
+r0 = syz_mount_image$ext4(&(0x7f0000000240)='ext4\x00', &(0x7f0000000280)='./mnt\x00', 0x8810, &(0x7f0000000540)={[{@grpquota}, {@noblock_validity}, {@nogrpid}, {@delalloc}, {@discard}, {@stripe={'stripe', 0x3d, 0x4}}, {@dioread_nolock}]}, 0x0, 0x236, &(0x7f00000005c0)="$eJzs3TFoM2UcBvDnLomf/b4gVRdBUEFEtFDqJrjURaEgpYgIKlREXJRWqC1urZOLg84qnVyKuFkdpUtxUQSnqh3qImhxsDjoELlcK9VGFFNz8t3vB5fcJe97//e4e95kOS5Aa00nmU/SSTKTpJekON/grnqZPt3cntpfTgaDx38shu3q7dpZv2tJtpI8mGSvLPJiN9nYffro54NH731jvXfPe7tPTU30IE8dHx0+dvLu4usfLjyw8fmX3y8WmU//D8d1+YoRn3WL5Jb/otj/RNFtegT8E0uvfvBVlftbk9w9zH8vZeqT9+baDXu93P/OX/V964cvbp/kWIHLNxj0qt/ArQHQOmWSfopyNkm9Xpazs/V/+K87V8uXVtdemXlhdX3l+aZnKuCy9JPDRz6+8tG1P+X/u06df+D6VeX/iaWdb6r1k07TowEmqcr/zLOb90X+oXXkH9pL/qG95B/aS/6hveQf2kv+ob3kH9pL/qG95B/a63z+AYB2GVxp+g5koClNzz8AAAAAAAAAAAAAAAAAAMBF21P7y2fLpGp++nZy/HCS7qj6neHziJMbh69XfyqqZr8r6m5jeebOMXcwpvcbvvv6pm+brf/ZHc3W31xJtl5LMtftXrz+itPr79+7+W++7z03ZoExPfRks/V/3Wm2/sJB8kk1/8yNmn/K3DZ8Hz3/9KvzN2b9l38ZcwcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMzG8BAAD//8n0bSk=")
+r1 = openat(r0, &(0x7f0000000200)='./file0\x00', 0x46e1, 0x98)
+inotify_rm_watch(r1, 0x0)
+rseq(&(0x7f0000000180)={0x0, 0x0, 0x0, 0xf}, 0x20, 0x0, 0x0)
+syz_clone(0x11, 0x0, 0x0, 0x0, 0x0, 0x0)
+
+0s ago: executing program 3 (id=33):
+r0 = io_uring_setup(0x709d, &(0x7f0000000140)={0x0, 0xc494, 0x40, 0x1, 0x13e})
+io_uring_register$IORING_REGISTER_ENABLE_RINGS(r0, 0xc, 0x0, 0x0)
+r1 = fsopen(&(0x7f0000001200)='binfmt_misc\x00', 0x1)
+fsconfig$FSCONFIG_SET_BINARY(r1, 0x2, 0x0, 0x0, 0x0)
+ioctl$BTRFS_IOC_BALANCE_PROGRESS(r0, 0x84009422, &(0x7f00000001c0)={0x0, 0x0, {0x0, @usage, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, @struct}, {0x0, @struct}})
+r2 = syz_open_dev$loop(&(0x7f0000000000), 0xc11c, 0x4481)
+ioctl$BLKSSZGET(r2, 0x1268, 0x0)
+syz_emit_ethernet(0x19, &(0x7f0000000040)={@link_local={0x1, 0x80, 0xc2, 0x0, 0x0, 0xe}, @dev={'\xaa\xaa\xaa\xaa\xaa', 0x30}, @val={@val={0x88a8, 0x0, 0x1, 0x3}, {0x8100, 0x3, 0x1, 0x1}}, {@mpls_mc={0x8848, {[], @llc={@llc={0xbc, 0xd4, 'R'}}}}}}, 0x0)
+
+kernel console output (not intermixed with test programs):
+
+Warning: Permanently added '[localhost]:64277' (ED25519) to the list of known hosts.
+[   77.041739] cgroup: Unknown subsys name 'net'
+[   77.104538] cgroup: Unknown subsys name 'cpuset'
+[   77.114942] cgroup: Unknown subsys name 'rlimit'
+[   77.116876] cgroup: Unknown subsys name 'memory'
+[   77.170878] kmemleak: Automatic memory scanning thread ended
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=9bdeb47f-957b-4c63-9cda-9819e9d05fe1
+[   88.186527] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[   91.971884] audit: type=1400 audit(1767817568.891:24): avc:  denied  { execmem } for  pid=292 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[   92.345229] audit: type=1400 audit(1767817569.265:25): avc:  denied  { read } for  pid=297 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   92.376052] audit: type=1400 audit(1767817569.266:26): avc:  denied  { open } for  pid=297 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   92.401301] audit: type=1400 audit(1767817569.266:27): avc:  denied  { getattr } for  pid=297 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[   92.428869] audit: type=1400 audit(1767817569.268:28): avc:  denied  { map } for  pid=297 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  113.554998] FAULT_INJECTION: forcing a failure.
+[  113.554998] name fail_usercopy, interval 1, probability 0, space 0, times 1
+[  113.561883] CPU: 3 UID: 0 PID: 2029 Comm: syz.0.5 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  113.561905] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  113.561956] Call Trace:
+[  113.561976]  <TASK>
+[  113.561983]  dump_stack_lvl+0x10b/0x140
+[  113.562038]  should_fail_ex+0x4d5/0x5e0
+[  113.562060]  _copy_to_user+0x32/0xd0
+[  113.562085]  simple_read_from_buffer+0xe5/0x180
+[  113.562112]  proc_fail_nth_read+0x18f/0x240
+[  113.562131]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  113.562149]  ? security_file_permission+0x27/0x90
+[  113.562172]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  113.562227]  vfs_read+0x1eb/0xc70
+[  113.562244]  ? __pfx___mutex_lock+0x10/0x10
+[  113.562267]  ? __pfx_vfs_read+0x10/0x10
+[  113.562282]  ? __fget_files+0x1f6/0x3b0
+[  113.562295]  ? lock_release+0xd3/0x2a0
+[  113.562321]  ? __fget_files+0x200/0x3b0
+[  113.562344]  ksys_read+0x126/0x240
+[  113.562359]  ? __pfx_ksys_read+0x10/0x10
+[  113.562376]  ? fput+0x6f/0x100
+[  113.562401]  do_syscall_64+0xc6/0x390
+[  113.562424]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  113.562440] RIP: 0033:0x7f53346def6c
+[  113.562454] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  113.562469] RSP: 002b:00007f5333126f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  113.562499] RAX: ffffffffffffffda RBX: 00007f5334955fa0 RCX: 00007f53346def6c
+[  113.562509] RDX: 000000000000000f RSI: 00007f5333127020 RDI: 0000000000000004
+[  113.562518] RBP: 00007f5333127010 R08: 0000000000000000 R09: 0000000000000000
+[  113.562527] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  113.562536] R13: 00007f5334956038 R14: 00007f5334955fa0 R15: 00007f5333107000
+[  113.562563]  </TASK>
+[  113.780854] loop2: detected capacity change from 0 to 128
+[  113.882022] audit: type=1400 audit(1767817590.802:29): avc:  denied  { setattr } for  pid=2043 comm="syz.2.6" name="exec" dev="proc" ino=3979 scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=file permissive=1
+[  114.005054] loop1: detected capacity change from 0 to 128
+[  114.030464] EXT4-fs (loop1): mounted filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09 r/w without journal. Quota mode: writeback.
+[  114.039948] ext4 filesystem being mounted at /0/mnt supports timestamps until 2038-01-19 (0x7fffffff)
+[  114.041312] loop3: detected capacity change from 0 to 128
+[  114.065581] EXT4-fs (loop3): mounted filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09 r/w without journal. Quota mode: writeback.
+[  114.069964] netlink: 112 bytes leftover after parsing attributes in process `syz.1.2'.
+[  114.073359] ext4 filesystem being mounted at /0/mnt supports timestamps until 2038-01-19 (0x7fffffff)
+[  114.111601] EXT4-fs (loop1): unmounting filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09.
+[  114.147830] EXT4-fs (loop3): unmounting filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09.
+[  122.656469] FAULT_INJECTION: forcing a failure.
+[  122.656469] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  122.662336] CPU: 2 UID: 0 PID: 2084 Comm: syz.1.15 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  122.662354] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  122.662363] Call Trace:
+[  122.662367]  <TASK>
+[  122.662373]  dump_stack_lvl+0x10b/0x140
+[  122.662401]  should_fail_ex+0x4d5/0x5e0
+[  122.662420]  _copy_to_user+0x32/0xd0
+[  122.662442]  simple_read_from_buffer+0xe5/0x180
+[  122.662469]  proc_fail_nth_read+0x18f/0x240
+[  122.662486]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  122.662501]  ? security_file_permission+0x27/0x90
+[  122.662521]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  122.662536]  vfs_read+0x1eb/0xc70
+[  122.662552]  ? __pfx___mutex_lock+0x10/0x10
+[  122.662572]  ? __pfx_vfs_read+0x10/0x10
+[  122.662585]  ? __fget_files+0x1f6/0x3b0
+[  122.662597]  ? lock_release+0xd3/0x2a0
+[  122.662620]  ? __fget_files+0x200/0x3b0
+[  122.662640]  ksys_read+0x126/0x240
+[  122.662653]  ? __pfx_ksys_read+0x10/0x10
+[  122.662667]  ? fput+0x6f/0x100
+[  122.662687]  do_syscall_64+0xc6/0x390
+[  122.662706]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  122.662720] RIP: 0033:0x7f29c004ef6c
+[  122.662731] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  122.662743] RSP: 002b:00007f29bea96f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  122.662757] RAX: ffffffffffffffda RBX: 00007f29c02c5fa0 RCX: 00007f29c004ef6c
+[  122.662776] RDX: 000000000000000f RSI: 00007f29bea97020 RDI: 0000000000000004
+[  122.662784] RBP: 00007f29bea97010 R08: 0000000000000000 R09: 0000000000000000
+[  122.662791] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  122.662798] R13: 00007f29c02c6038 R14: 00007f29c02c5fa0 R15: 00007f29bea77000
+[  122.662819]  </TASK>
+[  122.800215] FAULT_INJECTION: forcing a failure.
+[  122.800215] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  122.808156] CPU: 2 UID: 0 PID: 2094 Comm: syz.2.21 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  122.808178] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  122.808188] Call Trace:
+[  122.808193]  <TASK>
+[  122.808200]  dump_stack_lvl+0x10b/0x140
+[  122.808229]  should_fail_ex+0x4d5/0x5e0
+[  122.808249]  _copy_to_user+0x32/0xd0
+[  122.808312]  simple_read_from_buffer+0xe5/0x180
+[  122.808338]  proc_fail_nth_read+0x18f/0x240
+[  122.808357]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  122.808375]  ? security_file_permission+0x27/0x90
+[  122.808397]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  122.808414]  vfs_read+0x1eb/0xc70
+[  122.808432]  ? __pfx___mutex_lock+0x10/0x10
+[  122.808454]  ? __pfx_vfs_read+0x10/0x10
+[  122.808469]  ? __fget_files+0x1f6/0x3b0
+[  122.808483]  ? lock_release+0xd3/0x2a0
+[  122.808509]  ? __fget_files+0x200/0x3b0
+[  122.808531]  ksys_read+0x126/0x240
+[  122.808546]  ? __pfx_ksys_read+0x10/0x10
+[  122.808562]  ? fput+0x6f/0x100
+[  122.808586]  do_syscall_64+0xc6/0x390
+[  122.808608]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  122.808623] RIP: 0033:0x7f7bd84fef6c
+[  122.808636] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  122.808650] RSP: 002b:00007f7bd6f46f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  122.808666] RAX: ffffffffffffffda RBX: 00007f7bd8775fa0 RCX: 00007f7bd84fef6c
+[  122.808675] RDX: 000000000000000f RSI: 00007f7bd6f47020 RDI: 0000000000000004
+[  122.808684] RBP: 00007f7bd6f47010 R08: 0000000000000000 R09: 0000000000000000
+[  122.808692] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  122.808701] R13: 00007f7bd8776038 R14: 00007f7bd8775fa0 R15: 00007f7bd6f27000
+[  122.808725]  </TASK>
+[  130.900957] loop1: detected capacity change from 0 to 128
+[  130.901683] loop2: detected capacity change from 0 to 128
+[  130.902958] loop3: detected capacity change from 0 to 128
+[  130.919077] EXT4-fs (loop1): mounted filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09 r/w without journal. Quota mode: writeback.
+[  130.919678] EXT4-fs (loop3): mounted filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09 r/w without journal. Quota mode: writeback.
+[  130.926652] ext4 filesystem being mounted at /2/mnt supports timestamps until 2038-01-19 (0x7fffffff)
+[  130.930206] EXT4-fs (loop2): mounted filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09 r/w without journal. Quota mode: writeback.
+[  130.933732] ext4 filesystem being mounted at /8/mnt supports timestamps until 2038-01-19 (0x7fffffff)
+[  130.935726] ext4 filesystem being mounted at /3/mnt supports timestamps until 2038-01-19 (0x7fffffff)
+[  130.970639] EXT4-fs (loop1): unmounting filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09.
+[  131.035593] EXT4-fs (loop2): unmounting filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09.
+[  131.116737] EXT4-fs (loop3): unmounting filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09.
+[  139.064863] loop2: detected capacity change from 0 to 128
+[  139.083361] EXT4-fs (loop2): mounted filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09 r/w without journal. Quota mode: writeback.
+[  139.093285] ext4 filesystem being mounted at /10/mnt supports timestamps until 2038-01-19 (0x7fffffff)
+[  139.209554] EXT4-fs (loop2): unmounting filesystem 76b65be2-f6da-4727-8c75-0525a5b65a09.
+
+VM DIAGNOSIS:
+04:32:13  Registers:
+info registers vcpu 0
+
+CPU#0
+RAX=ffffffff81339e60 RBX=0000000000000001 RCX=0000000000000020 RDX=1ffff110235448e9
+RSI=0000000000006edd RDI=0000000000000380 RBP=ffff88811aa24740 RSP=ffffffff87007be8
+R8 =0000000000000001 R9 =0000000000000001 R10=000000000006ee0a R11=0000000000000001
+R12=0000000000006edd R13=0000000000000001 R14=0000000000000000 R15=ffff88811aa29100
+RIP=ffffffff8134cefc RFL=00000046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff88819123f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=000055b8ddcbb268 CR3=0000000111cbc000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000000 XMM01=0000000000000000 0000000000000000
+XMM02=0000000000000000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000ff0000 0000000000000000 XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000110 0000000000000101 XMM09=ffff000000000000 000000ffff00ffff
+XMM10=0000000020000000 0000000020000000 XMM11=ffff00ffffff00ff ffff00ffffffffff
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 1
+
+CPU#1
+RAX=dffffc0000000000 RBX=00000000044fcf40 RCX=ffffffff81a2e2b4 RDX=ffff8881067d4f80
+RSI=ffffffff81a2e2f4 RDI=0000000000000006 RBP=ffffea00044fcf40 RSP=ffff888109a877c8
+R8 =0000000000000000 R9 =fffff9400089f9c6 R10=0000000000113f3d R11=0000000000000000
+R12=1ffff11021350efa R13=ffff8881071e6000 R14=00007f60a8cf6000 R15=8400000113f3d025
+RIP=ffffffff81a2e306 RFL=00000293 [--S-A-C] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff8881912bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe000004a000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000048000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007ffce0776780 CR3=000000000706c000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=00007f60a8ddb463 00007f60a8ddb463 XMM01=2525252525252525 2525252525252525
+XMM02=0000000000ff0000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 0000000000ff0000 XMM05=010fffffffffffff 0401800432100006
+XMM06=0175b452020801b0 0303a8020001ae03 XMM07=02f8020001ac0304 a19004840001a803
+XMM08=0201c0a080840001 a403021098808400 XMM09=666666660a5d6970 63615f617461705b
+XMM10=5f20742030643034 3034306166666666 XMM11=5f65646f6d5f6970 6361705f7866705f
+XMM12=7269765b09315f35 333535365f495f62 XMM13=645f6e7265646f6d 5f6963705f6f6974
+XMM14=3132306166666666 666666660a5d7665 XMM15=6261747274736b5f 5f20722034303831
+info registers vcpu 2
+
+CPU#2
+RAX=000000000009d9e9 RBX=0000000000000002 RCX=ffffffff85c4de44 RDX=0000000000000000
+RSI=0000000000000000 RDI=ffffffff814e1933 RBP=dffffc0000000000 RSP=ffff888100ca7e60
+R8 =0000000000000001 R9 =ffffed102356651a R10=ffff88811ab328d3 R11=0000000000000001
+R12=ffffffff87dbea50 R13=1ffff11020194fd2 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff85c4c95e RFL=00000202 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=1
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff88819133f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000091000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe000008f000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=000055b8ddcd6588 CR3=000000010ef68000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 000000000000ffff XMM01=2525252525252525 2525252525252525
+XMM02=0000000000000000 0000000000000000 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 000000000000ffff XMM05=32652f6e6962732f 20313d45444f4d5f
+XMM06=4543495652455320 7c7c206d65747379 XMM07=732f646d65747379 732f6e75722f2065
+XMM08=0000002000000020 0000002000000020 XMM09=ff0000ffff0000ff ff0000ffff0000ff
+XMM10=0000000000000000 0000000000000000 XMM11=ffff00ffffffff00 ffff00ffffffffff
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 3
+
+CPU#3
+RAX=00000000000b12e3 RBX=0000000000000003 RCX=ffffffff85c4de44 RDX=0000000000000000
+RSI=0000000000000000 RDI=ffffffff814e1933 RBP=dffffc0000000000 RSP=ffff888100cb7e60
+R8 =0000000000000001 R9 =ffffed102357651a R10=ffff88811abb28d3 R11=0000000000000001
+R12=ffffffff87dbea50 R13=1ffff11020196fd2 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff85c4c95e RFL=00000202 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=1
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff8881913bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe00000d8000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe00000d6000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=0000560843a877f8 CR3=000000010648a000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000000 XMM01=8eb45b639516b933 56d508b5faf9236c
+XMM02=d0ac1fbb15dafa3c baf3ec4bdee5509c XMM03=fc01000000000000 0000000000000003
+XMM04=0000000000000000 0000000000000001 XMM05=6620646142203a39 206f6e7272652820
+XMM06=303d6e20303d7663 657220343d746e61 XMM07=7720333d64660a63 7072207663657220
+XMM08=0000280808038003 0380041680031680 XMM09=ffffffffff000000 0000000000000000
+XMM10=2020202000000000 0000000000000000 XMM11=ffffffffffffffff ffffffffffffffff
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000

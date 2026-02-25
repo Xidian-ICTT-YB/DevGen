@@ -1,0 +1,210 @@
+last executing test programs:
+
+786.786558ms ago: executing program 0 (id=263):
+r0 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x40)
+ioctl$I2C_PEC(r0, 0x80811501, 0x9)
+
+643.084993ms ago: executing program 0 (id=268):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000240), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f00000003c0)={0x8001, 0x7f, 0x1, {0x1, @sliced={0x8, [0xfffa, 0x8044, 0x6, 0x0, 0xb, 0xff, 0xad, 0xc, 0x1, 0x3, 0x7, 0xa, 0x6, 0x10, 0xfaf3, 0x4, 0x9, 0x5, 0x1, 0x3, 0x800, 0x40, 0x8001, 0x9, 0xa06, 0x2, 0x3, 0xb, 0x92b, 0x1, 0x8, 0x7, 0x4009, 0x4, 0xc, 0x0, 0x4, 0xffff, 0x6, 0xde2, 0x0, 0x8000, 0xe5d8, 0x9, 0x2, 0x1, 0x1ff, 0xfcc1], 0x5}}, 0x26b})
+
+615.135671ms ago: executing program 3 (id=269):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f0000000100)={0x4, 0x0, 0x1, {0x1, @sliced={0x8, [0x2, 0x1, 0x5, 0x2843, 0x8, 0x5, 0x2, 0x0, 0x8, 0x1, 0x40, 0x5, 0x9, 0x7, 0x84cd, 0x34, 0xfff4, 0x800, 0xf, 0x98e9, 0x9, 0x6a2, 0x8, 0x7fff, 0x8, 0x0, 0x2400, 0x307, 0x7fff, 0x4, 0x8, 0x35, 0x9, 0x2, 0x2, 0x6, 0x4, 0x3, 0x3, 0x3, 0xa000, 0x400, 0x1ff, 0x7, 0x0, 0x2, 0x0, 0xdfb1], 0x2}}, 0x3})
+
+530.003632ms ago: executing program 1 (id=270):
+r0 = syz_open_dev$video(&(0x7f0000000280), 0xfffffffffffffffa, 0x40)
+ioctl$VIDIOC_ENUM_FMT(r0, 0xc0405602, &(0x7f00000002c0)={0x2, 0x6, 0x6, "16bd0fda7848d410af009f69fae4a139d8ec39dc2c5ac45f104c7e4140da8778", 0x37303250})
+
+529.601188ms ago: executing program 2 (id=271):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000ec0), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FREQ_BANDS(r0, 0xc0405665, &(0x7f0000001200)={0x180, 0x2, 0x3, 0x2, 0x7f, 0x3, 0x2})
+
+529.502568ms ago: executing program 3 (id=272):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_LOG_STATUS(r0, 0x5646, 0x0)
+
+450.962044ms ago: executing program 0 (id=273):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000200), 0x2, 0x0)
+ioctl$VIDIOC_TRY_FMT(r0, 0xc0d05640, &(0x7f0000000240)={0xa, @vbi={0x7f, 0x5, 0x0, 0x0, [0xe, 0x80000001], [0x0, 0x6], 0x1}})
+
+450.872483ms ago: executing program 1 (id=274):
+r0 = syz_open_dev$I2C(&(0x7f0000000a00), 0x0, 0x101000)
+ioctl$I2C_RETRIES(r0, 0x40049409, 0x3)
+
+436.015732ms ago: executing program 2 (id=275):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000340), 0x2, 0x0)
+ioctl$VIDIOC_REQBUFS(r0, 0xc0145608, &(0x7f0000000f00)={0x0, 0x1, 0x4, 0x0, 0x4e})
+
+362.798282ms ago: executing program 1 (id=276):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000bc0), 0x2, 0x0)
+ioctl$VIDIOC_G_EXT_CTRLS(r0, 0xc0205647, &(0x7f0000000f00)={0xa50000, 0x80000001, 0x7f, 0xffffffffffffffff, 0x0, 0x0})
+
+260.538606ms ago: executing program 3 (id=277):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f00000005c0), 0x2, 0x0)
+ioctl$VIDIOC_TRY_FMT(r0, 0xc0d05640, &(0x7f0000000640)={0x7, @pix_mp={0x9, 0x5, 0x32525942, 0x2, 0x8, [{0x6, 0x7}, {0x1}, {0x28000000, 0x7}, {0xfffffffb, 0x6}, {0x2, 0x9}, {0x2, 0x4}, {0x7fffffff, 0xffff13ba}, {0x7, 0x10}], 0x2, 0x7b, 0x2, 0x2, 0x3}})
+
+256.717644ms ago: executing program 1 (id=278):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000ac0), 0x2, 0x0)
+ioctl$VIDIOC_ENUMSTD(r0, 0xc0485619, &(0x7f0000000b40)={0xe6f8, 0x40, "0558ffeff4f5ae2ca188211bb981ab8eddf3adaaa6197bf8", {0xf0f, 0x6}, 0x9})
+
+256.492979ms ago: executing program 2 (id=279):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r0, 0x40086602, 0x200000ffd000)
+
+200.453276ms ago: executing program 0 (id=280):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0)
+ioctl$VIDIOC_ENUM_FREQ_BANDS(r0, 0xc0405665, &(0x7f0000000340)={0xd, 0x4, 0x2, 0x80, 0x1, 0x4, 0x8})
+
+171.191882ms ago: executing program 0 (id=281):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000000), 0x2, 0x0)
+ioctl$VIDIOC_G_FMT(r0, 0xc0d05604, &(0x7f0000000680)={0x1, @pix_mp={0x680, 0x7, 0x47504a4d, 0x9, 0x4, [{0x40000, 0x18c0}, {0x54, 0x5}, {0x3ff, 0x80000001}, {0x80000001}, {0x763, 0x7}, {0x40000, 0xc}, {0xf7, 0x4}, {0x2, 0x472}], 0x17, 0x6, 0x1, 0x1, 0x6}})
+
+170.865564ms ago: executing program 2 (id=282):
+r0 = syz_open_dev$vim2m(&(0x7f0000000440), 0x0, 0x2)
+ioctl$vim2m_VIDIOC_REQBUFS(r0, 0xc0145608, &(0x7f00000007c0)={0x4, 0x1, 0x3, 0x0, 0x63})
+
+170.749273ms ago: executing program 3 (id=283):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r0, 0x40086602, 0x200000ffd000)
+
+170.62713ms ago: executing program 1 (id=284):
+ioctl$I2C_RDWR(0xffffffffffffffff, 0x707, &(0x7f0000000080)={&(0x7f0000002440), 0x1})
+
+88.186404ms ago: executing program 0 (id=285):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000015c0)={&(0x7f0000000680)=[{0x7, 0x707, 0x0, 0x0}], 0x1})
+
+87.672624ms ago: executing program 2 (id=286):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000680), 0x2, 0x0)
+ioctl$VIDIOC_G_PARM(r0, 0xc0cc5615, &(0x7f0000001000)={0xf, @capture={0x0, 0x0, {0x0, 0x6}, 0x1, 0x1ff}})
+
+87.493854ms ago: executing program 3 (id=287):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000140), 0x2, 0x0)
+ioctl$VIDIOC_S_FMT(r0, 0xc0d05605, &(0x7f00000006c0)={0x1, @pix_mp={0xd79f6ea3, 0x7, 0x38414762, 0x8, 0x7, [{0xec, 0x9}, {0x0, 0x5}, {0x5, 0xffff}, {0xd, 0x2e0d}, {0x1, 0x4eb}, {0xffff, 0xa}, {0x7fff, 0x1}, {0x101, 0x6}], 0x4, 0x0, 0x3, 0x1, 0x6}})
+
+688.214µs ago: executing program 2 (id=288):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000200), 0x2, 0x0)
+ioctl$VIDIOC_TRY_FMT(r0, 0xc0d05640, &(0x7f0000000240)={0xa, @vbi={0x7f, 0x5, 0x0, 0x0, [0xe, 0x80000001], [0x0, 0x6], 0x1}})
+
+249.989µs ago: executing program 1 (id=289):
+r0 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x40)
+ioctl$I2C_PEC(r0, 0x80811501, 0x9)
+
+0s ago: executing program 3 (id=290):
+r0 = openat$vimc0(0xffffffffffffff9c, &(0x7f0000000340), 0x2, 0x0)
+ioctl$VIDIOC_CREATE_BUFS(r0, 0xc100565c, &(0x7f0000000380)={0x6, 0x2, 0x1, {0x1, @raw_data="e5879884dec1fa0236f120354f3a335bad27ceda4a99b338e9c6093698ce3cdb054803c03cdeac59fbd1797fcccc06bd97286243ca83b8656a6de6361f19140409f15014eeade6b358ed5216bf39f6d23eab08ed1411dc2e71b11e37d7de93df6d837279d99908179d02338f4508e11d67d0a2c6b2e365f217f64f0bdbdc0b3c0a370421b9ae73cad2737d179439a0ae1c3d0f0e5c8ef15fac9dd301c0590b1a01534a682837982a17fe2b65356fe1f66fee64d2cdc0953ee2c067538802b1ec4b9c6acb282e735b"}, 0x834e})
+
+kernel console output (not intermixed with test programs):
+
+Warning: Permanently added '[localhost]:16422' (ED25519) to the list of known hosts.
+[  106.326769] cgroup: Unknown subsys name 'net'
+[  106.400672] cgroup: Unknown subsys name 'cpuset'
+[  106.424383] cgroup: Unknown subsys name 'rlimit'
+[  106.428808] cgroup: Unknown subsys name 'memory'
+[  106.484519] kmemleak: Automatic memory scanning thread ended
+[  117.085626] audit: type=1400 audit(1767366526.499:24): avc:  denied  { read } for  pid=293 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  117.096363] audit: type=1400 audit(1767366526.499:25): avc:  denied  { open } for  pid=293 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  117.108179] audit: type=1400 audit(1767366526.501:26): avc:  denied  { getattr } for  pid=293 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  117.125717] audit: type=1400 audit(1767366526.501:27): avc:  denied  { map } for  pid=293 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=756ca68b-f0cc-42b1-b952-063d04bc24e3
+[  117.213377] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[  122.165241] audit: type=1400 audit(1767366531.576:28): avc:  denied  { execmem } for  pid=297 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[  188.282567] i2c i2c-0: Unsupported transaction 4
+[  189.331633] i2c i2c-0: Unsupported transaction 8
+[  189.583510] i2c i2c-0: Unsupported transaction 4
+[  190.145750] i2c i2c-0: Unsupported transaction 8
+[  190.459100] i2c i2c-0: Unsupported transaction 8
+[  190.667645] i2c i2c-0: Unsupported transaction 7
+[  191.483875] i2c i2c-0: Unsupported transaction 7
+[  194.100310] ------------[ cut here ]------------
+[  194.104667] WARNING: CPU: 3 PID: 2622 at mm/page_alloc.c:5154 __alloc_frozen_pages_noprof+0x306/0x1f60
+[  194.109754] Modules linked in: bochs drm_shmem_helper drm_kms_helper drm dt3155 virtio_pci i2c_piix4 ata_generic virtio_pci_legacy_dev videobuf2_dma_contig pata_acpi i2c_smbus drm_panel_orientation_quirks virtio_pci_modern_dev
+SYZFAIL: failed to recv rpc
+fd=3 want=4 recv=0 n=0 (errno 9: Bad file descriptor)
+[  194.144806] CPU: 3 UID: 0 PID: 2622 Comm: syz.3.290 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  194.156691] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  194.169615] RIP: 0010:__alloc_frozen_pages_noprof+0x306/0x1f60
+[  194.174319] Code: 5b 5d 41 5c 41 5d 41 5e 41 5f c3 cc cc cc cc 41 83 fe 0a 0f 86 08 fe ff ff 80 3d 3f e6 2a 06 00 75 0b c6 05 36 e6 2a 06 01 90 <0f> 0b 90 48 c7 44 24 10 00 00 00 00 e9 77 ff ff ff 48 8b 44 24 10
+[  194.194110] RSP: 0018:ffff888112b474d0 EFLAGS: 00010246
+[  194.203446] RAX: 0000000000000000 RBX: 0000000000000000 RCX: 0000000000000000
+[  194.210003] RDX: 0000000000000000 RSI: 1ffff11022568ead RDI: 0000000000000cc4
+[  194.215913] RBP: 0000000000ffffff R08: 0000000000000000 R09: ffffed102035481f
+[  194.224860] R10: 0000000000000000 R11: 0000000000000000 R12: 0000000000000000
+[  194.239138] R13: 0000000000000000 R14: 0000000000000012 R15: 00000000ffffffff
+[  194.249342] FS:  00007fde6874f640(0000) GS:ffff8881913bf000(0000) knlGS:0000000000000000
+[  194.264591] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  194.284434] CR2: 0000001b2fc23ffc CR3: 00000001096a8000 CR4: 00000000000006f0
+[  194.295409] Call Trace:
+[  194.300429]  <TASK>
+[  194.301641]  ? kernel_text_address+0x75/0xf0
+[  194.306675]  ? lock_acquire+0x169/0x300
+[  194.314231]  ? __kernel_text_address+0x12/0x40
+[  194.321135]  ? unwind_get_return_address+0x5e/0xa0
+[  194.327493]  ? __pfx_stack_trace_consume_entry+0x10/0x10
+[  194.330986]  ? arch_stack_walk+0xa1/0xf0
+[  194.337504]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[  194.344419]  ? stack_depot_save_flags+0x2c/0xa20
+[  194.348539]  ? __pfx_vb2_dc_alloc+0x10/0x10 [videobuf2_dma_contig]
+[  194.355112]  ? kasan_save_stack+0x34/0x50
+[  194.361582]  ? kasan_save_stack+0x24/0x50
+[  194.364656]  ? kasan_save_track+0x14/0x30
+[  194.369879]  ? __kasan_kmalloc+0x7f/0x90
+[  194.375913]  ? vb2_dc_alloc+0x68/0x850 [videobuf2_dma_contig]
+[  194.383820]  __alloc_pages_noprof+0x11/0x1c0
+[  194.385878]  __dma_direct_alloc_pages.constprop.0+0x3ac/0x850
+[  194.391014]  ? __pfx___dma_direct_alloc_pages.constprop.0+0x10/0x10
+[  194.402456]  ? find_held_lock+0x2b/0x80
+[  194.408200]  dma_direct_alloc+0x90/0x550
+[  194.409991]  ? _raw_spin_unlock_irqrestore+0x31/0x60
+[  194.415903]  dma_alloc_attrs+0x1c8/0x3d0
+[  194.422804]  ? __pfx_dma_alloc_attrs+0x10/0x10
+[  194.427439]  ? kasan_save_track+0x14/0x30
+[  194.434043]  ? __kasan_kmalloc+0x7f/0x90
+[  194.439056]  vb2_dc_alloc+0x325/0x850 [videobuf2_dma_contig]
+[  194.443196]  ? __pfx_vb2_dc_alloc+0x10/0x10 [videobuf2_dma_contig]
+[  194.450921]  __vb2_queue_alloc+0x7c0/0x10b0
+[  194.456107]  vb2_core_create_bufs+0x5b1/0xad0
+[  194.459162]  ? __pfx_vb2_core_create_bufs+0x10/0x10
+[  194.463069]  ? __pfx___mutex_trylock_common+0x10/0x10
+[  194.468744]  vb2_create_bufs+0x383/0x6e0
+[  194.471930]  ? __pfx_vb2_create_bufs+0x10/0x10
+[  194.475006]  ? v4l_sanitize_format+0x19d/0x440
+[  194.478444]  ? __pfx___mutex_lock+0x10/0x10
+[  194.481427]  ? vb2_set_flags_and_caps+0x279/0x3a0
+[  194.484125]  vb2_ioctl_create_bufs+0x24a/0x3f0
+[  194.487474]  ? check_fmt+0x4f9/0x910
+[  194.490269]  v4l_create_bufs+0x158/0x270
+[  194.492995]  __video_do_ioctl+0x662/0xdc0
+[  194.495377]  ? __pfx___video_do_ioctl+0x10/0x10
+[  194.498937]  ? __might_fault+0xe5/0x190
+[  194.504385]  video_usercopy+0x396/0x11d0
+[  194.507253]  ? __pfx___video_do_ioctl+0x10/0x10
+[  194.510261]  ? __pfx_video_usercopy+0x10/0x10
+[  194.514463]  ? lock_acquire+0x169/0x300
+[  194.517275]  ? __fget_files+0x3a/0x3b0
+[  194.522227]  ? find_held_lock+0x2b/0x80
+[  194.525255]  ? __fget_files+0x1f6/0x3b0
+[  194.527944]  ? lock_release+0xd3/0x2a0
+[  194.532243]  v4l2_ioctl+0x1b5/0x240
+[  194.535053]  ? __pfx_v4l2_ioctl+0x10/0x10
+[  194.538021]  __x64_sys_ioctl+0x194/0x210
+[  194.542310]  do_syscall_64+0xc6/0x390
+[  194.548298]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  194.553793] RIP: 0033:0x7fde69d1059d
+[  194.559061] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  194.576577] RSP: 002b:00007fde6874ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  194.585355] RAX: ffffffffffffffda RBX: 00007fde69f85fa0 RCX: 00007fde69d1059d
+[  194.592769] RDX: 0000200000000380 RSI: 00000000c100565c RDI: 0000000000000003
+[  194.602242] RBP: 00007fde69dae078 R08: 0000000000000000 R09: 0000000000000000
+[  194.607444] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000000
+[  194.610906] R13: 00007fde69f86038 R14: 00007fde69f85fa0 R15: 00007fde6872f000
+[  194.619679]  </TASK>
+[  194.622619] irq event stamp: 1087
+[  194.627652] hardirqs last  enabled at (1103): [<ffffffff8155bd39>] __up_console_sem+0x89/0xa0
+[  194.636342] hardirqs last disabled at (1112): [<ffffffff8155bd1e>] __up_console_sem+0x6e/0xa0
+[  194.642126] softirqs last  enabled at (1100): [<ffffffff813d2e09>] handle_softirqs+0x509/0x760
+[  194.650999] softirqs last disabled at (1095): [<ffffffff813d3140>] __irq_exit_rcu+0xd0/0x100
+[  194.657794] ---[ end trace 0000000000000000 ]---
+[  194.664246] dt3155 0000:00:05.0: dma alloc of size 951296000 failed

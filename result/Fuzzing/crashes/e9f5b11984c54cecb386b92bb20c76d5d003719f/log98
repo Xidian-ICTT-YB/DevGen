@@ -1,0 +1,3071 @@
+last executing test programs:
+
+22.222480062s ago: executing program 3 (id=3942):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TENBIT(r0, 0x5452, 0x200000ffefff) (async)
+r1 = syz_open_dev$I2C(&(0x7f0000001740), 0x0, 0x100) (async)
+syz_open_dev$I2C(&(0x7f0000000000), 0xffffffffffffff54, 0x410000)
+ioctl$I2C_SMBUS(r1, 0x5421, 0x0) (async, rerun: 32)
+syz_open_dev$I2C(0x0, 0x875a, 0x1) (async, rerun: 32)
+r2 = syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800) (async, rerun: 32)
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80) (rerun: 32)
+ioctl$I2C_TENBIT(r3, 0xc0045878, 0x200000ffffff) (async)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f00000000c0)={0x1, 0x7, 0x2, &(0x7f0000000080)={0x11, "16bf4a0b3186ada96220a150df0ee618c5fc5ce12b21f395c91fe504e7d66e4cb6"}}) (async)
+r4 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x101400)
+ioctl$I2C_TENBIT(r2, 0x704, 0x0) (async)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f0000000100)={0x1, 0x3, 0x2, &(0x7f0000000000)={0x5, "86ac5909e67738d864df62139d7b3d17f45e4b161d00"}}) (async)
+ioctl$I2C_RETRIES(r3, 0x701, 0x8) (async)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000000)={0x0, 0xe1, 0x1, 0x0}) (async)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x420400)
+syz_open_dev$I2C(&(0x7f0000000240), 0x0, 0x88243)
+
+14.249705556s ago: executing program 0 (id=3948):
+r0 = syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x101)
+ioctl$I2C_FUNCS(r0, 0x705, &(0x7f0000000440)=0xfffffffffffffff9)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0xb1c6, 0x8200)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000200)={0x1, 0x4, 0x6, &(0x7f00000001c0)={0x22, "c1c5ada2772dec7ffb9d0bba1cf1ae0b8aee053dc3c2e57b93b870fef7fa149c86"}})
+ioctl$I2C_FUNCS(r0, 0x705, &(0x7f0000000000)=0x5)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+r3 = syz_open_dev$I2C(&(0x7f0000000100), 0x0, 0x2002c0)
+ioctl$I2C_PEC(r3, 0x708, 0x8000000000000000)
+ioctl$I2C_TIMEOUT(r2, 0x702, 0xfffffffffffffffd)
+ioctl$I2C_TIMEOUT(r0, 0x702, 0x0)
+
+14.248566011s ago: executing program 2 (id=3950):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r0, 0x40086602, 0x10200000f80006)
+ioctl$I2C_SLAVE(r0, 0x703, 0x16)
+r1 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000000)={0x1, 0xd, 0x1, 0x0})
+
+14.248188347s ago: executing program 3 (id=3951):
+syz_open_dev$I2C(&(0x7f0000000100), 0x0, 0x20100) (async)
+r0 = syz_open_dev$I2C(&(0x7f0000000100), 0x0, 0x20100)
+r1 = syz_open_dev$I2C(&(0x7f0000000300), 0x3ff, 0x551182)
+ioctl$I2C_PEC(r0, 0x708, 0x2000a8) (async)
+ioctl$I2C_PEC(r0, 0x708, 0x2000a8)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x1a86, 0x40)
+ioctl$I2C_FUNCS(r1, 0x705, &(0x7f0000000180)=0x8)
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+ioctl$I2C_SMBUS(r3, 0x40086602, &(0x7f0000000040)={0xfe, 0x2, 0x80000e, 0x0}) (async)
+ioctl$I2C_SMBUS(r3, 0x40086602, &(0x7f0000000040)={0xfe, 0x2, 0x80000e, 0x0})
+ioctl$I2C_TENBIT(r2, 0x704, 0x1) (async)
+ioctl$I2C_TENBIT(r2, 0x704, 0x1)
+r4 = syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x101)
+ioctl$I2C_FUNCS(r4, 0x705, &(0x7f0000000440)=0xfffffffffffffff9)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800) (async)
+r5 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+ioctl$I2C_RDWR(r5, 0x707, &(0x7f0000000080)={&(0x7f0000002440), 0x1})
+r6 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x848800)
+ioctl$I2C_RDWR(r6, 0x707, &(0x7f0000000080)={0x0})
+ioctl$I2C_SLAVE(r2, 0x703, 0x233) (async)
+ioctl$I2C_SLAVE(r2, 0x703, 0x233)
+syz_open_dev$I2C(&(0x7f00000000c0), 0x8753, 0x3a2801)
+r7 = syz_open_dev$I2C(&(0x7f00000002c0), 0x400000000200000d, 0x4fa9e1)
+ioctl$I2C_TENBIT(r7, 0x5452, 0xfffffffffffffffe)
+syz_open_dev$I2C(&(0x7f0000000000), 0xffffffffffffff54, 0x410000)
+r8 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0x2100)
+ioctl$I2C_FUNCS(r8, 0x705, &(0x7f00000001c0)=0x7fffffff)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000240)={0x0, 0x0, 0x4, &(0x7f0000000200)={0xc, "4769543255d89a8f82cb5467f42e273e75e21ad87abe6a341446c87ba085a6a211"}}) (async)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000240)={0x0, 0x0, 0x4, &(0x7f0000000200)={0xc, "4769543255d89a8f82cb5467f42e273e75e21ad87abe6a341446c87ba085a6a211"}})
+r9 = syz_open_dev$I2C(&(0x7f0000000000), 0xb1c6, 0x8200)
+ioctl$I2C_SMBUS(r9, 0x720, &(0x7f0000000200)={0x1, 0x14, 0x6, &(0x7f00000001c0)={0x11, "c1c5ada2772dec7f7b93b870fef7fb00"}})
+syz_open_dev$I2C(0x0, 0x875a, 0x1)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80) (async)
+r10 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r10, 0x40086602, 0x200000ffffff)
+ioctl$I2C_TIMEOUT(r10, 0x702, 0x5) (async)
+ioctl$I2C_TIMEOUT(r10, 0x702, 0x5)
+syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801) (async)
+r11 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TENBIT(r11, 0x80111500, 0x200000ffefff)
+
+14.195224985s ago: executing program 1 (id=3952):
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0x720, 0x0)
+ioctl$I2C_TENBIT(0xffffffffffffffff, 0x704, 0x1)
+ioctl$I2C_SLAVE_FORCE(0xffffffffffffffff, 0x706, 0x13c)
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0xc, 0x400400)
+ioctl$I2C_TIMEOUT(r0, 0x702, 0x4)
+
+14.194953163s ago: executing program 2 (id=3953):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x181600)
+r1 = syz_open_dev$I2C(&(0x7f0000000300), 0x3ff, 0x551182)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000080)={0x0})
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f00000000c0)={0x1, 0xf, 0x2, &(0x7f0000000040)={0x17, "a4123ab79628de2a6f30cba7c9401aba51498b1868729ec0f7d18dd6126f1a61fa"}})
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1)
+ioctl$I2C_SMBUS(r2, 0x720, 0x0)
+
+14.194727603s ago: executing program 0 (id=3954):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0xb1c6, 0x8200)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000200)={0x0, 0x14, 0x6, &(0x7f00000001c0)={0x10, "c1c5ada2772dec7f7b93b870fef7fb00"}})
+syz_open_dev$I2C(0x0, 0x875a, 0x1)
+
+14.194560213s ago: executing program 1 (id=3955):
+r0 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x101400)
+ioctl$I2C_SLAVE(r0, 0x703, 0x1f7)
+ioctl$I2C_TENBIT(r0, 0x704, 0x0)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000140)={0x1, 0x7, 0x4, &(0x7f0000000100)={0x5, "86ac7ff43d18ddd0b9b005f666a773ebbc780fc769df62139d7b3d15035f4b161d"}})
+ioctl$I2C_SLAVE(r0, 0x703, 0x2b3)
+r1 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x101400)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000100)={0x1, 0x3, 0x2, &(0x7f0000000000)={0x5, "86ac5909e67738d864df62139d7b3d17f45e4b161d00"}})
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0x720, 0x0)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TENBIT(r2, 0x80111500, 0xfffffffffffffffc)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000080)={0x1, 0x3, 0x7, &(0x7f0000000040)={0xb, "4c551363671f50c829325c0bffd4beaa5970be230c3d39d5641381e65444da9b32"}})
+syz_open_dev$I2C(0xfffffffffffffffc, 0x0, 0x0)
+
+7.030647691s ago: executing program 0 (id=3956):
+syz_open_dev$I2C(&(0x7f0000000140), 0x8756, 0x22400)
+r0 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x101400)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000100)={0x1, 0x3, 0x2, &(0x7f0000000000)={0x5, "86ac5909e67738d864df62139d7b3d17f45e4b161d00"}})
+ioctl$I2C_SMBUS(r0, 0x401c5820, &(0x7f0000000080)={0xff, 0xf5, 0x6, 0x0})
+
+7.026426205s ago: executing program 1 (id=3957):
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20000)
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+r1 = syz_open_dev$I2C(&(0x7f0000000280), 0x0, 0x22000)
+ioctl$I2C_SLAVE_FORCE(r1, 0x706, 0x7fffffff)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000780)={0x0, 0xd, 0x5, &(0x7f0000000100)={0x89, "3f6678c673bf0580a1b1eeb82bd0a6332500000000001f00"}})
+
+7.026165115s ago: executing program 2 (id=3958):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r0, 0x40086602, 0x200000ffffff)
+syz_open_dev$I2C(&(0x7f0000000080), 0xa000, 0x42)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1)
+ioctl$I2C_SMBUS(r1, 0x401c5820, &(0x7f0000000080)={0x81, 0xf5, 0x6, 0x0})
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TIMEOUT(r2, 0x702, 0xc21)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000300)={&(0x7f00000002c0)=[{0x2, 0x2e00, 0xbd, &(0x7f00000000c0)="343a18d5985e81c0b441c628c406f6ce5c68dca2d554bf60a2641a810a06b31552c4a447781baf0100000000000000e64fc2155cf5ec1e344971cd872af8fb06d99391f3c2e0ddad0d4d667e04c4dd039fcb6d926c36ade7a2e3129a1e311216470bda835425613c28b3cf3bd1b976f0af7a685b4f39c585ca55a6843b7493e54f8f98e6a940001264798ba4c405387a6d7a0ee1abd8e7ea4f9b144bb1512ac8c06798340b579a1aa01322624befaf7034b1ce9142adbd1ba5a604187b"}, {0xafd8, 0x4410, 0xca, &(0x7f00000001c0)="82d762538bff4cf2fae0c7ed8d9cd8fd461aefa98d1b1ce1cd73358d16087a0d0924e94a815d64abc8c27a373790777195c8877046f21253c26e95ab8b4139f1739774dd89e289fd5cec3c8e671fb22a05d214c7a337ac48f3baacfd83610b0d79e73e55eb8d23d951df2b195576621c0a67258251b7a835e37823d9f9188432930f7478edcfa1633a49c670803e4a5dbf253315e8e968cf47c2cf1a18b383e8392e7a5e35806dd40c2b1e7367c9c13f15aeb609c811d9a5102455cb7be2c63a0ee6fe457bc1c7612905"}], 0x2})
+r3 = syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000000)={0x0, 0xe1, 0x1, 0x0})
+ioctl$I2C_TENBIT(r2, 0x80111500, 0x200000ffefff)
+r4 = syz_open_dev$I2C(&(0x7f0000000040), 0x7, 0x100)
+ioctl$I2C_TENBIT(r4, 0x80111500, 0x200000ffefff)
+syz_open_dev$I2C(&(0x7f0000000080), 0x0, 0x10400)
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0xc0189436, 0x0)
+
+7.025743652s ago: executing program 3 (id=3959):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TIMEOUT(r0, 0x702, 0xfffffffffffffffd)
+r1 = syz_open_dev$I2C(&(0x7f0000000380), 0x0, 0x101)
+syz_open_dev$I2C(&(0x7f0000000080), 0x0, 0x10400)
+ioctl$I2C_FUNCS(r1, 0x705, 0x0)
+
+6.973552121s ago: executing program 3 (id=3960):
+r0 = syz_open_dev$I2C(&(0x7f0000000100), 0x0, 0x20000)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TENBIT(r1, 0x80111500, 0x200000ffefff)
+r2 = syz_open_dev$I2C(&(0x7f0000001740), 0x0, 0x100)
+ioctl$I2C_SMBUS(r2, 0x401c5820, &(0x7f0000001840)={0x0, 0x9a, 0x3, 0x0})
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TENBIT(r3, 0x5452, 0x200000ffefff)
+ioctl$I2C_PEC(r0, 0x708, 0xa5)
+ioctl$I2C_SLAVE_FORCE(r0, 0x706, 0x65)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000540)={0x1, 0x0, 0x5, &(0x7f0000000500)={0xe, "d03bec6129874ced905e3a33152a9de806efc4c612cc7a31e1945672f732a8f7d6"}})
+
+6.972949637s ago: executing program 2 (id=3961):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80040)
+r1 = syz_open_dev$I2C(&(0x7f0000001740), 0x0, 0x100)
+ioctl$I2C_SMBUS(r1, 0x4b47, 0x0)
+syz_open_dev$I2C(&(0x7f0000000040), 0x5, 0x1)
+r2 = syz_open_dev$I2C(&(0x7f00000016c0), 0x0, 0x848800)
+ioctl$I2C_SMBUS(r2, 0x40086602, &(0x7f0000000040)={0xfe, 0xfe, 0x80000e, 0x0})
+r3 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000780)={0x0, 0xd, 0x5, &(0x7f0000000100)={0x89, "3f6678c673bf0580a1b1eeb82bd0a6332500000000001f00"}})
+ioctl$I2C_TENBIT(r2, 0x40086602, 0x10200000f80006)
+ioctl$I2C_SLAVE_FORCE(r0, 0x706, 0x173)
+
+6.972786264s ago: executing program 0 (id=3962):
+r0 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0x2100)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000001840)={0x0, 0x9a, 0x3, &(0x7f0000001800)={0x1b, "9d599132be27cec100dea82d80bb9032527f64cc837aab406b99c0a32444fb1e4d"}}) (async)
+syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800) (async)
+r1 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0xa400)
+ioctl$I2C_RETRIES(r1, 0x701, 0xe) (async)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0xffffffffffffff54, 0x410000)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000002780)={0x0, 0xe1, 0x7, 0x0})
+
+6.971820564s ago: executing program 1 (id=3963):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0xb1c6, 0x8200)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000200)={0x1, 0x4, 0x6, &(0x7f00000001c0)={0x22, "c1c5ada2772dec7ffb9d0bba1cf1ae0b8aee053dc3c2e57b93b870fef7fa149c86"}})
+r1 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r1, 0x401c5820, 0x0)
+syz_open_dev$I2C(0xfffffffffffffffc, 0x0, 0x1a9d42)
+
+62.667311ms ago: executing program 0 (id=3964):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20000)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000780)={0x1, 0x4, 0x0, 0x0}) (async)
+syz_open_dev$I2C(&(0x7f0000000040), 0x5, 0x1)
+r1 = syz_open_dev$I2C(&(0x7f00000016c0), 0x0, 0x848800)
+ioctl$I2C_SMBUS(r1, 0x40086602, &(0x7f0000000040)={0xfe, 0x2, 0x80000e, 0x0}) (async)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+ioctl$I2C_SMBUS(r2, 0x720, &(0x7f0000000040)={0x0, 0x3, 0x7, 0x0}) (async)
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+ioctl$I2C_SMBUS(r3, 0x720, &(0x7f0000000040)={0x0, 0x3, 0x7, 0x0}) (async)
+syz_open_dev$I2C(&(0x7f0000000040), 0x5, 0x1) (async)
+r4 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20000)
+ioctl$I2C_SMBUS(r4, 0x720, &(0x7f0000000780)={0x1, 0x4, 0x0, 0x0}) (async)
+r5 = syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800)
+ioctl$I2C_SMBUS(r5, 0x720, &(0x7f0000000000)={0x0, 0xe1, 0x1, 0x0}) (async)
+syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20000) (async)
+ioctl$I2C_RETRIES(r2, 0x701, 0xe638)
+
+61.295381ms ago: executing program 1 (id=3965):
+syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1) (async)
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x1)
+ioctl$I2C_SLAVE(r0, 0x703, 0xc4)
+ioctl$I2C_SLAVE_FORCE(r0, 0x706, 0x1ab)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x1a86, 0x40)
+ioctl$I2C_SLAVE(r1, 0x703, 0x179)
+ioctl$I2C_SMBUS(r0, 0x401c5820, &(0x7f0000000040)={0x0, 0xf5, 0x7, 0x0}) (async)
+ioctl$I2C_SMBUS(r0, 0x401c5820, &(0x7f0000000040)={0x0, 0xf5, 0x7, 0x0})
+
+60.882512ms ago: executing program 2 (id=3966):
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_SMBUS(r0, 0x401c5820, 0x0)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x20180)
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f0000000040)={0x0, 0x3, 0x7, 0x0})
+ioctl$I2C_SMBUS(r1, 0x720, &(0x7f00000000c0)={0x1, 0x5, 0x7, &(0x7f0000000080)={0x12, "c06d5b03321f6e1f851dd8a94881c94babdd34dbe692508cd0d8ff9a695459abf9"}})
+r2 = syz_open_dev$I2C(&(0x7f00000000c0), 0x0, 0x40)
+ioctl$I2C_PEC(r2, 0x5421, 0x7ffffffff000)
+r3 = syz_open_dev$I2C(&(0x7f0000000100), 0x0, 0x2002c0)
+ioctl$I2C_PEC(r3, 0x708, 0x8000000000000000)
+r4 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r4, 0x40086602, 0x200000ffffff)
+r5 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TENBIT(r5, 0x80111500, 0x200000ffefff)
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0xc0189436, 0x0)
+ioctl$I2C_TENBIT(0xffffffffffffffff, 0x80111500, 0x200000ffefff)
+
+60.446359ms ago: executing program 3 (id=3967):
+r0 = syz_open_dev$I2C(&(0x7f0000000140), 0x0, 0x2100)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000001840)={0x0, 0x98, 0x3, &(0x7f0000001800)={0x1b, "9d599132be27cec100dea82d80bb9032527f64cc837aab406b99c0a32444fb1e4d"}})
+
+807.056µs ago: executing program 1 (id=3968):
+r0 = syz_open_dev$I2C(&(0x7f0000000700), 0x0, 0x840000)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f0000000100)={&(0x7f0000003300)})
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r1, 0x40086602, 0x200000ffffff)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+r3 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r3, 0x704, 0x1)
+ioctl$I2C_TENBIT(r2, 0x80111500, 0x200000ffefff)
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0xc0189436, 0x0)
+ioctl$I2C_RDWR(r0, 0x707, &(0x7f00000000c0)={&(0x7f0000000080)=[{0x9, 0x800, 0x0, &(0x7f0000000040)}, {0x9, 0x410, 0x88, &(0x7f0000000140)="77e757926c5d37b880f2db288e31daa039c1044a6645c748b0954f9195eb3ab01940245e1309fa6c665eaf70a97859f128c592dfd8002720d285319812742ba4fc352a7d8c20d3eb7d56a2414b2f66086c169a94322234d95ea9c2d8bfe7eabe4ab6da9c95e8f8f818988e03fd1287daf67ccf35fd93e60efaedd642adaf6e0996f5fd3903e81297"}], 0x2})
+syz_open_dev$I2C(&(0x7f0000000000), 0x6, 0x0)
+
+595.614µs ago: executing program 3 (id=3969):
+syz_open_dev$I2C(&(0x7f0000000300), 0x3ff, 0x551182)
+ioctl$I2C_SLAVE_FORCE(0xffffffffffffffff, 0x706, 0x372)
+
+385.575µs ago: executing program 0 (id=3970):
+r0 = syz_open_dev$I2C(&(0x7f0000000000), 0xb1c6, 0x8200)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x1a86, 0x40)
+ioctl$I2C_SLAVE(r1, 0x5421, 0x110e22fff2)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000000200)={0x1, 0x4, 0x6, &(0x7f00000001c0)={0x22, "c1c5ada2772dec7ffb9d0bba1cf1ae0b8aee053dc3c2e57b93b870fef7fa149c86"}})
+
+0s ago: executing program 2 (id=3971):
+r0 = syz_open_dev$I2C(&(0x7f0000002680), 0x0, 0x800)
+ioctl$I2C_SMBUS(r0, 0x720, &(0x7f0000002800)={0x1, 0xb8, 0x1, &(0x7f00000027c0)={0x18, "c45a7c934d22dc666eb12123c906866f0486dc36fd4aad0e8eb6c31caf241e9afe"}}) (async)
+r1 = syz_open_dev$I2C(&(0x7f0000000000), 0x0, 0x80)
+ioctl$I2C_TENBIT(r1, 0x40086602, 0x200000ffffff) (async)
+r2 = syz_open_dev$I2C(&(0x7f0000000000), 0x875a, 0x20801)
+ioctl$I2C_TENBIT(r2, 0x80111500, 0x200000ffefff) (async)
+ioctl$I2C_SMBUS(0xffffffffffffffff, 0xc0189436, 0x0)
+
+kernel console output (not intermixed with test programs):
+
+[   83.086382] systemd-udevd (170) used greatest stack depth: 24088 bytes left
+[   83.121511] systemd-udevd (168) used greatest stack depth: 22056 bytes left
+Warning: Permanently added '[localhost]:1645' (ED25519) to the list of known hosts.
+[   85.088786] cgroup: Unknown subsys name 'net'
+[   85.277254] cgroup: Unknown subsys name 'cpuset'
+[   85.301997] cgroup: Unknown subsys name 'rlimit'
+[   85.306143] cgroup: Unknown subsys name 'memory'
+[   92.013536] kmemleak: Automatic memory scanning thread ended
+[  102.583158] audit: type=1400 audit(1767812012.351:24): avc:  denied  { read } for  pid=292 comm="modprobe" name="modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  102.602662] audit: type=1400 audit(1767812012.351:25): avc:  denied  { open } for  pid=292 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  102.615795] audit: type=1400 audit(1767812012.352:26): avc:  denied  { getattr } for  pid=292 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.softdep" dev="sda" ino=9714092 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  102.629431] audit: type=1400 audit(1767812012.354:27): avc:  denied  { map } for  pid=292 comm="modprobe" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:kmod_t:s0 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+Setting up swapspace version 1, size = 122.1 MiB (127995904 bytes)
+no label, UUID=f8fcaa92-a455-460b-ac73-6fe107ba1c7b
+[  102.748186] Adding 124996k swap on ./swap-file.  Priority:0 extents:1 across:124996k 
+[  105.471914] audit: type=1400 audit(1767812015.240:28): avc:  denied  { execmem } for  pid=296 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[  137.460017] i2c i2c-0: Unsupported transaction 7
+[  137.723745] i2c i2c-0: Unsupported transaction 8
+[  138.238768] i2c i2c-0: Unsupported transaction 8
+[  138.288387] i2c i2c-0: Unsupported transaction 4
+[  138.293127] i2c i2c-0: Unsupported transaction 8
+[  138.427536] i2c i2c-0: Unsupported transaction 7
+[  139.854126] i2c i2c-0: Unsupported transaction 8
+[  140.038167] i2c i2c-0: Unsupported transaction 8
+[  140.391604] i2c i2c-0: Unsupported transaction 8
+[  141.198529] i2c i2c-0: Unsupported transaction 8
+[  141.250461] i2c i2c-0: Unsupported transaction 4
+[  142.885841] i2c i2c-0: Unsupported transaction 8
+[  142.893607] i2c i2c-0: Unsupported transaction 7
+[  142.897144] i2c i2c-0: Unsupported transaction 8
+[  142.962703] i2c i2c-0: Unsupported transaction 8
+[  143.526712] i2c i2c-0: Unsupported transaction 8
+[  143.723699] FAULT_INJECTION: forcing a failure.
+[  143.723699] name failslab, interval 1, probability 0, space 0, times 1
+[  143.730691] CPU: 0 UID: 0 PID: 2848 Comm: syz.0.342 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  143.730714] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  143.730938] Call Trace:
+[  143.730998]  <TASK>
+[  143.731005]  dump_stack_lvl+0x10b/0x140
+[  143.731124]  should_fail_ex+0x4d5/0x5e0
+[  143.731144]  ? getname_flags.part.0+0x50/0x560
+[  143.731163]  should_failslab+0xc7/0x130
+[  143.731179]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  143.731200]  ? lock_is_held_type+0xa9/0x130
+[  143.731225]  ? getname_flags.part.0+0x50/0x560
+[  143.731241]  getname_flags.part.0+0x50/0x560
+[  143.731266]  getname_flags+0x9a/0xe0
+[  143.731281]  do_sys_openat2+0xa4/0x1c0
+[  143.731302]  ? __pfx_do_sys_openat2+0x10/0x10
+[  143.731325]  ? __fget_files+0x200/0x3b0
+[  143.731346]  __x64_sys_openat+0x144/0x200
+[  143.731367]  ? __pfx___x64_sys_openat+0x10/0x10
+[  143.731386]  ? ksys_write+0x1a8/0x240
+[  143.731407]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  143.731434]  do_syscall_64+0xc6/0x390
+[  143.732672]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  143.732693] RIP: 0033:0x7f0f05efed94
+[  143.732706] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  143.732785] RSP: 002b:00007f0f0493eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  143.732814] RAX: ffffffffffffffda RBX: 0000000100000000 RCX: 00007f0f05efed94
+[  143.732823] RDX: 0000000000210100 RSI: 00007f0f0493eb60 RDI: 00000000ffffff9c
+[  143.732832] RBP: 00007f0f0493eb60 R08: 0000000000000000 R09: 0000000000000000
+[  143.732840] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000210100
+[  143.732848] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  143.732870]  </TASK>
+[  143.877377] i2c i2c-0: Unsupported transaction 4
+[  143.993465] FAULT_INJECTION: forcing a failure.
+[  143.993465] name failslab, interval 1, probability 0, space 0, times 0
+[  144.002349] CPU: 2 UID: 0 PID: 2874 Comm: syz.1.352 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  144.002369] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  144.002379] Call Trace:
+[  144.002384]  <TASK>
+[  144.002389]  dump_stack_lvl+0x10b/0x140
+[  144.002417]  should_fail_ex+0x4d5/0x5e0
+[  144.002437]  ? getname_flags.part.0+0x50/0x560
+[  144.002457]  should_failslab+0xc7/0x130
+[  144.002473]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  144.002493]  ? lock_is_held_type+0xa9/0x130
+[  144.002519]  ? getname_flags.part.0+0x50/0x560
+[  144.002537]  getname_flags.part.0+0x50/0x560
+[  144.002561]  getname_flags+0x9a/0xe0
+[  144.002576]  do_sys_openat2+0xa4/0x1c0
+[  144.002597]  ? __pfx_do_sys_openat2+0x10/0x10
+[  144.002661]  ? __fget_files+0x200/0x3b0
+[  144.002679]  __x64_sys_openat+0x144/0x200
+[  144.002698]  ? __pfx___x64_sys_openat+0x10/0x10
+[  144.002716]  ? ksys_write+0x1a8/0x240
+[  144.002735]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  144.002759]  do_syscall_64+0xc6/0x390
+[  144.002779]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  144.002794] RIP: 0033:0x7f4b3d96ed94
+[  144.002806] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  144.002819] RSP: 002b:00007f4b3c3b6ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  144.002834] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f4b3d96ed94
+[  144.002843] RDX: 0000000000044201 RSI: 00007f4b3c3b6b60 RDI: 00000000ffffff9c
+[  144.002852] RBP: 00007f4b3c3b6b60 R08: 0000000000000000 R09: 0000000000000000
+[  144.002859] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000044201
+[  144.002867] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  144.002891]  </TASK>
+[  144.256039] i2c i2c-0: Unsupported transaction 4
+[  144.452749] FAULT_INJECTION: forcing a failure.
+[  144.452749] name fail_usercopy, interval 1, probability 0, space 0, times 1
+[  144.473405] CPU: 1 UID: 0 PID: 2914 Comm: syz.2.369 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  144.473426] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  144.473435] Call Trace:
+[  144.473441]  <TASK>
+[  144.473447]  dump_stack_lvl+0x10b/0x140
+[  144.473477]  should_fail_ex+0x4d5/0x5e0
+[  144.473496]  strncpy_from_user+0x3b/0x2f0
+[  144.473520]  getname_flags.part.0+0x95/0x560
+[  144.473545]  getname_flags+0x9a/0xe0
+[  144.473560]  do_sys_openat2+0xa4/0x1c0
+[  144.473581]  ? __pfx_do_sys_openat2+0x10/0x10
+[  144.473604]  ? __fget_files+0x200/0x3b0
+[  144.474436]  __x64_sys_openat+0x144/0x200
+[  144.474459]  ? __pfx___x64_sys_openat+0x10/0x10
+[  144.474477]  ? ksys_write+0x1a8/0x240
+[  144.474495]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  144.474521]  do_syscall_64+0xc6/0x390
+[  144.474543]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  144.474559] RIP: 0033:0x7f7aaf0aed94
+[  144.474572] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  144.474585] RSP: 002b:00007f7aadaf6ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  144.474598] RAX: ffffffffffffffda RBX: 0000000100000000 RCX: 00007f7aaf0aed94
+[  144.474607] RDX: 0000000000210100 RSI: 00007f7aadaf6b60 RDI: 00000000ffffff9c
+[  144.474644] RBP: 00007f7aadaf6b60 R08: 0000000000000000 R09: 0000000000000000
+[  144.474652] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000210100
+[  144.474661] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  144.474686]  </TASK>
+[  145.935870] FAULT_INJECTION: forcing a failure.
+[  145.935870] name failslab, interval 1, probability 0, space 0, times 0
+[  145.944478] CPU: 2 UID: 0 PID: 3117 Comm: syz.1.455 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  145.944500] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  145.944693] Call Trace:
+[  145.944701]  <TASK>
+[  145.944708]  dump_stack_lvl+0x10b/0x140
+[  145.944737]  should_fail_ex+0x4d5/0x5e0
+[  145.944756]  ? security_file_alloc+0x3a/0x150
+[  145.944777]  should_failslab+0xc7/0x130
+[  145.944795]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  145.944818]  ? __create_object+0x5e/0x90
+[  145.944843]  ? security_file_alloc+0x3a/0x150
+[  145.944864]  security_file_alloc+0x3a/0x150
+[  145.944886]  init_file+0x9a/0x4d0
+[  145.944909]  alloc_empty_file+0x78/0x1e0
+[  145.944931]  path_openat+0xe5/0x2880
+[  145.944960]  ? __pfx_path_openat+0x10/0x10
+[  145.944974]  ? __lock_acquire+0x64e/0x18c0
+[  145.945007]  do_filp_open+0x1fc/0x460
+[  145.945024]  ? __pfx_do_filp_open+0x10/0x10
+[  145.945040]  ? find_held_lock+0x2b/0x80
+[  145.945068]  ? find_held_lock+0x2b/0x80
+[  145.945085]  ? alloc_fd+0x3c2/0x780
+[  145.945369]  ? lock_release+0xd3/0x2a0
+[  145.945401]  ? _raw_spin_unlock+0x23/0x40
+[  145.945421]  ? alloc_fd+0x3c2/0x780
+[  145.945455]  do_sys_openat2+0x109/0x1c0
+[  145.945478]  ? __pfx_do_sys_openat2+0x10/0x10
+[  145.945503]  ? __fget_files+0x200/0x3b0
+[  145.945523]  __x64_sys_openat+0x144/0x200
+[  145.945546]  ? __pfx___x64_sys_openat+0x10/0x10
+[  145.945567]  ? ksys_write+0x1a8/0x240
+[  145.945587]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  145.945644]  do_syscall_64+0xc6/0x390
+[  145.945667]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  145.945683] RIP: 0033:0x7f4b3d96ed94
+[  145.945695] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  145.945708] RSP: 002b:00007f4b3c3b6ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  145.945723] RAX: ffffffffffffffda RBX: 0000000100000000 RCX: 00007f4b3d96ed94
+[  145.945732] RDX: 0000000000210100 RSI: 00007f4b3c3b6b60 RDI: 00000000ffffff9c
+[  145.945740] RBP: 00007f4b3c3b6b60 R08: 0000000000000000 R09: 0000000000000000
+[  145.945748] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000210100
+[  145.945757] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  145.945783]  </TASK>
+[  146.208322] FAULT_INJECTION: forcing a failure.
+[  146.208322] name failslab, interval 1, probability 0, space 0, times 0
+[  146.216141] CPU: 0 UID: 0 PID: 3142 Comm: syz.0.468 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  146.216164] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  146.216174] Call Trace:
+[  146.216180]  <TASK>
+[  146.216185]  dump_stack_lvl+0x10b/0x140
+[  146.216215]  should_fail_ex+0x4d5/0x5e0
+[  146.216238]  ? security_file_alloc+0x3a/0x150
+[  146.216259]  should_failslab+0xc7/0x130
+[  146.216277]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  146.216299]  ? __create_object+0x5e/0x90
+[  146.216325]  ? security_file_alloc+0x3a/0x150
+[  146.216344]  security_file_alloc+0x3a/0x150
+[  146.216366]  init_file+0x9a/0x4d0
+[  146.216392]  alloc_empty_file+0x78/0x1e0
+[  146.216414]  path_openat+0xe5/0x2880
+[  146.216443]  ? __pfx_path_openat+0x10/0x10
+[  146.216457]  ? __lock_acquire+0x64e/0x18c0
+[  146.216490]  do_filp_open+0x1fc/0x460
+[  146.216508]  ? __pfx_do_filp_open+0x10/0x10
+[  146.216523]  ? find_held_lock+0x2b/0x80
+[  146.216552]  ? find_held_lock+0x2b/0x80
+[  146.216569]  ? alloc_fd+0x3c2/0x780
+[  146.216592]  ? lock_release+0xd3/0x2a0
+[  146.216656]  ? _raw_spin_unlock+0x23/0x40
+[  146.216676]  ? alloc_fd+0x3c2/0x780
+[  146.216709]  do_sys_openat2+0x109/0x1c0
+[  146.216731]  ? __pfx_do_sys_openat2+0x10/0x10
+[  146.216756]  ? __fget_files+0x200/0x3b0
+[  146.216777]  __x64_sys_openat+0x144/0x200
+[  146.216799]  ? __pfx___x64_sys_openat+0x10/0x10
+[  146.216820]  ? ksys_write+0x1a8/0x240
+[  146.216846]  do_syscall_64+0xc6/0x390
+[  146.216869]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  146.216887] RIP: 0033:0x7f0f05efed94
+[  146.216901] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  146.216915] RSP: 002b:00007f0f0493eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  146.216931] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f0f05efed94
+[  146.216941] RDX: 0000000000044201 RSI: 00007f0f0493eb60 RDI: 00000000ffffff9c
+[  146.216953] RBP: 00007f0f0493eb60 R08: 0000000000000000 R09: 0000000000000000
+[  146.216963] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000044201
+[  146.216972] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  146.216998]  </TASK>
+[  147.331315] i2c i2c-0: Unsupported transaction 4
+[  147.333798] i2c i2c-0: Unsupported transaction 4
+[  147.490836] FAULT_INJECTION: forcing a failure.
+[  147.490836] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  147.505484] CPU: 0 UID: 0 PID: 3228 Comm: syz.3.507 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  147.505507] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  147.505517] Call Trace:
+[  147.505522]  <TASK>
+[  147.505529]  dump_stack_lvl+0x10b/0x140
+[  147.505559]  should_fail_ex+0x4d5/0x5e0
+[  147.505579]  _copy_to_user+0x32/0xd0
+[  147.505603]  simple_read_from_buffer+0xe5/0x180
+[  147.505668]  proc_fail_nth_read+0x18f/0x240
+[  147.505684]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  147.507712]  ? security_file_permission+0x27/0x90
+[  147.507736]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  147.507754]  vfs_read+0x1eb/0xc70
+[  147.507774]  ? __pfx___mutex_lock+0x10/0x10
+[  147.507799]  ? __pfx_vfs_read+0x10/0x10
+[  147.507814]  ? __fget_files+0x1f6/0x3b0
+[  147.507828]  ? lock_release+0xd3/0x2a0
+[  147.507856]  ? __fget_files+0x200/0x3b0
+[  147.507879]  ksys_read+0x126/0x240
+[  147.507893]  ? __pfx_ksys_read+0x10/0x10
+[  147.507908]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  147.507932]  do_syscall_64+0xc6/0x390
+[  147.507953]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  147.507967] RIP: 0033:0x7f438212ef6c
+[  147.507980] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  147.507992] RSP: 002b:00007f4380b76f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  147.508007] RAX: ffffffffffffffda RBX: 00007f43823a5fa0 RCX: 00007f438212ef6c
+[  147.508017] RDX: 000000000000000f RSI: 00007f4380b77020 RDI: 0000000000000003
+[  147.508026] RBP: 00007f4380b77010 R08: 0000000000000000 R09: 0000000000000000
+[  147.508035] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  147.508044] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  147.508070]  </TASK>
+[  148.568028] FAULT_INJECTION: forcing a failure.
+[  148.568028] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  148.580729] CPU: 0 UID: 0 PID: 3303 Comm: syz.1.541 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  148.580751] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  148.580760] Call Trace:
+[  148.580765]  <TASK>
+[  148.580771]  dump_stack_lvl+0x10b/0x140
+[  148.580799]  should_fail_ex+0x4d5/0x5e0
+[  148.580819]  _copy_to_user+0x32/0xd0
+[  148.580843]  simple_read_from_buffer+0xe5/0x180
+[  148.580868]  proc_fail_nth_read+0x18f/0x240
+[  148.580885]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  148.580903]  ? security_file_permission+0x27/0x90
+[  148.580925]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  148.580941]  vfs_read+0x1eb/0xc70
+[  148.580958]  ? __pfx___mutex_lock+0x10/0x10
+[  148.580980]  ? __pfx_vfs_read+0x10/0x10
+[  148.580994]  ? __fget_files+0x1f6/0x3b0
+[  148.581008]  ? lock_release+0xd3/0x2a0
+[  148.581033]  ? __fget_files+0x200/0x3b0
+[  148.581055]  ksys_read+0x126/0x240
+[  148.581069]  ? __pfx_ksys_read+0x10/0x10
+[  148.581093]  do_syscall_64+0xc6/0x390
+[  148.581150]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  148.581165] RIP: 0033:0x7f4b3d96ef6c
+[  148.581177] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  148.581189] RSP: 002b:00007f4b3c3b6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  148.581202] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d96ef6c
+[  148.581211] RDX: 000000000000000f RSI: 00007f4b3c3b7020 RDI: 0000000000000003
+[  148.581219] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  148.581228] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  148.581236] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  148.581258]  </TASK>
+[  150.852943] i2c i2c-0: Unsupported transaction 8
+[  151.191519] i2c i2c-0: Unsupported transaction 4
+[  153.291529] i2c i2c-0: Unsupported transaction 8
+[  153.620649] i2c i2c-0: Unsupported transaction 7
+[  153.712791] i2c i2c-0: Unsupported transaction 4
+[  154.099391] i2c i2c-0: Unsupported transaction 7
+[  154.662031] i2c i2c-0: Unsupported transaction 7
+[  155.216714] i2c i2c-0: Unsupported transaction 7
+[  155.372085] i2c i2c-0: Unsupported transaction 8
+[  155.627262] i2c i2c-0: Unsupported transaction 8
+[  155.854738] i2c i2c-0: Unsupported transaction 7
+[  157.001948] FAULT_INJECTION: forcing a failure.
+[  157.001948] name failslab, interval 1, probability 0, space 0, times 0
+[  157.023979] CPU: 2 UID: 0 PID: 3829 Comm: syz.0.793 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  157.024001] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  157.024011] Call Trace:
+[  157.024017]  <TASK>
+[  157.024024]  dump_stack_lvl+0x10b/0x140
+[  157.024054]  should_fail_ex+0x4d5/0x5e0
+[  157.024072]  ? getname_flags.part.0+0x50/0x560
+[  157.024091]  should_failslab+0xc7/0x130
+[  157.024144]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  157.024164]  ? lock_is_held_type+0xa9/0x130
+[  157.024189]  ? getname_flags.part.0+0x50/0x560
+[  157.024212]  getname_flags.part.0+0x50/0x560
+[  157.024233]  getname_flags+0x9a/0xe0
+[  157.024249]  do_sys_openat2+0xa4/0x1c0
+[  157.026699]  ? __pfx_do_sys_openat2+0x10/0x10
+[  157.026733]  ? __fget_files+0x200/0x3b0
+[  157.026751]  __x64_sys_openat+0x144/0x200
+[  157.026771]  ? __pfx___x64_sys_openat+0x10/0x10
+[  157.026790]  ? ksys_write+0x1a8/0x240
+[  157.026813]  do_syscall_64+0xc6/0x390
+[  157.026836]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  157.026850] RIP: 0033:0x7f0f05efed94
+[  157.026864] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  157.026878] RSP: 002b:00007f0f0493eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  157.026893] RAX: ffffffffffffffda RBX: 000000000000007c RCX: 00007f0f05efed94
+[  157.026903] RDX: 0000000000004000 RSI: 00007f0f0493eb60 RDI: 00000000ffffff9c
+[  157.026912] RBP: 00007f0f0493eb60 R08: 0000000000000000 R09: 0000000000000000
+[  157.026921] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000004000
+[  157.026930] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  157.026952]  </TASK>
+[  157.408342] FAULT_INJECTION: forcing a failure.
+[  157.408342] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  157.421314] CPU: 2 UID: 0 PID: 3846 Comm: syz.0.803 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  157.421334] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  157.421343] Call Trace:
+[  157.421347]  <TASK>
+[  157.421353]  dump_stack_lvl+0x10b/0x140
+[  157.421380]  should_fail_ex+0x4d5/0x5e0
+[  157.421397]  _copy_to_user+0x32/0xd0
+[  157.421419]  simple_read_from_buffer+0xe5/0x180
+[  157.421441]  proc_fail_nth_read+0x18f/0x240
+[  157.421457]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  157.421472]  ? security_file_permission+0x27/0x90
+[  157.421491]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  157.421505]  vfs_read+0x1eb/0xc70
+[  157.421521]  ? __pfx___mutex_lock+0x10/0x10
+[  157.421541]  ? __pfx_vfs_read+0x10/0x10
+[  157.421553]  ? __fget_files+0x1f6/0x3b0
+[  157.421565]  ? lock_release+0xd3/0x2a0
+[  157.421587]  ? __fget_files+0x200/0x3b0
+[  157.421639]  ksys_read+0x126/0x240
+[  157.421651]  ? __pfx_ksys_read+0x10/0x10
+[  157.421666]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  157.421689]  do_syscall_64+0xc6/0x390
+[  157.421707]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  157.421720] RIP: 0033:0x7f0f05efef6c
+[  157.421732] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  157.421744] RSP: 002b:00007f0f0493ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  157.421757] RAX: ffffffffffffffda RBX: 00007f0f06175fa0 RCX: 00007f0f05efef6c
+[  157.421765] RDX: 000000000000000f RSI: 00007f0f0493f020 RDI: 0000000000000003
+[  157.421772] RBP: 00007f0f0493f010 R08: 0000000000000000 R09: 0000000000000000
+[  157.421780] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  157.421787] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  157.421807]  </TASK>
+[  157.718280] i2c i2c-0: Unsupported transaction 7
+[  158.007276] i2c i2c-0: Unsupported transaction 4
+[  158.340897] i2c i2c-0: Unsupported transaction 8
+[  158.437343] i2c i2c-0: Unsupported transaction 7
+[  158.629687] i2c i2c-0: Unsupported transaction 7
+[  158.664905] i2c i2c-0: Unsupported transaction 7
+[  158.967314] i2c i2c-0: Unsupported transaction 8
+[  158.985819] i2c i2c-0: Unsupported transaction 7
+[  159.150325] i2c i2c-0: Unsupported transaction 4
+[  159.204054] i2c i2c-0: Unsupported transaction 4
+[  159.480049] i2c i2c-0: Unsupported transaction 7
+[  159.499576] FAULT_INJECTION: forcing a failure.
+[  159.499576] name failslab, interval 1, probability 0, space 0, times 0
+[  159.509915] CPU: 3 UID: 0 PID: 3955 Comm: syz.2.851 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  159.509937] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  159.509947] Call Trace:
+[  159.509953]  <TASK>
+[  159.509959]  dump_stack_lvl+0x10b/0x140
+[  159.509988]  should_fail_ex+0x4d5/0x5e0
+[  159.510008]  ? getname_flags.part.0+0x50/0x560
+[  159.510028]  should_failslab+0xc7/0x130
+[  159.510042]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  159.510060]  ? lock_is_held_type+0xa9/0x130
+[  159.510082]  ? getname_flags.part.0+0x50/0x560
+[  159.510141]  getname_flags.part.0+0x50/0x560
+[  159.510162]  getname_flags+0x9a/0xe0
+[  159.510175]  do_sys_openat2+0xa4/0x1c0
+[  159.510193]  ? __pfx_do_sys_openat2+0x10/0x10
+[  159.510234]  ? __fget_files+0x200/0x3b0
+[  159.510251]  __x64_sys_openat+0x144/0x200
+[  159.510270]  ? __pfx___x64_sys_openat+0x10/0x10
+[  159.510286]  ? ksys_write+0x1a8/0x240
+[  159.510304]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  159.510327]  do_syscall_64+0xc6/0x390
+[  159.510362]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  159.510377] RIP: 0033:0x7f7aaf0aed94
+[  159.510390] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  159.510403] RSP: 002b:00007f7aadaf6ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  159.510418] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f7aaf0aed94
+[  159.510428] RDX: 0000000000010400 RSI: 00007f7aadaf6b60 RDI: 00000000ffffff9c
+[  159.510437] RBP: 00007f7aadaf6b60 R08: 0000000000000000 R09: 0000000000000000
+[  159.510446] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000010400
+[  159.510455] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  159.510479]  </TASK>
+[  159.555715] FAULT_INJECTION: forcing a failure.
+[  159.555715] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  159.632322] FAULT_INJECTION: forcing a failure.
+[  159.632322] name failslab, interval 1, probability 0, space 0, times 0
+[  159.632354] CPU: 1 UID: 0 PID: 3962 Comm: syz.2.855 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  159.632373] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  159.632383] Call Trace:
+[  159.632389]  <TASK>
+[  159.632395]  dump_stack_lvl+0x10b/0x140
+[  159.632425]  should_fail_ex+0x4d5/0x5e0
+[  159.632446]  ? alloc_empty_file+0x5a/0x1e0
+[  159.632466]  should_failslab+0xc7/0x130
+[  159.632482]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  159.632510]  ? alloc_empty_file+0x5a/0x1e0
+[  159.632527]  ? unwind_get_return_address+0x5e/0xa0
+[  159.632541]  alloc_empty_file+0x5a/0x1e0
+[  159.632561]  path_openat+0xe5/0x2880
+[  159.632622]  ? __pfx_path_openat+0x10/0x10
+[  159.632635]  ? __lock_acquire+0x64e/0x18c0
+[  159.632663]  do_filp_open+0x1fc/0x460
+[  159.632678]  ? __pfx_do_filp_open+0x10/0x10
+[  159.632690]  ? find_held_lock+0x2b/0x80
+[  159.632715]  ? find_held_lock+0x2b/0x80
+[  159.632731]  ? alloc_fd+0x3c2/0x780
+[  159.632755]  ? lock_release+0xd3/0x2a0
+[  159.632782]  ? _raw_spin_unlock+0x23/0x40
+[  159.632800]  ? alloc_fd+0x3c2/0x780
+[  159.632830]  do_sys_openat2+0x109/0x1c0
+[  159.632850]  ? __pfx_do_sys_openat2+0x10/0x10
+[  159.632874]  ? __fget_files+0x200/0x3b0
+[  159.632894]  __x64_sys_openat+0x144/0x200
+[  159.632915]  ? __pfx___x64_sys_openat+0x10/0x10
+[  159.632934]  ? ksys_write+0x1a8/0x240
+[  159.632954]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  159.632981]  do_syscall_64+0xc6/0x390
+[  159.633003]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  159.633018] RIP: 0033:0x7f7aaf0aed94
+[  159.633031] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  159.633044] RSP: 002b:00007f7aadaf6ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  159.633059] RAX: ffffffffffffffda RBX: 000000000000007c RCX: 00007f7aaf0aed94
+[  159.633069] RDX: 0000000000004000 RSI: 00007f7aadaf6b60 RDI: 00000000ffffff9c
+[  159.633078] RBP: 00007f7aadaf6b60 R08: 0000000000000000 R09: 0000000000000000
+[  159.633136] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000004000
+[  159.633144] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  159.633170]  </TASK>
+[  159.703849] CPU: 2 UID: 0 PID: 3959 Comm: syz.0.854 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  159.703870] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  159.703879] Call Trace:
+[  159.703885]  <TASK>
+[  159.703891]  dump_stack_lvl+0x10b/0x140
+[  159.703919]  should_fail_ex+0x4d5/0x5e0
+[  159.703938]  strncpy_from_user+0x3b/0x2f0
+[  159.703961]  getname_flags.part.0+0x95/0x560
+[  159.703985]  getname_flags+0x9a/0xe0
+[  159.704000]  do_sys_openat2+0xa4/0x1c0
+[  159.704020]  ? __pfx_do_sys_openat2+0x10/0x10
+[  159.704043]  ? __fget_files+0x200/0x3b0
+[  159.704061]  __x64_sys_openat+0x144/0x200
+[  159.704082]  ? __pfx___x64_sys_openat+0x10/0x10
+[  159.704191]  ? ksys_write+0x1a8/0x240
+[  159.704213]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  159.704241]  do_syscall_64+0xc6/0x390
+[  159.704263]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  159.704278] RIP: 0033:0x7f0f05efed94
+[  159.704291] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  159.704305] RSP: 002b:00007f0f0493eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  159.704319] RAX: ffffffffffffffda RBX: 0000000000000066 RCX: 00007f0f05efed94
+[  159.704329] RDX: 0000000000551182 RSI: 00007f0f0493eb60 RDI: 00000000ffffff9c
+[  159.704337] RBP: 00007f0f0493eb60 R08: 0000000000000000 R09: 0000000000000000
+[  159.704345] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000551182
+[  159.704354] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  159.704378]  </TASK>
+[  160.091292] i2c i2c-0: Unsupported transaction 7
+[  160.528989] FAULT_INJECTION: forcing a failure.
+[  160.528989] name failslab, interval 1, probability 0, space 0, times 0
+[  160.543165] CPU: 3 UID: 0 PID: 4001 Comm: syz.0.870 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  160.543189] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  160.543200] Call Trace:
+[  160.543206]  <TASK>
+[  160.543212]  dump_stack_lvl+0x10b/0x140
+[  160.543244]  should_fail_ex+0x4d5/0x5e0
+[  160.543264]  ? alloc_empty_file+0x5a/0x1e0
+[  160.543283]  should_failslab+0xc7/0x130
+[  160.543300]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  160.543329]  ? alloc_empty_file+0x5a/0x1e0
+[  160.543346]  ? unwind_get_return_address+0x5e/0xa0
+[  160.543361]  alloc_empty_file+0x5a/0x1e0
+[  160.543382]  path_openat+0xe5/0x2880
+[  160.543409]  ? __pfx_path_openat+0x10/0x10
+[  160.543424]  ? __lock_acquire+0x64e/0x18c0
+[  160.543455]  do_filp_open+0x1fc/0x460
+[  160.543472]  ? __pfx_do_filp_open+0x10/0x10
+[  160.543486]  ? find_held_lock+0x2b/0x80
+[  160.543513]  ? find_held_lock+0x2b/0x80
+[  160.543530]  ? alloc_fd+0x3c2/0x780
+[  160.543552]  ? lock_release+0xd3/0x2a0
+[  160.543576]  ? _raw_spin_unlock+0x23/0x40
+[  160.543627]  ? alloc_fd+0x3c2/0x780
+[  160.543657]  do_sys_openat2+0x109/0x1c0
+[  160.543676]  ? __pfx_do_sys_openat2+0x10/0x10
+[  160.543698]  ? __fget_files+0x200/0x3b0
+[  160.543718]  __x64_sys_openat+0x144/0x200
+[  160.543739]  ? __pfx___x64_sys_openat+0x10/0x10
+[  160.543758]  ? ksys_write+0x1a8/0x240
+[  160.543778]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  160.543805]  do_syscall_64+0xc6/0x390
+[  160.543827]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  160.543843] RIP: 0033:0x7f0f05efed94
+[  160.543858] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  160.543871] RSP: 002b:00007f0f0493eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  160.543888] RAX: ffffffffffffffda RBX: 0000000000000066 RCX: 00007f0f05efed94
+[  160.543897] RDX: 0000000000551182 RSI: 00007f0f0493eb60 RDI: 00000000ffffff9c
+[  160.543906] RBP: 00007f0f0493eb60 R08: 0000000000000000 R09: 0000000000000000
+[  160.543915] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000551182
+[  160.543924] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  160.543949]  </TASK>
+[  160.940306] i2c i2c-0: Unsupported transaction 7
+[  161.046472] FAULT_INJECTION: forcing a failure.
+[  161.046472] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  161.050753] FAULT_INJECTION: forcing a failure.
+[  161.050753] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  161.050779] CPU: 0 UID: 0 PID: 4027 Comm: syz.1.883 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  161.050796] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  161.050806] Call Trace:
+[  161.050811]  <TASK>
+[  161.050817]  dump_stack_lvl+0x10b/0x140
+[  161.050850]  should_fail_ex+0x4d5/0x5e0
+[  161.050872]  strncpy_from_user+0x3b/0x2f0
+[  161.050897]  getname_flags.part.0+0x95/0x560
+[  161.050922]  getname_flags+0x9a/0xe0
+[  161.050937]  do_sys_openat2+0xa4/0x1c0
+[  161.050958]  ? __pfx_do_sys_openat2+0x10/0x10
+[  161.050981]  ? __fget_files+0x200/0x3b0
+[  161.051002]  __x64_sys_openat+0x144/0x200
+[  161.051023]  ? __pfx___x64_sys_openat+0x10/0x10
+[  161.051042]  ? ksys_write+0x1a8/0x240
+[  161.051070]  do_syscall_64+0xc6/0x390
+[  161.051129]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  161.051145] RIP: 0033:0x7f4b3d96ed94
+[  161.051158] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  161.051171] RSP: 002b:00007f4b3c3b6ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  161.051187] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f4b3d96ed94
+[  161.051196] RDX: 0000000000010400 RSI: 00007f4b3c3b6b60 RDI: 00000000ffffff9c
+[  161.051206] RBP: 00007f4b3c3b6b60 R08: 0000000000000000 R09: 0000000000000000
+[  161.051215] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000010400
+[  161.051224] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  161.051249]  </TASK>
+[  161.057295] CPU: 2 UID: 0 PID: 4026 Comm: syz.0.881 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  161.057316] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  161.057326] Call Trace:
+[  161.057332]  <TASK>
+[  161.057338]  dump_stack_lvl+0x10b/0x140
+[  161.057367]  should_fail_ex+0x4d5/0x5e0
+[  161.057387]  strncpy_from_user+0x3b/0x2f0
+[  161.057411]  getname_flags.part.0+0x95/0x560
+[  161.057436]  getname_flags+0x9a/0xe0
+[  161.057451]  do_sys_openat2+0xa4/0x1c0
+[  161.057472]  ? __pfx_do_sys_openat2+0x10/0x10
+[  161.057496]  ? __fget_files+0x200/0x3b0
+[  161.057514]  __x64_sys_openat+0x144/0x200
+[  161.057534]  ? __pfx___x64_sys_openat+0x10/0x10
+[  161.057553]  ? ksys_write+0x1a8/0x240
+[  161.057573]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  161.057630]  do_syscall_64+0xc6/0x390
+[  161.057652]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  161.057665] RIP: 0033:0x7f0f05efed94
+[  161.057677] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  161.057690] RSP: 002b:00007f0f0493eac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  161.057705] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f0f05efed94
+[  161.057715] RDX: 0000000000088203 RSI: 00007f0f0493eb60 RDI: 00000000ffffff9c
+[  161.057724] RBP: 00007f0f0493eb60 R08: 0000000000000000 R09: 0000000000000000
+[  161.057732] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000088203
+[  161.057740] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  161.057765]  </TASK>
+[  161.711309] FAULT_INJECTION: forcing a failure.
+[  161.711309] name failslab, interval 1, probability 0, space 0, times 0
+[  161.723581] CPU: 1 UID: 0 PID: 4055 Comm: syz.3.896 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  161.723630] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  161.723639] Call Trace:
+[  161.723644]  <TASK>
+[  161.723649]  dump_stack_lvl+0x10b/0x140
+[  161.723676]  should_fail_ex+0x4d5/0x5e0
+[  161.723692]  ? alloc_empty_file+0x5a/0x1e0
+[  161.723708]  should_failslab+0xc7/0x130
+[  161.723722]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  161.723746]  ? alloc_empty_file+0x5a/0x1e0
+[  161.723761]  ? unwind_get_return_address+0x5e/0xa0
+[  161.723773]  alloc_empty_file+0x5a/0x1e0
+[  161.723790]  path_openat+0xe5/0x2880
+[  161.723872]  ? __pfx_path_openat+0x10/0x10
+[  161.723883]  ? __lock_acquire+0x64e/0x18c0
+[  161.723908]  do_filp_open+0x1fc/0x460
+[  161.723922]  ? __pfx_do_filp_open+0x10/0x10
+[  161.723934]  ? find_held_lock+0x2b/0x80
+[  161.723955]  ? find_held_lock+0x2b/0x80
+[  161.723969]  ? alloc_fd+0x3c2/0x780
+[  161.723988]  ? lock_release+0xd3/0x2a0
+[  161.724008]  ? _raw_spin_unlock+0x23/0x40
+[  161.724023]  ? alloc_fd+0x3c2/0x780
+[  161.724050]  do_sys_openat2+0x109/0x1c0
+[  161.724069]  ? __pfx_do_sys_openat2+0x10/0x10
+[  161.724123]  ? __fget_files+0x200/0x3b0
+[  161.724142]  __x64_sys_openat+0x144/0x200
+[  161.724160]  ? __pfx___x64_sys_openat+0x10/0x10
+[  161.724178]  ? ksys_write+0x1a8/0x240
+[  161.724195]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  161.724220]  do_syscall_64+0xc6/0x390
+[  161.724241]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  161.724257] RIP: 0033:0x7f438212ed94
+[  161.724268] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  161.724283] RSP: 002b:00007f4380b76ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  161.724297] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f438212ed94
+[  161.724305] RDX: 0000000000088203 RSI: 00007f4380b76b60 RDI: 00000000ffffff9c
+[  161.724313] RBP: 00007f4380b76b60 R08: 0000000000000000 R09: 0000000000000000
+[  161.724322] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000088203
+[  161.724330] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  161.724353]  </TASK>
+[  161.794030] FAULT_INJECTION: forcing a failure.
+[  161.794030] name failslab, interval 1, probability 0, space 0, times 0
+[  161.806466] CPU: 1 UID: 0 PID: 4059 Comm: syz.1.897 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  161.806488] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  161.806498] Call Trace:
+[  161.806503]  <TASK>
+[  161.806509]  dump_stack_lvl+0x10b/0x140
+[  161.806545]  should_fail_ex+0x4d5/0x5e0
+[  161.806564]  ? security_file_alloc+0x3a/0x150
+[  161.806582]  should_failslab+0xc7/0x130
+[  161.806630]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  161.806649]  ? __create_object+0x5e/0x90
+[  161.806670]  ? security_file_alloc+0x3a/0x150
+[  161.806688]  security_file_alloc+0x3a/0x150
+[  161.806771]  init_file+0x9a/0x4d0
+[  161.806873]  alloc_empty_file+0x78/0x1e0
+[  161.806994]  path_openat+0xe5/0x2880
+[  161.807107]  ? __pfx_path_openat+0x10/0x10
+[  161.807176]  ? __lock_acquire+0x64e/0x18c0
+[  161.807245]  do_filp_open+0x1fc/0x460
+[  161.807305]  ? __pfx_do_filp_open+0x10/0x10
+[  161.807403]  ? find_held_lock+0x2b/0x80
+[  161.807513]  ? find_held_lock+0x2b/0x80
+[  161.807529]  ? alloc_fd+0x3c2/0x780
+[  161.807605]  ? lock_release+0xd3/0x2a0
+[  161.807714]  ? _raw_spin_unlock+0x23/0x40
+[  161.807732]  ? alloc_fd+0x3c2/0x780
+[  161.807762]  do_sys_openat2+0x109/0x1c0
+[  161.807787]  ? __pfx_do_sys_openat2+0x10/0x10
+[  161.807811]  ? __fget_files+0x200/0x3b0
+[  161.807829]  __x64_sys_openat+0x144/0x200
+[  161.807896]  ? __pfx___x64_sys_openat+0x10/0x10
+[  161.808104]  ? ksys_write+0x1a8/0x240
+[  161.808168]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  161.808198]  do_syscall_64+0xc6/0x390
+[  161.808222]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  161.808238] RIP: 0033:0x7f4b3d96ed94
+[  161.808252] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  161.808266] RSP: 002b:00007f4b3c3b6ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  161.808281] RAX: ffffffffffffffda RBX: 0000000000000066 RCX: 00007f4b3d96ed94
+[  161.808291] RDX: 0000000000551182 RSI: 00007f4b3c3b6b60 RDI: 00000000ffffff9c
+[  161.808301] RBP: 00007f4b3c3b6b60 R08: 0000000000000000 R09: 0000000000000000
+[  161.808309] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000551182
+[  161.808318] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  161.808343]  </TASK>
+[  162.132078] i2c i2c-0: Unsupported transaction 7
+[  162.288342] i2c i2c-0: Unsupported transaction 7
+[  162.298107] i2c i2c-0: Unsupported transaction 8
+[  162.445064] FAULT_INJECTION: forcing a failure.
+[  162.445064] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  162.461721] CPU: 0 UID: 0 PID: 4082 Comm: syz.1.906 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  162.461742] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  162.461751] Call Trace:
+[  162.461755]  <TASK>
+[  162.461762]  dump_stack_lvl+0x10b/0x140
+[  162.461790]  should_fail_ex+0x4d5/0x5e0
+[  162.461808]  _copy_from_user+0x30/0xd0
+[  162.461830]  i2cdev_ioctl+0x137/0x810
+[  162.461845]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  162.461860]  ? selinux_file_ioctl+0x18c/0x280
+[  162.461874]  ? selinux_file_ioctl+0xbe/0x280
+[  162.461891]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  162.461909]  __x64_sys_ioctl+0x194/0x210
+[  162.461932]  do_syscall_64+0xc6/0x390
+[  162.461954]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  162.461969] RIP: 0033:0x7f4b3d97059d
+[  162.461982] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  162.461995] RSP: 002b:00007f4b3c3b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  162.462010] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d97059d
+[  162.462019] RDX: 0000200000001840 RSI: 0000000000000720 RDI: 0000000000000003
+[  162.462027] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  162.462035] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  162.462043] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  162.462065]  </TASK>
+[  162.636766] i2c i2c-0: Unsupported transaction 8
+[  162.969175] i2c i2c-0: Unsupported transaction 7
+[  163.228518] i2c i2c-0: Unsupported transaction 8
+[  163.352972] FAULT_INJECTION: forcing a failure.
+[  163.352972] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  163.366478] CPU: 2 UID: 0 PID: 4127 Comm: syz.1.926 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  163.366500] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  163.366510] Call Trace:
+[  163.366515]  <TASK>
+[  163.366522]  dump_stack_lvl+0x10b/0x140
+[  163.366551]  should_fail_ex+0x4d5/0x5e0
+[  163.366571]  _copy_from_user+0x30/0xd0
+[  163.367421]  i2cdev_ioctl_smbus+0x1ed/0x830
+[  163.367443]  ? __pfx_i2cdev_ioctl_smbus+0x10/0x10
+[  163.367457]  ? __might_fault+0x13d/0x190
+[  163.367484]  ? vma_start_read+0x6f0/0x900
+[  163.367512]  i2cdev_ioctl+0x3a9/0x810
+[  163.367528]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  163.367547]  ? selinux_file_ioctl+0xbe/0x280
+[  163.367567]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  163.367612]  __x64_sys_ioctl+0x194/0x210
+[  163.367637]  do_syscall_64+0xc6/0x390
+[  163.367659]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  163.367672] RIP: 0033:0x7f4b3d97059d
+[  163.367684] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  163.367697] RSP: 002b:00007f4b3c3b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  163.367712] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d97059d
+[  163.367722] RDX: 0000200000001840 RSI: 0000000000000720 RDI: 0000000000000003
+[  163.367731] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  163.367739] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  163.367748] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  163.367772]  </TASK>
+[  163.394801] FAULT_INJECTION: forcing a failure.
+[  163.394801] name failslab, interval 1, probability 0, space 0, times 0
+[  163.452921] CPU: 0 UID: 0 PID: 4132 Comm: syz.3.927 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  163.452939] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  163.452948] Call Trace:
+[  163.452954]  <TASK>
+[  163.452961]  dump_stack_lvl+0x10b/0x140
+[  163.452988]  should_fail_ex+0x4d5/0x5e0
+[  163.453007]  ? security_file_alloc+0x3a/0x150
+[  163.453026]  should_failslab+0xc7/0x130
+[  163.453041]  kmem_cache_alloc_noprof+0x77/0x6d0
+[  163.453060]  ? __create_object+0x5e/0x90
+[  163.453095]  ? security_file_alloc+0x3a/0x150
+[  163.453114]  security_file_alloc+0x3a/0x150
+[  163.453135]  init_file+0x9a/0x4d0
+[  163.453156]  alloc_empty_file+0x78/0x1e0
+[  163.453177]  path_openat+0xe5/0x2880
+[  163.453204]  ? __pfx_path_openat+0x10/0x10
+[  163.453218]  ? __lock_acquire+0x64e/0x18c0
+[  163.453249]  do_filp_open+0x1fc/0x460
+[  163.453266]  ? __pfx_do_filp_open+0x10/0x10
+[  163.453280]  ? find_held_lock+0x2b/0x80
+[  163.453307]  ? find_held_lock+0x2b/0x80
+[  163.453324]  ? alloc_fd+0x3c2/0x780
+[  163.453346]  ? lock_release+0xd3/0x2a0
+[  163.453370]  ? _raw_spin_unlock+0x23/0x40
+[  163.453387]  ? alloc_fd+0x3c2/0x780
+[  163.453416]  do_sys_openat2+0x109/0x1c0
+[  163.453436]  ? __pfx_do_sys_openat2+0x10/0x10
+[  163.453459]  ? __fget_files+0x200/0x3b0
+[  163.453479]  __x64_sys_openat+0x144/0x200
+[  163.453499]  ? __pfx___x64_sys_openat+0x10/0x10
+[  163.453519]  ? ksys_write+0x1a8/0x240
+[  163.453538]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  163.453565]  do_syscall_64+0xc6/0x390
+[  163.453620]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  163.453636] RIP: 0033:0x7f438212ed94
+[  163.453650] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  163.453662] RSP: 002b:00007f4380b76ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  163.453676] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f438212ed94
+[  163.453685] RDX: 0000000000010400 RSI: 00007f4380b76b60 RDI: 00000000ffffff9c
+[  163.453694] RBP: 00007f4380b76b60 R08: 0000000000000000 R09: 0000000000000000
+[  163.453702] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000010400
+[  163.453711] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  163.453735]  </TASK>
+[  163.877701] i2c i2c-0: Unsupported transaction 8
+[  163.948153] i2c i2c-0: Unsupported transaction 8
+[  163.988703] i2c i2c-0: Unsupported transaction 7
+[  164.018556] FAULT_INJECTION: forcing a failure.
+[  164.018556] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  164.033507] CPU: 2 UID: 0 PID: 4163 Comm: syz.0.941 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  164.033529] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  164.033538] Call Trace:
+[  164.033543]  <TASK>
+[  164.033548]  dump_stack_lvl+0x10b/0x140
+[  164.033618]  should_fail_ex+0x4d5/0x5e0
+[  164.033641]  _copy_to_user+0x32/0xd0
+[  164.033664]  simple_read_from_buffer+0xe5/0x180
+[  164.033697]  proc_fail_nth_read+0x18f/0x240
+[  164.033714]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  164.033730]  ? security_file_permission+0x27/0x90
+[  164.033751]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  164.033768]  vfs_read+0x1eb/0xc70
+[  164.033787]  ? __pfx___mutex_lock+0x10/0x10
+[  164.033812]  ? __pfx_vfs_read+0x10/0x10
+[  164.033827]  ? __fget_files+0x1f6/0x3b0
+[  164.033840]  ? lock_release+0xd3/0x2a0
+[  164.033864]  ? __fget_files+0x200/0x3b0
+[  164.033886]  ksys_read+0x126/0x240
+[  164.033898]  ? __pfx_ksys_read+0x10/0x10
+[  164.033914]  ? fput+0x6f/0x100
+[  164.033937]  do_syscall_64+0xc6/0x390
+[  164.033959]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  164.033974] RIP: 0033:0x7f0f05efef6c
+[  164.033988] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  164.034002] RSP: 002b:00007f0f0493ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  164.034017] RAX: ffffffffffffffda RBX: 00007f0f06175fa0 RCX: 00007f0f05efef6c
+[  164.034026] RDX: 000000000000000f RSI: 00007f0f0493f020 RDI: 0000000000000004
+[  164.034035] RBP: 00007f0f0493f010 R08: 0000000000000000 R09: 0000000000000000
+[  164.034043] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  164.034051] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  164.034185]  </TASK>
+[  164.430932] i2c i2c-0: Unsupported transaction 7
+[  164.440433] i2c i2c-0: Unsupported transaction 7
+[  164.533974] i2c i2c-0: Unsupported transaction 8
+[  164.570505] i2c i2c-0: Unsupported transaction 8
+[  164.580406] i2c i2c-0: Unsupported transaction 8
+[  164.604996] i2c i2c-0: Unsupported transaction 8
+[  164.749780] FAULT_INJECTION: forcing a failure.
+[  164.749780] name failslab, interval 1, probability 0, space 0, times 0
+[  164.763972] CPU: 1 UID: 0 PID: 4199 Comm: syz.3.959 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  164.763993] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  164.764003] Call Trace:
+[  164.764009]  <TASK>
+[  164.764015]  dump_stack_lvl+0x10b/0x140
+[  164.764047]  should_fail_ex+0x4d5/0x5e0
+[  164.764069]  should_failslab+0xc7/0x130
+[  164.764130]  __kmalloc_cache_noprof+0x78/0x6f0
+[  164.764151]  ? __radix_tree_lookup+0x1d8/0x270
+[  164.764167]  ? i2cdev_open+0x9a/0x190
+[  164.764186]  ? i2cdev_open+0x9a/0x190
+[  164.764199]  ? __pfx_i2cdev_open+0x10/0x10
+[  164.764212]  i2cdev_open+0x9a/0x190
+[  164.764228]  chrdev_open+0x23b/0x690
+[  164.764247]  ? __pfx_chrdev_open+0x10/0x10
+[  164.764263]  ? lock_release+0xd3/0x2a0
+[  164.764293]  do_dentry_open+0x6c6/0x1390
+[  164.764313]  ? __pfx_chrdev_open+0x10/0x10
+[  164.764331]  ? inode_permission+0x15c/0x630
+[  164.764355]  vfs_open+0x87/0x400
+[  164.764373]  ? may_open+0x1f8/0x420
+[  164.764397]  path_openat+0x1cbc/0x2880
+[  164.764423]  ? __pfx_path_openat+0x10/0x10
+[  164.764438]  ? __lock_acquire+0x64e/0x18c0
+[  164.764467]  do_filp_open+0x1fc/0x460
+[  164.764485]  ? __pfx_do_filp_open+0x10/0x10
+[  164.764499]  ? find_held_lock+0x2b/0x80
+[  164.764527]  ? find_held_lock+0x2b/0x80
+[  164.764544]  ? alloc_fd+0x3c2/0x780
+[  164.764568]  ? lock_release+0xd3/0x2a0
+[  164.764640]  ? _raw_spin_unlock+0x23/0x40
+[  164.764660]  ? alloc_fd+0x3c2/0x780
+[  164.764690]  do_sys_openat2+0x109/0x1c0
+[  164.764709]  ? __pfx_do_sys_openat2+0x10/0x10
+[  164.764730]  ? __fget_files+0x200/0x3b0
+[  164.764748]  __x64_sys_openat+0x144/0x200
+[  164.764769]  ? __pfx___x64_sys_openat+0x10/0x10
+[  164.764788]  ? ksys_write+0x1a8/0x240
+[  164.764807]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  164.764832]  do_syscall_64+0xc6/0x390
+[  164.764855]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  164.764871] RIP: 0033:0x7f438212ed94
+[  164.764887] Code: 24 20 eb 8f 66 90 44 89 54 24 0c e8 e6 0f 03 00 44 8b 54 24 0c 44 89 e2 48 89 ee 41 89 c0 bf 9c ff ff ff b8 01 01 00 00 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 89 44 24 0c e8 28 10 03 00 8b 44
+[  164.764902] RSP: 002b:00007f4380b76ac0 EFLAGS: 00000293 ORIG_RAX: 0000000000000101
+[  164.764918] RAX: ffffffffffffffda RBX: 0000000000000000 RCX: 00007f438212ed94
+[  164.764928] RDX: 0000000000088203 RSI: 00007f4380b76b60 RDI: 00000000ffffff9c
+[  164.764938] RBP: 00007f4380b76b60 R08: 0000000000000000 R09: 0000000000000000
+[  164.764947] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000088203
+[  164.764955] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  164.764981]  </TASK>
+[  165.150985] i2c i2c-0: Unsupported transaction 8
+[  165.405001] i2c i2c-0: Unsupported transaction 7
+[  165.528557] i2c i2c-0: Unsupported transaction 8
+[  165.628623] FAULT_INJECTION: forcing a failure.
+[  165.628623] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  165.642852] CPU: 1 UID: 0 PID: 4239 Comm: syz.0.975 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  165.642874] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  165.642884] Call Trace:
+[  165.642889]  <TASK>
+[  165.642896]  dump_stack_lvl+0x10b/0x140
+[  165.642926]  should_fail_ex+0x4d5/0x5e0
+[  165.642946]  _copy_to_user+0x32/0xd0
+[  165.642970]  simple_read_from_buffer+0xe5/0x180
+[  165.642996]  proc_fail_nth_read+0x18f/0x240
+[  165.643014]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  165.643031]  ? security_file_permission+0x27/0x90
+[  165.643051]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  165.643067]  vfs_read+0x1eb/0xc70
+[  165.643118]  ? __pfx___mutex_lock+0x10/0x10
+[  165.643140]  ? __pfx_vfs_read+0x10/0x10
+[  165.643153]  ? __fget_files+0x1f6/0x3b0
+[  165.643167]  ? lock_release+0xd3/0x2a0
+[  165.643193]  ? __fget_files+0x200/0x3b0
+[  165.643213]  ksys_read+0x126/0x240
+[  165.643227]  ? __pfx_ksys_read+0x10/0x10
+[  165.643248]  do_syscall_64+0xc6/0x390
+[  165.643268]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  165.643283] RIP: 0033:0x7f0f05efef6c
+[  165.643296] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  165.643308] RSP: 002b:00007f0f0493ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  165.643322] RAX: ffffffffffffffda RBX: 00007f0f06175fa0 RCX: 00007f0f05efef6c
+[  165.643330] RDX: 000000000000000f RSI: 00007f0f0493f020 RDI: 0000000000000003
+[  165.643338] RBP: 00007f0f0493f010 R08: 0000000000000000 R09: 0000000000000000
+[  165.643346] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  165.643354] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  165.643378]  </TASK>
+[  165.902535] i2c i2c-0: Unsupported transaction 8
+[  165.910598] i2c i2c-0: Unsupported transaction 8
+[  165.935460] i2c i2c-0: Unsupported transaction 7
+[  166.035824] i2c i2c-0: Unsupported transaction 4
+[  166.088735] FAULT_INJECTION: forcing a failure.
+[  166.088735] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  166.103244] CPU: 1 UID: 0 PID: 4263 Comm: syz.2.987 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  166.103265] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  166.103276] Call Trace:
+[  166.103281]  <TASK>
+[  166.103288]  dump_stack_lvl+0x10b/0x140
+[  166.103318]  should_fail_ex+0x4d5/0x5e0
+[  166.103339]  _copy_to_user+0x32/0xd0
+[  166.103365]  simple_read_from_buffer+0xe5/0x180
+[  166.103391]  proc_fail_nth_read+0x18f/0x240
+[  166.103410]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  166.103428]  ? security_file_permission+0x27/0x90
+[  166.103451]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  166.103468]  vfs_read+0x1eb/0xc70
+[  166.103488]  ? __pfx___mutex_lock+0x10/0x10
+[  166.103511]  ? __pfx_vfs_read+0x10/0x10
+[  166.103527]  ? __fget_files+0x1f6/0x3b0
+[  166.103549]  ? lock_release+0xd3/0x2a0
+[  166.103575]  ? __fget_files+0x200/0x3b0
+[  166.103609]  ksys_read+0x126/0x240
+[  166.103623]  ? __pfx_ksys_read+0x10/0x10
+[  166.103639]  ? trace_irq_enable.constprop.0+0xc2/0x100
+[  166.103662]  do_syscall_64+0xc6/0x390
+[  166.103682]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  166.103696] RIP: 0033:0x7f7aaf0aef6c
+[  166.103707] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  166.103721] RSP: 002b:00007f7aadaf6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  166.103735] RAX: ffffffffffffffda RBX: 00007f7aaf325fa0 RCX: 00007f7aaf0aef6c
+[  166.103744] RDX: 000000000000000f RSI: 00007f7aadaf7020 RDI: 0000000000000003
+[  166.103752] RBP: 00007f7aadaf7010 R08: 0000000000000000 R09: 0000000000000000
+[  166.103760] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000002
+[  166.103767] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  166.103789]  </TASK>
+[  166.429067] i2c i2c-0: Unsupported transaction 7
+[  166.461703] i2c i2c-0: Unsupported transaction 8
+[  166.538251] i2c i2c-0: Unsupported transaction 8
+[  166.570965] i2c i2c-0: Unsupported transaction 8
+[  166.873998] i2c i2c-0: Unsupported transaction 8
+[  166.883453] i2c i2c-0: Unsupported transaction 7
+[  166.899924] i2c i2c-0: Unsupported transaction 4
+[  166.974760] i2c i2c-0: Unsupported transaction 4
+[  167.074450] i2c i2c-0: Unsupported transaction 4
+[  167.192351] i2c i2c-0: Unsupported transaction 7
+[  167.214693] i2c i2c-0: Unsupported transaction 8
+[  167.323276] i2c i2c-0: Unsupported transaction 4
+[  167.344404] i2c i2c-0: Unsupported transaction 8
+[  168.048830] i2c i2c-0: Unsupported transaction 8
+[  168.071989] i2c i2c-0: Unsupported transaction 8
+[  168.123456] i2c i2c-0: Unsupported transaction 7
+[  168.344418] i2c i2c-0: Unsupported transaction 7
+[  168.402875] i2c i2c-0: Unsupported transaction 8
+[  168.638869] i2c i2c-0: Unsupported transaction 7
+[  168.707800] i2c i2c-0: Unsupported transaction 8
+[  169.257267] i2c i2c-0: Unsupported transaction 8
+[  169.510383] i2c i2c-0: Unsupported transaction 8
+[  169.615406] i2c i2c-0: Unsupported transaction 4
+[  169.943984] FAULT_INJECTION: forcing a failure.
+[  169.943984] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  169.958069] CPU: 1 UID: 0 PID: 4463 Comm: syz.1.1081 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  169.958122] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  169.958132] Call Trace:
+[  169.958137]  <TASK>
+[  169.958144]  dump_stack_lvl+0x10b/0x140
+[  169.958171]  should_fail_ex+0x4d5/0x5e0
+[  169.958190]  _copy_to_user+0x32/0xd0
+[  169.958215]  simple_read_from_buffer+0xe5/0x180
+[  169.958243]  proc_fail_nth_read+0x18f/0x240
+[  169.958262]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  169.958280]  ? security_file_permission+0x27/0x90
+[  169.958304]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  169.958321]  vfs_read+0x1eb/0xc70
+[  169.958340]  ? __pfx___mutex_lock+0x10/0x10
+[  169.958364]  ? __pfx_vfs_read+0x10/0x10
+[  169.958379]  ? __fget_files+0x1f6/0x3b0
+[  169.958394]  ? lock_release+0xd3/0x2a0
+[  169.958422]  ? __fget_files+0x200/0x3b0
+[  169.958446]  ksys_read+0x126/0x240
+[  169.958461]  ? __pfx_ksys_read+0x10/0x10
+[  169.958478]  ? fput+0x6f/0x100
+[  169.958503]  do_syscall_64+0xc6/0x390
+[  169.958525]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  169.958541] RIP: 0033:0x7f4b3d96ef6c
+[  169.958555] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  169.958569] RSP: 002b:00007f4b3c3b6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  169.958602] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d96ef6c
+[  169.958611] RDX: 000000000000000f RSI: 00007f4b3c3b7020 RDI: 0000000000000004
+[  169.958620] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  169.958627] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  169.958635] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  169.958657]  </TASK>
+[  169.969635] i2c i2c-0: Unsupported transaction 8
+[  170.205424] i2c i2c-0: Unsupported transaction 8
+[  171.108116] i2c i2c-0: Unsupported transaction 8
+[  171.139607] i2c i2c-0: Unsupported transaction 8
+[  171.464377] i2c i2c-0: Unsupported transaction 7
+[  171.679060] i2c i2c-0: Unsupported transaction 7
+[  172.157756] i2c i2c-0: Unsupported transaction 7
+[  172.321469] i2c i2c-0: Unsupported transaction 8
+[  172.819323] i2c i2c-0: Unsupported transaction 7
+[  173.042818] i2c i2c-0: Unsupported transaction 8
+[  173.162160] FAULT_INJECTION: forcing a failure.
+[  173.162160] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  173.181041] CPU: 0 UID: 0 PID: 4636 Comm: syz.2.1162 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  173.181063] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  173.181073] Call Trace:
+[  173.181080]  <TASK>
+[  173.181087]  dump_stack_lvl+0x10b/0x140
+[  173.181119]  should_fail_ex+0x4d5/0x5e0
+[  173.181141]  _copy_to_user+0x32/0xd0
+[  173.181166]  simple_read_from_buffer+0xe5/0x180
+[  173.181207]  proc_fail_nth_read+0x18f/0x240
+[  173.181226]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  173.181244]  ? security_file_permission+0x27/0x90
+[  173.181268]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  173.181284]  vfs_read+0x1eb/0xc70
+[  173.181304]  ? __pfx___mutex_lock+0x10/0x10
+[  173.181326]  ? __pfx_vfs_read+0x10/0x10
+[  173.181341]  ? __fget_files+0x1f6/0x3b0
+[  173.181355]  ? lock_release+0xd3/0x2a0
+[  173.181381]  ? __fget_files+0x200/0x3b0
+[  173.181404]  ksys_read+0x126/0x240
+[  173.181418]  ? __pfx_ksys_read+0x10/0x10
+[  173.181432]  ? fput+0x6f/0x100
+[  173.181454]  do_syscall_64+0xc6/0x390
+[  173.181474]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  173.181488] RIP: 0033:0x7f7aaf0aef6c
+[  173.181501] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  173.181514] RSP: 002b:00007f7aadaf6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  173.181528] RAX: ffffffffffffffda RBX: 00007f7aaf325fa0 RCX: 00007f7aaf0aef6c
+[  173.181537] RDX: 000000000000000f RSI: 00007f7aadaf7020 RDI: 0000000000000004
+[  173.181546] RBP: 00007f7aadaf7010 R08: 0000000000000000 R09: 0000000000000000
+[  173.181554] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  173.181562] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  173.181588]  </TASK>
+[  173.309924] i2c i2c-0: Unsupported transaction 8
+[  173.557997] i2c i2c-0: Unsupported transaction 8
+[  173.703811] FAULT_INJECTION: forcing a failure.
+[  173.703811] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  173.729262] CPU: 1 UID: 0 PID: 4661 Comm: syz.0.1171 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  173.729284] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  173.730467] Call Trace:
+[  173.730476]  <TASK>
+[  173.730483]  dump_stack_lvl+0x10b/0x140
+[  173.730513]  should_fail_ex+0x4d5/0x5e0
+[  173.730533]  _copy_to_user+0x32/0xd0
+[  173.730559]  simple_read_from_buffer+0xe5/0x180
+[  173.730586]  proc_fail_nth_read+0x18f/0x240
+[  173.730606]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  173.730625]  ? security_file_permission+0x27/0x90
+[  173.730648]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  173.730666]  vfs_read+0x1eb/0xc70
+[  173.730713]  ? __pfx___mutex_lock+0x10/0x10
+[  173.730737]  ? __pfx_vfs_read+0x10/0x10
+[  173.730750]  ? __fget_files+0x1f6/0x3b0
+[  173.730762]  ? lock_release+0xd3/0x2a0
+[  173.730786]  ? __fget_files+0x200/0x3b0
+[  173.730805]  ksys_read+0x126/0x240
+[  173.730819]  ? __pfx_ksys_read+0x10/0x10
+[  173.730833]  ? fput+0x6f/0x100
+[  173.730854]  do_syscall_64+0xc6/0x390
+[  173.730873]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  173.730887] RIP: 0033:0x7f0f05efef6c
+[  173.730900] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  173.730913] RSP: 002b:00007f0f0493ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  173.730927] RAX: ffffffffffffffda RBX: 00007f0f06175fa0 RCX: 00007f0f05efef6c
+[  173.730935] RDX: 000000000000000f RSI: 00007f0f0493f020 RDI: 0000000000000004
+[  173.730943] RBP: 00007f0f0493f010 R08: 0000000000000000 R09: 0000000000000000
+[  173.730950] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  173.730958] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  173.730979]  </TASK>
+[  173.975010] i2c i2c-0: Unsupported transaction 7
+[  174.021497] i2c i2c-0: Unsupported transaction 8
+[  174.028306] i2c i2c-0: Unsupported transaction 8
+[  174.161492] i2c i2c-0: Unsupported transaction 8
+[  174.693438] i2c i2c-0: Unsupported transaction 8
+[  174.703606] i2c i2c-0: Unsupported transaction 8
+[  175.144859] i2c i2c-0: Unsupported transaction 8
+[  175.397506] i2c i2c-0: Unsupported transaction 8
+[  175.826631] FAULT_INJECTION: forcing a failure.
+[  175.826631] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  175.844365] CPU: 3 UID: 0 PID: 4772 Comm: syz.1.1222 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  175.844389] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  175.844399] Call Trace:
+[  175.844405]  <TASK>
+[  175.844411]  dump_stack_lvl+0x10b/0x140
+[  175.844443]  should_fail_ex+0x4d5/0x5e0
+[  175.844463]  _copy_to_user+0x32/0xd0
+[  175.844488]  simple_read_from_buffer+0xe5/0x180
+[  175.844516]  proc_fail_nth_read+0x18f/0x240
+[  175.844536]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  175.844555]  ? security_file_permission+0x27/0x90
+[  175.844579]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  175.844597]  vfs_read+0x1eb/0xc70
+[  175.844616]  ? __pfx___mutex_lock+0x10/0x10
+[  175.844640]  ? __pfx_vfs_read+0x10/0x10
+[  175.844655]  ? __fget_files+0x1f6/0x3b0
+[  175.844670]  ? lock_release+0xd3/0x2a0
+[  175.844698]  ? __fget_files+0x200/0x3b0
+[  175.844721]  ksys_read+0x126/0x240
+[  175.844737]  ? __pfx_ksys_read+0x10/0x10
+[  175.844794]  ? fput+0x6f/0x100
+[  175.844815]  do_syscall_64+0xc6/0x390
+[  175.844836]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  175.844852] RIP: 0033:0x7f4b3d96ef6c
+[  175.844866] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  175.844878] RSP: 002b:00007f4b3c3b6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  175.844892] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d96ef6c
+[  175.844901] RDX: 000000000000000f RSI: 00007f4b3c3b7020 RDI: 0000000000000004
+[  175.844909] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  175.844917] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  175.844924] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  175.844951]  </TASK>
+[  196.080534] i2c i2c-0: Unsupported transaction 7
+[  207.050250] i2c i2c-0: Unsupported transaction 8
+[  223.022342] i2c i2c-0: Unsupported transaction 4
+[  223.065687] i2c i2c-0: Unsupported transaction 8
+[  234.462732] i2c i2c-0: Unsupported transaction 8
+[  245.870275] FAULT_INJECTION: forcing a failure.
+[  245.870275] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  245.885975] CPU: 2 UID: 0 PID: 4862 Comm: syz.2.1262 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  245.885997] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  245.886045] Call Trace:
+[  245.886077]  <TASK>
+[  245.886083]  dump_stack_lvl+0x10b/0x140
+[  245.886378]  should_fail_ex+0x4d5/0x5e0
+[  245.886502]  _copy_to_user+0x32/0xd0
+[  245.886573]  simple_read_from_buffer+0xe5/0x180
+[  245.886659]  proc_fail_nth_read+0x18f/0x240
+[  245.886696]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  245.886713]  ? security_file_permission+0x27/0x90
+[  245.886769]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  245.886785]  vfs_read+0x1eb/0xc70
+[  245.886841]  ? __pfx___mutex_lock+0x10/0x10
+[  245.886875]  ? __pfx_vfs_read+0x10/0x10
+[  245.886888]  ? __fget_files+0x1f6/0x3b0
+[  245.886913]  ? lock_release+0xd3/0x2a0
+[  245.886991]  ? __fget_files+0x200/0x3b0
+[  245.887011]  ksys_read+0x126/0x240
+[  245.887025]  ? __pfx_ksys_read+0x10/0x10
+[  245.887039]  ? fput+0x6f/0x100
+[  245.887063]  do_syscall_64+0xc6/0x390
+[  245.887107]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  245.887196] RIP: 0033:0x7f7aaf0aef6c
+[  245.887246] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  245.887276] RSP: 002b:00007f7aadaf6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  245.887313] RAX: ffffffffffffffda RBX: 00007f7aaf325fa0 RCX: 00007f7aaf0aef6c
+[  245.887322] RDX: 000000000000000f RSI: 00007f7aadaf7020 RDI: 0000000000000004
+[  245.887330] RBP: 00007f7aadaf7010 R08: 0000000000000000 R09: 0000000000000000
+[  245.887338] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  245.887347] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  245.887370]  </TASK>
+[  256.184735] i2c i2c-0: Unsupported transaction 8
+[  256.232379] i2c i2c-0: Unsupported transaction 7
+[  264.907286] i2c i2c-0: Unsupported transaction 8
+[  274.993549] i2c i2c-0: Unsupported transaction 8
+[  274.997970] i2c i2c-0: Unsupported transaction 8
+[  275.000818] i2c i2c-0: Unsupported transaction 8
+[  275.026612] i2c i2c-0: Unsupported transaction 8
+[  286.337442] i2c i2c-0: Unsupported transaction 8
+[  286.384321] i2c i2c-0: Unsupported transaction 8
+[  286.430448] i2c i2c-0: Unsupported transaction 4
+[  297.409068] i2c i2c-0: Unsupported transaction 7
+[  297.505603] i2c i2c-0: Unsupported transaction 8
+[  297.512417] i2c i2c-0: Unsupported transaction 4
+[  305.676539] i2c i2c-0: Unsupported transaction 8
+[  305.694588] i2c i2c-0: Unsupported transaction 8
+[  305.700908] i2c i2c-0: Unsupported transaction 8
+[  316.375710] i2c i2c-0: Unsupported transaction 8
+[  316.391938] FAULT_INJECTION: forcing a failure.
+[  316.391938] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  316.403303] CPU: 2 UID: 0 PID: 5010 Comm: syz.2.1318 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  316.403327] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  316.403336] Call Trace:
+[  316.403354]  <TASK>
+[  316.403360]  dump_stack_lvl+0x10b/0x140
+[  316.403389]  should_fail_ex+0x4d5/0x5e0
+[  316.403409]  _copy_from_user+0x30/0xd0
+[  316.403431]  memdup_user+0x83/0xe0
+[  316.403511]  do_vfs_ioctl+0x80b/0x1470
+[  316.403543]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[  316.403560]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  316.403596]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[  316.403614]  ? lock_acquire+0x169/0x300
+[  316.403637]  ? __fget_files+0x3a/0x3b0
+[  316.403649]  ? find_held_lock+0x2b/0x80
+[  316.403664]  ? __fget_files+0x1f6/0x3b0
+[  316.403677]  ? lock_release+0xd3/0x2a0
+[  316.403699]  ? selinux_file_ioctl+0x18c/0x280
+[  316.403712]  ? selinux_file_ioctl+0xbe/0x280
+[  316.403732]  __x64_sys_ioctl+0x11b/0x210
+[  316.403752]  do_syscall_64+0xc6/0x390
+[  316.403773]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  316.403788] RIP: 0033:0x7f7aaf0b059d
+[  316.403800] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  316.403812] RSP: 002b:00007f7aadaf6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  316.403831] RAX: ffffffffffffffda RBX: 00007f7aaf325fa0 RCX: 00007f7aaf0b059d
+[  316.403850] RDX: 0000200000001840 RSI: 00000000c0189436 RDI: 0000000000000003
+[  316.403859] RBP: 00007f7aadaf7010 R08: 0000000000000000 R09: 0000000000000000
+[  316.403866] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  316.403874] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  316.403893]  </TASK>
+[  327.944566] i2c i2c-0: Unsupported transaction 8
+[  327.970115] i2c i2c-0: Unsupported transaction 7
+[  337.858733] i2c i2c-0: Unsupported transaction 4
+[  337.914877] i2c i2c-0: Unsupported transaction 7
+[  348.018809] i2c i2c-0: Unsupported transaction 8
+[  348.032945] i2c i2c-0: Unsupported transaction 8
+[  348.041420] i2c i2c-0: Unsupported transaction 8
+[  348.051559] i2c i2c-0: Unsupported transaction 8
+[  358.571759] FAULT_INJECTION: forcing a failure.
+[  358.571759] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  358.581741] CPU: 1 UID: 0 PID: 5098 Comm: syz.1.1354 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  358.581763] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  358.581773] Call Trace:
+[  358.581778]  <TASK>
+[  358.581785]  dump_stack_lvl+0x10b/0x140
+[  358.581813]  should_fail_ex+0x4d5/0x5e0
+[  358.581827]  _copy_to_user+0x32/0xd0
+[  358.581842]  simple_read_from_buffer+0xe5/0x180
+[  358.581858]  proc_fail_nth_read+0x18f/0x240
+[  358.581869]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  358.581879]  ? security_file_permission+0x27/0x90
+[  358.581893]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  358.581903]  vfs_read+0x1eb/0xc70
+[  358.581914]  ? __pfx___mutex_lock+0x10/0x10
+[  358.581928]  ? __pfx_vfs_read+0x10/0x10
+[  358.581936]  ? __fget_files+0x1f6/0x3b0
+[  358.581944]  ? lock_release+0xd3/0x2a0
+[  358.581960]  ? __fget_files+0x200/0x3b0
+[  358.581973]  ksys_read+0x126/0x240
+[  358.581981]  ? __pfx_ksys_read+0x10/0x10
+[  358.581990]  ? fput+0x6f/0x100
+[  358.582004]  do_syscall_64+0xc6/0x390
+[  358.582017]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  358.582027] RIP: 0033:0x7f4b3d96ef6c
+[  358.582036] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  358.582045] RSP: 002b:00007f4b3c3b6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  358.582055] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d96ef6c
+[  358.582061] RDX: 000000000000000f RSI: 00007f4b3c3b7020 RDI: 0000000000000004
+[  358.582066] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  358.582071] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  358.582076] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  358.582089]  </TASK>
+[  358.651335] i2c i2c-0: Unsupported transaction 8
+[  370.001714] i2c i2c-0: Unsupported transaction 8
+[  370.111889] i2c i2c-0: Unsupported transaction 4
+[  380.979327] i2c i2c-0: Unsupported transaction 8
+[  381.030752] i2c i2c-0: Unsupported transaction 8
+[  398.268563] i2c i2c-0: Unsupported transaction 8
+[  408.371373] i2c i2c-0: Unsupported transaction 4
+[  418.833520] i2c i2c-0: Unsupported transaction 7
+[  418.839709] i2c i2c-0: Unsupported transaction 4
+[  418.867626] i2c i2c-0: Unsupported transaction 4
+[  426.922243] FAULT_INJECTION: forcing a failure.
+[  426.922243] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  426.928148] CPU: 0 UID: 0 PID: 5245 Comm: syz.0.1411 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  426.928166] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  426.928176] Call Trace:
+[  426.928181]  <TASK>
+[  426.928187]  dump_stack_lvl+0x10b/0x140
+[  426.928214]  should_fail_ex+0x4d5/0x5e0
+[  426.928233]  _copy_to_user+0x32/0xd0
+[  426.928256]  simple_read_from_buffer+0xe5/0x180
+[  426.928280]  proc_fail_nth_read+0x18f/0x240
+[  426.928298]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  426.928314]  ? security_file_permission+0x27/0x90
+[  426.928334]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  426.928351]  vfs_read+0x1eb/0xc70
+[  426.928371]  ? __pfx___mutex_lock+0x10/0x10
+[  426.928394]  ? __pfx_vfs_read+0x10/0x10
+[  426.928408]  ? __fget_files+0x1f6/0x3b0
+[  426.928421]  ? lock_release+0xd3/0x2a0
+[  426.928445]  ? __fget_files+0x200/0x3b0
+[  426.928465]  ksys_read+0x126/0x240
+[  426.928478]  ? __pfx_ksys_read+0x10/0x10
+[  426.928506]  ? fput+0x6f/0x100
+[  426.928528]  do_syscall_64+0xc6/0x390
+[  426.928549]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  426.928563] RIP: 0033:0x7f0f05efef6c
+[  426.928575] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  426.928589] RSP: 002b:00007f0f0493ef90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  426.928603] RAX: ffffffffffffffda RBX: 00007f0f06175fa0 RCX: 00007f0f05efef6c
+[  426.928612] RDX: 000000000000000f RSI: 00007f0f0493f020 RDI: 0000000000000005
+[  426.928621] RBP: 00007f0f0493f010 R08: 0000000000000000 R09: 0000000000000000
+[  426.928629] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  426.928637] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  426.928659]  </TASK>
+[  434.633212] i2c i2c-0: Unsupported transaction 8
+[  434.672839] i2c i2c-0: Unsupported transaction 7
+[  442.545707] i2c i2c-0: Unsupported transaction 8
+[  442.552492] i2c i2c-0: Unsupported transaction 8
+[  449.687592] i2c i2c-0: Unsupported transaction 7
+[  449.697847] i2c i2c-0: Unsupported transaction 4
+[  456.537406] i2c i2c-0: Unsupported transaction 8
+[  456.557406] i2c i2c-0: Unsupported transaction 8
+[  456.583951] i2c i2c-0: Unsupported transaction 7
+[  480.154556] i2c i2c-0: Unsupported transaction 7
+[  480.157594] i2c i2c-0: Unsupported transaction 8
+[  480.160571] i2c i2c-0: Unsupported transaction 8
+[  480.198460] i2c i2c-0: Unsupported transaction 7
+[  480.201709] i2c i2c-0: Unsupported transaction 4
+[  480.251026] i2c i2c-0: Unsupported transaction 4
+[  488.121087] i2c i2c-0: Unsupported transaction 8
+[  488.132595] i2c i2c-0: Unsupported transaction 4
+[  488.175367] i2c i2c-0: Unsupported transaction 7
+[  488.183173] i2c i2c-0: Unsupported transaction 7
+[  496.034821] i2c i2c-0: Unsupported transaction 8
+[  496.160815] i2c i2c-0: Unsupported transaction 4
+[  504.405851] i2c i2c-0: Unsupported transaction 8
+[  504.415067] i2c i2c-0: Unsupported transaction 7
+[  504.417679] i2c i2c-0: Unsupported transaction 4
+[  504.461209] i2c i2c-0: Unsupported transaction 8
+[  512.693521] i2c i2c-0: Unsupported transaction 8
+[  520.085309] FAULT_INJECTION: forcing a failure.
+[  520.085309] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  520.090522] CPU: 1 UID: 0 PID: 5485 Comm: syz.0.1504 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  520.090538] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  520.090546] Call Trace:
+[  520.090551]  <TASK>
+[  520.090556]  dump_stack_lvl+0x10b/0x140
+[  520.090579]  should_fail_ex+0x4d5/0x5e0
+[  520.090595]  _copy_from_user+0x30/0xd0
+[  520.090614]  i2cdev_ioctl+0x137/0x810
+[  520.090702]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  520.090717]  ? selinux_file_ioctl+0x18c/0x280
+[  520.090730]  ? selinux_file_ioctl+0xbe/0x280
+[  520.090745]  ? __pfx_i2cdev_ioctl+0x10/0x10
+[  520.090759]  __x64_sys_ioctl+0x194/0x210
+[  520.090779]  do_syscall_64+0xc6/0x390
+[  520.090797]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  520.090810] RIP: 0033:0x7f0f05f0059d
+[  520.090821] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  520.090832] RSP: 002b:00007f0f0493ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  520.090845] RAX: ffffffffffffffda RBX: 00007f0f06175fa0 RCX: 00007f0f05f0059d
+[  520.090853] RDX: 0000200000001840 RSI: 0000000000000720 RDI: 0000000000000003
+[  520.090861] RBP: 00007f0f0493f010 R08: 0000000000000000 R09: 0000000000000000
+[  520.090867] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  520.090906] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  520.090923]  </TASK>
+[  533.720368] i2c i2c-0: Unsupported transaction 4
+[  533.737515] i2c i2c-0: Unsupported transaction 7
+[  540.366192] FAULT_INJECTION: forcing a failure.
+[  540.366192] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  540.371293] CPU: 2 UID: 0 PID: 5610 Comm: syz.3.1533 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  540.371307] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  540.371316] Call Trace:
+[  540.371321]  <TASK>
+[  540.371326]  dump_stack_lvl+0x10b/0x140
+[  540.371413]  should_fail_ex+0x4d5/0x5e0
+[  540.371442]  _copy_to_user+0x32/0xd0
+[  540.371466]  simple_read_from_buffer+0xe5/0x180
+[  540.371510]  proc_fail_nth_read+0x18f/0x240
+[  540.371522]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  540.371533]  ? security_file_permission+0x27/0x90
+[  540.371546]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  540.371555]  vfs_read+0x1eb/0xc70
+[  540.371566]  ? __pfx___mutex_lock+0x10/0x10
+[  540.371580]  ? __pfx_vfs_read+0x10/0x10
+[  540.371588]  ? __fget_files+0x1f6/0x3b0
+[  540.371597]  ? lock_release+0xd3/0x2a0
+[  540.371612]  ? __fget_files+0x200/0x3b0
+[  540.371624]  ksys_read+0x126/0x240
+[  540.371632]  ? __pfx_ksys_read+0x10/0x10
+[  540.371641]  ? fput+0x6f/0x100
+[  540.371654]  do_syscall_64+0xc6/0x390
+[  540.371667]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  540.371676] RIP: 0033:0x7f438212ef6c
+[  540.371685] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  540.371693] RSP: 002b:00007f4380b76f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  540.371702] RAX: ffffffffffffffda RBX: 00007f43823a5fa0 RCX: 00007f438212ef6c
+[  540.371708] RDX: 000000000000000f RSI: 00007f4380b77020 RDI: 0000000000000004
+[  540.371713] RBP: 00007f4380b77010 R08: 0000000000000000 R09: 0000000000000000
+[  540.371718] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  540.371723] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  540.371738]  </TASK>
+[  547.626162] i2c i2c-0: Unsupported transaction 7
+[  562.483876] i2c i2c-0: Unsupported transaction 8
+[  562.488270] i2c i2c-0: Unsupported transaction 4
+[  562.490666] i2c i2c-0: Unsupported transaction 4
+[  562.543995] i2c i2c-0: Unsupported transaction 4
+[  569.842650] i2c i2c-0: Unsupported transaction 8
+[  577.461304] i2c i2c-0: Unsupported transaction 7
+[  593.098842] i2c i2c-0: Unsupported transaction 4
+[  593.132483] i2c i2c-0: Unsupported transaction 8
+[  608.561242] i2c i2c-0: Unsupported transaction 7
+[  616.685189] i2c i2c-0: Unsupported transaction 7
+[  623.981430] i2c i2c-0: Unsupported transaction 8
+[  623.999246] i2c i2c-0: Unsupported transaction 8
+[  624.013484] i2c i2c-0: Unsupported transaction 8
+[  632.133598] i2c i2c-0: Unsupported transaction 8
+[  639.345221] i2c i2c-0: Unsupported transaction 7
+[  639.348076] i2c i2c-0: Unsupported transaction 4
+[  646.464997] i2c i2c-0: Unsupported transaction 7
+[  654.277645] FAULT_INJECTION: forcing a failure.
+[  654.277645] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  654.289305] CPU: 3 UID: 0 PID: 5924 Comm: syz.3.1653 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  654.289328] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  654.289338] Call Trace:
+[  654.289344]  <TASK>
+[  654.289351]  dump_stack_lvl+0x10b/0x140
+[  654.289380]  should_fail_ex+0x4d5/0x5e0
+[  654.289400]  _copy_to_user+0x32/0xd0
+[  654.289424]  do_vfs_ioctl+0x10a1/0x1470
+[  654.289447]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[  654.289502]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  654.289523]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[  654.289542]  ? lock_acquire+0x169/0x300
+[  654.289561]  ? __fget_files+0x3a/0x3b0
+[  654.289574]  ? find_held_lock+0x2b/0x80
+[  654.289590]  ? __fget_files+0x1f6/0x3b0
+[  654.289604]  ? lock_release+0x7f/0x2a0
+[  654.289629]  ? selinux_file_ioctl+0x18c/0x280
+[  654.289643]  ? selinux_file_ioctl+0xbe/0x280
+[  654.289665]  __x64_sys_ioctl+0x11b/0x210
+[  654.289687]  do_syscall_64+0xc6/0x390
+[  654.289709]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  654.289724] RIP: 0033:0x7f438213059d
+[  654.289738] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  654.289752] RSP: 002b:00007f4380b76f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  654.289767] RAX: ffffffffffffffda RBX: 00007f43823a5fa0 RCX: 00007f438213059d
+[  654.289777] RDX: 0000200000ffefff RSI: 0000000080111500 RDI: 0000000000000004
+[  654.289787] RBP: 00007f4380b77010 R08: 0000000000000000 R09: 0000000000000000
+[  654.289796] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  654.289805] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  654.289829]  </TASK>
+[  661.867625] i2c i2c-0: Unsupported transaction 8
+[  669.134615] i2c i2c-0: Unsupported transaction 8
+[  669.159616] i2c i2c-0: Unsupported transaction 8
+[  669.163951] i2c i2c-0: Unsupported transaction 7
+[  675.578786] FAULT_INJECTION: forcing a failure.
+[  675.578786] name fail_page_alloc, interval 1, probability 0, space 0, times 1
+[  675.583833] CPU: 0 UID: 0 PID: 5986 Comm: syz.0.1674 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  675.583850] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  675.583858] Call Trace:
+[  675.583862]  <TASK>
+[  675.583867]  dump_stack_lvl+0x10b/0x140
+[  675.583922]  should_fail_ex+0x4d5/0x5e0
+[  675.583941]  should_fail_alloc_page+0xe5/0x110
+[  675.583999]  prepare_alloc_pages+0x1ad/0x500
+[  675.584048]  ? lock_release+0xd3/0x2a0
+[  675.584070]  __alloc_frozen_pages_noprof+0x184/0x1f60
+[  675.584086]  ? __kasan_unpoison_pages+0x2f/0x40
+[  675.584110]  ? get_page_from_freelist+0x9d0/0x2690
+[  675.584135]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[  675.584156]  ? __alloc_frozen_pages_noprof+0x28e/0x1f60
+[  675.584184]  ? __sanitizer_cov_trace_switch+0x54/0x90
+[  675.584234]  ? policy_nodemask+0xf0/0x4e0
+[  675.584261]  alloc_pages_mpol+0xf2/0x350
+[  675.584278]  ? __pfx_alloc_pages_mpol+0x10/0x10
+[  675.584296]  ? __pfx_pte_val+0x10/0x10
+[  675.584371]  ? get_vma_policy+0x241/0x350
+[  675.584397]  vma_alloc_folio_noprof+0xee/0x450
+[  675.584414]  ? __pfx_vma_alloc_folio_noprof+0x10/0x10
+[  675.584429]  ? pte_val+0x5b/0xb0
+[  675.584443]  ? __pfx_pte_val+0x10/0x10
+[  675.584458]  ? lock_release+0xd3/0x2a0
+[  675.584479]  do_wp_page+0x1310/0x2c70
+[  675.584508]  ? __pfx_do_wp_page+0x10/0x10
+[  675.584522]  ? do_raw_spin_lock+0x130/0x270
+[  675.584536]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[  675.584549]  ? ___pte_offset_map+0x182/0x300
+[  675.584586]  __handle_mm_fault+0xa6b/0x2490
+[  675.584604]  ? __pfx_mt_find+0x10/0x10
+[  675.584633]  ? __pfx___handle_mm_fault+0x10/0x10
+[  675.584679]  ? find_vma+0xc4/0x140
+[  675.584695]  ? __pfx_find_vma+0x10/0x10
+[  675.584708]  handle_mm_fault+0x2cc/0x900
+[  675.584724]  ? access_error+0x17d/0x370
+[  675.584813]  ? lock_mm_and_find_vma+0xaf/0x6f0
+[  675.584831]  do_user_addr_fault+0x39a/0xeb0
+[  675.584853]  exc_page_fault+0xb5/0x190
+[  675.584871]  asm_exc_page_fault+0x26/0x30
+[  675.584884] RIP: 0010:rep_movs_alternative+0x33/0x90
+[  675.584896] Code: 73 25 85 c9 74 0f 8a 06 88 07 48 ff c7 48 ff c6 48 ff c9 75 f1 c3 cc cc cc cc 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 48 8b 06 <48> 89 07 48 83 c6 08 48 83 c7 08 83 e9 08 74 db 83 f9 08 73 e8 eb
+[  675.584908] RSP: 0018:ffff888105717d10 EFLAGS: 00010216
+[  675.584918] RAX: 410fae1589344010 RBX: 0000000000000011 RCX: 0000000000000011
+[  675.584926] RDX: ffffed1020ae2fc6 RSI: ffff888105717e20 RDI: 0000200000ffefff
+[  675.584933] RBP: 0000200000ffefff R08: 0000000000000000 R09: ffffed1020ae2fc6
+[  675.584941] R10: 0000000000000000 R11: 0000000000000001 R12: ffff888105717e20
+[  675.584949] R13: 0000200000fff010 R14: 00007ffffffff000 R15: 0000000000000000
+[  675.584969]  _copy_to_user+0xbe/0xd0
+[  675.584990]  do_vfs_ioctl+0x10a1/0x1470
+[  675.585009]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[  675.585024]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  675.585042]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[  675.585058]  ? lock_acquire+0x169/0x300
+[  675.585075]  ? __fget_files+0x3a/0x3b0
+[  675.585085]  ? find_held_lock+0x2b/0x80
+[  675.585099]  ? __fget_files+0x1f6/0x3b0
+[  675.585110]  ? lock_release+0x7f/0x2a0
+[  675.585131]  ? selinux_file_ioctl+0x18c/0x280
+[  675.585143]  ? selinux_file_ioctl+0xbe/0x280
+[  675.585172]  __x64_sys_ioctl+0x11b/0x210
+[  675.585192]  do_syscall_64+0xc6/0x390
+[  675.585211]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  675.585223] RIP: 0033:0x7f0f05f0059d
+[  675.585235] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  675.585246] RSP: 002b:00007f0f0493ef98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  675.585256] RAX: ffffffffffffffda RBX: 00007f0f06175fa0 RCX: 00007f0f05f0059d
+[  675.585263] RDX: 0000200000ffefff RSI: 0000000080111500 RDI: 0000000000000004
+[  675.585271] RBP: 00007f0f0493f010 R08: 0000000000000000 R09: 0000000000000000
+[  675.585277] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  675.585284] R13: 00007f0f06176038 R14: 00007f0f06175fa0 R15: 00007f0f0491f000
+[  675.585303]  </TASK>
+[  675.647481] i2c i2c-0: Unsupported transaction 4
+[  675.656399] i2c i2c-0: Unsupported transaction 8
+[  683.064030] i2c i2c-0: Unsupported transaction 7
+[  683.087030] FAULT_INJECTION: forcing a failure.
+[  683.087030] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  683.092911] CPU: 0 UID: 0 PID: 6021 Comm: syz.3.1689 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  683.092923] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  683.092929] Call Trace:
+[  683.092932]  <TASK>
+[  683.092935]  dump_stack_lvl+0x10b/0x140
+[  683.092954]  should_fail_ex+0x4d5/0x5e0
+[  683.092966]  _copy_to_user+0x32/0xd0
+[  683.092980]  simple_read_from_buffer+0xe5/0x180
+[  683.092995]  proc_fail_nth_read+0x18f/0x240
+[  683.093005]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  683.093015]  ? security_file_permission+0x27/0x90
+[  683.093029]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  683.093043]  vfs_read+0x1eb/0xc70
+[  683.093058]  ? __pfx___mutex_lock+0x10/0x10
+[  683.093070]  ? __pfx_vfs_read+0x10/0x10
+[  683.093078]  ? __fget_files+0x1f6/0x3b0
+[  683.093086]  ? lock_release+0xd3/0x2a0
+[  683.093101]  ? __fget_files+0x200/0x3b0
+[  683.093112]  ksys_read+0x126/0x240
+[  683.093119]  ? __pfx_ksys_read+0x10/0x10
+[  683.093128]  ? fput+0x6f/0x100
+[  683.093140]  do_syscall_64+0xc6/0x390
+[  683.093152]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  683.093168] RIP: 0033:0x7f438212ef6c
+[  683.093176] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  683.093184] RSP: 002b:00007f4380b76f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  683.093193] RAX: ffffffffffffffda RBX: 00007f43823a5fa0 RCX: 00007f438212ef6c
+[  683.093198] RDX: 000000000000000f RSI: 00007f4380b77020 RDI: 0000000000000005
+[  683.093203] RBP: 00007f4380b77010 R08: 0000000000000000 R09: 0000000000000000
+[  683.093207] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  683.093212] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  683.093224]  </TASK>
+[  691.242642] i2c i2c-0: Unsupported transaction 4
+[  698.692734] i2c i2c-0: Unsupported transaction 7
+[  705.987079] i2c i2c-0: Unsupported transaction 7
+[  706.030189] i2c i2c-0: Unsupported transaction 4
+[  706.038117] i2c i2c-0: Unsupported transaction 4
+[  714.187676] i2c i2c-0: Unsupported transaction 8
+[  714.195120] i2c i2c-0: Unsupported transaction 4
+[  721.327676] i2c i2c-0: Unsupported transaction 7
+[  721.331593] i2c i2c-0: Unsupported transaction 8
+[  721.336369] i2c i2c-0: Unsupported transaction 8
+[  728.637596] i2c i2c-0: Unsupported transaction 7
+[  728.644806] i2c i2c-0: Unsupported transaction 4
+[  728.648332] i2c i2c-0: Unsupported transaction 8
+[  736.679821] i2c i2c-0: Unsupported transaction 8
+[  736.713677] FAULT_INJECTION: forcing a failure.
+[  736.713677] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  736.718146] CPU: 2 UID: 0 PID: 6170 Comm: syz.1.1744 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  736.718157] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  736.718162] Call Trace:
+[  736.718165]  <TASK>
+[  736.718168]  dump_stack_lvl+0x10b/0x140
+[  736.718185]  should_fail_ex+0x4d5/0x5e0
+[  736.718197]  _copy_to_user+0x32/0xd0
+[  736.718209]  do_vfs_ioctl+0x10a1/0x1470
+[  736.718222]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[  736.718231]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  736.718243]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[  736.718253]  ? lock_acquire+0x169/0x300
+[  736.718265]  ? __fget_files+0x3a/0x3b0
+[  736.718272]  ? find_held_lock+0x2b/0x80
+[  736.718280]  ? __fget_files+0x1f6/0x3b0
+[  736.718287]  ? lock_release+0x7f/0x2a0
+[  736.718300]  ? selinux_file_ioctl+0x18c/0x280
+[  736.718307]  ? selinux_file_ioctl+0xbe/0x280
+[  736.718317]  __x64_sys_ioctl+0x11b/0x210
+[  736.718329]  do_syscall_64+0xc6/0x390
+[  736.718340]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  736.718348] RIP: 0033:0x7f4b3d97059d
+[  736.718355] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  736.718362] RSP: 002b:00007f4b3c3b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  736.718370] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d97059d
+[  736.718375] RDX: 0000200000ffefff RSI: 0000000080111500 RDI: 0000000000000004
+[  736.718380] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  736.718384] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  736.718388] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  736.718399]  </TASK>
+[  744.111647] i2c i2c-0: Unsupported transaction 7
+[  744.113070] i2c i2c-0: Unsupported transaction 4
+[  744.114732] i2c i2c-0: Unsupported transaction 4
+[  744.138507] i2c i2c-0: Unsupported transaction 7
+[  744.154023] i2c i2c-0: Unsupported transaction 4
+[  744.161906] i2c i2c-0: Unsupported transaction 8
+[  744.165375] i2c i2c-0: Unsupported transaction 8
+[  750.800698] i2c i2c-0: Unsupported transaction 4
+[  758.896122] FAULT_INJECTION: forcing a failure.
+[  758.896122] name fail_page_alloc, interval 1, probability 0, space 0, times 0
+[  758.900722] CPU: 2 UID: 0 PID: 6224 Comm: syz.1.1763 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  758.900732] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  758.900737] Call Trace:
+[  758.900740]  <TASK>
+[  758.900744]  dump_stack_lvl+0x10b/0x140
+[  758.900758]  should_fail_ex+0x4d5/0x5e0
+[  758.900768]  should_fail_alloc_page+0xe5/0x110
+[  758.900778]  prepare_alloc_pages+0x1ad/0x500
+[  758.900789]  ? lock_release+0xd3/0x2a0
+[  758.900802]  __alloc_frozen_pages_noprof+0x184/0x1f60
+[  758.900810]  ? __kasan_unpoison_pages+0x2f/0x40
+[  758.900818]  ? get_page_from_freelist+0x9d0/0x2690
+[  758.900831]  ? __pfx___alloc_frozen_pages_noprof+0x10/0x10
+[  758.900843]  ? __alloc_frozen_pages_noprof+0x28e/0x1f60
+[  758.900854]  ? __sanitizer_cov_trace_switch+0x54/0x90
+[  758.900864]  ? policy_nodemask+0xf0/0x4e0
+[  758.900875]  alloc_pages_mpol+0xf2/0x350
+[  758.900884]  ? __pfx_alloc_pages_mpol+0x10/0x10
+[  758.900893]  ? __pfx_pte_val+0x10/0x10
+[  758.900903]  ? get_vma_policy+0x241/0x350
+[  758.900914]  vma_alloc_folio_noprof+0xee/0x450
+[  758.900961]  ? __pfx_vma_alloc_folio_noprof+0x10/0x10
+[  758.900974]  ? pte_val+0x5b/0xb0
+[  758.900983]  ? __pfx_pte_val+0x10/0x10
+[  758.900992]  ? lock_release+0xd3/0x2a0
+[  758.901004]  do_wp_page+0x1310/0x2c70
+[  758.901015]  ? __pfx_do_wp_page+0x10/0x10
+[  758.901023]  ? do_raw_spin_lock+0x130/0x270
+[  758.901030]  ? __pfx_do_raw_spin_lock+0x10/0x10
+[  758.901037]  ? ___pte_offset_map+0x182/0x300
+[  758.901051]  __handle_mm_fault+0xa6b/0x2490
+[  758.901060]  ? __pfx_mt_find+0x10/0x10
+[  758.901070]  ? __pfx___handle_mm_fault+0x10/0x10
+[  758.901084]  ? find_vma+0xc4/0x140
+[  758.901090]  ? __pfx_find_vma+0x10/0x10
+[  758.901098]  handle_mm_fault+0x2cc/0x900
+[  758.901106]  ? access_error+0x17d/0x370
+[  758.901115]  ? lock_mm_and_find_vma+0xaf/0x6f0
+[  758.901126]  do_user_addr_fault+0x39a/0xeb0
+[  758.901138]  exc_page_fault+0xb5/0x190
+[  758.901149]  asm_exc_page_fault+0x26/0x30
+[  758.901156] RIP: 0010:rep_movs_alternative+0x33/0x90
+[  758.901165] Code: 73 25 85 c9 74 0f 8a 06 88 07 48 ff c7 48 ff c6 48 ff c9 75 f1 c3 cc cc cc cc 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 48 8b 06 <48> 89 07 48 83 c6 08 48 83 c7 08 83 e9 08 74 db 83 f9 08 73 e8 eb
+[  758.901172] RSP: 0018:ffff888107b77d10 EFLAGS: 00010216
+[  758.901179] RAX: 410fae1589344010 RBX: 0000000000000011 RCX: 0000000000000011
+[  758.901183] RDX: ffffed1020f6efc6 RSI: ffff888107b77e20 RDI: 0000200000ffefff
+[  758.901188] RBP: 0000200000ffefff R08: 0000000000000000 R09: ffffed1020f6efc6
+[  758.901192] R10: 0000000000000000 R11: 0000000000000001 R12: ffff888107b77e20
+[  758.901196] R13: 0000200000fff010 R14: 00007ffffffff000 R15: 0000000000000000
+[  758.901207]  _copy_to_user+0xbe/0xd0
+[  758.901219]  do_vfs_ioctl+0x10a1/0x1470
+[  758.901230]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[  758.901239]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[  758.901249]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[  758.901259]  ? lock_acquire+0x169/0x300
+[  758.901268]  ? __fget_files+0x3a/0x3b0
+[  758.901275]  ? find_held_lock+0x2b/0x80
+[  758.901282]  ? __fget_files+0x1f6/0x3b0
+[  758.901289]  ? lock_release+0x7f/0x2a0
+[  758.901301]  ? selinux_file_ioctl+0x18c/0x280
+[  758.901308]  ? selinux_file_ioctl+0xbe/0x280
+[  758.901318]  __x64_sys_ioctl+0x11b/0x210
+[  758.901328]  do_syscall_64+0xc6/0x390
+[  758.901338]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  758.901345] RIP: 0033:0x7f4b3d97059d
+[  758.901352] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[  758.901359] RSP: 002b:00007f4b3c3b6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[  758.901365] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d97059d
+[  758.901369] RDX: 0000200000ffefff RSI: 0000000080111500 RDI: 0000000000000004
+[  758.901373] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[  758.901377] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  758.901381] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[  758.901392]  </TASK>
+[  758.978202] i2c i2c-0: Unsupported transaction 8
+[  766.322152] i2c i2c-0: Unsupported transaction 7
+[  766.326821] i2c i2c-0: Unsupported transaction 7
+[  766.338952] FAULT_INJECTION: forcing a failure.
+[  766.338952] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  766.344019] CPU: 0 UID: 0 PID: 6259 Comm: syz.3.1775 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  766.344037] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  766.344046] Call Trace:
+[  766.344051]  <TASK>
+[  766.344056]  dump_stack_lvl+0x10b/0x140
+[  766.344083]  should_fail_ex+0x4d5/0x5e0
+[  766.344100]  _copy_to_user+0x32/0xd0
+[  766.344122]  simple_read_from_buffer+0xe5/0x180
+[  766.344146]  proc_fail_nth_read+0x18f/0x240
+[  766.344162]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  766.344179]  ? security_file_permission+0x27/0x90
+[  766.344199]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  766.344214]  vfs_read+0x1eb/0xc70
+[  766.344242]  ? __pfx___mutex_lock+0x10/0x10
+[  766.344266]  ? __pfx_vfs_read+0x10/0x10
+[  766.344279]  ? __fget_files+0x1f6/0x3b0
+[  766.344292]  ? lock_release+0xd3/0x2a0
+[  766.344312]  ? __fget_files+0x200/0x3b0
+[  766.344330]  ksys_read+0x126/0x240
+[  766.344343]  ? __pfx_ksys_read+0x10/0x10
+[  766.344357]  ? fput+0x6f/0x100
+[  766.344378]  do_syscall_64+0xc6/0x390
+[  766.344399]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  766.344413] RIP: 0033:0x7f438212ef6c
+[  766.344425] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  766.344437] RSP: 002b:00007f4380b76f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  766.344451] RAX: ffffffffffffffda RBX: 00007f43823a5fa0 RCX: 00007f438212ef6c
+[  766.344459] RDX: 000000000000000f RSI: 00007f4380b77020 RDI: 0000000000000005
+[  766.344467] RBP: 00007f4380b77010 R08: 0000000000000000 R09: 0000000000000000
+[  766.344475] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  766.344482] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[  766.344504]  </TASK>
+[  780.992282] i2c i2c-0: Unsupported transaction 7
+[  781.000363] i2c i2c-0: Unsupported transaction 4
+[  788.313501] i2c i2c-0: Unsupported transaction 8
+[  802.855290] i2c i2c-0: Unsupported transaction 4
+[  802.886472] i2c i2c-0: Unsupported transaction 8
+[  811.094457] i2c i2c-0: Unsupported transaction 8
+[  826.379505] i2c i2c-0: Unsupported transaction 8
+[  826.384738] i2c i2c-0: Unsupported transaction 7
+[  826.402685] i2c i2c-0: Unsupported transaction 4
+[  826.407701] i2c i2c-0: Unsupported transaction 8
+[  826.414437] i2c i2c-0: Unsupported transaction 7
+[  826.417775] i2c i2c-0: Unsupported transaction 7
+[  826.420893] i2c i2c-0: Unsupported transaction 8
+[  835.170414] i2c i2c-0: Unsupported transaction 8
+[  843.746963] FAULT_INJECTION: forcing a failure.
+[  843.746963] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[  843.752783] CPU: 0 UID: 0 PID: 6487 Comm: syz.2.1855 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[  843.752801] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[  843.752810] Call Trace:
+[  843.752815]  <TASK>
+[  843.752820]  dump_stack_lvl+0x10b/0x140
+[  843.752846]  should_fail_ex+0x4d5/0x5e0
+[  843.752865]  _copy_to_user+0x32/0xd0
+[  843.752886]  simple_read_from_buffer+0xe5/0x180
+[  843.752910]  proc_fail_nth_read+0x18f/0x240
+[  843.752927]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  843.752943]  ? security_file_permission+0x27/0x90
+[  843.752964]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[  843.752979]  vfs_read+0x1eb/0xc70
+[  843.752996]  ? __pfx___mutex_lock+0x10/0x10
+[  843.753017]  ? __pfx_vfs_read+0x10/0x10
+[  843.753030]  ? __fget_files+0x1f6/0x3b0
+[  843.753044]  ? lock_release+0xd3/0x2a0
+[  843.753102]  ? __fget_files+0x200/0x3b0
+[  843.753123]  ksys_read+0x126/0x240
+[  843.753135]  ? __pfx_ksys_read+0x10/0x10
+[  843.753148]  ? fput+0x6f/0x100
+[  843.753168]  do_syscall_64+0xc6/0x390
+[  843.753187]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[  843.753200] RIP: 0033:0x7f7aaf0aef6c
+[  843.753211] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[  843.753224] RSP: 002b:00007f7aadaf6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[  843.753237] RAX: ffffffffffffffda RBX: 00007f7aaf325fa0 RCX: 00007f7aaf0aef6c
+[  843.753246] RDX: 000000000000000f RSI: 00007f7aadaf7020 RDI: 0000000000000004
+[  843.753254] RBP: 00007f7aadaf7010 R08: 0000000000000000 R09: 0000000000000000
+[  843.753262] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[  843.753270] R13: 00007f7aaf326038 R14: 00007f7aaf325fa0 R15: 00007f7aadad7000
+[  843.753291]  </TASK>
+[  843.781640] i2c i2c-0: Unsupported transaction 8
+[  862.544199] i2c i2c-0: Unsupported transaction 4
+[  862.547484] i2c i2c-0: Unsupported transaction 8
+[  862.602532] i2c i2c-0: Unsupported transaction 4
+[  862.622329] i2c i2c-0: Unsupported transaction 4
+[  862.624802] i2c i2c-0: Unsupported transaction 8
+[  886.217777] i2c i2c-0: Unsupported transaction 4
+[  886.227429] i2c i2c-0: Unsupported transaction 4
+[  886.232656] i2c i2c-0: Unsupported transaction 4
+[  886.236235] i2c i2c-0: Unsupported transaction 4
+[  886.239446] i2c i2c-0: Unsupported transaction 4
+[  886.242795] i2c i2c-0: Unsupported transaction 4
+[  886.245777] i2c i2c-0: Unsupported transaction 4
+[  886.249589] i2c i2c-0: Unsupported transaction 4
+[  886.253368] i2c i2c-0: Unsupported transaction 4
+[  886.256610] i2c i2c-0: Unsupported transaction 4
+[  886.260826] i2c i2c-0: Unsupported transaction 4
+[  886.264498] i2c i2c-0: Unsupported transaction 8
+[  886.268646] i2c i2c-0: Unsupported transaction 4
+[  886.271234] i2c i2c-0: Unsupported transaction 4
+[  886.275165] i2c i2c-0: Unsupported transaction 4
+[  886.281573] i2c i2c-0: Unsupported transaction 4
+[  886.286559] i2c i2c-0: Unsupported transaction 4
+[  886.291077] i2c i2c-0: Unsupported transaction 4
+[  886.295229] i2c i2c-0: Unsupported transaction 4
+[  886.297846] i2c i2c-0: Unsupported transaction 4
+[  886.299844] i2c i2c-0: Unsupported transaction 4
+[  886.301892] i2c i2c-0: Unsupported transaction 4
+[  886.304235] i2c i2c-0: Unsupported transaction 4
+[  886.307212] i2c i2c-0: Unsupported transaction 4
+[  886.310069] i2c i2c-0: Unsupported transaction 4
+[  886.312662] i2c i2c-0: Unsupported transaction 4
+[  886.315489] i2c i2c-0: Unsupported transaction 4
+[  886.318088] i2c i2c-0: Unsupported transaction 4
+[  886.320816] i2c i2c-0: Unsupported transaction 4
+[  886.323400] i2c i2c-0: Unsupported transaction 4
+[  886.326247] i2c i2c-0: Unsupported transaction 4
+[  886.329237] i2c i2c-0: Unsupported transaction 4
+[  886.332023] i2c i2c-0: Unsupported transaction 4
+[  886.334564] i2c i2c-0: Unsupported transaction 4
+[  886.336763] i2c i2c-0: Unsupported transaction 4
+[  886.339086] i2c i2c-0: Unsupported transaction 4
+[  886.342071] i2c i2c-0: Unsupported transaction 4
+[  886.344863] i2c i2c-0: Unsupported transaction 4
+[  886.347373] i2c i2c-0: Unsupported transaction 4
+[  886.350023] i2c i2c-0: Unsupported transaction 4
+[  886.352728] i2c i2c-0: Unsupported transaction 4
+[  886.355418] i2c i2c-0: Unsupported transaction 4
+[  886.357249] i2c i2c-0: Unsupported transaction 4
+[  886.360351] i2c i2c-0: Unsupported transaction 4
+[  886.363325] i2c i2c-0: Unsupported transaction 4
+[  886.366613] i2c i2c-0: Unsupported transaction 4
+[  886.369338] i2c i2c-0: Unsupported transaction 4
+[  886.372009] i2c i2c-0: Unsupported transaction 4
+[  886.374236] i2c i2c-0: Unsupported transaction 4
+[  886.376652] i2c i2c-0: Unsupported transaction 4
+[  886.379250] i2c i2c-0: Unsupported transaction 4
+[  886.381584] i2c i2c-0: Unsupported transaction 4
+[  886.383695] i2c i2c-0: Unsupported transaction 4
+[  886.386399] i2c i2c-0: Unsupported transaction 4
+[  886.389215] i2c i2c-0: Unsupported transaction 4
+[  886.391634] i2c i2c-0: Unsupported transaction 4
+[  886.393955] i2c i2c-0: Unsupported transaction 4
+[  886.396095] i2c i2c-0: Unsupported transaction 4
+[  886.398504] i2c i2c-0: Unsupported transaction 4
+[  886.400865] i2c i2c-0: Unsupported transaction 4
+[  886.402754] i2c i2c-0: Unsupported transaction 4
+[  886.404829] i2c i2c-0: Unsupported transaction 4
+[  886.407447] i2c i2c-0: Unsupported transaction 4
+[  886.409730] i2c i2c-0: Unsupported transaction 4
+[  886.411640] i2c i2c-0: Unsupported transaction 4
+[  886.413964] i2c i2c-0: Unsupported transaction 4
+[  895.554083] i2c i2c-0: Unsupported transaction 8
+[  914.147829] i2c i2c-0: Unsupported transaction 8
+[  914.231410] audit: type=1400 audit(1767812823.999:29): avc:  denied  { getattr } for  pid=149 comm="systemd-udevd" path="/usr/lib/modules/6.18.0/modules.dep.bin" dev="sda" ino=9714089 scontext=system_u:system_r:udev_t:s0-s0:c0.c1023 tcontext=system_u:object_r:unlabeled_t:s0 tclass=file permissive=1
+[  922.106457] i2c i2c-0: Unsupported transaction 8
+[  922.111593] i2c i2c-0: Unsupported transaction 8
+[  937.396750] i2c i2c-0: Unsupported transaction 7
+[  937.443335] i2c i2c-0: Unsupported transaction 8
+[  937.445302] i2c i2c-0: Unsupported transaction 4
+[  946.206543] i2c i2c-0: Unsupported transaction 7
+[  953.518794] i2c i2c-0: Unsupported transaction 8
+[  960.882637] i2c i2c-0: Unsupported transaction 7
+[  960.926395] i2c i2c-0: Unsupported transaction 8
+[  968.836962] i2c i2c-0: Unsupported transaction 7
+[  975.407658] i2c i2c-0: Unsupported transaction 8
+[  975.430164] i2c i2c-0: Unsupported transaction 8
+[  975.432902] i2c i2c-0: Unsupported transaction 4
+[  975.434825] i2c i2c-0: Unsupported transaction 7
+[  982.844759] i2c i2c-0: Unsupported transaction 7
+[  982.846661] i2c i2c-0: Unsupported transaction 7
+[  982.875390] i2c i2c-0: Unsupported transaction 8
+[  997.569917] i2c i2c-0: Unsupported transaction 4
+[  997.574402] i2c i2c-0: Unsupported transaction 8
+[  997.578327] i2c i2c-0: Unsupported transaction 4
+[  997.580497] i2c i2c-0: Unsupported transaction 8
+[  997.582930] i2c i2c-0: Unsupported transaction 4
+[  997.588833] i2c i2c-0: Unsupported transaction 8
+[  997.597625] i2c i2c-0: Unsupported transaction 7
+[ 1005.270730] i2c i2c-0: Unsupported transaction 8
+[ 1005.273331] i2c i2c-0: Unsupported transaction 4
+[ 1005.277655] i2c i2c-0: Unsupported transaction 8
+[ 1012.626967] i2c i2c-0: Unsupported transaction 8
+[ 1012.635974] i2c i2c-0: Unsupported transaction 8
+[ 1012.665884] i2c i2c-0: Unsupported transaction 8
+[ 1012.668680] i2c i2c-0: Unsupported transaction 8
+[ 1019.861363] i2c i2c-0: Unsupported transaction 8
+[ 1026.991597] i2c i2c-0: Unsupported transaction 4
+[ 1034.201854] i2c i2c-0: Unsupported transaction 8
+[ 1049.849795] i2c i2c-0: Unsupported transaction 8
+[ 1049.856888] i2c i2c-0: Unsupported transaction 7
+[ 1057.970915] i2c i2c-0: Unsupported transaction 8
+[ 1057.993105] i2c i2c-0: Unsupported transaction 8
+[ 1066.120235] i2c i2c-0: Unsupported transaction 7
+[ 1073.213664] i2c i2c-0: Unsupported transaction 7
+[ 1081.266697] i2c i2c-0: Unsupported transaction 8
+[ 1081.281239] i2c i2c-0: Unsupported transaction 8
+[ 1089.307784] i2c i2c-0: Unsupported transaction 8
+[ 1089.325031] i2c i2c-0: Unsupported transaction 8
+[ 1096.620478] i2c i2c-0: Unsupported transaction 7
+[ 1096.624257] i2c i2c-0: Unsupported transaction 7
+[ 1103.941392] i2c i2c-0: Unsupported transaction 8
+[ 1112.304613] i2c i2c-0: Unsupported transaction 7
+[ 1112.306393] i2c i2c-0: Unsupported transaction 7
+[ 1119.588451] i2c i2c-0: Unsupported transaction 8
+[ 1119.595389] i2c i2c-0: Unsupported transaction 4
+[ 1126.793570] i2c i2c-0: Unsupported transaction 8
+[ 1126.839600] i2c i2c-0: Unsupported transaction 4
+[ 1134.223349] i2c i2c-0: Unsupported transaction 8
+[ 1141.555291] i2c i2c-0: Unsupported transaction 8
+[ 1141.559570] i2c i2c-0: Unsupported transaction 7
+[ 1141.566387] i2c i2c-0: Unsupported transaction 8
+[ 1149.654815] i2c i2c-0: Unsupported transaction 4
+[ 1149.657326] i2c i2c-0: Unsupported transaction 8
+[ 1149.661662] i2c i2c-0: Unsupported transaction 7
+[ 1149.704393] i2c i2c-0: Unsupported transaction 4
+[ 1157.322327] i2c i2c-0: Unsupported transaction 8
+[ 1157.324324] i2c i2c-0: Unsupported transaction 8
+[ 1157.337495] i2c i2c-0: Unsupported transaction 8
+[ 1164.695225] i2c i2c-0: Unsupported transaction 7
+[ 1172.020516] i2c i2c-0: Unsupported transaction 8
+[ 1172.049933] i2c i2c-0: Unsupported transaction 4
+[ 1172.055531] i2c i2c-0: Unsupported transaction 4
+[ 1172.059030] i2c i2c-0: Unsupported transaction 8
+[ 1179.516890] i2c i2c-0: Unsupported transaction 8
+[ 1179.519401] i2c i2c-0: Unsupported transaction 8
+[ 1187.822310] i2c i2c-0: Unsupported transaction 4
+[ 1195.944837] i2c i2c-0: Unsupported transaction 8
+[ 1195.950663] i2c i2c-0: Unsupported transaction 8
+[ 1195.954566] i2c i2c-0: Unsupported transaction 8
+[ 1204.068971] i2c i2c-0: Unsupported transaction 7
+[ 1211.323524] i2c i2c-0: Unsupported transaction 8
+[ 1211.350754] i2c i2c-0: Unsupported transaction 7
+[ 1218.445010] i2c i2c-0: Unsupported transaction 8
+[ 1218.451895] i2c i2c-0: Unsupported transaction 7
+[ 1218.456443] i2c i2c-0: Unsupported transaction 7
+[ 1218.463070] i2c i2c-0: Unsupported transaction 7
+[ 1218.500231] i2c i2c-0: Unsupported transaction 8
+[ 1225.726898] i2c i2c-0: Unsupported transaction 7
+[ 1225.798286] i2c i2c-0: Unsupported transaction 8
+[ 1233.260557] i2c i2c-0: Unsupported transaction 8
+[ 1233.268267] i2c i2c-0: Unsupported transaction 7
+[ 1248.750692] FAULT_INJECTION: forcing a failure.
+[ 1248.750692] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1248.755094] CPU: 0 UID: 0 PID: 7632 Comm: syz.3.2275 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[ 1248.755105] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1248.755120] Call Trace:
+[ 1248.755134]  <TASK>
+[ 1248.755138]  dump_stack_lvl+0x10b/0x140
+[ 1248.755322]  should_fail_ex+0x4d5/0x5e0
+[ 1248.755388]  _copy_to_user+0x32/0xd0
+[ 1248.755433]  simple_read_from_buffer+0xe5/0x180
+[ 1248.755481]  proc_fail_nth_read+0x18f/0x240
+[ 1248.755502]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1248.755510]  ? security_file_permission+0x27/0x90
+[ 1248.755544]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1248.755553]  vfs_read+0x1eb/0xc70
+[ 1248.755578]  ? __pfx___mutex_lock+0x10/0x10
+[ 1248.755596]  ? __pfx_vfs_read+0x10/0x10
+[ 1248.755603]  ? __fget_files+0x1f6/0x3b0
+[ 1248.755617]  ? lock_release+0xd3/0x2a0
+[ 1248.755662]  ? __fget_files+0x200/0x3b0
+[ 1248.755672]  ksys_read+0x126/0x240
+[ 1248.755680]  ? __pfx_ksys_read+0x10/0x10
+[ 1248.755687]  ? fput+0x6f/0x100
+[ 1248.755699]  do_syscall_64+0xc6/0x390
+[ 1248.755721]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1248.755745] RIP: 0033:0x7f438212ef6c
+[ 1248.755771] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 1248.755778] RSP: 002b:00007f4380b76f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 1248.755793] RAX: ffffffffffffffda RBX: 00007f43823a5fa0 RCX: 00007f438212ef6c
+[ 1248.755797] RDX: 000000000000000f RSI: 00007f4380b77020 RDI: 0000000000000004
+[ 1248.755802] RBP: 00007f4380b77010 R08: 0000000000000000 R09: 0000000000000000
+[ 1248.755807] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1248.755811] R13: 00007f43823a6038 R14: 00007f43823a5fa0 R15: 00007f4380b57000
+[ 1248.755822]  </TASK>
+[ 1248.831989] i2c i2c-0: Unsupported transaction 7
+[ 1256.828131] i2c i2c-0: Unsupported transaction 7
+[ 1256.830222] i2c i2c-0: Unsupported transaction 8
+[ 1256.833694] i2c i2c-0: Unsupported transaction 8
+[ 1264.074838] FAULT_INJECTION: forcing a failure.
+[ 1264.074838] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1264.079375] CPU: 3 UID: 0 PID: 7665 Comm: syz.1.2286 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[ 1264.079392] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1264.079401] Call Trace:
+[ 1264.079406]  <TASK>
+[ 1264.079410]  dump_stack_lvl+0x10b/0x140
+[ 1264.079433]  should_fail_ex+0x4d5/0x5e0
+[ 1264.079450]  _copy_to_user+0x32/0xd0
+[ 1264.079471]  simple_read_from_buffer+0xe5/0x180
+[ 1264.079494]  proc_fail_nth_read+0x18f/0x240
+[ 1264.079510]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1264.079525]  ? security_file_permission+0x27/0x90
+[ 1264.079544]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1264.079558]  vfs_read+0x1eb/0xc70
+[ 1264.079574]  ? __pfx___mutex_lock+0x10/0x10
+[ 1264.079593]  ? __pfx_vfs_read+0x10/0x10
+[ 1264.079606]  ? __fget_files+0x1f6/0x3b0
+[ 1264.079617]  ? lock_release+0xd3/0x2a0
+[ 1264.079639]  ? __fget_files+0x200/0x3b0
+[ 1264.079658]  ksys_read+0x126/0x240
+[ 1264.079670]  ? __pfx_ksys_read+0x10/0x10
+[ 1264.079684]  ? fput+0x6f/0x100
+[ 1264.079703]  do_syscall_64+0xc6/0x390
+[ 1264.079722]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1264.079735] RIP: 0033:0x7f4b3d96ef6c
+[ 1264.079746] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 1264.079758] RSP: 002b:00007f4b3c3b6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 1264.079771] RAX: ffffffffffffffda RBX: 00007f4b3dbe5fa0 RCX: 00007f4b3d96ef6c
+[ 1264.079779] RDX: 000000000000000f RSI: 00007f4b3c3b7020 RDI: 0000000000000004
+[ 1264.079786] RBP: 00007f4b3c3b7010 R08: 0000000000000000 R09: 0000000000000000
+[ 1264.079794] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1264.079801] R13: 00007f4b3dbe6038 R14: 00007f4b3dbe5fa0 R15: 00007f4b3c397000
+[ 1264.079836]  </TASK>
+[ 1264.145549] i2c i2c-0: Unsupported transaction 8
+[ 1271.480604] i2c i2c-0: Unsupported transaction 7
+[ 1271.509951] i2c i2c-0: Unsupported transaction 7
+[ 1271.514673] i2c i2c-0: Unsupported transaction 7
+[ 1278.471711] i2c i2c-0: Unsupported transaction 7
+[ 1278.476333] i2c i2c-0: Unsupported transaction 4
+[ 1278.479309] i2c i2c-0: Unsupported transaction 8
+[ 1278.482370] i2c i2c-0: Unsupported transaction 4
+[ 1288.052574] i2c i2c-0: Unsupported transaction 8
+[ 1288.100982] i2c i2c-0: Unsupported transaction 8
+[ 1288.130333] i2c i2c-0: Unsupported transaction 8
+[ 1295.283511] i2c i2c-0: Unsupported transaction 7
+[ 1304.446728] i2c i2c-0: Unsupported transaction 7
+[ 1312.920689] i2c i2c-0: Unsupported transaction 7
+[ 1312.935456] i2c i2c-0: Unsupported transaction 8
+[ 1312.956676] i2c i2c-0: Unsupported transaction 8
+[ 1321.543498] i2c i2c-0: Unsupported transaction 4
+[ 1321.623060] i2c i2c-0: Unsupported transaction 8
+[ 1321.655629] i2c i2c-0: Unsupported transaction 7
+[ 1329.857625] i2c i2c-0: Unsupported transaction 8
+[ 1329.880728] i2c i2c-0: Unsupported transaction 4
+[ 1338.033843] i2c i2c-0: Unsupported transaction 8
+[ 1338.050530] i2c i2c-0: Unsupported transaction 7
+[ 1338.058988] i2c i2c-0: Unsupported transaction 4
+[ 1346.106275] i2c i2c-0: Unsupported transaction 8
+[ 1346.113718] i2c i2c-0: Unsupported transaction 8
+[ 1353.281727] i2c i2c-0: Unsupported transaction 4
+[ 1353.321217] i2c i2c-0: Unsupported transaction 8
+[ 1362.466095] audit: type=1400 audit(1767813272.234:30): avc:  denied  { execmem } for  pid=7908 comm="syz-executor" scontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tcontext=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 tclass=process permissive=1
+[ 1362.600500] i2c i2c-0: Unsupported transaction 8
+[ 1362.608215] i2c i2c-0: Unsupported transaction 8
+[ 1386.714571] i2c i2c-0: Unsupported transaction 8
+[ 1386.729328] i2c i2c-0: Unsupported transaction 8
+[ 1412.747107] i2c i2c-0: Unsupported transaction 4
+[ 1412.815577] i2c i2c-0: Unsupported transaction 7
+[ 1412.821530] i2c i2c-0: Unsupported transaction 8
+[ 1430.382815] i2c i2c-0: Unsupported transaction 7
+[ 1440.162130] i2c i2c-0: Unsupported transaction 4
+[ 1455.420501] FAULT_INJECTION: forcing a failure.
+[ 1455.420501] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1455.425065] i2c i2c-0: Unsupported transaction 7
+[ 1455.426373] CPU: 1 UID: 0 PID: 9779 Comm: syz.2.2431 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[ 1455.426389] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1455.426411] Call Trace:
+[ 1455.426426]  <TASK>
+[ 1455.426431]  dump_stack_lvl+0x10b/0x140
+[ 1455.426690]  should_fail_ex+0x4d5/0x5e0
+[ 1455.426770]  _copy_to_user+0x32/0xd0
+[ 1455.426831]  simple_read_from_buffer+0xe5/0x180
+[ 1455.426919]  proc_fail_nth_read+0x18f/0x240
+[ 1455.426949]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1455.426963]  ? security_file_permission+0x27/0x90
+[ 1455.427011]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1455.427025]  vfs_read+0x1eb/0xc70
+[ 1455.427061]  ? __pfx___mutex_lock+0x10/0x10
+[ 1455.427089]  ? __pfx_vfs_read+0x10/0x10
+[ 1455.427100]  ? __fget_files+0x1f6/0x3b0
+[ 1455.427129]  ? lock_release+0xd3/0x2a0
+[ 1455.427193]  ? __fget_files+0x200/0x3b0
+[ 1455.427210]  ksys_read+0x126/0x240
+[ 1455.427222]  ? __pfx_ksys_read+0x10/0x10
+[ 1455.427235]  ? fput+0x6f/0x100
+[ 1455.427253]  do_syscall_64+0xc6/0x390
+[ 1455.427286]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1455.427321] RIP: 0033:0x7fc50667ef6c
+[ 1455.427360] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 1455.427388] RSP: 002b:00007fc5050c6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 1455.427408] RAX: ffffffffffffffda RBX: 00007fc5068f5fa0 RCX: 00007fc50667ef6c
+[ 1455.427416] RDX: 000000000000000f RSI: 00007fc5050c7020 RDI: 0000000000000004
+[ 1455.427424] RBP: 00007fc5050c7010 R08: 0000000000000000 R09: 0000000000000000
+[ 1455.427431] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1455.427438] R13: 00007fc5068f6038 R14: 00007fc5068f5fa0 R15: 00007fc5050a7000
+[ 1455.427457]  </TASK>
+[ 1455.521919] i2c i2c-0: Unsupported transaction 8
+[ 1455.529623] i2c i2c-0: Unsupported transaction 8
+[ 1455.532314] i2c i2c-0: Unsupported transaction 7
+[ 1463.137384] i2c i2c-0: Unsupported transaction 7
+[ 1463.140612] i2c i2c-0: Unsupported transaction 7
+[ 1463.145689] i2c i2c-0: Unsupported transaction 7
+[ 1469.690637] i2c i2c-0: Unsupported transaction 8
+[ 1469.710585] i2c i2c-0: Unsupported transaction 4
+[ 1469.713062] i2c i2c-0: Unsupported transaction 7
+[ 1477.228794] i2c i2c-0: Unsupported transaction 7
+[ 1477.232128] i2c i2c-0: Unsupported transaction 7
+[ 1484.988641] i2c i2c-0: Unsupported transaction 8
+[ 1484.993531] i2c i2c-0: Unsupported transaction 8
+[ 1485.033092] i2c i2c-0: Unsupported transaction 8
+[ 1485.035502] i2c i2c-0: Unsupported transaction 7
+[ 1493.204402] i2c i2c-0: Unsupported transaction 7
+[ 1493.224851] i2c i2c-0: Unsupported transaction 8
+[ 1508.802462] i2c i2c-0: Unsupported transaction 8
+[ 1516.576844] i2c i2c-0: Unsupported transaction 7
+[ 1516.602724] i2c i2c-0: Unsupported transaction 8
+[ 1524.253719] i2c i2c-0: Unsupported transaction 4
+[ 1524.259967] i2c i2c-0: Unsupported transaction 4
+[ 1524.262345] i2c i2c-0: Unsupported transaction 8
+[ 1524.296486] i2c i2c-0: Unsupported transaction 4
+[ 1531.942892] i2c i2c-0: Unsupported transaction 8
+[ 1531.951892] i2c i2c-0: Unsupported transaction 8
+[ 1539.180434] i2c i2c-0: Unsupported transaction 4
+[ 1546.885833] i2c i2c-0: Unsupported transaction 8
+[ 1546.897486] i2c i2c-0: Unsupported transaction 7
+[ 1554.071829] i2c i2c-0: Unsupported transaction 8
+[ 1554.097989] i2c i2c-0: Unsupported transaction 8
+[ 1562.672803] i2c i2c-0: Unsupported transaction 8
+[ 1562.708776] i2c i2c-0: Unsupported transaction 7
+[ 1562.727574] i2c i2c-0: Unsupported transaction 7
+[ 1570.393273] i2c i2c-0: Unsupported transaction 8
+[ 1570.394995] i2c i2c-0: Unsupported transaction 8
+[ 1570.399820] i2c i2c-0: Unsupported transaction 8
+[ 1578.281607] i2c i2c-0: Unsupported transaction 8
+[ 1586.279455] i2c i2c-0: Unsupported transaction 4
+[ 1586.281737] i2c i2c-0: Unsupported transaction 8
+[ 1602.802380] i2c i2c-0: Unsupported transaction 7
+[ 1602.811480] i2c i2c-0: Unsupported transaction 4
+[ 1625.705835] i2c i2c-0: Unsupported transaction 7
+[ 1633.606071] i2c i2c-0: Unsupported transaction 8
+[ 1641.492062] i2c i2c-0: Unsupported transaction 8
+[ 1641.500603] i2c i2c-0: Unsupported transaction 8
+[ 1648.128977] i2c i2c-0: Unsupported transaction 7
+[ 1648.174451] i2c i2c-0: Unsupported transaction 8
+[ 1648.177634] i2c i2c-0: Unsupported transaction 8
+[ 1654.819721] i2c i2c-0: Unsupported transaction 7
+[ 1662.142132] i2c i2c-0: Unsupported transaction 7
+[ 1662.183978] i2c i2c-0: Unsupported transaction 7
+[ 1670.247644] i2c i2c-0: Unsupported transaction 8
+[ 1670.259126] i2c i2c-0: Unsupported transaction 4
+[ 1678.223333] i2c i2c-0: Unsupported transaction 7
+[ 1678.231278] i2c i2c-0: Unsupported transaction 7
+[ 1678.235787] i2c i2c-0: Unsupported transaction 7
+[ 1692.330555] i2c i2c-0: Unsupported transaction 8
+[ 1692.341883] i2c i2c-0: Unsupported transaction 7
+[ 1692.367313] i2c i2c-0: Unsupported transaction 4
+[ 1692.372854] i2c i2c-0: Unsupported transaction 7
+[ 1706.851655] i2c i2c-0: Unsupported transaction 8
+[ 1706.854514] i2c i2c-0: Unsupported transaction 4
+[ 1706.857638] i2c i2c-0: Unsupported transaction 8
+[ 1706.863257] i2c i2c-0: Unsupported transaction 8
+[ 1706.865864] i2c i2c-0: Unsupported transaction 8
+[ 1706.912441] i2c i2c-0: Unsupported transaction 8
+[ 1721.611229] i2c i2c-0: Unsupported transaction 4
+[ 1728.753695] i2c i2c-0: Unsupported transaction 8
+[ 1735.749402] i2c i2c-0: Unsupported transaction 8
+[ 1735.802144] i2c i2c-0: Unsupported transaction 7
+[ 1735.812401] i2c i2c-0: Unsupported transaction 8
+[ 1735.815076] i2c i2c-0: Unsupported transaction 8
+[ 1735.823191] i2c i2c-0: Unsupported transaction 8
+[ 1735.826755] i2c i2c-0: Unsupported transaction 8
+[ 1743.593213] i2c i2c-0: Unsupported transaction 8
+[ 1743.596773] i2c i2c-0: Unsupported transaction 7
+[ 1743.640814] i2c i2c-0: Unsupported transaction 7
+[ 1751.590743] i2c i2c-0: Unsupported transaction 8
+[ 1751.596426] i2c i2c-0: Unsupported transaction 7
+[ 1751.600438] i2c i2c-0: Unsupported transaction 7
+[ 1758.530670] i2c i2c-0: Unsupported transaction 7
+[ 1758.537363] i2c i2c-0: Unsupported transaction 7
+[ 1758.572711] i2c i2c-0: Unsupported transaction 7
+[ 1773.656831] i2c i2c-0: Unsupported transaction 8
+[ 1773.667524] i2c i2c-0: Unsupported transaction 8
+[ 1773.693146] i2c i2c-0: Unsupported transaction 7
+[ 1781.728334] i2c i2c-0: Unsupported transaction 8
+[ 1788.789018] i2c i2c-0: Unsupported transaction 4
+[ 1796.939839] i2c i2c-0: Unsupported transaction 7
+[ 1811.699904] i2c i2c-0: Unsupported transaction 8
+[ 1811.708650] i2c i2c-0: Unsupported transaction 7
+[ 1822.596254] i2c i2c-0: Unsupported transaction 8
+[ 1822.617062] i2c i2c-0: Unsupported transaction 8
+[ 1822.684821] i2c i2c-0: Unsupported transaction 7
+[ 1830.779608] i2c i2c-0: Unsupported transaction 8
+[ 1830.787303] i2c i2c-0: Unsupported transaction 8
+[ 1830.793562] i2c i2c-0: Unsupported transaction 8
+[ 1838.996015] i2c i2c-0: Unsupported transaction 8
+[ 1839.003848] i2c i2c-0: Unsupported transaction 7
+[ 1839.009752] i2c i2c-0: Unsupported transaction 7
+[ 1839.073874] i2c i2c-0: Unsupported transaction 7
+[ 1839.076205] i2c i2c-0: Unsupported transaction 8
+[ 1846.399235] i2c i2c-0: Unsupported transaction 8
+[ 1846.453476] i2c i2c-0: Unsupported transaction 8
+[ 1854.641916] i2c i2c-0: Unsupported transaction 8
+[ 1854.653986] i2c i2c-0: Unsupported transaction 7
+[ 1870.823252] i2c i2c-0: Unsupported transaction 8
+[ 1870.834145] i2c i2c-0: Unsupported transaction 8
+[ 1870.845545] i2c i2c-0: Unsupported transaction 8
+[ 1870.852420] i2c i2c-0: Unsupported transaction 8
+[ 1870.855393] i2c i2c-0: Unsupported transaction 8
+[ 1870.858736] i2c i2c-0: Unsupported transaction 8
+[ 1870.861867] i2c i2c-0: Unsupported transaction 8
+[ 1870.865293] i2c i2c-0: Unsupported transaction 8
+[ 1870.868163] i2c i2c-0: Unsupported transaction 8
+[ 1870.871401] i2c i2c-0: Unsupported transaction 8
+[ 1870.876912] i2c i2c-0: Unsupported transaction 8
+[ 1870.879051] i2c i2c-0: Unsupported transaction 8
+[ 1870.880867] i2c i2c-0: Unsupported transaction 8
+[ 1870.882624] i2c i2c-0: Unsupported transaction 8
+[ 1870.884467] i2c i2c-0: Unsupported transaction 8
+[ 1870.886287] i2c i2c-0: Unsupported transaction 8
+[ 1870.888398] i2c i2c-0: Unsupported transaction 8
+[ 1870.890428] i2c i2c-0: Unsupported transaction 8
+[ 1870.892274] i2c i2c-0: Unsupported transaction 8
+[ 1870.894753] i2c i2c-0: Unsupported transaction 8
+[ 1870.897245] i2c i2c-0: Unsupported transaction 8
+[ 1870.899255] i2c i2c-0: Unsupported transaction 8
+[ 1870.901640] i2c i2c-0: Unsupported transaction 8
+[ 1870.904082] i2c i2c-0: Unsupported transaction 8
+[ 1870.907495] i2c i2c-0: Unsupported transaction 8
+[ 1870.909309] i2c i2c-0: Unsupported transaction 8
+[ 1870.911016] i2c i2c-0: Unsupported transaction 8
+[ 1870.912598] i2c i2c-0: Unsupported transaction 8
+[ 1870.914307] i2c i2c-0: Unsupported transaction 8
+[ 1870.915849] i2c i2c-0: Unsupported transaction 8
+[ 1870.917736] i2c i2c-0: Unsupported transaction 8
+[ 1870.919280] i2c i2c-0: Unsupported transaction 8
+[ 1870.920858] i2c i2c-0: Unsupported transaction 8
+[ 1870.922482] i2c i2c-0: Unsupported transaction 8
+[ 1870.924188] i2c i2c-0: Unsupported transaction 8
+[ 1870.925910] i2c i2c-0: Unsupported transaction 8
+[ 1870.927941] i2c i2c-0: Unsupported transaction 8
+[ 1870.930014] i2c i2c-0: Unsupported transaction 8
+[ 1870.931987] i2c i2c-0: Unsupported transaction 8
+[ 1870.934095] i2c i2c-0: Unsupported transaction 8
+[ 1870.936116] i2c i2c-0: Unsupported transaction 8
+[ 1870.938093] i2c i2c-0: Unsupported transaction 8
+[ 1870.939758] i2c i2c-0: Unsupported transaction 8
+[ 1870.941739] i2c i2c-0: Unsupported transaction 8
+[ 1870.944526] i2c i2c-0: Unsupported transaction 8
+[ 1870.947032] i2c i2c-0: Unsupported transaction 8
+[ 1870.949795] i2c i2c-0: Unsupported transaction 8
+[ 1870.952084] i2c i2c-0: Unsupported transaction 8
+[ 1870.954534] i2c i2c-0: Unsupported transaction 8
+[ 1870.961491] i2c i2c-0: Unsupported transaction 8
+[ 1870.963324] i2c i2c-0: Unsupported transaction 8
+[ 1870.965944] i2c i2c-0: Unsupported transaction 8
+[ 1870.968601] i2c i2c-0: Unsupported transaction 8
+[ 1870.970797] i2c i2c-0: Unsupported transaction 8
+[ 1870.973049] i2c i2c-0: Unsupported transaction 8
+[ 1870.975224] i2c i2c-0: Unsupported transaction 8
+[ 1870.977380] i2c i2c-0: Unsupported transaction 8
+[ 1870.979592] i2c i2c-0: Unsupported transaction 8
+[ 1870.981759] i2c i2c-0: Unsupported transaction 8
+[ 1870.983971] i2c i2c-0: Unsupported transaction 8
+[ 1870.986178] i2c i2c-0: Unsupported transaction 8
+[ 1870.988456] i2c i2c-0: Unsupported transaction 8
+[ 1870.990712] i2c i2c-0: Unsupported transaction 8
+[ 1870.992898] i2c i2c-0: Unsupported transaction 8
+[ 1870.995128] i2c i2c-0: Unsupported transaction 8
+[ 1879.657478] i2c i2c-0: Unsupported transaction 4
+[ 1897.477383] i2c i2c-0: Unsupported transaction 8
+[ 1897.480453] i2c i2c-0: Unsupported transaction 4
+[ 1905.465518] i2c i2c-0: Unsupported transaction 4
+[ 1905.480611] i2c i2c-0: Unsupported transaction 7
+[ 1920.927756] i2c i2c-0: Unsupported transaction 7
+[ 1928.439640] i2c i2c-0: Unsupported transaction 8
+[ 1928.479838] i2c i2c-0: Unsupported transaction 7
+[ 1936.955285] i2c i2c-0: Unsupported transaction 8
+[ 1936.990315] i2c i2c-0: Unsupported transaction 7
+[ 1944.293396] i2c i2c-0: Unsupported transaction 4
+[ 1944.302812] i2c i2c-0: Unsupported transaction 4
+[ 1944.310987] i2c i2c-0: Unsupported transaction 8
+[ 1952.219500] i2c i2c-0: Unsupported transaction 4
+[ 1959.661907] i2c i2c-0: Unsupported transaction 8
+[ 1959.665406] i2c i2c-0: Unsupported transaction 7
+[ 1967.332057] i2c i2c-0: Unsupported transaction 4
+[ 1967.352394] i2c i2c-0: Unsupported transaction 4
+[ 1967.390635] i2c i2c-0: Unsupported transaction 7
+[ 1967.430955] i2c i2c-0: Unsupported transaction 8
+[ 1974.896742] FAULT_INJECTION: forcing a failure.
+[ 1974.896742] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 1974.901819] CPU: 2 UID: 0 PID: 11137 Comm: syz.1.2970 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[ 1974.901831] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 1974.901862] Call Trace:
+[ 1974.901883]  <TASK>
+[ 1974.901888]  dump_stack_lvl+0x10b/0x140
+[ 1974.902065]  should_fail_ex+0x4d5/0x5e0
+[ 1974.902131]  _copy_to_user+0x32/0xd0
+[ 1974.902179]  simple_read_from_buffer+0xe5/0x180
+[ 1974.902233]  proc_fail_nth_read+0x18f/0x240
+[ 1974.902281]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1974.902291]  ? security_file_permission+0x27/0x90
+[ 1974.902328]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 1974.902342]  vfs_read+0x1eb/0xc70
+[ 1974.902383]  ? __pfx___mutex_lock+0x10/0x10
+[ 1974.902410]  ? __pfx_vfs_read+0x10/0x10
+[ 1974.902423]  ? __fget_files+0x1f6/0x3b0
+[ 1974.902445]  ? lock_release+0xd3/0x2a0
+[ 1974.902526]  ? __fget_files+0x200/0x3b0
+[ 1974.902546]  ksys_read+0x126/0x240
+[ 1974.902559]  ? __pfx_ksys_read+0x10/0x10
+[ 1974.902572]  ? fput+0x6f/0x100
+[ 1974.902592]  do_syscall_64+0xc6/0x390
+[ 1974.902648]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 1974.902702] RIP: 0033:0x7fdc0817ef6c
+[ 1974.902745] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 1974.902772] RSP: 002b:00007fdc06bc6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 1974.902790] RAX: ffffffffffffffda RBX: 00007fdc083f5fa0 RCX: 00007fdc0817ef6c
+[ 1974.902795] RDX: 000000000000000f RSI: 00007fdc06bc7020 RDI: 0000000000000004
+[ 1974.902800] RBP: 00007fdc06bc7010 R08: 0000000000000000 R09: 0000000000000000
+[ 1974.902807] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 1974.902814] R13: 00007fdc083f6038 R14: 00007fdc083f5fa0 R15: 00007fdc06ba7000
+[ 1974.902835]  </TASK>
+[ 1990.086269] i2c i2c-0: Unsupported transaction 7
+[ 1996.584555] i2c i2c-0: Unsupported transaction 8
+[ 2004.254681] i2c i2c-0: Unsupported transaction 8
+[ 2011.049121] i2c i2c-0: Unsupported transaction 7
+[ 2011.088728] i2c i2c-0: Unsupported transaction 7
+[ 2026.448809] i2c i2c-0: Unsupported transaction 4
+[ 2026.469806] i2c i2c-0: Unsupported transaction 7
+[ 2026.487047] i2c i2c-0: Unsupported transaction 8
+[ 2026.492164] i2c i2c-0: Unsupported transaction 8
+[ 2034.178107] i2c i2c-0: Unsupported transaction 8
+[ 2034.180650] i2c i2c-0: Unsupported transaction 8
+[ 2034.215171] i2c i2c-0: Unsupported transaction 7
+[ 2034.222682] i2c i2c-0: Unsupported transaction 7
+[ 2034.227549] i2c i2c-0: Unsupported transaction 7
+[ 2041.647755] i2c i2c-0: Unsupported transaction 7
+[ 2041.662862] i2c i2c-0: Unsupported transaction 8
+[ 2041.666636] i2c i2c-0: Unsupported transaction 8
+[ 2049.333823] i2c i2c-0: Unsupported transaction 4
+[ 2049.336433] i2c i2c-0: Unsupported transaction 8
+[ 2049.338953] i2c i2c-0: Unsupported transaction 8
+[ 2049.343832] i2c i2c-0: Unsupported transaction 8
+[ 2049.361534] i2c i2c-0: Unsupported transaction 8
+[ 2049.363330] i2c i2c-0: Unsupported transaction 8
+[ 2057.093052] i2c i2c-0: Unsupported transaction 8
+[ 2057.098247] i2c i2c-0: Unsupported transaction 8
+[ 2057.104410] i2c i2c-0: Unsupported transaction 4
+[ 2072.742121] i2c i2c-0: Unsupported transaction 4
+[ 2072.744572] i2c i2c-0: Unsupported transaction 8
+[ 2080.573625] i2c i2c-0: Unsupported transaction 7
+[ 2095.052283] i2c i2c-0: Unsupported transaction 8
+[ 2102.508902] i2c i2c-0: Unsupported transaction 7
+[ 2102.569248] i2c i2c-0: Unsupported transaction 7
+[ 2110.311642] i2c i2c-0: Unsupported transaction 7
+[ 2118.041590] FAULT_INJECTION: forcing a failure.
+[ 2118.041590] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2118.047525] CPU: 1 UID: 0 PID: 11513 Comm: syz.3.3124 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[ 2118.047536] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2118.047541] Call Trace:
+[ 2118.047544]  <TASK>
+[ 2118.047548]  dump_stack_lvl+0x10b/0x140
+[ 2118.047563]  should_fail_ex+0x4d5/0x5e0
+[ 2118.047573]  _copy_from_user+0x30/0xd0
+[ 2118.047585]  ioctl_fssetxattr+0x110/0x250
+[ 2118.047611]  ? __pfx_ioctl_fssetxattr+0x10/0x10
+[ 2118.047622]  ? lock_acquire+0x169/0x300
+[ 2118.047633]  ? find_held_lock+0x2b/0x80
+[ 2118.047641]  ? finish_task_switch.isra.0+0x20f/0x850
+[ 2118.047664]  ? lock_release+0xd3/0x2a0
+[ 2118.047676]  do_vfs_ioctl+0xbf7/0x1470
+[ 2118.047708]  ? __pfx_do_vfs_ioctl+0x10/0x10
+[ 2118.047717]  ? ioctl_has_perm.constprop.0.isra.0+0x346/0x4f0
+[ 2118.047733]  ? __pfx_ioctl_has_perm.constprop.0.isra.0+0x10/0x10
+[ 2118.047743]  ? lock_acquire+0x169/0x300
+[ 2118.047752]  ? __fget_files+0x3a/0x3b0
+[ 2118.047759]  ? find_held_lock+0x2b/0x80
+[ 2118.047766]  ? __fget_files+0x1f6/0x3b0
+[ 2118.047773]  ? lock_release+0xd3/0x2a0
+[ 2118.047784]  ? selinux_file_ioctl+0x18c/0x280
+[ 2118.047791]  ? selinux_file_ioctl+0xbe/0x280
+[ 2118.047800]  __x64_sys_ioctl+0x11b/0x210
+[ 2118.047811]  do_syscall_64+0xc6/0x390
+[ 2118.047822]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2118.047829] RIP: 0033:0x7f00eed6059d
+[ 2118.047836] Code: 02 b8 ff ff ff ff c3 66 0f 1f 44 00 00 f3 0f 1e fa 48 89 f8 48 89 f7 48 89 d6 48 89 ca 4d 89 c2 4d 89 c8 4c 8b 4c 24 08 0f 05 <48> 3d 01 f0 ff ff 73 01 c3 48 c7 c1 a8 ff ff ff f7 d8 64 89 01 48
+[ 2118.047870] RSP: 002b:00007f00ed7a6f98 EFLAGS: 00000246 ORIG_RAX: 0000000000000010
+[ 2118.047882] RAX: ffffffffffffffda RBX: 00007f00eefd5fa0 RCX: 00007f00eed6059d
+[ 2118.047889] RDX: 0000200000000080 RSI: 00000000401c5820 RDI: 0000000000000003
+[ 2118.047896] RBP: 00007f00ed7a7010 R08: 0000000000000000 R09: 0000000000000000
+[ 2118.047903] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2118.047908] R13: 00007f00eefd6038 R14: 00007f00eefd5fa0 R15: 00007f00ed787000
+[ 2118.047919]  </TASK>
+[ 2132.728488] i2c i2c-0: Unsupported transaction 8
+[ 2132.731201] i2c i2c-0: Unsupported transaction 8
+[ 2132.735165] i2c i2c-0: Unsupported transaction 4
+[ 2132.738326] i2c i2c-0: Unsupported transaction 4
+[ 2141.565533] i2c i2c-0: Unsupported transaction 7
+[ 2141.569213] i2c i2c-0: Unsupported transaction 8
+[ 2141.574482] i2c i2c-0: Unsupported transaction 8
+[ 2155.896326] i2c i2c-0: Unsupported transaction 7
+[ 2155.950782] i2c i2c-0: Unsupported transaction 8
+[ 2163.487408] i2c i2c-0: Unsupported transaction 4
+[ 2171.170507] i2c i2c-0: Unsupported transaction 4
+[ 2171.209468] i2c i2c-0: Unsupported transaction 8
+[ 2178.965555] i2c i2c-0: Unsupported transaction 8
+[ 2178.968123] i2c i2c-0: Unsupported transaction 4
+[ 2179.017375] i2c i2c-0: Unsupported transaction 4
+[ 2186.677038] i2c i2c-0: Unsupported transaction 8
+[ 2186.725985] i2c i2c-0: Unsupported transaction 4
+[ 2194.598745] i2c i2c-0: Unsupported transaction 8
+[ 2202.428585] i2c i2c-0: Unsupported transaction 7
+[ 2202.450578] i2c i2c-0: Unsupported transaction 7
+[ 2202.470936] i2c i2c-0: Unsupported transaction 8
+[ 2209.224673] i2c i2c-0: Unsupported transaction 4
+[ 2215.662764] i2c i2c-0: Unsupported transaction 7
+[ 2215.699645] i2c i2c-0: Unsupported transaction 7
+[ 2215.704567] i2c i2c-0: Unsupported transaction 7
+[ 2215.709425] i2c i2c-0: Unsupported transaction 8
+[ 2215.745074] i2c i2c-0: Unsupported transaction 4
+[ 2223.344774] i2c i2c-0: Unsupported transaction 7
+[ 2223.361830] i2c i2c-0: Unsupported transaction 7
+[ 2231.060273] i2c i2c-0: Unsupported transaction 7
+[ 2246.984208] i2c i2c-0: Unsupported transaction 8
+[ 2246.993646] i2c i2c-0: Unsupported transaction 7
+[ 2247.031556] i2c i2c-0: Unsupported transaction 8
+[ 2247.052173] i2c i2c-0: Unsupported transaction 8
+[ 2263.428300] i2c i2c-0: Unsupported transaction 4
+[ 2263.430659] i2c i2c-0: Unsupported transaction 8
+[ 2263.473835] i2c i2c-0: Unsupported transaction 8
+[ 2271.417286] i2c i2c-0: Unsupported transaction 8
+[ 2279.593039] i2c i2c-0: Unsupported transaction 4
+[ 2287.447419] i2c i2c-0: Unsupported transaction 4
+[ 2287.449014] i2c i2c-0: Unsupported transaction 8
+[ 2287.451575] i2c i2c-0: Unsupported transaction 8
+[ 2287.454511] i2c i2c-0: Unsupported transaction 8
+[ 2287.457618] i2c i2c-0: Unsupported transaction 7
+[ 2287.460720] i2c i2c-0: Unsupported transaction 7
+[ 2294.006491] i2c i2c-0: Unsupported transaction 8
+[ 2302.276734] i2c i2c-0: Unsupported transaction 8
+[ 2302.318970] i2c i2c-0: Unsupported transaction 7
+[ 2310.421366] i2c i2c-0: Unsupported transaction 7
+[ 2324.455462] i2c i2c-0: Unsupported transaction 7
+[ 2348.179256] i2c i2c-0: Unsupported transaction 4
+[ 2356.102733] i2c i2c-0: Unsupported transaction 8
+[ 2356.109420] i2c i2c-0: Unsupported transaction 4
+[ 2356.114691] i2c i2c-0: Unsupported transaction 7
+[ 2356.120304] i2c i2c-0: Unsupported transaction 8
+[ 2363.907613] i2c i2c-0: Unsupported transaction 8
+[ 2363.910475] i2c i2c-0: Unsupported transaction 7
+[ 2363.916356] i2c i2c-0: Unsupported transaction 8
+[ 2363.919307] i2c i2c-0: Unsupported transaction 8
+[ 2371.497398] i2c i2c-0: Unsupported transaction 8
+[ 2371.499212] i2c i2c-0: Unsupported transaction 7
+[ 2379.209666] i2c i2c-0: Unsupported transaction 7
+[ 2387.232338] i2c i2c-0: Unsupported transaction 8
+[ 2387.236512] i2c i2c-0: Unsupported transaction 8
+[ 2402.612481] i2c i2c-0: Unsupported transaction 8
+[ 2402.641287] i2c i2c-0: Unsupported transaction 7
+[ 2402.686824] i2c i2c-0: Unsupported transaction 4
+[ 2402.689597] i2c i2c-0: Unsupported transaction 4
+[ 2410.896637] i2c i2c-0: Unsupported transaction 7
+[ 2410.899505] i2c i2c-0: Unsupported transaction 4
+[ 2410.903637] i2c i2c-0: Unsupported transaction 7
+[ 2418.898809] i2c i2c-0: Unsupported transaction 8
+[ 2418.928678] i2c i2c-0: Unsupported transaction 4
+[ 2418.949951] i2c i2c-0: Unsupported transaction 8
+[ 2426.883486] i2c i2c-0: Unsupported transaction 7
+[ 2426.891876] FAULT_INJECTION: forcing a failure.
+[ 2426.891876] name fail_usercopy, interval 1, probability 0, space 0, times 0
+[ 2426.900732] CPU: 3 UID: 0 PID: 12291 Comm: syz.2.3443 Not tainted 6.18.0 #3 PREEMPT(voluntary) 
+[ 2426.900752] Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS rel-1.16.3-0-ga6ed6b701f0a-prebuilt.qemu.org 04/01/2014
+[ 2426.900778] Call Trace:
+[ 2426.900826]  <TASK>
+[ 2426.900834]  dump_stack_lvl+0x10b/0x140
+[ 2426.901123]  should_fail_ex+0x4d5/0x5e0
+[ 2426.901217]  _copy_to_user+0x32/0xd0
+[ 2426.901289]  simple_read_from_buffer+0xe5/0x180
+[ 2426.901368]  proc_fail_nth_read+0x18f/0x240
+[ 2426.901437]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2426.901454]  ? security_file_permission+0x27/0x90
+[ 2426.901507]  ? __pfx_proc_fail_nth_read+0x10/0x10
+[ 2426.901535]  vfs_read+0x1eb/0xc70
+[ 2426.901578]  ? __pfx___mutex_lock+0x10/0x10
+[ 2426.901610]  ? __pfx_vfs_read+0x10/0x10
+[ 2426.901623]  ? __fget_files+0x1f6/0x3b0
+[ 2426.901646]  ? lock_release+0xd3/0x2a0
+[ 2426.901719]  ? __fget_files+0x200/0x3b0
+[ 2426.901741]  ksys_read+0x126/0x240
+[ 2426.901755]  ? __pfx_ksys_read+0x10/0x10
+[ 2426.901770]  ? fput+0x6f/0x100
+[ 2426.901791]  do_syscall_64+0xc6/0x390
+[ 2426.901829]  entry_SYSCALL_64_after_hwframe+0x77/0x7f
+[ 2426.901884] RIP: 0033:0x7fc50667ef6c
+[ 2426.901928] Code: ec 28 48 89 54 24 18 48 89 74 24 10 89 7c 24 08 e8 09 0e 03 00 48 8b 54 24 18 48 8b 74 24 10 41 89 c0 8b 7c 24 08 31 c0 0f 05 <48> 3d 00 f0 ff ff 77 34 44 89 c7 48 89 44 24 08 e8 4f 0e 03 00 48
+[ 2426.901958] RSP: 002b:00007fc5050c6f90 EFLAGS: 00000246 ORIG_RAX: 0000000000000000
+[ 2426.901982] RAX: ffffffffffffffda RBX: 00007fc5068f5fa0 RCX: 00007fc50667ef6c
+[ 2426.901991] RDX: 000000000000000f RSI: 00007fc5050c7020 RDI: 0000000000000004
+[ 2426.902000] RBP: 00007fc5050c7010 R08: 0000000000000000 R09: 0000000000000000
+[ 2426.902009] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000001
+[ 2426.902029] R13: 00007fc5068f6038 R14: 00007fc5068f5fa0 R15: 00007fc5050a7000
+[ 2426.902052]  </TASK>
+[ 2426.974168] i2c i2c-0: Unsupported transaction 8
+[ 2427.002546] i2c i2c-0: Unsupported transaction 8
+[ 2433.775671] i2c i2c-0: Unsupported transaction 8
+[ 2433.780737] i2c i2c-0: Unsupported transaction 7
+[ 2433.802760] i2c i2c-0: Unsupported transaction 8
+[ 2433.810682] i2c i2c-0: Unsupported transaction 8
+[ 2441.171393] i2c i2c-0: Unsupported transaction 8
+[ 2441.177759] i2c i2c-0: Unsupported transaction 7
+[ 2449.508178] i2c i2c-0: Unsupported transaction 4
+[ 2449.521070] i2c i2c-0: Unsupported transaction 4
+[ 2463.892509] i2c i2c-0: Unsupported transaction 7
+[ 2463.923965] i2c i2c-0: Unsupported transaction 4
+[ 2479.128498] i2c i2c-0: Unsupported transaction 8
+[ 2487.234433] i2c i2c-0: Unsupported transaction 8
+[ 2495.031962] i2c i2c-0: Unsupported transaction 4
+[ 2495.039533] i2c i2c-0: Unsupported transaction 4
+[ 2495.055592] i2c i2c-0: Unsupported transaction 8
+[ 2501.874267] i2c i2c-0: Unsupported transaction 8
+[ 2501.883450] i2c i2c-0: Unsupported transaction 8
+[ 2509.826671] i2c i2c-0: Unsupported transaction 7
+[ 2509.830245] i2c i2c-0: Unsupported transaction 8
+[ 2517.812838] i2c i2c-0: Unsupported transaction 8
+[ 2517.853554] i2c i2c-0: Unsupported transaction 8
+[ 2517.859557] i2c i2c-0: Unsupported transaction 8
+[ 2525.890381] i2c i2c-0: Unsupported transaction 8
+[ 2525.897702] i2c i2c-0: Unsupported transaction 4
+[ 2532.899826] i2c i2c-0: Unsupported transaction 8
+[ 2532.930258] i2c i2c-0: Unsupported transaction 8
+[ 2532.932411] i2c i2c-0: Unsupported transaction 8
+[ 2532.937476] i2c i2c-0: Unsupported transaction 8
+[ 2539.918381] i2c i2c-0: Unsupported transaction 7
+[ 2546.879817] i2c i2c-0: Unsupported transaction 4
+[ 2554.174262] i2c i2c-0: Unsupported transaction 7
+[ 2554.192838] i2c i2c-0: Unsupported transaction 8
+[ 2554.204852] i2c i2c-0: Unsupported transaction 8
+[ 2561.588787] i2c i2c-0: Unsupported transaction 4
+[ 2561.596212] i2c i2c-0: Unsupported transaction 7
+[ 2576.305915] i2c i2c-0: Unsupported transaction 7
+[ 2576.371523] i2c i2c-0: Unsupported transaction 7
+[ 2584.288747] i2c i2c-0: Unsupported transaction 8
+[ 2584.314537] i2c i2c-0: Unsupported transaction 7
+[ 2584.321227] i2c i2c-0: Unsupported transaction 8
+[ 2584.323190] i2c i2c-0: Unsupported transaction 8
+[ 2592.326196] i2c i2c-0: Unsupported transaction 7
+[ 2592.347572] i2c i2c-0: Unsupported transaction 7
+[ 2599.569483] i2c i2c-0: Unsupported transaction 8
+[ 2605.983602] i2c i2c-0: Unsupported transaction 4
+[ 2606.014174] i2c i2c-0: Unsupported transaction 7
+[ 2606.026520] i2c i2c-0: Unsupported transaction 8
+[ 2614.019731] i2c i2c-0: Unsupported transaction 8
+[ 2614.055316] i2c i2c-0: Unsupported transaction 8
+[ 2614.066528] i2c i2c-0: Unsupported transaction 8
+[ 2622.154396] i2c i2c-0: Unsupported transaction 4
+[ 2629.454564] i2c i2c-0: Unsupported transaction 8
+[ 2637.593703] i2c i2c-0: Unsupported transaction 7
+[ 2637.598655] i2c i2c-0: Unsupported transaction 4
+[ 2644.671812] i2c i2c-0: Unsupported transaction 4
+[ 2644.676946] i2c i2c-0: Unsupported transaction 8
+[ 2644.690368] i2c i2c-0: Unsupported transaction 8
+[ 2644.697318] i2c i2c-0: Unsupported transaction 4
+[ 2668.360730] i2c i2c-0: Unsupported transaction 4
+[ 2668.365327] i2c i2c-0: Unsupported transaction 8
+[ 2668.392270] i2c i2c-0: Unsupported transaction 7
+[ 2677.719569] i2c i2c-0: Unsupported transaction 8
+[ 2677.730445] i2c i2c-0: Unsupported transaction 8
+[ 2688.152572] i2c i2c-0: Unsupported transaction 7
+[ 2696.586744] i2c i2c-0: Unsupported transaction 8
+[ 2696.643198] i2c i2c-0: Unsupported transaction 7
+[ 2696.650495] i2c i2c-0: Unsupported transaction 7
+[ 2696.654954] i2c i2c-0: Unsupported transaction 7
+[ 2696.657805] i2c i2c-0: Unsupported transaction 7
+[ 2696.661002] i2c i2c-0: Unsupported transaction 7
+[ 2696.664711] i2c i2c-0: Unsupported transaction 7
+[ 2696.668922] i2c i2c-0: Unsupported transaction 7
+[ 2696.672558] i2c i2c-0: Unsupported transaction 7
+[ 2696.676002] i2c i2c-0: Unsupported transaction 7
+[ 2696.679521] i2c i2c-0: Unsupported transaction 7
+[ 2696.683701] i2c i2c-0: Unsupported transaction 7
+[ 2696.686904] i2c i2c-0: Unsupported transaction 7
+[ 2696.688974] i2c i2c-0: Unsupported transaction 7
+[ 2696.691794] i2c i2c-0: Unsupported transaction 7
+[ 2696.694021] i2c i2c-0: Unsupported transaction 7
+[ 2696.696087] i2c i2c-0: Unsupported transaction 7
+[ 2696.699434] i2c i2c-0: Unsupported transaction 7
+[ 2696.702206] i2c i2c-0: Unsupported transaction 7
+[ 2696.705506] i2c i2c-0: Unsupported transaction 7
+[ 2696.708312] i2c i2c-0: Unsupported transaction 7
+[ 2696.713261] i2c i2c-0: Unsupported transaction 7
+[ 2696.717054] i2c i2c-0: Unsupported transaction 7
+[ 2696.721856] i2c i2c-0: Unsupported transaction 7
+[ 2696.724650] i2c i2c-0: Unsupported transaction 7
+[ 2696.727011] i2c i2c-0: Unsupported transaction 7
+[ 2696.729841] i2c i2c-0: Unsupported transaction 7
+[ 2696.732406] i2c i2c-0: Unsupported transaction 7
+[ 2696.734640] i2c i2c-0: Unsupported transaction 7
+[ 2696.737397] i2c i2c-0: Unsupported transaction 7
+[ 2696.740431] i2c i2c-0: Unsupported transaction 7
+[ 2696.743154] i2c i2c-0: Unsupported transaction 7
+[ 2696.746030] i2c i2c-0: Unsupported transaction 7
+[ 2696.749192] i2c i2c-0: Unsupported transaction 7
+[ 2705.411555] i2c i2c-0: Unsupported transaction 4
+[ 2705.451863] i2c i2c-0: Unsupported transaction 8
+[ 2705.461703] i2c i2c-0: Unsupported transaction 7
+[ 2705.465635] i2c i2c-0: Unsupported transaction 8
+[ 2713.526746] i2c i2c-0: Unsupported transaction 7
+[ 2713.556893] i2c i2c-0: Unsupported transaction 4
+[ 2713.567609] i2c i2c-0: Unsupported transaction 7
+[ 2713.570930] i2c i2c-0: Unsupported transaction 8
+[ 2713.612199] i2c i2c-0: Unsupported transaction 8
+[ 2722.899337] i2c i2c-0: Unsupported transaction 4
+[ 2722.922036] i2c i2c-0: Unsupported transaction 4
+[ 2723.007044] i2c i2c-0: Unsupported transaction 8
+[ 2731.373063] i2c i2c-0: Unsupported transaction 8
+[ 2731.382574] i2c i2c-0: Unsupported transaction 8
+[ 2740.937120] i2c i2c-0: Unsupported transaction 8
+[ 2740.956197] i2c i2c-0: Unsupported transaction 8
+[ 2761.669087] i2c i2c-0: Unsupported transaction 7
+[ 2761.699382] i2c i2c-0: Unsupported transaction 8
+[ 2769.294208] i2c i2c-0: Unsupported transaction 8
+[ 2769.301960] i2c i2c-0: Unsupported transaction 8
+[ 2769.305946] i2c i2c-0: Unsupported transaction 4
+[ 2769.312970] i2c i2c-0: Unsupported transaction 8
+[ 2769.320028] i2c i2c-0: Unsupported transaction 4
+[ 2769.325944] i2c i2c-0: Unsupported transaction 4
+[ 2769.331768] i2c i2c-0: Unsupported transaction 8
+[ 2769.340540] i2c i2c-0: Unsupported transaction 4
+[ 2777.050064] i2c i2c-0: Unsupported transaction 4
+[ 2777.068659] i2c i2c-0: Unsupported transaction 8
+[ 2777.084085] i2c i2c-0: Unsupported transaction 8
+[ 2794.866373] i2c i2c-0: Unsupported transaction 8
+[ 2794.882281] i2c i2c-0: Unsupported transaction 8
+[ 2794.913831] i2c i2c-0: Unsupported transaction 8
+[ 2794.922352] i2c i2c-0: Unsupported transaction 8
+[ 2794.936302] i2c i2c-0: Unsupported transaction 8
+[ 2794.953953] i2c i2c-0: Unsupported transaction 4
+[ 2804.686553] i2c i2c-0: Unsupported transaction 7
+[ 2819.896870] i2c i2c-0: Unsupported transaction 7
+[ 2819.907004] i2c i2c-0: Unsupported transaction 7
+[ 2828.706319] i2c i2c-0: Unsupported transaction 8
+[ 2828.709718] i2c i2c-0: Unsupported transaction 8
+[ 2843.803565] i2c i2c-0: Unsupported transaction 8
+[ 2843.812879] i2c i2c-0: Unsupported transaction 7
+[ 2843.832738] i2c i2c-0: Unsupported transaction 8
+[ 2851.079972] i2c i2c-0: Unsupported transaction 8
+[ 2851.108409] i2c i2c-0: Unsupported transaction 4
+[ 2857.410626] i2c i2c-0: Unsupported transaction 8
+[ 2857.430385] i2c i2c-0: Unsupported transaction 8
+[ 2864.694826] i2c i2c-0: Unsupported transaction 4
+[ 2871.683498] i2c i2c-0: Unsupported transaction 7
+[ 2871.725521] i2c i2c-0: Unsupported transaction 7
+[ 2879.779754] i2c i2c-0: Unsupported transaction 8
+[ 2879.782315] i2c i2c-0: Unsupported transaction 4
+[ 2889.020799] i2c i2c-0: Unsupported transaction 7
+[ 2889.071418] i2c i2c-0: Unsupported transaction 4
+[ 2895.379401] i2c i2c-0: Unsupported transaction 8
+[ 2895.381188] i2c i2c-0: Unsupported transaction 4
+[ 2895.387241] i2c i2c-0: Unsupported transaction 4
+[ 2903.579710] i2c i2c-0: Unsupported transaction 4
+[ 2910.693621] i2c i2c-0: Unsupported transaction 4
+[ 2918.775833] i2c i2c-0: Unsupported transaction 8
+[ 2918.796622] i2c i2c-0: Unsupported transaction 7
+[ 2918.822591] i2c i2c-0: Unsupported transaction 8
+[ 2926.810331] i2c i2c-0: Unsupported transaction 8
+[ 2926.815872] i2c i2c-0: Unsupported transaction 4
+[ 2926.819985] i2c i2c-0: Unsupported transaction 4
+[ 2926.823281] i2c i2c-0: Unsupported transaction 8
+[ 2926.838010] i2c i2c-0: Unsupported transaction 8
+[ 2926.848721] i2c i2c-0: Unsupported transaction 4
+[ 2926.856598] i2c i2c-0: Unsupported transaction 7
+[ 2934.071181] i2c i2c-0: Unsupported transaction 8
+[ 2941.005854] i2c i2c-0: Unsupported transaction 7
+[ 2941.038321] i2c i2c-0: Unsupported transaction 8
+
+VM DIAGNOSIS:
+03:45:55  Registers:
+info registers vcpu 0
+
+CPU#0
+RAX=ffffffff8702c900 RBX=0000000000000000 RCX=00000000004fcdad RDX=00000000004fcdae
+RSI=0000000000000000 RDI=ffffffff85c4c33f RBP=ffffffff87007d68 RSP=ffffffff87007d40
+R8 =0000000000000000 R9 =0000000000000000 R10=0000000000000000 R11=0000000000000000
+R12=0000000000000000 R13=0000000000000000 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff85c76960 RFL=00010002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff88819123f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000003000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000001000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f7974a07fa4 CR3=0000000111f90000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000001 XMM01=00007f797a3cc140 00007f797a3cc140
+XMM02=0000000000000000 00005555934e4e10 XMM03=0606011ac0000200 0710a0821000049d
+XMM04=bffe1000108188d4 8008000100000408 XMM05=0000000000000000 00007f797a3cbac0
+XMM06=01080006011abe10 80808fffbffe1000 XMM07=108188d480080001 000004080606011a
+XMM08=c00002000710a082 1000049db4100000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 1
+
+CPU#1
+RAX=0000000000000001 RBX=0000000000000001 RCX=ffffffff8180fce6 RDX=fffffbfff0fb7d4b
+RSI=0000000000000008 RDI=ffffffff87dbea50 RBP=ffffffff872fcb20 RSP=ffff888104cb7c10
+R8 =0000000000000000 R9 =fffffbfff0fb7d4a R10=ffffffff87dbea57 R11=0000000000000000
+R12=0000000000140000 R13=ffff88813fff9d00 R14=ffffea0004dfed80 R15=0000000000000001
+RIP=ffffffff85c76960 RFL=00010046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 00005555934c0500 ffffffff 00c00100
+GS =0000 ffff8881912bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe000004a000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe0000048000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f8e572b64d0 CR3=0000000111f90000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000001 XMM01=00007f797a3cc140 00007f797a3cc140
+XMM02=0000000000000000 00005555934e4e10 XMM03=0606011ac0000200 0710a0821000049d
+XMM04=bffe1000108188d4 8008000100000408 XMM05=0000000000000000 00007f797a3cbac0
+XMM06=01080006011abe10 80808fffbffe1000 XMM07=108188d480080001 000004080606011a
+XMM08=c00002000710a082 1000049db4100000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 2
+
+CPU#2
+RAX=0000000080010001 RBX=0000000000000000 RCX=ffffffff81677964 RDX=ffff888100c14f80
+RSI=0000000000000000 RDI=0000000000000005 RBP=ffff88811ab24740 RSP=ffff88811ab08ed0
+R8 =0000000000000001 R9 =0000000000000001 R10=0000000000000000 R11=0000000000000001
+R12=0000000000000000 R13=0000000000000000 R14=0000000000000000 R15=ffff88811ab29100
+RIP=ffffffff85c76960 RFL=00010046 [---Z-P-] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff88819133f000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe0000091000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe000008f000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00007f8e5725ee70 CR3=0000000106062000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000000 XMM01=0000000000000000 0000000000000000
+XMM02=ffffffffffff0000 0000000000000000 XMM03=ffffffffffffffff ffffffffffffffff
+XMM04=0000000000000000 0000000000000000 XMM05=00000000695eab71 00000000164433c9
+XMM06=00000000695eab71 00000000164433c9 XMM07=0000000000000000 00000000164433c9
+XMM08=3abfad20abb38500 000000000048b6b8 XMM09=0000000000ffff00 ffffff000000ffff
+XMM10=0000002000000000 0000000000000000 XMM11=ffffffffffff00ff ffffffffffffffff
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
+info registers vcpu 3
+
+CPU#3
+RAX=ffff888100ca8000 RBX=0000000000000000 RCX=000000000055c6ad RDX=000000000055c6ae
+RSI=0000000000000000 RDI=ffffffff85c4c33f RBP=ffff888100cb7db8 RSP=ffff888100cb7d90
+R8 =0000000000000000 R9 =0000000000000000 R10=0000000000000000 R11=0000000000000000
+R12=0000000000000000 R13=0000000000000000 R14=0000000000000000 R15=0000000000000000
+RIP=ffffffff85c76960 RFL=00010002 [-------] CPL=0 II=0 A20=1 SMM=0 HLT=0
+ES =0000 0000000000000000 ffffffff 00c00100
+CS =0010 0000000000000000 ffffffff 00a09b00 DPL=0 CS64 [-RA]
+SS =0018 0000000000000000 ffffffff 00c09300 DPL=0 DS   [-WA]
+DS =0000 0000000000000000 ffffffff 00c00100
+FS =0000 0000000000000000 ffffffff 00c00100
+GS =0000 ffff8881913bf000 ffffffff 00c00100
+LDT=0000 0000000000000000 ffffffff 00c00000
+TR =0040 fffffe00000d8000 00004087 00008b00 DPL=0 TSS64-busy
+GDT=     fffffe00000d6000 0000007f
+IDT=     fffffe0000000000 00000fff
+CR0=80050033 CR2=00005555575e1518 CR3=0000000111f90000 CR4=000006f0
+DR0=0000000000000000 DR1=0000000000000000 DR2=0000000000000000 DR3=0000000000000000 
+DR6=00000000ffff0ff0 DR7=0000000000000400
+EFER=0000000000000d01
+FCW=037f FSW=0000 [ST=0] FTW=00 MXCSR=00001f80
+FPR0=0000000000000000 0000 FPR1=0000000000000000 0000
+FPR2=0000000000000000 0000 FPR3=0000000000000000 0000
+FPR4=0000000000000000 0000 FPR5=0000000000000000 0000
+FPR6=0000000000000000 0000 FPR7=0000000000000000 0000
+XMM00=0000000000000000 0000000000000000 XMM01=2525252525252525 2525252525252525
+XMM02=0000000000000000 00007ffcc8ea2d30 XMM03=0000000000000000 0000000000000000
+XMM04=0000000000000000 00000000000000ff XMM05=0000000000000000 0000000000000000
+XMM06=0000000000000000 0000000000000000 XMM07=0000000000000000 0000000000000000
+XMM08=0000000000000000 0000000000000000 XMM09=0000000000000000 0000000000000000
+XMM10=0000000000000000 0000000000000000 XMM11=0000000000000000 0000000000000000
+XMM12=0000000000000000 0000000000000000 XMM13=0000000000000000 0000000000000000
+XMM14=0000000000000000 0000000000000000 XMM15=0000000000000000 0000000000000000
