@@ -3,5 +3,5 @@
     "pre_code": "",
     "post_code": "",
     "modified_location": "",
-    "modify_details": "- 修正BAR配置：\n     - 将BAR 0改为PIO类型\n     - 添加BAR 1作为MMIO类型\n     - 将 num_bars 从1改为2\n   - 实现PIO读写处理：\n     - 实现了完整的 pcibase_pio_read 函数\n     - 实现了完整的 pcibase_pio_write 函数\n     - 支持所有关键寄存器的读写操作\n   - 修正寄存器偏移量：\n     - 将所有寄存器偏移量与Linux驱动中的定义对齐\n     - 确保Cmd、IntrMask、IntrStatus、CpCmd等关键寄存器位置正确"
+    "modify_details": "- Corrected BAR configuration:\n - Changed BAR 0 to PIO type\n - Added BAR 1 as MMIO type\n - Changed num_bars from 1 to 2\n - Implemented PIO read/write handling:\n - Implemented a complete pcibase_pio_read function\n - Implemented a complete pcibase_pio_write function\n - Supported read and write operations for all key registers\n - Corrected register offsets:\n - Aligned all register offsets with the definitions in the Linux driver\n - Ensured correct positions for key registers such as Cmd, IntrMask, IntrStatus, and CpCmd"
 }

@@ -1,7 +1,0 @@
-{
-    "err_info": "[  125.799411] ahci 0000:00:04.0: probe with driver ahci failed with error -12",
-    "pre_code": "        s->bar_info[5].index = 5;\n        s->bar_info[5].type = BAR_TYPE_MMIO;\n        s->bar_info[5].size = 4096; /* Standard AHCI BAR size */\n        s->bar_info[5].name = \"ahci-mmio\";",
-    "post_code": "        s->bar_info[0].index = 5;\n        s->bar_info[0].type = BAR_TYPE_MMIO;\n        s->bar_info[0].size = 4096; /* Standard AHCI BAR size */\n        s->bar_info[0].name = \"ahci-mmio\";",
-    "modified_location": "change bar_info[5] to bar_info[0]",
-    "modify_details": "- 错误码分析 ： -12 = ENOMEM → 资源分配失败\n   - 定位代码 ：在 pcim_iomap 处失败 → BAR映射失败\n   - 查找驱动期望 ： AHCI_PCI_BAR_STANDARD = 5 → 驱动要BAR 5\n   - 发现QEMU Bug ：设置了 bar_info[5] 但循环用 bar_info[0] → BAR未注册\n   - 理解逻辑 ：数组索引 ≠ PCI BAR编号\n   - 修复问题 ： bar_info[0].index = 5 → 正确注册BAR 5"
-}
