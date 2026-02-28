@@ -1,26 +1,26 @@
 #  LLM-Guided Device Modeling
 - **Install clangd tool：`sudo apt install clangd`**
 - **Modify configuration information:`vdm/config/default.yaml`**
-    - `data_path`：
-    - `logs_path`:
-    - `device_code_path`:
-    - `qemu_hw_fack_pci_path`:
-    - `qemu_run_dir`:
-    - `driver_name_case_mapping_path`:
-    - `qemu_kernel_bzImage_path`:
-    - `qemu_image_path`:
-    - `qemu_log_path`:
-    - `qemu_out_share_path`:
-    - `qemu_out_shares_path`:
-    - `qemu-system-x86_64_path`:
-    - `qemu_rum_template_path`:
-    - `qemu_build_static_path`:
-    - `qemu_build_path`:
-    - `linux_path_prefix`:
-    - `step4_examples_path`:
-    - `db_path`:
-    - `qemu_build_sh_path`:
-    - `id_rsa_path`:
-- **Loading the static analysis content into the database `load_db.py` script. **
+    - `data_path`: Path to store static analysis content
+    - `logs_path`: Path to store logs
+    - `device_code_path`: Directory to store the final device code
+    - `qemu_hw_fack_pci_path`: Location in the QEMU project where device code is stored
+    - `qemu_run_dir`: Directory to run QEMU
+    - `driver_name_case_mapping_path`: Driver name case mapping file
+    - `qemu_kernel_bzImage_path`: Kernel path used by QEMU
+    - `qemu_image_path`: Image path used by QEMU
+    - `qemu_log_path`: QEMU log path
+    - `qemu_out_share_path`: QEMU shared directory path
+    - `qemu_out_shares_path`: QEMU shared directory path
+    - `qemu-system-x86_64_path`: Path to the `qemu-system-x86_64` executable
+    - `qemu_rum_template_path`: Script template path for launching QEMU
+    - `qemu_build_static_path`: QEMU static build path, used for `clangd` error checking
+    - `qemu_build_path`: QEMU build path
+    - `linux_path_prefix`: Linux source path prefix in static analysis content
+    - `step4_examples_path`: Path to save repair examples from Step 4
+    - `db_path`: Database path
+    - `qemu_build_sh_path`: Script path for building QEMU
+    - `id_rsa_path`: Private key path for remote login to QEMU
+- **Loading the static analysis content into the database `load_db.py` script.**
 - **Execute the command in the root directory:`uv run load_db.py`**
 - **Execute in the root directory:`uv run src/vdm/main.py`**
