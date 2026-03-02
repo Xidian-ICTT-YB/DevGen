@@ -22,10 +22,16 @@ The core stage of **DevGen** mainly involves using LLM to guide the generation o
 ## Bug status
 | Crash                                      | Device  | LLM-Qwen  | LLM-GPT-5.1   |   LLM-Gemini   | Status |
 |--------------------------------------------|--------------|-------------|----------|----------|---------------|            
-| `WARNING in drm_gem_release`                 | `bochs-drm`    | ✓           | ✓        | ☓        | CVE-2026-23149|
-| `WARNING in idr_alloc`                       | `intel-qep`    | ☓           | ✓        | ✓        | CVE-2026-23149|
+| `WARNING in drm_gem_release`                 | `bochs-drm`    | ✓           | ✓        | ☓        | [CVE-2026-23149](https://www.cve.org/CVERecord?id=CVE-2026-23149)|
+| `WARNING in idr_alloc`                       | `intel-qep`    | ☓           | ✓        | ✓        | [CVE-2026-23149](https://www.cve.org/CVERecord?id=CVE-2026-23149)|
 | `KASAN: UAF read in adf_dev_up`              | `c6xxvf`       | ✓           | ☓        | ☓        | Confirmed     |
 | `general protection fault in h5_recv`        | `8250_lpss`    | ✓           | ☓        | ✓        | Confirmed     |
 | `INFO: rcu detected stall in sys_mmap`       | `pci-tng`      | ✓           | ☓        | ☓        | New           |
 | `INFO: rcu detected stall in do_idle`        | `wdt_pci`      | ☓           | ☓        | ✓        | New           |
 | `INFO: task hung in i2c_smbus_xfer`          | `bttv`         | ✓           | ✓        | ✓        | New           |
+
+## Experimental Results
+
+For detailed experimental data, please refer to [Detailed Experimental Results](https://365.kdocs.cn/l/cgIgQHBxHmhB?kmonFrom=k_Share_FileList&from=kdocs_pc_web&startTime=1772418180736&traceparent=00-00b88812dd73a65ffe1beb5533ed9027-8889954fd88680b6-01-10).
+
+For all crash artifacts and reproduction materials, please refer to [DevGen Crash Reports](https://github.com/Wmingyu/Crashes).
