@@ -18,3 +18,14 @@ The core stage of **DevGen** mainly involves using LLM to guide the generation o
 
 1. We have placed all the configurations that **DevGen** needs during its execution in the `config` directory.
 2. The `result` directory contains the results of different model simulations as well as coverage and crash information.
+
+## Bug status
+| Crash                                      | Device  | LLM-Qwen  | LLM-GPT-5.1   |   LLM-Gemini   | Status |
+|--------------------------------------------|--------------|-------------|----------|----------|---------------|            
+| `WARNING in drm_gem_release`                 | `bochs-drm`    | ✓           | ✓        | ☓        | CVE-2026-23149|
+| `WARNING in idr_alloc`                       | `intel-qep`    | ☓           | ✓        | ✓        | CVE-2026-23149|
+| `KASAN: UAF read in adf_dev_up`              | `c6xxvf`       | ✓           | ☓        | ☓        | Confirmed     |
+| `general protection fault in h5_recv`        | `8250_lpss`    | ✓           | ☓        | ✓        | Confirmed     |
+| `INFO: rcu detected stall in sys_mmap`       | `pci-tng`      | ✓           | ☓        | ☓        | New           |
+| `INFO: rcu detected stall in do_idle`        | `wdt_pci`      | ☓           | ☓        | ✓        | New           |
+| `INFO: task hung in i2c_smbus_xfer`          | `bttv`         | ✓           | ✓        | ✓        | New           |
