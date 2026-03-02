@@ -11,7 +11,7 @@ from threading import Timer, Thread
 from copy import deepcopy
 
 # =========================
-# 路径配置
+# config path
 # =========================
 FUZZ_PATH = "config/gpt-5.1-reproduce.json"
 ENABLE_SYSCALL_PATH = "config/enable_syscalls.json"
@@ -24,13 +24,9 @@ DIR_D = "syzkaller_defconfig_dev"
 SYZBOT_OUT_DIR = "fuzz_result/gpt5-1_reproduce_syz"
 NON_SYZBOT_OUT_DIR = "fuzz_result/gpt5-1_reproduce_def"
 
-TIMEOUT = 60 * 60          # 单个 syz-manager 最长 60 分钟
-DEVICE_SLEEP = 10          # 每个 device 完成后休眠 10s
+TIMEOUT = 60 * 60          
+DEVICE_SLEEP = 10        
 
-
-# =========================
-# 工具函数
-# =========================
 def kill_process_group(proc):
     try:
         os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
@@ -77,11 +73,11 @@ def run_syz_task(cfg_name, workdir, bench_path):
 
 def collect_enable_syscalls_sequential(device_path, enable_syscall_db):
     """
-    严格顺序查找：
-    - 按 enable_syscalls.json 原始顺序遍历到文件末尾
-    - drivers 任一命中即追加 syscalls
-    - 不提前终止
-    - 保留原始顺序
+Strict sequential search:
+- Traverse to the end of the file in the original order specified in enable_syscalls.json
+- Append syscalls whenever any driver is hit
+- Do not prematurely terminate
+- Maintain the original order
     """
     result = []
     seen = set()
@@ -101,9 +97,6 @@ def collect_enable_syscalls_sequential(device_path, enable_syscall_db):
     return result
 
 
-# =========================
-# 主流程
-# =========================
 with open(FUZZ_PATH, "r") as f:
     fuzz_cfg = json.load(f)
 
@@ -118,7 +111,6 @@ for device, info in fuzz_cfg.items():
     print(f"[DEVICE] {device}")
     print("========================================")
 
-    # === 新增：已处理直接跳过 ===
     if info.get("enable_syscalls"):
         print(f"[SKIP] {device}: enable_syscalls already populated")
         continue
@@ -126,16 +118,13 @@ for device, info in fuzz_cfg.items():
     flag = info.get("in_syzbot_config", "").lower()
     device_path = info.get("path", "")
 
-    # === 1. 顺序计算 enable_syscalls ===
     enable_syscalls = collect_enable_syscalls_sequential(
         device_path,
         enable_syscall_db
     )
 
-    # === 2. 写回 fuzz.json 内存结构 ===
     info["enable_syscalls"] = enable_syscalls
 
-    # === 3. 选择 AB / CD（组内并行）===
     if flag == "y":
         targets = [
             (DIR_A, False, SYZBOT_OUT_DIR),
@@ -152,7 +141,6 @@ for device, info in fuzz_cfg.items():
 
     threads = []
 
-    # === 4. 并行执行 A/B 或 C/D ===
     for workdir, add_device, bench_root in targets:
         base_cfg_path = os.path.join(workdir, "cfg.json")
         if not os.path.exists(base_cfg_path):
@@ -184,18 +172,16 @@ for device, info in fuzz_cfg.items():
         t.start()
         threads.append((t, cfg_path, bench_root))
 
-    # === 5. 等待 AB / CD 全部完成 ===
     for t, cfg_path, bench_root in threads:
         t.join()
         shutil.move(cfg_path, os.path.join(bench_root, os.path.basename(cfg_path)))
         print(f"[+] cfg archived: {bench_root}/{os.path.basename(cfg_path)}")
 
-    # === 6. device 完成后休眠 ===
     print(f"[INFO] device {device} done, sleeping {DEVICE_SLEEP}s")
     time.sleep(DEVICE_SLEEP)
 
 # =========================
-# 最终写回 fuzz.json
+# write back fuzz.json
 # =========================
 with open(FUZZ_PATH, "w") as f:
     json.dump(fuzz_cfg, f, indent=4)
