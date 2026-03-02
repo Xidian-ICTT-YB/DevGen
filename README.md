@@ -1,4 +1,4 @@
-# DevGen: Automated Generation of Virtual Device Models for Kernel Drivers via Large Language Models
+# Bridging Kernel Drivers and Virtual Device Models with LLM-Powered Automation
 
 ## Driver Information Collection
 
