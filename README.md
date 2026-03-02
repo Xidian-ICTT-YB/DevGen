@@ -8,6 +8,9 @@ In the first phase of **DevGen**, the core source code of the target kernel will
 
 The core stage of **DevGen** mainly involves using LLM to guide the generation of virtual device code. The specific details can be found in the `DevGen_Core` directory.
 
+## Repair Case Library Construction
+We identified common errors and established a case library to assist LLMs in making corrections, with 9 categories and 15 repair cases in the `Case_Repair_Library` directory.
+
 ## Integration and Fuzzing
 
 1. Simplify the static analysis part of the code and generate a JSON file,run `python3 generate_json.py`
