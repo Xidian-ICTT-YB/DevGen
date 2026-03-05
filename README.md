@@ -35,6 +35,6 @@ We identified common errors and established a case library to assist LLMs in mak
 
 ## Experimental Results
 
-For detailed experimental data, please refer to [Detailed Experimental Results](https://365.kdocs.cn/l/cgIgQHBxHmhB?kmonFrom=k_Share_FileList&from=kdocs_pc_web&startTime=1772418180736&traceparent=00-00b88812dd73a65ffe1beb5533ed9027-8889954fd88680b6-01-10).
+For detailed experimental data, please refer to [Detailed Experimental Results(English)](https://docs.google.com/spreadsheets/d/1se8tKSMMxiLYSS_tmCaVE34M-lxeypvAqcisn2PwFTc/edit?usp=drive_link) [详细实验结果（中文](https://365.kdocs.cn/l/cgIgQHBxHmhB?kmonFrom=k_Share_FileList&from=kdocs_pc_web&startTime=1772418180736&traceparent=00-00b88812dd73a65ffe1beb5533ed9027-8889954fd88680b6-01-10).
 
 For all crash artifacts and reproduction materials, please refer to [DevGen Crash Reports](https://github.com/Wmingyu/Crashes).
