@@ -7,7 +7,7 @@ models:
       - "deepseek-reasoner"
     default_model: "deepseek-chat" # 默认模型
     max_tokens: 8192 # 最大上下文长度
-    api_key: "sk-48f1f11bb99c4dfdacb79422f868c07d" # API密钥
+    api_key: "" # API密钥
   qwen:
     api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
     available_models: 
@@ -15,31 +15,31 @@ models:
       - "qwen3-max-preview"
     default_model: "qwen3-max"
     max_tokens: 65536
-    api_key: "sk-35e4cf1aa28545bba88e0f405c140379"
+    api_key: ""
   gpt:
     api_base: "https://yunwu.zeabur.app/v1/"
     available_models:
       - "gpt-5.1"
     default_model: "gpt-5.1"
     max_tokens: 128000
-    api_key: "sk-v6wCPxot79WbRzHBt4xJeJsuca418Zx6AIp5dJFfqYvcA6ZW"
+    api_key: ""
   glm:
     api_base: "https://open.bigmodel.cn/api/paas/v4/"
     default_model: "glm-4.6"
     max_tokens: 131072
-    api_key: "58d81985b8b843dd861a0f3c34f285d7.1CfANbGSASD0KmzV"
+    api_key: ""
   siliconflow:
     api_base: "https://api.siliconflow.cn/v1/"
     default_model: "deepseek-ai/DeepSeek-V3.2"
     max_tokens: 163840
-    api_key: "sk-myhpprlskvczxayqfkpiucnhzixtyhvbpjpaiqfjkbjvugxk"
+    api_key: ""
   google:
     api_base: "https://yunwu.zeabur.app/v1/"
     available_models:
       - "gemini-3-pro-preview"
     default_model: "gemini-3-pro-preview"
     max_tokens: 65536
-    api_key: "sk-C8t87XYFNXXIJkR8DuN8GHwnwzyF6SG0HzLG9XAM63MozwLg"
+    api_key: ""
 
 
 # 项目配置
