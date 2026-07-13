@@ -1,6 +1,6 @@
 # Bridging Kernel Drivers and Virtual Device Models with LLM-Powered Automation
 
-## Driver Information Collection
+## Driver Information Collection 
 
 In the first phase of **DevGen**, the core source code of the target kernel will be extracted, and the main execution will be carried out in the `static_analyze` directory.
 
