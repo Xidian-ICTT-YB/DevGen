@@ -3,7 +3,7 @@
 - **Modify configuration information:`vdm/config/default.yaml`**
     - `data_path`: Path to store static analysis content
     - `logs_path`: Path to store logs
-    - `device_code_path`: Directory to store the final device code
+    - `device_code_path`: Directory to store the final device code 
     - `qemu_hw_fack_pci_path`: Location in the QEMU project where device code is stored
     - `qemu_run_dir`: Directory to run QEMU
     - `driver_name_case_mapping_path`: Driver name case mapping file
