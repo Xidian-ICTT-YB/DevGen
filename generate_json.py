@@ -3,7 +3,7 @@ import os
 
 # 配置参数 - 请根据需要修改这些参数
 INPUT_DIRECTORY = ""  # 输入JSON文件所在的目录路径
-OUTPUT_PATH = ""  # 输出文件的完整路径
+OUTPUT_PATH = ""  # 输出文件的完整路径 
 
 
 def process_json_files():
