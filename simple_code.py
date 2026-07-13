@@ -6,7 +6,7 @@ def filter_json_by_path(data, path_keywords):
 
     if isinstance(data, dict):
         if "path" in data:
-            path_value = data["path"]
+            path_value = data["path"] 
             if not any(keyword in path_value for keyword in path_keywords):
                 return None  
 
