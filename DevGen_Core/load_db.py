@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 def create_table_and_import(conn, table_name, jsonl_path):
-    cur = conn.cursor()
+    cur = conn.cursor() 
 
     # 1. 创建表（安全地使用标识符）
     # 注意：SQLite 表名不能参数化，需手动转义（仅允许字母数字下划线）
