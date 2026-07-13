@@ -4,7 +4,7 @@ Before you start, please make sure that you have installed and configured the fo
 
 1.  **Python:** \>= 3.8.10
 2.  **Git and Git Submodules:** Cloning the Repository and Its Dependencies.
-Clone the repository and its dependencies.
+Clone the repository and its dependencies. 
 3.  **Construction tools:** 
     
     ```bash
