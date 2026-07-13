@@ -4,7 +4,7 @@
  * Copyright (c) 2025 QEMU Team
  *
  * This work is licensed under the terms of the GNU GPL, version 2 or later.
- */
+ */ 
 
 #include "qemu/osdep.h"
 #include <inttypes.h>
