@@ -1,7 +1,7 @@
 {
     "sof_audio_pci_intel_cnl_pci": {
         "drivers": [
-            "pci-cnl"
+            "pci-cnl" 
         ],
         "syscalls": [
             "syz_open_dev$sndctrl",
